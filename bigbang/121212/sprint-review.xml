@@ -1,0 +1,205 @@
+﻿<?xml version="1.0"?>
+    <?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+<sprintreview id="01">
+    <team name="BigBang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Peter Huysman</member>
+        <member>Thomas Martens</member>
+        <member>Frankie Bollaert</member>
+        <member>Stefan De Smit</member>
+        <member>Priyanka Sharma</member>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member>Arkadiuse Wysoki ('Arek')</member>
+        <member>Pawel Wosiak</member>
+        <member>Marcin Zimniak</member>
+        <member>Michal Kozlowski</member>
+        <member>Pawel Jesak</member>
+        <member>Rafal Wojaczynski</member>
+    </team>
+    <slides>
+      <slide id="bigbang-introduction">
+        <header>
+          <h3>BigBang Mission Statement: TS 1.0</h3>
+          <h4>Introduction 1/2</h4>
+            <h5>Team setup: Advantages</h5>
+        </header>
+        <ul class="stories">
+          <li class="story done">Common purpose</li>
+          <li class="story done">Inter-department communication</li>
+          <li class="story done">Broad-band communication</li>
+          <li class="story done">Strong diversity</li>
+          <li class="story done">Real knowledge sharing</li>
+          <li class="story done">Dedicated in-sprint testing</li>
+          <li class="story done">Dedicated specs</li>
+        </ul>
+      </slide>
+      <slide id="bigbang-introduction">
+        <header>
+          <h3>BigBang Mission Statement: TS 1.0</h3>
+          <h4>Introduction 2/2 </h4>
+            <h5>Team setup: Challenges</h5>
+        </header>
+        <ul class="stories">
+          <li class="story done">Multi disciplinary team</li>
+          <li class="story done">Need for direct collaboration: Specs, CoreDB, CDP</li>
+          <li class="story done">First sprint collaborating together</li>
+          <li class="story done">Predictability = Unknown. No historical data</li>
+          <li class="story done">Cultural Differences Departments</li>
+    </ul>
+  </slide>
+  <slide id="bigbang-technical-suite">
+    <header>
+      <h3>Technical suite graph</h3>
+    </header>
+	  <img src="img/Overview.jpg" alt="demo: diff"/>
+  </slide>
+  <slide id="bigbang-technical-suite">
+    <header>
+      <h3>Technical suite graph</h3>
+    </header>
+	  <img src="img/CPP4_0_Wave1.jpg" alt="demo: diff"/>
+  </slide>
+ <slide id="bigbang-ttom-3-8">
+    <header class="story done" points="8">
+      <h4>TTOM 3.8</h4>
+    </header>
+	<h5>Transfer Maneuvers from Relationship to Complex features</h5>
+    <ul>
+		<li>TIF2TTOM: put maneuvers in cmp table </li>
+        <li>Geometry changes </li>
+        <ul>
+            <li>Geometry collection of merged lines and decision point</li>
+            <li>Grid spatially in a way which allows exact reproduction after write/read cycle</li>
+        </ul>
+    </ul>
+	<h5>Still in progress</h5>
+    <ul>
+        <li>Release Tif2TTom component</li>
+        <li>Validation</li>
+            <ul>
+                <li>Test read after TIF2TTOM step</li>
+                <li>Test round trip including coredb</li>
+                <li>JBehave</li>
+            </ul>
+    </ul>
+    <h5><a href="http:// 10.18.8.48:62080/cartopia">Cartopia</a></h5>
+  </slide>
+  <slide id="bigbang-graph-technical-suite">
+    <header>
+	  <img src="img/Technical_Suite_1.0.png" alt="demo: diff"/>
+    </header>
+  </slide>
+  <slide id="bigbang-graph-test-approach">
+    <header>
+	  <img src="img/testApproach.jpg" alt="demo: diff"/>
+    </header>
+  </slide>
+  <slide id="bigbang-subsub-model">
+    <header class="story not-done" points="5" percentage-done="50">
+      <h4>SUBSUB Model</h4>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+        <li>Create separate name model </li>
+        <li>Enables reuse of the name model</li>
+        <li>Enables migration to new name model</li>
+    </ul>
+    <h5>Done:</h5>
+    <ul>
+      <li>Specs are done: released TTom 3.9 </li>
+      <li>PDS + PDS api </li>
+      <li>Generate allcodes from modeltools directly (bye bye PControl) </li>
+    </ul>
+	<h5>WIP:</h5>
+    <ul>
+        <li>Release Tif2TTom component</li>
+		<li>Release PDS + PDS api</li>
+        <li>MDS + MDS api</li>
+        <li>Test round trip + FAT </li>
+    </ul>  
+  </slide>
+  <slide id="bigbang-boosting-cleanup">
+    <header class="story not-done" points="8" percentage-done="50">
+      <h4>Boosting cleanup</h4>
+    </header>
+    <h5>Enable clean usage of TTom-3.8 </h5>
+    <table style="align:center; border: 1px solid grey">
+    <tr style="border: 1px solid grey"> <th>Model</th> <th>Feature</th></tr>
+    <tr> <td>TTOM Core</td> <td style="padding-left: 1em;">RoadElement </td> </tr>
+    <tr> <td>TTOM Ada </td> <td style="padding-left: 1em;">GradientInfo</td> </tr>
+    <tr> <td>TTOM</td> <td style="padding-left: 1em;">RoadElement.GradientInfo</td> </tr>
+    </table>
+    <br/>
+    <h5>Done:</h5>
+    <ul>
+          <li>update csvcreator with new serialization </li>
+          <li>test cases for serialization of each particular object type </li>
+          <li>update serialization inside DBReader </li>
+          <li>update serialization inside VMDS related components </li>
+          <li>removed "boosting" hack from creating attributes </li>
+    </ul>
+    <h5>WIP:</h5>
+    <ul>
+          <li> investigate problems during FAT execution </li>
+    </ul> 
+  </slide>
+  <slide id="bigbang-move-relation-to-complex">
+    <header class="story not-done" points="8" percentage-done="50">
+      <h4>Merging Road Elements</h4>
+    </header>
+    <h5>TTom Read API must provide merged roads to our customers</h5>
+    <h6>Work done :</h6>
+    <ul>
+		<li>Enabled line merging in TIF2TTOM</li>
+        <li>Release Tif2TTom component</li>
+	</ul>
+    <h6>WIP:</h6>
+    <ul>
+        <li>Still todo: Integration tests</li>
+    </ul>  
+  </slide>
+  <slide id="bigbang-java-naming">
+    <header class="story not-done" points="8" percentage-done="50">
+      <h4>Java Naming</h4>
+    </header>
+    <h5>Make the java Class and variable names human readable.</h5>
+    <ul>    
+        <li> <a href="http://vos.intra.local/display/CPEGMS/Modeling+Guidelines+and+Conventions">http://vos.intra.local/display/CPEGMS/Modeling+Guidelines+and+Conventions</a> </li>
+        <li>Conventions and guidelines on Names:
+        <ul>
+            <li><a href="http://vos.intra.local/display/CPEGMS/Class">http://vos.intra.local/display/CPEGMS/Class</a></li>
+            <li><a href="http://vos.intra.local/display/CPEGMS/Class+Attribute">http://vos.intra.local/display/CPEGMS/Class+Attribute</a></li>
+        </ul>
+        </li>
+    </ul>
+    <h5>Work done:</h5>
+    <ul>
+        <li>Analysed all TTOM models</li>
+        <li>Listed all impacted names</li>
+    </ul>
+    <h5>WIP:</h5>
+    <ul>
+        <li>Adapting models</li>
+    </ul>
+    <h5>Still to do:</h5>
+    <ul>
+        <li>Adapt all software components</li>
+	</ul>
+
+  </slide>
+  <slide id="bigbang-support">
+    <header  class="story done" points="15">
+      <h4>Support: 2 FTE's work to resolve bugs (Planned 1 FTE!)</h4>
+    </header>
+      <ul>
+		<li>Clear out shadow bugs</li>
+		<li>Issue clusters addressed to ELT for CPP 3.8 acceptance run</li>
+      </ul>
+    <!--
+		<img src="img/DIFF_RELTYPE" alt="demo: diff"/>
+	-->
+  </slide>
+</slides>
+</sprintreview>

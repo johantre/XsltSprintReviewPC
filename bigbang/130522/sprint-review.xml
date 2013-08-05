@@ -1,0 +1,197 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+
+<sprintreview id="06">
+    <team name="BigBang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Peter Huysman</member>
+        <member>Thomas Martens</member>
+        <member>Frankie Bollaert</member>
+        <member>Stefan De Smit</member>
+        <member>Priyanka Sharma</member>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member>Arkadiusz Wysocki ('Arek')</member>
+        <member>Pawel Wosiak</member>
+        <member>Marcin Zimniak</member>
+        <member>Michal Kozlowski</member>
+        <member>Pawel Jesak</member>
+        <member>Rafal Wojaczynski</member>
+    </team>
+    <slides>
+
+    <slide id="bigbang-technical-suite">
+        <header>
+            <h3>Technical suite graph</h3>
+        </header>
+        <img src="img/Technical_Suite_1.0.png" alt="demo: diff"/>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3 class="story done">1 FTE support L4 &amp; L5</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Facilitate deployment to production</li>
+        </ul>
+    </slide>
+
+
+    <slide>
+        <header class="story done" points="1">
+            <h3> Estimate merging Sprint 5 to Mainline</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Fix JUnits after update to latest TTOM model 3_12</li>
+            <li>Fix FAT compilation errors</li>
+            <li>Estimate effort for failing FAT tests</li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Up to date JUnits with preparation for newest model</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3> Merge Sprint 5 to Mainline </h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Fix FAT tests</li>
+            <li>Merge all work related to TTOM model 3_12 into mainline </li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Coredb code updated to TTOM:3_12 and ready to work for other teams</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="2">
+            <h3> Optimize MDS Load Time</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Get rid of SQL query that runs as postprocess on Postgres database</li>
+            <li>Move that process to CSV-Creator - java tool</li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+			<li>Successfully loaded all California datasets (UC1-UC6)</li>
+			<li>Time to: create CSVs + LoadMDS decreased to 44% of original time</li>
+			<li>Detailed performance results available below: </li>
+			http://vos.intra.local/display/CPEQAE/Optimize+MDS+load+time+%28move+arJson+step+to+CSVCreator%29
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="3">
+            <h3> Directionality: Align Attributes and Values</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Align values for all attributes using:
+		<ul>
+		<li>Side of Line</li>
+		<li>Ended</li>
+		<li>Validity Direction</li>
+		</ul>
+	    </li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Reduced the number of attributes:
+		<ul>
+		<li>Direction Of Traffic Flow, Vehicle Restriction, Special Charge and Construction Status --> Validity Direction</li>
+		</ul>
+	    </li>
+            <li>Easy use of these attributes:
+		<ul>
+		<li>Side of Line and Position Attributes all have the same values</li>
+		<li>Blocked Passage, Transition and Lane End all have the same values</li>
+		</ul>
+	    </li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="2">
+            <h3>TIF POI's relationships - Anchor Point Stable Id </h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Reintroduce Anchor Point Stable Id</li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Link between a POI and APT Point</li>
+            <li>Stable identifier for a POI</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="3">
+            <h3> Model update: Name updated in Address Points </h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li> Bring APT model in line with new Name model </li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li> Modified Multinet Address Points 1.8 specification brought to Tif2TTOM </li>
+            <li> Language is integrated into Composite Address Component Set </li>
+            <li> Address Scheme ID is deduced from Address Component Types present in the data </li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="8">
+            <h3> Java Naming</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li> Bring DDCT API closer to model </li>
+            <li> <![CDATA[  Removal of /, ( ), -, +, &, <, > ]]> </li>
+            <li> American English </li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li> Easier to understand API </li>
+            <li> Easier to use API </li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3> Run Belgium with latest code</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Enabler for other teams to continue developing</li>
+			<li>Enabler to take the number of failing fat tests into account in the planning of next sprint</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="17">
+            <h3> BUG fixes</h3>
+        </header>
+        <ul>
+            <li class="story done">Multi LineString Road Element in CPP 3.8 RMC data (SP3) </li>
+            <li class="story done">Split big features query into subqueries (SP1) </li>
+            <li class="story done">RoadElement.CompositeDirectionOfTrafficFlowForLane value "_INVALID_" (SP2) </li>
+            <li class="story done"> Make sure that tile crossing associations go from source to target &amp; vice versa (SP3) </li>
+            <li class="story done"> Make Place Names repetitive to store multiple Place Names (SP1) </li>
+            <li class="story done"> Constraints issues for POI's/APT's outside of dataset (SP3) </li>
+            <li class="story not-done">(3.8 RMC): "No valid country information retrieved in YardScopeProvider" on AE3 Dataset. (SP3) </li>
+            <li class="story not-done">Create ID tables at dataset level i.s.o. PAL level (SP1) </li>
+        </ul>
+    </slide>
+
+    </slides>
+</sprintreview>

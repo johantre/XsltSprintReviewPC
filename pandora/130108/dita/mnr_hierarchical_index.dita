@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="mnr_hierarchical_index">
+  <title>MNR_Hierarchical_Index (Hierarchical Index)</title>
+  <topic id="mnr_hierarchical_index_description">
+    <title>Description</title>
+    <body>
+      <p>The <b>Hierarchical Index</b> table contains index relevant area features. Only the Order 1 Area to Order 9 Area and Order 1 Index Area to Order 10 Index Area features fit in an hierarchical structure. The other areas might be overlapping or order 8/9 crossing. Only the the lowest orders and the non-hierarchical areas have a link to the Network Route Link.
+
+.
+Compared to the indexing based on localities :
+
+        <ul>
+          <li>Indexing Hierarchical : no merging of equally named index relevant features.</li>
+          <li>Indexing Hierarchical : no adornment setting</li>
+          <li>Indexing Hierarchical : no priority setting</li>
+          <li>Indexing Hierarchical : no discriminator setting</li>
+          <li>Indexing Hierarchical : no link to Anchor Points or City Center</li>
+          <li>Indexing Hierarchical :  only index relevant AREA features</li>
+          <li>Indexing Hierarchical : additional names : country, order 1 to order 7</li>
+          <li>Indexing Locality : 1 locality = 1 nameset , locality linked to network names</li>
+          <li>Indexing Hierarchical : 1 index relevant feature with multiple nameset, index relevant fetaure linked to network names.</li>
+        </ul>
+
+
+      </p>
+    </body>
+  </topic>
+  <topic id="mnr_hierarchical_index_keys">
+    <title>Primary and Foreign Keys</title>
+    <body>
+      <p>Primary Key : PK_MNR_Hierarchical_Index (FEAT_ID)
+      </p>
+      <p>Foreign Key : FK_A8_ADMIN_ID (A8_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A9_ADMIN_ID (A9_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A6_ADMIN_ID (A6_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A7_ADMIN_ID (A7_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A1_ADMIN_ID (A1_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A10_ADMIN_ID (A10_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A5_ADMIN_ID (A5_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_CTRY_ID (CTRY_ID)
+      </p>
+      <p>Foreign Key : FK_A4_ADMIN_ID (A4_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A3_ADMIN_ID (A3_ADMIN_ID)
+      </p>
+      <p>Foreign Key : FK_A2_ADMIN_ID (A2_ADMIN_ID)
+      </p>
+    </body>
+  </topic>
+  <topic id="mnr_hierarchical_index_structure">
+    <title>Structure</title>
+    <body>
+      <p>
+        <table>
+          <tgroup cols="6">
+            <colspec colname="fieldname" colnum="1"></colspec>
+            <colspec colname="type" colnum="2"></colspec>
+            <colspec colname="width" colnum="3"></colspec>
+            <colspec colname="decimals" colnum="4"></colspec>
+            <colspec colname="key" colnum="5"></colspec>
+            <colspec colname="fieldcontent" colnum="6"></colspec>
+            <thead>
+              <row>
+                <entry>Field Name</entry>
+                <entry>Type</entry>
+                <entry>Width</entry>
+                <entry>Dec</entry>
+                <entry>Key</entry>
+                <entry>Field Content</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry id="mnr_hierarchical_index_feat_id">FEAT_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>PK</entry>
+                <entry>Feature ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_feat_area">FEAT_AREA</entry>
+                <entry>decimal</entry>
+                <entry>15</entry>
+                <entry>0</entry>
+                <entry> </entry>
+                <entry>Feature Area in square meters</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_feat_perim">FEAT_PERIM</entry>
+                <entry>decimal</entry>
+                <entry>15</entry>
+                <entry>0</entry>
+                <entry> </entry>
+                <entry>Feature Perimeter in meters</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_feat_type">FEAT_TYPE</entry>
+                <entry>integer</entry>
+                <entry>9</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Feature Type
+                  <ul>
+                    <li>3134 : Census District</li>
+                    <li>1111 : Country</li>
+                    <li>1112 : Order 1 Area</li>
+                    <li>1113 : Order 2 Area</li>
+                    <li>1114 : Order 3 Area</li>
+                    <li>1115 : Order 4 Area</li>
+                    <li>1116 : Order 5 Area</li>
+                    <li>1117 : Order 6 Area</li>
+                    <li>9341 : Census Block</li>
+                    <li>1118 : Order 7 Area</li>
+                    <li>1119 : Order 8 Area</li>
+                    <li>1120 : Order 9 Area</li>
+                    <li>9201 : Order 1 Index Area</li>
+                    <li>9202 : Order 2 Index Area</li>
+                    <li>9203 : Order 3 Index Area</li>
+                    <li>9204 : Order 4 Index Area</li>
+                    <li>9205 : Order 5 Index Area</li>
+                    <li>9206 : Order 6 Index Area</li>
+                    <li>9207 : Order 7 Index Area</li>
+                    <li>9208 : Order 8 Index Area</li>
+                    <li>9209 : Order 9 Index Area</li>
+                    <li>9210 : Order 10 Index Area</li>
+                    <li>1184 : Administrative Place T</li>
+                    <li>1167 : Administrative Place C</li>
+                    <li>1180 : Administrative Place P</li>
+                    <li>3110 : Built-up Area</li>
+                    <li>3126 : Neighborhood</li>
+                    <li>9300 : Postal Locality</li>
+                    <li>3136 : Postal District</li>
+                  </ul></entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_order_level">ORDER_LEVEL</entry>
+                <entry>integer</entry>
+                <entry>2</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Order level</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_name">NAME</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Feature Name</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_lang_code">LANG_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Language Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_continent">CONTINENT</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Continent
+                  <ul>
+                    <li>AF : Africa</li>
+                    <li>AN : Antarctica</li>
+                    <li>AS : Asia</li>
+                    <li>EU : Europe</li>
+                    <li>NA : North America</li>
+                    <li>OC : Oceania</li>
+                    <li>SA : South America</li>
+                  </ul></entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_ctry_id">CTRY_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Country ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_ctry_code_char3">CTRY_CODE_CHAR3</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>3 Character ISO Country Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_ctry_code_char2">CTRY_CODE_CHAR2</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>2 Character ISO Country Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_ctry_code_num">CTRY_CODE_NUM</entry>
+                <entry>integer</entry>
+                <entry>10</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Numeric ISO Country Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a1_admin_id">A1_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 1 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a1_admin_code">A1_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 1 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a1_admin_num">A1_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 1 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a2_admin_id">A2_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 2 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a2_admin_code">A2_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 2 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a2_admin_num">A2_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 2 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a3_admin_id">A3_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 3 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a3_admin_code">A3_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 3 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a3_admin_num">A3_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 3 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a4_admin_id">A4_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 4 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a4_admin_code">A4_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 4 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a4_admin_num">A4_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 4 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a5_admin_id">A5_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 5 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a5_admin_code">A5_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 5 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a5_admin_num">A5_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 5 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a6_admin_id">A6_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 6 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a6_admin_code">A6_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 6 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a6_admin_num">A6_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 6 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a7_admin_id">A7_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 7 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a7_admin_code">A7_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 7 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a7_admin_num">A7_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 7 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a8_admin_id">A8_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 8 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a8_admin_code">A8_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 8 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a8_admin_num">A8_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 8 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a9_admin_id">A9_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Administrative/Index Area Order 9 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a9_admin_code">A9_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 9 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a9_admin_num">A9_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Administrative/Index Area Order 9 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a10_admin_id">A10_ADMIN_ID</entry>
+                <entry>uuid</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>FK</entry>
+                <entry>Index Area Order 10 ID</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a10_admin_code">A10_ADMIN_CODE</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Index Area Order 10 Character Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_a10_admin_num">A10_ADMIN_NUM</entry>
+                <entry>integer</entry>
+                <entry>18</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Index Area Order 10 Numeric Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_artificial">ARTIFICIAL</entry>
+                <entry>boolean</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Artificial</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_standard_lang">STANDARD_LANG</entry>
+                <entry>varchar</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Standard Language Code</entry>
+              </row>
+              <row>
+                <entry id="mnr_hierarchical_index_geom">GEOM</entry>
+                <entry>geometry</entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry> </entry>
+                <entry>Geometry</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </body>
+  </topic>
+</topic>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0"?>
+    <?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+    
+<sprintreview id="03">
+    <team name="BigBang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Peter Huysman</member>
+        <member>Thomas Martens</member>
+        <member>Frankie Bollaert</member>
+        <member>Stefan De Smit</member>
+        <member>Priyanka Sharma</member>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member>Arkadiuse Wysoki ('Arek')</member>
+        <member>Pawel Wosiak</member>
+        <member>Marcin Zimniak</member>
+        <member>Michal Kozlowski</member>
+        <member>Pawel Jesak</member>
+        <member>Rafal Wojaczynski</member>
+    </team>
+    <slides>
+  <slide id="bigbang-subsub-model">
+    <header class="story done" points="3">
+      <h3>NFR: Performance of Read API</h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+        <li>Enabling L1 as part of the ReadApi</li>
+        <li>L1 is up and running</li>
+        <ul>
+            <li>but not fully puppet-ized</li>
+            <li>no write access to rpm repo yet</li>
+        </ul> 
+        <li>Perform baseline benchmark</li>
+
+    </ul>
+    <a href="http://vos.intra.local/display/CPEQAE/L1+Performance+measurments">http://vos.intra.local/display/CPEQAE/L1+Performance+measurments</a>
+  </slide>
+  <slide>
+    <header class="story done" points="8">
+      <h3> SUBSUB Model (Model only) </h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+      <li> Created new TTOM model with a common name model: TTOM-Name. </li> 
+      <li> This model is reused among TTOM sub models but contains no conceptual differences.  </li>
+      <li> But this introduces submodels with submodels. </li>
+    </ul>
+    <h5>Done:</h5>
+    <ul>
+      <li> Validated that full stack works with TTOM 3.9 </li>
+      <li> Released all components </li>
+      <li> JBehave test confirmation that we don't have regression </li>
+    </ul>
+  </slide>
+  <slide>
+    <header class="story done" points="3">
+      <h3> Boosting cleanup: Remove Boosting on read path </h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+        <li> Support multiple models on client side </li>
+		<li> Allow to attach multiple TTOM model dependencies (with different version) on client side</li>
+		<li> Real use case: Bulk QA will be able to work on content in different TTOM models using the same client</li>
+    </ul>
+    <h5>Value delivered:</h5>
+    <ul>
+        <li> Using full qualified names for each dictionary element </li>
+		<li> Required updates in Coredb read path components, CSV Creator and Coredb Load Scripts</li>
+		<li> Tested on BEL dataset with set of ReadOnly FATs with TTOM 2_3 and 3_9 attached</li>
+    </ul>
+  </slide>
+
+  <slide>
+    <header class="story not-done" points="2">
+      <h3 class="story not-done"> Boosting cleanup: Reduce database footprint </h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+        <li> Using full qualified names increased database footprint </li>
+		<li> ..which can be reduced by putting property_names into dictionary </li>
+    </ul>
+    <h5>Value delivered:</h5>
+    <ul>
+        <li> Updated CSV Creator to fill dictionary </li>
+		<li> Updated Coredb Load Scripts to provide new database structure </li>
+    </ul>
+   <h5>Work in progress:</h5>
+    <ul>
+		<li> Update db-reader SQL queries to match new database structure</li>
+    </ul>
+    <h5>Still to do:</h5>
+    <ul>
+        <li> end-to-end validation </li>
+    </ul>
+  </slide>
+
+
+  <slide>
+    <header class="story done" points="8">
+      <h3> Model update: Names. Changes for Road Element</h3>
+    </header>
+    <h5>Goal: </h5>
+    <ul>
+        <li>Introduce new name model according to foundation team recomendation</li>
+        <li>Deliver all names on Road Elements according the new names model</li>
+    </ul>
+    <h5>Work Done:</h5>
+   <ul>
+     <li> Mapping document for the name changes on Road Element</li>
+     <li> Implementation Tif2TTom: 
+	<ul>
+	  <li>Official and Alternate Names on Road Element</li>
+	  <li>Route Names and Route Numbers on Road Element</li>
+	  <li>Tourist Road Names on RoadElement and Ferry Connections</li>
+	  <li>Structure/Brunnel Names on Road Element, Ferry Connections and Railways</li>
+        </ul>
+      </li>	
+    </ul>
+    <h5>Value delivered:</h5>
+    <ul>
+        <li>Grouped names with transliterations</li>
+        <li>Added primary flag to names</li>
+    </ul>
+    <a href="Demo"> http://besrvud-cio04:8080/entropy-webservices-4.5-SNAPSHOT/ </a>
+  </slide>
+</slides>
+</sprintreview>

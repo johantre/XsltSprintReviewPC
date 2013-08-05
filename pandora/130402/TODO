@@ -1,0 +1,42 @@
+Integrate demo over presentation:
+	Start with YGE j
+
+Fix order:
+	Infrastructure work
+	Feedback
+	Model
+	Group layer slides together
+	Seaming
+
+
+# Review done/note-done, story points
+# Identify (un-)committed (grayed out)
+
+Upgrade to TTOM 3.10
+====================
+move gaps to fill, to new TTOM model
+add remark on update of zone-inputformat for seaming
+
+Rework network restrictions and maneuver validity
+=================================================
+Add numbers
+Maybe demo stats?
+
+Implement seaming in TIF2TTOM
+=============================
+end with importance of partioning and other border issues
+
+
+Mention last three relate to partitioning and that we will be working on this in the coming sprint.
+
+Bugfixes on Xmi2Pmf
+
+mention previous review bigbang on 3.12
+
+later points on ttom 3.12
+
+traffic signs: short intro (for who, how, when, where?), good cooperation
+
+add populated tables in network lane information layer
+
+risk: mention the more layers we add the more changes will need to happen on TTOM update.

@@ -1,0 +1,468 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+<slides>
+	<title>Sprint review Boat, Daf Punk, Prometheus, SheBang and Very Angry Birds</title>
+
+	<slide id="teams">
+		<header>
+			<h3>Sprint Review</h3>
+		</header>
+		<p>This is a combined sprint review for the following teams.</p>
+		<ul style="font-weight: bold">
+			<li>Boat</li>
+			<li>Daf Punk</li>
+			<li>Prometheus</li>
+			<li>SheBang</li>
+			<li>Very Angry Birds</li>
+		</ul>
+		<p>The sprint for these teams all started on the <strong>26th of November</strong> and ended on the <strong>11th of December 2012</strong>. We will go through them one by one;</p>
+	</slide>
+
+	<slide style="background-image: url('img/team.jpg')">
+		<h1 class="center">Boat</h1>
+	</slide>
+
+	<slide id="boat-overview">
+		<h2>User Stories Boat</h2>
+		<ul class="stories">
+			<li class="story not-done">Integrate TTOM for CPP 3.9 release with CPP Map component<span class="sp">(2 SP)</span></li>
+			<li class="story done">Integrate with firehose client for 3.9 release in CSV creator<span class="sp">(5 SP)</span></li>
+			<li class="story done">Setup PControl process for loading 3.9 data<span class="sp">(5 SP)</span></li>
+			<li class="story done">Load the all MDS'es for FATs<span class="sp">(2 SP)</span></li>			
+			<li class="story not-done">TIF2TTOM bug reports<span class="sp">(13 SP)</span></li>
+			<li class="story not-done">UNCOMMITTED - Separate out TIF2MN and MN2MDS parts of TIF2MDS p-control process template<span class="sp">(8 SP)</span></li>
+		</ul>
+		<div class="info">
+			<p class="scrum-master"><span class="caption">Scrum master - </span><span class="content">Johan Tre</span></p>
+			<p class="team"><span class="caption">Team:</span> <span class="content"> Jacek, Rafał, Michał, Arek </span></p>
+			<p class="team"><span class="caption">PO:</span> <span class="content"> Ładek (aka Ładysław) </span></p>
+		</div>
+	</slide>
+
+	<slide id="boat-overview - story 1">
+		<header>
+			<h3>Boat</h3>
+			<h4>1233328 Integrate TTOM for CPP 3.9 release with CPP Map component (2 SP)</h4>
+		</header>
+		<div class="info">
+		<p>Acceptance criteria:</p>
+		<ul>
+			<li>Client is able to serve data in TTOM for CPP 3.9 release - DONE</li>
+			<li>Cascading edits don't have to work correctly - DONE</li>
+			<li>There is jenkins job that runs FATs - DONE</li>
+		</ul>
+		<p> comments / extra work</p>
+		<ul>
+			<li>Rebase to trunk version</li>
+			<li>Run FAT's once</li>
+			<li>Still need to fix deserialization - problems pop up during integration with Shebang</li>
+		</ul>	
+		</div>
+	</slide>
+
+	<slide id="boat-overview - story 2">
+		<header>
+			<h3>Boat</h3>
+			<h4>1233346 Integrate with firehose client for 3.9 release in CSV creator (5 SP)</h4>
+		</header>
+		<div class="info">
+		<p>Acceptance criteria:</p>
+			<ul>
+				<li>CSV Creator is able to get data from firehose in TTOM for CPP 3.9 release - DONE</li>
+				<li>CSV Creator is able to create CSVs in TTOM for CPP 3.9 release - DONE</li>
+			</ul>
+		</div>
+	</slide>
+
+	<slide id="boat-overview - story 3">
+		<header>
+			<h3>Boat</h3>
+			<h4>1233347 Setup PControl process for loading 3.9 data (3 SP)</h4>
+		</header>
+		<div class="info">
+		<p>Acceptance criteria:</p>
+			<ul>
+				<li>There is PControl process set up on Iron's L1 for data loading - DONE</li>
+				<li>It is possible to load any dataset in TTOM for 3.9 release - DONE</li>
+				<li>Andorra dataset is loaded to MDS - DONE</li>
+			</ul>
+		</div>
+	</slide>
+	
+	<slide id="boat-overview - story 4">
+		<header>
+			<h3>Boat</h3>
+			<h4>1233329 Load the all MDS'es for FATs (2 SP)</h4>
+		</header>
+		<p>Acceptance criteria:</p>
+			<ul>
+				<li>All datasets required for FATs are loaded in TTOM for 3.9 release - DONE</li>
+				<li>This data is available in "central" MDS in Lodz - DONE</li>
+			</ul>
+		<p>Remark</p>
+			<ul>
+				<li>There are new datasets added recently to FATs - UC3, OGB, UNJ - they are not yet loaded</li>
+			</ul>
+		<div class="info">
+		</div>
+	</slide>
+	
+	<slide id="boat-overview - story 5">
+		<header>
+			<h3>Boat</h3>
+			<h4>1233329 TIF2TTOM bug reports (13 SP)</h4>
+		</header>
+		<div class="info">
+			Merged stories 1233348, 1233349, 1233350
+			<p>Found issues (either in coredb stack or in input TTOM haystack data:</p>
+			<ul>
+				<li>Deserialization problems in coredb-main-ws / client - DONE, should be revisited and cleaned</li>
+				<li>Flipped maneuvers - FIX ready,needs to be verified</li>
+				<li>Removed step of filtering unnecessary associations</li>
+				<li>Added ignore handlers in coredb translator component</li>
+				<li>Fixed constraints and indexes in load scripts - added changes to reduce DB footprint</li>
+				<li>Added support to all feature types in geometry index field - was missing multipoints and multigeometries (lines + disconnected points)</li>
+			</ul>
+			<p>Still to do:</p>
+			<ul>
+				<li>Finalize integration with Shebang - fix deserialization of some geometry types</li>
+				<li>Finalize integration with QA</li>
+				<li>Integrate when we have full content - so far we have 98% of the content in TTOM model</li>
+			</ul>
+		</div>
+	</slide>
+	
+	<slide id="boat-overview - story 6">
+		<header>
+			<h3>Boat</h3>
+			<h4>1194393 [3.9 CI] Separate out TIF2MN and MN2MDS parts of TIF2MDS p-control process template (8 SP)</h4>
+		</header>
+		<div class="info">
+			<p>Cancelled - there was an agreement - conclusions might be found here</p>
+			<p><a href = "http://vos.intra.local/display/CPEDPT/Internal+filtering+of+MDS+data+in+CPP+3.9">link to agreement</a></p>
+		</div>
+	</slide>
+
+	<slide style="background-image: url('img/team.jpg')">
+		<h1 class="center">Daf Punk</h1>
+	</slide>
+
+	<slide id="daf-punk-overview">
+		<h2>User Stories Daf Punk</h2>
+		<ul class="stories">
+			<li class="story done">Toolbox Split and fixing issues<span class="sp">(2 SP)</span></li>
+			<li class="story done">Deployment automation and Continuous Integration L1<span class="sp">(5 SP)</span></li>
+			<li class="story done">Housekeeping</li>
+		</ul>
+		<div class="info">
+			<p class="scrum-master"><span class="caption">Scrum master - </span><span class="content">Johan Tre</span></p>
+			<p class="team"><span class="caption">Team:</span> <span class="content">Kevin, Lander, Jelle, Jan</span></p>
+		</div>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>DAF PUNK</h3>
+			<h4>Toolbox Split and fixing issues</h4>
+		</header>
+		<img src="img/manual-work.jpg" alt="An example image" />
+		<p>Story 1 - Toolbox Split and fixing issues</p>
+		<ul>
+			<li>Locality Index NAM</li>
+			<li>Split, synchronize and fix configs TIF2MN/TIF2TTOM</li>
+			<li>Validation Criteria - Green builds TIF2MN-Trunk and TIF2TTOM-39</li>
+		</ul>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>DAF PUNK</h3>
+			<h4>Deployment automation and Continuous Integration L1</h4>
+		</header>
+		<img src="img/CPP_overview.jpg" alt="An example image" />
+		<img src="img/Levels.jpg" alt="An example image" />
+		<ul>
+			<li>Puppet component deployment</li>
+			<li>Validation Criteria - Run TIF2TTOM chain via Jenkins</li>
+		</ul>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>DAF PUNK</h3>
+			<h4>Housekeeping</h4>
+		</header>
+		<ul>
+			<li>Support L2 / L3 / L4 environments</li>
+			<li>Rework puppet code for L4 deployment</li>
+			<li>Support Prometheus for MN 1303 Toolbox</li>
+			<li>Release latest TIF2TTOM-38R Toolbox</li>
+			<li>Data load requests</li>
+		</ul>
+	</slide>
+
+	<slide style="background-image: url('img/team.jpg')">
+		<h1 class="center">Prometheus</h1>
+	</slide>
+
+	<slide id="prometheus-overview">
+		<h2>User Stories Prometheus</h2>
+		<ul class="stories">
+			<li class="story done">TB 13.03 release</li>
+			<li class="story done">User Story 844697: Enable TB 13.03 so it can work with Yard tagging system</li>
+			<li class="story done">Fix bug wrong parameter used to get country information from YARD</li>
+			<li class="story done">APT sol values bugfix</li>
+			<li class="story done">MN Admin and MN Post product chain dependency bugfix</li>
+			<li class="story done">MN shpa dumper bugfix</li>
+		</ul>
+		<div class="info">
+			<p class="scrum-master"><span class="caption">Scrum master - </span><span class="content">Witold Studzinski</span></p>
+			<p class="team"><span class="caption">Team:</span> <span class="content"> ... </span></p>
+		</div>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Prometheus</h3>
+			<h4>TB 13.03 release</h4>
+		</header>
+			<p>Scope:</p>
+      <ul style="list-style-image: url('img/ok-bullet.png');">
+        <li>YARD usage fixing and validation</li>
+        <li>APT sol values bugfix</li>
+        <li>MN Admin and MN Post product chain dependancy bugfix</li>
+        <li>MN shpa dumper bugfix</li>
+      </ul>
+      <p>TB_1303_pb3 toolbox released:</p>
+      <ul style="list-style-image: url('img/ok-bullet.png');">
+        <li>Control Plan executed against TB_1212_02 released version</li>
+        <li>No unexplained differences found between checked builds</li>
+        <li>Toolbox deployed on production environment in Ghent </li>
+        <li style="list-style-image: url('img/nok-bullet.png');">Problems with deployment on production environment in India due to IT issues</li>
+      </ul>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Prometheus</h3>
+			<h4>User Story 844697: Enable TB 13.03 so it can work with Yard tagging system</h4>
+		</header>
+			<p>Purpose of this story was to perform tests on Toolbox 1303 with YARD tagging system.</p>
+			<p>Tests were done on:</p>
+			<ul>
+				<li>Single dataset country in EUR: AND</li>
+				<li>Multi dataset country in EUR: CH1 (includes also Lichtenstein as Small Separate Country)</li>
+				<li>Single dataset state in NAM: UNH</li>
+				<li>Multi dataset state in NAM: UF1</li>
+			</ul>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Prometheus</h3>
+			<h4>Fix bug wrong parameter used to get country information from YARD</h4>
+		</header>
+		<p>To get country related information (ISO country code, ISO country number...) the YARD webservice is used. Our request contained:</p>
+		<code><pre>
+"scopetype": "Country",
+"scopeexternalid": &lt;iso code from TIF&gt;,
+"referencetype": "Country has ISO Country Code"
+</pre></code>
+		<p>Instead of <code>scopeexternalid</code> parameter we should use <code>scopeadminkey</code>.</p>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Prometheus</h3>
+			<h4>APT sol values bugfix</h4>
+		</header>
+		<p>Side of line for APTs connected with edge having opposite directionality versus Road Element was wrongly converted.</p>
+		<img src="img/sol-apt.png" />
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Prometheus</h3>
+			<h4>MN Admin and MN Post product chain dependency bugfix</h4>
+		</header>
+		<p>The story was about restoring relation between two steps:</p>
+		<code>
+		<ul>
+			<li>Convert MN postal</li>
+			<li>Create indices on Admin  Boundary tables (2)</li>
+		</ul>
+		</code>
+		<p>Due to lack of dependency, records were missing in the PLIA table.</p>
+		<p>The solution has been tested and now <code>Convert MN postal</code> can start only after <code>Create indices on Admin  Boundary tables (2)</code>.</p>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Prometheus</h3>
+			<h4>MN shpa dumper bugfix</h4>
+		</header>
+		<p>This story was about Oracle errors silently being ignored during the conversion of MultiNet Shape Admin, in case of Oracle connection/instability problems.</p>
+		<p>Now, we will throw a DBError and stop the conversion if problems occur.</p>
+		<p>Proper unittests were added to check the new functionality.</p>
+	</slide>
+
+	<slide style="background-image: url('img/team.jpg')">
+		<h1 class="center">SheBang</h1>
+	</slide>
+
+	<slide id="shebang-overview">
+		<h2>User Stories SheBang</h2>
+		<ul class="stories">
+			<li class="story not-done">Release haystack-server, check-out enabled<span class="sp">(3 SP)</span></li>
+			<li class="story done">Enable ALL TTOM content<span class="sp">(3 SP)</span></li>
+		</ul>
+		<div class="info">
+			<p class="scrum-master"><span class="caption">Scrum master - </span><span class="content">Johan Tre</span></p>
+			<p class="team"><span class="caption">Team:</span> <span class="content"> Plamen, (Priyanka), Stefan, Thomas </span></p>
+		</div>
+	</slide>
+        <slide id="shebang-release">
+                <header>
+			<h3>Shebang</h3>
+			<h4>Release haystack-server, check-out enabled</h4>
+		</header>
+                <ul>
+                        <li>Check-out enabled, means loading data from M(aster)D(ata)S(tore)</li>
+                        <li>Code is adapted, but during validation, issue in coredb-main-client was found</li>
+                        <li>This issue is being handled by boat team, but needs re-validation</li>
+                        <li>Release can only be done when it works</li>
+                </ul>
+        </slide>
+        <slide id="shebang-all-content">
+                <header>
+			<h3>Shebang</h3>
+			<h4>Enable all TTOM content</h4>
+		</header>
+                <p>What is ALL content?</p>
+                <ul>
+                        <li>Must be modeled in TTOM 3.8</li>
+                        <li>Must be converted by TIF2TTOM</li>
+                </ul>
+                <p>This means: all TIF content that's also available in MN product: Core + POI + Apt + Ada</p>
+        </slide>
+        <slide id="shebang-validate">
+                <header>
+			<h3>Shebang</h3>
+			<h4>How did we validate</h4>
+		</header>
+                <p>Validated on Hakuna Matata, as that should contain all types of features</p>
+                <img src="img/haystack_validation.png" alt="Validation process" />
+        </slide>
+        <slide id="shebang-diff">
+                <header>
+			<h3>Shebang</h3>
+			<h4>Validation results</h4>
+		</header>
+                <p>All differences are explainable: not (yet) modeled in TTOM</p>
+                <img src="img/diff.png" alt="demo: diff" />
+        </slide>
+	<slide id="shebang-level2roads">
+                <header>
+			<h3>Shebang</h3>
+			<h4>Validation continued</h4>
+		</header>
+                <img src="img/level2roads.png" alt="demo: shapewriter" />
+                <p>Also extended shapewriter demo project with Level2Roads and Intersections</p>
+        </slide>
+	<slide style="background-image: url('img/team.jpg')">
+		<h1 class="center">Very Angry Birds</h1>
+	</slide>
+
+	<slide id="vab-overview">
+		<h2>User Stories Very Angry Birds</h2>
+		<ul class="stories">
+			<li class="story done">Multinet-R: Housekeeping<span class="sp">(2 SP)</span></li>
+			<li class="story not-done">Multinet-R: Hierarchical indexing<span class="sp">(2 SP)</span></li>
+    			<li class="story not-done">Multinet-R: Generate semi-enhanced routing layer<span class="sp">(3 SP)</span></li>
+			<li class="story done">Multinet-R: Validation Pilot<span class="sp">(2 SP)</span></li>
+		</ul>
+		<div class="info">
+			<p class="scrum-master"><span class="caption">Scrum master - </span><span class="content">Johan Tre</span></p>
+			<p class="team"><span class="caption">Team:</span> <span class="content">Christophe, Dominique, Elke, Peter, Pieter, Rebekka</span></p>
+		</div>
+	</slide>
+
+	<slide id="mnr-housekeeping">
+		<header>
+			<h3>Very Angry Birds</h3>
+			<h4>MNR housekeeping</h4>
+		</header>
+        <p>Because of developments in previous sprint, existing MNR prototype code could be improved:</p>
+        <ul>
+            <li>use of admin cache to fill up left/right admin references in geolink</li>
+            <li>generic code to fill up MNR name model; this can however not (yet) be used in
+            a lot of places because most names in the current TTOM model are not yet build according
+            to the 'new name model'</li>
+        </ul>
+	</slide>
+
+	<slide id="admin-index">
+		<header>
+			<h3>Very Angry Birds</h3>
+			<h4>MNR hierarchical index (without index areas)</h4>
+		</header>
+        <p>New memory optimized Admin/index CacheBuilder has been designed:</p>
+        <ul>
+            <li>strictly required attributes: id, name, official code</li>
+            <li>hierarchy (parent-child links)</li>
+        </ul>
+		<p>Relying on this hierarchy, MNR_Hierarchical_Index is partly populated:</p>
+		<ul>
+			<li>OK: Admin areas (from country up to order 9)</li>
+			<li>OK: Index areas (order 1 to 10)</li>
+			<li>OK: Built up areas</li>
+            <li class="story not-done">Not yet OK: admin places, postal districts</li>
+		</ul>
+        <p>Still missing in MNR (because not all required data available in TTOM)</p>
+        <ul>
+            <li>Some attributes (like 2 and 3 digit ISO country codes)</li>
+            <li>Links to localities (as we know them from the locality index)</li>
+        </ul>
+        <p>Next steps:</p>
+        <ul>
+            <li>Fully integrate index areas into hierarchy</li>
+            <li>Names for hierarchical index: not done because TTOM is missing correct name model implementation</li>
+            <li>Link from route network to hierarchical index</li>
+        </ul>
+	</slide>
+
+	<slide id="vab-semi-enhanced-routing-layer">
+		<header>
+			<h3>Very Angry Birds</h3>
+			<h4>MNR semi-enhanced routing</h4>
+		</header>
+		<span class="store done">Done:</span>
+		<ul>
+			<li>Low Emission (Restrictions)</li>
+			<li>Toll Road (Restrictions)</li>
+			<li>Speed Restrictions (Restrictions)</li>
+			<li>Road Furniture</li>
+		</ul>
+		<span class="store not-done">Not done:</span>
+		<ul>
+			<li>Maneuvers</li>
+			<li>Timedomains</li>
+		</ul>
+	</slide>
+
+	<slide>
+		<header>
+			<h3>Very Angry Birds</h3>
+      <h4>Validation of MNR pilot</h4>
+		</header>
+		<p>We will be delivering data at the end of the coming sprint, and needed validation capabilities to make sure we have at least some level of quality control on the output</p>
+		<p>We are not writing to a database output, so we can't do the usual query based approach. Therefore we created a mini java based way of reading an querying the data.</p>
+		<p>The validation tests:</p>
+		<ul>
+			<li>Run every time code is changed on the pilot</li>
+			<li>Check against Hakuna Matata data</li>
+			<li>Use the MNR physical model for names of tables and or fields</li>
+			<li>Break (stop compiling) if a change in the model causes the validation tests to become invalid.</li>
+		</ul>
+	</slide>
+</slides>

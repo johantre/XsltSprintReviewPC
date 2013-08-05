@@ -1,0 +1,4524 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pmff modelversion="1.1" modelname="mnshp" xmlns="http://www.tomtom.com/pmff/1.3">
+    <tables>
+        <table description="Level 2 Roads" name="2r">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="elemtyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="elemid">
+                <uuid/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnl2r_mnlis">
+                    <sourcefields>
+                        <field name="elemid"/>
+                    </sourcefields>
+                    <target constraintname="pk_is_id" tablename="is"/>
+                </foreignkey>
+                <foreignkey name="mnl2r_mnlnw">
+                    <sourcefields>
+                        <field name="elemid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 0" name="a0">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="munit">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 1" name="a1">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 2" name="a2">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 3" name="a3">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 4" name="a4">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order04">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 5" name="a5">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order04">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order05">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 6" name="a6">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order04">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order05">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order06">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 7" name="a7">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order04">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order05">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order06">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order07">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 8" name="a8">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order04">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order05">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order06">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order07">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order08">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="popclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="pop">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Admin Area Order 9" name="a9">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order02">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order03">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order04">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order05">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order06">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order07">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="order08">
+                <varchar length="11"/>
+            </field>
+            <field nullable="false" name="order09">
+                <varchar length="15"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="popclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="pop">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Address Areas" name="aa">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_aa_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Address Area Extended Attributes" name="aaea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlaaea_mnlaa">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_aa_id" tablename="aa"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Address Area Names" name="aanm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlaanm_mnlaa">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_aa_id" tablename="aa"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Address Boundary Element" name="ab">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="areid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="aretyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlab_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+                <foreignkey name="mnlab_mnlaa">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_aa_id" tablename="aa"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Adminiatrative Area Structure Definition" name="ad">
+            <field nullable="true" name="order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="admstrdef">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Administrative Area Extended Attributes" name="ae">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Area Replaced By Index Area" name="ai">
+            <field nullable="true" name="areid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="inareid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="aretyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlai_mnloa06">
+                    <sourcefields>
+                        <field name="inareid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_06" tablename="oa06"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Administrative Area Names" name="an">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Administrative Places" name="ap">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="axownid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="ownorder">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="apcode">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="popclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="pop">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_ap_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Area Structures" name="as">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="structtyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Built-up Area in Named Area" name="ba">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="areid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="aretyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlba_mnlbu">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Built-up Area Extended Attributes" name="be">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlbe_mnlbu">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Boundary Lines" name="bl">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="admbndtyp">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="admbnddc">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="geopotyp">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <primarykey name="pk_bl_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Built-up Area Names" name="bn">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlbn_mnlbu">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Built-up Areas" name="bu">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="buacode">
+                <varchar length="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_bu_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Center Point of Freeway Intersection" name="cf">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlcf_mnlis">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_is_id" tablename="is"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Conversion Records" name="cn">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="tabext">
+                <varchar length="4"/>
+            </field>
+            <field nullable="true" name="toid">
+                <uuid/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Administrative Place Extended Attributes" name="ep">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlep_mnlap">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Ferries" name="fe">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="ft">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <primarykey name="pk_fe_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Geocode" name="gc">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="fullname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="nameform">
+                <varchar length="8"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="nameprefix">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="namesuffix">
+                <varchar length="20"/>
+            </field>
+            <field nullable="true" name="namekey">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="sufdir">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="predir">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="namerank">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="pretype">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="suftype">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="l_laxord">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="r_laxord">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="l_laxonlc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="r_laxonlc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="l_laxon">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="r_laxon">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="l_axon">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="r_axon">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="l_order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="r_order00">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="l_order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="r_order01">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="l_order08">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="r_order08">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="l_pc">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="r_pc">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="l_pcext">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="r_pcext">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="l_apname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="r_apname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="l_addrid">
+                <varchar length="25"/>
+            </field>
+            <field nullable="true" name="r_addrid">
+                <varchar length="25"/>
+            </field>
+            <field nullable="true" name="l_struct">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="l_f_hsnr">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="l_f_f_hsnr">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="l_f_i">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="l_t_hsnr">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="l_t_f_hsnr">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="l_t_i">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="l_intm">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="r_struct">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="r_f_hsnr">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="r_f_f_hsnr">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="r_f_i">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="r_t_hsnr">
+                <integer width="10"/>
+            </field>
+            <field nullable="true" name="r_t_f_hsnr">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="r_t_i">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="r_intm">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="rectyp">
+                <varchar length="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlgc_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Intersections Index" name="ig">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="elemtyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="elemid">
+                <uuid/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlig_mnljc">
+                    <sourcefields>
+                        <field name="elemid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+                <foreignkey name="mnlig_mnlis">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_is_id" tablename="is"/>
+                </foreignkey>
+                <foreignkey name="mnlig_mnlnw">
+                    <sourcefields>
+                        <field name="elemid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Intermediate House Numbers" name="ih">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="hsnr">
+                <integer width="6"/>
+            </field>
+            <field nullable="true" name="f_hsnr">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="struct">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlih_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Intersections" name="is">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="inttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="fwinttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <primarykey name="pk_is_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Intersections Names" name="isnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Junction" name="jc">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="jncttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="elev">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <primarykey name="pk_jc_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Junction Extended Attributes" name="jcea">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnljcea_mnljc">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Land Cover Areas" name="lc">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="150"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="displattyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="displtyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Direction Information" name="ld">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="direction">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="validity">
+                <varchar length="30"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlld_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Lane End" name="le">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="laneend">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="validity">
+                <varchar length="30"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlle_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Direction of Traffic Flow For Lane" name="lf">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="dflane">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="vt">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="validity">
+                <varchar length="30"/>
+            </field>
+            <primarykey name="pk_lf_idseq">
+                <field name="id"/>
+                <field name="seqnr"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnllf_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Type Information" name="li">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="lanetyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="singoc">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="minvehoc">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="validity">
+                <varchar length="30"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlli_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Divider Information" name="ll">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="dividertyp">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="validity">
+                <varchar length="30"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlll_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Connectivity Information" name="ln">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="fromto">
+                <varchar length="5"/>
+            </field>
+            <field nullable="true" name="jnctid">
+                <uuid/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlln_mnljc">
+                    <sourcefields>
+                        <field name="jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Connectivity Path" name="lp">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="trpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnllp_mnlnw">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Line Structures" name="ls">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="meters">
+                <decimal precision="1" width="15"/>
+            </field>
+            <field nullable="true" name="structtyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Time domains for Lane Dependent Restrictions" name="lt">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="subseqnr">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="timedom">
+                <varchar length="254"/>
+            </field>
+            <field nullable="true" name="relres">
+                <varchar length="2"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnllt_mnlsl">
+                    <sourcefields>
+                        <field name="id"/>
+                        <field name="seqnr"/>
+                    </sourcefields>
+                    <target constraintname="pk_sl_idseqnr" tablename="sl"/>
+                </foreignkey>
+                <foreignkey name="mnllt_mnllf">
+                    <sourcefields>
+                        <field name="id"/>
+                        <field name="seqnr"/>
+                    </sourcefields>
+                    <target constraintname="pk_lf_idseq" tablename="lf"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Land Use" name="lu">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="150"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="displattyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="displtyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="class">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="import">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="acron">
+                <varchar length="20"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Land Use and Cover Extended Attributes" name="lxea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Use and Cover Names" name="lxnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Maneuvres" name="mn">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="biftyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="promantyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="jnctid">
+                <uuid/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <primarykey name="pk_mn_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlmn_mnljc">
+                    <sourcefields>
+                        <field name="jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Maneuver Path Index" name="mp">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="trpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlmp_mnlnw">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+                <foreignkey name="mnlmp_mnlmn">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_mn_id" tablename="mn"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Administrative Place Names" name="np">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlnp_mnlap">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Network" name="nw">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="ft">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="f_jnctid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="f_jncttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="t_jnctid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="t_jncttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="pj">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="meters">
+                <decimal precision="2" width="15"/>
+            </field>
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="netclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="netbclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="net2class">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="charge">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="procstat">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="fow">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="sliprd">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="freeway">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="backrd">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="tollrd">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="rdcond">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="stubble">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="privaterd">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="constatus">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="oneway">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="f_bp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="t_bp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="f_elev">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="t_elev">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="kph">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="minutes">
+                <decimal precision="3" width="7"/>
+            </field>
+            <field nullable="true" name="posaccur">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="carriage">
+                <varchar length="1"/>
+            </field>
+            <field nullable="true" name="lanes">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="ramp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="ada">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="trans">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="dynspeed">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="speedcat">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="nthrutraf">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="roughrd">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <primarykey name="pk_nw_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlnw_mnljc_t">
+                    <sourcefields>
+                        <field name="t_jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+                <foreignkey name="mnlnw_mnljc_f">
+                    <sourcefields>
+                        <field name="f_jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Network Extended Attributes" name="nwea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlnwea_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 1" name="oa01">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_oa_01">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 2" name="oa02">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_oa_02">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 3" name="oa03">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_oa_03">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 4" name="oa04">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_oa_04">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 5" name="oa05">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 6" name="oa06">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_oa_06">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 7" name="oa07">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 8" name="oa08">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 9" name="oa09">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 10" name="oa10">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas 11" name="oa11">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="code">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="urbanarea">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="indorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citycenter">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas Extended Attributes" name="oaea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Other Areas Names" name="oanm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Official Languages" name="ol">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="axorder">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="ol">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Postal Code Information on Transportation Elements" name="pc">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="postaltyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="postcode">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpc_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Postal Code Name Information" name="pcnm">
+            <field nullable="true" name="postcode">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="cntcd">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="cntnum">
+                <integer width="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Postal District" name="pd">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="postcode">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <primarykey name="pk_pd_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Postal District Extended Attributes" name="pdea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpdea_mnlpd">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_pd_id" tablename="pd"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Postal District Names" name="pdnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="postcode">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpdnm_mnlpd">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_pd_id" tablename="pd"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="POI at Junction Relation" name="pe">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="poiid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="jnctid">
+                <uuid/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpe_mnljc">
+                    <sourcefields>
+                        <field name="jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Points of Interest" name="pi">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="import">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="arnamelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="200"/>
+            </field>
+            <field nullable="true" name="stname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="stnamelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="hsnum">
+                <varchar length="15"/>
+            </field>
+            <field nullable="true" name="postcode">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="munid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="muncd">
+                <varchar length="11"/>
+            </field>
+            <field nullable="true" name="munname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="buaname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="telnum">
+                <varchar length="25"/>
+            </field>
+            <field nullable="true" name="faxnum">
+                <varchar length="25"/>
+            </field>
+            <field nullable="true" name="email">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="http">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="compname">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="cltrpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="relpos">
+                <decimal precision="3" width="6"/>
+            </field>
+            <field nullable="true" name="extpoiid">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="addrpid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="subcat">
+                <integer width="7"/>
+            </field>
+            <field nullable="false" name="gal">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="posaccur">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <primarykey name="pk_pi_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlpi_mnlnw">
+                    <sourcefields>
+                        <field name="cltrpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Extended POI Attributes" name="piea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="subcat">
+                <integer width="7"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpiea_mnlpi">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_pi_id" tablename="pi"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="POI Names" name="pinm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="200"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="notation">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="subcat">
+                <integer width="7"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpinm_mnlpi">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_pi_id" tablename="pi"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Extended Attribute Set table for Composite Attributes" name="pias">
+            <field nullable="false" name="ID">
+                <uuid/>
+            </field>
+            <field nullable="false" name="FEATTYP">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="ATT_ID">
+                <uuid/>
+            </field>
+            <field nullable="false" name="ATT_SEQ">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="ATTCMP_ID">
+                <uuid/>
+            </field>
+            <field nullable="true" name="ATTPCMP_ID">
+                <uuid/>
+            </field>
+            <field nullable="true" name="ATT_HIER">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="ATT_CODE">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="ATTVAL_ID">
+                <uuid/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Extended Attribute Value table for Composite Attributes" name="piav">
+            <field nullable="false" name="ATTVAL_ID">
+                <uuid/>
+            </field>
+            <field nullable="false" name="ATTVAL_SEQ">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="ATTVAL_TYP">
+                <varchar length="1"/>
+            </field>
+            <field nullable="false" name="ATT_VALUE">
+                <varchar length="70"/>
+            </field>
+            <field nullable="false" name="NAMELC">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Lane Dependent Toll Payment Method" name="pm">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="false" name="payment">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="validity">
+                <varchar length="30"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpm_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Place Within Place Relation" name="pp">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="pltyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="plid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="belpltyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="belplid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="class">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpp_mnlbu_bel">
+                    <sourcefields>
+                        <field name="belplid"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+                <foreignkey name="mnlpp_mnlbu">
+                    <sourcefields>
+                        <field name="plid"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+                <foreignkey name="mnlpp_mnlap">
+                    <sourcefields>
+                        <field name="plid"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+                <foreignkey name="mnlpp_mnlap_bel">
+                    <sourcefields>
+                        <field name="belplid"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+                <foreignkey name="mnlpp_mnloa06_bel">
+                    <sourcefields>
+                        <field name="belplid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_06" tablename="oa06"/>
+                </foreignkey>
+                <foreignkey name="mnlpp_mnloa06">
+                    <sourcefields>
+                        <field name="plid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_06" tablename="oa06"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Service Belonging to Service Relation" name="pr">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="poiid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="poityp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="belpoiid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="belpoityp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="entrytyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="subcat">
+                <integer width="7"/>
+            </field>
+            <field nullable="true" name="belsubcat">
+                <integer width="7"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlpr_mnlbelsm">
+                    <sourcefields>
+                        <field name="belpoiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_sm_id" tablename="sm"/>
+                </foreignkey>
+                <foreignkey name="mnlpr_mnlbelpi">
+                    <sourcefields>
+                        <field name="belpoiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_pi_id" tablename="pi"/>
+                </foreignkey>
+                <foreignkey name="mnlpr_mnlpi">
+                    <sourcefields>
+                        <field name="poiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_pi_id" tablename="pi"/>
+                </foreignkey>
+                <foreignkey name="mnlpr_mnlsm">
+                    <sourcefields>
+                        <field name="poiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_sm_id" tablename="sm"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Point Structures" name="ps">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="structtyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="TMC Information on Road Element" name="rd">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="rdstmc">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="tmcpathid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="tmcmpathid">
+                <varchar length="20"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlrd_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+                <foreignkey name="mnlrd_mnltp">
+                    <sourcefields>
+                        <field name="tmcpathid"/>
+                    </sourcefields>
+                    <target constraintname="pk_tp_id" tablename="tp"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Route Numbers" name="rn">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="routenum">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="routenam">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="nameprefix">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="namekey">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="namesuffix">
+                <varchar length="20"/>
+            </field>
+            <field nullable="true" name="extrtnam">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="extprefix">
+                <varchar length="30"/>
+            </field>
+            <field nullable="true" name="extkey">
+                <varchar length="50"/>
+            </field>
+            <field nullable="true" name="extsuffix">
+                <varchar length="20"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rteprior">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="sufdir">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="predir">
+                <varchar length="10"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlrn_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Railways" name="rr">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="f_jnctid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="f_jncttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="t_jnctid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="t_jncttyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="meters">
+                <decimal precision="1" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="f_elev">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="t_elev">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="dispclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <primarykey name="pk_rr_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlrr_mnljc_fjnc">
+                    <sourcefields>
+                        <field name="f_jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+                <foreignkey name="mnlrr_mnljc_tjnct">
+                    <sourcefields>
+                        <field name="t_jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Railways Extended Attributes" name="rrea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlrrea_mnlrr">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_rr_id" tablename="rr"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Railways Names" name="rrnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlrrnm_mnlrr">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_rr_id" tablename="rr"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Restrictions" name="rs">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="false" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="dir_pos">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="restrtyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="restrval">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="vt">
+                <integer width="2"/>
+            </field>
+            <primarykey name="pk_rs_idseqnr">
+                <field name="id"/>
+                <field name="seqnr"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlrs_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+                <foreignkey name="mnlrs_mnlmn">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_mn_id" tablename="mn"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Service in Named Area" name="sa">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="areid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="aretyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="subcat">
+                <integer width="7"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlsa_mnloa06">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_06" tablename="oa06"/>
+                </foreignkey>
+                <foreignkey name="mnlsa_mnlbu">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+                <foreignkey name="mnlsa_mnlap">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Official Street Codes" name="sc">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="osc">
+                <varchar length="20"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlsc_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Structure Transportation Elements Relation" name="se">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="relnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="featid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="elev">
+                <integer width="2"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlse_mnlnw">
+                    <sourcefields>
+                        <field name="featid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+                <foreignkey name="mnlse_mnljc">
+                    <sourcefields>
+                        <field name="featid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+                <foreignkey name="mnlse_mnlrr">
+                    <sourcefields>
+                        <field name="featid"/>
+                    </sourcefields>
+                    <target constraintname="pk_rr_id" tablename="rr"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Signpost" name="sg">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="jnctid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="colinf">
+                <integer width="10"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <primarykey name="pk_sg_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlsg_mnljc">
+                    <sourcefields>
+                        <field name="jnctid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Signpost Information" name="si">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="destseq">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="infotyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="rnpart">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="txtcont">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="txtcontlc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="contyp">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="ambig">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlsi_mnlsg">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_sg_id" tablename="sg"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Speed Restriction Per Lane" name="sl">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="speed">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="speedtyp">
+                <varchar length="1"/>
+            </field>
+            <field nullable="true" name="valdir">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="vt">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="verified">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="validity">
+                <varchar length="30"/>
+            </field>
+            <primarykey name="pk_sl_idseqnr">
+                <field name="id"/>
+                <field name="seqnr"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlsl_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Center of Settlements" name="sm">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="arnamelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="adminclass">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="dispclass">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="citytyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="artificial">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="axorder">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="axid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="axcd">
+                <varchar length="15"/>
+            </field>
+            <field nullable="true" name="axname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="apid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="apcd">
+                <varchar length="15"/>
+            </field>
+            <field nullable="true" name="apname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="postcode">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="buaid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="buaname">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="cltrpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="relpos">
+                <decimal precision="3" width="6"/>
+            </field>
+            <field nullable="true" name="gal">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="posaccur">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="addrpid">
+                <uuid/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <primarykey name="pk_sm_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlsm_mnlbu">
+                    <sourcefields>
+                        <field name="buaid"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+                <foreignkey name="mnlsm_mnlap">
+                    <sourcefields>
+                        <field name="apid"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+                <foreignkey name="mnlsm_mnlnw">
+                    <sourcefields>
+                        <field name="cltrpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Center of Settlements Extended Attributes" name="smea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlsmea_mnlsm">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_sm_id" tablename="sm"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Center of Settlements Names" name="smnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlsmnm_mnlsm">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_sm_id" tablename="sm"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Signpost Path Index" name="sp">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="trpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlsp_mnlsg">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_sg_id" tablename="sg"/>
+                </foreignkey>
+                <foreignkey name="mnlsp_mnlnw">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Speed Restrictions" name="sr">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="speed">
+                <integer width="3"/>
+            </field>
+            <field nullable="true" name="speedtyp">
+                <varchar length="1"/>
+            </field>
+            <field nullable="true" name="valdir">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="vt">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="verified">
+                <integer width="1"/>
+            </field>
+            <primarykey name="pk_sr_idseqnr">
+                <field name="id"/>
+                <field name="seqnr"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="mnlsr_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Speed Restriction Time Domains" name="st">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="subseqnr">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="timedom">
+                <varchar length="254"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlst_mnlsr">
+                    <sourcefields>
+                        <field name="id"/>
+                        <field name="seqnr"/>
+                    </sourcefields>
+                    <target constraintname="pk_sr_idseqnr" tablename="sr"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Structure Extended Attributes" name="sxea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Structure Names" name="sxnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Transportation Element in Area" name="ta">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="areid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="aretyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlta_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnlap">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_ap_id" tablename="ap"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnlbu">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_bu_id" tablename="bu"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnloa03">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_03" tablename="oa03"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnloa02">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_02" tablename="oa02"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnloa04">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_04" tablename="oa04"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnloa06">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_06" tablename="oa06"/>
+                </foreignkey>
+                <foreignkey name="mnlta_mnloa01">
+                    <sourcefields>
+                        <field name="areid"/>
+                    </sourcefields>
+                    <target constraintname="pk_oa_01" tablename="oa01"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="TMC Location Index" name="tc">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="trpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnltc_mnljc">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_jc_id" tablename="jc"/>
+                </foreignkey>
+                <foreignkey name="mnltc_mnltl">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_tl_id" tablename="tl"/>
+                </foreignkey>
+                <foreignkey name="mnltc_mnlnw">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Time Domains" name="td">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="subseqnr">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="timedom">
+                <varchar length="254"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnltd_mnlrs">
+                    <sourcefields>
+                        <field name="id"/>
+                        <field name="seqnr"/>
+                    </sourcefields>
+                    <target constraintname="pk_rs_idseqnr" tablename="rs"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="TMC Path Index" name="tg">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="trpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpeltyp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnltg_mnltp">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_tp_id" tablename="tp"/>
+                </foreignkey>
+                <foreignkey name="mnltg_mnlnw">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="TMC Path Location Index" name="ti">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="seqnr">
+                <integer width="5"/>
+            </field>
+            <field nullable="true" name="locid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlti_mnltl">
+                    <sourcefields>
+                        <field name="locid"/>
+                    </sourcefields>
+                    <target constraintname="pk_tl_id" tablename="tl"/>
+                </foreignkey>
+                <foreignkey name="mnti_mnltp">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_tp_id" tablename="tp"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="TMC Location" name="tl">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="tmclocref">
+                <varchar length="8"/>
+            </field>
+            <field nullable="true" name="tmclstver">
+                <varchar length="10"/>
+            </field>
+            <primarykey name="pk_tl_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Tourist Roads" name="to">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="namtyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="roadtyp">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlto_mnlnw">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="TMC Path" name="tp">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="tmcinfo">
+                <varchar length="21"/>
+            </field>
+            <field nullable="true" name="tmctab">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="tmclstver">
+                <varchar length="10"/>
+            </field>
+            <field nullable="true" name="tmcmpathid">
+                <varchar length="20"/>
+            </field>
+            <field nullable="true" name="mpseqnr">
+                <integer width="5"/>
+            </field>
+            <primarykey name="pk_tp_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Traffic Sign" name="ts">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="signtyp">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="position">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="signclass">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <primarykey name="pk_ts_id">
+                <field name="id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Traffic Sign along Road Element" name="tt">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="poiid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="trpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="valdir">
+                <integer width="1"/>
+            </field>
+            <field nullable="true" name="position">
+                <integer width="1"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnltt_mnlts">
+                    <sourcefields>
+                        <field name="poiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_ts_id" tablename="ts"/>
+                </foreignkey>
+                <foreignkey name="mnltt_mnlnw">
+                    <sourcefields>
+                        <field name="trpelid"/>
+                    </sourcefields>
+                    <target constraintname="pk_nw_id" tablename="nw"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Vicinity Relationship" name="vr">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="poiid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="poityp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="belpoiid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="belpoityp">
+                <integer width="4"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlvr_mnlsm">
+                    <sourcefields>
+                        <field name="belpoiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_sm_id" tablename="sm"/>
+                </foreignkey>
+                <foreignkey name="mnlvr_mnlpi">
+                    <sourcefields>
+                        <field name="poiid"/>
+                    </sourcefields>
+                    <target constraintname="pk_pi_id" tablename="pi"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Water Areas" name="wa">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="typ">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="featarea">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="featperim">
+                <decimal precision="0" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="dispclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiPolygon"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Water Lines" name="wl">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="typ">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="meters">
+                <decimal precision="1" width="15"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="70"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="dispclass">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Water Extended Attributes" name="wxea">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="atttyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="attvalue">
+                <varchar length="70"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Water Names" name="wxnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="XML Object References" name="xo">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="xoid">
+                <varchar length="100"/>
+            </field>
+            <foreignkeys>
+                <foreignkey name="mnlxo_mnlpi">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_pi_id" tablename="pi"/>
+                </foreignkey>
+                <foreignkey name="mnlxo_mnlmn">
+                    <sourcefields>
+                        <field name="id"/>
+                    </sourcefields>
+                    <target constraintname="pk_mn_id" tablename="mn"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 0" name="00">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 1" name="01">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 2" name="02">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 3" name="03">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 4" name="04">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 5" name="05">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 6" name="06">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 7" name="07">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Street Layer 8" name="08">
+            <field nullable="true" name="frc">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="name">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="false" name="nametyp">
+                <integer width="3"/>
+            </field>
+            <field nullable="false" name="shieldnum">
+                <varchar length="10"/>
+            </field>
+            <field nullable="false" name="rtetyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="rtedir">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="rtedirvd">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="partstruc">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="MultiLine"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Extended Attributes for AX" name="axas">
+            <field nullable="false" name="id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="false" name="att_id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="att_seq">
+                <integer width="2"/>
+            </field>
+            <field nullable="true" name="attcmp_id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="attpcmp_id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="att_hier">
+                <varchar length="100"/>
+            </field>
+            <field nullable="false" name="att_code">
+                <varchar length="2"/>
+            </field>
+            <field nullable="false" name="attval_id">
+                <uuid/>
+            </field>
+            <primarykey name="uk_axas">
+                <field name="attval_id"/>
+            </primarykey>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Extended Attributes for AX" name="axav">
+            <field nullable="false" name="attval_id">
+                <uuid/>
+            </field>
+            <field nullable="false" name="attval_seq">
+                <integer width="2"/>
+            </field>
+            <field nullable="false" name="attval_typ">
+                <varchar length="1"/>
+            </field>
+            <field nullable="false" name="att_value">
+                <varchar length="70"/>
+            </field>
+            <field nullable="false" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <primarykey name="pk_axav">
+                <field name="attval_id"/>
+                <field name="attval_seq"/>
+            </primarykey>
+            <foreignkeys>
+                <foreignkey name="axav_axas">
+                    <sourcefields>
+                        <field name="attval_id"/>
+                    </sourcefields>
+                    <target constraintname="uk_axas" tablename="axas"/>
+                </foreignkey>
+            </foreignkeys>
+            <uniquenesses/>
+        </table>
+        <table description="Reference Point" name="rf">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="200"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <field nullable="true" name="xoid">
+                <varchar length="100"/>
+            </field>
+            <field nullable="true" name="cltrpelid">
+                <uuid/>
+            </field>
+            <field nullable="true" name="relpos">
+                <decimal precision="3" width="6"/>
+            </field>
+            <field nullable="true" name="sol">
+                <integer width="1"/>
+            </field>
+            <field nullable="false" name="geom">
+                <geometry type="Point"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+        <table description="Reference Point Names" name="rfnm">
+            <field nullable="true" name="id">
+                <uuid/>
+            </field>
+            <field nullable="true" name="feattyp">
+                <integer width="4"/>
+            </field>
+            <field nullable="true" name="nametyp">
+                <varchar length="2"/>
+            </field>
+            <field nullable="true" name="name">
+                <varchar length="200"/>
+            </field>
+            <field nullable="true" name="namelc">
+                <varchar length="3"/>
+            </field>
+            <foreignkeys/>
+            <uniquenesses/>
+        </table>
+    </tables>
+    <enumerations/>
+</pmff>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+
+<sprintreview id="07">
+    <team name="BigBang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Peter Huysman</member>
+        <member>Thomas Martens</member>
+        <member>Frankie Bollaert</member>
+        <member>Stefan De Smit</member>
+        <member>Priyanka Sharma</member>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member>Arkadiusz Wysocki ('Arek')</member>
+        <member>Pawel Wosiak</member>
+        <member>Marcin Zimniak</member>
+        <member>Michal Kozlowski</member>
+        <member>Pawel Jesak</member>
+        <member>Rafal Wojaczynski</member>
+    </team>
+    <slides>
+
+    <slide id="bigbang-technical-suite">
+        <header>
+            <h3>Technical suite graph</h3>
+        </header>
+        <img src="img/Technical_Suite_1.0.png" alt="demo: diff"/>
+    </slide>
+
+    <slide>
+        <header class="story done" points="5">
+            <h3 class="story done">Load Archive POI to vPDS</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li></li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li></li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3 class="story done">Merge Sprint 6 to mainline</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Fix FAT tests</li>
+            <li>Merge all work related to TTOM model 3_13 into mainline </li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Coredb code updated to TTOM 3_13 and ready to work for other teams</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3 class="story done">Support L2</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li></li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li></li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3 class="story done">Finish MS1: create TT3.14 w fixes</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Update all coredb components to be inline with TTOM 3_14 model:</li>
+			<ul>
+				<li>coredb model dependent components</li>
+				<li>csv creator</li>
+			</ul>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>updated all dependencies to model 3_14</li>
+			<li>fixed all compilation problems</li>
+			<li>junits are passing</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="1">
+            <h3 class="story done">Merge Sprint 7 to mainline</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+            <li>Fix FAT tests</li>
+            <li>Merge all work related to TTOM model 3_14 into mainline </li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Coredb code updated to TTOM 3_14 and ready to work for other teams</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="8">
+            <h3 class="story done">Make sure getFeatures call works on dense tiles</h3>
+        </header>
+        <h5>Goals:</h5>
+        <ul>
+			<li>Eliminate problem "400 Bad request returned" on getFeatures call on dense tiles</li>
+		</ul>
+        <h5>Problem description:</h5>
+        <ul>		
+            <li>In TTOM 3_13 there is more types of features than in TTOM 3_12</li>
+			<li>Problem occured when getting features specified types (eg. all except area features)</li>
+			<li>Then Http request URL was too long for Tomcat default settings (exceeded 8KB)</li>
+        </ul>
+        <h5>Value delivered:</h5>
+        <ul>
+            <li>Using GET method for short URLs</li>
+			<li>Otherwise using POST method, which can transport large number number of parameters</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header class="story done" points="6">
+            <h3> BUG fixes &amp; Support</h3>
+        </header>
+        <ul>
+            <li class="story done">(BUG) maneuver geometry after tile = before tile  (3.14) (SP 5) </li>
+			<li class="story done">(BUG) handle empty TIF Date in SppImport step (SP 1) </li>
+            <li class="story not-done">none, we are the best :) (SP 0) </li>
+        </ul>
+    </slide>
+
+    </slides>
+</sprintreview>

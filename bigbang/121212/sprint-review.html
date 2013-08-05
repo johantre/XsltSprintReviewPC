@@ -1,0 +1,197 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title></title>
+<link rel="stylesheet" href="../deck/core/deck.core.css">
+<link rel="stylesheet" href="../deck/extensions/goto/deck.goto.css">
+<link rel="stylesheet" href="../deck/extensions/menu/deck.menu.css">
+<link rel="stylesheet" href="../deck/extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" href="../deck/extensions/status/deck.status.css">
+<link rel="stylesheet" href="../deck/extensions/hash/deck.hash.css">
+<link rel="stylesheet" href="../deck/extensions/scale/deck.scale.css">
+<link rel="stylesheet" href="../deck/themes/style/tomtom.css">
+<link rel="stylesheet" href="../deck/themes/transition/horizontal-slide.css">
+<link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
+<script src="../deck/lib/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+<section class="slide" id="intro" style="background-image: url('../deck/slides/photo2.jpg')"><h1 class="center">Sprint Review</h1></section><section class="slide" id="" style="background-image: url('../deck/slides/team2.jpg')"><h1 class="center">BigBang</h1></section><section class="slide" id="bigbang-introduction" style=""><header>
+          <h3>BigBang Mission Statement: TS 1.0</h3>
+          <h4>Introduction 1/2</h4>
+            <h5>Team setup: Advantages</h5>
+        </header><ul class="stories">
+          <li class="story done">Common purpose</li>
+          <li class="story done">Inter-department communication</li>
+          <li class="story done">Broad-band communication</li>
+          <li class="story done">Strong diversity</li>
+          <li class="story done">Real knowledge sharing</li>
+          <li class="story done">Dedicated in-sprint testing</li>
+          <li class="story done">Dedicated specs</li>
+        </ul></section><section class="slide" id="bigbang-introduction" style=""><header>
+          <h3>BigBang Mission Statement: TS 1.0</h3>
+          <h4>Introduction 2/2 </h4>
+            <h5>Team setup: Challenges</h5>
+        </header><ul class="stories">
+          <li class="story done">Multi disciplinary team</li>
+          <li class="story done">Need for direct collaboration: Specs, CoreDB, CDP</li>
+          <li class="story done">First sprint collaborating together</li>
+          <li class="story done">Predictability = Unknown. No historical data</li>
+          <li class="story done">Cultural Differences Departments</li>
+    </ul></section><section class="slide" id="bigbang-technical-suite" style=""><header>
+      <h3>Technical suite graph</h3>
+    </header><img src="img/Overview.jpg" alt="demo: diff"></section><section class="slide" id="bigbang-technical-suite" style=""><header>
+      <h3>Technical suite graph</h3>
+    </header><img src="img/CPP4_0_Wave1.jpg" alt="demo: diff"></section><section class="slide" id="bigbang-overview" style=""><h2>User Stories BigBang</h2>
+<ul class="stories">
+      <li class="story done">TTOM 3.8 <span class="sp">(8 SP)</span>
+</li>
+      <li class="story not-done">SUBSUB Model (Model only) <span class="sp">(5 SP)</span>
+</li>
+      <li class="story not-done">Boosting cleanup <span class="sp">(8 SP)</span>
+</li>
+      <li class="story not-done">Merging Road Elements <span class="sp">(8 SP)</span>
+</li>
+      <li class="story not-done">Java Naming <span class="sp">(8 SP)</span>
+</li>
+	  <li class="story done">Support <span class="sp">(1 FTE)</span>
+</li>
+    </ul>
+<div class="info">
+      <p class="scrum-master">
+        <span class="caption">Scrum master - </span>
+        <span class="content">Johan Tré</span>
+      </p>
+      <p class="team">
+        <span class="caption">Team:</span>
+        <span class="content"> Peter, Thomas, Frankie, Priyanka, Stefan, Mark, Charlotte, Veerle, Arek, Pawel, Marcin, Michal, Pawel </span>
+      </p>
+    </div></section><section class="slide" id="bigbang-ttom-3-8" style=""><header>
+      <h3>BigBang</h3>
+      <h4>TTOM 3.8</h4>
+    </header><h5>Transfer Maneuvers from Relationship to Complex features</h5>
+<ul>
+		<li>TIF2TTOM: put maneuvers in cmp table </li>
+        <li>Geometry changes </li>
+        <ul>
+            <li>Geometry collection of merged lines and decision point</li>
+            <li>Grid spatially in a way which allows exact reproduction after write/read cycle</li>
+        </ul>
+    </ul>
+<h5>Still in progress</h5>
+<ul>
+        <li>Release Tif2TTom component</li>
+        <li>Validation</li>
+            <ul>
+                <li>Test read after TIF2TTOM step</li>
+                <li>Test round trip including coredb</li>
+                <li>JBehave</li>
+            </ul>
+    </ul>
+<h5><a href="http://%2010.18.8.48:62080/cartopia">Cartopia</a></h5></section><section class="slide" id="bigbang-graph-technical-suite" style=""><header>
+      <h3>BigBang</h3>
+	  <img src="img/Technical_Suite_1.0.png" alt="demo: diff">
+    </header></section><section class="slide" id="bigbang-graph-test-approach" style=""><header>
+      <h3>BigBang</h3>
+	  <img src="img/testApproach.jpg" alt="demo: diff">
+    </header></section><section class="slide" id="bigbang-subsub-model" style=""><header>
+      <h3>BigBang</h3>
+      <h4>SUBSUB Model</h4>
+    </header><h5>Goals:</h5>
+<ul>
+        <li>Create separate name model </li>
+        <li>Enables reuse of the name model</li>
+        <li>Enables migration to new name model</li>
+    </ul>
+<h5>Done:</h5>
+<ul>
+      <li>Specs are done: released TTom 3.9 </li>
+      <li>PDS + PDS api </li>
+      <li>Generate allcodes from modeltools directly (bye bye PControl) </li>
+    </ul>
+<h5>WIP:</h5>
+<ul>
+        <li>Release Tif2TTom component</li>
+		<li>Release PDS + PDS api</li>
+        <li>MDS + MDS api</li>
+        <li>Test round trip + FAT </li>
+    </ul></section><section class="slide" id="bigbang-boosting-cleanup" style=""><header>
+      <h3>BigBang</h3>
+      <h4>Boosting cleanup</h4>
+    </header><h5>Enable clean usage of TTom-3.8 </h5>
+<table style="align:center; border: 1px solid grey">
+    <tr style="border: 1px solid grey"> <th>Model</th> <th>Feature</th>
+</tr>
+    <tr> <td>TTOM Core</td> <td style="padding-left: 1em;">RoadElement </td> </tr>
+    <tr> <td>TTOM Ada </td> <td style="padding-left: 1em;">GradientInfo</td> </tr>
+    <tr> <td>TTOM</td> <td style="padding-left: 1em;">RoadElement.GradientInfo</td> </tr>
+    </table>
+<br><h5>Done:</h5>
+<ul>
+          <li>update csvcreator with new serialization </li>
+          <li>test cases for serialization of each particular object type </li>
+          <li>update serialization inside DBReader </li>
+          <li>update serialization inside VMDS related components </li>
+          <li>removed "boosting" hack from creating attributes </li>
+    </ul>
+<h5>WIP:</h5>
+<ul>
+          <li> investigate problems during FAT execution </li>
+    </ul></section><section class="slide" id="bigbang-move-relation-to-complex" style=""><header>
+      <h3>BigBang</h3>
+      <h4>Merging Road Elements</h4>
+    </header><h5>TTom Read API must provide merged roads to our customers</h5>
+<h6>Work done :</h6>
+<ul>
+		<li>Enabled line merging in TIF2TTOM</li>
+        <li>Release Tif2TTom component</li>
+	</ul>
+<h6>WIP:</h6>
+<ul>
+        <li>Still todo: Integration tests</li>
+    </ul></section><section class="slide" id="bigbang-java-naming" style=""><header>
+      <h3>BigBang</h3>
+      <h4>Java Naming</h4>
+    </header><h5>Make the java Class and variable names human readable.</h5>
+<ul>    
+        <li> <a href="http://vos.intra.local/display/CPEGMS/Modeling+Guidelines+and+Conventions">http://vos.intra.local/display/CPEGMS/Modeling+Guidelines+and+Conventions</a> </li>
+        <li>Conventions and guidelines on Names:
+        <ul>
+            <li><a href="http://vos.intra.local/display/CPEGMS/Class">http://vos.intra.local/display/CPEGMS/Class</a></li>
+            <li><a href="http://vos.intra.local/display/CPEGMS/Class+Attribute">http://vos.intra.local/display/CPEGMS/Class+Attribute</a></li>
+        </ul>
+        </li>
+    </ul>
+<h5>Work done:</h5>
+<ul>
+        <li>Analysed all TTOM models</li>
+        <li>Listed all impacted names</li>
+    </ul>
+<h5>WIP:</h5>
+<ul>
+        <li>Adapting models</li>
+    </ul>
+<h5>Still to do:</h5>
+<ul>
+        <li>Adapt all software components</li>
+	</ul></section><section class="slide" id="bigbang-support" style=""><header>
+      <h3>BigBang</h3>
+      <h4>Support: 2 FTE's work to resolve bugs </h4>
+    </header><ul>
+		<li>Clear out shadow bugs</li>
+		<li>Issue clusters addressed to ELT for CPP 3.8 acceptance run</li>
+      </ul></section><section class="slide" style="background-image: url('../deck/slides/confused-chan.jpg')"><h1 class="center">Any Questions?</h1></section><section class="slide" style="background-image: url('../deck/slides/thank-you.jpg')"><h1 class="center">Thank you!</h1></section><a href="#" class="deck-prev-link" title="Previous">←</a><a href="#" class="deck-next-link" title="Next">→</a><p class="deck-status"><span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span></p>
+<form action="." method="get" class="goto-form">
+<label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go">
+</form>
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a><script src="../deck/lib/jquery-1.7.2.min.js"></script><script src="../deck/lib/jquery-fullscreen.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/extensions/hash/deck.hash.js"></script><script src="../deck/extensions/menu/deck.menu.js"></script><script src="../deck/extensions/goto/deck.goto.js"></script><script src="../deck/extensions/status/deck.status.js"></script><script src="../deck/extensions/navigation/deck.navigation.js"></script><script src="../deck/extensions/scale/deck.scale.js"></script><script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

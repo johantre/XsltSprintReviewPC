@@ -1,0 +1,480 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title>Sprint review Pandora</title>
+<link rel="stylesheet" href="../deck/core/deck.core.css">
+<link rel="stylesheet" href="../deck/extensions/goto/deck.goto.css">
+<link rel="stylesheet" href="../deck/extensions/menu/deck.menu.css">
+<link rel="stylesheet" href="../deck/extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" href="../deck/extensions/status/deck.status.css">
+<link rel="stylesheet" href="../deck/extensions/hash/deck.hash.css">
+<link rel="stylesheet" href="../deck/extensions/scale/deck.scale.css">
+<link rel="stylesheet" href="../deck/themes/style/tomtom.css">
+<link rel="stylesheet" href="../deck/themes/transition/horizontal-slide.css">
+<link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
+<script src="../deck/lib/modernizr.custom.js"></script><script src="http://openlayers.org/api/OpenLayers.js"></script><link rel="stylesheet" href="extra/mnr-demo.css">
+</head>
+<body class="deck-container">
+<section class="slide" id="intro" style="background-image: url('../deck/slides/photo.jpg')"><h1 class="center">Sprint Review</h1></section><section class="slide " id="" style="background-image: url('./img/pandora.png')"><h1 class="center" style="important;color:black;">Pandora</h1></section><section class="slide " id="goal" style=""><header>
+            <h3>Sprint goal</h3>
+        </header><blockquote style="font-size:38px">
+            <ul>
+                <li>Deliver a third Multinet-R product sample with:</li>
+                <ul>
+                    <li>fixes based on customer feedback from the previous sample</li>
+                </ul>
+                <li>Create the first MNR diff prototype (delta records).</li>
+                <li>Use available CDP and physical model infrastructure to build another product than MNR.</li>
+            </ul>
+            <p><cite style="float: right">Our product owner</cite></p>
+        </blockquote></section><section class="slide " id="stories" style=""><header>
+            <h3>Sprint overview - User stories</h3>
+        </header><p>The sprint started on the <strong>6th of February</strong> and ended on the <strong>4th of March 2013</strong>.</p>
+<div class="stories">
+            <table>
+                <tr>
+                    <th>Epic</th>
+<th>Story</th>
+<th>SP</th>
+                </tr>
+                <tr class="epic">
+<td rowspan="3">MNR Infrastructure</td>
+                    <td class="done">Convert normalized sequence files to CSV files</td>
+<td>2</td>
+                </tr>
+                <tr>
+                    <td class="not-done">Create nightly build chains for UC3 and D64</td>
+<td>2</td>
+                </tr>
+                <tr>
+                    <td class="not-done">Set up and performance testing of development environment</td>
+<td>2</td>
+                </tr>
+                <tr class="epic">
+<td rowspan="2">MNR Maintenance</td>
+                    <td class="done">Rework and fix feedback from prototype 2</td>
+<td>2</td>
+</tr>
+                <tr>
+<td class="not-done">Create third pilot release package</td>
+<td>1</td>
+</tr>
+                <tr class="epic">
+<td rowspan="1">Machine readable specs</td>
+                    <td class="done">Automate releasing of new physical models; from xmi to model project</td>
+<td>2</td>
+</tr>
+                <tr class="epic">
+<td rowspan="1">MNR Layer</td>
+                    <td class="done">Populate MN Shape layers</td>
+<td>5</td>
+</tr>
+                <tr class="epic">
+<td rowspan="1">MNR Loader</td>
+                    <td class="done">Build SQLite loader</td>
+<td>3</td>
+</tr>
+                <tr class="epic">
+<td rowspan="1">MNR Record Updates</td>
+                    <td class="done">Build product differs</td>
+<td>5</td>
+</tr>
+                
+            </table>
+        </div>
+<div class="info">
+            <p class="scrum-master"><span class="caption">Product owner: </span><span class="content">Timothy Grymonpon</span></p>
+            <p class="scrum-master"><span class="caption">Scrum master: </span><span class="content">Timothy Grymonpon</span></p>
+            <p class="team"><span class="caption">Team:</span> <span class="content">Christophe, Dominique, Jan, Jelle, Kevin, Pieter, Plamen, Rebekka</span></p>
+        </div></section><section class="slide overview" id="" style=""><header>
+            <h3>Process overview</h3>
+            <h4>Next up: MNR Infrastructure</h4>
+        </header><img src="img/mnr_and_shape_converter.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Infrastructure</h3>
+            <h4>Create nightly build chains for UC3 and D64</h4>
+        </header><p>All build plans are visible in the <a href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/MN-R" target="_blank">MN-R view on Jenkins</a>:</p>
+<ul>
+            <li>Periodic build plan was already set up (Hakuna Matata)</li>
+            <li class="done">Create nightly-build plan (D64, UC3)</li>
+            <li class="done">Create weekly-build plan (DEU)</li>
+            <li class="done">Create statistics</li>
+            <li class="not-done">Setup traffic light to indicate build success</li>
+        </ul>
+<p>Next step: stop using jenkins as pcontrol replacement...</p>
+<ul>
+            <li>project dependencies in Jenkins are hard to see/maintain</li>
+            <li>Jenkins is a tool for helping developers (not an operational processing tool)</li>
+            <li>required to have the same reusable process template for PB/NB/WB/operations</li>
+        </ul>
+<div style="float: right; clear: none">
+            <img src="img/jenkins.png">
+        </div></section><section class="slide " id="" style=""><header>
+            <h3>MNR Infrastructure</h3>
+            <h4>Set up and performance testing of development environment</h4>
+        </header><ul>
+            <li class="done">Load DEU TTOM</li>
+            <li class="done">Size sequence files vs csv</li>
+            <li class="not-done">Check Hadoop behaviour</li>
+            <li class="not-done">Nagios monitoring</li>
+            <li class="not-done">Postgres installation</li>
+            <li class="not-done">Geoserver installation</li>
+            <li class="not-done">Make prediction timing EUR</li>
+        </ul></section><section class="slide overview" id="" style=""><header>
+            <h3>Process overview</h3>
+            <h4>Next up: MNR Maintenance</h4>
+        </header><img src="img/mnr_and_shape_converter.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Maintenance</h3>
+            <h4>Rework and fix feedback from prototype 2</h4>
+        </header><p>External feedback:</p>
+<ul>
+            <li>City of Eindhoven is added to MNR prototype coverage (small footprint MNR sample as requested by Mapscape)</li>
+            <li>Simplified traffic direction (in network route link layer) is fixed</li>
+        </ul>
+<p>Internal feedback:</p>
+<ul>
+            <li>Critical review of TTOM2MNR mapping documentation</li>
+            <ul>
+                <li>will result in remodelling/rework of already populated MNR layers (restrictions)</li>
+            </ul>
+            <li>Finetuning of data types in physical MNR model</li>
+            <ul>
+                <li>Postgres data types have been changed to optimize storage size</li>
+                <li>Physical model and related tools will be updated to support ranges</li>
+            </ul>
+            <li>A lot of small feature requests for improvements in DITA and physical model tools are grouped into some new stories</li>
+        </ul>
+<p></p></section><section class="slide " id="" style=""><header>
+            <h3>MNR Maintenance</h3>
+            <h4 class="not-done">Create third pilot release package</h4>
+        </header><p>Data for delivery is available:</p>
+<ul>
+            <li>Combined UC3/D54 MNR data layers</li>
+            <li>Eindhoven MNR</li>
+            <li>Andorra in 2 different versions with delta record updates</li>
+        </ul>
+<p>Not yet done:</p>
+<ul>
+            <li>release documentation (especially important for Andorra record updates)</li>
+            <li>packaging and ftp upload</li>
+        </ul></section><section class="slide overview" id="" style=""><header>
+            <h3>Process overview</h3>
+            <h4>Next up: Machine readable specs</h4>
+        </header><img src="img/mnr_and_shape_converter.png"></section><section class="slide " id="" style=""><header>
+            <h3>Machine readable specs</h3>
+            <h4>Process overview</h4>
+        </header><img src="img/machine_readable_specs.png"></section><section class="slide " id="" style=""><header>
+            <h3>Machine readable specs</h3>
+            <h4>Automate releasing of new physical models; from xmi to model project</h4>
+        </header><p>We already had the ability to generate code out of a physical model. The implementation of this was tied <strong>hard-coded</strong> to the Multinet-R model.</p>
+<p>This sprint we needed to also support Multinet Shape. So we made the necessary adaptation to make the physical model system <strong>model agnostic</strong>.</p>
+<ul>
+            <li>We created a <strong>maven plugin</strong> that generates code for a physical-model.xml.</li>
+            <li>We now use this plugin for both the <strong>physical-mnr</strong> and <strong>physical-mnshp</strong> models.</li>
+            <li>Updating the generated code is now as <strong>simple</strong> as updating the model.xml in subversion.</li>
+            <li>Using this, we set up Jenkins so that everytime a new version of the multinet-r model becomes available through specifications, the multinet-r model is <strong>updated automatically</strong>.</li>
+        </ul>
+<p><strong>&gt;&gt;&gt; Demo</strong></p></section><section class="slide " id="" style=""><header>
+            <h3>Machine readable specs</h3>
+            <h4>Make physical format for MultiNet Shape</h4>
+        </header><ul>
+            <li>cfg-to-pm - CLI Tool for generation of Physical Model from CFG file.</li>
+            <li>Generate Shape Physical Model using cfg-to-pm tool.</li>
+            <img src="img/cfg-to-dita-cli.png">
+            <ul>
+                <li>Input: <a href="cfg-to-pm/mnl_datamodel.cfg">mnl_datamodel.cfg</a>
+</li>
+                <li>Output: <a href="cfg-to-pm/mnshp-1.1.xml">mnlshp.xml</a>
+</li>
+            </ul>
+        </ul></section><section class="slide overview" id="" style=""><header>
+            <h3>Process overview</h3>
+            <h4>Next up: MNR Layer</h4>
+        </header><img src="img/mnr_and_shape_converter.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Layer</h3>
+            <h4>Populate MN Shape layers</h4>
+        </header><p>With the multinet shape physical model, we were able to generate a prototype multinet-shape product.</p>
+<ul>
+            <li>Our converter was adapted so we could support more than just multinet-r</li>
+            <li>We generated some shape layers: <strong>a0</strong>, <strong>a8</strong>, <strong>a9</strong>, <strong>jc</strong>, <strong>nw</strong> and <strong>wa</strong>.</li> 
+            <li>This multinet-shape has <strong>UUID</strong> ids due to the TTOM data source.</li>
+        </ul></section><section class="slide " id="" style=""><header>
+            <h3>MNR Layer</h3>
+            <h4>Populate MN Shape layers</h4>
+        </header><img src="img/wa_mn.png"><img src="img/wa_ttom.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Layer</h3>
+            <h4>Populate MN Shape layers</h4>
+        </header><p><a href="#slide-24">&gt;&gt;&gt; Demo</a></p>
+<p>By implementing the multinet-shape prototype, we were able to prove that:</p>
+<ul>
+            <li>The <strong>machine readable specification</strong> approach works</li>
+            <li>
+<strong>for any physical format</strong> we want to generate.</li>
+        </ul></section><section class="slide overview" id="" style=""><header>
+            <h3>Process overview</h3>
+            <h4>Next up: MNR Loader</h4>
+        </header><img src="img/mnr_and_shape_converter.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Loader</h3>
+            <h4>Build SQLite loader</h4>
+        </header><div style="float:right; clear:none; width: 50%">
+            <img src="img/spatialite.png">
+        </div>
+<ul>
+            <li>Spatialite is ...
+                <ul>
+                    <li>a SQLite extension</li>
+                    <li>a single file DBMS</li>
+                    <li>optimized for performance</li>
+                    <li>SQL compliant</li>
+                </ul>
+            </li>
+            <li>Supported by QuantumGIS, FME, ...</li>
+            <li>Used by Mapscape</li>
+            <li>Scripts provided to create from CSV</li>
+        </ul>
+<p><strong>&gt;&gt;&gt; QGis demo</strong></p></section><section class="slide overview" id="" style=""><header>
+            <h3>Process overview</h3>
+            <h4>Next up: MNR Record Updates</h4>
+        </header><img src="img/mnr_and_shape_converter.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Record Updates</h3>
+            <h4>Process overview - Feature Differ</h4>
+        </header><img src="img/differ.png"></section><section class="slide " id="" style=""><header>
+            <h3>MNR Record Updates</h3>
+            <h4>Build product differs</h4>
+        </header><p><a href="#slide-24">&gt;&gt;&gt; Demo</a></p></section><section class="slide " id="" style=""><header>
+             <h3>MNR Record Updates</h3>
+             <h4>Build product differs</h4>
+         </header><p style="font-size: 40px">Why Stable id's</p>
+<table class="differ">
+            <tr>
+<th>MNR_Netw_Geo_Link</th>
+<th>AND_1210</th>
+<th>AND_1301</th>
+</tr>
+            <tr>
+<td>Records</td>
+<td>6706</td>
+<td>6789</td>
+</tr>
+            <tr>
+<td>Added</td>
+<td colspan="2">103</td>
+</tr>
+            <tr>
+<td>Removed</td>
+<td colspan="2">20</td>
+</tr>
+            <tr>
+<td>Updated</td>
+<td colspan="2">40</td>
+</tr>
+         </table>
+<p></p>
+<table class="differ">
+            <tr>
+<th>MNR_Junction</th>
+<th>AND_1210</th>
+<th>AND_1301</th>
+</tr>
+            <tr>
+<td>Records</td>
+<td>5963</td>
+<td>6036</td>
+</tr>
+            <tr>
+<td>Added</td>
+<td colspan="2">73</td>
+</tr>
+            <tr>
+<td>Removed</td>
+<td colspan="2">0</td>
+</tr>
+            <tr>
+<td>Updated</td>
+<td colspan="2">5889 (99% ~&gt; noise)</td>
+</tr>
+         </table></section><section class="slide " id="" style=""><header>
+            <h3>Multinet-R demo</h3>
+        </header><div>
+             <div id="mnr-demo-map"></div>
+        </div>
+<p> </p>
+<div id="mnr-demo-map-tools">
+            <a href="javascript:%24('#mnr-demo-map').fullScreen();" style="font-size: 14px">Go fullscreen</a>
+            <div id="mnr-demo-map-zones" style="float: right">
+            </div>
+        </div></section><section class="slide " id="" style=""><header>
+            <h3>Summary:</h3>
+            <h4>Reason for failed stories</h4>
+        </header><div>
+        <ul>
+            <li>Dependency to IT/TechOps
+                <ul>
+                    <li>Postgres MNR test server is ordered, but not yet deployed</li>
+                </ul>
+            </li>
+            <li>Activities not taken into account in planning:
+                <ul>
+                    <li>2 day workshop related to stable ID's</li>
+                    <li>Some of us lost the fight against <strong>the flu</strong>
+</li>
+                    <li>Unplanned (but great!) in-house 4 day Hadoop training for the majority of team members</li>
+                </ul>
+            </li>
+            <li>Impediments preventing us to be on track with the MNR roadmap
+                <ul>
+                    <li>Lack of stable ID's (to have <strong>diffs</strong> instead of <strong>noise</strong>)</li>
+                    <li>Big dependency to required TTOM content + remodelling <b class="not-done"><strong>which is not on the roadmap for 2013!</strong></b>
+</li>
+                </ul>
+            </li>
+            <li>Risk: serious infrastructure costs ($$$$$$) will be required to generate derived content. Root cause: original idea (MNR as straightforward TTOM dump) seems to have changed...</li>
+        </ul>
+        </div></section><section class="slide " id="" style=""><header>
+            <h3>Summary:</h3>
+            <h4>sprint successes</h4>
+        </header><div>
+        <ul>
+            <li>Machine readable physical formats: having a physical model for <strong>any product</strong>, enables possibilities within the CDP software stack (load scripts for multiple RDBMS, product differ, ...)</li>
+            <li>CDP infrastructure + physical models successfully used to build MultiNet layered shapefile layers <br> <strong>= enabler for other maplines!</strong>
+</li>
+            <li>Support for multiple RDBMS: Postgres + SQLite</li>
+            <li>First MNR delta records (with real world map edits): 12.10 MNR Andorra product + delta records applied = fully equivalent to 13.01 MNR Andorra product</li>
+        </ul>
+        </div></section><section class="slide" style="background-image: url('../deck/slides/confused-chan.jpg')"><h1 class="center">Any Questions?</h1></section><section class="slide" style="background-image: url('../deck/slides/thank-you.jpg')"><h1 class="center">Thank you!</h1></section><a href="#" class="deck-prev-link" title="Previous">←</a><a href="#" class="deck-next-link" title="Next">→</a><p class="deck-status"><span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span></p>
+<form action="." method="get" class="goto-form">
+<label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go">
+</form>
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a><script src="../deck/lib/jquery-1.7.2.min.js"></script><script src="../deck/lib/jquery-fullscreen.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/extensions/hash/deck.hash.js"></script><script src="../deck/extensions/menu/deck.menu.js"></script><script src="../deck/extensions/goto/deck.goto.js"></script><script src="../deck/extensions/status/deck.status.js"></script><script src="../deck/extensions/navigation/deck.navigation.js"></script><script src="../deck/extensions/scale/deck.scale.js"></script><script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script><script type="text/javascript">
+            var $d = $(document);
+            $d.bind('deck.init',
+                        function() {
+                            var map = new OpenLayers.Map('mnr-demo-map', {
+                                projection: new OpenLayers.Projection("EPSG:900913"),
+                                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                                units: 'm',
+                                fractionalZoom: true
+                            });
+
+                            var lbs = new OpenLayers.Layer.XYZ("TomTom Sydney LBS",
+                                        ["http://a.routes.tomtom.com/lbs/map/1/basic/${z}/${x}/${y}/1e2099c7-eea9-476b-aac9-b20dc7100af1;v=3;l=nl;m=png"],
+                                        {
+                                            layers:'basic',
+                                            resolutions: [156543.03390625, 78271.516953125, 39135.7584765625,
+                                                  19567.87923828125, 9783.939619140625, 4891.9698095703125,
+                                                  2445.9849047851562, 1222.9924523925781, 611.4962261962891,
+                                                  305.74811309814453, 152.87405654907226, 76.43702827453613,
+                                                  38.218514137268066, 19.109257068634033, 9.554628534317017,
+                                                  4.777314267158508, 2.388657133579254, 1.194328566789627,
+                                                  0.5971642833948135, 0.25, 0.1, 0.05],
+                                            serverResolutions: [156543.03390625, 78271.516953125, 39135.7584765625,
+                                                                19567.87923828125, 9783.939619140625,
+                                                                4891.9698095703125, 2445.9849047851562,
+                                                                1222.9924523925781, 611.4962261962891,
+                                                                305.74811309814453, 152.87405654907226,
+                                                                76.43702827453613, 38.218514137268066,
+                                                                19.109257068634033, 9.554628534317017,
+                                                                4.777314267158508, 2.388657133579254],
+                                            transitionEffect: 'resize'
+                                        }
+                            );
+
+                            /* Note: beware of same-origin-policy. */
+                            info = new OpenLayers.Control.WMSGetFeatureInfo({
+                                url: 'http://bekka-desktop:8080/geoserver/mnr-pilot/wms', 
+                                title: 'Identify features by clicking',
+                                queryVisible: true,
+                                eventListeners: {
+                                    getfeatureinfo: function(event) {
+                                        map.addPopup(new OpenLayers.Popup.FramedCloud(
+                                            "chicken", 
+                                            map.getLonLatFromPixel(event.xy),
+                                            null,
+                                            event.text,
+                                            null,
+                                            true
+                                        ));
+                                    }
+                                }
+                            });
+                            
+                            var mousePositionCtrl = new OpenLayers.Control.MousePosition();
+
+                            /* DIFF demo */
+                            registerLayer("MNR Netw Geo Link (UPDATED)", "mnr-pilot:MNR_Netw_Geo_Link_UPDATED", map);
+                            registerLayer("MNR Netw Geo Link (ADDED)", "mnr-pilot:MNR_Netw_Geo_Link_ADDED", map);
+                            registerLayer("MNR Netw Geo Link (REMOVED)", "mnr-pilot:MNR_Netw_Geo_Link_Removed", map);
+                            registerLayer("AND 1210", "AND_1210:MNR_Netw_Geo_Link_AND_1210", map);
+                            registerLayer("AND 1301", "AND_1301:MNR_Netw_Geo_Link_AND_1301", map);
+
+
+                            /* MNSHP demo */
+                            registerLayer("MnShp Shape A0", "mnr-pilot:a0", map);
+                            registerLayer("MnShp Shape A8", "mnr-pilot:a8", map);
+                            registerLayer("MnShp Shape A9", "mnr-pilot:a9", map);
+                            registerLayer("MnShp Shape JC", "mnr-pilot:jc", map);
+                            registerLayer("MnShp Shape NW", "mnr-pilot:nw", map);
+                            registerLayer("MnShp Shape WA", "mnr-pilot:wa", map);
+
+                            map.addLayer(lbs);
+
+                            map.addControl(new OpenLayers.Control.LayerSwitcher());
+                            map.addControl(info);
+                            map.addControl(mousePositionCtrl);
+                            info.activate();
+
+                            var lonlat = new OpenLayers.LonLat(1.56, 42.54);
+                            lonlat.transform( new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject() );
+                            map.setCenter(lonlat, 12);
+
+                            var toolbar = $("#mnr-demo-map-zones");
+                            addZone(toolbar, "Andorra", 1.56, 42.54, map);
+                            addZone(toolbar, "Ghent", 3.72, 51.05, map);
+            });
+
+            function addZone(toolbar, name, lon, lat, map) {
+                $('<a>',{
+                        text: name,
+                        title: name,
+                        href: '#',
+                        click: function() {
+                            var lonlat = new OpenLayers.LonLat(lon, lat);
+                            lonlat.transform( new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject() );
+                            map.setCenter(lonlat, 12); }
+                    }).appendTo(toolbar);
+                $('<span />', {style: 'padding-left: 10px'}).appendTo(toolbar);
+            }
+
+            function registerLayer(title, name, map) {
+                var layer = new OpenLayers.Layer.WMS(title, "http://bekka-desktop:8080/geoserver/mnr-pilot/wms",
+                                {
+                                    layers: name,
+                                    srs: 'EPSG:4326',
+                                    styles: '',
+                                    tiled: true,
+                                    transparent: true,
+                                    format: "image/png",
+                                    tilesOrigin : map.maxExtent.left + ',' + map.maxExtent.bottom,
+                                    displayInLayerSwitcher: true
+                                },
+                                {
+                                    buffer: 0,
+                                    displayOutsideMaxExtent: false,
+                                    isBaseLayer: false,
+                                    yx : {'EPSG:4326' : true},
+                                    visibility: false,
+                                }
+                            );
+                map.addLayer(layer);
+            }
+        </script>
+</body>
+</html>

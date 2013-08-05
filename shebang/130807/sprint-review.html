@@ -1,0 +1,401 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sprint Review</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../style/tomtom/tomtom.core.css">
+<link rel="stylesheet" href="../style/tomtom/tomtom.css">
+<link rel="stylesheet" href="../style/tomtom/table/table.statistics.css">
+<link rel="stylesheet" href="../style/reveal/css/reveal.min.css">
+<script>
+                    document.write('
+                    <link rel="stylesheet" href="../style/reveal/css/print/'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20+%20(window.location.search.match(/print-pdf/gi)%20?%20'pdf'%20:%20'paper')%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20+%20'.css" type="text/css" media="print">
+                    ');
+                </script>
+</head>
+<body class="tomtom-container">
+<div class="reveal">
+<div class="slides">
+<section class="slide"><table align="center">
+<tr><td width="1140" height="524" align="center" style="background-image: url('../style/tomtom/img/TomTomLogo.jpg');                                                                     background-repeat:no-repeat;                                                                   background-size:100% 100%"></td></tr>
+<tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
+<tr><td align="right"><h4 class="center">Team: Shebang</h4></td></tr>
+<tr><td align="right"><h4 class="center">Sprint: 01</h4></td></tr>
+</table></section><section class="slide" align="left"><div class="info">
+<h3 class="center">Team Composition</h3>
+<br><p class="team"><span class="caption">Scrum Team Members: </span><span class="content"><br>•<member>Thomas Martens</member><br>•<member>Stefan De Smit</member><br>•<member>Maciej Moczkowski</member><br>•<member>Dominik Plichka</member><br>•<member>Jurgen Reynaert</member></span></p>
+<p class="scrum-master"><span class="caption">Product Owner: </span><span class="content">Marius Swanepoel</span></p>
+<p class="scrum-master"><span class="caption">Scrum Master: </span><span class="content">Johan Tré</span></p>
+</div></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">INTRO</h1>
+<header><h3>Technical Suite 3.0</h3></header><img src="img/ShebangPOC.jpg"></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">INTRO</h1>
+<header><h3>Technical Suite 3.0</h3></header><h5>Milestone 3.1 is about enabling fresher map deliveries by:</h5>
+<ul>
+                    <li class="fragment">update released data in between quarters on MDS</li>
+                    <li class="fragment">build products containing these updates</li>                                 
+                    <li class="fragment">deliver deltas via CDP-api</li>
+                </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">GOAL</h1>
+<header><h3>Technical Suite 3.0</h3></header><h4><a href="http://besrvup-mks01.ta.global:7001/im/issues?selection=1421509">Release MDS as PDS</a></h4>
+<h5>To deliver updated data &amp; deltas</h5>
+<ul>                   
+                    <li>MDS must be the source to build products(=PDS)</li>
+                    <li>Versioned MDS data must be available</li>
+                    <li>CDP-delta-api must be deleloped on top of coredb delta</li>
+                </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">GOAL</h1>
+<header><h3>Technical Suite 3.0</h3></header><h4><a href="http://besrvup-mks01.ta.global:7001/im/issues?selection=1363015">PDS as proof of context</a></h4>
+<h5>MDS vs PDS</h5>
+<blockquote class="fragment">
+                    <ul>                   
+                        <img src="img/postgresql_logo.jpg" height="80" style="display: inline-block; vertical-align:text-top; float:right;">
+                        <li>main focus: editing (production)</li>
+                        <li>optimized for latency (quick response)</li>
+                        <li>each transaction is a version</li>
+                    </ul>
+                </blockquote>
+<blockquote class="fragment">
+                    <ul>                   
+                        <img src="img/hadoop-logo-square.jpg" height="100" style="display: inline-block; vertical-align:text-top; float:right;">
+                        <li>main focus: bulk read (product create)</li>
+                        <li>optimized for throughput</li>
+                        <li>only versions used to build a product are important (monthly, weekly, daily)?</li>
+                    </ul>
+                </blockquote></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">GOAL</h1>
+<header><h3>Technical Suite 3.0</h3></header><h4>Non Functional requirements for CDP/PDS</h4>
+<ul>                   
+                    <li>Build a continental product in 12 hours</li>
+                    <li>Contains fresh data (MDS with small delay)</li>
+                    <li>Must be versioned</li>
+                </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">GOAL</h1>
+<header><h3>Technical Suite 3.0</h3></header><h4>Proof of concept limitations</h4>
+<p>To timebox the POC, extra limitations for this POC are added</p>
+<ul>                   
+                    <li>
+<a href="http://hadoop.apache.org/">hadoop</a> based</li>
+                    <li>Tile based</li>
+                </ul>
+<p class="fragment"><b>If this doesn't meet the NFR, other POC might follow.</b></p></section><section class="slide" data-transition="zoom" style="text-align: left;"><h2>User Stories Done</h2>
+<br><ul class="stories">
+<li class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)<span class="sp">(SP: 5)</span>
+</li>
+<li class="story done">Tech 1: Build simple PDS from it.<span class="sp">(SP: 0)</span>
+</li>
+<li class="story done">Tech 2: Build simple PDS from it.<span class="sp">(SP: 8)</span>
+</li>
+</ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
+<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h5>Tile based content reading needed to use Release MDS as PDS</h5>
+<h5>Requirements:</h5>
+<ul>
+                        <li>reading transactional data (VMDS)</li>
+                        <li>filtering capabilities</li>
+                        <li>geometry clipping</li>
+                        <li>stubbing out of tile associated features</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h5>Unify getFeatures and getFeaturesInTile code paths is coredb - why?</h5>
+<ul>
+                        <li>A lot of similarities and duplicated code</li>
+                        <li>getFeaturesInTile missed filtering capabilities of getFeatures</li>
+                        <li>getFeaturesInTile was not mature - especially reading transactional data (VMDS)</li>
+                        <li>existing getFeatures path is mature, versioned data reads (VMDS) is well tested</li>
+                        <li>better have one generic api than maintain two - clearer api, less code and bugs</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h5>Unify getFeatures and getFeaturesInTile code paths is coredb - how?</h5>
+<ul>
+                        <li>getFeatures api revised - generic query method getFeatures(parameters) has been added</li>
+                        <li>Builder to build parameters has been introduced</li>
+                        <li>Old getFeatures methods marked as @deprecated, some removed</li>
+                        <li>AllClippedGeometryLimitFilter has been implemented to support geometry clipping</li>
+                        <li>TileFilter has been added to add tile base retrieval along to bbox/polygon</li>
+                    </ul>
+<pre>
+                        SpatialFilter spatialFilter = SpatialFilterBuilder.newBuilder().withTile(tile)
+                            .build();
+                        Parameters parameters = ParametersBuilder.newBuilder().withSpatialFilter(spatialFilter)
+                            .withGeometryLimitFiler(GeometryLimitFilterFactory.createAllClippedGeometryFilter())
+                            .build();
+                        List&lt;Feature&lt;? extends Geometry&gt;&gt; features = read.getFeatures(parameters);
+                    </pre></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
+<header><h3 class="story done">Tech 1: Build simple PDS from it.</h3></header><h4><a href="http://hbase.apache.org/"><img style="display: inline-block; vertical-align:text-top;" height="50" src="img/hbase-logo.jpg"></a></h4>
+<h5>Pro's</h5>
+<ul>
+                        <li>The hadoop database</li>
+                        <li>Used before, so known territory</li>
+                        <li>Supports versioning</li>
+                    </ul>
+<h5>Con's</h5>
+<ul>
+                        <li>Time based versioning is different</li>
+                        <li>Hbase stability is sometimes questioned</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Tech 1: Build simple PDS from it.</h3></header><h5>Implementation: <a href="http://besrvut-hdn03:60010/table.jsp?name=pds_features" target="blanc">Hbase table</a>
+</h5>
+<br><ul>
+                        <li>
+                            Row Key: Morton base 4 + Feature Id + Zone Name
+                            <ul>
+                                <li>Morton base 4: Enabler for table scans on different (higher) Morton tile levels.</li>
+                                <li>Feature Id: The uuid of the feature (stored as 2 longs).</li>
+                                <li>Zone Name: Makes the row key unique for seamed features on a tile boarder.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Column family: The model name of the feature.
+                            <ul>
+                                <li>Enabler for retrieving sub models.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Colum Qualifier: The type of the feature.
+                            <ul>
+                                <li>Enabler for retrieving specific types.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Value: feature serialized in <a href="http://avro.apache.org/"><img style="display: inline-block; vertical-align:text-top;" height="30" src="img/Avro.png"></a>
+                        </li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done">Tech 1: Build simple PDS from it.</h3></header><h4>HBase schema</h4>
+<img src="img/hbase1.png" alt="hbase"></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
+<header><h3 class="story done">Tech 2: Build simple PDS from it.</h3></header><h4>
+<a href="http://hadoop.apache.org/"><img style="display: inline-block; vertical-align:text-top;" height="50" src="img/hadoop-logo.jpg"></a>hdfs files</h4>
+<h5>Pro's</h5>
+<ul>
+                        <li>Simple setup: just hadoop</li>
+                        <li>Most likely, fastest solution</li>
+                    </ul>
+<h5>Con's</h5>
+<ul>
+                        <li>Append only files:
+                            <ul>
+                                <li>difficult to load in different steps</li>
+                                <li>update means rewrite whole file</li>
+                                <li>risk to rewrite hbase to support versioning</li>
+                            </ul>
+                        </li>                        
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Tech 2: Build simple PDS from it.</h3></header><h5>Implementation: <a href="http://besrvut-hdp07.ttg.global:50075/browseDirectory.jsp?dir=%2Fuser%2Fmartens%2Fhdfs-features-BEL&amp;namenodeInfoPort=50070" target="blanc">Standard Mapfile on higher level morton tile</a>
+</h5>
+<br><ul>
+                        <li>
+                            Key: Morton base 4 + Feature Id + Zone Name
+                            <ul>
+                                <li>Morton base 4: Enabler for reads on different (higher) Morton tile levels.</li>
+                                <li>Feature Id: The uuid of the feature (stored as 2 longs).</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Value: feature serialized in <a href="http://avro.apache.org/"><img style="display: inline-block; vertical-align:text-top;" height="30" src="img/Avro.png"></a>
+                        </li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story not-done"></h3></header><h5>Size comparison</h5>
+<style type="text/css">
+                        table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
+                        table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+                        table.tftable tr {background-color:#ffffff;}
+                        table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
+                    </style>
+<table class="tftable" border="1">
+                        <tr>
+                            <th>Dataset</th>
+                            <th>VPDS (GDF + TIF)</th>
+                            <th>MDS</th>
+                            <th>HBASE</th>
+                            <th>HDFS</th>
+                        </tr>
+                        <tr>
+                            <td>BEL</td>
+                            <td>~14G</td>
+                            <td>~20G</td>
+                            <td>~4G</td>
+                            <td>~4.4G</td>
+                        </tr>
+                        <tr>
+                            <td>UC3</td>
+                            <td>~38G</td>
+                            <td>~101G</td>
+                            <td>~8.5G</td>
+                            <td>~8.5G</td>
+                        </tr>
+                        <tr>
+                            <td>AK1</td>
+                            <td>~14.5G</td>
+                            <td>~13G</td>
+                            <td>~13G</td>
+                            <td>n/a</td>
+                        </tr>
+                    </table>
+<br><h5>Summary</h5>
+<blockquote class="fragment">Smaller footprint than GDF and MDS</blockquote>
+<blockquote class="fragment">Similar footprint for sparse big areas because of the many tiles</blockquote></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story not-done"></h3></header><h5>Read time comparison</h5>
+<style type="text/css">
+                        table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
+                        table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+                        table.tftable tr {background-color:#ffffff;}
+                        table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
+                    </style>
+<table class="tftable" border="1">
+                        <tr>
+                            <th>Zone</th>
+                            <th>#Mappers</th>
+                            <th>VPDS (GDF + TIF)</th>
+                            <th>#Mappers</th>
+                            <th>HBASE</th>
+                            <th>HDFS</th>
+                        </tr>
+                        <tr>
+                            <td>BEL</td>
+                            <td>733</td>
+                            <td>25m</td>
+                            <td>52</td>
+                            <td>6m30</td>
+                            <td>5m26</td>
+                        </tr>
+                        <tr>
+                            <td>UC3</td>
+                            <td>652</td>
+                            <td>1h23m</td>
+                            <td>46</td>
+                            <td>13m45</td>
+                            <td>12m01</td>
+                        </tr>
+                        <tr>
+                            <td>AK1</td>
+                            <td>316</td>
+                            <td>31h14m</td>
+                            <td>24</td>
+                            <td>1h44m</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>California</td>
+                            <td>n/a</td>
+                            <td>n/a</td>
+                            <td>192</td>
+                            <td>31m</td>
+                            <td>28m</td>
+                        </tr>
+                    </table></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story not-done"></h3></header><img src="img/timeline.jpg" alt="demo: diff"></section><section class="slide" style="text-align: left;"><table align="center">
+<tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
+<tr><td>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script type="text/javascript">
+                    $(function() {
+                        $('#container').highcharts(
+                                {
+                                    title : {
+                                        text : 'Release Burn down *Shebang*',
+                                        x : -20
+                                    //center
+                                    },
+                                    subtitle : {
+                                        text : 'Cumulative Committed vs. Velocity',
+                                        x : -20
+                                    },
+                                    xAxis : {
+                                        tickmarkPlacement: 'on',
+                                        categories : [ 00,130717,130807,130828,130918,131009,131030,131120,131211, ]
+                                    },
+                                    yAxis : {
+                                        title : {
+                                            text : 'Total to burn (points)'
+                                        },
+                                        plotLines : [ {
+                                            value : 0,
+                                            width : 100
+                                        }],
+                                        max : 201,
+                                        min : 0
+                                    },
+                                    tooltip : {
+                                        valueSuffix : 'Pts.'
+                                    },
+                                    legend : {
+                                        layout : 'vertical',
+                                        align : 'right',
+                                        verticalAlign : 'middle',
+                                        borderWidth : 0
+                                    },
+                                    series : [
+                                            {
+                                                name : 'Cumulatieve Velocity',
+                                                data : [ 201,193,180,180,180,180,180,180 ],
+                                                color: '#FF0000'
+                                            },
+                                            {
+                                                name : 'Cumulative Commitments',
+                                                data : [ 201,193,180,180,180,180,180,180 ],
+                                                dashStyle: 'ShortDash', 
+                                                color : '#104E8B'
+                                            } ]
+                                });
+                    });
+                </script><script src="../style/highcharts/js/highcharts.js"></script><script src="../style/highcharts/js/modules/exporting.js"></script><div id="container" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td></tr>
+<tr><td align="left">
+<h4 class="center">Velocity Sprint 01:
+                                            13</h4>
+<h4 class="center">Commitment:
+                                            13</h4>
+</td></tr>
+</table></section><section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Any Questions?</h1></section><section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Thank you!</h1></section>
+</div>
+<p class="slide-number"></p>
+</div>
+<script src="../style/reveal/lib/js/head.min.js"></script><script type="text/javascript" src="../style/reveal/js/reveal.min.js"></script><script>
+                    // Full list of configuration options available here:
+                    // https://github.com/hakimel/reveal.js#configuration
+                    Reveal.initialize({
+                    controls : true,
+                    progress : true,
+                    history : true,
+                    center : true,
+
+                    theme : Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+                    transition : Reveal.getQueryHash().transition, // || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                    // Optional libraries used to extend on reveal.js
+                    dependencies : [ {
+                    src :
+                    '../style/reveal/js/classList.js',
+                    condition : function() {
+                    return !document.body.classList;
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/markdown/marked.js',
+                    condition : function() {
+                    return !!document.querySelector('[data-markdown]');
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/markdown/markdown.js',
+                    condition : function() {
+                    return !!document.querySelector('[data-markdown]');
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/highlight/highlight.js',
+                    async : true,
+                    callback : function() {
+                    hljs.initHighlightingOnLoad();
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/zoom-js/zoom.js',
+                    async : true,
+                    condition : function() {
+                    return !!document.body.classList;
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/notes/notes.js',
+                    async : true,
+                    condition : function() {
+                    return !!document.body.classList;
+                    }
+                    }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    ]
+                    });
+
+                </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview id="00">
+    <team name="Shebang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Thomas Martens</member>
+        <member>Stefan De Smit</member>
+    </team>
+    <stories>
+        <story title="Tech 1: Build simple PDS from it." state="story done" points="8">
+            <slides>
+                <slide type="story-context">
+                    <h5>story presented in next sprint</h5>
+                </slide>
+            </slides>
+        </story>
+    </stories>  
+</sprintreview>

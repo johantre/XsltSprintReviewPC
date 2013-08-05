@@ -1,0 +1,169 @@
+﻿<?xml version="1.0"?>
+    <?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+<sprintreview id="02">
+    <team name="BigBang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Peter Huysman</member>
+        <member>Thomas Martens</member>
+        <member>Frankie Bollaert</member>
+        <member>Stefan De Smit</member>
+        <member>Priyanka Sharma</member>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member>Arkadiuse Wysoki ('Arek')</member>
+        <member>Pawel Wosiak</member>
+        <member>Marcin Zimniak</member>
+        <member>Michal Kozlowski</member>
+        <member>Pawel Jesak</member>
+        <member>Rafal Wojaczynski</member>
+    </team>
+    <slides>
+  <slide id="bigbang-subsub-model">
+    <header class="story not-done" points="3" percentage-done="80">
+      <h3>NFR: Performance of Read API </h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+        <li>Enabling L1 as part of the ReadApi </li>
+        <li>Perform baseline benchmark</li>
+    </ul>
+	<h5>Value delivered:</h5>
+    <ul>
+        <li>Identified list of environment improvements (now need Puppet automation)</li>
+		<li>Setup part of TIF2TTOM up to CSV Creator</li>
+		<li>Worked in tandem with TechOps</li>
+    </ul>
+    <h5>Difficulties:</h5>
+    <ul>
+        <li>root rights</li>
+        <li>puppet development</li>
+        <li>RPM deployment</li>
+        <li>Small issues become big problems</li>
+    </ul>
+    <a href="http://vos.intra.local/display/CPEQAE/Technical+Suite+(1.0)+L1+Environment+page">http://vos/display/CPEQAE/Technical+Suite+(1.0)+L1+Environment+page</a>
+	</slide>
+	
+  <slide>
+    <header class="story not-done" points="8" percentage-done="30">
+      <h3> SUBSUB Model (Model only) </h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+      <li> Validated on snapshots that full stack works with 3.9 </li>
+      <li> Released most of the components </li>
+    </ul>
+    <h5>Value delivered:</h5>
+      <ul>
+        <li> Confirmed that full stack works with sub sub models </li>
+        <li> Read FAT's passed </li>
+      </ul>
+    <h5>Missing:</h5>
+      <ul>
+         <li> JBehave test confirmation that we don't have regression </li>
+       </ul>
+
+  </slide>
+
+
+  <slide>
+    <header class="story not-done" points="8" percentage-done="20">
+      <h3> Boosting cleanup </h3>
+    </header>
+    <h5>Goals:</h5>
+    <ul>
+        <li>Enable clean usage of ttom model in coredb components</li>
+        <li>Stop using definingModel and 'boosting' back to topLevelModel</li>
+		<li>Put MDS propertyNames in dictionary to decrease database footprint</li>
+    </ul>
+	<h5>Value delivered:</h5>
+    <ul>
+        <li>Unified feature type filter serialization (was different in MDS and VMDS)</li>
+		<li>Several fixes in DAO and serializers</li>
+    </ul>
+	<h5>Work in progress:</h5>
+    <ul>
+		<li>Investigate problems during FAT execution</li>
+		<li>Put MDS propertyNames in dictionary - CSV Creator</li>
+    </ul>
+
+  </slide>
+
+  <slide>
+    <header class="story not-done" points="8" percentage-done="10">
+      <h3> Model update: Names. Changes for Road Element </h3>
+    </header>
+   <ul>
+   <li> Model work - new name model: </li>
+     <ul>
+      <li> Adapt language codes to MARC and ISO</li>
+      <li> Adapt notation alphabet and add ISO script</li>
+    </ul>
+    </ul>
+    <ul>
+     <li> Model work - new name model applied to: </li>
+     <ul>
+      <li> RoadElement.StandardName </li>
+      <li> RoadElement.AlternateName </li>
+      <li> RoadElement.RouteNumberInfo </li>
+      <li> RoadElement.RouteNameInfo </li>     
+     </ul>
+     <li> Mapping document  </li>
+     <li> Implementation Tif2TTom: RoadElement.Official Name</li>
+     <ul>
+      <li> Added composite attributes </li>
+      <li> Grouping by street id </li>
+      <li> Grouping by MARC language code </li>
+      <li> Added priorities of TIF language code </li>
+     </ul>
+    </ul>
+  </slide>
+	
+	
+	<slide>
+        <h1 class="center">What Happened?!</h1>
+        <img src="img/what-happened.jpg" />
+    </slide>   
+  <slide id="bigbang-boosting-cleanup">
+    <header>
+		<h3>Unforeseen incoming work</h3>
+			<ul>
+				<li>Capacity impact</li>
+					<ul>
+						<li> Initial Capacity: 133MD </li>
+						<li>Training: 6 x 4MD = 24MD!!</li>
+						<li>L1 growing pains 10 x 3MD = 30MD!! </li>
+						<li>Availability Team members !! ? x ?MD Unclear.</li>
+					</ul>
+				<li>Communication overhead due to different/missing standards.</li>
+			</ul>  
+    </header>
+  </slide>
+  <slide id="bigbang-boosting-cleanup">
+    <header>
+		<h3>Conclusions</h3>
+			<ul>
+				<li>Capacity impact</li>
+					<ul>
+						<li>Simple assignment ratio to team members</li>
+						<li>Track hours vs estimates</li>
+						<li>Commitment from management for 100% assignments if possible</li>
+					</ul>
+				<li>Agree on standards.</li>
+				<li>L1 = documented at best possible, but...</li>
+					<ul>
+						<li>Lessons learned Go-to-L1: Painful, more then foreseen</li>
+						<li>The coming teams: Risk mitigation!!</li>
+						<li>The way of communication: Ticketting approach = NO FIT!!</li>
+							<ul>
+								<li>This is not the end</li>
+								<li>Thanks to intervention TechOps = step closer</li>
+								<li>It proves Collaboration = the answer</li>
+							</ul>
+					</ul>
+			</ul>  
+    </header>
+  </slide>
+
+</slides>
+</sprintreview>

@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Multinet-R demo</title>
+
+    <meta name="description" content="Multinet-R demo">
+    <meta name="author" content="Pandora">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="css/general_foundicons.css">
+    <link rel="stylesheet" href="css/accessibility_foundicons.css">
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="stylesheets/general_foundicons_ie7.css">
+      <link rel="stylesheet" href="stylesheets/accessibility_foundicons_ie7.css">
+    <![endif]-->
+
+    <style>
+      ul {
+        margin-bottom: 10px !important;
+        padding-bottom: 20px !important;
+      }
+
+      li {
+        margin-bottom: 10px !important;
+      }
+
+      .hi {
+        color: #FF0D5C !important;
+      }
+      .hi2 {
+        color: #0CE81F !important;
+      }
+      .slide-number {
+        float: right;
+        margin-right: 5px!important;      }
+      .important {
+        border:none !important;
+        box-shadow:none !important;
+      }
+      .product-name {
+         color: white;
+      }
+      .introslide h1,
+      .introslide h2,
+      .introslide h3 {
+        text-shadow: 0px 0px 20px #000;
+      }
+      img.image {
+        border: none !important;
+        box-shadow: none !important;
+        background: none!important;
+      }
+    </style>
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+          <section data-transition="zoom" data-transition-speed="slow" data-background-image="img/bg/mgm1.jpg" class="introslide">
+            <h1>Multinet-R</h1>
+            <h2 class="hi" style="margin-bottom: 5em;">State-of-the-project</h2>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/why.png" class="introslide">
+            <h1>Why do we need Multinet-R?</h1>
+          </section>
+
+          <section>
+            <h2>Our customers:</h2>
+            <blockquote class="fragment"><img src="img/faces/3v092n.jpg" style="margin: 10px; float:right;"/>Your MultiNet Suite is far too complex. It’s an assembly kit that takes too much time and effort to compile.<br style="clear: both;"></blockquote>
+            <blockquote class="fragment"><img src="img/faces/3v092p.jpg" style="margin: 10px; float:left;"/>Can you optimize your delivery for a direct load into my RDBMS?<br style="clear: both;"></blockquote>
+            <blockquote class="fragment"><img src="img/faces/3v092s.jpg" style="margin: 10px; float:right;"/>I need frequent fresh map updates that are straightforward to integrate.<br style="clear: both;"></blockquote>
+            <blockquote class="fragment"><img src="img/faces/3v092y.jpg" style="margin: 10px; float:left;"/>Where is the map updated and what remained stable?<br style="clear: both;"></blockquote>
+          </section>
+
+          <section>
+            <h2>MultiNet-R</h2>
+            <div style="text-align: left;">
+            <ul class="fragment">
+              <li>1 integrated relational model for all content layers</li>
+              <li>Seamed continental layers</li>
+              <li>Integrated meta-information</li>
+            </ul>
+            <ul class="fragment">
+              <li>RDBMS loadable format with loaders</li>
+              <li>Machine readable specification</li>
+            </ul>
+            <ul class="fragment">
+              <li>Frequent map builds with delta records</li>
+              <li>Stable feature IDs</li>
+            </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Current Multinet-R customers</h2>
+            <div style="text-align: center; padding: 0.4em; background-color: white;">
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/mappy.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/mapscape.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/mireo.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/ptv-group-logo.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/sygic.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/telmap.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/volkswagen.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/customer-logos/pitney-bowes-mapinfo.png " />
+            </div>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/thenextgeneration.jpg" class="introslide">
+            <h1>Multinet-R</h1>
+            <h2 class="hi">The first nextgen converter</h2>
+          </section>
+
+          <section>
+            <h3>Core design principles</h3>
+            <ul>
+                <li><span class="hi">API driven</span>: built on top of CDP</li>
+                <li><span class="hi">Scalability</span>: optimized for continental, batch processing</li>
+                <li><span class="hi">Model driven</span>: type safety to ensure data quality</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>API driven</h3>
+            <p align="center">
+              <img src="img/api-driven.png" />
+            </p>
+          </section>
+
+          <section>
+            <h3>API driven - advantages</h3>
+            <ul>
+              <li>Keep close with CPP/CDP development</li>
+              <li>Black-box TTOM features access</li>
+              <li>No code changes needed to use snapshot mechanism</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Scalability</h3>
+            <blockquote>
+              "Bring the code to the data"
+            </blockquote>
+            <p></p>
+            <ul>
+                <li>Using CDP infrastructure via Product-Create-Job</li>
+                <li>Converter runs on a cluster of machines</li>
+                <li>Built with proven opensource technologies</li>
+                <li><span class="hi">Free vs.</span> TIF2MN Oracle setup for <span class="hi">1,408,000 USD</span></li>
+            </ul>
+            <div class="fragment" style="width: 700px; display: block;  margin-left: auto; margin-right: auto; text-align: center; padding: 0.4em; background-color: white;">
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/tech-logos/hadoop.png" />
+              <img style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/tech-logos/avro.png" />
+              <!--
+              <img class="fragment" style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/tech-logos/postgres.png" />
+              <img class="fragment" style="border: none; margin: 0.2em; box-shadow: none; background: inherit;" src="img/tech-logos/sqlite.png" />
+              -->
+            </div>
+          </section>
+
+          <section>
+            <h3>Scalability - Distributed conversion</h3>
+            <ul>
+              <li>Converter is a collection of <code>LayerProcessors</code></li>
+              <li>Input data is split into equal parts</li>
+              <li>Each part is processed on its own machine, in parallel</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Scalability - Distributed conversion</h3>
+            <img src="img/distributed-conversion.png" />
+          </section>
+
+          <section>
+            <h3>Scalability - Some numbers</h3>
+            <h4>End-to-end conversion of BENELUXDEU</h4>
+            <img src="img/continental.png" width="400px" />
+            <ul>
+              <li><span class="hi">74,000,000</span> TTOM features input <span class="hi">(= 70GB)</span></li>
+              <li><span class="hi">190,678,532</span> MNR features output <span class="hi">(= 18GB)</span></li>
+              <li>Normalized <span class="hi">85,618,965</span> features in <span class="hi">23 minutes</span></li>
+              <li>Full conversion in about <span class="hi">11 hours</span></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Scalability - Advantages</h3>
+            <ul>
+                <li>More machines equals proportionally more performance</li>
+                <li>Ability to make product faster</li>
+                <li>Enforces us to write pure* conversions, so easier to:
+                    <ul>
+                      <li>Unit-test</li>
+                      <li>Debug &amp; troubleshoot</li>
+                      <li>Understand &amp; modify</li>
+                    </ul>
+                </li>
+                <li><span class="hi">Requires that TTOM resembles Multinet-R (and viceversa)</span></li>
+            </ul>
+            <p>&nbsp;</p>
+            <p style="font-size:24px" align="left">
+              * The conversion always gives the same result value given the same input, no inner state
+            </p>
+          </section>
+
+          <section>
+            <h3>Model driven</h3>
+            <ul>
+              <li>Multinet-R is defined as a physical model</li>
+              <li>Converter itself is model agnostic</li>
+              <li>Can contain multiple physical model converters</li>
+              <li>More details on the physical model later</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Model driven - Pluggable converter</h3>
+            <img src="img/pluggable-converter.png" />
+          </section>
+
+          <section>
+            <h3>Multinet-R architecture - conclusions</h3>
+            <blockquote>
+              The first nextgen converter leverages <span class="hi">CDP components</span> to realise a future proof conversion process that improves on earlier developments and also <span class="hi">provides foundations for future product converters</span>.<br /><br />
+              <span class="hi">Scalability</span> is possible by having a <span class="hi">TTOM model which is close to the Multinet-R model</span>, allowing for straightforward data transformations.
+            </blockquote>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/machine-readable.jpg" class="introslide">
+            <h1>Machine Readable Specs</h1>
+            <h2>the non-conformity killer</h2>
+          </section>
+
+          <section>
+            <h2>Why?</h2>
+            <p>For Multinet, we use config files to define and generate output product formats. This process ran into a frequent problem:</p>
+            <ul>
+              <li>Updating config is a manual process, based on reading specs docs</li>
+              <li>No clear overview on specification changes</li>
+              <li>Delivered products in line with our config, but not with the specifications</li>
+              <li>Only detected when we receive external non-conformities</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Solution</h2>
+            <p>We devised a new way to deal with product - specifications linking, commonly known as &quot;Machine Readable Specs&quot;.</p>
+            <ul>
+              <li>Specifications and product generated from the same model/config</li>
+              <li>Model acts as <span class="hi">&quot;the single source of thruth&quot;</span></li>
+            </ul>
+            <p>Goal is to make it next to impossible for us to have a discrepancy between specifications and product delivered to customer.</p>
+          </section>
+
+          <section>
+            <h2>And more...</h2>
+            <p>Using this base idea, we were also able to realize other goals:</p>
+            <ul>
+              <li>Code generated based on specification</li>
+              <li>Machine readable specifications to customers</li>
+              <li>Model independent from output format</li>
+              <li>Independent of product (not Multinet-R specific)</li>
+              <li>Constraints definition</li>
+              <li>Specifications change control</li>
+            </ul>
+            <aside class="notes">
+            <ul>
+              <li>Code generated based on specification: better context when writing code, less bugs</li>
+              <li>Machine readable specifications to customers: clearer definition of product, less room for discussion and thus non-conformities</li>
+              <li>Model independent from output format: we can deliver for shape, postgres, mysql, or any other platform the customer wants</li>
+              <li>Independent of product: we can use the system for non-multinet-r products, e.g. multinet</li>
+              <li>Constraints definition: we guarantee data consistency by value and relational constraints</li>
+              <li>Specifications change control: the model is diffable, allowing visibility of specs changes</li>
+            </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>How?</h2>
+            <img src="img/mrs-overview.png">
+          </section>
+
+          <section>
+            <h2>In detail: The model</h2>
+            <h2 class="hi">Content</h2>
+            <p>A physical model defines tables with fields, primary, foreign and uniqueness constraints, and constraints on fields:</p>
+            <ul>
+              <li>Clear datatype definition</li>
+              <li>Can be enumeration</li>
+              <li>Can be range constrained </li>
+              <li>Null allowed or not</li>
+            </ul>
+            <p>The specifications documentation on tables and fields are contained in the model.</p>
+          </section>
+
+          <section>
+            <h2>In detail: The model</h2>
+            <h2 class="hi">Format</h2>
+            <ul>
+              <li>Model is defined as an xml file</li>
+              <li>Has an xsd schema defined</li>
+              <li>Ordered and diffable</li>
+              <li>Delivered to customers</li>
+            </ul>
+            <aside class="notes">
+              <p>Since the model is xml, thus text, and is generated in an ordered fashion. We are, for the first time, able to get a clear and complete overview of all changes by diffing two versions of model.</p>
+              <p>Both the model and the xsd file are delivered to customers. We were quite surprised to have customers using the xml from the first delivery (we got a complaint on xsd vs xml incompatibility).</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>In detail: The model</h2>
+            <h3 class="hi">What it looks like</h3>
+            <pre><code data-trim contenteditable>&lt;table alias="Junction" description="..." name="MNR_Junction"&gt;
+    &lt;field name="FEAT_ID" nullable="false"&gt;
+        &lt;uuid/&gt;
+        &lt;alias&gt;Feature ID&lt;/alias&gt;
+    &lt;/field&gt;
+    &lt;field name="FEAT_TYPE" nullable="false"&gt;
+        &lt;enum enumname="Feature Type Junction"/&gt;
+        &lt;alias&gt;Feature Type&lt;/alias&gt;
+    &lt;/field&gt;
+...
+    &lt;primarykey name="PK_MNR_Junction"&gt;
+        &lt;field name="FEAT_ID"/&gt;
+    &lt;/primarykey&gt;
+    &lt;foreignkeys/&gt;
+    &lt;uniquenesses/&gt;
+&lt;/table&gt;</code></pre>
+          </section>
+
+          <section>
+            <h2>In detail: EA to Model</h2>
+            <h3 class="hi">Modeltools</h3>
+            <p>When we want a new model.xml from EA, we use Modeltools:</p>
+            <ul>
+              <li>Has been adapted to support creation of model.xml</li>
+              <li>Also creates DITA files from the generated xml</li>
+              <li>DITA files are used to generate the specifications for the customer</li> 
+              <li>Work on modeltools completed, modeltools ownership now transferred to QA team</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>DITA</h2>
+            <h3 class="hi">What it looks like</h3>
+            <img src="img/dita.png" height="500px" />
+          </section>
+
+          <section>
+            <h2>In detail: Model to code</h2>
+            <h3 class="hi">Code generation</h3>
+            <p>We generate java code classes representing the model.</p>
+            <ul>
+              <li>Serialisation through AVRO</li>
+              <li>Specs documentation in code</li>
+              <li>Validation functionality</li>
+              <li>Equality functions</li>
+              <li>Model driven integration test support</li>
+              <li>Safety mechanism: can't write if not valid</li>
+            </ul>
+            <aside class="notes">
+            <p>In the eco system, we also have:</p>
+            <ul>
+              <li>Test helpers: functionality to check the validity of output, and for comparing between expected and actual record output in an easy way</li>
+              <li>Safety first: Integration into the converter layer processors, we currenlty are unable to write output that is not valid according to the model. The converter will automatically crash. This has happened a few times already, and we were always glad it happened</li>
+              <li>Integration test: the framework we built uses the semantic classes for naming and contents of csv output</li>
+            </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>In detail: Model to code</h2>
+            <h3 class="hi">What it looks like</h3>
+            <pre><code data-trim contenteditable>/**
+ * Field FEAT_TYPE.
+ *
+ * @return the Feature Type
+ */
+public FeatureTypeJunction getFeatType() {
+    return featType;
+}
+
+/**
+ * Field FEAT_TYPE.
+ * 
+ * @param featType Feature Type
+ */
+public void setFeatType(FeatureTypeJunction featType) {
+    this.featType = featType;
+}</code></pre>
+          </section>
+
+          <section>
+            <h2>In detail: Generation of relational schemas</h2>
+            <p>We use the model to create schemas for different databases, currently Postgres, Sql/spatialite and Shape.</p>
+            <p>Since our model is non-platform specific:</p>
+            <ul>
+              <li>We are able to use the capabilities of each platform as much as we can (geometry types, field constraints, etc)</li>
+              <li>We are able to support new platforms with minimal effort</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>In detail: Generation of relational schemas</h2>
+            <h3 class="hi">What it looks like</h3>
+            <pre><code data-trim contenteditable>/* Table 60 : MNR_Junction */
+DROP TABLE IF EXISTS "MNR_Junction";
+CREATE TABLE "MNR_Junction" (
+    "FEAT_ID" text NOT NULL,
+    "FEAT_TYPE" integer NOT NULL,
+    "JT_REGULAR" integer NOT NULL,
+    "JT_BIFURCATION" integer NOT NULL,
+    "JT_RAILCROSS" integer NOT NULL,
+    "Z_LEVEL" integer NOT NULL,
+    "GEOM_WKT" text NOT NULL
+, PRIMARY KEY (FEAT_ID));</code></pre>
+          </section>
+
+          <section>
+            <h2>Current state of Machine-readable specs</h2>
+            <p>Main grunt work has been done. All components in place. Future work consist mainly of marginal enhancements and maintenance. This is one part of the Multinet-R project that can more or less be considered completed.</p>
+          </section>
+
+          <section>
+            <h2>Conclusion</h2>
+            <p>Having a <span class="hi">single source of thruth</span> is a good thing. Using a &quot;smart&quot; model throughout your framework <span class="hi">saves you time</span>, improves the <span class="hi">quality</span> of the output, and <span class="hi">increases your options</span> in dealing with changing requirements.</p>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/seaming1.jpg" class="introslide">
+            <h1>MN-R seamed continental layers</h1>
+          </section>
+
+          <section>
+            <h2>Current state: MultiNet</h2>
+            <h4>Split, overlapping &amp; inconsistently modelled content</h4>
+            <img src="img/overlap.png" />
+            <div style="width:30%; float:right; clear:none !important;">
+                <img src="img/layers.png" width="80%"/>
+            </div>
+          </section>
+
+          <section>
+            <h3>Geographical split</h3>
+            <div style="font-size:30px;">
+                <ul>
+                    <li>'MN Europe' = collection of 130 datasets</li>
+                    <li>Datasets borders cause features to be split or duplicated</li>
+                    <li>Different mechanisms to overcome dataset border limitations</li>
+                </ul>
+            </div>
+            <div>
+                <img src="img/datasets.png" width="60%"/>
+            </div>
+          </section>
+          
+          <section>
+            <h2>MN-R goals</h2>
+            <ul>
+                <li>A <span class="hi">consistent</span> product model to improve ease of use and increase development speed</li>
+                <li><span class="hi">Data integration</span> (from content + geographical point of view) to optimize operational data intake process</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>MN-R seamed continental layer demo</h2>
+            <img src="img/continental.png" width="90%"/>
+          </section>
+
+          <section>
+            <h2>MN-R realisations</h2>
+            <div style="font-size:30px;">
+            <ul>
+                <li><span class="hi">Monthly prototype</span> release cycle since start of 2013</li>
+                <li>MN-R <span class="hi">content</span> quickly follows TTOM content</li>
+                <ul>
+                    <li>Level 1 road network (junctions and network elements)</li>
+                    <li>Level 2 road network (roads, intersections, freeway intersections)</li>
+                    <li>Maneuvers, restrictions and lanes</li>
+                    <li>City centers, water, hierarchical index</li>
+                    <li>New TTOM name model integrated</li>
+                </ul>
+                <li><span class="hi">Seaming</span> is already on a better level than MultiNet</li>
+                <li><span class="hi">Machine readable specifications</span></li>
+                <li>Incremental <span class="hi">record updates</span></li>
+            </ul>
+            <div>
+          </section>
+
+          <section>
+            <h2>MN-R remaining challenges</h2>
+            <ul>
+                <li>Keep TTOM and MN-R in line</li>
+                <li>TTOM dependency</li>
+                <ul>
+                    <li>for data freshness</li>
+                    <li>for data integration</li>
+                    <ul>
+                        <li>phonemes</li>
+                        <li>locality index</li>
+                        <li>address points and POI's</li>
+                        <li>...</li>
+                    </ul>
+                </ul>
+            </ul>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/newcontent5.jpg" class="introslide">
+            <h1>MN-R new content</h1>
+          </section>
+
+          <section>
+            <h2>traffic signs, overtaking restrictions</h2>
+            <div style="width:75%; float:left; clear:none !important;">
+                <ul>
+                    <li>Volkswagen asks for extra map content</li>
+                    <ul>
+                        <li>Traffic signs</li>
+                        <li>Overtaking restrictions</li>
+                        <li>Overtaking lanes</li>
+                    </ul>
+                    <li>Prototype data has been quickly captured, integrated in TIF, TTOM and MN-R software stacks</li>
+                    <li>All content is <span class="hi">fully integrated</span> in MN-R map</li>
+                    <li>Official prototype data delivery expected Wednesday, 10th July</li>
+                </ul>
+            </div>
+            <div style="width:25%; float:right; clear:none !important;">
+                <img src="img/speed_signs.png"/>
+                <img src="img/no_overtaking_start.png"/>
+            </div>
+          </section>
+
+          <section>
+            <h3>Overtaking restrictions</h3>
+            <h4>with start/end traffic signs</h4>
+            <img src="img/vw.png" width="90%"/>
+          </section>
+
+          <section>
+            <h3>speed signs</h3>
+            <img src="img/vw_speed.png" width="90%"/>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/fresh3.jpg" class="introslide">
+            <h1>MN-R data freshness</h1>
+          </section>
+
+          <section>
+            <h2>Current state: MultiNet</h2>
+            <div style="width:80%; float:left; clear:none !important;">
+                <ul>
+                    <li>Quarterly product releases</li>
+                    <li>What has <em>exactly</em> been updated in a new release is not transparent</li>
+                    <li>OpenLR based MN incremental updates</li>
+                    <ul>
+                        <li>Subset of Cartopia transactions (=filtered)</li>
+                        <li>Supports limited set of features/attributes and no geometry updates</li>
+                        <li>Not a 100% guaranteed solution</li>
+                        <li>Hard to apply for customers (street name update impacts core map, MN POI, MN APT, locality index, ...)</li>
+                    </ul>
+                </ul>
+            </div>
+            <div style="width:20%; float:right; clear:none !important;">
+                <img src="img/OpenLR-logo.gif" width="85%"/>
+            </div>
+          </section>
+
+          <section>
+            <h2>MN-R goal state</h2>
+            <ul>
+                <li><span class="hi">monthly</span> baseline releases (full product)</li>
+                <li><span class="hi">full update transparency</span> with stable id's for all content</li>
+                <li><span class="hi">delta records</span></li>
+                <ul>
+                    <li>Easily applicable</li>
+                    <li>Id based</li>
+                    <li>Added/removed/updated record lists</li>
+                    <li>For all content</li>
+                </ul>
+                <li>OpenLR based MN incremental updates remain applicable</li>
+            </ul>
+            <h3>Baseline A + Delta(A,B) = Baseline B</h3>
+          </section>
+
+          <section>
+            <h2>Delta records: how?</h2>
+            <img src="img/delta-processing.png"/>
+          </section>
+
+          <section>
+            <h2>Delta records: demo</h2>
+            <img src="img/change.png" width="60%"/>
+          </section>
+
+          <section>
+            <h2>Delta records: noise</h2>
+            <img src="img/diff_overview.png" />
+          </section>
+
+          <section>
+            <h2>Delta records: challenges</h2>
+            <ul>
+                <li><span class="hi">more frequent</span> quality input data</li>
+                <li><span class="hi">stable id's for all content</span> to remove noise in delta records</li>
+            </ul>
+          </section>
+
+          <section>
+          </section>
+
+          <section data-transition="zoom" data-background-image="img/bg/6months.jpg" class="introslide">
+            <h1>Open challenges</h1>
+            <h2 class="hi">next 6 months</h2>
+          </section>
+
+          <section>
+            <h2>++6 months</h2>
+            <ul>
+              <li>Prototype feature DNA as enabler for <span class="hi">stable ID</span></li>
+              <li>Prototype product <span class="hi">partitioning</span></li>
+              <li>Conversion <span class="hi">performance</span> and <span class="hi">operational process</span></li>
+              <li>Knowledge sharing and coop with <span class="hi">Mapline teams</span> (MN and automotive)</li>
+              <li>Deliver <span class="hi">full pilot end Q4 2013</span></li>
+            </ul>
+          </section>
+
+          <section>
+          </section>
+
+          <section>
+            <h2>Any <span class="hi">questions?</span></h2>
+            <p style="margin: 1em 0;">This overview was brought to you by the <span class="hi">Pandora</span> team: <em>Rebekka, Jan, Jelle, Plamen, Kevin, Christophe, Dominique, Pieter and Timo.</em></p>
+            <p style="margin: 1em 0;">This presentation is available online on <a href="http://cats.ttg.global/">cats</a> at <a href="http://cats.ttg.global/sprint-reviews/pandora/mnr-demo-1">http://cats.ttg.global/sprint-reviews/pandora/mnr-demo-1</a>. (css3 capable browser required)</p>
+            <p style="margin: 1em 0;">Powered by <a href="http://lab.hakim.se/reveal-js">reveal.js</a>.</p>
+          </section>
+
+
+      </div>
+
+    <p class="slide-number"></p>
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reveal.min.js"></script>
+    <script type="text/javascript" src="js/polymaps.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition, // || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+      function svg_overlay(data) {
+        return function(tile, proj) {
+          proj = proj(tile);
+          var ul = proj.locationPoint( data.bounds.ul ),
+              lr = proj.locationPoint( data.bounds.lr ),
+              image = tile.element = po.svg("image");
+          image.setAttribute("preserveAspectRatio", "none");
+          image.setAttribute("x", ul.x);
+          image.setAttribute("y", ul.y);
+          image.setAttribute("width", lr.x - ul.x);
+          image.setAttribute("height", lr.y - ul.y);
+          image.setAttributeNS("http://www.w3.org/1999/xlink", "href", data.file);
+        }
+      }
+
+      $(document).ready(function() {
+        var slideNumber = document.querySelector('.slide-number');
+        var updateSlideNumber = function(event) {
+            var textContent = event.indexh;
+            if (event.indexv > 0) {
+                textContent += '-' + event.indexv;
+            }
+            if (event.indexh > 0) {
+                slideNumber.textContent = textContent;
+            }
+        }
+
+        Reveal.addEventListener('ready', updateSlideNumber);
+        Reveal.addEventListener('slidechanged', updateSlideNumber);
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,411 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title></title>
+<link rel="stylesheet" href="../deck/core/deck.core.css">
+<link rel="stylesheet" href="../deck/extensions/goto/deck.goto.css">
+<link rel="stylesheet" href="../deck/extensions/menu/deck.menu.css">
+<link rel="stylesheet" href="../deck/extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" href="../deck/extensions/status/deck.status.css">
+<link rel="stylesheet" href="../deck/extensions/hash/deck.hash.css">
+<link rel="stylesheet" href="../deck/extensions/scale/deck.scale.css">
+<link rel="stylesheet" href="../deck/themes/style/tomtom.css">
+<link rel="stylesheet" href="../deck/themes/transition/horizontal-slide.css">
+<link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
+<script src="../deck/lib/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+<section class="slide" id="intro"><table align="center">
+<tr><td width="1140" height="524" align="center" background="../deck/slides/TomTomLogo.jpg"></td></tr>
+<tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
+<tr><td align="right"><h5 class="center">Team BigBang</h5></td></tr>
+<tr><td align="right"><h7 class="center">Sprint 05</h7></td></tr>
+</table></section><section class="slide" id="intro"><div class="info">
+<h4 class="center">Team Composition</h4>
+<p class="team"><span class="caption">Scrum Team Members: </span><span class="content"><br>
+                      • <member>Peter Huysman</member><br>
+                      • <member>Thomas Martens</member><br>
+                      • <member>Frankie Bollaert</member><br>
+                      • <member>Stefan De Smit</member><br>
+                      • <member>Priyanka Sharma</member><br>
+                      • <member>Mark Lebegge</member><br>
+                      • <member>Veerle Merckx</member><br>
+                      • <member>Arkadiusz Wysocki ('Arek')</member><br>
+                      • <member>Pawel Wosiak</member><br>
+                      • <member>Marcin Zimniak</member><br>
+                      • <member>Michal Kozlowski</member><br>
+                      • <member>Pawel Jesak</member><br>
+                      • <member>Rafal Wojaczynski</member></span></p>
+<p class="scrum-master"><span class="caption">Product Owner: </span><span class="content">Marius Swanepoel</span></p>
+<p class="scrum-master"><span class="caption">Scrum Master: </span><span class="content">Johan Tré</span></p>
+</div></section><section class="slide" id="intro"><h2>User Stories Done</h2>
+<ul class="stories">
+<li class="story done">
+          Merge previous Sprint to Mainline
+        <span class="sp">(SP: 1)</span>
+</li>
+<li class="story done">
+          NODES
+        <span class="sp">(SP: 2)</span>
+</li>
+<li class="story done">
+          Model update: Names.Group all changes - POI's ON/AN/BN
+        <span class="sp">(SP: 3)</span>
+</li>
+<li class="story done">
+          Model update: Names.Group all changes - Other Line features
+        <span class="sp">(SP: 3)</span>
+</li>
+<li class="story done">
+          Model update: Names.Group all changes - Sign Posts and Others
+        <span class="sp">(SP: 3)</span>
+</li>
+<li class="story done">
+          Model update: Names.Group all changes - Name Components
+        <span class="sp">(SP: 2)</span>
+</li>
+<li class="story done">
+           Support Timebox 1FTE 
+        <span class="sp">(SP: 1)</span>
+</li>
+</ul></section><section class="slide" id="intro"><h2 class="story not-done">User Stories NOT Done</h2>
+<ul class="stories">
+<li class="story not-done">
+          Optimize MDS Load Time
+        <span class="sp">(SP: 2)</span><span class="sp"> Done: 85%</span>
+</li>
+<li class="story not-done">
+           Estimate the next Sprints Merge to Mainline
+        <span class="sp">(SP: 1)</span><span class="sp"> Done: 50%</span>
+</li>
+</ul></section><section class="slide" id="" style=""><h2>Challenges</h2>
+<ul>
+            <li>Resources taken in favour of 3.8 RMC </li>
+            <li>Work around Jenkins unavailability</li>
+        </ul></section><section class="slide" id="" style=""><header class="story done" points="1">
+          <h3>Merge previous Sprint to Mainline</h3>
+        </header><h5>Goals:</h5>
+<ul>
+            <li>Create team branch with merged 2 functionalities delivered in earlier sprints:</li>
+			<ul>
+				<li>TTOM model 3_11</li>
+			</ul>
+			<li>Merge this branch into coredb trunk</li>
+			<li>Load mds for belgium for testing</li>
+			<li>Fix read only FAT tests</li>
+			<li>Release version of all coredb components</li>
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li>New coredb released components</li>
+			<li>Enable other teams to work with latest model</li>
+        </ul></section><section class="slide" id="" style=""><header class="story done" points="2">
+          <h3>NODES</h3>
+        </header><h5>Goals:</h5>
+<ul>
+                <li>Align topology between PDS/MDS</li>            
+                <li>Avoid reading topology features directly from GDF database</li>
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li>Unified channel for serving data from GDF to MDS via firehose</li>
+            <li>resolved mismatch between TIF nodes &amp; product nodes (no more nodes for non planar features)</li>
+            <li>simplified topology model</li>
+        </ul></section><section class="slide" id="" style=""><header class="story not-done" points="2" percentage-done="85">
+          <h3 class="story not-done">Optimize MDS Load Time</h3>
+        </header><h5>Goals:</h5>
+<ul>
+            <li>Get rid of SQL query that runs as postprocess on Postgres database</li>
+            <li>Move that process to CSV-Creator - java tool</li>
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li>Avoid running complicated SQL query that takes time to finish</li>
+			<li>Most likely MDS loading time will be decreased - not measured yet</li>
+        </ul>
+<h5>Still to do:</h5>
+<ul>
+			<li>Validation - make sure that output from new aproach is exactly the same as from SQL query</li>
+		</ul></section><section class="slide" id="" style=""><header class="story done" points="3">
+          <h3>Model update: Names.Group all changes - POI's ON/AN/BN</h3>
+        </header><h5>Goals:</h5>
+<ul>
+            <li> Improved name model on POI Features </li>
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li> Common Name Set - Official Name </li>
+            <li> Common Name Set - Alternate Name </li>
+            <li> Composite Brand Name </li>
+            <li> Company Name </li>
+            <li> Composite Address Information - Street Name </li>
+            <li> Composite Address Information - Place Name </li>
+            <li> Composite Direction - Route number </li>
+            <li> Composite Direction - From Direction </li>
+            <li> Composite Direction - To Direction </li>
+        </ul></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: poi name</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/poi_common_name_set.jpg" style="width:100%;height:100%;">
+                    </td>
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: poi brand name</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/brand_name.jpg" style="width:100%;height:100%;">
+                    </td>
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: poi address</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/screenshot-poi.png" style="width:100%;height:100%;">
+                    </td>
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><header class="story done" points="3">
+          <h3>Model update: Names.Group all changes - Other Line features</h3>
+        </header><h5>Goals:</h5>
+<ul>
+            <li> Introduced improved name model on Other Line Features </li>
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li> Adress Area Boundary Element - Street Name Set </li>
+            <li> Line Brunnel - Common Name Set </li> 
+            <li> Ferry Element - Common Name Set </li> 
+            <li> Railway - Common Name Set </li> 
+            <li> Water Center Line - Common Name Set </li> 
+            <li> Water Line - Common Name Set </li> 
+        </ul></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: ferry element name</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/ferry_element_common_name_set.jpg" style="width:100%;height:100%;">
+                    </td>            
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: line brunnel name</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/line_brunnel_common_name_set.jpg" style="width:100%;height:100%;">
+                    </td>            
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: water center line name</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/water_center_line_common_name_set.jpg" style="width:100%;height:100%;">
+                    </td>            
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><header class="story done" points="3">
+          <h3>Model update: Names.Group all changes - Sign Posts and Others</h3>
+        </header><h5>Goals:</h5>
+<ul>
+            <li> Improved name model on Sign Post Features </li>
+            <li> Improved name model on Postal District Features </li>
+            <li> Improved name model on Grade Separated Crossing Features </li>
+
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li> Signpost - Exit Name </li>
+            <li> Signpost - Other Destination </li>
+            <li> Signpost - Place Name On Signpost </li>
+            <li> Signpost - Street Name </li>
+            <li> Postal District - Postal Name Set </li>
+            <li> University or College Ground - Acronym </li>
+            <li> Road Element - Brunnel Name </li>
+            <li> Ferry Connection - Brunnel Name </li>
+            <li> Railway Element - Brunnel Name </li>
+        </ul></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: signpost (1/2)</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/signpost_route_number_set.jpg" style="width:100%;height:100%;">
+                    </td>
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: signpost (2/2)</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/signpost_other_destination_and_place_name.jpg" style="width:100%;height:100%;">
+                    </td>            
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: freeway intersection name</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/freeway_intersection_common_name_set.jpg" style="width:100%;height:100%;">
+                    </td>            
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: acronym</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/screenshot-acronym.png" style="width:100%;height:100%;">
+                    </td>            
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><header class="story done" points="2">
+          <h3>Model update: Names.Group all changes - Name Components</h3>
+        </header><h5>Goals:</h5>
+<ul>
+            <li> Implement new Name Component model on Names </li>
+        </ul>
+<h5>Value delivered:</h5>
+<ul>
+            <li>Name components are easier to use.
+                <ul>
+                    <li> No need for cutting components out of the name </li>
+                        <ul>
+                             <li> Name Component Offset </li>
+                             <li> Name Component Text </li>
+                        </ul>
+                    <li> No need to loop over the name components to find an specific type </li>
+                        <ul>
+                             <li> name.getPrefix() </li>
+                             <li> name.getBody() </li>
+                             <li> ... </li>
+                        </ul>
+                </ul>
+            </li>
+
+            
+        </ul></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: name components (1/2)</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/name_component_route_number.jpg" style="width:100%;height:100%;">
+                    </td>
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><table align="center">
+                <tr>
+                    <td align="left"><h4 class="center">demo: name components (2/2)</h4></td>
+                </tr>
+                <tr>
+                    <td style="width:800px;">
+                        <img src="img/name_component_street_name_set.jpg" style="width:100%;height:100%;">
+                    </td>
+                </tr>
+                <tr>
+                <td align="left">
+                </td>
+                </tr>
+            </table></section><section class="slide" id="" style=""><header class="story not-done" points="1" percentage-done="50">
+          <h3 class="story not-done"> Estimate the next Sprints Merge to Mainline</h3>
+        </header><h5>Goals:</h5>
+<ul>
+	    <li>Load BEL dataset with latest code</li>
+            <li>Measure the number of failing FAT tests that will be taken into account in the planning of next sprint</li>
+        </ul>
+<h5>Still to do:</h5>
+<ul>
+	        <li>Run FAT and estimate</li>
+	</ul></section><section class="slide" id="" style=""><header class="story done" points="1">
+          <h3 class="story done"> Support Timebox 1FTE </h3>
+        </header><h5>Value delivered: L4-to-Equinix support</h5>
+<ul>
+            <li> The world is running on L4 3.8 RMC</li>
+            <ul>
+                <li> Daily monitored to guard stability </li>
+            </ul>                
+            <li> Environment L4: 1st try out! </li>
+            <li> L4 environmental configurations = setup now</li>
+            <li> L4 3.8 RMC has increased stability</li>
+            <li> 3.8 RMC Support = team driven = less overhead</li>
+            <li> Points proven:</li>
+            <ul>
+                <li> majority of issues environmental!</li>
+                <li> close collaboration w TechOps pays off!</li>
+                <li> close collaboration increased common goal mindset!</li>
+            </ul>                
+        </ul></section><section class="slide" id="intro"><table align="center">
+<tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
+<tr><td style="width:1000px;"><img src="img/burndown.jpg" style="width:100%;height:100%;"></td></tr>
+<tr><td align="left">
+<h6 class="center">Velocity Sprint 05: 15</h6>
+<h6 class="center">Commitment: 18</h6>
+</td></tr>
+</table></section><section class="slide" style="background-image: url('../deck/slides/confused-chan.jpg');  background-repeat:no-repeat; background-attachment:fixed; background-position:center"><h1 class="center">Any Questions?</h1></section><section class="slide" style="background-image: url('../deck/slides/thank-you.jpg');  background-repeat:no-repeat; background-attachment:fixed; background-position:center"><h1 class="center">Thank you!</h1></section><a href="#" class="deck-prev-link" title="Previous">←</a><a href="#" class="deck-next-link" title="Next">→</a><p class="deck-status"><span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span></p>
+<form action="." method="get" class="goto-form">
+<label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go">
+</form>
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a><script src="../deck/lib/jquery-1.7.2.min.js"></script><script src="../deck/lib/jquery-fullscreen.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/extensions/hash/deck.hash.js"></script><script src="../deck/extensions/menu/deck.menu.js"></script><script src="../deck/extensions/goto/deck.goto.js"></script><script src="../deck/extensions/status/deck.status.js"></script><script src="../deck/extensions/navigation/deck.navigation.js"></script><script src="../deck/extensions/scale/deck.scale.js"></script><script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

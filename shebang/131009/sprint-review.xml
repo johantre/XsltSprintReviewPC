@@ -1,0 +1,328 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview id="04">
+    <team name="Shebang">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Thomas Martens</member>
+        <member>Stefan De Smit</member>
+        <member>Maciej Moczkowski</member>
+        <member>Dominik Plichka</member>
+        <member>Jurgen Reynaert</member>
+    </team>
+    <intro title="Technical Suite 3.0">
+        <slides>
+            <slide type="sprint-intro">
+                <ul>
+                    <li>list item.
+                        <ul>
+                            <li>list item.</li>
+                            <li>list item.</li>
+                        </ul>                       
+                    </li>                        
+                    <li>list item.</li>
+                    <li>list item.</li>
+                </ul>            
+            </slide>
+            <slide type="sprint-goal">
+                <ul>
+                    <li>list item.
+                        <ul>
+                            <li>list item.</li>
+                            <li>list item.</li>
+                        </ul>                       
+                    </li>                        
+                    <li>list item.</li>
+                    <li>list item.</li>
+                </ul>            
+            </slide>
+        </slides>    
+    </intro>
+    <stories>
+        <story title="Type your story title here" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>HBase table structure:</h5>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>list item.</li>
+                                <li>list item.</li>
+                                <li>list item.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            title
+                            <ul>
+                                <li>list item.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            title
+                            <ul>
+                                <li>list item.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h4>HBase schema</h4>
+                    <img src="img/hbase1.png" alt="hbase" />
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Type your story title here" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Type your story title here" state="story not-done" points="0" percentage-done="75">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Type your story title here" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Type your story title here" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="the story that is not done title" state="story not-done" points="0" percentage-done="75">
+            <slides>
+                <slide>
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Initial goal</li>
+                    </ul>
+                    <h5>Problem description:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li>Phonemes can be 'released' from 'PDS'</li>
+                    </ul>
+                    <h5>To Do:</h5>
+                    <ul>
+                        <li>what's left?</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="">
+            <slides>
+                <slide id='story-timeline'>
+                    <img src="img/timeline.jpg" alt="demo: diff" />
+                </slide>
+            </slides>
+        </story>
+    </stories>
+</sprintreview>

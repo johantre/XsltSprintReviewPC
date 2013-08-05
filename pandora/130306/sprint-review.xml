@@ -1,0 +1,518 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../deck/slides.xsl"?>
+<slides>
+    <dependencies>
+        <script src="http://openlayers.org/api/OpenLayers.js"></script>
+        <link rel="stylesheet" href="extra/mnr-demo.css"/>
+    </dependencies>
+
+    <title>Sprint review Pandora</title>
+
+    <slide id="goal">
+        <header>
+            <h3>Sprint goal</h3>
+        </header>
+        <blockquote style="font-size:38px">
+            <p>"Deliver MN-R prototype 4 to our customers"</p>
+            <p><cite style="float: right">Our product owner</cite></p>
+        </blockquote>
+        <img src="img/yg3.jpeg" />
+        <img src="img/mapscape.png" />
+    </slide>
+
+    <slide id="stories">
+        <header>
+            <h3>Sprint overview - User stories</h3>
+        </header>
+        <p>The sprint started on the <strong>5th of March</strong> and ended on the <strong>2nd of April 2013</strong>.</p>
+
+        <div class="stories">
+            <table>
+                <tr>
+                    <th>Epic</th><th>Story</th><th>SP</th>
+                </tr>
+                <tr class="epic">
+                    <td>MNR MAINT</td>
+                    <td class="not-done">Package, document and release prototype 4</td>
+                    <td>1</td>
+                </tr>
+                <tr class="epic">
+                    <td></td>
+                    <td class="done">Rework and fix feedback from prototype 3</td>
+                    <td>2</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR LAYER</td>
+                    <td class="done">Populate Brunnels</td>
+                    <td>3</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR LAYER</td>
+                    <td class="done">Add machine readable conceptual model (~allcodes) into meta info layer</td>
+                    <td>2</td>
+                </tr>
+                <tr class="epic">
+                    <td></td>
+                    <td class="done">Implement new restrictions table model</td>
+                    <td>3</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR MACHSPEC</td>
+                    <td class="done">Update pmf (physical model format) system to support type ranges</td>
+                    <td>3</td>
+                </tr>
+                <tr class="epic">
+                    <td></td>
+                    <td class="done">Update &amp; improve model tools</td>
+                    <td>1</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR RECUPD</td>
+                    <td class="done">Proof of concept Stable (unique) ID's</td>
+                    <td>2</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR INFRA</td>
+                    <td class="not-done">Set up and perfomance testing of development environment</td>
+                    <td>2</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR INFRA</td>
+                    <td class="not-done">Make cross-team HM editing agreements and document</td>
+                    <td>3</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR INFRA</td>
+                    <td class="not-done">Groom and prototype Hive (query possibility on Hadoop)</td>
+                    <td>3</td>
+                </tr>
+                <tr class="epic">
+                    <td>MNR INFRA</td>
+                    <td class="not-done">Clean up and improve development process ease of use</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="info">
+            <p class="scrum-master"><span class="caption">Product owner: </span><span class="content">Timothy Grymonpon</span></p>
+            <p class="scrum-master"><span class="caption">Scrum master: </span><span class="content">Timothy Grymonpon</span></p>
+            <p class="team"><span class="caption">Team:</span> <span class="content">Christophe, Dominique, Jan, Jelle, Kevin, Pieter, Plamen, Rebekka</span></p>
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR MAINT</h3>
+            <h4>Rework and fix feedback from prototype 3</h4>
+        </header>
+            <ul>
+                <li>No feedback received from customers :-(</li>
+                <li><p>But we have to make sure our code is in line with the mapping document:</p>
+                    <ul>
+                        <li>Bifurcations in MNR_Maneuver, MNR_Maneuver_Path_Idx</li>
+                        <li>Construction status in MNR_Restriction</li>
+                        <li>Left and right country in Netw_Geo_Link</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+                <li>Migration from TTOM 3.8 to 3.9 (TIF2TTOM, ttomgdfloader, ...)</li>
+             </ul>
+             <p>Current status (layers, discussions, issues) can always be found here:</p>
+                <a href="http://vos.intra.local/display/CPEMPE/Multinet-R+Status" target="_blank">http://vos.intra.local/display/CPEMPE/Multinet-R+Status</a>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR MACHSPEC</h3>
+            <h4>Update pmf (physical model format) system to support type ranges</h4>
+        </header>
+        <p>Support for value ranges in physical models was added. This allows to define an upper and lower range on a numeric field. e.g.</p>
+        <pre><code><![CDATA[<valuerange name="Number Of Lanes">
+    <integer width="2"/>
+    <lowerbound>1</lowerbound>
+    <upperbound>99</upperbound>
+</valuerange>]]></code></pre>
+        <p>This entailed the following changes to our stack:</p>
+        <ul>
+            <li>Updated pmff.xsd to 1.4 (update the model.xml definition)</li>
+            <li>Adapt modeltools to support value ranges, both in the model.xml and in dita.</li>
+            <li>Updated sql scripts generation so our customers get these new constraints.</li>
+        </ul>
+        <p>Benefits: Value ranges allow for <strong>more automated checks</strong>, and a more <strong>specific selection of datatypes</strong> in the target platform, e.g. <em>select a byte iso an integer when the range is [0:255].</em></p>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR MACHSPEC</h3>
+            <h4>Update pmf (physical model format) system to support type ranges</h4>
+        </header>
+        <p>In database load scripts, these ranges are implemented as check constraints (where supported: on domains); this is also how we implemented enumerations. This example is <b>Postgres</b> specific.</p>
+        <pre><code><![CDATA[CREATE DOMAIN "FRC" AS numeric(2) -- Discrete domain
+CONSTRAINT "check_value_FRC"
+CHECK (VALUE = ANY(ARRAY[10, 20, 30, 40, 51, 52, 60, 70, 80]));
+
+CREATE DOMAIN "NumberOfLanes" AS numeric(2) -- Continuous domain [1, 99]
+CONSTRAINT "check_value_NumberOfLanes"
+CHECK ((VALUE >= 1) AND (VALUE <= 99));
+
+CREATE DOMAIN "SpeedRestriction" AS numeric(3)
+CONSTRAINT "check_value_SpeedRestriction"
+CHECK ((VALUE >= 0) AND (VALUE <= 140));
+
+CREATE TABLE "MNR_Netw_Route_Link" (
+    "FEAT_ID" uuid,
+    "NAME" varchar(254),
+    "LANG_CODE" varchar(3),
+    "DISPLAY_CLASS" "FRC",
+    "SPEEDMAX_POS" "SpeedRestriction", -- Domain reuse
+    "SPEEDMAX_NEG" "SpeedRestriction"  -- Domain reuse
+);]]></code></pre>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR MACHSPEC</h3>
+            <h4>Update pmf (physical model format) system to support type ranges</h4>
+        </header>
+        <p>Small but interesting problem:</p>
+        <div style="float:left">
+            <ul>
+                <li>Volkswagen test track Ehra-Lessien near Wolfsburg.</li>
+                <li>Has a maximum speed on 250 km/h.</li>
+                <li>Invalid according to the model ([0, 140]).</li>
+            </ul>
+            <p> </p>
+            <p>We are pretty strict on model violations: not valid means no product.</p>
+            <p> </p>
+            <p>You may have seen <a href="http://www.youtube.com/watch?v=LO0PgyPWE3o&amp;t=3m20s" target="_blank">this track here.</a></p>
+        </div>
+        <div style="float:right">
+            <img src="img/speedlimit3.png" />
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR MACHSPEC</h3>
+            <h4>Update &amp; improve model tools</h4>
+        </header>
+        <p>We have a list of improvement requests for the <strong>modeltools</strong> application, which is the application we use to convert the EA model into a machine readable physical model.</p>
+        <p>This sprint, we implemented some of those requests:</p>
+        <ul>
+            <li>Log version of modeltools so we can see which modeltools was used to generate a model.</li>
+            <li>Log tables that are mising a primary key.</li>
+            <li>Generated model will contain svn revision as stored in xmi, as buildnumber property on model.</li>
+            <li>The model.xml file now contains ordered attributes, allowing for much better change detection in subversion.</li>
+        </ul>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR LAYER</h3>
+            <h4>Populate Meta Info layers</h4>
+        </header>
+        <div style="float:left;clear:none">
+            <ul>
+                <li>The product specification and documentation is now a part of the product.</li>
+                <li>
+                    Small architectural challenge because this is a meta-layer.
+                </li>
+                <li>
+                    Contains tables that describe and document:
+                    <ul>
+                        <li>the other tables</li>
+                        <li>their fields</li>
+                        <li>and enumerations</li>
+                    </ul>
+                </li>
+                <li>
+                    UUIDs are stable.
+                </li>
+                <li>
+                    <p>More information <a href="http://help.tomtomgroup.com/specs/specification/mn-r_1-4-0/internal/index.html#mnr_format_spec/meta/meta_model.html" target="">here</a>.</p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear:none;float:right">
+            <img src="img/megamonalisa_recursion.jpg" />
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR INFRA</h3>
+            <h4>Groom and prototype Hive (query possibility on Hadoop)</h4>
+        </header>
+        <div style="float:left">
+            <p><u>Goal:</u> feasability of using Hive to implement the MNR statistics layers.</p>
+            <h4>What is Apache Hive?</h4>
+            <ul>
+                <li>Initially developed at Facebook</li>
+                <li>Convert SQL queries to MapReduce jobs</li>
+                <li>Supports CSV, HBase, Avro, ...</li>
+                <li>Has some unfortunate limitations and drawbacks</li>
+            </ul>
+            <h4>What did we try?</h4>
+            <ul>
+                <li>Add basic support for Hive to our tools (ddl-generator)</li>
+                <li>Query the MNR product (CSV)</li>
+                <li>Run basic statistics queries</li>
+            </ul>
+            <h4>Challenges</h4>
+            <ul>
+                <li>We don't output CSV, so we would need to query our intermediate files instead.</li>
+                <li>Some queries may be impossible (spatial?).</li>
+                <li>Needs to be done after the product was created.</li>
+            </ul>
+        </div>
+        <div style="float:right">
+            <img src="img/hive.png" />
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR INFRA</h3>
+            <h4>Groom and prototype Hive (query possibility on Hadoop) - Demo</h4>
+        </header>
+        <div>
+            <img src="img/3d.jpg" style="width:75%" />
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR LAYER</h3>
+            <h4>Populate Brunnels</h4>
+        </header>        
+        <ul>
+            <li>Required railways</li>
+            <li>Area- and Point Brunnels (MNR_Carto_Brunnel_A &amp; MNR_Carto_Brunnel_P)</li>
+            <li>Grade Separated Crossing (MNR_GSC &amp; MNR_GSC_Element)</li>
+        </ul>        
+        <ul>
+        <h5><font color="red">Border Problem:</font></h5>
+            <p>Incomplete MNR feature (GSC, Maneuver, ...) created,
+               if part of feature is not in the selected zone.</p>
+        </ul>
+        <img src="img/border_problem.jpg" />
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR LAYER</h3>
+            <h4>Implement new restrictions table model</h4>
+        </header>        
+        <div style="float:left;clear:none">
+            <ul>
+                <li>
+                    Old Restrictions:
+                    <ul>
+                        <li>1 table with 56 columns</li>
+                        <li>most of the columns were not populated</li>
+                    </ul>
+                </li>
+                <li>
+                    New Restrictions:
+                    <ul>
+                        <li>3 tables: NetworkRestrictions, ManeuverValidity, <strike>LaneInformation</strike></li>
+                        <li>Reduced footprint</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="clear:none;float:right">
+            <img src="img/mnr_restriction.png" />
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR RECUPD</h3>
+            <h4>Proof of concept Stable (unique) ID's - Differ process recap</h4>
+        </header>
+        <img src="img/differ.png" />
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR RECUPD</h3>
+            <h4>Proof of concept Stable (unique) ID's - Demo</h4>
+        </header>
+         <div>
+             <div id="mnr-demo-map"></div>
+        </div>
+        <p> </p>
+        <div id="mnr-demo-map-tools">
+            <a href="javascript:$('#mnr-demo-map').fullScreen();" style="font-size: 14px">Go fullscreen</a>
+            <div id="mnr-demo-map-zones" style="float: right">
+            </div>
+        </div>
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR RECUPD</h3>
+            <h4>Proof of concept Stable (unique) ID's - Improvements since previous sprint</h4>
+        </header>
+        <img src="img/diff_detail.png" />
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR RECUPD</h3>
+            <h4>Proof of concept Stable (unique) ID's - Overview of update noise</h4>
+        </header>
+        <img src="img/diff_overview.png" />
+    </slide>
+
+    <slide>
+        <header>
+            <h3>MNR RECUPD</h3>
+            <h4>Proof of concept Stable (unique) ID's - Next steps</h4>
+        </header>
+        <ul>
+            <li>Stable junction id's have been introduced with hack in TIF2TTOM</li>
+            <li>This was good enough to prove positive effect on record updates</li>
+            <li>Now, we need to work on structural (DNA based) stable id solution usable for all possible features!</li>
+        </ul>
+    </slide>
+
+    <initscript>
+        <script type="text/javascript">
+            var $d = $(document);
+            $d.bind('deck.init',
+                        function() {
+                            var map = new OpenLayers.Map('mnr-demo-map', {
+                                projection: new OpenLayers.Projection("EPSG:900913"),
+                                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                                units: 'm',
+                                fractionalZoom: true
+                            });
+
+                            var lbs = new OpenLayers.Layer.XYZ("TomTom Sydney LBS",
+                                        ["http://a.routes.tomtom.com/lbs/map/1/basic/${z}/${x}/${y}/1e2099c7-eea9-476b-aac9-b20dc7100af1;v=3;l=nl;m=png"],
+                                        {
+                                            layers:'basic',
+                                            resolutions: [156543.03390625, 78271.516953125, 39135.7584765625,
+                                                  19567.87923828125, 9783.939619140625, 4891.9698095703125,
+                                                  2445.9849047851562, 1222.9924523925781, 611.4962261962891,
+                                                  305.74811309814453, 152.87405654907226, 76.43702827453613,
+                                                  38.218514137268066, 19.109257068634033, 9.554628534317017,
+                                                  4.777314267158508, 2.388657133579254, 1.194328566789627,
+                                                  0.5971642833948135, 0.25, 0.1, 0.05],
+                                            serverResolutions: [156543.03390625, 78271.516953125, 39135.7584765625,
+                                                                19567.87923828125, 9783.939619140625,
+                                                                4891.9698095703125, 2445.9849047851562,
+                                                                1222.9924523925781, 611.4962261962891,
+                                                                305.74811309814453, 152.87405654907226,
+                                                                76.43702827453613, 38.218514137268066,
+                                                                19.109257068634033, 9.554628534317017,
+                                                                4.777314267158508, 2.388657133579254],
+                                            transitionEffect: 'resize'
+                                        }
+                            );
+
+                            /* Note: beware of same-origin-policy. */
+                            info = new OpenLayers.Control.WMSGetFeatureInfo({
+                                url: 'http://bekka-desktop:8080/geoserver/mnr-pilot/wms', 
+                                title: 'Identify features by clicking',
+                                queryVisible: true,
+                                eventListeners: {
+                                    getfeatureinfo: function(event) {
+                                        map.addPopup(new OpenLayers.Popup.FramedCloud(
+                                            "chicken", 
+                                            map.getLonLatFromPixel(event.xy),
+                                            null,
+                                            event.text,
+                                            null,
+                                            true
+                                        ));
+                                    }
+                                }
+                            });
+                            
+                            var mousePositionCtrl = new OpenLayers.Control.MousePosition();
+
+                            /* DIFF demo */
+                            registerLayer("02 Added JUNCTIONS", "mnr-pilot:ADDED_Junction", map);
+                            registerLayer("02 Added NETW_ROUTE_LINK", "mnr-pilot:ADDED_Netw_Route_Link", map);
+                            registerLayer("02 Added NETW_GEO_LINK", "mnr-pilot:ADDED_Netw_Geo_Link", map);
+                            registerLayer("02 Updated JUNCTIONS", "mnr-pilot:UPDATED_Junction", map);
+                            registerLayer("02 Updated NETW_ROUTE_LINK", "mnr-pilot:UPDATED_Netw_Route_Link", map);
+                            registerLayer("02 Updated NETW_GEO_LINK", "mnr-pilot:UPDATED_Netw_Geo_Link", map);
+                            registerLayer("02 Removed JUNCTIONS", "mnr-pilot:REMOVED_Junction", map);
+                            registerLayer("02 Removed NETW_ROUTE_LINK", "mnr-pilot:REMOVED_Netw_Route_Link", map);
+                            registerLayer("02 Removed NETW_GEO_LINK", "mnr-pilot:REMOVED_Netw_Geo_Link", map);
+
+                            registerLayer("03 Added JUNCTIONS", "mnr-pilot:ADDED_Junction_2", map);
+                            registerLayer("03 Added NETW_ROUTE_LINK", "mnr-pilot:ADDED_Netw_Route_Link_2", map);
+                            registerLayer("03 Added NETW_GEO_LINK", "mnr-pilot:ADDED_Netw_Geo_Link_2", map);
+                            registerLayer("03 Updated JUNCTIONS", "mnr-pilot:UPDATED_Junction_2", map);
+                            registerLayer("03 Updated NETW_ROUTE_LINK", "mnr-pilot:UPDATED_Netw_Route_Link_2", map);
+                            registerLayer("03 Updated NETW_GEO_LINK", "mnr-pilot:UPDATED_Netw_Geo_Link_2", map);
+                            registerLayer("03 Removed JUNCTIONS", "mnr-pilot:REMOVED_Junction_2", map);
+                            registerLayer("03 Removed NETW_ROUTE_LINK", "mnr-pilot:REMOVED_Netw_Route_Link_2", map);
+                            registerLayer("03 Removed NETW_GEO_LINK", "mnr-pilot:REMOVED_Netw_Geo_Link_2", map);
+
+                            registerLayer("MNSHAPE nw_updated", "mnr-pilot:nw_updated", map);
+                            registerLayer("MNSHAPE nw_removed", "mnr-pilot:nw_removed", map);
+                            registerLayer("MNSHAPE nw_added", "mnr-pilot:nw_added", map);
+                            registerLayer("MNSHAPE jc_updated", "mnr-pilot:jc_updated", map);
+                            registerLayer("MNSHAPE jc_removed", "mnr-pilot:jc_removed", map);
+                            registerLayer("MNSHAPE jc_added", "mnr-pilot:jc_added", map);
+ 
+                            map.addLayer(lbs);
+
+                            map.addControl(new OpenLayers.Control.LayerSwitcher());
+                            map.addControl(info);
+                            info.activate();
+
+                            var lonlat = new OpenLayers.LonLat(1.56, 42.54);
+                            lonlat.transform( new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject() );
+                            map.setCenter(lonlat, 12);
+
+                            var toolbar = $("#mnr-demo-map-zones");
+                            addZone(toolbar, "Andorra", 1.56, 42.54, map);
+                            addZone(toolbar, "Ghent", 3.72, 51.05, map);
+            });
+
+            function addZone(toolbar, name, lon, lat, map) {
+                $('&lt;a&gt;',{
+                        text: name,
+                        title: name,
+                        href: '#',
+                        click: function() {
+                            var lonlat = new OpenLayers.LonLat(lon, lat);
+                            lonlat.transform( new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject() );
+                            map.setCenter(lonlat, 12); }
+                    }).appendTo(toolbar);
+                $('&lt;span /&gt;', {style: 'padding-left: 10px'}).appendTo(toolbar);
+            }
+
+            function registerLayer(title, name, map) {
+                var layer = new OpenLayers.Layer.WMS(title, "http://bekka-desktop:8080/geoserver/mnr-pilot/wms",
+                                {
+                                    layers: name,
+                                    srs: 'EPSG:4326',
+                                    styles: '',
+                                    tiled: true,
+                                    transparent: true,
+                                    format: "image/png",
+                                    tilesOrigin : map.maxExtent.left + ',' + map.maxExtent.bottom,
+                                    displayInLayerSwitcher: true
+                                },
+                                {
+                                    buffer: 0,
+                                    displayOutsideMaxExtent: false,
+                                    isBaseLayer: false,
+                                    yx : {'EPSG:4326' : true},
+                                    visibility: false,
+                                }
+                            );
+                map.addLayer(layer);
+            }
+        </script>
+    </initscript>
+</slides>

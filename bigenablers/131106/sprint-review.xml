@@ -1,0 +1,246 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview id="04">
+    <team name="BigEnablers">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member><font COLOR="DarkGray">Charlotte De Gendt</font></member>
+        <member><font COLOR="DarkGray">Michael Blongewicz</font></member>
+        <member>Bart Temmerman </member>
+        <member>Christel Fiers</member>
+        <member>Arnd Rechenburg</member>
+        <member>Peter Huysman</member>
+        <member>Priyanka Sharma</member>
+        <member>Barbara Samin </member>
+        <member>Marcin Zimniac </member>
+        <member><font COLOR="DarkGray">Frankie Bollaert</font></member>
+        <member><font COLOR="DarkGray">Lander Vandergucht</font></member>
+    </team>
+
+    <stories>
+         <story title="Done Story Sample" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Done Story Sample" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Done Story Sample" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="75">
+            <slides>
+                <slide>
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Initial goal</li>
+                    </ul>
+                    <h5>Problem description:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>To Do:</h5>
+                    <ul>
+                        <li>what's left?</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+        
+        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="5">
+            <slides>
+                <slide>
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Initial goal</li>
+                    </ul>
+                    <h5>Problem description:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>To Do:</h5>
+                    <ul>
+                        <li>what's left?</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="">
+            <slides>
+                <slide type='story-timeline'>
+                    <img src="img/timeline.jpg" alt="demo: diff" />
+                </slide>
+
+                <slide type='story-code-q'>
+                    <h5></h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>header:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+    </stories>
+
+</sprintreview>

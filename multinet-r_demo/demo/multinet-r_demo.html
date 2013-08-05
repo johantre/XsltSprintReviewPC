@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title>Multinet-R demo</title>
+<link rel="stylesheet" href="../deck/core/deck.core.css">
+<link rel="stylesheet" href="../deck/extensions/goto/deck.goto.css">
+<link rel="stylesheet" href="../deck/extensions/menu/deck.menu.css">
+<link rel="stylesheet" href="../deck/extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" href="../deck/extensions/status/deck.status.css">
+<link rel="stylesheet" href="../deck/extensions/hash/deck.hash.css">
+<link rel="stylesheet" href="../deck/extensions/scale/deck.scale.css">
+<link rel="stylesheet" href="../deck/themes/style/tomtom.css">
+<link rel="stylesheet" href="../deck/themes/transition/horizontal-slide.css">
+<link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
+<script src="../deck/lib/modernizr.custom.js"></script><script src="http://openlayers.org/api/OpenLayers.js"></script><link rel="stylesheet" href="extra/mnr-demo.css">
+</head>
+<body class="deck-container">
+<section class="slide " id="" style=""><header>
+            <h3>Multinet-R demo</h3>
+        </header><div>
+             <div id="mnr-demo-map"></div>
+        </div>
+<p> </p>
+<div id="mnr-demo-map-tools">
+            <a href="javascript:%24('#mnr-demo-map').fullScreen();" style="font-size: 14px">Go fullscreen</a>
+            <div id="mnr-demo-map-zones" style="float: right">
+            </div>
+        </div></section><a href="#" class="deck-prev-link" title="Previous">←</a><a href="#" class="deck-next-link" title="Next">→</a><p class="deck-status"><span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span></p>
+<form action="." method="get" class="goto-form">
+<label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go">
+</form>
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a><script src="../deck/lib/jquery-1.7.2.min.js"></script><script src="../deck/lib/jquery-fullscreen.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/extensions/hash/deck.hash.js"></script><script src="../deck/extensions/menu/deck.menu.js"></script><script src="../deck/extensions/goto/deck.goto.js"></script><script src="../deck/extensions/status/deck.status.js"></script><script src="../deck/extensions/navigation/deck.navigation.js"></script><script src="../deck/extensions/scale/deck.scale.js"></script><script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script><script type="text/javascript">
+            var $d = $(document);
+            $d.bind('deck.init',
+                        function() {
+                            var map = new OpenLayers.Map('mnr-demo-map', {
+                                projection: new OpenLayers.Projection("EPSG:900913"),
+                                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                                units: 'm',
+                                fractionalZoom: true
+                            });
+
+                            var lbs = new OpenLayers.Layer.XYZ("TomTom Sydney LBS",
+                                        ["http://a.routes.tomtom.com/lbs/map/1/basic/${z}/${x}/${y}/1e2099c7-eea9-476b-aac9-b20dc7100af1;v=3;l=nl;m=png"],
+                                        {
+                                            layers:'basic',
+                                            resolutions: [156543.03390625, 78271.516953125, 39135.7584765625,
+                                                  19567.87923828125, 9783.939619140625, 4891.9698095703125,
+                                                  2445.9849047851562, 1222.9924523925781, 611.4962261962891,
+                                                  305.74811309814453, 152.87405654907226, 76.43702827453613,
+                                                  38.218514137268066, 19.109257068634033, 9.554628534317017,
+                                                  4.777314267158508, 2.388657133579254, 1.194328566789627,
+                                                  0.5971642833948135, 0.25, 0.1, 0.05],
+                                            serverResolutions: [156543.03390625, 78271.516953125, 39135.7584765625,
+                                                                19567.87923828125, 9783.939619140625,
+                                                                4891.9698095703125, 2445.9849047851562,
+                                                                1222.9924523925781, 611.4962261962891,
+                                                                305.74811309814453, 152.87405654907226,
+                                                                76.43702827453613, 38.218514137268066,
+                                                                19.109257068634033, 9.554628534317017,
+                                                                4.777314267158508, 2.388657133579254],
+                                            transitionEffect: 'resize'
+                                        }
+                            );
+
+                            /* Note: beware of same-origin-policy. */
+                            info = new OpenLayers.Control.WMSGetFeatureInfo({
+                                url: 'http://bekka-desktop:8080/geoserver/mnr-pilot/wms', 
+                                title: 'Identify features by clicking',
+                                queryVisible: true,
+                                eventListeners: {
+                                    getfeatureinfo: function(event) {
+                                        map.addPopup(new OpenLayers.Popup.FramedCloud(
+                                            "chicken", 
+                                            map.getLonLatFromPixel(event.xy),
+                                            null,
+                                            event.text,
+                                            null,
+                                            true
+                                        ));
+                                    }
+                                }
+                            });
+                            
+                            var mousePositionCtrl = new OpenLayers.Control.MousePosition();
+
+                            /* DIFF demo */
+                            registerLayer("MNR Netw Geo Link (AND 1303)", "AND_1301:MNR_Netw_Geo_Link_AND_1301", map);
+                            registerLayer("MNR Netw Geo Link (AND 1212)", "AND_1210:MNR_Netw_Geo_Link_AND_1210", map);
+                            registerLayer("MNR Netw Geo Link (UPDATED)", "mnr-pilot:MNR_Netw_Geo_Link_UPDATED", map);
+                            registerLayer("MNR Netw Geo Link (ADDED)", "mnr-pilot:MNR_Netw_Geo_Link_ADDED", map);
+                            registerLayer("MNR Netw Geo Link (REMOVED)", "mnr-pilot:MNR_Netw_Geo_Link_Removed", map);
+
+                            map.addLayer(lbs);
+
+                            map.addControl(new OpenLayers.Control.LayerSwitcher());
+                            map.addControl(info);
+                            map.addControl(mousePositionCtrl);
+                            info.activate();
+
+                            var lonlat = new OpenLayers.LonLat(1.56, 42.54);
+                            lonlat.transform( new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject() );
+                            map.setCenter(lonlat, 12);
+
+                            var toolbar = $("#mnr-demo-map-zones");
+                            addZone(toolbar, "Andorra", 1.56, 42.54, map);
+            });
+
+            function addZone(toolbar, name, lon, lat, map) {
+                $('<a>',{
+                        text: name,
+                        title: name,
+                        href: '#',
+                        click: function() {
+                            var lonlat = new OpenLayers.LonLat(lon, lat);
+                            lonlat.transform( new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject() );
+                            map.setCenter(lonlat, 12); }
+                    }).appendTo(toolbar);
+                $('<span />', {style: 'padding-left: 10px'}).appendTo(toolbar);
+            }
+
+            function registerLayer(title, name, map) {
+                var layer = new OpenLayers.Layer.WMS(title, "http://bekka-desktop:8080/geoserver/mnr-pilot/wms",
+                                {
+                                    layers: name,
+                                    srs: 'EPSG:4326',
+                                    styles: '',
+                                    tiled: true,
+                                    transparent: true,
+                                    format: "image/png",
+                                    tilesOrigin : map.maxExtent.left + ',' + map.maxExtent.bottom,
+                                    displayInLayerSwitcher: true
+                                },
+                                {
+                                    buffer: 0,
+                                    displayOutsideMaxExtent: false,
+                                    isBaseLayer: false,
+                                    yx : {'EPSG:4326' : true},
+                                    visibility: false,
+                                }
+                            );
+                map.addLayer(layer);
+            }
+        </script>
+</body>
+</html>

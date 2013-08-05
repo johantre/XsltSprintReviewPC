@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<release name="Milestone 2.1" totalpoints="67">
+    <sprints>
+        <sprint>130707</sprint>
+        <sprint>130724</sprint>
+        <sprint>130814</sprint>
+        <sprint>130904</sprint>
+        <sprint>130925</sprint>
+        <sprint>131016</sprint>
+        <sprint>131106</sprint>
+        <sprint>131127</sprint>
+        <sprint>131218</sprint>
+    </sprints>
+</release>

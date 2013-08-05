@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024, user-scalable=no">
+<title></title>
+<link rel="stylesheet" href="../deck/core/deck.core.css">
+<link rel="stylesheet" href="../deck/extensions/goto/deck.goto.css">
+<link rel="stylesheet" href="../deck/extensions/menu/deck.menu.css">
+<link rel="stylesheet" href="../deck/extensions/navigation/deck.navigation.css">
+<link rel="stylesheet" href="../deck/extensions/status/deck.status.css">
+<link rel="stylesheet" href="../deck/extensions/hash/deck.hash.css">
+<link rel="stylesheet" href="../deck/extensions/scale/deck.scale.css">
+<link rel="stylesheet" href="../deck/themes/style/tomtom.css">
+<link rel="stylesheet" href="../deck/themes/transition/horizontal-slide.css">
+<link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
+<script src="../deck/lib/modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+<section class="slide" id="intro" style="background-image: url('../deck/slides/photo.jpg')"><h1 class="center">Sprint Review</h1></section><section class="slide" id="" style="background-image: url('../deck/slides/team.jpg')"><h1 class="center">SheBang</h1></section><section class="slide" id="shebang-overview" style=""><h2>User Stories SheBang</h2>
+<ul class="stories">
+      <li class="story not-done">Release haystack-server, check-out enabled<span class="sp">(3 SP)</span>
+</li>
+      <li class="story done">TIFTTOM - Move relationship features to the complex table<span class="sp">(3 SP)</span>
+</li>
+    </ul>
+<div class="info">
+      <p class="scrum-master">
+        <span class="caption">Scrum master - </span>
+        <span class="content">Johan Tre</span>
+      </p>
+      <p class="team">
+        <span class="caption">Team:</span>
+        <span class="content"> Plamen, Priyanka, Stefan, Thomas </span>
+      </p>
+    </div></section><section class="slide" id="shebang-release" style=""><header>
+      <h3>Shebang</h3>
+      <h4>Release haystack-server, check-out enabled</h4>
+    </header><ul>
+      <li>Check-out enabled, means loading data from the Master Data Store</li>
+      <li>Code is adapted but, during validation, issue in both coredb-main-client and haystack-server were found</li>
+      <li>All known issue are tackled but, needs re-validation</li>
+      <li>Release will be made asap.</li>
+    </ul></section><section class="slide" id="shebang-move-relation-to-complex" style=""><header>
+      <h3>Shebang</h3>
+      <h4>TIF2TTOM - Move relationship features to the complex table</h4>
+    </header><ul>
+      <li>In GDF, relationships and complex features are quite similar.</li>
+      <li>In GDF, maneuvers are being modelled as relationships, while in TTOM, they are being modelled as complex features.</li>
+      <li>This leads to anomalies in the GDF dataloader code.</li>
+      <li>It is not possible to simply translate GDF relations into TTOM associations.</li>
+      <li>Moving the GDF relationship features that are not pure TTOM associations to the GDF complex table, could simplify the GDF dataloader code a lot.</li>
+    </ul>
+<div class="slide">
+      <h5>The following features where moved from relationship to complex.</h5>
+      <ul>
+        <li>Prohibited Maneuver, Priority Maneuver, Implicit Turn, Prohibited U Turn Maneuver, Restricted Maneuver, Calculated Prohibited Maneuver</li>
+        <li>Bifurcation, Signpost Information, Lane Connectivity, Image Maneuver</li>
+        <li>Grade separate crossing</li>
+        <li>Linear Assignment Maneuver</li>
+      </ul>
+    </div></section><section class="slide" id="shebang-validate" style=""><header>
+      <h3>Shebang</h3>
+      <h4>Validation results</h4>
+    </header><p>RelationType: Relation table no longer has complex features</p>
+<img src="img/DIFF_RELTYPE" alt="demo: diff"></section><section class="slide" id="shebang-validate" style=""><header>
+      <h3>Shebang</h3>
+      <h4>validation results</h4>
+    </header><p> FeatureClass: Relation features are modelled as complex</p>
+<img src="img/DIFF_FEATCLASS" alt="Validation process"></section><section class="slide" style="background-image: url('../deck/slides/confused-chan.jpg')"><h1 class="center">Any Questions?</h1></section><section class="slide" style="background-image: url('../deck/slides/thank-you.jpg')"><h1 class="center">Thank you!</h1></section><a href="#" class="deck-prev-link" title="Previous">←</a><a href="#" class="deck-next-link" title="Next">→</a><p class="deck-status"><span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span></p>
+<form action="." method="get" class="goto-form">
+<label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go">
+</form>
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a><script src="../deck/lib/jquery-1.7.2.min.js"></script><script src="../deck/lib/jquery-fullscreen.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/extensions/hash/deck.hash.js"></script><script src="../deck/extensions/menu/deck.menu.js"></script><script src="../deck/extensions/goto/deck.goto.js"></script><script src="../deck/extensions/status/deck.status.js"></script><script src="../deck/extensions/navigation/deck.navigation.js"></script><script src="../deck/extensions/scale/deck.scale.js"></script><script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

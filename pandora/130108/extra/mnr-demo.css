@@ -1,0 +1,43 @@
+/* Override deck.js styles. */
+#mnr-demo-map { 
+	width: 100%;
+	height: 600px;
+}
+#mnr-demo-map.fullScreen { 
+	width: 100% !important;
+	height: 100% !important;
+}
+#mnr-demo-map a { 
+	color: #EEEEEE;
+}
+#mnr-demo-map div {
+	font-size: 16px;
+}
+#mnr-demo-map img { 
+	max-width: none;
+	max-height: none;
+	line-height: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.mnr-table {
+	font-size: 16px !important;
+}
+
+.mnr-table tr > td {
+	padding-bottom: 16px !important;
+}
+
+.have {
+	color: green;
+}
+
+.kinda-have {
+	color: orange;
+}
+
+.dont-have {
+	color: red;
+}
+

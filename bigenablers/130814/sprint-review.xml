@@ -1,0 +1,396 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview id="03">
+    <team name="BigEnablers">
+        <productowner>Marius Swanepoel</productowner>
+        <scrummaster>Johan Tré</scrummaster>
+        <member>Mark Lebegge</member>
+        <member>Veerle Merckx</member>
+        <member><font COLOR="DarkGray">Charlotte De Gendt</font></member>
+        <member><font COLOR="DarkGray">Michael Blongewicz</font></member>
+        <member>Bart Temmerman </member>
+        <member>Christel Fiers</member>
+        <member>Arnd Rechenburg</member>
+        <member>Peter Huysman</member>
+        <member>Priyanka Sharma</member>
+        <member>Barbara Samin </member>
+        <member>Marcin Zimniac </member>
+        <member><font COLOR="DarkGray">Frankie Bollaert</font></member>
+        <member><font COLOR="DarkGray">Lander Vandergucht</font></member>
+    </team>
+
+    <stories>
+         <story title="MAD on vPDS (loading the file to violation DS)" state="story done" points="0">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="MAD on vPDS (loading the file to violation DS)" state="story done" points="8">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Fix Creating superflues Artif. CityC. + Link Ind. Area" state="story done" points="3">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Load MN Admin to vPDS" state="story done" points="3">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="75">
+            <slides>
+                <slide>
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Initial goal</li>
+                    </ul>
+                    <h5>Problem description:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>To Do:</h5>
+                    <ul>
+                        <li>what's left?</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+        
+        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="5">
+            <slides>
+                <slide>
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Initial goal</li>
+                    </ul>
+                    <h5>Problem description:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>To Do:</h5>
+                    <ul>
+                        <li>what's left?</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="">
+            <slides>
+                <slide type='story-timeline'>
+                    <img src="img/timeline.jpg" alt="demo: diff" />
+                </slide>
+
+                <slide type='story-code-q'>
+                    <p>
+                    <table class="statistics" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+                            <!-- Table Header -->
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th></th>
+                                    <th>value</th>
+                                    <th></th>
+                                    <th>link</th>
+                                </tr>
+                            </thead>
+                            <!-- Table Header -->
+                        
+                            <!-- Table Body -->
+                            <tbody>
+                        
+                                <tr>
+                                    <td>gdf-converters</td>
+                                    <td class="topic">line coverage</td>
+                                    <td>44% (9366/21082)</td>
+                                    <td class="not-applicable">baseline</td>
+                                    <td><a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-release/">report</a> </td>
+                                </tr><!-- Table Row -->
+                        
+                                <tr class="even">
+                                    <td>lib</td>
+                                    <td class="topic">line coverage</td>
+                                    <td>55% (16051/29089)</td>
+                                    <td class="not-applicable">baseline</td>
+                                    <td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-seaming-release/">report</a> </td>
+                                </tr><!-- Table Row -->
+                        
+                                <tr>
+                                    <td>addresspoints</td>
+                                    <td class="topic">line coverage</td>
+                                    <td>74% (1601/2178)</td>
+                                    <td class="not-applicable">baseline</td>
+                                    <td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/addresspoints/job/addresspoints-unit-test-snapshot/">report</a> </td>
+                                </tr><!-- Table Row -->
+                        
+                                <tr class="even">
+                                    <td>ada</td>
+                                    <td class="topic">line coverage</td>
+                                    <td>76% (986/1297)</td>
+                                    <td class="not-applicable">baseline</td>
+                                    <td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/ada/job/ttom-ada-seaming-release/">report</a></td>
+                                </tr><!-- Table Row -->
+                        
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr><!-- blank row -->
+                        
+                                <tr class="even">
+                                    <td>JBehave tests</td>
+                                    <td class="topic">#</td>
+                                    <td>1117</td>
+                                    <td class="positive">+93</td>
+                                    <td>
+                                    <a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/MDS-GDF%20Jbehave/job/jbehave-ttom3_14-1.0-run-on-mds/TAF_Report/">report</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr><!-- blank row -->
+                        
+                                <tr class="even">
+                                    <td>MADonPDS</td>
+                                    <td class="topic"></td>
+                                    <td class="not-applicable">todo</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr><!-- Darker Table Row -->
+                        
+                                <tr>
+                                    <td>phonemes-ws</td>
+                                    <td class="topic">total quality</td>
+                                    <td>85.3%</td>
+                                    <td class="not-applicable">baseline</td>
+                                    <td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
+                                </tr><!-- Darker Table Row -->
+                                
+                                <tr class="even">
+                                    <td></td>
+                                    <td class="topic">technical debt</td>
+                                    <td>4.9%</td>
+                                    <td class="not-applicable">baseline</td>
+                                    <td></td>
+                                </tr><!-- Darker Table Row -->
+                        
+                                
+                        
+                            </tbody>
+                            <!-- Table Body -->
+                        
+                        </table>
+                    </p>
+                </slide>
+            </slides>
+        </story>
+    </stories>
+
+</sprintreview>

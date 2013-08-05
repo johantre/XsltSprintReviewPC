@@ -1,0 +1,223 @@
+.not-done {
+	color: red!important;
+}
+
+.done {
+	color: #007400!important;
+}
+
+.uncommitted {
+	color: #4444bb!important;
+}
+
+.deck-container {
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 1.75em;
+        background: #ffffff url(tomtom/img/grey-noise.png);
+        
+        .review-title {
+                color: #FFF !important;
+                text-shadow: #000 0.1em 0.1em 0.2em;
+        }
+
+        .review-subtitle {
+                display: block;
+                color: #FFF !important;
+                text-shadow: #000 0.1em 0.1em 0.2em;
+        }
+
+        .stories {
+                background-color: #ffffff;
+                padding: 0.5em;
+                margin: 0.5em 0;
+                border-radius: 0.5em; 
+
+                table {
+                    width: 100%;
+
+                    th {
+                        text-align: left;
+                        text-decoration: underline;
+                        padding: 0;
+                    }
+
+                    td {
+                        padding: 2px 10px 2px 0;
+                        vertical-align: top;
+                        font-size: smaller;
+                    }
+
+                    td.epic {
+                        width: 12em;
+                        font-weight: bold;
+                    }
+
+                    tr.epic td {
+                        padding-top: 1em;
+                    }
+
+                    tr.epic td:first-child { 
+                        width: 12em;
+                        color: #000055;
+                        font-weight: bold;
+                    }
+
+                }
+        }
+
+        .info {
+        margin: 1em 0;
+
+                .scrum-master {
+                        .caption {
+                                font-weight: bold;
+                                text-shadow: #CCC 0.1em 0.1em 0.2em;
+                        }
+                        .content {
+                        
+                        }
+                }
+
+                .team {
+                        .caption {
+                                font-weight: bold;
+                                text-shadow: #CCC 0.1em 0.1em 0.2em;
+                        }
+                        .content {
+
+                        }
+                }
+        p {
+            margin: 0;
+        }
+        }
+
+        .slide {
+                //background-size: 100%;
+                background-position: center; 
+                text-shadow: #cccccc 0.1em 0.1em 0.1em;
+
+                header {
+                        border-bottom: 3px solid #ccc;
+                        margin-bottom: 1em;
+                        margin-top: 1em;
+                }
+
+                h1 {
+                        color: #000000;
+                }
+
+                h1.center {
+                        width: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 10px; 
+                        background-color: rgba(255,255,255,0.7);
+                }
+
+                h2 {
+                        color: #6ba100;
+                }
+
+                h3 {
+                        /* color: #6ba100; */
+                }
+
+                pre {
+                        border-color: #ccc;
+                }
+
+                code {
+                        color:#888;
+                }
+
+                img.inline {
+                        float: none;    
+                        margin: 0.5em;
+                }
+
+                blockquote {
+                        font-size:2em;
+                        font-style:italic;
+                        padding:1em 2em;
+                        color:#000;
+                        border-left:5px solid #ccc;
+
+                        p {
+                                margin:0;
+                        }
+
+                        cite {
+                                font-size:.5em;
+                                font-style:normal;
+                                font-weight:bold;
+                                color:#888;
+                        }
+                }
+
+                ::-moz-selection { background:#c00; color:#fff; }
+                ::selection { background:#c00; color:#fff; }
+
+                a {
+                        &, &:hover, &:focus, &:active, &:visited {
+                                color:#669;
+                                font-weight: bold;
+                                text-decoration:none;
+                        }
+
+                        &:hover, &:focus {
+                                text-decoration:underline;
+                        }
+                }
+
+        }
+
+        .slide.overview {
+                background-color: #fff;
+        }
+
+
+        > .slide {
+                .deck-before, .deck-previous {
+                        opacity:0.4;
+                        
+                        &:not(.deck-child-current) {
+                                .deck-before, .deck-previous {
+                                        opacity:1;
+                                }
+                        }
+                }
+                
+                .deck-child-current {
+                        opacity:1;
+                }
+        } 
+        
+        .deck-prev-link, .deck-next-link {
+                background:#ccc;
+                font-family:serif; // sans-serif arrows x-browser fail
+                
+                &, &:hover, &:focus, &:active, &:visited {
+                        color:#fff;
+                }
+                
+                &:hover, &:focus {
+                        background:#c00;
+                        text-decoration:none;
+                }
+        }
+        
+        .deck-status {
+                font-size:0.6666em;
+        }
+        
+        &.deck-menu {
+                .slide {
+                        background:#eee;
+                }
+                
+                .deck-current, .no-touch & .slide:hover {
+                        background:#ddf;
+                }
+        }
+}
