@@ -319,10 +319,13 @@
 
         <story title="">
             <slides>
-                <slide id='story-timeline'>
+                <slide type='story-timeline'>
                     <img src="img/timeline.jpg" alt="demo: diff" />
                 </slide>
             </slides>
+            <slide type='whats-next'>
+                <blockquote class="fragment">Next topic</blockquote>
+            </slide>           
         </story>
     </stories>
 </sprintreview>

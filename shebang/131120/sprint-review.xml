@@ -319,9 +319,12 @@
 
         <story title="">
             <slides>
-                <slide id='story-timeline'>
+                <slide type='story-timeline'>
                     <img src="img/timeline.jpg" alt="demo: diff" />
                 </slide>
+                <slide type='whats-next'>
+                    <blockquote class="fragment">Next topic</blockquote>
+                </slide>           
             </slides>
         </story>
     </stories>

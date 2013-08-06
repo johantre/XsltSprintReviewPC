@@ -8,8 +8,8 @@
         <member>Thomas Martens</member>
         <member>Stefan De Smit</member>
         <member>Maciej Moczkowski</member>
-        <member>Dominik Plichka</member>
-        <member>Jurgen Reynaert</member>
+        <member>Dominik Plichta</member>
+        <member>Jürgen Reynaert</member>
     </team>
     <intro title="Technical Suite 3.0">
         <slides>
@@ -30,11 +30,11 @@
                 <ul>                   
                     <li>MDS must be the source to build products(=PDS)</li>
                     <li>Versioned MDS data must be available</li>
-                    <li>CDP-delta-api must be deleloped on top of coredb delta</li>
+                    <li>CDP-delta-api must be developed on top of coredb delta</li>
                 </ul>             
             </slide>
             <slide type="sprint-goal">
-                <h4><a href="http://besrvup-mks01.ta.global:7001/im/issues?selection=1363015">PDS as proof of context</a></h4>
+                <h4><a href="http://besrvup-mks01.ta.global:7001/im/issues?selection=1363015">PDS as proof of concept</a></h4>
                 <h5>MDS vs PDS</h5>
                 <blockquote class="fragment">
                     <ul>                   
@@ -77,44 +77,104 @@
             <slides>
                 <slide type="story-context">
                     <h5>Tile based content reading needed to use Release MDS as PDS</h5>
-                    <h5>Requirements:</h5>
+                    <p>Requirements for coredb:</p>
                     <ul>
-                        <li>reading transactional data (VMDS)</li>
+                        <li>tile retrieval</li>
+                        <li>getting transactional data (VMDS) with defined version</li>
                         <li>filtering capabilities</li>
                         <li>geometry clipping</li>
-                        <li>stubbing out of tile associated features</li>
+                        <li>getting stubs (ID + type) for associated features that are out of tile</li>
                     </ul>
-
                 </slide>
                 <slide type="story-narrative">
-                    <h5>Unify getFeatures and getFeaturesInTile code paths is coredb - why?</h5>
+                    <h5>Unify getFeatures and getFeaturesInTile code paths in coredb - why?</h5>
                     <ul>
-                        <li>A lot of similarities and duplicated code</li>
+                        <li>a lot of similarities and duplicated code</li>
                         <li>getFeaturesInTile missed filtering capabilities of getFeatures</li>
                         <li>getFeaturesInTile was not mature - especially reading transactional data (VMDS)</li>
-                        <li>existing getFeatures path is mature, versioned data reads (VMDS) is well tested</li>
-                        <li>better have one generic api than maintain two - clearer api, less code and bugs</li>
+                        <li>existing getFeatures path is mature, versioned data reading (VMDS) is well tested</li>
+                        <li>better have one generic api than maintain two - clearer code and less bugs</li>
                     </ul>
                 </slide>
                 <slide type="story-narrative">
-                    <h5>Unify getFeatures and getFeaturesInTile code paths is coredb - how?</h5>
+                    <h5>Unify getFeatures and getFeaturesInTile code paths in coredb - how?</h5>
                     <ul>
-                        <li>getFeatures api revised - generic query method getFeatures(parameters) has been added</li>
-                        <li>Builder to build parameters has been introduced</li>
-                        <li>Old getFeatures methods marked as @deprecated, some removed</li>
+                        <li>getFeatures api revised - generic query method with parameters object has been added</li>
+                        <li>builder to build parameters has been introduced</li>
+                        <li>old getFeatures methods marked as @deprecated, some removed</li>
                         <li>AllClippedGeometryLimitFilter has been implemented to support geometry clipping</li>
                         <li>TileFilter has been added to add tile base retrieval along to bbox/polygon</li>
                     </ul>
-                    <pre>
+                    <pre><code>
+
                         SpatialFilter spatialFilter = SpatialFilterBuilder.newBuilder().withTile(tile)
                             .build();
+
                         Parameters parameters = ParametersBuilder.newBuilder().withSpatialFilter(spatialFilter)
                             .withGeometryLimitFiler(GeometryLimitFilterFactory.createAllClippedGeometryFilter())
                             .build();
-                        List&lt;Feature&lt;? extends Geometry&gt;&gt; features = read.getFeatures(parameters);
-                    </pre>
-                </slide>
 
+                        List&lt;Feature&lt;? extends Geometry&gt;&gt; features = read.getFeatures(parameters);
+                    </code></pre>
+                </slide>
+                <slide type="story-narrative">
+                    <h4>Integration with CDP components</h4>
+                    <h5>haystack-mdsloader modifications</h5>
+                    <ul>
+                        <li>new coredb tile retrieval api used</li>
+                        <li>FeaturesStubLoadingStrategy used to load stubs of associated out of tile features in one batch - <font color="red">part of future user story done now:)</font></li>
+                        <li>release parameter used to specify branch and version of CPP data to read</li>
+                    </ul>
+                    <h5>haystack-validation modifications</h5>
+                    <ul>
+                        <li>CPP created features included in validation results (IDs filtering)</li>
+                        <li>same for global partition (XXX) features</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h4>end2end tests with haystack-validation</h4>
+                    <ul>
+                        <li>Staging hadoop cluster used (Ghent)</li>
+                        <li>Coredb stack deployed on local notebook (Lodz) - no environment yet</li>
+                        <li>haystack-validation GDF output compared with MDS output</li>
+                    </ul>
+                    <img src="img/validation.png" style="padding-top: 15px" alt="validation"/>
+                </slide>
+                <slide type="story-narrative">
+                    <h4>end2end tests - non transactional tests (pure MDS)</h4>
+                    <ul>
+                        <li>YG1, YG2, YG4, YKO, YHU datasets of hakuna matata used</li>
+                        <li>YG3, YW1, YW2 too big to test with local notebook</li>
+                    </ul>
+                    <h5>Results</h5>
+                    <ul>
+                        <li>Additional associations present in GDF data - <font color="blue">correct</font> as they are eliminated later in process as being duplicates</li>
+                        <li>Different order of geometries in GeometryCollection for complex features - <font color="blue">correct</font> as order of geometries in geometry collection is not defined</li>
+                        <li><font color="blue">In all other means GDF and MDS output matches - CPP/CDP stack works with non transactional data</font></li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h4>end2end tests - transactional tests (MDS and VMDS)</h4>
+                    <ul>
+                        <li>YG1 dataset of hakuna matata used</li>
+                        <li>Cartopia used to create some transactions</li>
+                        <li>QA mock used to be able to commit data</li>
+                        <li>as no cascading edits nor Cartopia are ready yet only few simple edits could be made</li>
+                    </ul>
+                    <h5>Results</h5>
+                    <ul>
+                        <li>expected changes in MDS output has been found when comparing with GDF output</li>
+                        <li>content not modified in transaction still matches in MDS and GDF output</li>
+                        <li><font color="blue">This tests shows CPP/CDP stack works with transactional data</font></li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h4>end2end tests - conclusions</h4>
+                    <blockquote class="fragment">CPP/CDP stack is able to read versioned/transactional data</blockquote>
+                    <blockquote class="fragment">small datasets and low number of transactions makes our validation a smoke test</blockquote>
+                    <blockquote class="fragment">performance and stability impact of reading big datasets is not known</blockquote>
+                    <blockquote class="fragment">testing on larger amount of transactions is advised when editing is available again in CPP and Cartopia</blockquote>
+                </slide>
             </slides>
         </story>        
         <story title="Tech 1: Build simple PDS from it." state="story done" points="0">
@@ -142,7 +202,7 @@
                             <ul>
                                 <li>Morton base 4: Enabler for table scans on different (higher) Morton tile levels.</li>
                                 <li>Feature Id: The uuid of the feature (stored as 2 longs).</li>
-                                <li>Zone Name: Makes the row key unique for seamed features on a tile boarder.</li>
+                                <li>Zone Name: Makes the row key unique for seamed features on a tile border.</li>
                             </ul>
                         </li>
                         <li>
@@ -310,8 +370,13 @@
 
         <story title="">
             <slides>
-                <slide id='story-timeline'>
+                <slide type='story-timeline'>
                     <img src="img/timeline.jpg" alt="demo: diff" />
+                </slide>
+                <slide type='whats-next'>
+                    <blockquote class="fragment">CDP Delta API</blockquote>
+                    <blockquote class="fragment">Versioning support in PDS</blockquote>
+                    <blockquote class="fragment">Technology 3: Titan</blockquote>
                 </slide>
             </slides>
         </story>

@@ -165,6 +165,9 @@
                                         <xsl:when test="@type='story-code-q'">
                                             <h1 class="rotated">CODE-Q</h1>
                                         </xsl:when>
+                                        <xsl:when test="@type='whats-next'">
+                                            <h1 class="rotated">WHATsNEXT</h1>
+                                        </xsl:when>
                                         <xsl:otherwise>
                                             <h1 class="rotated">STORY</h1>
                                         </xsl:otherwise>
@@ -203,6 +206,9 @@
                                         </xsl:when>
                                         <xsl:when test="@type='story-code-q'">
                                             <h1 class="rotated">CODE-Q</h1>
+                                        </xsl:when>
+                                        <xsl:when test="@type='whats-next'">
+                                            <h1 class="rotated">WHATsNEXT</h1>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <h1 class="rotated">STORY</h1>
@@ -249,7 +255,7 @@
 
                         <section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');  
                                                       background-repeat:no-repeat;
-                                                      background-size:100% 100%">
+                                                      background-size:100% 85%">
                             <h1 class="last">Any Questions?</h1>
                         </section>
 
