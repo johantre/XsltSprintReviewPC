@@ -231,6 +231,7 @@
                                 <tr><td>
                                 <xsl:call-template name="burndown-template">
                                     <xsl:with-param name="teamname" select="sprintreview/team/@name" />
+                                    <xsl:with-param name="sprintnumber" select="sprintreview/@id" />
                                 </xsl:call-template>
                                 </td></tr>                                
                                 
