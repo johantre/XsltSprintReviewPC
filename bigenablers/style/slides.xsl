@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:import href="scrum-tools/burndown-template.xsl"/>
+<xsl:import href="slide-tools/story-slide-template.xsl"/>
     <xsl:output method="html" encoding="utf-8" indent="yes" />
     <xsl:template match="/">
         <html>
@@ -33,9 +34,9 @@
 
                 <div class="reveal">
                     <div class="slides">
-                        <!-- Begin XSL generated slides. -->
+
                         <xsl:for-each select="sprintreview/team">
-                            <section class="slide">
+                            <section class="slide"><!-- First TomTom group slide. -->
                                 <table align="center">
                                     <tr><td width="1140" height="524" 
                                             align="center" style="background-image: url('../style/tomtom/img/TomTomLogo.jpg');  
@@ -48,7 +49,7 @@
                                     </tr>
                                 </table>
                             </section>
-                            <section class="slide" align="left">
+                            <section class="slide" align="left"><!-- Team slide. -->
                                 <div class="info">
                                     <h3 class="center">Team Composition</h3><br />
                                     <p class="team">
@@ -70,7 +71,7 @@
                             </section>
                         </xsl:for-each>
 
-                        <xsl:for-each select="sprintreview/intro/slides/slide">
+                        <xsl:for-each select="sprintreview/intro/slides/slide"><!-- Introduction slides. -->
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
                                     <xsl:choose>
                                         <xsl:when test="@type='sprint-intro'">
@@ -92,7 +93,7 @@
                                 </section>
                         </xsl:for-each>
 
-                        <section class="slide" data-transition="zoom" style="text-align: left;">
+                        <section class="slide" data-transition="zoom" style="text-align: left;"><!-- List "Done" Stories. -->
                             <h2>User Stories Done</h2>
                             <br></br>
                             <xsl:choose>
@@ -110,7 +111,7 @@
                         </section>
 
                         <xsl:choose>
-                            <xsl:when test="sprintreview/stories/story[@state='story not-done']">
+                            <xsl:when test="sprintreview/stories/story[@state='story not-done']"><!-- List "Not Done" Stories. -->
                                 <section class="slide" data-transition="zoom" style="text-align: left;">
                                     <h2 class="story not-done">User Stories NOT Done</h2>
                                     <br></br>
@@ -130,7 +131,7 @@
                         </xsl:choose>
 
                         <xsl:choose>
-                            <xsl:when test="sprintreview/stories/story[@state='bug']">
+                            <xsl:when test="sprintreview/stories/story[@state='bug']"><!-- List "Bug" Stories. -->
                                 <section class="slide" style="text-align: left;">
                                     <h2 class="story done">Bugs Resolved</h2>
                                     <br></br>
@@ -145,86 +146,29 @@
                             </xsl:otherwise>
                         </xsl:choose>
 
-                        <!-- Show ALL XML slides -->
+                        <!-- Show ALL XML slides; first slide of story: 'zoom', others 'cube' default -->
                         <xsl:for-each select="sprintreview/stories/story/slides">
                             <xsl:for-each select="slide[1]">
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
-                                    <xsl:choose>
-                                        <xsl:when test="@type='model-context'">
-                                            <h1 class="rotated">MODEL</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-context'">
-                                            <h1 class="rotated">CONTEXT</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-demo'">
-                                            <h1 class="rotated">DEMO</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-timeline'">
-                                            <h1 class="rotated">TIMELINE</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-code-q'">
-                                            <h1 class="rotated">CODE-Q</h1>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <h1 class="rotated">STORY</h1>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                    <header>
-                                        <xsl:choose>
-                                            <xsl:when test="../../@state='story done'">
-                                                <h3 class="story done">
-                                                    <xsl:value-of select="../../@title" />
-                                                </h3>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <h3 class="story not-done">
-                                                    <xsl:value-of select="../../@title" />
-                                                </h3>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </header>
-                                    <xsl:copy-of select="./*" />
+                                    <xsl:call-template name="storyslide">
+                                        <xsl:with-param name="state" select="../../@state" />
+                                        <xsl:with-param name="mksid" select="../../@mksid" />
+                                        <xsl:with-param name="title" select="../../@title" />
+                                    </xsl:call-template>
                                 </section>
                             </xsl:for-each>
                             <xsl:for-each select="slide[position() &gt; 1]">
                                 <section class="slide" style="{@style} text-align: left;">
-                                    <xsl:choose>
-                                        <xsl:when test="@type='model-context'">
-                                            <h1 class="rotated">MODEL</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-context'">
-                                            <h1 class="rotated">CONTEXT</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-demo'">
-                                            <h1 class="rotated">DEMO</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-timeline'">
-                                            <h1 class="rotated">TIMELINE</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='story-code-q'">
-                                            <h1 class="rotated">CODE-Q</h1>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <h1 class="rotated">STORY</h1>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                    <header>
-                                        <xsl:choose>
-                                            <xsl:when test="../../@state='story done'">
-                                                <h3 class="story done"><xsl:value-of select="../../@title" /></h3>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <h3 class="story not-done"><xsl:value-of select="../../@title" /></h3>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </header>
-                                    <xsl:copy-of select="./*" />
+                                    <xsl:call-template name="storyslide">
+                                        <xsl:with-param name="state" select="../../@state" />
+                                        <xsl:with-param name="mksid" select="../../@mksid" />
+                                        <xsl:with-param name="title" select="../../@title" />
+                                    </xsl:call-template>
                                 </section>
                             </xsl:for-each>
                         </xsl:for-each>
 
-                        <!-- End slides XSL generated -->
-                        <section class="slide" style="text-align: left;">
+                        <section class="slide" style="text-align: left;"><!-- List ending slides. -->
                             <table align="center">
                                 <tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
                                 
@@ -247,13 +191,11 @@
                                 </tr>
                             </table>
                         </section>
-
                         <section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');  
                                                       background-repeat:no-repeat;
-                                                      background-size:100% 100%">
+                                                      background-size:100% 85%">
                             <h1 class="last">Any Questions?</h1>
                         </section>
-
                         <section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');  
                                                       background-repeat:no-repeat;
                                                       background-size:100% 100%">

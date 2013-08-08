@@ -102,6 +102,12 @@
   text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  
   color: #6ba100;
 }
+.tomtom-container .slide header h3 a .done {
+  color: #6ba100;
+}
+.tomtom-container .slide header h3 a .not-done {
+  color: red!important;
+}
 .tomtom-container .slide pre {
   border-color: #ccc;
 }

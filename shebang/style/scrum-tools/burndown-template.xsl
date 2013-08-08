@@ -4,6 +4,7 @@
 
 	<xsl:template name="burndown-template" >
     <xsl:param name="teamname" />
+    <xsl:param name="sprintnumber" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -46,12 +47,16 @@
                                     series : [
                                             {
                                                 name : 'Cumulatieve Velocity',
-                                                data : [ <xsl:call-template name="listburnedvelocities"/> ],
+                                                data : [ <xsl:call-template name="listburnedvelocities">
+                                                            <xsl:with-param name="sprintnumber" select="number($sprintnumber)" />
+                                                         </xsl:call-template> ],
                                                 color: '#FF0000'
                                             },
                                             {
                                                 name : 'Cumulative Commitments',
-                                                data : [ <xsl:call-template name="listburnedcommitments"/> ],
+                                                data : [ <xsl:call-template name="listburnedcommitments">
+                                                            <xsl:with-param name="sprintnumber" select="number($sprintnumber)" />
+                                                         </xsl:call-template> ],
                                                 dashStyle: 'ShortDash', 
                                                 color : '#104E8B'
                                             } ]

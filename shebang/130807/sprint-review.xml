@@ -59,6 +59,7 @@
                     <li>Build a continental product in 12 hours</li>
                     <li>Contains fresh data (MDS with small delay)</li>
                     <li>Must be versioned</li>
+                    <li>Scalable</li>
                 </ul>                      
             </slide>
             <slide type="sprint-goal">
@@ -244,7 +245,6 @@
                             <ul>
                                 <li>difficult to load in different steps</li>
                                 <li>update means rewrite whole file</li>
-                                <li>risk to rewrite hbase to support versioning</li>
                             </ul>
                         </li>                        
                     </ul>
@@ -352,7 +352,7 @@
                             <td>316</td>
                             <td>31h14m</td>
                             <td>24</td>
-                            <td>1h44m</td>
+                            <td>2h50m</td>
                             <td></td>
                         </tr>
                         <tr>
@@ -364,7 +364,25 @@
                             <td>28m</td>
                         </tr>
                     </table>
+                    <br/>
+                    <h5>Summary</h5>
+                    <blockquote class="fragment">Hbase is not much slower than HDFS, both are way faster than oracle</blockquote>
+                    <blockquote class="fragment">Still slow for huge amount of tiles: density based tiles still needed</blockquote>
                 </slide>
+                <slide type="story-demo">
+                    <h5>L2 Environment</h5>
+                    <ul>
+                         <li>8 $3k nodes</li>
+                         <li>6 mappers per node, 48 parallel processes</li>
+                         <li>50TB storage</li>
+                    </ul> 
+                    <h5>Future production Environment (same budget as current production)</h5>
+                    <ul>
+                         <li>100 - 200 nodes</li>
+                         <li>600 - 1200 parallel processes</li>
+                         <li>700TB - 1.4PB</li>
+                    </ul>  
+                </slide>                  
             </slides>
         </story>
 
