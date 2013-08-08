@@ -67,6 +67,7 @@
                     <li>Build a continental product in 12 hours</li>
                     <li>Contains fresh data (MDS with small delay)</li>
                     <li>Must be versioned</li>
+                    <li>Scalable</li>
                 </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">GOAL</h1>
 <header><h3>Technical Suite 3.0</h3></header><h4>Proof of concept limitations</h4>
 <p>To timebox the POC, extra limitations for this POC are added</p>
@@ -138,7 +139,8 @@
                         <li>Staging hadoop cluster used (Ghent)</li>
                         <li>Coredb stack deployed on local notebook (Lodz) - no environment yet</li>
                         <li>haystack-validation GDF output compared with MDS output</li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+                    </ul>
+<img src="img/validation.png" style="padding-top: 15px" alt="validation"></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
 <header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h4>end2end tests - non transactional tests (pure MDS)</h4>
 <ul>
                         <li>YG1, YG2, YG4, YKO, YHU datasets of hakuna matata used</li>
@@ -222,7 +224,6 @@
                             <ul>
                                 <li>difficult to load in different steps</li>
                                 <li>update means rewrite whole file</li>
-                                <li>risk to rewrite hbase to support versioning</li>
                             </ul>
                         </li>                        
                     </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
@@ -317,7 +318,7 @@
                             <td>316</td>
                             <td>31h14m</td>
                             <td>24</td>
-                            <td>1h44m</td>
+                            <td>2h50m</td>
                             <td></td>
                         </tr>
                         <tr>
@@ -328,8 +329,26 @@
                             <td>31m</td>
                             <td>28m</td>
                         </tr>
-                    </table></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story not-done"></h3></header><img src="img/timeline.jpg" alt="demo: diff"></section><section class="slide" style="text-align: left;"><table align="center">
+                    </table>
+<br><h5>Summary</h5>
+<blockquote class="fragment">Hbase is not much slower than HDFS, both are way faster than oracle</blockquote>
+<blockquote class="fragment">Still slow for huge amount of tiles: density based tiles still needed</blockquote></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story not-done"></h3></header><h5>L2 Environment</h5>
+<ul>
+                         <li>8 $3k nodes</li>
+                         <li>6 mappers per node, 48 parallel processes</li>
+                         <li>50TB storage</li>
+                    </ul>
+<h5>Future production Environment (same budget as current production)</h5>
+<ul>
+                         <li>100 - 200 nodes</li>
+                         <li>600 - 1200 parallel processes</li>
+                         <li>700TB - 1.4PB</li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">TIMELINE</h1>
+<header><h3 class="story not-done"></h3></header><img src="img/timeline.jpg" alt="demo: diff"></section><section class="slide" style=" text-align: left;"><h1 class="rotated">WHATsNEXT</h1>
+<header><h3 class="story not-done"></h3></header><blockquote class="fragment">CDP Delta API</blockquote>
+<blockquote class="fragment">Versioning support in PDS</blockquote>
+<blockquote class="fragment">Technology 3: Titan</blockquote></section><section class="slide" style="text-align: left;"><table align="center">
 <tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
 <tr><td>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script type="text/javascript">
@@ -391,7 +410,7 @@
 <h4 class="center">Commitment:
                                             13</h4>
 </td></tr>
-</table></section><section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Any Questions?</h1></section><section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Thank you!</h1></section>
+</table></section><section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 85%"><h1 class="last">Any Questions?</h1></section><section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Thank you!</h1></section>
 </div>
 <p class="slide-number"></p>
 </div>

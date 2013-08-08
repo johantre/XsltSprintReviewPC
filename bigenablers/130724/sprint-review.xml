@@ -21,28 +21,28 @@
         <member><font COLOR="DarkGray">Lander Vandergucht</font></member>
     </team>
 
+    <intro title="Modeling work">
+        <slides>
+            <slide type="sprint-intro">
+                <ul>
+                    <li>NEA Split up of Language Code (RMC only)</li>
+                    <li>Place of Worship POI.</li>
+                    <li>Extra company ground types.</li>
+                    <li>Prison Ground.</li>
+                    <li>New MetaInfo Types linked to AdminArea.</li>                        
+                    <li>200 Million identifier range.</li>                        
+                </ul>
+                <h5>Solution:</h5>
+                <ul>
+                    <li><a target="_blank" href="http://help.tomtomgroup.com/specs/ttom/TTOM-3_15-1_0/EARoot/EA5/EA2/EA1/EA4/EA4/EA588.htm">TTOM-3_15-1_0 model (internet explorer)</a>.</li>
+                    <li><a target="_blank" href="http://help.tomtomgroup.com/specs/mapping/TIF2TTOM/daily/TIF2TTOM/theme_services/services/place_of_worship.html">A mapping for Place Of Worship type</a>.</li>
+                    <li><a target="_blank" href="http://help.tomtomgroup.com/specs/mapping/TIF2TTOM/daily/TIF2TTOM/theme_land_use_and_land_cover/artificial_surface_land_use.html">A mapping for Prison Ground</a>.</li>
+                </ul>
+            </slide>
+        </slides>
+    </intro>
+            
     <stories>
-        <story title="">
-            <slides>
-                <slide type="model-context">
-                    <ul>
-                        <li>NEA Split up of Language Code (RMC only)</li>
-                        <li>Place of Worship POI.</li>
-                        <li>Extra company ground types.</li>
-                        <li>Prison Ground.</li>
-                        <li>New MetaInfo Types linked to AdminArea.</li>                        
-                        <li>200 Million identifier range.</li>                        
-                    </ul>
-                    <h5>Solution:</h5>
-                    <ul>
-                        <li><a target="_blank" href="http://help.tomtomgroup.com/specs/ttom/TTOM-3_15-1_0/EARoot/EA5/EA2/EA1/EA4/EA4/EA588.htm">TTOM-3_15-1_0 model (internet explorer)</a>.</li>
-                        <li><a target="_blank" href="http://help.tomtomgroup.com/specs/mapping/TIF2TTOM/daily/TIF2TTOM/theme_services/services/place_of_worship.html">A mapping for Place Of Worship type</a>.</li>
-                        <li><a target="_blank" href="http://help.tomtomgroup.com/specs/mapping/TIF2TTOM/daily/TIF2TTOM/theme_land_use_and_land_cover/artificial_surface_land_use.html">A mapping for Prison Ground</a>.</li>
-                    </ul>
-                </slide>
-            </slides>
-        </story>
-    
         <story title="RMC: make NCS22 compliant." state="story done" points="3">
             <slides>
                 <slide type="story-context">
@@ -121,7 +121,7 @@
             </slides>
         </story>
 
-        <story title="MS2.1: make NCS22 compliant." state="story done" points="5">
+        <story title="MS2.1: make NCS22 compliant." state="story done" points="5" >
             <slides>
                 <slide type="story-context">
                     <h5>Solution.</h5>
