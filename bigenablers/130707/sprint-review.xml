@@ -21,7 +21,7 @@
     </team>
 
     <stories>
-        <story title="TTOM-3_14: Export BEL and UCA from L2 TS1.0 to Muskoka sandbox." state="story done" points="1">
+        <story title="TTOM-3_14: Export BEL and UCA from L2 TS1.0 to Muskoka sandbox." state="story done" points="1" mksid="1420117">
             <slides>
                 <slide type="story-narrative">
                     <h5>Goals:</h5>
@@ -49,23 +49,7 @@
             </slides>
         </story>
 
-
-        <story title="Load Archive POI to vPDS." state="story done" points="5">
-            <slides>
-                <slide type="story-narrative">
-                    <h5>Goals:</h5>
-                    <ul>
-                        <li>Load 'enhanced' content into the vPDS.</li>
-                    </ul>
-                    <h5>Value delivered:</h5>
-                    <ul>
-                        <li>POI archives can be loaded into the vPDS.</li>
-                    </ul>
-                </slide>
-            </slides>
-        </story>
-
-        <story title="MAD on vPDS (running the rules, output on filesystem)." state="story done" points="5">
+        <story title="MAD on vPDS (running the rules, output on filesystem)." state="story done" points="5" mksid="1413086">
             <slides>
                 <slide type="story-narrative">
                     <h5>Goals:</h5>
@@ -95,7 +79,7 @@
             </slides>
         </story>
 
-        <story title="Load Voice Maps - Web service" state="story not-done" points="8" percentage-done="75">
+        <story title="Load Voice Maps - Web service" state="story not-done" points="8" percentage-done="75" mksid="1425830">
             <slides>
                 <slide type="story-narrative">
                     <h5>Goals:</h5>
@@ -122,7 +106,7 @@
             </slides>
         </story>
 
-        <story title="Load MN Admin to vPDS." state="story not-done" points="3" percentage-done="75">
+        <story title="Load MN Admin to vPDS." state="story not-done" points="3" percentage-done="75" mksid="1425813">
             <slides>
                 <slide type="story-narrative">
                     <h5>Goals:</h5>

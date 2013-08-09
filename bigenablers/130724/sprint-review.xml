@@ -43,7 +43,7 @@
     </intro>
             
     <stories>
-        <story title="RMC: make NCS22 compliant." state="story done" points="3">
+        <story title="RMC: make NCS22 compliant." state="story done" points="3" mksid="1413470">
             <slides>
                 <slide type="story-context">
                     <h5>Goals:</h5>
@@ -79,7 +79,7 @@
             </slides>
         </story>
 
-        <story title="CPP4.1: make NCS22 compliant." state="story done" points="11">
+        <story title="CPP4.1: make NCS22 compliant." state="story done" points="11" mksid="1421086">
             <slides>
                 <slide type="story-narrative">
                     <h5>Goals:</h5>
@@ -121,7 +121,7 @@
             </slides>
         </story>
 
-        <story title="MS2.1: make NCS22 compliant." state="story done" points="5" >
+        <story title="MS2.1: make NCS22 compliant." state="story done" points="5" mksid="1421600">
             <slides>
                 <slide type="story-context">
                     <h5>Solution.</h5>

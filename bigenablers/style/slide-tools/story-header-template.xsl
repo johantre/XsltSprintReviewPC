@@ -9,7 +9,7 @@
 
     <xsl:text disable-output-escaping="yes">&lt;h3 class=&quot;</xsl:text><xsl:value-of select="$state" /><xsl:text disable-output-escaping="yes">&quot;&gt;</xsl:text>
         <xsl:call-template name="mkslink">
-            <xsl:with-param name="id" select="$mksid" />
+            <xsl:with-param name="id" select="translate($mksid,' ','')" />
             <xsl:with-param name="state" select="$state" />
             <xsl:with-param name="title" select="$title"/>
         </xsl:call-template>

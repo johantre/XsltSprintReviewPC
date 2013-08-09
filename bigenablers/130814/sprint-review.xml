@@ -21,7 +21,7 @@
     </team>
 
     <stories>
-         <story title="MAD on vPDS (loading the file to violation DS)" state="story done" points="0">
+         <story title="MAD on vPDS (loading the file to violation DS)" state="story done" points="5" mksid="1413166">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -73,7 +73,7 @@
             </slides>
         </story>
 
-        <story title="MAD on vPDS (loading the file to violation DS)" state="story done" points="8">
+         <story title="Load Voice Maps: Extend GDF schema &amp; tools for phonemes" state="story done" points="8" mksid="1441935">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -125,7 +125,7 @@
             </slides>
         </story>
 
-        <story title="Fix Creating superflues Artif. CityC. + Link Ind. Area" state="story done" points="3">
+        <story title="Fix Creating superflues Artif. CityC. + Link Ind. Area" state="story done" points="3" mksid="1441917">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -177,7 +177,7 @@
             </slides>
         </story>
 
-        <story title="Load MN Admin to vPDS" state="story done" points="3">
+        <story title="Load MN Admin to vPDS" state="story done" points="3" mksid="1385513">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -229,7 +229,7 @@
             </slides>
         </story>
 
-        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="75">
+        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="75" mksid="">
             <slides>
                 <slide>
                     <h5>Goals:</h5>
@@ -252,7 +252,7 @@
             </slides>
         </story>
         
-        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="5">
+        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="0">
             <slides>
                 <slide>
                     <h5>Goals:</h5>
