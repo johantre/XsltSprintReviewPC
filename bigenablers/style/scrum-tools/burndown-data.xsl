@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
+    <xsl:import href="fetch-thissprint.xsl"/>
 
 	<xsl:template name="fetchvelocities" >
         <xsl:param name="doc" />
@@ -83,15 +83,21 @@
     
     <xsl:template name="listburnedvelocities" >
         <xsl:param name="sprintnumber" />
-
         <xsl:variable name="releasedoc" select="document('../release-burndown.xml')"/>
+        <xsl:variable name="thissprint" >
+            <xsl:call-template name="fetchthissprint">
+                <xsl:with-param name="sprintnumber" select="$sprintnumber" />
+                <xsl:with-param name="releasedoc" select="$releasedoc" />
+            </xsl:call-template>
+        </xsl:variable>
+        
         <xsl:value-of select="$releasedoc//@totalpoints" />
         <xsl:value-of select="','" />
         <xsl:for-each select="$releasedoc">
-            <xsl:call-template name="fetchvelocities">
+             <xsl:call-template name="fetchvelocities">
                 <xsl:with-param name="doc" select="document(concat('../../', $releasedoc//sprints/sprint[1], '/sprint-review.xml'))" />
                 <xsl:with-param name="sprints" select="$releasedoc//sprints" />
-                <xsl:with-param name="thissprint" select="$releasedoc//sprints/sprint[$sprintnumber]" />
+                <xsl:with-param name="thissprint" select="$thissprint" />
                 <xsl:with-param name="runningtotal" select="$releasedoc//@totalpoints" />
                 <xsl:with-param name="sprintlocation" select="1" />
             </xsl:call-template>
@@ -100,15 +106,21 @@
 
     <xsl:template name="listburnedcommitments" >
         <xsl:param name="sprintnumber" />
-
         <xsl:variable name="releasedoc" select="document('../release-burndown.xml')"/>
+        <xsl:variable name="thissprint" >
+            <xsl:call-template name="fetchthissprint">
+                <xsl:with-param name="sprintnumber" select="$sprintnumber" />
+                <xsl:with-param name="releasedoc" select="$releasedoc" />
+            </xsl:call-template>
+        </xsl:variable>
+        
         <xsl:value-of select="$releasedoc//@totalpoints" />
         <xsl:value-of select="','" />
         <xsl:for-each select="$releasedoc">
-            <xsl:call-template name="fetchcommitment">
+             <xsl:call-template name="fetchcommitment">
                 <xsl:with-param name="doc" select="document(concat('../../', $releasedoc//sprints/sprint[1], '/sprint-review.xml'))" />
                 <xsl:with-param name="sprints" select="$releasedoc//sprints" />
-                    <xsl:with-param name="thissprint" select="$releasedoc//sprints/sprint[$sprintnumber]" />
+                    <xsl:with-param name="thissprint" select="$thissprint" />
                 <xsl:with-param name="runningtotal" select="$releasedoc//@totalpoints" />
                 <xsl:with-param name="sprintlocation" select="1" />
             </xsl:call-template>

@@ -48,14 +48,14 @@
                                             {
                                                 name : 'Cumulatieve Velocity',
                                                 data : [ <xsl:call-template name="listburnedvelocities">
-                                                            <xsl:with-param name="sprintnumber" select="number($sprintnumber)" />
+                                                            <xsl:with-param name="sprintnumber" select="$sprintnumber" />
                                                          </xsl:call-template> ],
                                                 color: '#FF0000'
                                             },
                                             {
                                                 name : 'Cumulative Commitments',
                                                 data : [ <xsl:call-template name="listburnedcommitments">
-                                                            <xsl:with-param name="sprintnumber" select="number($sprintnumber)" />
+                                                            <xsl:with-param name="sprintnumber" select="$sprintnumber" />
                                                          </xsl:call-template> ],
                                                 dashStyle: 'ShortDash', 
                                                 color : '#104E8B'
