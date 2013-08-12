@@ -11,19 +11,19 @@
                     <h1 class="rotated">MODEL</h1>
                 </xsl:when>
                 <xsl:when test="@type='story-context'">
-                    <h1 class="rotated">CONTEXT</h1>
+                    <h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
                 </xsl:when>
                 <xsl:when test="@type='story-demo'">
                     <h1 class="rotated">DEMO</h1>
                 </xsl:when>
                 <xsl:when test="@type='story-timeline'">
-                    <h1 class="rotated">TIMELINE</h1>
+                    <h1 class="rotated" style="margin: 200px 500px -350px -600px;">TIMELINE</h1>
                 </xsl:when>
                 <xsl:when test="@type='story-code-q'">
                     <h1 class="rotated">CODE-Q</h1>
                 </xsl:when>
                 <xsl:when test="@type='whats-next'">
-                    <h1 class="rotated">WHATsNEXT</h1>
+                    <h1 class="rotated" style="margin: 250px 500px -300px -600px;">WHATsNEXT</h1>
                 </xsl:when>
                 <xsl:otherwise>
                     <h1 class="rotated">STORY</h1>
