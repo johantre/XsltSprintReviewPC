@@ -193,12 +193,12 @@
                         </section>
                         <section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');  
                                                       background-repeat:no-repeat;
-                                                      background-size:100% 85%">
+                                                      background-size:100%">
                             <h1 class="last">Any Questions?</h1>
                         </section>
                         <section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');  
                                                       background-repeat:no-repeat;
-                                                      background-size:100% 100%">
+                                                      background-size:100%">
                             <h1 class="last">Thank you!</h1>
                         </section>
                         <!-- End slides. -->

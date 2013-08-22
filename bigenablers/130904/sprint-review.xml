@@ -21,7 +21,7 @@
     </team>
 
     <stories>
-         <story title="Done Story Sample" state="story done" points="0">
+         <story title="MAD on PDS: Make it operational" state="story done" points="5" mksid="1441937">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -73,7 +73,7 @@
             </slides>
         </story>
 
-        <story title="Done Story Sample" state="story done" points="0">
+        <story title="Load Voice Maps" state="story done" points="8" mksid="1413490">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -125,7 +125,7 @@
             </slides>
         </story>
 
-        <story title="Done Story Sample" state="story done" points="0">
+        <story title="Load visualis. from 2 models" state="story done" points="3" mksid="1451694">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -177,28 +177,161 @@
             </slides>
         </story>
 
-        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="75">
+        <story title="Load MN Post to vPDS" state="story done" points="5" mksid="1385454">
             <slides>
-                <slide>
-                    <h5>Goals:</h5>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
                     <ul>
-                        <li>Initial goal</li>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
                     </ul>
-                    <h5>Problem description:</h5>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
                     <ul>
                         <li></li>
                     </ul>
                     <h5>Value delivered:</h5>
                     <ul>
                         <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
                     </ul>
-                    <h5>To Do:</h5>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
                     <ul>
-                        <li>what's left?</li>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
                     </ul>
                 </slide>
             </slides>
         </story>
+
+        <story title="Cleanup Jenkins Plans &amp; move to new Jenkins" state="story done" points="2" mksid="1446496">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+                
+        <story title="Testing investigation: How can we improve our test strategy?" state="story done" points="0" mksid="1451708">
+            <slides>
+                <slide type="story-context">
+                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li></li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>        
         
         <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="5">
             <slides>

@@ -1,172 +1,406 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sprint Review</title>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=1024, user-scalable=no">
-<title></title>
-<link rel="stylesheet" href="../deck/core/deck.core.css">
-<link rel="stylesheet" href="../deck/extensions/goto/deck.goto.css">
-<link rel="stylesheet" href="../deck/extensions/menu/deck.menu.css">
-<link rel="stylesheet" href="../deck/extensions/navigation/deck.navigation.css">
-<link rel="stylesheet" href="../deck/extensions/status/deck.status.css">
-<link rel="stylesheet" href="../deck/extensions/hash/deck.hash.css">
-<link rel="stylesheet" href="../deck/extensions/scale/deck.scale.css">
-<link rel="stylesheet" href="../deck/themes/style/tomtom.css">
-<link rel="stylesheet" href="../deck/themes/transition/horizontal-slide.css">
-<link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css">
-<script src="../deck/lib/modernizr.custom.js"></script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../style/tomtom/tomtom.core.css">
+<link rel="stylesheet" href="../style/tomtom/tomtom.css">
+<link rel="stylesheet" href="../style/tomtom/table/table.statistics.css">
+<link rel="stylesheet" href="../style/reveal/css/reveal.min.css">
+<script>
+                    document.write('
+                    <link rel="stylesheet" href="../style/reveal/css/print/'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20+%20(window.location.search.match(/print-pdf/gi)%20?%20'pdf'%20:%20'paper')%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20+%20'.css" type="text/css" media="print">
+                    ');
+                </script>
 </head>
-<body class="deck-container">
-<section class="slide" id="intro"><table align="center">
-<tr><td width="1140" height="524" align="center" background="../deck/slides/TomTomLogo.jpg"></td></tr>
+<body class="tomtom-container">
+<div class="reveal">
+<div class="slides">
+<section class="slide"><table align="center">
+<tr><td width="1140" height="524" align="center" style="background-image: url('../style/tomtom/img/TomTomLogo.jpg');                                                                     background-repeat:no-repeat;                                                                   background-size:100% 100%"></td></tr>
 <tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
-<tr><td align="right"><h5 class="center">Team BigEnablers</h5></td></tr>
-<tr><td align="right"><h7 class="center">Sprint 01</h7></td></tr>
-</table></section><section class="slide" id="intro"><div class="info">
-<h4 class="center">Team Composition</h4>
-<p class="team"><span class="caption">Scrum Team Members: </span><span class="content"><br>
-                      • <member>Mark Lebegge</member><br>
-                      • <member>Veerle Merckx</member><br>
-                      • <member>Charlotte De Gendt</member><br>
-                      • <member>Frankie Bollaert</member><br>
-                      • <member>Bart Temmerman </member><br>
-                      • <member>Christel Fiers</member><br>
-                      • <member>Michael Blongewicz</member><br>
-                      • <member>Arnd Rechenburg</member><br>
-                      • <member>Peter Huysman</member><br>
-                      • <member>Priyanka Sharma</member><br>
-                      • <member>Barbara Samin </member><br>
-                      • <member>Marcin Zimniac </member><br>
-                      • <member>Lander Vandergucht</member></span></p>
+<tr><td align="right"><h4 class="center">Team: BigEnablers</h4></td></tr>
+<tr><td align="right"><h4 class="center">Sprint: 03</h4></td></tr>
+</table></section><section class="slide" align="left"><div class="info">
+<h3 class="center">Team Composition</h3>
+<br><p class="team"><span class="caption">Scrum Team Members: </span><span class="content"><br>•<member>Mark Lebegge</member><br>•<member>Veerle Merckx</member><br>•<member><font COLOR="DarkGray">Charlotte De Gendt</font></member><br>•<member><font COLOR="DarkGray">Michael Blongewicz</font></member><br>•<member>Bart Temmerman </member><br>•<member>Christel Fiers</member><br>•<member>Arnd Rechenburg</member><br>•<member>Peter Huysman</member><br>•<member>Priyanka Sharma</member><br>•<member>Barbara Samin </member><br>•<member>Marcin Zimniac </member><br>•<member><font COLOR="DarkGray">Frankie Bollaert</font></member><br>•<member><font COLOR="DarkGray">Lander Vandergucht</font></member></span></p>
 <p class="scrum-master"><span class="caption">Product Owner: </span><span class="content">Marius Swanepoel</span></p>
 <p class="scrum-master"><span class="caption">Scrum Master: </span><span class="content">Johan Tré</span></p>
-</div></section><section class="slide" id="intro"><h2>User Stories Done</h2>
-<ul class="stories">
-<li class="story done">
-            TTOM-3_14: Export BEL and UCA from L2 TS1.0 to Muskoka sandbox.
-        <span class="sp">(SP: 1)</span>
-</li>
-<li class="story done">
-            Load Archive POI to vPDS.
-        <span class="sp">(SP: 5)</span>
-</li>
-<li class="story done">
-            Load Voice Maps - Web srv.
-        <span class="sp">(SP: 8)</span>
-</li>
-<li class="story done">
-            MAD on vPDS (running the rules, output on filesystem).
-        <span class="sp">(SP: 8)</span>
-</li>
-<li class="story done">
-             BUG fixes &amp; Support
-        <span class="sp">(SP: 6)</span>
-</li>
-</ul></section><section class="slide" id="intro"><h2 class="story not-done">User Stories NOT Done</h2>
-<ul class="stories"><li class="story not-done">
-          Story title here. Note tags percentage-done, points, class.
-        <span class="sp">(SP: 2)</span><span class="sp"> Done: 85%</span>
-</li></ul></section><section class="slide" id="" style=""><header class="story done" points="1">
-            <h3 class="story done">TTOM-3_14: Export BEL and UCA from L2 TS1.0 to Muskoka sandbox.</h3>
-        </header><h5>Goals:</h5>
+</div></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">INTRO</h1>
+<header><h3>Modeling work</h3></header><ul>
+                    <li>Names model has been extended with Phonemes.</li>
+                    <li>Update Names model in TTOM-Core TTOM-Apt TTOM-Poi.</li>
+                </ul>
+<h5>Solution:</h5>
 <ul>
-            <li>Make the CDP (firehose) API available to external customers.</li>
-            <li>Set up sandbox environment, protecting our 'live' servers and our data.</li> 
-        </ul>
+                    <li>
+<a target="_blank" href="http://help.tomtomgroup.com/specs/ttom/TTOM-3_16-SNAPSHOT/t_object.htm">TTOM-3_16-1_0-SNAPSHOT</a>.</li>
+                </ul></section><section class="slide" data-transition="zoom" style="text-align: left;"><h2>User Stories Done</h2>
+<br><ul class="stories">
+<li class="story done">MAD on vPDS (loading the file to violation DS)<span class="sp">(SP: 5)</span>
+</li>
+<li class="story done">Load Voice Maps: Extend GDF schema &amp; tools for phonemes<span class="sp">(SP: 8)</span>
+</li>
+<li class="story done">Load Voice Maps: Extend GDF schema &amp; tools for phonemes<span class="sp">(SP: 8)</span>
+</li>
+<li class="story done">Fix Creating superfluous Artif. CityC. + Link Ind. Area<span class="sp">(SP: 3)</span>
+</li>
+<li class="story done">Load MN Admin to vPDS(Bug Fix)<span class="sp">(SP: 3)</span>
+</li>
+</ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1413166">MAD on vPDS (loading the file to violation DS)</a></h3></header><p>
+                    <h5>Context</h5>
+                    <ul>
+                        <li>What: Verify if the vPDS is according to all involved models</li>
+                    </ul>
+                    </p>
+<p>
+                    <h5>This sprint</h5>
+                    <ul>
+                        <li>Implement a tool for loading violations into vs-db.</li>
+                    </ul>
+                    <img src="img/MADOnPDS_software_architecture.png" alt="MADOnPDS software architecture">
+                    </p></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1413166">MAD on vPDS (loading the file to violation DS)</a></h3></header><p>
+                    <h5>Goals</h5>
+                    <ul>
+                        <li>Load violations into QA-VS-DB (post process of the MADOnPDS product-create-job)</li>
+                        <li>Enable (configurable) WMS layer in QA-VS-WS</li>
+                    </ul>
+                    </p>
+<p>
+                    <h5>Remark</h5>
+                    <ul>
+                        <li>Testing shows bug in WMS rebuild</li>
+                    </ul>
+                    </p></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1413166">MAD on vPDS (loading the file to violation DS)</a></h3></header><h5>Demo</h5>
+<ul>
+                        <li>This slide will have a screenshot of testing work (WMS)</li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441935">Load Voice Maps: Extend GDF schema &amp; tools for phonemes</a></h3></header><h5>context slide to ease explanation and give background to the audience</h5>
+<ul>
+                        <li>What is...?,...</li>
+                        <li>Challenges,...</li>
+                        <li>Difficulties,...</li>
+                        <li>Current situation,...</li>
+                    </ul>
+<h5>Solution:</h5>
+<ul>
+                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441935">Load Voice Maps: Extend GDF schema &amp; tools for phonemes</a></h3></header><h5>Goals:</h5>
+<ul>
+                        <li>
+                    </ul>
 <h5>Value delivered:</h5>
 <ul>
-            <li>BEL and UCA are available in the Sandbox.</li>
-            <li>Export procedure and sandbox details documented on:
-                <li><a href="http://vos/display/OPS/CDP+Milestone+1">http://vos/display/OPS/CDP+Milestone+1</a></li>
-            </li>
-        </ul>
-<h5>To do:</h5>
+                        <li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441935">Load Voice Maps: Extend GDF schema &amp; tools for phonemes</a></h3></header><h5>Demo slides</h5>
 <ul>
-            <li>Communicate details to Muskoka.</li>
-            <li>Provide initial set-up support to Muskoka.</li>
-            <li>Validate access from external IP address.</li>
-        </ul></section><section class="slide" id="" style=""><header class="story done" points="5">
-            <h3 class="story done">Load Archive POI to vPDS.</h3>
-        </header><h5>Goals:</h5>
-<ul>
-            <li>Load 'enhanced' content into the vPDS.</li>
-        </ul>
+                        <li>
+                    </ul>
 <h5>Value delivered:</h5>
 <ul>
-            <li>POI archives can be loaded into the vPDS.</li>
-        </ul></section><section class="slide" id="phoneme-graph" style=""><header>
-            <h3>Phoneme graph</h3>
-        </header><img src="img/phoneme.png" alt="demo: diff"></section><section class="slide" id="" style=""><header class="story done" points="8">
-            <h3 class="story done">Load Voice Maps - Web srv.</h3>
-        </header><h5>Goals:</h5>
+                        <li>
+                        <li>Validation proof,...</li>
+                        <li>
+                            Some text:
+                            <li>
+                                <a href="http://www.google.be">A sample of a link</a>
+                            </li>
+                        </li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441935">Load Voice Maps: Extend GDF schema &amp; tools for phonemes</a></h3></header><ul>
+                        <li>Names model has been extended with Phonemes. (TTOM-3_16-1_0-SNAPSHOT)</li>
+                    </ul>
+<h5>Problems and Solutions:</h5>
 <ul>
-			<li>
-		</ul>
-<h5>Problem description:</h5>
-<ul>		
-            <li>
-			<li>
-			<li>
-        </ul>
+                        <li>Extended AllCodes generator for Phoneme feature and attributes b/c the extension of the model with a Phoneme as a specialization of Name wasn't supported.</li>
+                        <li>Introduced name type for GDF name records to differentiate between Name feature and Phoneme feature.</li>
+                        <li>Added functionality to add sub attributes to existing composite attributes. In a post process the Phoneme feature / attributes will be created and added to existing composite attributes e.g. Name Transliteration Set.</li>
+                        <li>Adapt Name Normalization to take attributes into account. Phonemes could have the same Phoneme text but different additional attributes. This results in a conflict with the Name Normalization.</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441935">Load Voice Maps: Extend GDF schema &amp; tools for phonemes</a></h3></header><h5>Goals:</h5>
+<ul>
+                        <li>Create a framework (GDF Schema, GDF writer, name / attribute libraries where the Phoneme post process could work on.)</li>
+                    </ul>
 <h5>Value delivered:</h5>
 <ul>
-            <li>
-			<li>
-        </ul></section><section class="slide" id="" style=""><header class="story done" points="8">
-            <h3 class="story done">MAD on vPDS (running the rules, output on filesystem).</h3>
-        </header><h5>Goals:</h5>
+                        <li>A first test version of the Phoneme post process is running already successfully using the updated framework inside the process chain. The results are checked by using SQL queries. You could see the result in the demo also.</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441935">Load Voice Maps: Extend GDF schema &amp; tools for phonemes</a></h3></header><img src="img/phoneme.png"></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441917">Fix Creating superfluous Artif. CityC. + Link Ind. Area</a></h3></header><h5>problem:</h5>
 <ul>
-            <li>
-        </ul>
-<h5>Problem description:</h5>
-<ul>        
-            <li>
-            <li>
-            <li>
-        </ul>
+                        <li>TIF has seven decimal digit coordinates where as POIARCHIVE has six decimal digit</li>
+                        <li>Creates extra Artificial CityCenters when CityCenter not found</li>
+                    </ul>
+<h5>Solution:</h5>
+<ul>
+                        <li>Create Artificial CityCenter in such a way that works for TIF 
+                    and POIARCHIVE input both and without creating extra Artificial CityCenter</li>
+                    <li>Modify link from CityCenter to index area also</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441917">Fix Creating superfluous Artif. CityC. + Link Ind. Area</a></h3></header><h5>Goals:</h5>
+<ul>
+                        <li>Create Artificial CityCenter if CityCenter does not exist in a range of coordinates</li>
+                        <li>Apply range coordinate check for link to index area also</li>
+                    </ul>
 <h5>Value delivered:</h5>
 <ul>
-            <li>
-            <li>
-        </ul></section><section class="slide" id="" style=""><header class="story not-done" points="2" percentage-done="85">
-          <h3 class="story not-done">Story title here. Note tags percentage-done, points, class.</h3>
-        </header><h5>Goals:</h5>
+                        <li>No Superfluous Artificial CityCenter</li>       
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1441917">Fix Creating superfluous Artif. CityC. + Link Ind. Area</a></h3></header><h5>Validation</h5>
 <ul>
-            <li>
-            <li>
-        </ul>
-<h5>Value delivered:</h5>
+                        <li>Create some mock input data</li>
+                        <li>Run through old and new TIF2TTOM toolbox</li>
+                        <li>Compare Artificial CityCenter</li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1385513">Load MN Admin to vPDS(Bug Fix)</a></h3></header><h5>Problems:</h5>
 <ul>
-            <li>
-            <li>
-        </ul>
-<h5>Still to do:</h5>
+                        <li>Admin Place M Attributes Last Annexation(N1), Currency Date(N2), Last Update(N3) stored as String</li>
+                        <li>Admin Place M id prefix is not stable</li>
+                    </ul>
+<h5>Solutions:</h5>
 <ul>
-            <li>
-        </ul></section><section class="slide" id="" style=""><header class="story done" points="6">
-            <h3> BUG fixes &amp; Support</h3>
-        </header><ul>
-            <li class="story done">(BUG) maneuver geometry after tile = before tile  (3.14) (SP 5) </li>
-			<li class="story done">(BUG) handle empty TIF Date in SppImport step (SP 1) </li>
-            <li class="story not-done">none, we are the best :) (SP 0) </li>
-        </ul></section><section class="slide" id="intro"><table align="center">
+                        <li>Adapt toolbox to store these attributes in "Date" format</li>
+                        <li>Adapat Webviewer also for Date format attributes</li>
+                        <li>Adapt model and AllCodes to make Admin Place M id prefix stable</li>                     
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done"><a target="_blank" class="story done" href="http://besrvup-mks01:7001/im/issues?selection=1385513">Load MN Admin to vPDS(Bug Fix)</a></h3></header><h5>Demo slides</h5>
+<ul>
+                    <li>
+<a target="_blank" href="http://10.1.5.45:8080/">Admin Place M Demo</a>.</li>
+                </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -350px -600px;">TIMELINE</h1>
+<header><h3 class=""></h3></header><img src="img/timeline.jpg" alt="demo: diff"></section><section class="slide" style=" text-align: left;"><h1 class="rotated">CODE-Q</h1>
+<header><h3 class=""></h3></header><p>
+                    <table class="statistics" cellspacing="0"> <!-- cellspacing='0' is important, must stay -->
+												<!-- Table Header -->
+												<thead>
+													<tr>
+														<th>Component</th>
+														<th></th>
+														<th>value</th>
+														<th></th>
+														<th>link</th>
+													</tr>
+												</thead>
+												<!-- Table Header -->
+											
+												<!-- Table Body -->
+												<tbody>
+											
+													<tr>
+														<td>gdf-converters</td>
+														<td class="topic">line coverage</td>
+														<td>44% (9366/21082)</td>
+														<td class="positive">+0 (9388/21301)</td>
+														<td>
+<a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-unit-test-snapshot/">report</a> </td>
+													</tr>
+<!-- Table Row -->
+											
+													<tr class="even">
+														<td>lib</td>
+														<td class="topic">line coverage</td>
+														<td>55% (16051/29089)</td>
+														<td class="positive">+0 (16119/29228)</td>
+														<td>
+<a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-unit-test-snapshot/">report</a> </td>
+													</tr>
+<!-- Table Row -->
+											
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+<!-- blank row -->
+											
+													<tr class="even">
+														<td>MADonPDS</td>
+														<td class="topic">total quality</td>
+														<td>89.9%</td>
+														<td class="not-applicable">baseline</td>
+														<td><a target="_blank" href="http://sonar.tomtomgroup.com:8080/sonar/dashboard/index/com.tomtom.cp.pc:madonpds">report</a></td>
+													</tr>
+											
+													<tr>
+														<td></td>
+														<td class="topic">technical debt</td>
+														<td>5.2%</td>
+														<td class="not-applicable">baseline</td>
+														<td></td>
+													</tr>
+											
+													<tr class="even">
+														<td>violation-writer</td>
+														<td class="topic">total quality</td>
+														<td>93,2%</td>
+														<td class="not-applicable">baseline</td>
+														<td><a target="_blank" href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
+													</tr>
+													
+													<tr class="even">
+														<td></td>
+														<td class="topic">technical debt</td>
+														<td>3,9%</td>
+														<td class="not-applicable">baseline</td>
+														<td></td>
+													</tr>
+											
+													<tr class="even">
+														<td>phonemes</td>
+														<td class="topic">total quality</td>
+														<td>85.3%</td>
+														<td class="not-applicable">baseline</td>
+														<td><a target="_blank" href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
+													</tr>
+													
+													<tr class="even">
+														<td></td>
+														<td class="topic">technical debt</td>
+														<td>4.9%</td>
+														<td class="not-applicable">baseline</td>
+														<td></td>
+													</tr>
+											
+												</tbody>
+												<!-- Table Body -->
+											
+											</table>
+										</p></section><section class="slide" style="text-align: left;"><table align="center">
 <tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
-<tr><td style="width:1000px;"><img src="img/burndown.jpg" style="width:100%;height:100%;"></td></tr>
-<tr><td align="left">
-<h6 class="center">Velocity Sprint 01: 28</h6>
-<h6 class="center">Commitment: 30</h6>
+<tr><td>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script type="text/javascript">
+                    $(function() {
+                        $('#container').highcharts(
+                                {
+                                    title : {
+                                        text : 'Release Burn down *BigEnablers*',
+                                        x : -20
+                                    //center
+                                    },
+                                    subtitle : {
+                                        text : 'Cumulative Committed vs. Velocity',
+                                        x : -20
+                                    },
+                                    xAxis : {
+                                        tickmarkPlacement: 'on',
+                                        categories : [ 00,130707,130724,130814,130904,130925,131016,131106,131127,131218, ]
+                                    },
+                                    yAxis : {
+                                        title : {
+                                            text : 'Total to burn (points)'
+                                        },
+                                        plotLines : [ {
+                                            value : 0,
+                                            width : 100
+                                        }],
+                                        max : 67,
+                                        min : 0
+                                    },
+                                    tooltip : {
+                                        valueSuffix : 'Pts.'
+                                    },
+                                    legend : {
+                                        layout : 'vertical',
+                                        align : 'right',
+                                        verticalAlign : 'middle',
+                                        borderWidth : 0
+                                    },
+                                    series : [
+                                            {
+                                                name : 'Cumulatieve Velocity',
+                                                data : [ 67,61,42,15,15,15,15,15,15,15, ],
+                                                color: '#FF0000'
+                                            },
+                                            {
+                                                name : 'Cumulative Commitments',
+                                                data : [ 67,50,31,4,4,4,4,4,4,4 ],
+                                                dashStyle: 'ShortDash', 
+                                                color : '#104E8B'
+                                            } ]
+                                });
+                    });
+                </script><script src="../style/highcharts/js/highcharts.js"></script><script src="../style/highcharts/js/modules/exporting.js"></script><div id="container" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
 </td></tr>
-</table></section><section class="slide" style="background-image: url('../deck/slides/confused-chan.jpg');  background-repeat:no-repeat; background-attachment:fixed; background-position:center"><h1 class="center">Any Questions?</h1></section><section class="slide" style="background-image: url('../deck/slides/thank-you.jpg');  background-repeat:no-repeat; background-attachment:fixed; background-position:center"><h1 class="center">Thank you!</h1></section><a href="#" class="deck-prev-link" title="Previous">←</a><a href="#" class="deck-next-link" title="Next">→</a><p class="deck-status"><span class="deck-status-current"></span>
-	/
-	<span class="deck-status-total"></span></p>
-<form action="." method="get" class="goto-form">
-<label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go">
-</form>
-<a href="." title="Permalink to this slide" class="deck-permalink">#</a><script src="../deck/lib/jquery-1.7.2.min.js"></script><script src="../deck/lib/jquery-fullscreen.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/core/deck.core.js"></script><script src="../deck/extensions/hash/deck.hash.js"></script><script src="../deck/extensions/menu/deck.menu.js"></script><script src="../deck/extensions/goto/deck.goto.js"></script><script src="../deck/extensions/status/deck.status.js"></script><script src="../deck/extensions/navigation/deck.navigation.js"></script><script src="../deck/extensions/scale/deck.scale.js"></script><script>
-	$(function() {
-		$.deck('.slide');
-	});
-</script>
+<tr><td align="left">
+<h4 class="center">Velocity Sprint 03:
+                                            27</h4>
+<h4 class="center">Commitment:
+                                            27</h4>
+</td></tr>
+</table></section><section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%"><h1 class="last">Any Questions?</h1></section><section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%"><h1 class="last">Thank you!</h1></section>
+</div>
+<p class="slide-number"></p>
+</div>
+<script src="../style/reveal/lib/js/head.min.js"></script><script type="text/javascript" src="../style/reveal/js/reveal.min.js"></script><script>
+                    // Full list of configuration options available here:
+                    // https://github.com/hakimel/reveal.js#configuration
+                    Reveal.initialize({
+                    controls : true,
+                    progress : true,
+                    history : true,
+                    center : true,
+
+                    theme : Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+                    transition : Reveal.getQueryHash().transition, // || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                    // Optional libraries used to extend on reveal.js
+                    dependencies : [ {
+                    src :
+                    '../style/reveal/js/classList.js',
+                    condition : function() {
+                    return !document.body.classList;
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/markdown/marked.js',
+                    condition : function() {
+                    return !!document.querySelector('[data-markdown]');
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/markdown/markdown.js',
+                    condition : function() {
+                    return !!document.querySelector('[data-markdown]');
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/highlight/highlight.js',
+                    async : true,
+                    callback : function() {
+                    hljs.initHighlightingOnLoad();
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/zoom-js/zoom.js',
+                    async : true,
+                    condition : function() {
+                    return !!document.body.classList;
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/notes/notes.js',
+                    async : true,
+                    condition : function() {
+                    return !!document.body.classList;
+                    }
+                    }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    ]
+                    });
+
+                </script>
 </body>
 </html>
