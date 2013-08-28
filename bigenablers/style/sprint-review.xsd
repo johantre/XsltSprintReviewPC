@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="sprintreview">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="team" maxOccurs="1" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded" minOccurs="1">
+                            <xs:element name="productowner" maxOccurs="1" minOccurs="0"/>
+                            <xs:element name="scrummaster" maxOccurs="1" minOccurs="0"/>
+                            <xs:element name="member" maxOccurs="unbounded" minOccurs="1"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="intro" maxOccurs="1" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="1" minOccurs="1">
+                            <xs:element name="slides">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="slide" type="introSlideType" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="title" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="stories" maxOccurs="1" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="story" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="slides">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="slide" type="storySlideType" maxOccurs="unbounded" minOccurs="1" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="title" type="xs:string" use="optional" />
+                                    <xs:attribute ref="state" use="optional" />
+                                    <xs:attribute name="points" type="xs:int" use="optional" />
+                                    <xs:attribute name="mksid" type="xs:double" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="introSlideType">
+        <xs:attribute name="type">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="sprint-intro"></xs:enumeration>
+                    <xs:enumeration value="sprint-goal"></xs:enumeration>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        
+    </xs:complexType>
+
+
+    <xs:complexType name="storySlideType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##any"/>
+        </xs:sequence>
+        <xs:attribute name="type">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="model-context" />
+                    <xs:enumeration value="story-context" />
+                    <xs:enumeration value="story-demo" />
+                    <xs:enumeration value="story-timeline" />
+                    <xs:enumeration value="story-code-q" />
+                    <xs:enumeration value="whats-next" />
+                    <xs:enumeration value="story-narrative" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:attribute name="state">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="story done"></xs:enumeration>
+                <xs:enumeration value="story not-done"></xs:enumeration>
+                <xs:enumeration value=""></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:schema>
