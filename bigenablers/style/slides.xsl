@@ -46,7 +46,10 @@
                                     </tr>
                                     <tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
                                     <tr><td align="right"><h4 class="center">Team: <xsl:value-of select="@name" /></h4></td></tr>
-                                    <tr><td align="right"><h4 class="center">Sprint: <xsl:value-of select="../../*/@id" /></h4></td>
+                                    <tr><td align="right"><h4 class="center">Sprint: <xsl:call-template name="fetchthissprint">
+                                                                                         <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
+                                                                                         <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
+                                                                                     </xsl:call-template></h4></td>
                                     </tr>
                                 </table>
                             </section>
@@ -175,12 +178,15 @@
                                 <tr><td>
                                 <xsl:call-template name="burndown-template">
                                     <xsl:with-param name="teamname" select="sprintreview/team/@name" />
-                                    <xsl:with-param name="sprintnumber" select="sprintreview/@id" />
+                                    <xsl:with-param name="sprintfolder" select="sprintreview/@folder" />
                                 </xsl:call-template>
                                 </td></tr>                                
                                 <tr>
                                     <td align="left">
-                                        <h4 class="center">Velocity Sprint <xsl:value-of select="sprintreview/@id" />:
+                                        <h4 class="center">Velocity Sprint <xsl:call-template name="fetchthissprint">
+																	           <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
+																	           <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
+																	       </xsl:call-template> : 
                                             <xsl:value-of select="sum(sprintreview/stories/story[@state='story done']/@points)" />
                                         </h4>
                                         <h4 class="center">Commitment:
