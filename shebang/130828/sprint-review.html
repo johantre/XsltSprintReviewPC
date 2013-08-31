@@ -23,379 +23,307 @@
 <tr><td width="1140" height="524" align="center" style="background-image: url('../style/tomtom/img/TomTomLogo.jpg');                                                                     background-repeat:no-repeat;                                                                   background-size:100% 100%"></td></tr>
 <tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
 <tr><td align="right"><h4 class="center">Team: Shebang</h4></td></tr>
-<tr><td align="right"><h4 class="center">Sprint: 01</h4></td></tr>
+<tr><td align="right"><h4 class="center">Sprint: 02</h4></td></tr>
 </table></section><section class="slide" align="left"><div class="info">
 <h3 class="center">Team Composition</h3>
-<br><p class="team"><span class="caption">Scrum Team Members: </span><span class="content"><br>•<member>Thomas Martens</member><br>•<member>Stefan De Smit</member><br>•<member>Maciej Moczkowski</member><br>•<member>Dominik Plichka</member><br>•<member>Jurgen Reynaert</member></span></p>
+<br><p class="team"><span class="caption">Scrum Team Members: </span><span class="content"><br>•<member>Thomas Martens</member><br>•<member>Stefan De Smit</member><br>•<member>Maciej Moczkowski</member><br>•<member>Dominik Plichta</member><br>•<member>Jürgen Reynaert</member></span></p>
 <p class="scrum-master"><span class="caption">Product Owner: </span><span class="content">Marius Swanepoel</span></p>
 <p class="scrum-master"><span class="caption">Scrum Master: </span><span class="content">Johan Tré</span></p>
 </div></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">INTRO</h1>
-<header><h3>Technical Suite 3.0</h3></header><ul>
-                    <li>list item.
-                        <ul>
-                            <li>list item.</li>
-                            <li>list item.</li>
-                        </ul>                       
-                    </li>                        
-                    <li>list item.</li>
-                    <li>list item.</li>
-                </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">GOAL</h1>
-<header><h3>Technical Suite 3.0</h3></header><ul>
-                    <li>list item.
-                        <ul>
-                            <li>list item.</li>
-                            <li>list item.</li>
-                        </ul>                       
-                    </li>                        
-                    <li>list item.</li>
-                    <li>list item.</li>
-                </ul></section><section class="slide" data-transition="zoom" style="text-align: left;"><h2>User Stories Done</h2>
+<header><h3>Milestone 3.0</h3></header><img src="img/ShebangPOC.jpg"></section><section class="slide" data-transition="zoom" style="text-align: left;"><h2>User Stories Done</h2>
 <br><ul class="stories">
-<li class="story done">Tech 1: Build simple PDS from it.<span class="sp">(SP: 0)</span>
+<li class="story done">Solve the feature stubbing on TX data<span class="sp">(SP: 8)</span>
 </li>
-<li class="story done">Tech 2: Build simple PDS from it.<span class="sp">(SP: 8)</span>
+<li class="story done">Working Solution: improved &gt; #associations down!<span class="sp">(SP: 5)</span>
 </li>
-<li class="story done">Tech 3: Build simple PDS from it.<span class="sp">(SP: 8)</span>
+<li class="story done">Implement delta API in P.C.<span class="sp">(SP: 8)</span>
 </li>
-<li class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)<span class="sp">(SP: 5)</span>
+<li class="story done">Tech 3: Build simple PDS from it<span class="sp">(SP: 8)</span>
 </li>
-<li class="story done">Get Ver. Data: Unifying 2 code paths (Build auto-Filtering)<span class="sp">(SP: 8)</span>
-</li>
-</ul></section><section class="slide" data-transition="zoom" style="text-align: left;"><h2 class="story not-done">User Stories NOT Done</h2>
-<br><ul class="stories"><li class="story not-done">the story that is not done title<span class="sp">(SP: 0)</span><span class="sp">Done: 75%</span>
-</li></ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
-<header><h3 class="story done">Tech 1: Build simple PDS from it.</h3></header><h5>context slide to ease explanation and give background to the audience</h5>
+</ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done">Solve the feature stubbing on TX data</h3></header><h5>What are feature stubs?</h5>
 <ul>
-                        <li>Story = from Sprint 0, presented now (Sprint 01)
+                        <li>Lightweight feature representation that contains only ID and featureType</li>
+                    </ul>
+<h5>CDP requirement for getFeatures(tileFilter) from CPP</h5>
+<ul>
+                        <li>all features in tile should be returned with clipped geometries</li>
+                        <li>associations objects are returned - ID and type of both ends should be accessible</li>
+                        <li>out of tile associated feature should be represented by "stub" (in order to process association object correctly)</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Solve the feature stubbing on TX data</h3></header><h5>Stubbing implementation:</h5>
+<ul>
+                        <li>getFeatures(tileFilter) does NOT return feature stubs</li>
+                        <li>FeaturesStubLoadingStrategy used to lazy load stubs
                             <ul>
-                                <li>Team incomplete.</li>
-                                <li>Velocity Unknown, ramp-up time to build knowledge.</li>
-                            </ul>						
-						</li>
+                                <li>determines IDs of missing associated features</li>
+                                <li>loads stubs at one batch using getObjectsByIds endpoint in coredb</li>
+                            </ul>
+                        </li>
+                        <li>beta version made last sprint</li>
+                    </ul>
+<h5>What was missing and solved:</h5>
+<ul>
+                        <li>proper versioned data handling in getObjectsByIds (VMDS)</li>
+                        <li>FAT tests recovered and some new added</li>
+                        <li>l-Rule removed from getFeatures call as no longer needed</li>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Solve the feature stubbing on TX data</h3></header><h5>Testing CPP/CDP stack on larger datasets:</h5>
+<ul>
+                        <li>last sprint only Hakuna-Matata datasets were tested</li>
+                        <li>We were able to use L2 to run tests on BEL
+                            <ul>
+                                <li>it tooks 65min to process BEL on L2</li>
+                                <li>haystack-validation was used to check output content</li>
+                                <li>some minor content problems were detected due to strange behaviour of PostGIS/Geos</li>
+                                <li>fix implemented in db-reader to get correct content :)</li>
+                            </ul>
+                        </li>
+                        <li>We were NOT able successfully process UC3</li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done">Working Solution: improved &gt; #associations down!</h3></header><h5>Goals of the story</h5>
+<ul>
+                        <li>Up to now we retrieved complete data for each tile</li>
+                        <li>But there is a lot duplication! For example:
+                            <ul>
+                                <li>AdminArea9 is returned in many tiles</li>
+                                <li>Complete set of associations is also returned</li>
+                                <li>but we need only RoadElementInAdminArea9 associations to roads in current tile!</li>
+                                <li>we will get other RoadElementInAdminArea9 associations while processing rest of tiles</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+<center><img style="" src="img/assocFilter.png" height="350"></center></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Working Solution: improved &gt; #associations down!</h3></header><h5>Implementation:</h5>
+<ul>
+                        <li>ExcludeAssociationForFeatureTypeFilter added to coredb-client
+                            <ul>
+                                <li>for each feature type you can define which associations should be excluded</li>
+                                <li>associations are filtered while reading from both MDS and VMDS</li>
+                            </ul>
+                        </li>
+                        <pre><code>
+ExcludeAssociationForFeatureTypeFilter associationForFeatureTypeFilter
+    = ExcludeAssociationForFeatureTypeFilterBuilder.newBuilder()
+        .forGivenFeatureTypes(ttom.TTOM_Core.FEATURES.Order9Area)
+            .excludeAssociationTypes(ttom.TTOM_Core.ASSOCS.RoadElementInOrder9Area, ttom.ASSOCS.FaceOfOrder9Area)
+        .forGivenFeatureTypes(ttom.TTOM_Core.FEATURES.Order8Area)
+            .excludeAssociationTypes(ttom.TTOM_Core.ASSOCS.RoadElementInOrder8Area)
+        .build();
+                        </code></pre>
+                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
+<header><h3 class="story done">Working Solution: improved &gt; #associations down!</h3></header><h5>Integration and tests:</h5>
+<ul>
+                        <li>haystack-mdsloader has been adapted to use new filtering api</li>
+                        <li>haystack-validation has been run on BEL
+                            <ul>
+                                <li>correct content is still produced</li>
+                                <li>processing time reduced to 35min (half of original time!)</li>
+                                <li>for now only few association types has been excluded - tuning still possible</li>
+                            </ul>
+                        </li>
+                        <li>UC3 still not processed correctly - further investigation planned</li>
+                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done">Implement delta API in P.C.</h3></header><h5>What is firehose?</h5>
+<ul>
+                        <li>firehose is a protocol, implementing a common set of rules and instructions, enabling computers to communicate with each-other.</li>
+                            <ul>
+                                <li>server: haytack-server</li>
+                                <li>client: feature retriever client</li>
+                                <li>instructions: open a session, get firehose objects (e.g features), close session.</li>
+                            </ul>
                         
-                        <li>Technology of choice: <img style="display: inline-block; vertical-align:text-top;" alt="HBase" height="50" src="img/hbase-logo.jpg">
-</li>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
-                        <li>Difficulties,...</li>
-                        <li>Current situation,...</li>
-                    </ul>
-<h5>Solution:</h5>
-<ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story done">Tech 1: Build simple PDS from it.</h3></header><h5>HBase table structure:</h5>
-<ul>
-                        <li>
-                            Row Key: Morton base 4 + Feature Id + Zone Name
+                        <li>Current instructions:</li>
                             <ul>
-                                <li>Morton base 4: Enabler for table scans on different (higher) Morton tile levels.</li>
-                                <li>Feature Id: The uuid of the feature (stored as 2 longs).</li>
-                                <li>Zone Name: Makes the row key unique for seamed features on a tile boarder.</li>
+                                <li>openSession(where, what, when)</li>
+                                <li>retrieveFeatures(sessionid, count)</li>
+                                <li>closeSession(sessionid)</li>
                             </ul>
-                        </li>
-                        <li>
-                            Column family: The model name of the feature.
+
+                        <li>New instructions:</li>
                             <ul>
-                                <li>Enabler for retrieving sub models.</li>
+                                <li>openModificationSession(where, what, when, when)</li>
+                                <li>retrieveFeatureModifications(sessionid, count)</li>
+                                <li>closeSession(sessionid)</li>
                             </ul>
-                        </li>
-                        <li>
-                            Colum Qualifier: The type of the feature.
+
+                        <li>firehose modules:</li>
                             <ul>
-                                <li>Enabler for retrieving specific types.</li>
-                            </ul>
-                        </li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story done">Tech 1: Build simple PDS from it.</h3></header><h4>HBase schema</h4>
-<img src="img/hbase1.png" alt="hbase"></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
-<header><h3 class="story done">Tech 2: Build simple PDS from it.</h3></header><h5>context slide to ease explanation and give background to the audience</h5>
-<ul>
-						<li>Technology of choice: Hadoop fs <img style="display: inline-block; vertical-align:text-top;" alt="HBase" height="50" src="img/hadoop-logo.jpg">
-</li>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
-                        <li>Difficulties,...</li>
-                        <li>Current situation,...</li>
+                                <li>firehose-client: client to retrieve firhose objects.</li>
+                                <li>firehose-io: streaming features over the wire (serializing, deserializing)</li>
+                                <li>firehose-rpc: remote procedure call (instructions)</li>
+                            </ul> 
                     </ul>
-<h5>Solution:</h5>
+<p></p>
+<h5>Documentation:</h5>
 <ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                        <li><a href="http://vos/display/CPEMPE/CDP+Delta+API">The delta API on Confluence</a></li>
                     </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story done">Tech 2: Build simple PDS from it.</h3></header><h5>Goals:</h5>
+<header><h3 class="story done">Implement delta API in P.C.</h3></header><h5>Goals:</h5>
 <ul>
-                        <li>
+                        <li>Retrieve feature modifications through the firehose.</li>
+                        <li>Focus on the protocol (where and what is not used yet).</li>
                     </ul>
-<h5>Value delivered:</h5>
+<p></p>
+<h5>Code example:</h5>
+<pre>
+                        <code>
+final FeatureRetriever&lt;ZoneFilter, ModelFilter, ReleaseFilter&gt; featureRetriever = new FeatureRetrieverClient(config);
+...
+final ReleaseFilter releaseFilterFrom = new ReleaseFilter("1");
+final ReleaseFilter releaseFilterTo = new ReleaseFilter("1");
+
+final FirehoseStream&lt;FeatureModification&gt; featureModifications =
+    featureRetriever.getFeatureModifications(where, what, releaseFilterFrom, releaseFilterTo);
+
+while (featureModifications.hasNext()) {
+    final FeatureModification featureModification = featureModifications.next();
+    System.out.println(featureModification);
+}
+
+featureModifications.close();
+                        </code>
+                    </pre>
+<p></p>
+<h5>Output:</h5>
+<pre>
+                        <code>
+Feature DictionaryFeature[model: TTOM namespace: TTOM-Topology name: Edge] with id 9abc333a-25d8-4cde-9810-accae9bf20c0 was CREATED
+
+Association modification:
+   [AssociationModificationImpl[951926d2-0318-468f-9908-9345682847bd EdgeHasEndNode type=CREATED src=9abc333a-25d8-4cde-9810-accae9bf20c0 trg=e784affd-f6e4-4f29-8c6e-3b9c4ee6e571 seq=0],
+    AssociationModificationImpl[f3b3a94a-2202-4287-94d6-973d623208af EdgeOfRoadElement type=CREATED src=d76d28ce-65b1-4543-9f07-777fd7b1fa30 trg=9abc333a-25d8-4cde-9810-accae9bf20c0 seq=1],
+    AssociationModificationImpl[9dc7a9f7-e8d3-4169-bd3a-4ea3e6dff9d0 EdgeHasBeginNode type=CREATED src=9abc333a-25d8-4cde-9810-accae9bf20c0 trg=00004245-4c00-0100-0000-0000000c5841 seq=0]]
+
+Attribute modification: null
+
+Geometry modification: GeometryModificationImpl[afterstate = [36830214 510247669, 36831233 510255648, 36831427 510256955, 36831955 510257851, 36833060 510258937, 36854955 510275479], beforestate = null, modificationtype = CREATED]
+                        </code>
+                    </pre></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 200px 500px -300px -600px;">CONTEXT</h1>
+<header><h3 class="story done">Tech 3: Build simple PDS from it</h3></header><h4>Titan <a href="http://http://thinkaurelius.github.io/titan/"><img style="display: inline-block; vertical-align:text-top;" height="100" src="img/titan-logo.png"></a>
+</h4>
+<h5>Pro's</h5>
 <ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story done">Tech 2: Build simple PDS from it.</h3></header><h5>Demo slides</h5>
-<ul>
-                        <li>
+                        <li>Graph database, so could also be used by QA-team</li>
+						<li>implements blueprints interface (already used by QA-team in Neo4j)</li>
+						<li>Can work on different underlying storages, including hBase</li>
                     </ul>
-<h5>Value delivered:</h5>
+<br><br><h5>Con's</h5>
 <ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
-<header><h3 class="story done">Tech 3: Build simple PDS from it.</h3></header><h5>context slide to ease explanation and give background to the audience</h5>
-<ul>
-                        <li>Technology of choice: Titan <img style="display: inline-block; vertical-align:text-top; float:right;" alt="Titan" height="120" src="img/titan-logo.jpg">
-</li>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
-                        <li>Difficulties,...</li>
-                        <li>Current situation,...</li>
-                    </ul>
-<h5>Solution:</h5>
-<ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                        <li>New technology, so pretty unknown</li>
+                        <li>Lots of (stability) issues during testing</li>
                     </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story done">Tech 3: Build simple PDS from it.</h3></header><h5>Goals:</h5>
+<header><h3 class="story done">Tech 3: Build simple PDS from it</h3></header><h4>Steps we did for this Poc</h4>
+<br><ul>
+						<li>dumped data from GDF to Graphson (features only, no associations)</li>
+						<ul>
+							<li>full features (not partial as in Tech1 &amp; 2) as vertex</li>
+							<li>partial geometry on the edge(link)</li>
+							<li>features stored in Titan as jSON (AVRO in Tech 1 &amp; 2)</li>
+						</ul>
+						<li>load data into Titan (hBase storage)</li>
+						<li>read data back from Titan</li>
+						<li>haystack-validation</li>
+					</ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done">Tech 3: Build simple PDS from it</h3></header><h4>Tests done</h4>
 <ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
+						<li>
+<h5>YG1 (part of Ghent)</h5>					
+							<ul>
+								<li>Graphson file : 10MB</li>	
+								<li>load into Titan : &lt; 1min</li>
+								<li>Haystack-validation on GDF : 4min15sec</li>
+								<li>Haystack-validation on Titan : 3min20sec</li>
+							</ul>
+						</li>
+						<li>
+<h6>BEL</h6>
+							<ul>
+								<li>Graphson file : 8GB</li>
+								<li>load into Titan : multiple crashes after 1 - 2 hrs.</li>
+								<ul>
+									<li>memory</li>
+									<li>connection lost</li>
+									<li>elastisearch crash</li>
+									<li>hardware errormessage</li>
+									<li>....</li>
+								</ul>
+							</ul>
+						</li>
+					</ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
+<header><h3 class="story done">Tech 3: Build simple PDS from it</h3></header><h4>Conclusion</h4>
 <ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story done">Tech 3: Build simple PDS from it.</h3></header><h5>Demo slides</h5>
-<ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
-<ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story not-done"></h3></header><h5>Size comparison</h5>
-<style type="text/css">
-                        table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
-                        table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
-                        table.tftable tr {background-color:#ffffff;}
-                        table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
-                    </style>
-<table class="tftable" border="1">
-                        <tr>
-                            <th>Dataset</th>
-                            <th>VPDS (GDF + TIF)</th>
-                            <th>MDS</th>
-                            <th>HBASE</th>
-                            <th>HDFS</th>
-                        </tr>
-                        <tr>
-                            <td>BEL</td>
-                            <td>~14G</td>
-                            <td>~20G</td>
-                            <td>~4G</td>
-                            <td>~4.4G</td>
-                        </tr>
-                        <tr>
-                            <td>UC3</td>
-                            <td>~38G</td>
-                            <td>~101G</td>
-                            <td>~8.5G</td>
-                            <td>~8.5G</td>
-                        </tr>
-                        <tr>
-                            <td>AK1</td>
-                            <td>~14.5G</td>
-                            <td>~13G</td>
-                            <td>~13G</td>
-                            <td>n/a</td>
-                        </tr>
-                    </table>
-<br><h5>Summary</h5>
-<blockquote class="fragment">Smaller footprint than GDF and MDS</blockquote>
-<blockquote class="fragment">Similar footprint for sparse big areas because of the many tiles</blockquote></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story not-done"></h3></header><h5>Read time comparison</h5>
-<style type="text/css">
-                        table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
-                        table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
-                        table.tftable tr {background-color:#ffffff;}
-                        table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
-                    </style>
-<table class="tftable" border="1">
-                        <tr>
-                            <th>Zone</th>
-                            <th>#Mappers</th>
-                            <th>VPDS (GDF + TIF)</th>
-                            <th>#Mappers</th>
-                            <th>HBASE</th>
-                            <th>HDFS</th>
-                        </tr>
-                        <tr>
-                            <td>BEL</td>
-                            <td>733</td>
-                            <td>25m</td>
-                            <td>52</td>
-                            <td>6m30</td>
-                            <td>5m26</td>
-                        </tr>
-                        <tr>
-                            <td>UC3</td>
-                            <td>652</td>
-                            <td>1h23m</td>
-                            <td>46</td>
-                            <td>13m45</td>
-                            <td>12m01</td>
-                        </tr>
-                        <tr>
-                            <td>AK1</td>
-                            <td>316</td>
-                            <td>31h14m</td>
-                            <td>24</td>
-                            <td>2h57m</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>California</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                            <td>192</td>
-                            <td>37m53</td>
-                            <td></td>
-                        </tr>
-                    </table></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
-<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h5>context slide to ease explanation and give background to the audience</h5>
-<ul>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
-                        <li>Difficulties,...</li>
-                        <li>Current situation,...</li>
-                    </ul>
-<h5>Solution:</h5>
-<ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h5>Goals:</h5>
-<ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
-<ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build Filtering CDB)</h3></header><h5>Demo slides</h5>
-<ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
-<ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">CONTEXT</h1>
-<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build auto-Filtering)</h3></header><h5>context slide to ease explanation and give background to the audience</h5>
-<ul>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
-                        <li>Difficulties,...</li>
-                        <li>Current situation,...</li>
-                    </ul>
-<h5>Solution:</h5>
-<ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build auto-Filtering)</h3></header><h5>Goals:</h5>
-<ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
-<ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" style=" text-align: left;"><h1 class="rotated">DEMO</h1>
-<header><h3 class="story done">Get Ver. Data: Unifying 2 code paths (Build auto-Filtering)</h3></header><h5>Demo slides</h5>
-<ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
-<ul>
-                        <li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story not-done">the story that is not done title</h3></header><h5>Goals:</h5>
-<ul>
-                        <li>Initial goal</li>
-                    </ul>
-<h5>Problem description:</h5>
-<ul>
-                        <li>
-                    </ul>
-<h5>Value delivered:</h5>
-<ul>
-                        <li>Phonemes can be 'released' from 'PDS'</li>
-                    </ul>
-<h5>To Do:</h5>
-<ul>
-                        <li>what's left?</li>
-                    </ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated">STORY</h1>
-<header><h3 class="story not-done"></h3></header><img src="img/timeline.jpg" alt="demo: diff"></section><section class="slide" style="text-align: left;"><table align="center">
+						<li>not usable as it is right now</li>
+						<li>would need more effort to find out the different crash causes</li>
+						<li>for the productcreate team we don't see an immediate advantage in continuing with this technology</li>
+						<li>if other teams want to investigate further we can share our findings</li>
+					</ul></section><section class="slide" data-transition="zoom" style=" text-align: left;"><h1 class="rotated" style="margin: 250px 500px -300px -600px;">WHATsNEXT</h1>
+<header><h3 class=""></h3></header><blockquote class="fragment">Continuation of Delta API</blockquote>
+<blockquote class="fragment">Investigation on infrastructural latency</blockquote>
+<blockquote class="fragment">Apply deltas on PDS </blockquote></section><section class="slide" style="text-align: left;"><table align="center">
 <tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
-<tr><td width="1040" height="540" style="background-image: url('img/burndown.jpg');                                                                          background-repeat:no-repeat;                                                                          background-size:100% 100%"></td></tr>
+<tr><td>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script type="text/javascript">
+                    $(function() {
+                        $('#container').highcharts(
+                                {
+                                    title : {
+                                        text : 'Release Burn down *Shebang*',
+                                        x : -20
+                                    //center
+                                    },
+                                    subtitle : {
+                                        text : 'Cumulative Committed vs. Velocity',
+                                        x : -20
+                                    },
+                                    xAxis : {
+                                        tickmarkPlacement: 'on',
+                                        categories : [ 00,130717,130807,130828,130918,131009,131030,131120,131211, ]
+                                    },
+                                    yAxis : {
+                                        title : {
+                                            text : 'Total to burn (points)'
+                                        },
+                                        plotLines : [ {
+                                            value : 0,
+                                            width : 100
+                                        }],
+                                        max : 201,
+                                        min : 0
+                                    },
+                                    tooltip : {
+                                        valueSuffix : 'Pts.'
+                                    },
+                                    legend : {
+                                        layout : 'vertical',
+                                        align : 'right',
+                                        verticalAlign : 'middle',
+                                        borderWidth : 0
+                                    },
+                                    series : [
+                                            {
+                                                name : 'Cumulatieve Velocity',
+                                                data : [ 201,193,180,151,151,151,151,151,151, ],
+                                                color: '#FF0000'
+                                            },
+                                            {
+                                                name : 'Cumulative Commitments',
+                                                data : [ 201,193,180,151,151,151,151,151,151 ],
+                                                dashStyle: 'ShortDash', 
+                                                color : '#104E8B'
+                                            } ]
+                                });
+                    });
+                </script><script src="../style/highcharts/js/highcharts.js"></script><script src="../style/highcharts/js/modules/exporting.js"></script><div id="container" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td></tr>
 <tr><td align="left">
-<h4 class="center">
-                                            Velocity Sprint
-                                            01
-                                            :
+<h4 class="center">Velocity Sprint 02:
                                             29</h4>
-<h4 class="center">
-                                            Commitment:
+<h4 class="center">Commitment:
                                             29</h4>
 </td></tr>
-</table></section><section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Any Questions?</h1></section><section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100% 100%"><h1 class="last">Thank you!</h1></section>
+</table></section><section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%"><h1 class="last">Any Questions?</h1></section><section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%"><h1 class="last">Thank you!</h1></section>
 </div>
 <p class="slide-number"></p>
 </div>
