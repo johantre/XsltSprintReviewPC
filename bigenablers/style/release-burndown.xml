@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<release name="Milestone 2.1" totalpoints="81">
-    <sprints>
-        <sprint>130707</sprint>
-        <sprint>130724</sprint>
-        <sprint>130814</sprint>
-        <sprint>130904</sprint>
-        <sprint>130925</sprint>
-        <sprint>131016</sprint>
-        <sprint>131106</sprint>
-        <sprint>131127</sprint>
-        <sprint>131218</sprint>
-    </sprints>
-</release>
+<releases>
+    <release name="MS 2.1" totalpoints="81">
+        <sprints>
+            <sprint name="01">130707</sprint>
+            <sprint name="02">130724</sprint>
+            <sprint name="03">130814</sprint>
+            <sprint name="04">130904</sprint>
+            <sprint name="05">130925</sprint>
+        </sprints>
+    </release>
+    <release name="MS 2.2" totalpoints="150">
+        <sprints>
+            <sprint name="01">131016</sprint>
+            <sprint name="02">131106</sprint>
+            <sprint name="03">131127</sprint>
+            <sprint name="04">131218</sprint>
+        </sprints>
+    </release>
+</releases>
