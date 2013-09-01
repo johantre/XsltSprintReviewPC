@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releases>
+    <release name="RMC 3.8 most probably" totalpoints="201">
+        <sprints>
+            <sprint name="00">121212</sprint>
+        </sprints>
+    </release>
     <release name="Milestone 3.1" totalpoints="201">
         <sprints>
             <sprint name="01">130717</sprint>

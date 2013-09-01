@@ -5,6 +5,19 @@
 
     <xsl:output method="html" encoding="utf-8" indent="yes" />
     <xsl:template match="/">
+        <xsl:variable name="thisreleasename">
+            <xsl:call-template name="fetchthisrelease">
+                <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
+                <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
+            </xsl:call-template>        
+        </xsl:variable>
+        <xsl:variable name="thissprintname">
+            <xsl:call-template name="fetchthissprint">
+                <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
+                <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
+            </xsl:call-template>        
+        </xsl:variable>
+    
         <html>
 
             <head>
@@ -46,10 +59,11 @@
                                     </tr>
                                     <tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
                                     <tr><td align="right"><h4 class="center">Team: <xsl:value-of select="@name" /></h4></td></tr>
-                                    <tr><td align="right"><h4 class="center">Sprint: <xsl:call-template name="fetchthissprint">
-                                                                                         <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
-                                                                                         <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
-                                                                                     </xsl:call-template></h4></td>
+                                    <tr><td align="right"><h4 class="center">Release: <xsl:value-of select="$thisreleasename" />
+                                                                             <xsl:value-of select="' - '" />
+                                                                             Sprint: <xsl:value-of select="$thissprintname" />
+                                                          </h4></td>
+                                    <td align="left"><h4 class="center"></h4></td>
                                     </tr>
                                 </table>
                             </section>
@@ -174,7 +188,7 @@
 
                         <section class="slide" style="text-align: left;"><!-- List ending slides. -->
                             <table align="center">
-                                <tr><td align="left"><h4 class="center">Sprint Facts</h4></td></tr>
+                                <tr><td align="left"><h4 class="center">Sprint Facts of release <xsl:value-of select="$thisreleasename" /></h4></td></tr>
                                 <tr><td>
                                 <xsl:call-template name="burndown-template">
                                     <xsl:with-param name="teamname" select="sprintreview/team/@name" />
