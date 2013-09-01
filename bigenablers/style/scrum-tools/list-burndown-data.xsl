@@ -63,10 +63,9 @@
         <xsl:param name="release" />
         <xsl:param name="releasedoc" />
 
-        <xsl:value-of select="'00,'" />
+        '<xsl:value-of select="'00'" />'<xsl:value-of select="','" />
         <xsl:for-each select="$releasedoc//release[@name=$release]/sprints/sprint">
-            <xsl:value-of select="." />
-            <xsl:value-of select="','" />
+            '<xsl:value-of select="@name" />'<xsl:value-of select="','" />
         </xsl:for-each>
     </xsl:template>
 
