@@ -13,8 +13,8 @@
         <xsl:choose>
         <xsl:when test="$sprints/sprint[$sprintlocation + 1]" >
             <xsl:choose>
-                <xsl:when test="contains($data,'velocity')"><xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points)" /></xsl:when>
-                <xsl:otherwise><xsl:value-of select="$runningtotal - sum($doc//story/@points)" /></xsl:otherwise>
+                <xsl:when test="contains($data,'velocity')"><xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points) - sum($doc//story[@state='story added']/@points)" /></xsl:when>
+                <xsl:otherwise><xsl:value-of select="$runningtotal - sum($doc//story/@points) + sum($doc//story[@state='story added']/@points)" /></xsl:otherwise>
             </xsl:choose>            
             <xsl:value-of select="','" />
             <xsl:choose>
@@ -26,8 +26,8 @@
                         <xsl:with-param name="thissprintfolder" select="$thissprintfolder"/>
                         <xsl:with-param name="runningtotal" >
                             <xsl:choose>
-                                <xsl:when test="contains($data,'velocity')"><xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points)" /></xsl:when>
-                                <xsl:otherwise><xsl:value-of select="$runningtotal - sum($doc//story/@points)" /></xsl:otherwise>
+                                <xsl:when test="contains($data,'velocity')"><xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points) - sum($doc//story[@state='added']/@points)" /></xsl:when>
+                                <xsl:otherwise><xsl:value-of select="$runningtotal - sum($doc//story/@points) + sum($doc//story[@state='story added']/@points)" /></xsl:otherwise>
                             </xsl:choose>
                         </xsl:with-param>
                         <xsl:with-param name="sprintlocation" select="$sprintlocation + 1" />
@@ -47,8 +47,8 @@
         </xsl:when>
         <xsl:when test="$sprints/sprint[$sprintlocation]">
             <xsl:choose>
-                <xsl:when test="contains($data,'velocity')"><xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points)" /></xsl:when>
-                <xsl:otherwise><xsl:value-of select="$runningtotal - sum($doc//story/@points)" /></xsl:otherwise>
+                <xsl:when test="contains($data,'velocity')"><xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points) - sum($doc//story[@state='story added']/@points)" /></xsl:when>
+                <xsl:otherwise><xsl:value-of select="$runningtotal - sum($doc//story/@points) + sum($doc//story[@state='story added']/@points)" /></xsl:otherwise>
             </xsl:choose>            
             <xsl:value-of select="','" />
         </xsl:when>

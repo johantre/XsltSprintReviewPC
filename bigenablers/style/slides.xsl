@@ -118,7 +118,7 @@
                                 <xsl:when test="sprintreview/stories/story[@state='story done']">
                                     <ul class="stories">
                                         <xsl:for-each select="sprintreview/stories/story[@state='story done']">
-                                            <li class="story done"><xsl:value-of select="@title" /><span class="sp">(SP: <xsl:value-of select="@points" />)</span></li>
+                                            <li class="story done"><xsl:value-of select="@title" /><span class="sp"> (SP: <xsl:value-of select="@points" />)</span></li>
                                         </xsl:for-each>
                                     </ul>
                                 </xsl:when>
@@ -129,6 +129,25 @@
                         </section>
 
                         <xsl:choose>
+                            <xsl:when test="sprintreview/stories/story[@state='story added']"><!-- List "Not Done" Stories. -->
+                                <section class="slide" data-transition="zoom" style="text-align: left;">
+                                    <h2 class="story added">User Stories ADDED</h2>
+                                    <br></br>
+                                    <ul class="stories">
+                                        <xsl:for-each select="sprintreview/stories/story[@state='story added']">
+                                            <li class="story done">
+                                                <xsl:value-of select="@title" />
+                                                <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
+                                            </li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </section>
+                            </xsl:when>
+                            <xsl:otherwise>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
+                        <xsl:choose>
                             <xsl:when test="sprintreview/stories/story[@state='story not-done']"><!-- List "Not Done" Stories. -->
                                 <section class="slide" data-transition="zoom" style="text-align: left;">
                                     <h2 class="story not-done">User Stories NOT Done</h2>
@@ -137,7 +156,7 @@
                                         <xsl:for-each select="sprintreview/stories/story[@state='story not-done']">
                                             <li class="story not-done">
                                                 <xsl:value-of select="@title" />
-                                                <span class="sp">(SP: <xsl:value-of select="@points" />)</span>
+                                                <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
                                                 <span class="sp">Done: <xsl:value-of select="@percentage-done" />%</span>
                                             </li>
                                         </xsl:for-each>
@@ -201,10 +220,10 @@
 																	           <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
 																	           <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
 																	       </xsl:call-template> : 
-                                            <xsl:value-of select="sum(sprintreview/stories/story[@state='story done']/@points)" />
+                                            <xsl:value-of select="sum(sprintreview/stories/story[@state='story done']/@points) + sum(sprintreview/stories/story[@state='story added']/@points)" />
                                         </h4>
                                         <h4 class="center">Commitment:
-                                            <xsl:value-of select="sum(sprintreview/stories/story/@points)" />
+                                            <xsl:value-of select="sum(sprintreview/stories/story/@points) - sum(sprintreview/stories/story[@state='story added']/@points)" />
                                         </h4>
                                     </td>     
                                 </tr>
