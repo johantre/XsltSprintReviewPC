@@ -25,6 +25,12 @@
                 <xsl:when test="@type='whats-next'">
                     <h1 class="rotated" style="margin: 250px 500px -300px -600px;">WHATsNEXT</h1>
                 </xsl:when>
+                <xsl:when test="@type='sprint-intro'">
+                    <h1 class="rotated">INTRO</h1>
+                </xsl:when>
+                <xsl:when test="@type='sprint-goal'">
+                    <h1 class="rotated">GOAL</h1>
+                </xsl:when>
                 <xsl:otherwise>
                     <h1 class="rotated">STORY</h1>
                 </xsl:otherwise>

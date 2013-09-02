@@ -91,27 +91,15 @@
 
                         <xsl:for-each select="sprintreview/intro/slides/slide"><!-- Introduction slides. -->
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
-                                    <xsl:choose>
-                                        <xsl:when test="@type='sprint-intro'">
-                                            <h1 class="rotated">INTRO</h1>
-                                        </xsl:when>
-                                        <xsl:when test="@type='sprint-goal'">
-                                            <h1 class="rotated">GOAL</h1>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <h1 class="rotated">SPRINT</h1>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                    <header>
-                                        <h3>
-                                            <xsl:value-of select="../../@title" />
-                                        </h3>
-                                    </header>
-                                    <xsl:copy-of select="./*" />
+                                    <xsl:call-template name="storyslide">
+                                        <xsl:with-param name="state" select="'story done'" />
+                                        <xsl:with-param name="mksid" select="''" />
+                                        <xsl:with-param name="title" select="../../@title" />
+                                    </xsl:call-template>
                                 </section>
                         </xsl:for-each>
 
-                        <section class="slide" data-transition="zoom" style="text-align: left;"><!-- List "Done" Stories. -->
+                        <section class="slide" data-transition="zoom" style="text-align: left;"><!-- List "story done" Stories. -->
                             <h2>User Stories Done</h2>
                             <br></br>
                             <xsl:choose>
@@ -129,7 +117,7 @@
                         </section>
 
                         <xsl:choose>
-                            <xsl:when test="sprintreview/stories/story[@state='story added']"><!-- List "Not Done" Stories. -->
+                            <xsl:when test="sprintreview/stories/story[@state='story added']"><!-- List "story added" Stories. -->
                                 <section class="slide" data-transition="zoom" style="text-align: left;">
                                     <h2 class="story added">User Stories ADDED</h2>
                                     <br></br>
@@ -148,7 +136,7 @@
                         </xsl:choose>
 
                         <xsl:choose>
-                            <xsl:when test="sprintreview/stories/story[@state='story not-done']"><!-- List "Not Done" Stories. -->
+                            <xsl:when test="sprintreview/stories/story[@state='story not-done']"><!-- List "story not-done" Stories. -->
                                 <section class="slide" data-transition="zoom" style="text-align: left;">
                                     <h2 class="story not-done">User Stories NOT Done</h2>
                                     <br></br>
