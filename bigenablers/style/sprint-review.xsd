@@ -92,6 +92,7 @@
         <xs:simpleType>
             <xs:restriction base="xs:string">
                 <xs:enumeration value="story done"></xs:enumeration>
+                <xs:enumeration value="story added"></xs:enumeration>
                 <xs:enumeration value="story not-done"></xs:enumeration>
                 <xs:enumeration value=""></xs:enumeration>
             </xs:restriction>
