@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../deck1/slides.xsl"?>
+<slides>
+    <dependencies>
+        <link rel="stylesheet" href="extra/mnr-demo.css"/>
+    </dependencies>
+
+    <title>Sprint Review Pandora</title>
+
+    <sprint>
+        <started>6th of August 2013</started>
+        <ended>9th of September 2013</ended>
+        <productowner>Timothy Grymonpon</productowner>
+        <scrummaster>Timothy Grymonpon</scrummaster>
+        <teammembers>Charlotte, Christophe, Dominique, Jan, Jelle, Kevin, Pieter, Plamen, Rebekka, Tom</teammembers>
+        <goal>
+            <ul>
+                <li>Make a successfull MNR prototype 8 with larger coverage and extra content</li>
+            </ul>
+        </goal>
+    </sprint>
+
+    <story epic="[MNR INFRA]" title="Automated setup of virtual machines to run TIF2TTOM and MNR conversions" status="done" sp="3">
+        <slide>
+        </slide>
+    </story>
+
+    <story epic="[MNR STABLEID]" title="Prototype feature DNA to enable stable ID's (UUID) - Part II implement algorithm in TIF2TTOM" status="done" sp="3">
+        <slide>
+        </slide>
+    </story>
+
+    <story epic="[MNR CONTINENT]" title="Seaming of attributes and deduplicate" status="done" sp="3">
+        <slide>
+        </slide>
+    </story>
+    
+    <story epic="[MNR LAYER]" title="Locality index - Part 3: model localities in TTOM" status="done" sp="3">
+        <slide>
+        </slide>
+    </story>    
+
+    <story epic="[MNR MAINT]" title="Package, document and release MNR prototype 8" status="done" sp="1">
+        <slide>
+        </slide>
+    </story>
+
+    <story epic="[MNR MAINT]" title="Train map line MN &amp; automotive teams on CDP structure" status="done" sp="1">
+        <slide>
+        </slide>
+    </story>
+
+    <story epic="[MNR LAYER]" title="Populate APT layer" status="done" sp="1">
+        <slide>
+        </slide>
+    </story>
+
+    <initscript>
+    </initscript>
+
+</slides>

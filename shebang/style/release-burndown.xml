@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releases>
-    <release name="RMC 3.8 most probably" totalpoints="201">
+    <release name="3.8 RMC" totalpoints="201">
         <sprints>
             <sprint name="00">121212</sprint>
         </sprints>

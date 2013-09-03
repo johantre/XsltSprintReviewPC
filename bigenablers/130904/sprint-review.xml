@@ -65,7 +65,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -76,20 +76,30 @@
         <story title="Load Voice Maps" state="story not-done" points="8" percentage-done="10"  mksid="1413490">
             <slides>
                 <slide type="story-context">
-                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <h5>Context</h5>
                     <ul>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
+                        <li>MN Post: MultiNet add-on product containing Postal Points with specific attributes (Delivery Type, Matching Type, Names), relationship to Road Element and relationships to several Area Features, in shape file format</li>
+                        <li>Coverage: currently only delivered for USA and CAN</li>
+						<li>Source: centroids.csv file per dataset (which is the result of a process that matches the official postal files with addresses in TIF, each release done from scratch) and TIF data (including the patch: replace postal names)</li>
+						<li>Challenges,...</li>
                         <li>Difficulties,...</li>
                         <li>Current situation,...</li>
                     </ul>
                     <h5>Solution:</h5>
                     <ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                        <li>TTOM Model update
+							<ul>
+								<li>Additional optional attributes on Postal Point: Postal Delivery Type, Postal Point Matching Type, Postal Name Set</li>	
+								<li>New associations: Postal Point Along Road Element with attributes Side Of Line and Chainage, Postal Point In "Area" associations (several Census Features, Admin Place C and M, Admin Area 8 and 9, Postal District)</li>
+								<li>
+									<a target="_blanc" href="http://help.tomtomgroup.com/specs/ttom/TTOM-3_16-1_0-SNAPSHOT/index.htm">TTOM-3_16-1_0-SNAPSHOT</a>
+								</li>	
+							</ul>
+						</li>
                     </ul>
                 </slide>
                 <slide type="story-narrative">
-                    <h5>Goals:</h5>
+                    <h5>Goals: Load all necessary data in the vPDS to enable MN Post product creation from the vPDS</h5>
                     <ul>
                         <li></li>
                     </ul>
@@ -100,7 +110,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -117,7 +127,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -152,7 +162,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -169,7 +179,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -204,7 +214,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -221,7 +231,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -256,7 +266,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -273,7 +283,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>

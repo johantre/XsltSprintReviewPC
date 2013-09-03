@@ -48,7 +48,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blanc" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -65,7 +65,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blanc" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -100,7 +100,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blanc" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -117,7 +117,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blanc" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -152,7 +152,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blanc" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
@@ -169,7 +169,7 @@
                         <li>
                             Some text:
                             <li>
-                                <a href="http://www.google.be">A sample of a link</a>
+                                <a target="_blanc" href="http://www.google.be">A sample of a link</a>
                             </li>
                         </li>
                     </ul>
