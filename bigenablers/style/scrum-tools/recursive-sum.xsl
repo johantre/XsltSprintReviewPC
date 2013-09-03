@@ -89,13 +89,13 @@
     <xsl:template name="velocitysum" >
         <xsl:param name="runningtotal" />
         <xsl:param name="doc" />
-        <xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points) - sum($doc//story[@state='story added']/@points)" />
+        <xsl:value-of select="$runningtotal - sum($doc//story[@state='story done']/@points) - sum($doc//story[@state='story uncommitted']/@points)" />
     </xsl:template>
 
     <xsl:template name="commitmentsum" >
         <xsl:param name="runningtotal" />
         <xsl:param name="doc" />
-        <xsl:value-of select="$runningtotal - sum($doc//story/@points) + sum($doc//story[@state='story added']/@points)" />
+        <xsl:value-of select="$runningtotal - sum($doc//story/@points) + sum($doc//story[@state='story uncommitted']/@points)" />
     </xsl:template>
 
 

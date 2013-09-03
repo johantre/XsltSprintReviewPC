@@ -117,12 +117,12 @@
                         </section>
 
                         <xsl:choose>
-                            <xsl:when test="sprintreview/stories/story[@state='story added']"><!-- List "story added" Stories. -->
+                            <xsl:when test="sprintreview/stories/story[@state='story uncommitted']"><!-- List "story uncommitted" Stories. -->
                                 <section class="slide" data-transition="zoom" style="text-align: left;">
-                                    <h2 class="story added">User Stories ADDED</h2>
+                                    <h2 class="story uncommitted">User Stories ADDED</h2>
                                     <br></br>
                                     <ul class="stories">
-                                        <xsl:for-each select="sprintreview/stories/story[@state='story added']">
+                                        <xsl:for-each select="sprintreview/stories/story[@state='story uncommitted']">
                                             <li class="story done">
                                                 <xsl:value-of select="@title" />
                                                 <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
@@ -208,10 +208,10 @@
 																	           <xsl:with-param name="sprintfolder" select="/sprintreview/@folder" />
 																	           <xsl:with-param name="releasedoc" select="document('release-burndown.xml')" />   
 																	       </xsl:call-template> : 
-                                            <xsl:value-of select="sum(sprintreview/stories/story[@state='story done']/@points) + sum(sprintreview/stories/story[@state='story added']/@points)" />
+                                            <xsl:value-of select="sum(sprintreview/stories/story[@state='story done']/@points) + sum(sprintreview/stories/story[@state='story uncommitted']/@points)" />
                                         </h4>
                                         <h4 class="center">Commitment:
-                                            <xsl:value-of select="sum(sprintreview/stories/story/@points) - sum(sprintreview/stories/story[@state='story added']/@points)" />
+                                            <xsl:value-of select="sum(sprintreview/stories/story/@points) - sum(sprintreview/stories/story[@state='story uncommitted']/@points)" />
                                         </h4>
                                     </td>     
                                 </tr>

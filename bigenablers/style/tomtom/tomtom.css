@@ -8,7 +8,7 @@
 .tomtom-container .done {
     color: #6ba100!important;
 }
-.tomtom-container .added {
+.tomtom-container .uncommitted {
     color: yellowgreen!important;
 }
 .tomtom-container .review-title {
