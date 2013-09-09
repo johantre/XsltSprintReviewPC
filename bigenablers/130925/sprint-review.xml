@@ -7,21 +7,17 @@
         <scrummaster>Johan Tré</scrummaster>
         <member>Mark Lebegge</member>
         <member>Veerle Merckx</member>
-        <member><font COLOR="DarkGray">Charlotte De Gendt</font></member>
-        <member><font COLOR="DarkGray">Michael Blongewicz</font></member>
         <member>Bart Temmerman </member>
-        <member>Christel Fiers</member>
         <member>Arnd Rechenburg</member>
-        <member>Peter Huysman</member>
         <member>Priyanka Sharma</member>
-        <member>Barbara Samin </member>
         <member>Marcin Zimniac </member>
-        <member><font COLOR="DarkGray">Frankie Bollaert</font></member>
-        <member><font COLOR="DarkGray">Lander Vandergucht</font></member>
+        <member>Frankie Bollaert</member>
+        <member>Lander Vandergucht</member>
+        <member>Stefan De Smit</member>
     </team>
 
     <stories>
-         <story title="Done Story Sample" state="story done" points="0">
+         <story title="Load Voice Maps" state="story done" points="8">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -73,7 +69,7 @@
             </slides>
         </story>
 
-        <story title="Done Story Sample" state="story done" points="0">
+        <story title="Validate 3.16" state="story done" points="5">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -125,7 +121,7 @@
             </slides>
         </story>
 
-        <story title="Done Story Sample" state="story done" points="0">
+        <story title="Analyse the reading visualis. (without LOD 4)" state="story done" points="3">
             <slides>
                 <slide type="story-context">
                     <h5>context slide to ease explanation and give background to the audience</h5>
@@ -177,7 +173,7 @@
             </slides>
         </story>
 
-        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="75">
+        <story title="SNCS22: Add language code 'Hebrew Latin' for ISR" state="story not" points="1">
             <slides>
                 <slide>
                     <h5>Goals:</h5>
