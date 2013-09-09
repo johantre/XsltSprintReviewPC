@@ -83,14 +83,14 @@
     <xsl:template name="velocitysum" >
         <xsl:param name="sprintdoc" />
         <xsl:param name="runningtotal" />
-        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done']/@points) - sum($sprintdoc//story[@state='story uncommitted']/@points)" />
+        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
     </xsl:template>
 
     <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points) + sum(uncommitted)) ]-->
     <xsl:template name="commitmentsum" >
         <xsl:param name="sprintdoc" />
         <xsl:param name="runningtotal" />
-        <xsl:value-of select="$runningtotal - sum($sprintdoc//story/@points) + sum($sprintdoc//story[@state='story uncommitted']/@points)" />
+        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
     </xsl:template>
 
 

@@ -34,7 +34,7 @@
                                     },
                                     series : [
                                             {
-                                                name : 'Cumulatieve Velocity',
+                                                name : 'Cumulative Velocity',
                                                 data : [ <xsl:call-template name="listburnedsumsinrelease">
                                                             <xsl:with-param name="sumtype" select="'velocity'"/>
                                                             <xsl:with-param name="releaseid" select="$releaseid"/>
@@ -55,7 +55,7 @@
                                                 color : '#104E8B'
                                             } ]
                                 };
-                    var chart<xsl:value-of select="$releasecount" /> = new Highcharts.Chart(jQuery.extend(true, {}, chart<xsl:value-of select="$releasecount" />options));
+                                var chart<xsl:value-of select="$releasecount" /> = new Highcharts.Chart(jQuery.extend(true, {}, chart<xsl:value-of select="$releasecount" />options));
                     });
                 </script>
     <div id="container{$releasecount}" style="min-width: 900px; height: 500px; margin: 0 auto"></div>

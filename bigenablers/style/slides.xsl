@@ -5,7 +5,7 @@
 
     <xsl:output method="html" encoding="utf-8" indent="yes" />
     <xsl:template match="/" > 
-        <xsl:variable name="sprintfolder" select="/sprintreview/@folder" />
+        <xsl:variable name="sprintfolder" select="/sprintreview/@folder" /><!-- sprintfolder of the current review -->
         <xsl:variable name="releasedoc" select="document('release-burndown.xml')" />
         <html>
             <head>
@@ -182,51 +182,39 @@
                             </xsl:for-each>
                         </xsl:for-each>
 
-                        <xsl:for-each select="$releasedoc//releases/release">
-                            <xsl:variable name="releaseid" select="@id"/>
-                            <xsl:variable name="releasename" select="@name"/>
+                        <xsl:for-each select="$releasedoc//releases/release/sprintfolders/sprintfolder"><!-- cycle through ALL sprints... -->
+                            <xsl:variable name="releaseid" select="../../@id"/>
+                            <xsl:variable name="releasename" select="../../@name"/>
                             <xsl:variable name="releasecount" select="position()"/>
-                            <xsl:for-each select="$releasedoc//releases/release[@id=$releaseid]/sprintfolders/sprintfolder">
-                                <xsl:variable name="fetchedfolder" select="."/>
-                                    <xsl:choose>
-                                    <xsl:when test="contains($fetchedfolder, $sprintfolder)">
-                                        <xsl:for-each select="$releasedoc//sprints/sprint">
-                                            <xsl:variable name="fetchedfolderinner" select="."/>
-                                            <xsl:choose>
-                                                <xsl:when test="contains($fetchedfolder, $fetchedfolderinner)">
-                                                    <xsl:variable name="sprintname" select="@name"/>
-
-                                                    <section class="slide" style="text-align: left;"><!-- List ending slides. -->
-                                                        <table align="center">
-                                                            <tr><td align="left"><h4 class="center">Sprint Facts of release <xsl:value-of select="$releasename" /> </h4></td></tr>
-                                                            <tr><td>
-                                                                <xsl:call-template name="rel-agnost-burndown-template">
-                                                                    <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
-                                                                    <xsl:with-param name="sprintfolder" select="$fetchedfolderinner" />
-                                                                    <xsl:with-param name="releaseid" select="$releaseid" />
-                                                                    <xsl:with-param name="releasename" select="$releasename" />
-                                                                    <xsl:with-param name="releasecount" select="$releasecount"/>
-                                                                </xsl:call-template>
-                                                            </td></tr>                                
-                                                            <tr>
-                                                                <td align="left">
-                                                                    <h4 class="center">Velocity Sprint <xsl:value-of select="$sprintname" /> : 
-                                                                        <xsl:value-of select="sum(/sprintreview/stories/story[@state='story done']/@points) + sum(/sprintreview/stories/story[@state='story uncommitted']/@points)" />
-                                                                    </h4>
-                                                                    <h4 class="center">Commitment:
-                                                                        <xsl:value-of select="sum(/sprintreview/stories/story/@points) - sum(/sprintreview/stories/story[@state='story uncommitted']/@points)" />
-                                                                    </h4>
-                                                                </td>     
-                                                            </tr>
-                                                        </table>
-                                                    </section>
-
-                                                </xsl:when>
-                                            </xsl:choose>
-                                        </xsl:for-each>
-                                    </xsl:when>
-                                </xsl:choose>
-                            </xsl:for-each>
+                            <xsl:variable name="fetchedfolder" select="."/>
+                            <xsl:choose>
+                                <xsl:when test="contains($fetchedfolder, $sprintfolder)"><!-- till we find the sprintfolder we're looking for... -->
+                                    <xsl:variable name="sprintname" select="@name"/>
+                                    
+                                    <section class="slide" style="text-align: left;"><!-- show its burn down, with their respective sums -->
+                                        <table align="center">
+                                            <tr><td align="left"><h4 class="center">Sprint Facts of release <xsl:value-of select="$releasename" /> </h4></td></tr>
+                                            <tr><td>
+                                                <xsl:call-template name="rel-agnost-burndown-template">
+                                                    <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
+                                                    <xsl:with-param name="sprintfolder" select="$sprintfolder" />
+                                                    <xsl:with-param name="releaseid" select="$releaseid" />
+                                                    <xsl:with-param name="releasename" select="$releasename" />
+                                                    <xsl:with-param name="releasecount" select="$releasecount" />
+                                                </xsl:call-template>
+                                            </td></tr>                                
+                                            <tr><td align="left">
+                                                <h4 class="center">Velocity Sprint <xsl:value-of select="$sprintname" /> : 
+                                                    <xsl:value-of select="sum(/sprintreview/stories/story[not(@state='story not-done')]/@points)" /> <!-- ALL but 'not-done', incl. stories of other releases -->
+                                                </h4>
+                                                <h4 class="center">Commitment:
+                                                    <xsl:value-of select="sum(/sprintreview/stories/story[not(@state='story uncommitted')]/@points)" /><!-- ALL but 'uncommitted', incl. stories of other release -->
+                                                </h4>
+                                            </td></tr>
+                                        </table>
+                                    </section>
+                                </xsl:when>
+                            </xsl:choose>
                         </xsl:for-each>
                                 
                         <section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');  
