@@ -17,6 +17,7 @@
                     <xsl:call-template name="recursivesum">
                         <xsl:with-param name="sumtype" select="$sumtype" />
                         <xsl:with-param name="sprints" select="$releasedoc//release[@id=$releaseid]/sprintfolders" />
+                        <xsl:with-param name="releaseid" select="$releaseid"/>
                         <xsl:with-param name="sprintdoc" select="document(concat('../../', $releasedoc//release[@id=$releaseid]/sprintfolders/sprintfolder[1], '/sprint-review.xml'))" />
                         <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                         <xsl:with-param name="runningtotal" select="$releasedoc//release[@id=$releaseid]/@totalpoints" />
@@ -52,5 +53,4 @@
         </xsl:for-each>
     </xsl:template>
 
-    
 </xsl:stylesheet>

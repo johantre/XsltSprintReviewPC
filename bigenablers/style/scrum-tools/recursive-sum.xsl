@@ -5,6 +5,7 @@
     <xsl:template name="recursivesum" >
         <xsl:param name="sumtype" />
         <xsl:param name="sprints" />
+        <xsl:param name="releaseid" />
         <xsl:param name="sprintdoc" />
         <xsl:param name="thissprintfolder" />
         <xsl:param name="runningtotal" />
@@ -15,6 +16,7 @@
             <xsl:call-template name="sumpoints" >
                 <xsl:with-param name="sumtype" select="$sumtype"/>
                 <xsl:with-param name="sprintdoc" select="$sprintdoc" />
+                <xsl:with-param name="releaseid" select="$releaseid"/>
                 <xsl:with-param name="runningtotal" select="$runningtotal"/>
             </xsl:call-template>
             <xsl:value-of select="','" />
@@ -23,11 +25,13 @@
                     <xsl:call-template name="recursivesum">
                         <xsl:with-param name="sumtype" select="$sumtype"/>
                         <xsl:with-param name="sprints" select="$sprints" />
+                        <xsl:with-param name="releaseid" select="$releaseid"/>
                         <xsl:with-param name="sprintdoc" select="document(concat('../../', $sprints/sprintfolder[$sprintlocation + 1], '/sprint-review.xml'))" />
                         <xsl:with-param name="thissprintfolder" select="$thissprintfolder"/>
                         <xsl:with-param name="runningtotal" ><xsl:call-template name="sumpoints" >
-                                                                 <xsl:with-param name="sprintdoc" select="$sprintdoc" />
                                                                  <xsl:with-param name="sumtype" select="$sumtype"/>
+                                                                 <xsl:with-param name="sprintdoc" select="$sprintdoc" />
+                                                                 <xsl:with-param name="releaseid" select="$releaseid"/>
                                                                  <xsl:with-param name="runningtotal" select="$runningtotal"/>
                                                              </xsl:call-template>
                         </xsl:with-param>
@@ -38,6 +42,7 @@
                     <xsl:call-template name="recursivesum">                                <!-- xml-doc from: $thissprintfolder iso $sprints/sprint[$sprintlocation + 1] -->
                         <xsl:with-param name="sumtype" select="$sumtype"/>
                         <xsl:with-param name="sprints" select="$sprints" />
+                        <xsl:with-param name="releaseid" select="$releaseid"/>
                         <xsl:with-param name="sprintdoc" select="document(concat('../../', $thissprintfolder, '/sprint-review.xml'))" /> 
                         <xsl:with-param name="thissprintfolder" select="$thissprintfolder"/>
                         <xsl:with-param name="runningtotal" select="$runningtotal"/>          <!-- running total = fixed through coming recursions -->
@@ -50,6 +55,7 @@
             <xsl:call-template name="sumpoints" >
                 <xsl:with-param name="sumtype" select="$sumtype"/>
                 <xsl:with-param name="sprintdoc" select="$sprintdoc" />
+                <xsl:with-param name="releaseid" select="$releaseid"/>
                 <xsl:with-param name="runningtotal" select="$runningtotal"/>
             </xsl:call-template>
             <xsl:value-of select="','" />
@@ -62,17 +68,20 @@
     <xsl:template name="sumpoints" >
         <xsl:param name="sumtype" />
         <xsl:param name="sprintdoc" />
+        <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
         <xsl:choose>
             <xsl:when test="contains($sumtype,'velocity')">
                 <xsl:call-template name="velocitysum">
                     <xsl:with-param name="sprintdoc" select="$sprintdoc"/>
+                    <xsl:with-param name="releaseid" select="$releaseid"/>
                     <xsl:with-param name="runningtotal" select="$runningtotal"/>
                 </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:call-template name="commitmentsum">
                     <xsl:with-param name="sprintdoc" select="$sprintdoc"/>
+                    <xsl:with-param name="releaseid" select="$releaseid"/>
                     <xsl:with-param name="runningtotal" select="$runningtotal"/>
                 </xsl:call-template>
             </xsl:otherwise>
@@ -82,15 +91,39 @@
     <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED velocity: [running Total - recursion(sum(done) - sum(uncommitted)) ] -->
     <xsl:template name="velocitysum" >
         <xsl:param name="sprintdoc" />
+        <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
-        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+        <xsl:variable name="additionaltotal" select="sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) + sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)"/>
+        <!-- VELOCITY addTotal: <xsl:value-of select="$additionaltotal" />
+        VELOCITY runnTotal : <xsl:value-of select="$runningtotal" /> -->
+
+        <xsl:choose>
+            <xsl:when test="$sprintdoc//story[@relid=$releaseid]">
+                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) - sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points) + sum(uncommitted)) ]-->
     <xsl:template name="commitmentsum" >
         <xsl:param name="sprintdoc" />
+        <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
-        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+        <xsl:variable name="additionaltotal" select="sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
+        <!-- COMMITMENT addTotal: <xsl:value-of select="$additionaltotal" />
+        COMMITMENT runnTotal : <xsl:value-of select="$runningtotal" /> -->
+
+        <xsl:choose>
+            <xsl:when test="$sprintdoc//story[@relid=$releaseid]">
+                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 

@@ -23,7 +23,6 @@
         </release>
         <release id="02" name="MS 2.2" totalpoints="150">
             <sprintfolders>
-                <sprintfolder>130724</sprintfolder>
                 <sprintfolder>131016</sprintfolder>
                 <sprintfolder>131106</sprintfolder>
                 <sprintfolder>131127</sprintfolder>
