@@ -6,13 +6,11 @@
         <xsl:param name="releasedoc" />
 
         <xsl:for-each select="$releasedoc//releases/release">
-            <xsl:variable name="releasecount" select="position()"/>
 	        <xsl:for-each select="./sprintfolders/sprintfolder">
 	            <xsl:variable name="fetchedfolder" select="."/>
 	            <xsl:choose>
 	                <xsl:when test="contains($fetchedfolder, $sprintfolder)">
-	                	<xsl:if test="$releasecount &gt; 1">, </xsl:if>
-	                    <xsl:value-of select="../../@name"/>
+	                    <xsl:value-of select="../../@name"/>   <xsl:value-of select="'  '"/>
 	                </xsl:when>
 	            </xsl:choose>
 	        </xsl:for-each>

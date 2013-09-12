@@ -93,9 +93,6 @@
         <xsl:param name="sprintdoc" />
         <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
-        <xsl:variable name="additionaltotal" select="sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) + sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)"/>
-        <!-- VELOCITY addTotal: <xsl:value-of select="$additionaltotal" />
-        VELOCITY runnTotal : <xsl:value-of select="$runningtotal" /> -->
 
         <xsl:choose>
             <xsl:when test="$sprintdoc//story[@relid=$releaseid]">
@@ -112,9 +109,6 @@
         <xsl:param name="sprintdoc" />
         <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
-        <xsl:variable name="additionaltotal" select="sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
-        <!-- COMMITMENT addTotal: <xsl:value-of select="$additionaltotal" />
-        COMMITMENT runnTotal : <xsl:value-of select="$runningtotal" /> -->
 
         <xsl:choose>
             <xsl:when test="$sprintdoc//story[@relid=$releaseid]">
