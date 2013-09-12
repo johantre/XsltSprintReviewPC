@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:import href="fetch-thissprint.xsl"/>
 
     <xsl:template name="recursivesum" >
         <xsl:param name="sumtype" />
@@ -39,12 +38,12 @@
                     </xsl:call-template>            
                 </xsl:when>
                 <xsl:otherwise> <!-- continue recursion, but take : --> 
-                    <xsl:call-template name="recursivesum">                                <!-- xml-doc from: $thissprintfolder iso $sprints/sprint[$sprintlocation + 1] -->
+                    <xsl:call-template name="recursivesum">                                
                         <xsl:with-param name="sumtype" select="$sumtype"/>
                         <xsl:with-param name="sprints" select="$sprints" />
                         <xsl:with-param name="releaseid" select="$releaseid"/>
-                        <xsl:with-param name="sprintdoc" select="document(concat('../../', $thissprintfolder, '/sprint-review.xml'))" /> 
-                        <xsl:with-param name="thissprintfolder" select="$thissprintfolder"/>
+                        <xsl:with-param name="sprintdoc" select="$sprintdoc" /> 
+                        <xsl:with-param name="thissprintfolder" select="$thissprintfolder"/>  <!-- xml-doc from: $thissprintfolder iso $sprints/sprint[$sprintlocation + 1] -->
                         <xsl:with-param name="runningtotal" select="$runningtotal"/>          <!-- running total = fixed through coming recursions -->
                         <xsl:with-param name="sprintlocation" select="$sprintlocation + 1" /> <!-- continue counting, till the end -->
                     </xsl:call-template>            
@@ -95,26 +94,26 @@
         <xsl:param name="runningtotal" />
 
         <xsl:choose>
-            <xsl:when test="$sprintdoc//story[@relid=$releaseid]">
+            <xsl:when test="$sprintdoc//story[@relid=$releaseid]"> <!-- count only those stories marked w the running releaseid -->
                 <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) - sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)" />
             </xsl:when>
-            <xsl:otherwise>
+            <xsl:otherwise><!-- if no relid=$releaseid is found, count all stories that are not marked w relid -->
                 <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
-    <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points) + sum(uncommitted)) ]-->
+    <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points, except uncommitted)) ]-->
     <xsl:template name="commitmentsum" >
         <xsl:param name="sprintdoc" />
         <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
 
         <xsl:choose>
-            <xsl:when test="$sprintdoc//story[@relid=$releaseid]">
+            <xsl:when test="$sprintdoc//story[@relid=$releaseid]"> <!-- count only those stories marked w the running releaseid -->
                 <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
             </xsl:when>
-            <xsl:otherwise>
+            <xsl:otherwise><!-- if no relid=$releaseid is found, count all stories that are not marked w relid -->
                 <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
             </xsl:otherwise>
         </xsl:choose>

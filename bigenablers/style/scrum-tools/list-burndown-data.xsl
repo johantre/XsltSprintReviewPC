@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:import href="recursive-sum.xsl"/>
-    <xsl:import href="fetch-thisrelease.xsl"/>
 
-    <xsl:template name="listburnedsumsinrelease" >
+    <xsl:template name="listburnedsumsforrelease" >
         <xsl:param name="sumtype" />
         <xsl:param name="releaseid" />
         <xsl:param name="releasedoc" />

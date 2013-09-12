@@ -35,7 +35,7 @@
                         series : [
                                 {
                                     name : 'Cumulative Velocity',
-                                    data : [ <xsl:call-template name="listburnedsumsinrelease">
+                                    data : [ <xsl:call-template name="listburnedsumsforrelease">
                                                 <xsl:with-param name="sumtype" select="'velocity'"/>
                                                 <xsl:with-param name="releaseid" select="$releaseid"/>
                                                 <xsl:with-param name="releasedoc" select="$releasedoc"/>
@@ -45,7 +45,7 @@
                                 },
                                 {
                                     name : 'Cumulative Commitments',
-                                    data : [ <xsl:call-template name="listburnedsumsinrelease">
+                                    data : [ <xsl:call-template name="listburnedsumsforrelease">
                                                 <xsl:with-param name="sumtype" select="'commitment'"/>
                                                 <xsl:with-param name="releaseid" select="$releaseid"/>
                                                 <xsl:with-param name="releasedoc" select="$releasedoc"/>
