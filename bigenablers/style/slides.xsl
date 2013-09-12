@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:import href="scrum-tools/rel-agnost-burndown-template.xsl"/>
-<xsl:import href="slide-tools/story-slide-template.xsl"/>
+<xsl:import href="scrum-tools/rel-agnost-burndown-template.xsl" />
+<xsl:import href="scrum-tools/fetch-thisrelease.xsl" />
+<xsl:import href="scrum-tools/fetch-thissprint.xsl" />
+<xsl:import href="slide-tools/story-slide-template.xsl" />
 
     <xsl:output method="html" encoding="utf-8" indent="yes" />
     <xsl:template match="/" > 
         <xsl:variable name="sprintfolder" select="/sprintreview/@folder" /><!-- sprintfolder of the current review -->
         <xsl:variable name="releasedoc" select="document('release-burndown.xml')" />
+	    <xsl:variable name="thisreleasename" >
+	        <xsl:call-template name="fetchthisrelease">
+	            <xsl:with-param name="sprintfolder" select="$sprintfolder" />
+	            <xsl:with-param name="releasedoc" select="$releasedoc" />
+	        </xsl:call-template>
+	    </xsl:variable>
+	    <xsl:variable name="thissprintname" >
+	        <xsl:call-template name="fetchthissprint">
+	            <xsl:with-param name="sprintfolder" select="$sprintfolder" />
+	            <xsl:with-param name="releasedoc" select="$releasedoc" />
+	        </xsl:call-template>
+	    </xsl:variable>
+	
         <html>
             <head>
                 <title>Sprint Review</title>
@@ -46,11 +61,10 @@
                                                                   background-repeat:no-repeat;
                                                                   background-size:100% 100%"></td>
                                     </tr>
-                                    <tr><td align="right"><h4 class="center">Sprint Review</h4></td></tr>
+                                    <tr><td align="right"><h4 class="center">Review Sprint: <xsl:value-of select="$thissprintname" /></h4></td></tr>
                                     <tr><td align="right"><h4 class="center">Team: <xsl:value-of select="@name" /></h4></td></tr>
-                                    <tr><td align="right"><h4 class="center"><!-- Release: <xsl:value-of select="$thisreleasename" />
-                                                                             <xsl:value-of select="' - '" />
-                                                                             Sprint: <xsl:value-of select="$thissprintname" /> -->
+                                    <tr><td align="right"><h4 class="center">Release: <xsl:value-of select="$thisreleasename" />
+                                                                             
                                                           </h4></td> 
                                     <td align="left"><h4 class="center"></h4></td>
                                     </tr>
