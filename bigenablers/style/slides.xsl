@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:import href="scrum-tools/rel-agnost-burndown-template.xsl" />
+<xsl:import href="scrum-tools/credibility-template.xsl" />
 <xsl:import href="scrum-tools/fetch-thisrelease.xsl" />
 <xsl:import href="scrum-tools/fetch-thissprint.xsl" />
 <xsl:import href="slide-tools/story-slide-template.xsl" />
@@ -196,6 +197,28 @@
                             </xsl:for-each>
                         </xsl:for-each>
 
+
+                        <section class="slide" style="text-align: left;"><!-- show its burn down, with their respective sums -->
+                            <table align="center">
+                                <tr><td align="left"><h4 class="center">Sprint Facts for Sprint <xsl:value-of select="$thissprintname" /></h4></td></tr>
+                                <tr><td align="left">
+                                    <h4 class="center" style="font-size : 1em">Velocity : 
+                                        <xsl:value-of select="sum(/sprintreview/stories/story[not(@state='story not-done')]/@points)" /> <!-- ALL but 'not-done', incl. stories of other releases -->
+                                    <br/>Commitment :
+                                        <xsl:value-of select="sum(/sprintreview/stories/story[not(@state='story uncommitted')]/@points)" /><!-- ALL but 'uncommitted', incl. stories of other release -->
+                                    </h4>
+                                </td></tr>
+                                <tr><td><br/></td></tr>
+                                <tr><td><h4 class="center">Credibility Trend for <xsl:value-of select="/sprintreview/team/@name" /></h4>
+									<xsl:call-template name="credibility-template">
+									    <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
+									    <xsl:with-param name="releasedoc" select="$releasedoc" />
+									    <xsl:with-param name="thissprintfolder" select="$sprintfolder" />
+									</xsl:call-template></td></tr>                                
+                            </table>
+                        </section>
+
+
                         <xsl:for-each select="$releasedoc//releases/release/sprintfolders/sprintfolder"><!-- cycle through ALL sprints... -->
                             <xsl:variable name="releaseid" select="../../@id"/>
                             <xsl:variable name="releasename" select="../../@name"/>
@@ -207,7 +230,7 @@
                                     
                                     <section class="slide" style="text-align: left;"><!-- show its burn down, with their respective sums -->
                                         <table align="center">
-                                            <tr><td align="left"><h4 class="center">Sprint Facts of release <xsl:value-of select="$releasename" /> </h4></td></tr>
+                                            <tr><td align="left"><h4 class="center">Release Facts of <xsl:value-of select="$releasename" /> </h4></td></tr>
                                             <tr><td>
                                                 <xsl:call-template name="rel-agnost-burndown-template">
                                                     <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
@@ -217,14 +240,7 @@
                                                     <xsl:with-param name="releasecount" select="$releasecount" />
                                                 </xsl:call-template>
                                             </td></tr>                                
-                                            <tr><td align="left">
-                                                <h4 class="center">Velocity Sprint <xsl:value-of select="$sprintname" /> : 
-                                                    <xsl:value-of select="sum(/sprintreview/stories/story[not(@state='story not-done')]/@points)" /> <!-- ALL but 'not-done', incl. stories of other releases -->
-                                                </h4>
-                                                <h4 class="center">Commitment:
-                                                    <xsl:value-of select="sum(/sprintreview/stories/story[not(@state='story uncommitted')]/@points)" /><!-- ALL but 'uncommitted', incl. stories of other release -->
-                                                </h4>
-                                            </td></tr>
+                                            <tr><td align="left"></td></tr>
                                         </table>
                                     </section>
                                 </xsl:when>
@@ -276,7 +292,8 @@
                             min : 0
                         },
                         tooltip : {
-                            valueSuffix : 'Pts.'
+                            valueSuffix : 'Pts.',
+                            valueDecimals: 2
                         },
                         legend : {
                             layout : 'vertical',
