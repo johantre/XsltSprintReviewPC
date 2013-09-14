@@ -37,7 +37,10 @@
             <xsl:for-each select="$releasedoc//sprints/sprint">
                 <xsl:variable name="fetchedfolderinner" select="."/>
                 <xsl:choose>
-                    <xsl:when test="contains($fetchedfolder, $fetchedfolderinner)">'<xsl:value-of select="@name" />'<xsl:value-of select="','" /></xsl:when>
+                    <xsl:when test="contains($fetchedfolder, $fetchedfolderinner)">
+                        'Spr. <xsl:value-of select="@name" /> - <xsl:value-of select="concat(substring($fetchedfolder, 5, 2),'/',substring($fetchedfolder, 3, 2),'/',substring($fetchedfolder, 1, 2))"/>'
+                         <xsl:value-of select="','" />
+                    </xsl:when>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:for-each>
