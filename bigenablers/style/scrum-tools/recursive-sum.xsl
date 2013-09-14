@@ -70,51 +70,25 @@
         <xsl:param name="releaseid" />
         <xsl:param name="runningtotal" />
         <xsl:choose>
-            <xsl:when test="contains($sumtype,'velocity')">
-                <xsl:call-template name="velocitysum">
-                    <xsl:with-param name="sprintdoc" select="$sprintdoc"/>
-                    <xsl:with-param name="releaseid" select="$releaseid"/>
-                    <xsl:with-param name="runningtotal" select="$runningtotal"/>
-                </xsl:call-template>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:call-template name="commitmentsum">
-                    <xsl:with-param name="sprintdoc" select="$sprintdoc"/>
-                    <xsl:with-param name="releaseid" select="$releaseid"/>
-                    <xsl:with-param name="runningtotal" select="$runningtotal"/>
-                </xsl:call-template>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-
-    <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED velocity: [running Total - recursion(sum(done) - sum(uncommitted)) ] -->
-    <xsl:template name="velocitysum" >
-        <xsl:param name="sprintdoc" />
-        <xsl:param name="releaseid" />
-        <xsl:param name="runningtotal" />
-
-        <xsl:choose>
             <xsl:when test="$sprintdoc//story[@relid=$releaseid]"> <!-- count only those stories marked w the running releaseid -->
-                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) - sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)" />
+		        <xsl:choose>
+		            <xsl:when test="contains($sumtype,'velocity')">
+                        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) - sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)" />
+		            </xsl:when>
+					<xsl:otherwise>
+					    <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
+					</xsl:otherwise>
+		        </xsl:choose>
             </xsl:when>
-            <xsl:otherwise><!-- if no relid=$releaseid is found, count all stories that are not marked w relid -->
-                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-
-    <!-- the formula to the sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points, except uncommitted)) ]-->
-    <xsl:template name="commitmentsum" >
-        <xsl:param name="sprintdoc" />
-        <xsl:param name="releaseid" />
-        <xsl:param name="runningtotal" />
-
-        <xsl:choose>
-            <xsl:when test="$sprintdoc//story[@relid=$releaseid]"> <!-- count only those stories marked w the running releaseid -->
-                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
-            </xsl:when>
-            <xsl:otherwise><!-- if no relid=$releaseid is found, count all stories that are not marked w relid -->
-                <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+            <xsl:otherwise><!-- sum of all stories that are NOT marked w 'relid="#"' -->
+                <xsl:choose>
+                    <xsl:when test="contains($sumtype,'velocity')"><!-- formula sum of points WITHIN THAT SPRINT(document) to determine the BURNED velocity: [running Total - recursion(sum(done) - sum(uncommitted)) ] -->
+                        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+                    </xsl:when>
+                    <xsl:otherwise><!-- formula sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points, except uncommitted)) ]-->
+                        <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
