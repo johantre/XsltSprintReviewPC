@@ -31,7 +31,7 @@
                 <slide type="story-narrative">
                     <h5>Goals</h5>
                     <ul>
-                        <li>PControl integration</li>
+                        <li>Make it operational (PControl integration, puppetized)</li>
                         <li>Enable seamed data run</li>
                     </ul>
                     <h5>Value delivered:</h5>
@@ -44,7 +44,7 @@
                 <slide type="story-demo">
                     <h5>Demo</h5>
                     <ul>
-                        <li><a target="_blank" href="http://besrvud-cio04:8080/entropy-webservices-4.5-SNAPSHOT">go go go..</a></li>
+                        <li><a target="_blank" href="http://besrvud-cio04:8080/entropy-webservices-4.5-SNAPSHOT">webviewer</a></li>
                     </ul>
                 </slide>
             </slides>
@@ -78,55 +78,38 @@
             </slides>
         </story>
 
-        <story title="Load visualis. from 2 models" state="story done" points="3" mksid="1451694">
+        <story title="Load visualization data" state="story not-done" points="3" percentage-done="?" mksid="1451694">
             <slides>
                 <slide type="story-context">
-                    <h5>context slide to ease explanation and give background to the audience</h5>
+                    <h5>Integrate display store into CDP API</h5>
                     <ul>
-                        <li>What is...?,...</li>
-                        <li>Challenges,...</li>
-                        <li>Difficulties,...</li>
-                        <li>Current situation,...</li>
-                    </ul>
-                    <h5>Solution:</h5>
-                    <ul>
-                        <li>Don't forget model info! (see retro and prep sprint review meeting invite).</li>
+                        <li>Display store is MDS-like database containing visualization data</li>
+                        <li>new Visualization model is made, not yet part of TTOM</li>
                     </ul>
                 </slide>
                 <slide type="story-narrative">
-                    <h5>Goals:</h5>
+                    <h5>How to integrate</h5>
                     <ul>
-                        <li></li>
+                        <li>Make a dataloader just like reading from MDS</li>
+                        <li>Use recommended loading strategies of visualisation team</li>
                     </ul>
                     <h5>Value delivered:</h5>
                     <ul>
-                        <li></li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
+                        <li>Data Loader finished</li>
+                        <li>Updated MadonPDS to also be able to check Visualization model iso TTOM</li>
+                        <li>works on YG1 (part of Ghent)</li>
                     </ul>
                 </slide>
-                <slide type="story-demo">
-                    <h5>Demo slides</h5>
+                <slide type="story-narrative">
+                    <h5>What's wrong</h5>
                     <ul>
-                        <li></li>
+                        <li>does not work on YG3 (other part of Ghent, containing center)</li>
+                        <li>Loading 1 morton tile level 14 takes up too much memory, current CDP limit: 2GB</li>
+                        <li>Loading 1 morton tile level 14 takes up too much time, current CDP limit: 10 minute timeout</li>
+                        <li>This seems to be caused by huge size of LOD4 data</li>
                     </ul>
-                    <h5>Value delivered:</h5>
-                    <ul>
-                        <li></li>
-                        <li>Validation proof,...</li>
-                        <li>
-                            Some text:
-                            <li>
-                                <a target="_blank" href="http://www.google.be">A sample of a link</a>
-                            </li>
-                        </li>
-                    </ul>
-                </slide>
+                </slide>                
+                
             </slides>
         </story>
 
@@ -271,23 +254,6 @@
 														<td></td>
 													</tr>
 													
-											
-													<tr class="even">
-														<td>phonemes</td>
-														<td class="topic">total quality</td>
-														<td>85.3%</td>
-														<td class="not-applicable">baseline</td>
-														<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
-													</tr>
-													
-													<tr class="even">
-														<td></td>
-														<td class="topic">technical debt</td>
-														<td>4.9%</td>
-														<td class="not-applicable">baseline</td>
-														<td></td>
-													</tr>
-											
 												</tbody>
 												<!-- Table Body -->
 											
