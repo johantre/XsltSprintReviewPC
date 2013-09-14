@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:import href="list-burndown-data.xsl"/>
 
-	<xsl:template name="rel-agnost-burndown-template" >
+	<xsl:template name="burndown-template" >
     <xsl:param name="teamname" />
     <xsl:param name="sprintfolder" />
     <xsl:param name="releaseid" />
