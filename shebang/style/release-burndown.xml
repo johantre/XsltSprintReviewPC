@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<releases>
-    <release name="3.8 RMC" totalpoints="201">
-        <sprints>
+<releasedata>
+    <sprints>
+		<sprints>
             <sprint name="00">121212</sprint>
-        </sprints>
-    </release>
-    <release name="Milestone 3.1" totalpoints="201">
-        <sprints>
-            <sprint name="01">130717</sprint>
-            <sprint name="02">130807</sprint>
-            <sprint name="03">130828</sprint>
-            <sprint name="04">130918</sprint>
-            <sprint name="05">131009</sprint>
-            <sprint name="06">131030</sprint>
-            <sprint name="07">131120</sprint>
-            <sprint name="08">131211</sprint>
-        </sprints>
-    </release>
-</releases>
+		    <sprint name="01">130717</sprint>
+		    <sprint name="02">130807</sprint>
+		    <sprint name="03">130828</sprint>
+		    <sprint name="04">130918</sprint>
+		    <sprint name="05">131009</sprint>
+		    <sprint name="06">131030</sprint>
+		    <sprint name="07">131120</sprint>
+		    <sprint name="08">131211</sprint>
+		</sprints>
+    </sprints>
+	<releases>
+	    <release id="01" name="3.8 RMC" totalpoints="201">
+            <sprintfolders>
+                <sprintfolder>121212</sprintfolder>
+            </sprintfolders>
+	    </release>
+	    <release id="02" name="Milestone 3.1" totalpoints="201">
+            <sprintfolders>
+	            <sprintfolder>130717</sprintfolder>
+	            <sprintfolder>130807</sprintfolder>
+	            <sprintfolder>130828</sprintfolder>
+	            <sprintfolder>130918</sprintfolder>
+	            <sprintfolder>131009</sprintfolder>
+	            <sprintfolder>131030</sprintfolder>
+	            <sprintfolder>131120</sprintfolder>
+	            <sprintfolder>131211</sprintfolder>
+            </sprintfolders>
+	    </release>
+	</releases>
+</releasedata>

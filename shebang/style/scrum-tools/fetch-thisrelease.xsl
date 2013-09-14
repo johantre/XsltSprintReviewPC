@@ -5,13 +5,15 @@
         <xsl:param name="sprintfolder" />
         <xsl:param name="releasedoc" />
 
-        <xsl:for-each select="$releasedoc//sprints/sprint">
-            <xsl:variable name="fetchedfolder" select="."/>
-            <xsl:choose>
-                <xsl:when test="contains($fetchedfolder, $sprintfolder)">
-                    <xsl:value-of select="../../@name"/>
-                </xsl:when>
-            </xsl:choose>
+        <xsl:for-each select="$releasedoc//releases/release">
+	        <xsl:for-each select="./sprintfolders/sprintfolder">
+	            <xsl:variable name="fetchedfolder" select="."/>
+	            <xsl:choose>
+	                <xsl:when test="contains($fetchedfolder, $sprintfolder)">
+	                    <xsl:value-of select="../../@name"/>   <xsl:value-of select="'  '"/>
+	                </xsl:when>
+	            </xsl:choose>
+	        </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
 
