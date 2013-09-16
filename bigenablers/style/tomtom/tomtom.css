@@ -111,6 +111,9 @@
 .tomtom-container .slide code {
   color: #888;
 }
+.tomtom-container .slide div.credits {
+    font-family: 'steeltongstomtomregularRg';
+}
 .tomtom-container .slide img.inline {
   float: none;
   margin: 0.5em;
