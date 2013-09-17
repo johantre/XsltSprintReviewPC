@@ -100,7 +100,7 @@
                                 <li>associations are filtered while reading from both MDS and VMDS</li>
                             </ul>
                         </li>
-                        <pre><code>
+                        <pre class="prettyprint">
 ExcludeAssociationForFeatureTypeFilter associationForFeatureTypeFilter
     = ExcludeAssociationForFeatureTypeFilterBuilder.newBuilder()
         .forGivenFeatureTypes(ttom.TTOM_Core.FEATURES.Order9Area)
@@ -108,7 +108,7 @@ ExcludeAssociationForFeatureTypeFilter associationForFeatureTypeFilter
         .forGivenFeatureTypes(ttom.TTOM_Core.FEATURES.Order8Area)
             .excludeAssociationTypes(ttom.TTOM_Core.ASSOCS.RoadElementInOrder8Area)
         .build();
-                        </code></pre>
+                        </pre>
                     </ul>
                 </slide>
                 <slide type="story-narrative">
@@ -176,8 +176,7 @@ ExcludeAssociationForFeatureTypeFilter associationForFeatureTypeFilter
                     </ul>
                     <p></p>
                     <h5>Code example:</h5>
-                    <pre>
-                        <code>
+                    <pre class="prettyprint">
 final FeatureRetriever&lt;ZoneFilter, ModelFilter, ReleaseFilter&gt; featureRetriever = new FeatureRetrieverClient(config);
 ...
 final ReleaseFilter releaseFilterFrom = new ReleaseFilter("1");
@@ -192,13 +191,11 @@ while (featureModifications.hasNext()) {
 }
 
 featureModifications.close();
-                        </code>
                     </pre>
                     
                     <p></p>
                     <h5>Output:</h5>
-                    <pre>
-                        <code>
+                    <pre class="prettyprint">
 Feature DictionaryFeature[model: TTOM namespace: TTOM-Topology name: Edge] with id 9abc333a-25d8-4cde-9810-accae9bf20c0 was CREATED
 
 Association modification:
@@ -209,7 +206,6 @@ Association modification:
 Attribute modification: null
 
 Geometry modification: GeometryModificationImpl[afterstate = [36830214 510247669, 36831233 510255648, 36831427 510256955, 36831955 510257851, 36833060 510258937, 36854955 510275479], beforestate = null, modificationtype = CREATED]
-                        </code>
                     </pre>
 
                 </slide>
