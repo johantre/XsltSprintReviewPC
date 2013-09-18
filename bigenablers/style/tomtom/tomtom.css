@@ -106,10 +106,15 @@
   color: #6ba100;
 }
 .tomtom-container .slide pre {
+  text-shadow: 0px 0px 0px;
   border-color: #ccc;
 }
 .tomtom-container .slide code {
+  text-shadow: 0px 0px 0px;
   color: #888;
+}
+.tomtom-container .slide div.credits {
+    font-family: 'steeltongstomtomregularRg';
 }
 .tomtom-container .slide img.inline {
   float: none;
