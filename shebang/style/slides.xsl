@@ -36,6 +36,7 @@
                 <link rel="stylesheet" href="../style/tomtom/table/table.statistics.css" />
                 <link rel="stylesheet" href="../style/reveal/css/reveal.min.css" />
                 
+                <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&amp;skin=sunburst&amp;callback=js_ident" />
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
                 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
                 <script>
