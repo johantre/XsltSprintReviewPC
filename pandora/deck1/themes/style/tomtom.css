@@ -1,11 +1,11 @@
 .not-done {
-  color: red!important; }
+  color: red !important; }
 
 .done {
-  color: #007400!important; }
+  color: #007400 !important; }
 
 .uncommitted {
-  color: #4444bb!important; }
+  color: #4444bb !important; }
 
 .deck-container {
   font-family: "Helvetica Neue", sans-serif;
@@ -24,6 +24,7 @@
     margin: 0.5em 0;
     border-radius: 0.5em; }
     .deck-container .stories table {
+      border: none !important;
       width: 100%; }
       .deck-container .stories table th {
         text-align: left;
@@ -103,6 +104,21 @@
       text-decoration: none; }
     .deck-container .slide a:hover, .deck-container .slide a:focus {
       text-decoration: underline; }
+    .deck-container .slide table {
+      background-color: #ffffff;
+      padding: 0.5em;
+      margin: 0.5em 0;
+      border: 3px solid #ccc;
+      border-radius: 0.25em; }
+      .deck-container .slide table th {
+        text-align: left;
+        font-weight: bold;
+        padding: 0.25em;
+        font-size: smaller; }
+      .deck-container .slide table td {
+        padding: 0.25em;
+        vertical-align: top;
+        font-size: smaller; }
   .deck-container .slide.overview {
     background-color: #fff; }
   .deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
