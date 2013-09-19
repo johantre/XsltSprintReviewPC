@@ -74,6 +74,8 @@
     
     <xs:simpleType name="folderType">
         <xs:restriction base="xs:string">
+            <xs:minLength value="6" />
+            <xs:maxLength value="6" />
             <xs:pattern value="[0-9][0-9][0-1][0-9][0-3][0-9]"/>
         </xs:restriction>
     </xs:simpleType>
@@ -82,23 +84,24 @@
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
             <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" namespace="##any"/>
         </xs:sequence>
-        <xs:attribute name="type">
-            <xs:simpleType>
-                <xs:restriction base="xs:string">
-                    <xs:enumeration value="model-context" />
-                    <xs:enumeration value="story-context" />
-                    <xs:enumeration value="story-narrative" />
-                    <xs:enumeration value="story-demo" />
-                    <xs:enumeration value="story-timeline" />
-                    <xs:enumeration value="story-code-q" />
-                    <xs:enumeration value="whats-next" />
-                    <xs:enumeration value="sprint-intro" />
-                    <xs:enumeration value="sprint-goal" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
+        <xs:attribute name="type" type="slideTypeType" />
         <xs:attribute name="title" type="xs:string" use="optional"/> <!-- for intro and finish -->        
     </xs:complexType>
+
+    <xs:simpleType name="slideTypeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="model-context" />
+            <xs:enumeration value="story-context" />
+            <xs:enumeration value="story-narrative" />
+            <xs:enumeration value="story-demo" />
+            <xs:enumeration value="story-timeline" />
+            <xs:enumeration value="story-code-q" />
+            <xs:enumeration value="whats-next" />
+            <xs:enumeration value="sprint-intro" />
+            <xs:enumeration value="sprint-goal" />
+        </xs:restriction>
+    </xs:simpleType>
+
 
     <xs:simpleType name="stateType">
         <xs:restriction base="xs:string">
