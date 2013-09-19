@@ -113,8 +113,18 @@
   text-shadow: 0px 0px 0px;
   color: #888;
 }
-.tomtom-container .slide div.credits {
+.tomtom-container div.creditstitle {
     font-family: 'steeltongstomtomregularRg';
+    color: #007400!important;
+    font-size: 2em;
+}
+.tomtom-container div.creditsteam {
+    font-family: 'steeltongstomtomregularRg';
+    color: #007400!important;
+}
+.tomtom-container div.credits {
+    font-family: 'steeltongstomtomregularRg';
+    color: #007400!important;
 }
 .tomtom-container .slide img.inline {
   float: none;
