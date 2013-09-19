@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="130918">
+<sprintreview folder="130918" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>
@@ -11,13 +11,15 @@
         <member>Dominik Plichta</member>
         <member>Jürgen Reynaert</member>
     </team>
-    <intro title="Technical Suite 3.0">
+
+    <intro>
         <slides>
-            <slide type="sprint-intro">
+            <slide title="Technical Suite 3.0" type="sprint-intro">
                 <img src="img/ShebangPOC.jpg" />        
             </slide>
         </slides>    
     </intro>
+
     <stories>
         <story title="Solve US data issues causing latency" state="story done" points="8" mksid="1457743">
             <slides>
@@ -278,17 +280,17 @@
                 </slide>
             </slides>
         </story>
-
-        <story title="">
-            <slides>
-                <slide type='story-timeline'>
-                    <img src="img/timeline.jpg" alt="demo: diff" />
-                </slide>
-                <slide type='whats-next'>
-                    <blockquote class="fragment">Next topic</blockquote>
-                    <blockquote class="fragment">Next topic</blockquote>
-                </slide>           
-            </slides>
-        </story>
     </stories>
+
+    <finish>
+        <slides>
+            <slide type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
+            </slide>
+            <slide type='whats-next'>
+                <blockquote class="fragment">Next topic</blockquote>
+                <blockquote class="fragment">Next topic</blockquote>
+            </slide>           
+        </slides>
+    </finish>
 </sprintreview>

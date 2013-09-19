@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="130828">
+<sprintreview folder="130828" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>
@@ -12,9 +12,9 @@
         <member>Jürgen Reynaert</member>
     </team>
     
-    <intro title="Milestone 3.0">
+    <intro>
         <slides>
-            <slide type="sprint-intro">
+            <slide title="Milestone 3.0" type="sprint-intro">
                 <img src="img/ShebangPOC.jpg" />        
             </slide>
         </slides>    
@@ -281,15 +281,16 @@ Geometry modification: GeometryModificationImpl[afterstate = [36830214 510247669
                 </slide>
             </slides>
         </story>
-
-        <story title="">
-            <slides>
-                <slide type='whats-next'>
-                    <blockquote class="fragment">Continuation of Delta API</blockquote>
-                    <blockquote class="fragment">Investigation on infrastructural latency</blockquote>
-                    <blockquote class="fragment">Apply deltas on PDS </blockquote>
-                </slide>
-            </slides>           
-        </story>
     </stories>
+
+    <finish>
+        <slides>
+            <slide type='whats-next'>
+                <blockquote class="fragment">Continuation of Delta API</blockquote>
+                <blockquote class="fragment">Investigation on infrastructural latency</blockquote>
+                <blockquote class="fragment">Apply deltas on PDS </blockquote>
+            </slide>
+        </slides>           
+    </finish>
+
 </sprintreview>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="130807">
+<sprintreview folder="130807" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>
@@ -11,12 +11,12 @@
         <member>Dominik Plichta</member>
         <member>Jürgen Reynaert</member>
     </team>
-    <intro title="Technical Suite 3.0">
+    <intro>
         <slides>
-            <slide type="sprint-intro">
+            <slide title="Technical Suite 3.0" type="sprint-intro">
                 <img src="img/ShebangPOC.jpg" />        
             </slide>
-            <slide type="sprint-intro">
+            <slide title="Technical Suite 3.0" type="sprint-intro">
                 <h5>Milestone 3.1 is about enabling fresher map deliveries by:</h5>
                 <ul>
                     <li class="fragment">update released data in between quarters on MDS</li>
@@ -24,7 +24,7 @@
                     <li class="fragment">deliver deltas via CDP-api</li>
                 </ul>                                 
             </slide>
-            <slide type="sprint-goal">
+            <slide title="Technical Suite 3.0" type="sprint-goal">
                 <h4><a href="http://besrvup-mks01.ta.global:7001/im/issues?selection=1421509">Release MDS as PDS</a></h4>
                 <h5>To deliver updated data &amp; deltas</h5>
                 <ul>                   
@@ -33,7 +33,7 @@
                     <li>CDP-delta-api must be developed on top of coredb delta</li>
                 </ul>             
             </slide>
-            <slide type="sprint-goal">
+            <slide title="Technical Suite 3.0" type="sprint-goal">
                 <h4><a href="http://besrvup-mks01.ta.global:7001/im/issues?selection=1363015">PDS as proof of concept</a></h4>
                 <h5>MDS vs PDS</h5>
                 <blockquote class="fragment">
@@ -53,7 +53,7 @@
                     </ul>
                 </blockquote>                 
             </slide>
-            <slide type="sprint-goal">
+            <slide title="Technical Suite 3.0" type="sprint-goal">
                 <h4>Non Functional requirements for CDP/PDS</h4>
                 <ul>                   
                     <li>Build a continental product in 12 hours</li>
@@ -62,7 +62,7 @@
                     <li>Scalable</li>
                 </ul>                      
             </slide>
-            <slide type="sprint-goal">
+            <slide title="Technical Suite 3.0" type="sprint-goal">
                 <h4>Proof of concept limitations</h4>
                 <p>To timebox the POC, extra limitations for this POC are added</p>
                 <ul>                   
@@ -267,136 +267,133 @@
                 </slide>                
             </slides>
         </story>
-        <story title="">
-            <slides>
-                <slide type="story-demo">
-                    <h5>Size comparison</h5>
-                    <style type="text/css">
-                        table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
-                        table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
-                        table.tftable tr {background-color:#ffffff;}
-                        table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
-                    </style>
-
-                    <table class="tftable" border="1">
-                        <tr>
-                            <th>Dataset</th>
-                            <th>VPDS (GDF + TIF)</th>
-                            <th>MDS</th>
-                            <th>HBASE</th>
-                            <th>HDFS</th>
-                        </tr>
-                        <tr>
-                            <td>BEL</td>
-                            <td>~14G</td>
-                            <td>~20G</td>
-                            <td>~4G</td>
-                            <td>~4.4G</td>
-                        </tr>
-                        <tr>
-                            <td>UC3</td>
-                            <td>~38G</td>
-                            <td>~101G</td>
-                            <td>~8.5G</td>
-                            <td>~8.5G</td>
-                        </tr>
-                        <tr>
-                            <td>AK1</td>
-                            <td>~14.5G</td>
-                            <td>~13G</td>
-                            <td>~13G</td>
-                            <td>n/a</td>
-                        </tr>
-                    </table>
-                    <br/>
-                    <h5>Summary</h5>
-                    <blockquote class="fragment">Smaller footprint than GDF and MDS</blockquote>
-                    <blockquote class="fragment">Similar footprint for sparse big areas because of the many tiles</blockquote>                  
-                  </slide>
-                  <slide type="story-demo">
-                    <h5>Read time comparison</h5>
-                    <style type="text/css">
-                        table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
-                        table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
-                        table.tftable tr {background-color:#ffffff;}
-                        table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
-                    </style>
-
-                    <table class="tftable" border="1">
-                        <tr>
-                            <th>Zone</th>
-                            <th>#Mappers</th>
-                            <th>VPDS (GDF + TIF)</th>
-                            <th>#Mappers</th>
-                            <th>HBASE</th>
-                            <th>HDFS</th>
-                        </tr>
-                        <tr>
-                            <td>BEL</td>
-                            <td>733</td>
-                            <td>25m</td>
-                            <td>52</td>
-                            <td>6m30</td>
-                            <td>5m26</td>
-                        </tr>
-                        <tr>
-                            <td>UC3</td>
-                            <td>652</td>
-                            <td>1h23m</td>
-                            <td>46</td>
-                            <td>13m45</td>
-                            <td>12m01</td>
-                        </tr>
-                        <tr>
-                            <td>AK1</td>
-                            <td>316</td>
-                            <td>31h14m</td>
-                            <td>24</td>
-                            <td>2h50m</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>California</td>
-                            <td>n/a</td>
-                            <td>n/a</td>
-                            <td>192</td>
-                            <td>31m</td>
-                            <td>28m</td>
-                        </tr>
-                    </table>
-                    <br/>
-                    <h5>Summary</h5>
-                    <blockquote class="fragment">Hbase is not much slower than HDFS, both are way faster than oracle</blockquote>
-                    <blockquote class="fragment">Still slow for huge amount of tiles: density based tiles still needed</blockquote>
-                </slide>
-                <slide type="story-demo">
-                    <h5>L2 Environment</h5>
-                    <ul>
-                         <li>8 $3k nodes</li>
-                         <li>6 mappers per node, 48 parallel processes</li>
-                         <li>50TB storage</li>
-                    </ul> 
-                    <h5>Future production Environment (same budget as current production)</h5>
-                    <ul>
-                         <li>100 - 200 nodes</li>
-                         <li>600 - 1200 parallel processes</li>
-                         <li>700TB - 1.4PB</li>
-                    </ul>  
-                </slide>                  
-            </slides>
-        </story>
-
-        <story title="">
-            <slides>
-                <slide type='story-timeline'>
-                    <img src="img/timeline.jpg" alt="demo: diff" />
-                </slide>
-                <slide type='whats-next'>
-                    <blockquote class="fragment">CDP Delta API</blockquote>
-                    <blockquote class="fragment">Versioning support in PDS</blockquote>
-                    <blockquote class="fragment">Technology 3: Titan</blockquote>
-                </slide>
-            </slides>
-        </story>
     </stories>
+        
+    <finish>
+        <slides>
+            <slide type="story-demo">
+                <h5>Size comparison</h5>
+                <style type="text/css">
+                    table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
+                    table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+                    table.tftable tr {background-color:#ffffff;}
+                    table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
+                </style>
+
+                <table class="tftable" border="1">
+                    <tr>
+                        <th>Dataset</th>
+                        <th>VPDS (GDF + TIF)</th>
+                        <th>MDS</th>
+                        <th>HBASE</th>
+                        <th>HDFS</th>
+                    </tr>
+                    <tr>
+                        <td>BEL</td>
+                        <td>~14G</td>
+                        <td>~20G</td>
+                        <td>~4G</td>
+                        <td>~4.4G</td>
+                    </tr>
+                    <tr>
+                        <td>UC3</td>
+                        <td>~38G</td>
+                        <td>~101G</td>
+                        <td>~8.5G</td>
+                        <td>~8.5G</td>
+                    </tr>
+                    <tr>
+                        <td>AK1</td>
+                        <td>~14.5G</td>
+                        <td>~13G</td>
+                        <td>~13G</td>
+                        <td>n/a</td>
+                    </tr>
+                </table>
+                <br/>
+                <h5>Summary</h5>
+                <blockquote class="fragment">Smaller footprint than GDF and MDS</blockquote>
+                <blockquote class="fragment">Similar footprint for sparse big areas because of the many tiles</blockquote>                  
+              </slide>
+              <slide type="story-demo">
+                <h5>Read time comparison</h5>
+                <style type="text/css">
+                    table.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #9dcc7a;border-collapse: collapse;}
+                    table.tftable th {font-size:12px;background-color:#abd28e;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+                    table.tftable tr {background-color:#ffffff;}
+                    table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
+                </style>
+
+                <table class="tftable" border="1">
+                    <tr>
+                        <th>Zone</th>
+                        <th>#Mappers</th>
+                        <th>VPDS (GDF + TIF)</th>
+                        <th>#Mappers</th>
+                        <th>HBASE</th>
+                        <th>HDFS</th>
+                    </tr>
+                    <tr>
+                        <td>BEL</td>
+                        <td>733</td>
+                        <td>25m</td>
+                        <td>52</td>
+                        <td>6m30</td>
+                        <td>5m26</td>
+                    </tr>
+                    <tr>
+                        <td>UC3</td>
+                        <td>652</td>
+                        <td>1h23m</td>
+                        <td>46</td>
+                        <td>13m45</td>
+                        <td>12m01</td>
+                    </tr>
+                    <tr>
+                        <td>AK1</td>
+                        <td>316</td>
+                        <td>31h14m</td>
+                        <td>24</td>
+                        <td>2h50m</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>California</td>
+                        <td>n/a</td>
+                        <td>n/a</td>
+                        <td>192</td>
+                        <td>31m</td>
+                        <td>28m</td>
+                    </tr>
+                </table>
+                <br/>
+                <h5>Summary</h5>
+                <blockquote class="fragment">Hbase is not much slower than HDFS, both are way faster than oracle</blockquote>
+                <blockquote class="fragment">Still slow for huge amount of tiles: density based tiles still needed</blockquote>
+            </slide>
+            <slide type="story-demo">
+                <h5>L2 Environment</h5>
+                <ul>
+                     <li>8 $3k nodes</li>
+                     <li>6 mappers per node, 48 parallel processes</li>
+                     <li>50TB storage</li>
+                </ul> 
+                <h5>Future production Environment (same budget as current production)</h5>
+                <ul>
+                     <li>100 - 200 nodes</li>
+                     <li>600 - 1200 parallel processes</li>
+                     <li>700TB - 1.4PB</li>
+                </ul>  
+            </slide>                  
+            <slide type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
+            </slide>
+            <slide type='whats-next'>
+                <blockquote class="fragment">CDP Delta API</blockquote>
+                <blockquote class="fragment">Versioning support in PDS</blockquote>
+                <blockquote class="fragment">Technology 3: Titan</blockquote>
+            </slide>
+        </slides>
+    </finish>
+
 </sprintreview>

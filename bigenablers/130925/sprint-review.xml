@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="130925">
+<sprintreview folder="130925" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="BigEnablers">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>
@@ -15,6 +15,21 @@
         <member>Lander Vandergucht</member>
         <member>Stefan De Smit</member>
     </team>
+
+    <intro>
+        <slides>
+            <slide title="Common model info or Common Sprint Goal" type="sprint-intro">
+                <ul>
+                    <li>some model info</li>
+                    <li>some model info</li>
+                </ul>
+                <h5>Solution:</h5>
+                <ul>
+                    <li><a target="_blank" href="http://help.tomtomgroup.com/specs/mapping/TIF2TTOM/daily/TIF2TTOM/theme_land_use_and_land_cover/artificial_surface_land_use.html">Model link</a>.</li>
+                </ul>
+            </slide>
+        </slides>
+    </intro>
 
     <stories>
          <story title="Load Voice Maps" state="story done" points="8">
@@ -173,7 +188,7 @@
             </slides>
         </story>
 
-        <story title="SNCS22: Add language code 'Hebrew Latin' for ISR" state="story not" points="1">
+        <story title="SNCS22: Add language code 'Hebrew Latin' for ISR" state="story done" points="1">
             <slides>
                 <slide>
                     <h5>Goals:</h5>
@@ -218,25 +233,35 @@
                 </slide>
             </slides>
         </story>
+    </stories>        
 
-        <story title="">
-            <slides>
-                <slide type='story-timeline'>
-                    <img src="img/timeline.jpg" alt="demo: diff" />
-                </slide>
+    <finish>
+        <slides>
+            <slide type='story-code-q'>
+            </slide>
 
-                <slide type='story-code-q'>
-                    <h5></h5>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h5>header:</h5>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </slide>
-            </slides>
-        </story>
-    </stories>
+            <slide title="a slide title if needed" type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
+            </slide>
+
+            <slide title="a slide title if needed" type='story-code-q'>
+                <h5></h5>
+                <ul>
+                    <li></li>
+                </ul>
+                <h5>header:</h5>
+                <ul>
+                    <li></li>
+                </ul>
+            </slide>
+
+            <slide title="a slide title if needed" type='whats-next'>
+                <blockquote class="fragment">Epic description</blockquote>
+                <blockquote class="fragment">Story description</blockquote>
+                <blockquote class="fragment">Story description</blockquote>
+            </slide>            
+        </slides>
+    </finish>
+
 
 </sprintreview>

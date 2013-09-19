@@ -74,6 +74,8 @@
     
     <xs:simpleType name="folderType">
         <xs:restriction base="xs:string">
+            <xs:minLength value="6" />
+            <xs:maxLength value="6" />
             <xs:pattern value="[0-9][0-9][0-1][0-9][0-3][0-9]"/>
         </xs:restriction>
     </xs:simpleType>

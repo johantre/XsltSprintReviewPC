@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="130717">
+<sprintreview folder="130717" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>

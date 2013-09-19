@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="130724">
+<sprintreview folder="130724" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="BigEnablers">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>
@@ -21,9 +21,9 @@
         <member><font COLOR="DarkGray">Lander Vandergucht</font></member>
     </team>
 
-    <intro title="Modeling work">
+    <intro>
         <slides>
-            <slide type="sprint-intro">
+            <slide title="Modeling work" type="sprint-intro">
                 <ul>
                     <li>NEA Split up of Language Code (RMC only)</li>
                     <li>Place of Worship POI.</li>
@@ -136,123 +136,119 @@
                 </slide>
             </slides>
         </story>
-
-        <story title="">
-            <slides>
-                <slide type='story-timeline'>
-                    <img src="img/timeline.jpg" alt="demo: diff" />
-                </slide>
-
-                <slide type='story-code-q'>
-                    <p>
-                    <table class="statistics" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
-												<!-- Table Header -->
-												<thead>
-													<tr>
-														<th>Component</th>
-														<th></th>
-														<th>value</th>
-														<th></th>
-														<th>link</th>
-													</tr>
-												</thead>
-												<!-- Table Header -->
-											
-												<!-- Table Body -->
-												<tbody>
-											
-													<tr>
-														<td>gdf-converters</td>
-														<td class="topic">line coverage</td>
-														<td>44% (9366/21082)</td>
-														<td class="not-applicable">baseline</td>
-														<td><a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-release/">report</a> </td>
-													</tr><!-- Table Row -->
-											
-													<tr class="even">
-														<td>lib</td>
-														<td class="topic">line coverage</td>
-														<td>55% (16051/29089)</td>
-														<td class="not-applicable">baseline</td>
-														<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-seaming-release/">report</a> </td>
-													</tr><!-- Table Row -->
-											
-													<tr>
-														<td>addresspoints</td>
-														<td class="topic">line coverage</td>
-														<td>74% (1601/2178)</td>
-														<td class="not-applicable">baseline</td>
-														<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/addresspoints/job/addresspoints-unit-test-snapshot/">report</a> </td>
-													</tr><!-- Table Row -->
-											
-													<tr class="even">
-														<td>ada</td>
-														<td class="topic">line coverage</td>
-														<td>76% (986/1297)</td>
-														<td class="not-applicable">baseline</td>
-														<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/ada/job/ttom-ada-seaming-release/">report</a></td>
-													</tr><!-- Table Row -->
-											
-													<tr>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td></td>
-													</tr><!-- blank row -->
-											
-													<tr class="even">
-														<td>JBehave tests</td>
-														<td class="topic">#</td>
-														<td>1117</td>
-														<td class="positive">+93</td>
-														<td>
-														<a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/MDS-GDF%20Jbehave/job/jbehave-ttom3_14-1.0-run-on-mds/TAF_Report/">report</a>
-														</td>
-													</tr>
-													
-													<tr>
-														<td> </td>
-														<td></td>
-														<td></td>
-														<td></td>
-														<td></td>
-													</tr><!-- blank row -->
-											
-													<tr class="even">
-														<td>MADonPDS</td>
-														<td class="topic"></td>
-														<td class="not-applicable">todo</td>
-														<td></td>
-														<td></td>
-													</tr><!-- Darker Table Row -->
-											
-													<tr>
-														<td>phonemes-ws</td>
-														<td class="topic">total quality</td>
-														<td>85.3%</td>
-														<td class="not-applicable">baseline</td>
-														<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
-													</tr><!-- Darker Table Row -->
-													
-													<tr class="even">
-														<td></td>
-														<td class="topic">technical debt</td>
-														<td>4.9%</td>
-														<td class="not-applicable">baseline</td>
-														<td></td>
-													</tr><!-- Darker Table Row -->
-											
-													
-											
-												</tbody>
-												<!-- Table Body -->
-											
-											</table>
-										</p>
-                </slide>
-            </slides>
-        </story>
     </stories>
+
+    <finish>
+        <slides>
+            <slide type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
+            </slide>
+
+            <slide type='story-code-q'>
+                <p>
+                <table class="statistics" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+						<!-- Table Header -->
+						<thead>
+							<tr>
+								<th>Component</th>
+								<th></th>
+								<th>value</th>
+								<th></th>
+								<th>link</th>
+							</tr>
+						</thead>
+						<!-- Table Header -->
+					
+						<!-- Table Body -->
+						<tbody>
+					
+							<tr>
+								<td>gdf-converters</td>
+								<td class="topic">line coverage</td>
+								<td>44% (9366/21082)</td>
+								<td class="not-applicable">baseline</td>
+								<td><a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-release/">report</a> </td>
+							</tr><!-- Table Row -->
+					
+							<tr class="even">
+								<td>lib</td>
+								<td class="topic">line coverage</td>
+								<td>55% (16051/29089)</td>
+								<td class="not-applicable">baseline</td>
+								<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-seaming-release/">report</a> </td>
+							</tr><!-- Table Row -->
+					
+							<tr>
+								<td>addresspoints</td>
+								<td class="topic">line coverage</td>
+								<td>74% (1601/2178)</td>
+								<td class="not-applicable">baseline</td>
+								<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/addresspoints/job/addresspoints-unit-test-snapshot/">report</a> </td>
+							</tr><!-- Table Row -->
+					
+							<tr class="even">
+								<td>ada</td>
+								<td class="topic">line coverage</td>
+								<td>76% (986/1297)</td>
+								<td class="not-applicable">baseline</td>
+								<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/ada/job/ttom-ada-seaming-release/">report</a></td>
+							</tr><!-- Table Row -->
+					
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr><!-- blank row -->
+					
+							<tr class="even">
+								<td>JBehave tests</td>
+								<td class="topic">#</td>
+								<td>1117</td>
+								<td class="positive">+93</td>
+								<td>
+								<a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/MDS-GDF%20Jbehave/job/jbehave-ttom3_14-1.0-run-on-mds/TAF_Report/">report</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td> </td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr><!-- blank row -->
+					
+							<tr class="even">
+								<td>MADonPDS</td>
+								<td class="topic"></td>
+								<td class="not-applicable">todo</td>
+								<td></td>
+								<td></td>
+							</tr><!-- Darker Table Row -->
+					
+							<tr>
+								<td>phonemes-ws</td>
+								<td class="topic">total quality</td>
+								<td>85.3%</td>
+								<td class="not-applicable">baseline</td>
+								<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
+							</tr><!-- Darker Table Row -->
+							
+							<tr class="even">
+								<td></td>
+								<td class="topic">technical debt</td>
+								<td>4.9%</td>
+								<td class="not-applicable">baseline</td>
+								<td></td>
+							</tr><!-- Darker Table Row -->
+						</tbody>
+						<!-- Table Body -->
+					</table>
+				</p>
+            </slide>
+        </slides>
+    </finish>
 
 </sprintreview>

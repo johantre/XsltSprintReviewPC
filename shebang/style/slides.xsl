@@ -99,7 +99,7 @@
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="'story done'" />
                                         <xsl:with-param name="mksid" select="''" />
-                                        <xsl:with-param name="title" select="../../@title" />
+                                        <xsl:with-param name="title" select="@title" />
                                     </xsl:call-template>
                                 </section>
                         </xsl:for-each>
@@ -197,7 +197,17 @@
                                 </section>
                             </xsl:for-each>
                         </xsl:for-each>
-
+                        
+                        
+                        <xsl:for-each select="sprintreview/finish/slides/slide"><!-- Introduction slides. -->
+                                <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
+                                    <xsl:call-template name="storyslide">
+                                        <xsl:with-param name="state" select="'story done'" />
+                                        <xsl:with-param name="mksid" select="''" />
+                                        <xsl:with-param name="title" select="@title" />
+                                    </xsl:call-template>
+                                </section>
+                        </xsl:for-each>
 
                         <section class="slide" style="text-align: left;"><!-- show its burn down, with their respective sums -->
                             <table align="center">

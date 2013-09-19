@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="131030">
+<sprintreview folder="131030" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
         <productowner>Marius Swanepoel</productowner>
         <scrummaster>Johan Tré</scrummaster>
@@ -11,9 +11,9 @@
         <member>Dominik Plichta</member>
         <member>Jürgen Reynaert</member>
     </team>
-    <intro title="Technical Suite 3.0">
+    <intro>
         <slides>
-            <slide type="sprint-intro">
+            <slide title="Intro Slide Title" type="sprint-intro">
                 <ul>
                     <li>list item.
                         <ul>
@@ -25,7 +25,7 @@
                     <li>list item.</li>
                 </ul>            
             </slide>
-            <slide type="sprint-goal">
+            <slide title="Intro Slide Title" type="sprint-goal">
                 <ul>
                     <li>list item.
                         <ul>
@@ -316,16 +316,34 @@
                 </slide>
             </slides>
         </story>
-
-        <story title="">
-            <slides>
-                <slide type='story-timeline'>
-                    <img src="img/timeline.jpg" alt="demo: diff" />
-                </slide>
-                <slide type='whats-next'>
-                    <blockquote class="fragment">Next topic</blockquote>
-                </slide>           
-            </slides>
-        </story>
     </stories>
+
+    <finish>
+        <slides>
+            <slide type='story-code-q'>
+            </slide>
+    
+            <slide title="a slide title if needed" type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
+            </slide>
+    
+            <slide title="a slide title if needed" type='story-code-q'>
+                <h5></h5>
+                <ul>
+                    <li></li>
+                </ul>
+                <h5>header:</h5>
+                <ul>
+                    <li></li>
+                </ul>
+            </slide>
+    
+            <slide type='whats-next'>
+                <blockquote class="fragment">Epic description</blockquote>
+                <blockquote class="fragment">Story description</blockquote>
+                <blockquote class="fragment">Story description</blockquote>
+            </slide>                  
+        </slides>
+    </finish>
+    
 </sprintreview>
