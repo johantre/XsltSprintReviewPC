@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:import href="scrum-tools/burndown-template.xsl" />
 <xsl:import href="scrum-tools/credibility-template.xsl" />
+<xsl:import href="scrum-tools/burndown-template.xsl" />
+<xsl:import href="scrum-tools/thankyou-template.xsl" />
 <xsl:import href="scrum-tools/fetch-thisrelease.xsl" />
 <xsl:import href="scrum-tools/fetch-thissprint.xsl" />
 <xsl:import href="slide-tools/story-slide-template.xsl" />
@@ -263,11 +264,7 @@
                                                       background-size:100%">
                             <h1 class="last">Any Questions?</h1>
                         </section>
-                        <section class="slide" style="background-image: url('../style/tomtom/img/thank-you.jpg');  
-                                                      background-repeat:no-repeat;
-                                                      background-size:100%">
-                            <h1 class="last">Thank you!</h1>
-                        </section>
+                        <xsl:call-template name="thankyou-template" />
                         <!-- End slides. -->
 
                     </div>
