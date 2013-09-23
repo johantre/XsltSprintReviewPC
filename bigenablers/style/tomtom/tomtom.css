@@ -90,7 +90,7 @@
 
 
 .tomtom-container .slide h2 {
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -98,12 +98,15 @@
   color: #6ba100;
 }
 .tomtom-container .slide h3 {
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  
   color: #6ba100;
+}
+.tomtom-container .slide h4 {
+  font-family: Impact, sans-serif;
 }
 .tomtom-container .slide pre {
   text-shadow: 0px 0px 0px;
@@ -117,10 +120,13 @@
     font-family: 'steeltongstomtomregularRg';
     color: #007400!important;
     font-size: 2em;
+    text-align: center;
+    white-space: nowrap;
 }
 .tomtom-container div.creditsteam {
     font-family: 'steeltongstomtomregularRg';
     color: #007400!important;
+    white-space: nowrap;
 }
 .tomtom-container div.credits {
     font-family: 'steeltongstomtomregularRg';

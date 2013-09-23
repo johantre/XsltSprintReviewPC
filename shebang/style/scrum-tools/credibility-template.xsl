@@ -15,7 +15,7 @@
                           zoomType: 'xy'
                         },
                         title : {
-                            text : 'Credibility for <xsl:value-of select="$teamname" />',
+                            text : 'Predictability for <xsl:value-of select="$teamname" />',
                         },
                         subtitle : {
                             text : '(Velocity/Commitment)',
@@ -39,7 +39,7 @@
                             opposite: false
                         },{
                         	title : {
-                                text : 'Credibility factor (%)'
+                                text : 'Predictability factor (%)'
                             },
                             opposite: true
                         }],
@@ -68,7 +68,7 @@
                                 },
                                 {
                                     type : 'column',
-                                    name : 'Credibility',
+                                    name : 'Predictability',
                                     index : 0,
                                     data : [ <xsl:call-template name="listcredibilities">
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />

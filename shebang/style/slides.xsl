@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:import href="scrum-tools/credibility-template.xsl" />
 <xsl:import href="scrum-tools/burndown-template.xsl" />
-<xsl:import href="scrum-tools/thankyou-template.xsl" />
+<xsl:import href="scrum-tools/chucknorris-template.xsl" />
 <xsl:import href="scrum-tools/fetch-thisrelease.xsl" />
 <xsl:import href="scrum-tools/fetch-thissprint.xsl" />
 <xsl:import href="slide-tools/story-slide-template.xsl" />
@@ -79,17 +79,17 @@
                                     <p class="team">
                                         <span class="caption">Scrum Team Members: </span>
                                         <span class="content">
-                                            <xsl:for-each select="member"><br/>&#8226;<xsl:copy-of select="." />
+                                            <xsl:for-each select="member[not(@type='scrummaster')][not(@type='productowner')]"><br/>&#8226;<xsl:copy-of select="." />
                                             </xsl:for-each>
                                         </span>
                                     </p>
                                     <p class="scrum-master">
                                         <span class="caption">Product Owner: </span>
-                                        <span class="content"><xsl:value-of select="productowner" /></span>
+                                        <span class="content"><xsl:value-of select="member[@type='productowner']" /></span>
                                     </p>
                                     <p class="scrum-master">
                                         <span class="caption">Scrum Master: </span>
-                                        <span class="content"><xsl:value-of select="scrummaster" /></span>
+                                        <span class="content"><xsl:value-of select="member[@type='scrummaster']" /></span>
                                     </p>
                                 </div>
                             </section>
@@ -221,7 +221,7 @@
                                     </h4>
                                 </td></tr>
                                 <tr><td><br/></td></tr>
-                                <tr><td><h4 class="center">Credibility Trend for <xsl:value-of select="/sprintreview/team/@name" /></h4>
+                                <tr><td><h4 class="center">Predictability Trend for <xsl:value-of select="/sprintreview/team/@name" /></h4>
 									<xsl:call-template name="credibility-template">
 									    <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
 									    <xsl:with-param name="releasedoc" select="$releasedoc" />
@@ -264,7 +264,10 @@
                                                       background-size:100%">
                             <h1 class="last">Any Questions?</h1>
                         </section>
-                        <xsl:call-template name="thankyou-template" />
+                        <xsl:call-template name="chucknorris-template" >
+                            <xsl:with-param name="team" select="sprintreview/team/@name" />
+                            <xsl:with-param name="title" select="'THANK YOU'"/>
+                        </xsl:call-template>                        
                         <!-- End slides. -->
 
                     </div>

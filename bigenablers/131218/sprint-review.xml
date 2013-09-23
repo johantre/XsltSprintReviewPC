@@ -3,21 +3,18 @@
 
 <sprintreview folder="131218" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="BigEnablers">
-        <productowner>Marius Swanepoel</productowner>
-        <scrummaster>Johan Tré</scrummaster>
-        <member>Mark Lebegge</member>
-        <member>Veerle Merckx</member>
-        <member><font COLOR="DarkGray">Charlotte De Gendt</font></member>
-        <member><font COLOR="DarkGray">Michael Blongewicz</font></member>
-        <member>Bart Temmerman </member>
-        <member>Christel Fiers</member>
-        <member>Arnd Rechenburg</member>
-        <member>Peter Huysman</member>
-        <member>Priyanka Sharma</member>
-        <member>Barbara Samin </member>
-        <member>Marcin Zimniac </member>
-        <member><font COLOR="DarkGray">Frankie Bollaert</font></member>
-        <member><font COLOR="DarkGray">Lander Vandergucht</font></member>
+        <member type="productowner">Marius Swanepoel</member>
+        <member type="scrummaster">Johan Tré</member>
+        <member type="modeler">Mark Lebegge </member>
+        <member type="modeler">Veerle Merckx </member>
+        <member type="hands-on">Bart Temmerman </member>
+        <member type="hands-on">Arnd Rechenburg</member>
+        <member type="hands-on">Peter Huysman</member>
+        <member type="hands-on">Priyanka Sharma</member>
+        <member type="tester">Marcin Zimniac </member>
+        <member type="hands-on">Frankie Bollaert</member>
+        <member type="hands-on">Lander Vandergucht</member>              
+        <member type="hands-on">Stefan De Smit</member>
     </team>
 
     <intro>

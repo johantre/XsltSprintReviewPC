@@ -7,23 +7,26 @@
         
         <xsl:for-each select="sprintreview/team">        
             <section class="slide" align="left"><!-- Team slide. -->
-                <div class="creditsteam">
-                    <xsl:value-of select="translate($team,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /> TEAM :
-                </div>
-                <div class="creditstitle">
-                    <xsl:value-of select="translate($title,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" />    
-                </div>
-                <div class="creditsteam">
-                    [<xsl:value-of select="translate($team,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /> TEAM 
-                </div>
-                <div class="credits">
-                    <xsl:for-each select="member[@type='modeler']"> #<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
-                    <xsl:for-each select="member[@type='hands-on']"> /<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
-                    <xsl:for-each select="member[@type='tester']"> =<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
-                    <xsl:for-each select="member[@type='assisted']"> ?<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
-                    <xsl:for-each select="member[@type='productowner']"> %<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
-                    <xsl:for-each select="member[@type='scrummaster']"> !<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
-                </div>
+                <table align="center">
+                    <tr>
+                        <td colspan="3" width="716" height="465" align="center" style="background-image: url('../style/tomtom/img/thank-you-2.jpg'); background-repeat: no-repeat; background-size: 100% 100%; opacity:0.1; filter:alpha(opacity=40); z-index: -1;"></td>
+                    </tr>
+                    <tr>
+                        <td><div class="creditsteam" align="right">PRODUCT ENGINEERING :</div></td><td><div class="creditstitle">THANK YOU</div></td><td><div class="creditsteam" align="left">[<xsl:value-of select="translate($team,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /> TEAM</div></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="3">
+                            <div class="credits">
+                                <xsl:for-each select="member[@type='modeler']"> #<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
+                                <xsl:for-each select="member[@type='hands-on']"> /<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
+                                <xsl:for-each select="member[@type='tester']"> =<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
+                                <xsl:for-each select="member[@type='assisted']"> ?<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
+                                <xsl:for-each select="member[@type='productowner']"> %<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
+                                <xsl:for-each select="member[@type='scrummaster']"> !<xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')" /></xsl:for-each>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </section>
         </xsl:for-each>
 	</xsl:template>
