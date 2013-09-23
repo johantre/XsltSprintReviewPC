@@ -75,22 +75,30 @@
                             </section>
                             <section class="slide" align="left"><!-- Team slide. -->
                                 <div class="info">
-                                    <h3 class="center">Team Composition</h3><br />
-                                    <p class="team">
-                                        <span class="caption">Scrum Team Members: </span>
-                                        <span class="content">
-                                            <xsl:for-each select="member[not(@type='scrummaster')][not(@type='productowner')]"><br/>&#8226;<xsl:copy-of select="." />
-                                            </xsl:for-each>
-                                        </span>
-                                    </p>
-                                    <p class="scrum-master">
-                                        <span class="caption">Product Owner: </span>
-                                        <span class="content"><xsl:value-of select="member[@type='productowner']" /></span>
-                                    </p>
-                                    <p class="scrum-master">
-                                        <span class="caption">Scrum Master: </span>
-                                        <span class="content"><xsl:value-of select="member[@type='scrummaster']" /></span>
-                                    </p>
+                                <table align="center">
+                                        <tr><td align="center">
+                                            <h3 class="center">Team Composition</h3><br />
+                                            <p class="team">
+                                            <table align="center">
+                                                <tr><td align="center"><span class="caption">Scrum Team Members: </span></td></tr>
+                                                <xsl:for-each select="member[not(@type='scrummaster')][not(@type='productowner')]"><tr><td align="center"><span class="content">&#8226;<xsl:copy-of select="." /></span></td></tr></xsl:for-each>
+                                            </table>
+                                            </p>
+                                            <p class="scrum-master">
+                                            <table align="center">
+                                                <tr><td align="center"><span class="caption">Product Owner: </span></td></tr>
+                                                <tr><td align="center"><span class="content"><xsl:value-of select="member[@type='productowner']" /></span></td></tr>
+                                            </table>
+                                            </p>
+                                            <p class="scrum-master">
+                                            <table align="center">
+                                                <tr><td align="center"><span class="caption">Scrum Master: </span></td></tr>
+                                                <tr><td align="center"><span class="content"><xsl:value-of select="member[@type='scrummaster']" /></span></td></tr>
+                                            </table>
+                                            </p>
+                                            </td>
+                                        </tr>
+                                   </table>
                                 </div>
                             </section>
                         </xsl:for-each>

@@ -12,7 +12,7 @@
         <sprint name="04">131218</sprint>
     </sprints>
     <releases>
-        <release id="01" name="MS 2.1" totalpoints="81">
+        <release id="01" name="MS 2.1" totalpoints="91">
             <sprintfolders>
                 <sprintfolder>130707</sprintfolder>
                 <sprintfolder>130724</sprintfolder>

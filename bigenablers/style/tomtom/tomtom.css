@@ -78,16 +78,13 @@
 }
 
 .tomtom-container .slide h1.last {
-       font-size: 3em;
-       font-family: "Impact", sans-serif;
-       font-weight: bolder;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.1);     
+  font-family: Impact, sans-serif;
+  line-height: 0.9em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  
+  color: #888;
 }
-
 
 .tomtom-container .slide h2 {
   font-family: Impact, sans-serif;
