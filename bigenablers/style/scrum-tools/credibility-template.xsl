@@ -15,10 +15,10 @@
                           zoomType: 'xy'
                         },
                         title : {
-                            text : 'Predictability for <xsl:value-of select="$teamname" />',
+                            text : 'Credibility for <xsl:value-of select="$teamname" />',
                         },
                         subtitle : {
-                            text : '(Velocity/Commitment)',
+                            text : '(Velocity/Commitment trend)',
                             x : -20
                         },
                         xAxis : {
@@ -39,7 +39,12 @@
                             opposite: false
                         },{
                         	title : {
-                                text : 'Predictability factor (%)'
+                                text : 'Predictability (%)'
+                            },
+                            opposite: true
+                        },{
+                            title : {
+                                text : 'Credibility (trend in %)'
                             },
                             opposite: true
                         }],
@@ -48,33 +53,47 @@
                         },
                         series : [
                                 {
-                                    name : 'Velocity',
-                                    index : 1,
+                                    name : 'Velocity (Pts)',
+                                    index : 3,
                                     data : [ <xsl:call-template name="listcredibilityvelocities">
 									         	<xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
-                                    color: '#FF0000'
+                                    lineWidth: 1,
+                                    color: '#FF0000',
+                                    visible: false
                                 },
                                 {
-                                    name : 'Commitment',
-                                    index : 2,
+                                    name : 'Commitment (Pts)',
+                                    index : 4,
                                     data : [ <xsl:call-template name="listcredibilitycommitments">
 									         	<xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     dashStyle: 'ShortDash', 
-                                    color : '#104E8B'
+                                    lineWidth: 1,
+                                    color : '#104E8B',
+                                    visible: false
                                 },
                                 {
                                     type : 'column',
-                                    name : 'Predictability',
+                                    name : 'Predictability (Vel/Comm %)',
                                     index : 0,
-                                    data : [ <xsl:call-template name="listcredibilities">
+                                    data : [ <xsl:call-template name="listpredictibilities">
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     color : 'yellowgreen',
+                                    yAxis: 2
+                                },
+                                {
+                                    name : 'Credibility (Vel/Comm trend %)',
+                                    index : 2,
+                                    data : [ <xsl:call-template name="listcredibilities">
+                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
+                                             </xsl:call-template> ],
+                                    color : 'green',
                                     yAxis: 2
                                 } ]
                     };

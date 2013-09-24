@@ -229,7 +229,7 @@
                                     </h4>
                                 </td></tr>
                                 <tr><td><br/></td></tr>
-                                <tr><td><h4 class="center">Predictability Trend for <xsl:value-of select="/sprintreview/team/@name" /></h4>
+                                <tr><td><h4 class="center">Credibility Trend for <xsl:value-of select="/sprintreview/team/@name" /></h4>
 									<xsl:call-template name="credibility-template">
 									    <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
 									    <xsl:with-param name="releasedoc" select="$releasedoc" />
