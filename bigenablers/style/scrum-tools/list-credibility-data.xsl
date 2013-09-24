@@ -47,8 +47,18 @@
         <xsl:for-each select="$releasedoc//sprints/sprint">
             <xsl:variable name="fetchedfolder" select="."/>
             <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
+            <xsl:variable name="velocity" select="sum($sprintdoc//story[not(@state='story not-done')]/@points)" />
+            <xsl:variable name="commitment" select="sum($sprintdoc//story[not(@state='story uncommitted')]/@points)" />
+            
             <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
-                <xsl:value-of select="sum($sprintdoc//story[not(@state='story not-done')]/@points) div sum($sprintdoc//story[not(@state='story uncommitted')]/@points)" />,
+                <xsl:choose>
+                    <xsl:when test="(contains($velocity,'NaN')) or (contains($velocity,'NaN')) or ($velocity = 0) or (contains($commitment,'NaN')) or (contains($commitment,'NaN')) or ($commitment = 0)">
+                        <xsl:value-of select="0" />,
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$velocity div $commitment" />,
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>

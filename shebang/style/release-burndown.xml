@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releasedata>
     <sprints>
-		<sprints>
-		    <sprint name="01">130717</sprint>
-		    <sprint name="02">130807</sprint>
-		    <sprint name="03">130828</sprint>
-		    <sprint name="04">130918</sprint>
-		    <sprint name="05">131009</sprint>
-		    <sprint name="06">131030</sprint>
-		    <sprint name="07">131120</sprint>
-		    <sprint name="08">131211</sprint>
-		</sprints>
+	    <sprint name="01">130717</sprint>
+	    <sprint name="02">130807</sprint>
+	    <sprint name="03">130828</sprint>
+	    <sprint name="04">130918</sprint>
+	    <sprint name="05">131009</sprint>
+	    <sprint name="06">131030</sprint>
+	    <sprint name="07">131120</sprint>
+	    <sprint name="08">131211</sprint>
     </sprints>
 	<releases>
 	    <release id="01" name="Milestone 3.1" totalpoints="201">

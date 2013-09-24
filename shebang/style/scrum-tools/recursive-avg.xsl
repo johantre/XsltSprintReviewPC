@@ -17,7 +17,14 @@
                     <xsl:with-param name="runningPredTotal" select="$runningPredTotal"/>
                 </xsl:call-template>
             </xsl:variable>
-            <xsl:value-of select="$runningSumPredict div $runningcount" />
+            <xsl:choose>
+                <xsl:when test="(contains($runningcount,'NaN')) or (contains($runningSumPredict,'NaN')) or ($runningcount = 0)" >
+                    <xsl:value-of select="'0'" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$runningSumPredict div $runningcount" />
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:value-of select="','" />            
             <xsl:choose>
                 <xsl:when test="$thissprintfolder > $sprints/sprint[$sprintlocation]" >
@@ -45,7 +52,14 @@
                     <xsl:with-param name="runningPredTotal" select="$runningPredTotal"/>
                 </xsl:call-template>
             </xsl:variable>
-            <xsl:value-of select="$runningSumPredict div $runningcount" />
+            <xsl:choose>
+                <xsl:when test="(contains($runningcount,'NaN')) or (contains($runningSumPredict,'NaN')) or ($runningcount = 0)" >
+                    <xsl:value-of select="'0'" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$runningSumPredict div $runningcount" />
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:value-of select="','" />
         </xsl:when>
         <xsl:otherwise>failure!!</xsl:otherwise>
@@ -56,8 +70,17 @@
     <xsl:template name="sumPred" >
         <xsl:param name="sprintdoc" />
         <xsl:param name="runningPredTotal" />
+        <xsl:variable name="velocity"   select="sum($sprintdoc//story[not(@state='story not-done')]/@points)" />
+        <xsl:variable name="commitment" select="sum($sprintdoc//story[not(@state='story uncommitted')]/@points)" />
         
-        <xsl:value-of select="$runningPredTotal + (sum($sprintdoc//story[not(@state='story not-done')]/@points) div sum($sprintdoc//story[not(@state='story uncommitted')]/@points))" />
+        <xsl:choose>
+            <xsl:when test="(contains($velocity,'NaN')) or (contains($velocity,'NaN')) or ($velocity = 0) or (contains($commitment,'NaN')) or (contains($commitment,'NaN')) or ($commitment = 0)" >
+                <xsl:value-of select="$runningPredTotal + 0" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$runningPredTotal + ($velocity div $commitment)" />
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 
