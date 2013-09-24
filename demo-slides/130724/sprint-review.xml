@@ -21,6 +21,16 @@
 
     <intro>
         <slides>
+            <slide title="Introduction of features" type="sprint-intro">
+                <ul>
+                    <li>This deck of slides is meant as </li>
+                        <ul>
+                            <li class="fragment">intro</li>
+                            <li class="fragment">background info</li>
+                        </ul>
+                    <li class="fragment">Skim through it and see what can be beneficial for your team</li>
+                </ul>
+            </slide>
             <slide title="Value of this framework" type="sprint-intro">
                 <ul>
                     <li>Uniform corporate slides</li>
@@ -86,9 +96,7 @@
                                 </ul>
                             <li class="fragment">stories</li>
                                 <ul>
-                                    <li class="fragment"><pre class="prettyprint">&lt;story title="Title1" state="story done | story not-done..." points="11" mksid="1421086"&gt;
-&lt;story title="Title2" state="story not-done" points="11" percentage-done="5" mksid="1421086"&gt;
-...</pre></li>
+                                    <li class="fragment"><pre class="prettyprint">&lt;story title="Title1" state="story done | story not-done |..." points="11" mksid="1421086"&gt;</pre></li>
                                     <ul>
                                         <li class="fragment">slides (see fragment above)</li>
                                             <ul>
@@ -118,12 +126,36 @@
                             <ul>
                                 <li class="fragment">Provided using assisted editor: </li>
                                 <ul>
-                                    <li class="fragment">code completion
-                                    <img src="img/timeline.jpg" height="100" alt="demo: diff" /></li>
-                                    <li class="fragment">xml validation
-                                    <img src="img/timeline.jpg" height="100" alt="demo: diff" /></li>
+                                    <li>code completion
+                                    <img src="img/code-assistance2.png" height="400" alt="demo: diff" /></li>
                                 </ul>
-                                <li class="fragment"><a target="_blank" href="img/sprint-review.html">User documentation </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <ul>
+                        <li>advantages of xsd validation (cont'd)
+                            <ul>
+                                <li>Provided using assisted editor: </li>
+                                <ul>
+                                    <li>code completion
+                                    <img src="img/code-assistance3.png" height="400" alt="demo: diff" /></li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <ul>
+                        <li>advantages of xsd validation (cont'd)
+                            <ul>
+                                <li>Provided using assisted editor: </li>
+                                <ul>
+                                    <li>xml validation
+                                    <img src="img/code-assistance1.png" height="400" alt="demo: diff" /></li>
+                                </ul>
+                                <li><a target="_blank" href="img/sprint-review.html">User documentation </a></li>
                             </ul>
                         </li>
                     </ul>
@@ -135,7 +167,7 @@
             <slides>
                 <slide type="story-narrative">
                     <ul>
-                        <li class="fragment"><a target="_blank" href="../style/reveal/example.html">Reveal.js</a></li>
+                        <li class="fragment"><a target="_blank" href="../style/reveal/example.html">Reveal.js</a> (Pandora team: initiators > Kudos!)</li>
                             <ul>
                                 <li class="fragment">built in and xsl-generated for you</li>
                                 <li class="fragment">check samples to spark your mind</li>
@@ -152,35 +184,6 @@
                             </ul>                        
                     </ul>                
                 </slide>            
-                <slide type="story-narrative">
-                    <ul>
-                        <li>...</li>
-                    </ul>
-                </slide>
-                
-                <slide type="story-demo">
-                    <h5>demo</h5>
-                    <ul>
-                        <li>highlight some features in a <a target="_blank" href="http://10.1.5.45:8080/">demo</a></li>
-                    </ul>
-                </slide>
-
-            </slides>
-        </story>
-
-        <story title="MS2.1: make NCS22 compliant." state="story done" points="5" mksid="1421600">
-            <slides>
-                <slide type="story-context">
-                    <h5>Solution.</h5>
-                    <ul>
-                        <li>The MS2.1 will still use TIF21 data for now.</li>
-                        <li>In stead of creating a branche for CPP4.1 we decided to postpone the MS2.1 changes. </li>
-                        <li>The changes for the MS2.1 will be started <b>after</b> the CPP4.1 changes.</li>
-                        <li>This way we did not have to do anything special for the MS2.1</li>
-                        <li>All we had to do is make sure that the changes for TIF22 are backwards compatible.</li>
-                        <li>This has only been important for the Prison grounds.</li>
-                    </ul>
-                </slide>
             </slides>
         </story>
     </stories>

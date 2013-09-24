@@ -21,7 +21,7 @@
 
     <intro>
         <slides>
-            <slide title="Modeling work" type="sprint-intro">
+            <slide title="Usage of this deck" type="sprint-intro">
                 <ul>
                     <li>Names model has been extended with Phonemes.</li>
                     <li>Update Names model in TTOM-Core TTOM-Apt TTOM-Poi.</li>
