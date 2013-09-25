@@ -176,7 +176,10 @@
                                     <br></br>
                                     <ul class="stories">
                                         <xsl:for-each select="sprintreview/stories/story[@state='bug']">
-                                            <li class="story done"><xsl:value-of select="*" /></li>
+                                            <li class="story done">
+                                                <xsl:value-of select="@title" />
+                                                <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
+                                            </li>
                                         </xsl:for-each>
                                     </ul>
                                 </section>
