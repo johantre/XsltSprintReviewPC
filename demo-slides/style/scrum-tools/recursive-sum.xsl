@@ -73,7 +73,7 @@
                 <xsl:when test="$sprintdoc//story[@relid=$releaseid]"> <!-- count only those stories marked w the running releaseid -->
     		        <xsl:choose>
     		            <xsl:when test="contains($sumtype,'velocity')">
-                            <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][@relid=$releaseid]/@points) - sum($sprintdoc//story[@state='story uncommitted'][@relid=$releaseid]/@points)" />
+                            <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story not-done')][@relid=$releaseid]/@points)" />
     		            </xsl:when>
     					<xsl:otherwise>
     					    <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story uncommitted')][@relid=$releaseid]/@points)" />
@@ -83,10 +83,10 @@
                 <xsl:otherwise><!-- sum of all stories that are NOT marked w 'relid="#"' -->
                     <xsl:choose>
                         <xsl:when test="contains($sumtype,'velocity')"><!-- formula sum of points WITHIN THAT SPRINT(document) to determine the BURNED velocity: [running Total - recursion(sum(done) - sum(uncommitted)) ] -->
-                            <xsl:value-of select="$runningtotal - sum($sprintdoc//story[@state='story done'][not(@relid)]/@points) - sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+                            <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story not-done')][not(@relid)]/@points)" />
                         </xsl:when>
                         <xsl:otherwise><!-- formula sum of points WITHIN THAT SPRINT(document) to determine the BURNED commitment: [running Total - recursion(sum(all points, except uncommitted)) ]-->
-                            <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@relid)]/@points) + sum($sprintdoc//story[@state='story uncommitted'][not(@relid)]/@points)" />
+                            <xsl:value-of select="$runningtotal - sum($sprintdoc//story[not(@state='story uncommitted')][not(@relid)]/@points)" />
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:otherwise>
