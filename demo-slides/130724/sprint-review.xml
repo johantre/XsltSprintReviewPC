@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
 <sprintreview folder="130724" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="BigEnablers">
+    <team name="DreamTeam">
         <member type="productowner">Marius Swanepoel</member>
         <member type="scrummaster">Johan Tré</member>
         <member type="modeler">Mark Lebegge </member>
@@ -14,9 +14,10 @@
         <member type="hands-on">Peter Huysman</member>
         <member type="hands-on">Priyanka Sharma</member>
         <member type="tester">Barbara Samin </member>
-        <member type="tester">Marcin Zimniac </member>
+        <member type="tester">Marcin Zimniak </member>
+        <member type="tester">I'm Tester </member>
         <member type="hands-on">Frankie Bollaert</member>
-        <member type="hands-on">Lander Vandergucht</member>
+        <member type="hands-on">Lander Vandergucht</member>        
     </team>
 
     <intro>
@@ -28,7 +29,7 @@
                             <li class="fragment">intro</li>
                             <li class="fragment">background info</li>
                         </ul>
-                    <li class="fragment">Skim through it and see what can be beneficial for your team</li>
+                    <li class="fragment">Skim through, check if beneficial for your team</li>
                 </ul>
             </slide>
             <slide title="Value of this framework" type="sprint-intro">
@@ -63,7 +64,7 @@
     </intro>
             
     <stories>
-        <story title="sprint-review.xml  Structure." state="story done" points="3" mksid="1413470">
+        <story title="sprint-review.xml  Structure." state="story done" points="5" mksid="1413470">
             <slides>
                 <slide type="story-context">
                     <ul>
@@ -163,7 +164,7 @@
             </slides>
         </story>
 
-        <story title="under the hood" state="story done" points="11" mksid="1421086">
+        <story title="under the hood" state="story done" points="5" mksid="1421086">
             <slides>
                 <slide type="story-narrative">
                     <ul>
@@ -175,13 +176,16 @@
                         <li class="fragment"><a target="_blank" href="../style/highcharts/index.htm">Highcharts </a></li>
                             <ul>
                                 <li class="fragment">built in and xsl-generated for you</li>
+                                <li class="fragment">capture impage NO-MORE!</li>
                                 <li class="fragment">check samples to spark your mind</li>
+                                <li class="fragment"><a target="_blank" href="http://api.highcharts.com/highcharts#series.xAxis">[Check out extensive API]</a> with <a target="_blank" href="http://jsfiddle.net/gh/get/jquery/1.7.2/highslide-software/highcharts.com/tree/master/samples/highcharts/plotoptions/series-allowpointselect-pie/">[Try-out Samples]</a></li>
                             </ul>                        
                         <li class="fragment"><a target="_blank" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/index.html">google-code-prettify </a></li>
                             <ul>
                                 <li class="fragment">use <pre class="prettyprint">&lt;pre class="prettyprint"&gt;tags for code fragments&lt;/pre&gt;</pre></li>
                                 <li class="fragment">check samples to spark your mind</li>
-                            </ul>                        
+                            </ul>
+                        <li class="fragment">Frameworks at your disposal: "Google = your friend" :) </li>
                     </ul>                
                 </slide>            
             </slides>
@@ -190,119 +194,10 @@
 
     <finish>
         <slides>
-            <slide type='story-timeline'>
-                <img src="img/timeline.jpg" alt="demo: diff" />
+            <slide title="That's it for the intro" type="whats-next">
+                <h5>You got your first prime</h5>
+                <blockquote class="fragment">Curious? Up to next deck!!</blockquote>
             </slide>
-
-            <slide type='story-code-q'>
-                <p>
-                <table class="statistics" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
-						<!-- Table Header -->
-						<thead>
-							<tr>
-								<th>Component</th>
-								<th></th>
-								<th>value</th>
-								<th></th>
-								<th>link</th>
-							</tr>
-						</thead>
-						<!-- Table Header -->
-					
-						<!-- Table Body -->
-						<tbody>
-					
-							<tr>
-								<td>gdf-converters</td>
-								<td class="topic">line coverage</td>
-								<td>44% (9366/21082)</td>
-								<td class="not-applicable">baseline</td>
-								<td><a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-release/">report</a> </td>
-							</tr><!-- Table Row -->
-					
-							<tr class="even">
-								<td>lib</td>
-								<td class="topic">line coverage</td>
-								<td>55% (16051/29089)</td>
-								<td class="not-applicable">baseline</td>
-								<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-seaming-release/">report</a> </td>
-							</tr><!-- Table Row -->
-					
-							<tr>
-								<td>addresspoints</td>
-								<td class="topic">line coverage</td>
-								<td>74% (1601/2178)</td>
-								<td class="not-applicable">baseline</td>
-								<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/addresspoints/job/addresspoints-unit-test-snapshot/">report</a> </td>
-							</tr><!-- Table Row -->
-					
-							<tr class="even">
-								<td>ada</td>
-								<td class="topic">line coverage</td>
-								<td>76% (986/1297)</td>
-								<td class="not-applicable">baseline</td>
-								<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/ada/job/ttom-ada-seaming-release/">report</a></td>
-							</tr><!-- Table Row -->
-					
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr><!-- blank row -->
-					
-							<tr class="even">
-								<td>JBehave tests</td>
-								<td class="topic">#</td>
-								<td>1117</td>
-								<td class="positive">+93</td>
-								<td>
-								<a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/MDS-GDF%20Jbehave/job/jbehave-ttom3_14-1.0-run-on-mds/TAF_Report/">report</a>
-								</td>
-							</tr>
-							
-							<tr>
-								<td> </td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr><!-- blank row -->
-					
-							<tr class="even">
-								<td>MADonPDS</td>
-								<td class="topic"></td>
-								<td class="not-applicable">todo</td>
-								<td></td>
-								<td></td>
-							</tr><!-- Darker Table Row -->
-					
-							<tr>
-								<td>phonemes-ws</td>
-								<td class="topic">total quality</td>
-								<td>85.3%</td>
-								<td class="not-applicable">baseline</td>
-								<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
-							</tr><!-- Darker Table Row -->
-							
-							<tr class="even">
-								<td></td>
-								<td class="topic">technical debt</td>
-								<td>4.9%</td>
-								<td class="not-applicable">baseline</td>
-								<td></td>
-							</tr><!-- Darker Table Row -->
-						</tbody>
-						<!-- Table Body -->
-					</table>
-				</p>
-            </slide>
-            <slide title="a slide title if needed" type='whats-next'>
-                <blockquote class="fragment">Epic description</blockquote>
-                <blockquote class="fragment">Story description</blockquote>
-                <blockquote class="fragment">Story description</blockquote>
-            </slide>            
         </slides>
     </finish>
 
