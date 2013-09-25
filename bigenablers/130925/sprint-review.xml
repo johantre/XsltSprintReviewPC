@@ -10,34 +10,26 @@
         <member type="hands-on">Bart Temmerman </member>
         <member type="hands-on">Arnd Rechenburg</member>
         <member type="tester">Marcin Zimniak </member>
-        <member type="hands-on">Frankie Bollaert</member>
         <member type="hands-on">Lander Vandergucht</member>              
         <member type="hands-on">Stefan De Smit</member>
     </team>
 
     <intro>
         <slides>
-            <slide title="Common model info or Common Sprint Goal" type="sprint-intro">
-                <ul>
-                    <li>some model info</li>
-                    <li>some model info</li>
-                </ul>
-                <h5>Solution:</h5>
-                <ul>
-                    <li><a target="_blank" href="http://help.tomtomgroup.com/specs/mapping/TIF2TTOM/daily/TIF2TTOM/theme_land_use_and_land_cover/artificial_surface_land_use.html">Model link</a>.</li>
-                </ul>
+            <slide title="The Big Picture" type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
             </slide>
         </slides>
     </intro>
 
     <stories>
-         <story title="Load Voice Maps" state="story done" points="8" mksid="1466420">
+         <story title="Load Voice Maps" state="story not-done" points="8" mksid="1466420" percentage-done="95">
             <slides>
                 <slide type="story-context">
                     <h5>Context</h5>
                     <ul>
                         <li>Challenges: integration of phonemes into Source2TTOM</li>
-                        <li>Difficulties: product has phonemes for names, name components and has phoneme shortnames</li>
+                        <li>Difficulties: product has phonemes for names, name components, phoneme shortnames, phoneme dataset link</li>
                     </ul>
                     <h5>Solution</h5>
                     <ul>
@@ -49,7 +41,7 @@
                 <slide type="story-narrative">
                     <h5>Goals:</h5>
                     <ul>
-                        <li>phonemes-ws on a local production server + integrate into chain</li>
+                        <li>phonemes-ws on a local production server + integrate into Source2TTOM chain</li>
                         <li>have phonemes (vPDS) for: name, short names, airport codes, name components</li>
                         <li>hand over web service to Phonemes team (documentation)</li>
                     </ul>
@@ -71,6 +63,7 @@
                         <li>TTOM 3_16 is milestone 2.1 final model</li>
                         <li>We need to run and analyze MAD on final model</li>
                         <li>enabled MAD in TIF2TTOM development pcontrol chain</li>
+                        <li>better use of equinix L1: directly use from jenkins</li>
                     </ul>
                     <h5>Solution:</h5>
                     <ul>
@@ -82,6 +75,14 @@
                     <ul>
                         <li>fix missing 'Centre Point of Feature belonging to Feature' relationships</li>
                         <li>Missing Locality In Country association fixed</li>
+                    </ul>                    
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Open issues</h5>
+                    <ul>
+                        <li>Seamed id's are not always unique (MKS 1482031)</li>
+                        <li>Violations present on Locality index Adornments (MKS 1480532)</li>
+                        <li>Still some issues with phonemes</li>
                     </ul>                    
                 </slide>
            </slides>
@@ -163,29 +164,7 @@
             </slides>
         </story>
         
-        <story title="Sample story that is NOT done" state="story not-done" points="0" percentage-done="5">
-            <slides>
-                <slide>
-                    <h5>Goals:</h5>
-                    <ul>
-                        <li>Initial goal</li>
-                    </ul>
-                    <h5>Problem description:</h5>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h5>Value delivered:</h5>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h5>To Do:</h5>
-                    <ul>
-                        <li>what's left?</li>
-                    </ul>
-                </slide>
-            </slides>
-        </story>
-    </stories>        
+   </stories>        
 
     <finish>
         <slides>
@@ -274,25 +253,9 @@
 						</p>
             </slide>
             
-            <slide title="a slide title if needed" type='story-timeline'>
-                <img src="img/timeline.jpg" alt="demo: diff" />
-            </slide>
-
-            <slide title="a slide title if needed" type='story-code-q'>
-                <h5></h5>
-                <ul>
-                    <li></li>
-                </ul>
-                <h5>header:</h5>
-                <ul>
-                    <li></li>
-                </ul>
-            </slide>
-
-            <slide title="a slide title if needed" type='whats-next'>
-                <blockquote class="fragment">Epic description</blockquote>
-                <blockquote class="fragment">Story description</blockquote>
-                <blockquote class="fragment">Story description</blockquote>
+            <slide title="" type='whats-next'>
+                <blockquote class="fragment">Finish work for MS 2.1</blockquote>
+                <blockquote class="fragment">Start work for MS 2.2</blockquote>
             </slide>            
         </slides>
     </finish>
