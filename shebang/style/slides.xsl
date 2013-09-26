@@ -211,7 +211,7 @@
                         </xsl:for-each>
                         
                         
-                        <xsl:for-each select="sprintreview/finish/slides/slide"><!-- Introduction slides. -->
+                        <xsl:for-each select="sprintreview/finish/slides/slide[not(@type='whats-next')]"><!-- Introduction slides. -->
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="'story done'" />
@@ -268,6 +268,16 @@
                                     </section>
                                 </xsl:when>
                             </xsl:choose>
+                        </xsl:for-each>
+
+                        <xsl:for-each select="sprintreview/finish/slides/slide[@type='whats-next']"><!-- Introduction slides. -->
+                                <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
+                                    <xsl:call-template name="storyslide">
+                                        <xsl:with-param name="state" select="'story done'" />
+                                        <xsl:with-param name="mksid" select="''" />
+                                        <xsl:with-param name="title" select="@title" />
+                                    </xsl:call-template>
+                                </section>
                         </xsl:for-each>
                                 
                         <section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');  
