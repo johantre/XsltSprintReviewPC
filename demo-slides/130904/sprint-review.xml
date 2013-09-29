@@ -22,8 +22,9 @@
     <intro>
         <slides>
             <slide title="In this deck someth more about releases" type="sprint-intro">
+                <h5>Problem:</h5>
                 <ul>
-                    <li>A team usually has work to finish of a release.</li>
+                    <li>Usually there work to finish off of a previous release.</li>
                     <li>This should be reflected release burn down.</li>
                 </ul>
                 <h5>Solution:</h5>
@@ -92,6 +93,7 @@
                         <li>stories have an optional "relid" attribute</li>
                         <li>stories for another release should set this to release "id" from the release-burndown.xml</li>
                         <li>stories of the current release do not need this attribute</li>
+                        <li>providing NO "relid", but having that sprint in 2 releases will cause that sprint be seen and counted as a normal one.</li>
                     </ul>
                 </slide>
                 <slide type="story-narrative">
