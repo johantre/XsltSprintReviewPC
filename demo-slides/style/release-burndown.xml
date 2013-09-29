@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releasedata>
     <sprints>
-        <sprint name="A Number Maybe? :)">130724</sprint>
-        <sprint name="Sprint Name">130814</sprint>
-        <sprint name="BetterB Consistent">130904</sprint>
-        <sprint name="05">130925</sprint>
+        <sprint name="01">130724</sprint>
+        <sprint name="01">130814</sprint>
+        <sprint name="02">130904</sprint>
+        <sprint name="01">130925</sprint>
         <sprint name="01">131016</sprint>
         <sprint name="02">131106</sprint>
-        <sprint name="03">131127</sprint>
-        <sprint name="04">131218</sprint>
+        <sprint name="01">131127</sprint>
+        <sprint name="02">131218</sprint>
     </sprints>
     <releases>
-        <release id="01" name="Demo: Intro" totalpoints="91">
+        <release id="01" name="Intro" totalpoints="100">
             <sprintfolders>
                 <sprintfolder>130724</sprintfolder>
-                <sprintfolder>130814</sprintfolder>
             </sprintfolders>
         </release>
-        <release id="02" name="Demo: Usage" totalpoints="150">
+        <release id="02" name="Usage" totalpoints="100">
             <sprintfolders>
+                <sprintfolder>130814</sprintfolder>
                 <sprintfolder>130904</sprintfolder>
             </sprintfolders>
         </release>
-        <release id="03" name="Demo: Maintenance" totalpoints="150">
+        <release id="03" name="Mainten.rel." totalpoints="100">
             <sprintfolders>
                 <sprintfolder>130925</sprintfolder>
             </sprintfolders>
         </release>
-        <release id="03" name="Demo: Maintenance" totalpoints="150">
+        <release id="04" name="Multi.rel.demo1" totalpoints="100">
             <sprintfolders>
+                <sprintfolder>130925</sprintfolder>
                 <sprintfolder>131016</sprintfolder>
                 <sprintfolder>131106</sprintfolder>
+                <sprintfolder>131127</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="05" name="Multi.rel.demo2" totalpoints="100">
+            <sprintfolders>
                 <sprintfolder>131127</sprintfolder>
                 <sprintfolder>131218</sprintfolder>
             </sprintfolders>

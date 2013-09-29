@@ -60,6 +60,28 @@
                     <li>Explain what's under the hood</li>
                 </ul>
             </slide>
+            <slide title="Why all this effort?" type="sprint-intro">
+                <h5 class="fragment">here's one reason:</h5>
+                <ul class="fragment">
+                    <li>I sincerely believe Excellence is not a skill, but an Attitude.</li>
+                    <li>Communication is part of that, and it would be inconsistent being negligent about it.</li>
+                    <li>The teams I worked with show high skill and defenitely excel! </li>
+                    <li>For this, it is a Scrum Master's duty to pay attention to this aspect! </li>
+                    <li>Demo's are THE momentum to show what the team is standing for </li>
+                    <li>That's why the style, finish, look&amp;feel of the demo's should radiate the same excellence!</li>
+                </ul>
+                <h5 class="fragment">here's a second:</h5>
+                <ul class="fragment">
+                    <li>Trust: cornerstone of successful organisations </li>
+                    <li>The distance between Management &amp; Workfloor can be long sometimes... </li>
+                    <li>Demo's are THE momentum to gain/maintain trust </li>
+                </ul>
+                <h5 class="fragment">But Scrum rules say...</h5>
+                <ul class="fragment">
+                    <li>Demo effort should be sufficiently small... </li>
+                    <li>That's why a SM should guard the excellence withing the above boundaries! </li>
+                </ul>
+            </slide>
         </slides>
     </intro>
             
@@ -119,6 +141,7 @@
                     <img src="img/sprint-review.png" alt="demo: diff" />
                 </slide>
                 <slide type="story-demo">
+                    <h5>(navigable)</h5>
                     <iframe src="img/sprint-review.html" width="100%" height="700" />
                 </slide>
                 <slide type="story-narrative">

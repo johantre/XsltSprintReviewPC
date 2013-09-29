@@ -21,71 +21,103 @@
 
     <intro>
         <slides>
-            <slide title="Maintenance" type="sprint-intro">
-                <h5>Goal:</h5>
+            <slide title="In this deck someth more about releases" type="sprint-intro">
                 <ul>
-                    <li>Lower resistance to maintain.</li>
+                    <li>A team usually has work to finish of a release.</li>
+                    <li>This should be reflected release burn down.</li>
                 </ul>
                 <h5>Solution:</h5>
                 <ul>
-                    <li>Visualize where-what-when.</li>
-                </ul>
-            </slide>
-            <slide title="Why?" type="sprint-intro">
-                <h5>xsl isn't the most maintain-friendly language</h5>
-                <ul>
-                    <li>xml and readability...</li>
-                    <li>xsl not known by many...</li>
-                </ul>
-                <h5>However this deck:</h5>
-                <ul>
-                    <li> = full of samples.</li>
-                    <li>a working example to start from.</li>
+                    <li>ability of 2 burn release burn-downs in one sprint deck</li>
                 </ul>
             </slide>
         </slides>
     </intro>
 
     <stories>
-         <story title="Dependency graph" state="story done" points="5" mksid="1441937">
+         <story title="Where to look" state="story done" points="7">
             <slides>
-                <slide type="story-context">
-                    <h5></h5>
+                <slide type="story-narrative">
+                    <h5>release-burndown.xml (releases &amp; sprints)</h5>
+                    <pre class="prettyprint">&lt;releasedata&gt;
+    &lt;sprints&gt;
+        &lt;sprint name="01"&gt;130707&lt;/sprint&gt;
+        &lt;sprint name="02"&gt;130724&lt;/sprint&gt;
+        &lt;sprint name="03"&gt;130814&lt;/sprint&gt;
+        &lt;sprint name="04"&gt;130904&lt;/sprint&gt;
+        &lt;sprint name="05"&gt;130925&lt;/sprint&gt;
+        &lt;sprint name="01"&gt;131016&lt;/sprint&gt;
+        &lt;sprint name="02"&gt;131106&lt;/sprint&gt;
+        &lt;sprint name="03"&gt;131127&lt;/sprint&gt;
+        &lt;sprint name="04"&gt;131218&lt;/sprint&gt;
+    &lt;/sprints&gt;
+    &lt;releases&gt;
+        &lt;release id="01" name="MS 2.1" totalpoints="91"&gt;
+            &lt;sprintfolders&gt;
+                &lt;sprintfolder&gt;130707&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;130724&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;130814&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;130904&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;130925&lt;/sprintfolder&gt;
+            &lt;/sprintfolders&gt;
+        &lt;/release&gt;
+        &lt;release id="02" name="MS 2.2" totalpoints="150"&gt;
+            &lt;sprintfolders&gt;
+                &lt;sprintfolder&gt;130925&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;131016&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;131106&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;131127&lt;/sprintfolder&gt;
+                &lt;sprintfolder&gt;131218&lt;/sprintfolder&gt;
+            &lt;/sprintfolders&gt;
+        &lt;/release&gt;
+    &lt;/releases&gt;
+&lt;/releasedata&gt;</pre>
                     <ul>
-                        <li><img height="700" src="img/dependencies.png" /></li>
+                        <li>notice sprint "130925" is defined for 2 releases!!</li>
                     </ul>
                 </slide>
-            </slides>
-        </story>
-
-        <story title="Tips" state="story done" points="8" percentage-done="65"  mksid="1413490">
-            <slides>
-                <slide type="story-context">
+                <slide type="story-narrative">
+                    <h5>sprint-review.xml (sprint)</h5>
+                    <pre class="prettyprint">&lt;story title="Dependency graph" state="story done" points="5" mksid="1441937" relid="02"&gt;
+    &lt;slides&gt;
+        &lt;slide type="story-context"&gt;
+            &lt;h5&gt;&lt;/h5&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;img height="700" src="img/dependencies.png" /&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/slide&gt;
+    &lt;/slides&gt;
+&lt;/story&gt;</pre>    
                     <ul>
-                        <li>Use an assisted editor like Eclipse</li>
+                        <li>stories have an optional "relid" attribute</li>
+                        <li>stories for another release should set this to release "id" from the release-burndown.xml</li>
+                        <li>stories of the current release do not need this attribute</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Special attention to:</h5>
+                    <ul>
+                        <li>The credibility trend is sprint by sprint</li>
                         <ul>
-                            <li>realtime validation through xsd</li>
-                            <li>code completion</li>
-                            <li>syntax highlighting</li>
+                            <li>regardless the release the stories were for</li>
+                            <li>velocity &amp; commitment can be over multiple releases, </li>
+                            <li>if so, the total sprint velocity &amp; sprint commitment will be spread over multiple releases</li>
                         </ul>
-                        <li>Run xsl tranformation for xsl editing</li>
+                    </ul>
+                </slide>
+        </slides>
+        </story>
+        <story title="further demo" state="story done" points="5">
+            <slides>
+                <slide type="story-narrative">
+                    <h5>at the end of this demo-slides</h5>
+                    <ul>
+                        <li>stories are left blanc for clarity of multiple release sample</li>
+                        <li>in the stories:</li>
                         <ul>
-                            <li><a href="img/EclipseLaunchConfigurations.rar">easy launch configuration xsd transformations (import into eclipse)</a></li>
-                            <li>Feedback xsl transform. in Console View</li>
-                        </ul> 
-                        <li>Refresh-in-browser review.xml when editing the deck</li>
-                        <ul>
-                            <li>Open de review.xml directly in browser</li>
-                            <ul>
-                                <li>firefox: go to <a target="_blank" href="about:config">about:config</a></li>
-                                <ul>
-                                    <li>disable (set 'false') security.fileuri.strict_origin_policy flag</li>
-                                </ul>
-                                <li>chrome: </li>
-                                <ul>
-                                    <li>start chrome with "chromium-browser --disable-web-security"</li>
-                                </ul>
-                            </ul>
+                            <li>points are set</li>
+                            <li>relid is set where needed</li>
+                            <li>over multiple releases</li>
                         </ul>
                     </ul>
                 </slide>
