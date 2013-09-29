@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="131106" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="BigEnablers">
+        <member type="productowner">Marius Swanepoel</member>
+        <member type="scrummaster">Johan Tré</member>
+        <member type="modeler">Mark Lebegge </member>
+        <member type="modeler">Veerle Merckx </member>
+        <member type="hands-on">Bart Temmerman </member>
+        <member type="hands-on">Arnd Rechenburg</member>
+        <member type="hands-on">Peter Huysman</member>
+        <member type="hands-on">Priyanka Sharma</member>
+        <member type="tester">Marcin Zimniac </member>
+        <member type="hands-on">Frankie Bollaert</member>
+        <member type="hands-on">Lander Vandergucht</member>              
+        <member type="hands-on">Stefan De Smit</member>
+    </team>
+
+    <stories>
+         <story title="Story done" state="story done" points="5">
+            <slides>
+                <slide type="story-context">
+                </slide>
+            </slides>
+        </story>
+        <story title="Story done" state="story done" points="5">
+            <slides>
+                <slide type="story-context">
+                </slide>
+            </slides>
+        </story>
+         <story title="Story done" state="story done" points="10">
+            <slides>
+                <slide type="story-context">
+                </slide>
+            </slides>
+        </story>
+         <story title="Story done" state="story done" points="10">
+            <slides>
+                <slide type="story-context">
+                </slide>
+            </slides>
+        </story>
+    </stories>
+
+</sprintreview>

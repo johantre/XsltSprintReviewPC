@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="130925" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="BigEnablers">
+        <member type="productowner">Marius Swanepoel</member>
+        <member type="scrummaster">Johan Tré</member>
+        <member type="modeler">Mark Lebegge </member>
+        <member type="modeler">Veerle Merckx </member>
+        <member type="hands-on">Bart Temmerman </member>
+        <member type="hands-on">Arnd Rechenburg</member>
+        <member type="tester">Marcin Zimniac </member>
+        <member type="hands-on">Frankie Bollaert</member>
+        <member type="hands-on">Lander Vandergucht</member>              
+        <member type="hands-on">Stefan De Smit</member>
+    </team>
+
+    <intro>
+        <slides>
+            <slide title="Maintenance" type="sprint-intro">
+                <h5>Goal:</h5>
+                <ul>
+                    <li>Lower resistance to maintain.</li>
+                </ul>
+                <h5>Solution:</h5>
+                <ul>
+                    <li>Visualize where-what-when.</li>
+                </ul>
+            </slide>
+            <slide title="Why?" type="sprint-intro">
+                <h5>xsl isn't the most maintain-friendly language</h5>
+                <ul>
+                    <li>xml and readability...</li>
+                    <li>xsl not known by many...</li>
+                </ul>
+                <h5>However this deck:</h5>
+                <ul>
+                    <li> = full of samples.</li>
+                    <li>a working example to start from.</li>
+                </ul>
+            </slide>
+        </slides>
+    </intro>
+
+    <stories>
+         <story title="Dependency graph" state="story done" points="5" mksid="1441937">
+            <slides>
+                <slide type="story-context">
+                    <h5></h5>
+                    <ul>
+                        <li><img height="700" src="img/dependencies.png" /></li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Tips" state="story done" points="10" mksid="1413490" relid="04">
+            <slides>
+                <slide type="story-context">
+                    <ul>
+                        <li>Each team has his own xsl!</li>
+                        <ul>
+                            <li>Remaining consistent decks over different teams requires either:</li>
+                            <ul>
+                                <li>one central xsl &amp; templates</li>
+                                <li>sync changes between team xsl's</li>
+                            </ul>
+                        </ul>
+                        <li>Use an assisted editor like Eclipse</li>
+                        <ul>
+                            <li>realtime validation through xsd</li>
+                            <li>code completion</li>
+                            <li>syntax highlighting</li>
+                        </ul>
+                        <li>Run xsl tranformation for xsl editing</li>
+                        <ul>
+                            <li><a href="img/EclipseLaunchConfigurations.rar">easy launch configuration xsd transformations (import into eclipse)</a></li>
+                            <li>Feedback xsl transform. in Console View</li>
+                        </ul> 
+                        <li>Refresh-in-browser review.xml when editing the deck</li>
+                        <ul>
+                            <li>Open de review.xml directly in browser</li>
+                            <ul>
+                                <li>firefox: go to <a target="_blank" href="about:config">about:config</a></li>
+                                <ul>
+                                    <li>disable (set 'false') security.fileuri.strict_origin_policy flag</li>
+                                </ul>
+                                <li>chrome: </li>
+                                <ul>
+                                    <li>start chrome with "chromium-browser --disable-web-security"</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+        <story title="Open topics" state="story not-done" points="3" mksid="1413490">
+            <slides>
+                <slide type="story-context">
+                    <ul>
+                        <li>Bugs: &lt;story ... type="bug"&gt;</li>
+                        <ul>
+                            <li>Meant as out-of-sprint found bugs, entering team. (planned)</li>
+                            <li>One could argue their points should not be counted for velocity</li>
+                            <li>In the current implementation the points are taken into account.</li>
+                            <li class="fragment">Up to the brave at heart to fix, if that appears an issue. :)</li>
+                        </ul>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+    </stories>
+
+</sprintreview>
