@@ -43,6 +43,7 @@
                     <p>
                     <h5>No panic, the minimal:</h5>
                     <ul>
+                        <li>check out: <a target="_blank" href="http://svn/repos/sprint-review/trunk">http://svn/repos/sprint-review/trunk</a></li>
                         <li>Find your sprint folder (format 'yymmdd')</li>
                         <li>Add all stories sprint-review.xml</li>
                         <li>in the STORIES section

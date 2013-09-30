@@ -27,6 +27,9 @@
 									           <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                            </xsl:call-template> ]
                         },
+                        column: {
+                            stacking: 'normal'
+                        },
                         yAxis : [{
                             title : {
                                 text : 'Velocity (Pts)'
@@ -84,9 +87,48 @@
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     color : 'yellowgreen',
+                                    stack: 1,
                                     yAxis: 2
                                 },
                                 {
+                                    type : 'column',
+                                    name : 'Hands-on Capacity (MD)',
+                                    index : 5,
+                                    data : [ <xsl:call-template name="listhandsoncapacity">
+                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
+                                             </xsl:call-template> ],
+                                    color : 'blue',
+                                    stack: 0,
+                                    yAxis: 2,
+                                    visible: false
+                                },
+                                {
+                                    type : 'column',
+                                    name : 'Tester Capacity (MD)',
+                                    index : 6,
+                                    data : [ <xsl:call-template name="listtestercapacity">
+                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
+                                             </xsl:call-template> ],
+                                    color : 'blue',
+                                    stack: 0,
+                                    yAxis: 2,
+                                    visible: false
+                                },
+                                {
+                                    type : 'column',
+                                    name : 'Modeler Capacity (MD)',
+                                    index : 7,
+                                    data : [ <xsl:call-template name="listmodelercapacity">
+                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
+                                             </xsl:call-template> ],
+                                    color : 'pink',
+                                    stack: 0,
+                                    yAxis: 2,
+                                    visible: false
+                                },{
                                     name : 'Credibility (Vel/Comm trend %)',
                                     index : 2,
                                     data : [ <xsl:call-template name="listcredibilities">
