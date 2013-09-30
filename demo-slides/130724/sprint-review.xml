@@ -5,19 +5,18 @@
     <team name="DreamTeam">
         <member type="productowner">Marius Swanepoel</member>
         <member type="scrummaster">Johan Tré</member>
-        <member type="modeler">Mark Lebegge </member>
-        <member type="modeler">Veerle Merckx </member>
-        <member type="modeler">Rob Soetewey</member>
-        <member type="hands-on">Bart Temmerman </member>
-        <member type="hands-on">Christel Fiers</member>
-        <member type="hands-on">Arnd Rechenburg</member>
-        <member type="hands-on">Peter Huysman</member>
-        <member type="hands-on">Priyanka Sharma</member>
-        <member type="tester">Barbara Samin </member>
-        <member type="tester">Marcin Zimniak </member>
-        <member type="tester">I'm Tester </member>
-        <member type="hands-on">Frankie Bollaert</member>
-        <member type="hands-on">Lander Vandergucht</member>        
+        <member capacity="12" type="modeler">Mark Lebegge </member>
+        <member capacity="12" type="modeler">Veerle Merckx </member>
+        <member capacity="12" type="modeler">Rob Soetewey</member>
+        <member capacity="12" type="hands-on">Bart Temmerman </member>
+        <member capacity="12" type="hands-on">Christel Fiers</member>
+        <member capacity="12" type="hands-on">Arnd Rechenburg</member>
+        <member capacity="12" type="hands-on">Peter Huysman</member>
+        <member capacity="12" type="hands-on">Priyanka Sharma</member>
+        <member capacity="12" type="tester">Barbara Samin </member>
+        <member capacity="12" type="tester">Marcin Zimniak </member>
+        <member capacity="12" type="hands-on">Frankie Bollaert</member>
+        <member capacity="12" type="hands-on">Lander Vandergucht</member>        
     </team>
 
     <intro>
