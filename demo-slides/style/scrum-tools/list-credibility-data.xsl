@@ -86,7 +86,7 @@
             <xsl:variable name="fetchedfolder" select="."/>
             <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
             <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
-                <xsl:value-of select="sum($sprintdoc//team[@type='hands-on']/@capacity)" />,
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='hands-on']/@capacity)" />,
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -99,7 +99,7 @@
             <xsl:variable name="fetchedfolder" select="."/>
             <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
             <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
-                <xsl:value-of select="sum($sprintdoc//team[@type='tester']/@capacity)" />,
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='tester']/@capacity)" />,
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -112,7 +112,7 @@
             <xsl:variable name="fetchedfolder" select="."/>
             <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
             <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
-                <xsl:value-of select="sum($sprintdoc//team[@type='modeler']/@capacity)" />,
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='modeler']/@capacity)" />,
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
