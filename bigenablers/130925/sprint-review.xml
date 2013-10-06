@@ -5,13 +5,15 @@
     <team name="BigEnablers">
         <member type="productowner">Marius Swanepoel</member>
         <member type="scrummaster">Johan Tré</member>
-        <member type="modeler">Mark Lebegge </member>
-        <member type="modeler">Veerle Merckx </member>
-        <member type="hands-on">Bart Temmerman </member>
-        <member type="hands-on">Arnd Rechenburg</member>
-        <member type="tester">Marcin Zimniak </member>
-        <member type="hands-on">Lander Vandergucht</member>              
-        <member type="hands-on">Stefan De Smit</member>
+        <member type="modeler" capacity="12">Mark Lebegge </member>
+        <member type="modeler" capacity="9">Veerle Merckx </member>
+        <member type="hands-on" capacity="12">Bart Temmerman </member>
+        <member type="hands-on" capacity="12">Arnd Rechenburg</member>
+        <member type="hands-on" capacity="3">Frankie Bollaert</member>
+        <member type="hands-on" capacity="1">Priyanka Sharma</member>
+        <member type="tester" capacity="12">Marcin Zimniak </member>
+        <member type="hands-on" capacity="12">Lander Vandergucht</member>              
+        <member type="hands-on" capacity="0">Stefan De Smit</member>
     </team>
 
     <intro>

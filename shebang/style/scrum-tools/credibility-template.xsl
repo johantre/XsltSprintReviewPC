@@ -27,24 +27,19 @@
 									           <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                            </xsl:call-template> ]
                         },
+                        plotOptions: {
+                            column: {
+                                stacking: 'normal'
+                            }
+                        },
                         yAxis : [{
                             title : {
-                                text : 'Velocity (Pts)'
+                                text : 'Velocity (Pts)  Commitment (Pts)'
                             },
                             opposite: false
                         },{
                             title : {
-                                text : 'Commitment (Pts)'
-                            },
-                            opposite: false
-                        },{
-                        	title : {
-                                text : 'Predictability (%)'
-                            },
-                            opposite: true
-                        },{
-                            title : {
-                                text : 'Credibility (trend in %)'
+                                text : 'Predictability (%)    Credibility (trend in %)'
                             },
                             opposite: true
                         }],
@@ -55,17 +50,20 @@
                                 {
                                     name : 'Velocity (Pts)',
                                     index : 3,
+                                    legendIndex : 2,
                                     data : [ <xsl:call-template name="listcredibilityvelocities">
 									         	<xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     lineWidth: 1,
                                     color: '#FF0000',
-                                    visible: false
+                                    visible: false,
+                                    yAxis: 0
                                 },
                                 {
                                     name : 'Commitment (Pts)',
                                     index : 4,
+                                    legendIndex : 3,
                                     data : [ <xsl:call-template name="listcredibilitycommitments">
 									         	<xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
@@ -73,28 +71,32 @@
                                     dashStyle: 'ShortDash', 
                                     lineWidth: 1,
                                     color : '#104E8B',
-                                    visible: false
+                                    visible: false,
+                                    yAxis: 0
                                 },
                                 {
                                     type : 'column',
                                     name : 'Predictability (Vel/Comm %)',
                                     index : 0,
+                                    legendIndex : 0,
                                     data : [ <xsl:call-template name="listpredictibilities">
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     color : 'yellowgreen',
-                                    yAxis: 2
+                                    stack: 1,
+                                    yAxis: 1
                                 },
                                 {
                                     name : 'Credibility (Vel/Comm trend %)',
                                     index : 2,
+                                    legendIndex : 1,
                                     data : [ <xsl:call-template name="listcredibilities">
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     color : 'green',
-                                    yAxis: 2
+                                    yAxis: 1
                                 } ]
                     };
                     var chartchartCredibility = new Highcharts.Chart(jQuery.extend(true, {}, chartCredibilityOptions));

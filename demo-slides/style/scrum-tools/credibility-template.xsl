@@ -34,11 +34,6 @@
                         },
                         yAxis : [{
                             title : {
-                                text : 'Capacity (MD)'
-                            },
-                            opposite: false
-                        },{
-                            title : {
                                 text : 'Velocity (Pts)  Commitment (Pts)'
                             },
                             opposite: false
@@ -63,7 +58,7 @@
                                     lineWidth: 1,
                                     color: '#FF0000',
                                     visible: false,
-                                    yAxis: 1
+                                    yAxis: 0
                                 },
                                 {
                                     name : 'Commitment (Pts)',
@@ -77,7 +72,7 @@
                                     lineWidth: 1,
                                     color : '#104E8B',
                                     visible: false,
-                                    yAxis: 1
+                                    yAxis: 0
                                 },
                                 {
                                     type : 'column',
@@ -90,7 +85,7 @@
                                              </xsl:call-template> ],
                                     color : 'yellowgreen',
                                     stack: 1,
-                                    yAxis: 2
+                                    yAxis: 1
                                 },
                                 {
                                     name : 'Credibility (Vel/Comm trend %)',
@@ -101,72 +96,7 @@
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
                                     color : 'green',
-                                    yAxis: 2
-                                },
-                                {
-                                    type : 'column',
-                                    name : 'Toggle overlap',
-                                    index : 0,
-                                    data : [ 0,0,0,],
-                                    color : 'white',
-                                    stacking: 'normal',
-                                    stack: 0,
-                                    yAxis: 2,
-                                    showInLegend : false
-                                },
-                                {
-                                    type : 'column',
-                                    name : 'Toggle Dual stack',
-                                    index : 0,
-                                    legendIndex : 0,
-                                    data : [ 0,0,0,],
-                                    color : 'white',
-                                    stacking: 'normal',
-                                    stack: 1,
-                                    yAxis: 0,
-                                    showInLegend : false
-                                },                                
-                                {
-                                    type : 'column',
-                                    name : 'Hands-on Capacity (MD)',
-                                    index : -1,
-                                    legendIndex : 4,
-                                    data : [ <xsl:call-template name="listhandsoncapacity">
-                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
-                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
-                                             </xsl:call-template> ],
-                                    color : '#FE9A2E',
-                                    stack: 0,
-                                    yAxis: 0,
-                                    visible: false
-                                },
-                                {
-                                    type : 'column',
-                                    name : 'Tester Capacity (MD)',
-                                    index : -1,
-                                    legendIndex : 5,
-                                    data : [ <xsl:call-template name="listtestercapacity">
-                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
-                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
-                                             </xsl:call-template> ],
-                                    color : '#BFFF00',
-                                    stack: 0,
-                                    yAxis: 0,
-                                    visible: false
-                                },
-                                {
-                                    type : 'column',
-                                    name : 'Modeler Capacity (MD)',
-                                    index : -1,
-                                    legendIndex : 6,
-                                    data : [ <xsl:call-template name="listmodelercapacity">
-                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
-                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
-                                             </xsl:call-template> ],
-                                    color : '#DA81F5',
-                                    stack: 0,
-                                    yAxis: 0,
-                                    visible: false
+                                    yAxis: 1
                                 } ]
                     };
                     var chartchartCredibility = new Highcharts.Chart(jQuery.extend(true, {}, chartCredibilityOptions));

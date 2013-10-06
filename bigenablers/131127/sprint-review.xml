@@ -3,18 +3,18 @@
 
 <sprintreview folder="131127" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="BigEnablers">
-        <member type="productowner">Marius Swanepoel</member>
-        <member type="scrummaster">Johan Tré</member>
-        <member type="modeler">Mark Lebegge </member>
-        <member type="modeler">Veerle Merckx </member>
-        <member type="hands-on">Bart Temmerman </member>
-        <member type="hands-on">Arnd Rechenburg</member>
-        <member type="hands-on">Peter Huysman</member>
-        <member type="hands-on">Priyanka Sharma</member>
-        <member type="tester">Marcin Zimniak </member>
-        <member type="hands-on">Frankie Bollaert</member>
-        <member type="hands-on">Lander Vandergucht</member>              
-        <member type="hands-on">Stefan De Smit</member>
+        <member type="productowner" capacity="0">Marius Swanepoel</member>
+        <member type="scrummaster" capacity="0">Johan Tré</member>
+        <member type="modeler" capacity="0">Mark Lebegge </member>
+        <member type="modeler" capacity="0">Veerle Merckx </member>
+        <member type="hands-on" capacity="0">Bart Temmerman </member>
+        <member type="hands-on" capacity="0">Arnd Rechenburg</member>
+        <member type="hands-on" capacity="0">Peter Huysman</member>
+        <member type="hands-on" capacity="0">Priyanka Sharma</member>
+        <member type="tester" capacity="0">Marcin Zimniak </member>
+        <member type="hands-on" capacity="0">Frankie Bollaert</member>
+        <member type="hands-on" capacity="0">Lander Vandergucht</member>              
+        <member type="hands-on" capacity="0">Stefan De Smit</member>
     </team>
 
     <intro>

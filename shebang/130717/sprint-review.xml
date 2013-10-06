@@ -3,10 +3,10 @@
 
 <sprintreview folder="130717" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
-        <member type="productowner">Marius Swanepoel</member>
-        <member type="scrummaster">Johan Tré</member>
-        <member type="hands-on">Thomas Martens</member>
-        <member type="hands-on">Stefan De Smit</member>
+        <member capacity="0" type="productowner">Marius Swanepoel</member>
+        <member capacity="0" type="scrummaster">Johan Tré</member>
+        <member capacity="12" type="hands-on">Thomas Martens</member>
+        <member capacity="6" type="hands-on">Stefan De Smit</member>
     </team>
     <stories>
         <story title="Tech 1: Build simple PDS from it." state="story done" points="8">

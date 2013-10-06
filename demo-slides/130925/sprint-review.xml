@@ -3,8 +3,8 @@
 
 <sprintreview folder="130925" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="BigEnablers">
-        <member type="productowner">Marius Swanepoel</member>
-        <member type="scrummaster">Johan Tré</member>
+        <member capacity="0" type="productowner">Marius Swanepoel</member>
+        <member capacity="0" type="scrummaster">Johan Tré</member>
         <member type="modeler" capacity="12">Mark Lebegge </member>
         <member type="modeler" capacity="12">Veerle Merckx </member>
         <member type="hands-on" capacity="12">Bart Temmerman </member>

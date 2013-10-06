@@ -3,13 +3,13 @@
 
 <sprintreview folder="131120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="Shebang">
-        <member type="productowner">Marius Swanepoel</member>
-        <member type="scrummaster">Johan Tré</member>
-        <member type="hands-on">Thomas Martens</member>
-        <member type="hands-on">Stefan De Smit</member>
-        <member type="hands-on">Maciej Moczkowski</member>
-        <member type="hands-on">Dominik Plichta</member>
-        <member type="hands-on">Jürgen Reynaert</member>
+        <member capacity="0" type="productowner">Marius Swanepoel</member>
+        <member capacity="0" type="scrummaster">Johan Tré</member>
+        <member capacity="0" type="hands-on">Thomas Martens</member>
+        <member capacity="0" type="hands-on">Stefan De Smit</member>
+        <member capacity="0" type="hands-on">Maciej Moczkowski</member>
+        <member capacity="0" type="hands-on">Dominik Plichta</member>
+        <member capacity="0" type="hands-on">Jürgen Reynaert</member>
     </team>
     <intro>
         <slides>

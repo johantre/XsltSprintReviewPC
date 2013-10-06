@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:import href="scrum-tools/capacity-template.xsl" />
 <xsl:import href="scrum-tools/credibility-template.xsl" />
 <xsl:import href="scrum-tools/burndown-template.xsl" />
 <xsl:import href="scrum-tools/chucknorris-template.xsl" />
@@ -76,11 +77,12 @@
                             <section class="slide" align="left"><!-- Team slide. -->
                                 <div class="info">
                                 <table align="center">
+                                        <tr><td colspan="4"><h3 class="center">Team Composition</h3><br/></td></tr>
+
                                         <tr><td align="center">
-                                            <h3 class="center">Team Composition</h3><br />
                                             <p class="team">
                                             <table align="center">
-                                                <tr><td align="center"><span class="caption">Scrum Team Members: </span></td></tr>
+                                                <tr><td align="center"><span class="caption" style="white-space: nowrap">Scrum Team Members: </span></td></tr>
                                                 <xsl:for-each select="member[not(@type='scrummaster')][not(@type='productowner')]"><tr><td align="center"><span class="content">&#8226;<xsl:copy-of select="." /></span></td></tr></xsl:for-each>
                                             </table>
                                             </p>
@@ -97,6 +99,19 @@
                                             </table>
                                             </p>
                                             </td>
+                                            <td><br/></td>
+                                            <td><br/></td>
+                                            <td>
+                                                <tr><td align="right"><h4 class="center">Capacity trend for <xsl:value-of select="/sprintreview/team/@name" /></h4></td></tr>
+                                                <tr><td align="right">
+                                                        <xsl:call-template name="capacity-template">
+                                                            <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
+                                                            <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                            <xsl:with-param name="thissprintfolder" select="$sprintfolder" />
+                                                        </xsl:call-template>
+                                                    </td>
+                                                </tr>
+                                            </td>                                            
                                         </tr>
                                    </table>
                                 </div>

@@ -76,7 +76,46 @@
                 <xsl:with-param name="runningcount" select="1"/>
                 <xsl:with-param name="sprintlocation" select="1" />
             </xsl:call-template>
-        
     </xsl:template>
+
+    <xsl:template name="listhandsoncapacity" >
+        <xsl:param name="releasedoc" />
+        <xsl:param name="thissprintfolder" />
+        
+        <xsl:for-each select="$releasedoc//sprints/sprint">
+            <xsl:variable name="fetchedfolder" select="."/>
+            <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
+            <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='hands-on']/@capacity)" />,
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="listtestercapacity" >
+        <xsl:param name="releasedoc" />
+        <xsl:param name="thissprintfolder" />
+        
+        <xsl:for-each select="$releasedoc//sprints/sprint">
+            <xsl:variable name="fetchedfolder" select="."/>
+            <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
+            <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='tester']/@capacity)" />,
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="listmodelercapacity" >
+        <xsl:param name="releasedoc" />
+        <xsl:param name="thissprintfolder" />
+        
+        <xsl:for-each select="$releasedoc//sprints/sprint">
+            <xsl:variable name="fetchedfolder" select="."/>
+            <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
+            <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='modeler']/@capacity)" />,
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+
 
 </xsl:stylesheet>
