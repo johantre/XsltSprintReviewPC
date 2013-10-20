@@ -24,7 +24,7 @@
   list-style: none;
   margin-left: 0px;
   padding: 10px;
-  background-color: #FFFCD6;
+  background-color: #E0ECF8;
   border: 1px solid #CCCCCC;
   border-radius: 15px;
 }
@@ -46,7 +46,7 @@
 }
 .tomtom-container .slide {
   background-position: center;
-  text-shadow: #cccccc 0.1em 0.1em 0.1em;
+  text-shadow: #CCC 0.1em 0.1em 0.1em;
 }
 .tomtom-container .slide header {
   border-bottom: 3px solid #ccc;
@@ -69,7 +69,7 @@
 	   font-weight: regular;
 	   font-size: 5em;
 	   font-family: "Impact", sans-serif;
-	   color: #BDBDBD;
+	   color: #E0ECF8;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -83,7 +83,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  
-  color: #888;
+  color: #0B2161;
 }
 
 .tomtom-container .slide h2 {
@@ -139,7 +139,7 @@
   font-size: 2em;
   font-style: italic;
   padding: 1em 2em;
-  color: #000;
+  color: #0B2161;
   border-left: 5px solid #ccc;
 }
 .tomtom-container .slide blockquote p {
