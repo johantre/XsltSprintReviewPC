@@ -2,21 +2,20 @@
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
 <sprintreview folder="130724" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="BigEnablers">
-        <member type="productowner" capacity="0">Marius Swanepoel</member>
-        <member type="scrummaster" capacity="0">Johan Tré</member>
-        <member type="modeler" capacity="13">Mark Lebegge </member>
-        <member type="modeler" capacity="10">Veerle Merckx </member>
-        <member type="modeler" capacity="0">Rob Soetewey</member>
-        <member type="hands-on" capacity="4">Bart Temmerman </member>
-        <member type="hands-on" capacity="4">Christel Fiers</member>
-        <member type="hands-on" capacity="7">Arnd Rechenburg</member>
-        <member type="hands-on" capacity="12">Peter Huysman</member>
-        <member type="hands-on" capacity="13">Priyanka Sharma</member>
-        <member type="tester" capacity="5">Barbara Samin </member>
-        <member type="tester" capacity="11">Marcin Zimniak </member>
-        <member type="hands-on" capacity="0"><font COLOR="DarkGray">Frankie Bollaert</font></member>
-        <member type="hands-on" capacity="0"><font COLOR="DarkGray">Lander Vandergucht</font></member>
+    <team name="ISTBackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="0">Gauthier Rossion </member>
+        <member type="hands-on" capacity="9">Marnix De Groote </member>
+        <member type="hands-on" capacity="9">Martijn Evens </member>
+        <member type="hands-on" capacity="9">Arnd Rechenburg </member>
+        <member type="hands-on" capacity="9">Ignacio Errico </member>
+        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
+        <member type="tester" capacity="9">Blaise Braye </member>
+        <member type="tester" capacity="9">Annelies Ivens </member>        
+        <member type="tester" capacity="9">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
     </team>
 
     <intro>

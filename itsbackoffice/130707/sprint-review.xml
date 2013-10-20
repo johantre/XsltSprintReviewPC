@@ -2,21 +2,20 @@
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
 <sprintreview folder="130707" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="BigEnablers">
-        <member type="productowner" capacity="0">Marius Swanepoel</member>
-        <member type="scrummaster" capacity="0">Johan Tré</member>
-        <member type="modeler" capacity="9">Mark Lebegge</member>
-        <member type="modeler" capacity="7">Veerle Merckx</member>
-        <member type="modeler" capacity="0">Charlotte De Gendt</member>
-        <member type="hands-on" capacity="0">Frankie Bollaert</member>
-        <member type="hands-on" capacity="7">Bart Temmerman </member>
-        <member type="hands-on" capacity="8">Christel Fiers</member>
-        <member type="hands-on" capacity="9">Arnd Rechenburg</member>
-        <member type="hands-on" capacity="6">Peter Huysman</member>
-        <member type="hands-on" capacity="7">Priyanka Sharma</member>
-        <member type="tester" capacity="4.5">Barbara Samin </member>
-        <member type="tester" capacity="2">Marcin Zimniak </member>
-        <member type="assisted" capacity="0">Lander Vandergucht</member>
+    <team name="ISTbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="0">Gauthier Rossion </member>
+        <member type="hands-on" capacity="9">Marnix De Groote </member>
+        <member type="hands-on" capacity="9">Martijn Evens </member>
+        <member type="hands-on" capacity="9">Arnd Rechenburg </member>
+        <member type="hands-on" capacity="9">Ignacio Errico </member>
+        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
+        <member type="tester" capacity="9">Blaise Braye </member>
+        <member type="tester" capacity="9">Annelies Ivens </member>        
+        <member type="tester" capacity="9">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
     </team>
 
     <stories>
