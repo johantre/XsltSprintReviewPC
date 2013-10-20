@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
 <sprintreview folder="131016" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="ISTBackoffice">
+    <team name="ISTbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
         <member type="scrummaster" capacity="0">Servaas Phlips </member>
         <member type="hands-on" capacity="0">Gauthier Rossion </member>
@@ -10,7 +10,8 @@
         <member type="hands-on" capacity="9">Martijn Evens </member>
         <member type="hands-on" capacity="9">Ignacio Errico </member>
         <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
-        <member type="tester" capacity="9">Blaise Braye </member>
+        <member type="hands-on" capacity="9">Blaise Braye </member>
+        <member type="tester" capacity="9">Christophe Lemoine </member>        
         <member type="tester" capacity="9">Annelies Ivens </member>        
         <member type="tester" capacity="9">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
