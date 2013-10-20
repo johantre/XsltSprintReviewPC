@@ -83,7 +83,7 @@
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
-                                    color : 'yellowgreen',
+                                    color : '#A9D0F5',
                                     stack: 1,
                                     yAxis: 1
                                 },

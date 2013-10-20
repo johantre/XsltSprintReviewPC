@@ -89,7 +89,7 @@
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
-                                    color : 'red',
+                                    color : '#08298A',
                                     stack: 0,
                                     yAxis: 0
                                 },
@@ -102,7 +102,7 @@
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
-                                    color : '#BFFF00',
+                                    color : '#2E64FE',
                                     stack: 0,
                                     yAxis: 0
                                 },
@@ -115,7 +115,7 @@
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                              </xsl:call-template> ],
-                                    color : '#6ba100',
+                                    color : '#A9D0F5',
                                     stack: 0,
                                     yAxis: 0
                                 } ]
