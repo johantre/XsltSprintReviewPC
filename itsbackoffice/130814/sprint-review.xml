@@ -1,0 +1,274 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="130814" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="BigEnablers">
+        <member type="productowner" capacity="0">Marius Swanepoel</member>
+        <member type="scrummaster" capacity="0">Johan Tré</member>
+        <member type="modeler" capacity="0">Mark Lebegge </member>
+        <member type="modeler" capacity="1">Veerle Merckx </member>
+        <member type="modeler" capacity="13">Rob Soetewey</member>
+        <member type="hands-on" capacity="13">Bart Temmerman </member>
+        <member type="hands-on" capacity="7">Christel Fiers</member>
+        <member type="hands-on" capacity="10">Arnd Rechenburg</member>
+        <member type="hands-on" capacity="1">Peter Huysman</member>
+        <member type="hands-on" capacity="13">Priyanka Sharma</member>
+        <member type="tester" capacity="3.5">Barbara Samin </member>
+        <member type="tester" capacity="1">Marcin Zimniak </member>
+        <member type="hands-on" capacity="8">Frankie Bollaert</member>
+        <member type="hands-on" capacity="0"><font COLOR="DarkGray">Lander Vandergucht</font></member>
+    </team>
+
+    <intro>
+        <slides>
+            <slide title="Modeling work" type="sprint-intro">
+                <ul>
+                    <li>Names model has been extended with Phonemes.</li>
+                    <li>Update Names model in TTOM-Core TTOM-Apt TTOM-Poi.</li>
+                </ul>
+                <h5>Solution:</h5>
+                <ul>
+                    <li><a target="_blank" href="http://help.tomtomgroup.com/specs/ttom/TTOM-3_16-SNAPSHOT/t_object.htm">TTOM-3_16-1_0-SNAPSHOT</a>.</li>
+                </ul>
+            </slide>
+        </slides>
+    </intro>
+
+    <stories>
+         <story title="MAD on vPDS (loading the file to violation DS)" state="story done" points="5" mksid="1413166">
+            <slides>
+                <slide type="story-context">
+                    <p>
+                    <h5>Context</h5>
+                    <ul>
+                        <li>What: Verify if the vPDS is according to all involved models</li>
+                    </ul>
+                    </p>
+                    <p>
+                    <h5>This sprint</h5>
+                    <ul>
+                        <li>Implement a tool for loading violations into vs-db.</li>
+                    </ul>
+                    <img src="img/MADOnPDS_software_architecture.png" alt="MADOnPDS software architecture" />
+                    </p>
+                </slide>
+
+                <slide type="story-narrative">
+                    <p>
+                    <h5>Goals</h5>
+                    <ul>
+                        <li>Load violations into QA-VS-DB (post process of the MADOnPDS product-create-job)</li>
+                        <li>Enable (configurable) WMS layer in QA-VS-WS</li>
+                    </ul>
+                    </p>
+                    <p>
+                    <h5>Remark</h5>
+                    <ul>
+                        <li>Testing shows bug in WMS rebuild</li>
+                    </ul>
+                    </p>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo</h5>
+                    <ul>
+                        <li><a href="http://localhost:8080/qa-vs-webservice-4.1.0-20130813.121755-76/violationstore" alt="violation store web service">qa-vs-ws</a></li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+         <story title="Load Voice Maps: Extend GDF schema &amp; tools for phonemes" state="story done" points="8" mksid="1441935">
+            <slides>
+                <slide type="story-context">
+                    <h5>Context:</h5>
+                    <ul>
+                        <li>Names model has been extended with Phonemes. (TTOM-3_16-1_0-SNAPSHOT)</li>
+                    </ul>
+                    <h5>Problems and Solutions:</h5>
+                    <ul>
+                        <li>Extended AllCodes generator for Phoneme feature and attributes b/c the extension of the model with a Phoneme as a specialization of Name wasn't supported.</li>
+                        <li>Introduced name type for GDF name records to differentiate between Name feature and Phoneme feature.</li>
+                        <li>Added functionality to add sub attributes to existing composite attributes. In a post process the Phoneme feature / attributes will be created and added to existing composite attributes e.g. Name Transliteration Set.</li>
+                        <li>Adapt Name Normalization to take attributes into account. Phonemes could have the same Phoneme text but different additional attributes. This results in a conflict with the Name Normalization.</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Create a framework (GDF Schema, GDF writer, name / attribute libraries where the Phoneme post process could work on.)</li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li>A first test version of the Phoneme post process is running already successfully using the updated framework inside the process chain. The results are checked by using SQL queries. You could see the result in the demo also.</li>
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <img src="img/phoneme.png" />
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Fix Creating superfluous Artif. CityC. + Link Ind. Area" state="story done" points="3" mksid="1441917">
+            <slides>
+                <slide type="story-context">
+                    <h5>problem:</h5>
+                    <ul>
+                        <li>TIF has seven decimal digit coordinates where as POIARCHIVE has six decimal digit</li>
+                        <li>Creates extra Artificial CityCenters when CityCenter not found</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li>Create Artificial CityCenter in such a way that works for TIF 
+                    and POIARCHIVE input both and without creating extra Artificial CityCenter</li>
+                    <li>Modify link from CityCenter to index area also</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Create Artificial CityCenter if CityCenter does not exist in a range of coordinates</li>
+                        <li>Apply range coordinate check for link to index area also</li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li>No Superfluous Artificial CityCenter</li>       
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Validation</h5>
+                    <ul>
+                        <li>Create some mock input data</li>
+                        <li>Run through old and new TIF2TTOM toolbox</li>
+                        <li>Compare Artificial CityCenter</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Load MN Admin to vPDS(Bug Fix)" state="story done" points="3" mksid="1385513">
+            <slides>
+                <slide type="story-context">
+                    <h5>Problems:</h5>
+                    <ul>
+                        <li>Admin Place M Attributes Last Annexation(N1), Currency Date(N2), Last Update(N3) stored as String</li>
+                        <li>Admin Place M id prefix is not stable</li>
+                    </ul>
+                    <h5>Solutions:</h5>
+                    <ul>
+                        <li>Adapt toolbox to store these attributes in "Date" format</li>
+                        <li>Adapat Webviewer also for Date format attributes</li>
+                        <li>Adapt model and AllCodes to make Admin Place M id prefix stable</li>                     
+                    </ul>
+                </slide>
+                <slide type="story-demo">
+                    <h5>Demo slides</h5>
+                    <ul>
+                    <li><a target="_blank" href="http://10.1.5.45:8080/">Admin Place M Demo</a>.</li>
+                </ul>
+                </slide>
+            </slides>
+        </story>
+    </stories>
+
+    <finish>
+        <slides>
+            <slide type='story-code-q'>
+                <p>
+                <table class="statistics" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+					<!-- Table Header -->
+					<thead>
+						<tr>
+							<th>Component</th>
+							<th></th>
+							<th>value</th>
+							<th></th>
+							<th>link</th>
+						</tr>
+					</thead>
+					<!-- Table Header -->
+				
+					<!-- Table Body -->
+					<tbody>
+				
+						<tr>
+							<td>gdf-converters</td>
+							<td class="topic">line coverage</td>
+							<td>44% (9366/21082)</td>
+							<td class="positive">+0 (9388/21301)</td>
+							<td><a target="_blank" href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-unit-test-snapshot/">report</a> </td>
+						</tr><!-- Table Row -->
+				
+						<tr class="even">
+							<td>lib</td>
+							<td class="topic">line coverage</td>
+							<td>55% (16051/29089)</td>
+							<td class="positive">+0 (16119/29228)</td>
+							<td><a target="_blank"  href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-unit-test-snapshot/">report</a> </td>
+						</tr><!-- Table Row -->
+				
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr><!-- blank row -->
+				
+						<tr class="even">
+							<td>MADonPDS</td>
+							<td class="topic">total quality</td>
+							<td>89.9%</td>
+							<td class="not-applicable">baseline</td>
+							<td><a target="_blank"  href="http://sonar.tomtomgroup.com:8080/sonar/dashboard/index/com.tomtom.cp.pc:madonpds">report</a></td>
+						</tr>
+				
+						<tr>
+							<td></td>
+							<td class="topic">technical debt</td>
+							<td>5.2%</td>
+							<td class="not-applicable">baseline</td>
+							<td></td>
+						</tr>
+				
+						<tr class="even">
+							<td>violation-writer</td>
+							<td class="topic">total quality</td>
+							<td>93,2%</td>
+							<td class="not-applicable">baseline</td>
+							<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/184370">report</a></td>
+						</tr>
+						
+						<tr class="even">
+							<td></td>
+							<td class="topic">technical debt</td>
+							<td>3,9%</td>
+							<td class="not-applicable">baseline</td>
+							<td></td>
+						</tr>
+				
+						<tr class="even">
+							<td>phonemes</td>
+							<td class="topic">total quality</td>
+							<td>85.3%</td>
+							<td class="not-applicable">baseline</td>
+							<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
+						</tr>
+						
+						<tr class="even">
+							<td></td>
+							<td class="topic">technical debt</td>
+							<td>4.9%</td>
+							<td class="not-applicable">baseline</td>
+							<td></td>
+						</tr>
+				
+					</tbody>
+					<!-- Table Body -->
+				
+				</table>
+			</p>
+            </slide>
+        </slides>
+    </finish>
+
+</sprintreview>

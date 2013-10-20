@@ -1,0 +1,266 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="130925" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSBackoffice">
+        <member type="productowner" capacity="0">Marius Swanepoel</member>
+        <member type="scrummaster" capacity="0">Johan Tré</member>
+        <member type="modeler" capacity="12">Mark Lebegge </member>
+        <member type="modeler" capacity="9">Veerle Merckx </member>
+        <member type="hands-on" capacity="12">Bart Temmerman </member>
+        <member type="hands-on" capacity="12">Arnd Rechenburg</member>
+        <member type="hands-on" capacity="3">Frankie Bollaert</member>
+        <member type="hands-on" capacity="1">Priyanka Sharma</member>
+        <member type="tester" capacity="12">Marcin Zimniak </member>
+        <member type="hands-on" capacity="12">Lander Vandergucht</member>              
+        <member type="hands-on" capacity="0">Stefan De Smit</member>
+    </team>
+
+    <intro>
+        <slides>
+            <slide title="The Big Picture" type='story-timeline'>
+                <img src="img/timeline.jpg" alt="demo: diff" />
+            </slide>
+        </slides>
+    </intro>
+
+    <stories>
+         <story title="Load Voice Maps" state="story not-done" points="8" mksid="1466420" percentage-done="95">
+            <slides>
+                <slide type="story-context">
+                    <h5>Context</h5>
+                    <ul>
+                        <li>Challenges: integration of phonemes into Source2TTOM</li>
+                        <li>Difficulties: product has phonemes for names, name components, phoneme shortnames, phoneme dataset link</li>
+                    </ul>
+                    <h5>Solution</h5>
+                    <ul>
+                        <li>Model TTOM-3.16 was enabled with phonemes</li>
+                        <li>The phoneme post process (in Source2TTOM) is updated according the new phoneme/name model</li>
+                        <li><a target="_blanc" href="http://vos.intra.local/display/CPEQAE/Phonemes+vPDS+integration">Architecture</a></li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>phonemes-ws on a local production server + integrate into Source2TTOM chain</li>
+                        <li>have phonemes (vPDS) for: name, short names, airport codes, name components</li>
+                        <li>hand over web service to Phonemes team (documentation)</li>
+                    </ul>
+                    <h5>Todo:</h5>
+                    <ul>
+                        <li>more elaborate testing</li>
+                        <li>E2E validation completion</li>
+                        <li>make it run on bigger datasets (e.g. BEL, UC3)</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+
+        <story title="Validate 3.16" state="story done" points="5" mksid="1466617">
+            <slides>
+                <slide type="story-context">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>TTOM 3_16 is milestone 2.1 final model</li>
+                        <li>We need to run and analyze MAD on final model</li>
+                        <li>enabled MAD in TIF2TTOM development pcontrol chain</li>
+                        <li>better use of equinix L1: directly use from jenkins</li>
+                    </ul>
+                    <h5>Solution:</h5>
+                    <ul>
+                        <li><a target="_blanc" href="http://help.tomtomgroup.com/specs/">TTOM-3_16-1.2 model documentation and TIF2TTOM mapping documentation</a></li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Issues fixed</h5>
+                    <ul>
+                        <li>fix missing 'Centre Point of Feature belonging to Feature' relationships</li>
+                        <li>Missing Locality In Country association fixed</li>
+                    </ul>                    
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Open issues</h5>
+                    <ul>
+                        <li>Seamed id's are not always unique (MKS 1482031)</li>
+                        <li>Violations present on Locality index Adornments (MKS 1480532)</li>
+                        <li>Still some issues with phonemes</li>
+                    </ul>                    
+                </slide>
+           </slides>
+        </story>
+
+        <story title="Analyse the reading visuals. (without LOD 4)" state="story done" points="3" mksid="1466454">
+            <slides>
+                <slide type="story-context">
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>Try out visualization data (without LOD4) in CDP-API</li>
+                        <li>Quantify and analyse memory usage</li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li>Understanding of mem usage</li>
+                    </ul>
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Try out visualization data in CDP-API:</h5>
+                    <ul>
+                        <li>composite TTOM-display model created, as display service returns combination of 2D and 3D data</li>
+                        <li>Ran on small sample data</li>
+                        <li>Still out of memory issues on hadoop</li>
+                        <li>current agreement on hadoop: 2GB of memory per mapper</li>
+                        <li>default hadoop timeout is 10 minutes, so load of 1 tile can't be too slow either</li> 
+                    </ul>                
+                </slide>
+                <slide type="story-narrative">
+                    <h5>Memory analysis:</h5>
+                    <ul>
+                        <li>Analysed 1 big tile > 800MB</li>
+                        <li>500MB Strings </li>
+                        <li>317MB Textures
+                        <ul>
+                            <li>base64 encoded => * 1.3 </li>
+                            <li>UTF-16 => * 2 </li>
+                            <li>Potential for 180MB savings </li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <img src="./img/mem-pie-chart.png" height="275"/>
+                </slide>
+                <slide type="story-demo">
+                    <h5>2DCM</h5>
+                    <img src="./img/Building2DCM.png"/>                   
+                </slide>
+                <slide type="story-demo">
+                    <h5>3D Landmarks</h5>
+                    <img src="./img/3D_Landmark.png"/>                   
+                </slide>
+                <slide type="story-demo">
+                    <h5>BuildingAcm</h5>
+                    <img src="./img/BuildingAcm.png"/>                   
+                </slide>
+                <slide type="story-demo">
+                    <h5>BuildingBlockAcm</h5>
+                    <img src="./img/BuildingBlockAcm.png"/>                   
+                </slide>
+            </slides>
+        </story>
+
+        <story title="NCS22: Add language code 'Hebrew Latin' for ISR" state="story done" points="1" mksid="1455982">
+            <slides>
+                <slide>
+                    <h5>Goals:</h5>
+                    <ul>
+                        <li>NCS22: Make it possible to load Names that have TIF Language Code Hebrew Latin </li>
+                    </ul>
+                    <h5>Problem description:</h5>
+                    <ul>
+                        <li>Hebrew Latin (Language Code) is not part of the TIF2TTOM converter and TIF2TTOM mapping documentation. It needs to be added to both.</li>
+                    </ul>
+                    <h5>Value delivered:</h5>
+                    <ul>
+                        <li>Hebrew Latin is added to TIF2TTOM converter and mapping documentation. It will be returned as Language Code "Hebrew", Notation Alphabet "Latin"</li>
+                    </ul>
+                </slide>
+            </slides>
+        </story>
+        
+   </stories>        
+
+    <finish>
+        <slides>
+				  <slide type='story-code-q'>
+						<p>
+							<table class="statistics" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+								<!-- Table Header -->
+								<thead>
+									<tr>
+										<th>Component</th>
+										<th></th>
+										<th>value</th>
+										<th></th>
+										<th>link</th>
+									</tr>
+								</thead>
+								<!-- Table Header -->
+					
+								<!-- Table Body -->
+								<tbody>
+					
+									<tr>
+										<td>gdf-converters</td>
+										<td class="topic">line coverage</td>
+										<td>45% (10044/22095)</td>
+										<td class="positive">+1% (+678/+1013)</td>
+										<td>
+											<a target="_blank"
+												href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/gdf-converters/job/ttom-gdf-converters-unit-test-snapshot/">report</a>
+										</td>
+									</tr><!-- Table Row -->
+					
+									<tr class="even">
+										<td>lib</td>
+										<td class="topic">line coverage</td>
+										<td>55% (16134/29240)</td>
+										<td class="positive">+0 (+83/+151)</td>
+										<td>
+											<a target="_blank"
+												href="http://ci.tomtomgroup.com:8080/jenkins/view/Productcreate/view/save-as/view/save-as-split/view/lib/job/ttom-lib-unit-test-snapshot/">report</a>
+										</td>
+									</tr><!-- Table Row -->
+					
+									<tr class="even">
+										<td>JBehave tests</td>
+										<td class="topic">#</td>
+										<td>1272</td>
+										<td class="positive">+50 (Phonemes)</td>
+										<td>
+											<a target="_blank"
+												href="http://jenkins.tomtomgroup.com/job/jbehave-ttom3_16-1.0-run-on-gdf/42/TAF_Report/">report</a>
+										</td>
+									</tr>
+					
+									<tr class="even">
+										<td>MADonPDS</td>
+										<td class="topic">total quality</td>
+										<td>93.6%</td>
+										<td class="postive">+4.6%</td>
+										<td>
+											<a target="_blank"
+												href="http://sonar.tomtomgroup.com:8080/sonar/dashboard/index/com.tomtom.cp.pc:madonpds">report</a>
+										</td>
+									</tr>
+					
+									<tr>
+										<td></td>
+										<td class="topic">technical debt</td>
+										<td>4.1%</td>
+										<td class="positive">-2.5%</td>
+										<td></td>
+									</tr>
+					
+									<tr class="even">
+										<td>phonemes-ws</td>
+										<td class="topic">total quality</td>
+										<td>90.1%</td>
+										<td class="positive">+4.8%</td>
+										<td><a target="_blank"  href="http://besrvup-son01:8080/sonar/dashboard/index/com.tomtom.cp.pc.phonemes:phonemes?did=1">report</a></td>
+									</tr>
+					
+								</tbody>
+								<!-- Table Body -->
+					
+							</table>
+						</p>
+            </slide>
+            
+            <slide title="" type='whats-next'>
+                <blockquote class="fragment">Finish work for MS 2.1</blockquote>
+                <blockquote class="fragment">Start work for MS 2.2</blockquote>
+            </slide>            
+        </slides>
+    </finish>
+
+
+</sprintreview>
