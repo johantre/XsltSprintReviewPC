@@ -102,15 +102,17 @@
                                             <td><br/></td>
                                             <td><br/></td>
                                             <td>
-                                                <tr><td align="right"><h4 class="center">Capacity trend for <xsl:value-of select="/sprintreview/team/@name" /></h4></td></tr>
-                                                <tr><td align="right">
-                                                        <xsl:call-template name="capacity-template">
-                                                            <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
-                                                            <xsl:with-param name="releasedoc" select="$releasedoc" />
-                                                            <xsl:with-param name="thissprintfolder" select="$sprintfolder" />
-                                                        </xsl:call-template>
-                                                    </td>
-                                                </tr>
+                                                <table>
+                                                    <tr><td align="right"><h4 class="center">Capacity trend for <xsl:value-of select="/sprintreview/team/@name" /></h4></td></tr>
+                                                    <tr><td align="right">
+                                                            <xsl:call-template name="capacity-template">
+                                                                <xsl:with-param name="teamname" select="/sprintreview/team/@name" />
+                                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                                <xsl:with-param name="thissprintfolder" select="$sprintfolder" />
+                                                            </xsl:call-template>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </td>                                            
                                         </tr>
                                    </table>
