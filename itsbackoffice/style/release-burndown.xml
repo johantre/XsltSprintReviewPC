@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releasedata>
     <sprints>
-        <sprint name="01">130707</sprint>
-        <sprint name="02">130724</sprint>
-        <sprint name="03">130814</sprint>
-        <sprint name="04">130904</sprint>
-        <sprint name="05">130925</sprint>
-        <sprint name="01">131016</sprint>
-        <sprint name="02">131106</sprint>
-        <sprint name="03">131127</sprint>
-        <sprint name="04">131218</sprint>
+        <sprint name="01">131025</sprint>
+        <sprint name="02">131108</sprint>
+        <sprint name="03">131122</sprint>
+        <sprint name="04">131206</sprint>
+        <sprint name="05">131220</sprint>
     </sprints>
     <releases>
-        <release id="01" name="MS 2.1" totalpoints="91">
+        <release id="01" name="Ver 2.1" totalpoints="91">
             <sprintfolders>
-                <sprintfolder>130707</sprintfolder>
-                <sprintfolder>130724</sprintfolder>
-                <sprintfolder>130814</sprintfolder>
-                <sprintfolder>130904</sprintfolder>
-                <sprintfolder>130925</sprintfolder>
-            </sprintfolders>
-        </release>
-        <release id="02" name="MS 2.2" totalpoints="150">
-            <sprintfolders>
-                <sprintfolder>131016</sprintfolder>
-                <sprintfolder>131106</sprintfolder>
-                <sprintfolder>131127</sprintfolder>
-                <sprintfolder>131218</sprintfolder>
+                <sprintfolder>131025</sprintfolder>
+                <sprintfolder>131108</sprintfolder>
+                <sprintfolder>131122</sprintfolder>
+                <sprintfolder>131206</sprintfolder>
+                <sprintfolder>131220</sprintfolder>
             </sprintfolders>
         </release>
     </releases>
