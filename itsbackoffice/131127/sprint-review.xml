@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
 <sprintreview folder="131127" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="ISTbackoffice">
+    <team name="ITSbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
         <member type="scrummaster" capacity="0">Servaas Phlips </member>
         <member type="hands-on" capacity="0">Gauthier Rossion </member>
