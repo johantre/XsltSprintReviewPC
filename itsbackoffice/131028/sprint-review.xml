@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="131028" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="0">Gauthier Rossion </member>
+        <member type="hands-on" capacity="9">Marnix De Groote </member>
+        <member type="hands-on" capacity="9">Martijn Evens </member>
+        <member type="hands-on" capacity="9">Ignacio Errico </member>
+        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="9">Blaise Braye </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member>        
+        <member type="tester" capacity="9">Annelies Ivens </member>        
+        <member type="tester" capacity="9">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
+    </team>
+
+    <intro>
+        <slides>
+            <slide title="Sprint 01" type="sprint-goal">
+                    <h5>First sprint in "improved" mode</h5>
+                    <ul>
+                        <li>Having a first "compared sprint" to velocity vs. capacity</li>
+                    </ul>
+                    <h5>Practically</h5>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        <li>Conclusion: </li>
+                    </ul>
+                    <h5>Solution</h5>
+                    <ul>
+                        <li></li>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        <li></li>
+                    </ul>
+            </slide>
+        </slides>
+    </intro>
+
+    <stories>
+        <story title="As an Obstruction Manager I want to CRUD detours data (map and stop data excluded)  " state="story done" points="5" mksid="MOBITS-537"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to add and remove impacted stops to the detour " state="story done" points="3" mksid="MOBITS-540"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to add and remove stop mappings to the detour  " state="story not-done" points="3" mksid="MOBITS-541"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to draw an obstruction as a point on the detour map    " state="story done" points="5" mksid="MOBITS-600"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As a Planning Manager I want to view the Job logs in the Import Hastus UI   " state="story done" points="2" mksid="MOBITS-603"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to save and view an obstruction on the detour map  " state="story done" points="2" mksid="MOBITS-542"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Deal with spatial types " state="story done" points="2" mksid="MOBITS-604"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Relocate transmodel.netex and import planning services  " state="story not-done" points="1" mksid="MOBITS-574"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="switch to EF 6  " state="story not-done" points="2" mksid="MOBITS-595"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Use Oracle as repository for NeTEx and Obstruction and Detours  " state="story done" points="2" mksid="MOBITS-565"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Architecture Hierarchical Selection " state="story done" points="1" mksid="MOBITS-605"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Update stylecop rules and resharper template    " state="story done" points="1" mksid="MOBITS-576"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Give assistance to CRP AFC-BO 06.06 (PPT Netex export)  " state="story done" points="1" mksid="MOBITS-568"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+    <finish>
+        <slides>
+            <slide title="" type='whats-next'>
+                <blockquote class="fragment">Finish work for previous sprint</blockquote>
+                <blockquote class="fragment">Start work for next sprint</blockquote>
+            </slide>            
+        </slides>
+    </finish>
+
+
+</sprintreview>
