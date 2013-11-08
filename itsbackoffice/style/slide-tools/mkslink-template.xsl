@@ -8,7 +8,7 @@
         
     <xsl:choose>
         <xsl:when test="$id and $id != ''">            
-            <a target="_blank" class="{$state}" href="http://besrvup-mks01:7001/im/issues?selection={$id}"><xsl:value-of select="$title" /></a>
+            <a target="_blank" class="{$state}" href="https://support.prodatamobility.com/tickets/browse/{$id}"><xsl:value-of select="$title" /></a>
         </xsl:when>
         <xsl:otherwise>
             <xsl:value-of select="$title" />        
