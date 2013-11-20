@@ -53,7 +53,8 @@
                             column: {
                                 stacking: 'normal'
                             }                        
-                        },series : [
+                        },
+                        series : [
                                 {
                                     name : 'Velocity (Pts)',
                                     index : 3,
@@ -118,7 +119,11 @@
                                     color : '#A9D0F5',
                                     stack: 0,
                                     yAxis: 0
-                                } ]
+                                } ],
+                         exporting: {
+                            sourceWidth: 700,
+                            sourceHeight: 550,
+                        }
                     };
                     var chartchartCapacity = new Highcharts.Chart(jQuery.extend(true, {}, chartCapacityOptions));
         });

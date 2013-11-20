@@ -97,7 +97,11 @@
                                              </xsl:call-template> ],
                                     color : 'green',
                                     yAxis: 1
-                                } ]
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }                                
                     };
                     var chartchartCredibility = new Highcharts.Chart(jQuery.extend(true, {}, chartCredibilityOptions));
         });

@@ -53,7 +53,11 @@
                                              </xsl:call-template> ],
                                     dashStyle: 'ShortDash', 
                                     color : '#104E8B'
-                                } ]
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
                     };
                     var chart<xsl:value-of select="$releasecount" /> = new Highcharts.Chart(jQuery.extend(true, {}, chart<xsl:value-of select="$releasecount" />options));
         });
