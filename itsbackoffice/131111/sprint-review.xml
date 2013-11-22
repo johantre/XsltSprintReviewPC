@@ -19,11 +19,11 @@
     </team>
 
     <stories>
-        <story title=" Setup Dev and QA Oracle " state="story done" points="2" mksid="MOBITS-565"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" As an Obstruction Manager I want to save and view an obstruction on the detour map" state="story done" points="2" mksid="MOBITS-542"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" As a Planning Manager I want to view the Job logs in the Import Hastus UI " state="story done" points="2" mksid="MOBITS-603"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" As an Obstruction Manager I want to add and remove impacted stops to the detour " state="story done" points="3" mksid="MOBITS-540"><slides><slide type="story-narrative"></slide></slides></story>
         <story title=" As an Obstruction Manager I want to CRUD detours data (map and stop data excluded)" state="story done" points="5" mksid="MOBITS-537"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title=" As an Obstruction Manager I want to add and remove impacted stops to the detour " state="story done" points="3" mksid="MOBITS-540"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title=" As a Planning Manager I want to view the Job logs in the Import Hastus UI " state="story done" points="2" mksid="MOBITS-603"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title=" As an Obstruction Manager I want to save and view an obstruction on the detour map" state="story done" points="2" mksid="MOBITS-542"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title=" Setup Dev and QA Oracle " state="story done" points="2" mksid="MOBITS-565"><slides><slide type="story-narrative"></slide></slides></story>
         <story title=" As an Obstruction Manager I want to edit an obstruction point on the detour map " state="story done" points="1" mksid="MOBITS-601"><slides><slide type="story-narrative"></slide></slides></story>
         <story title=" As an Obstruction Manager I want to be able to search an adress on the map to zoom to the area" state="story done" points="2" mksid="MOBITS-536"><slides><slide type="story-narrative"></slide></slides></story>
         <story title=" As an Obstruction Manager I want to draw a detour on the map" state="story done" points="5" mksid="MOBITS-538"><slides><slide type="story-narrative"></slide></slides></story>
@@ -31,7 +31,8 @@
         <story title=" As an obstruction manager I want to have an extra field endofservice/startofservice/City on an obstruction" state="story done" points="2" mksid="MOBITS-644"><slides><slide type="story-narrative"></slide></slides></story>
         <story title=" As an Obstruction Manager I want to define the overview map view for the printout " state="story done" points="3" mksid="MOBITS-557"><slides><slide type="story-narrative"></slide></slides></story>
         <story title=" As an obstruction manager I want to have a full screen mode for the map of the detours" state="story done" points="2" mksid="MOBITS-651"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" Refactor first pivots obstruction manager " state="story done" points="5" mksid="MOBITS-631"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title=" Test export 2 pdf spike" state="story done" points="2" mksid="MOBITS-661"><slides><slide type="story-narrative"></slide></slides></story>
+        <!-- story title=" Refactor first pivots obstruction manager " state="story done" points="5" mksid="MOBITS-631"><slides><slide type="story-narrative"></slide></slides></story-->
     </stories>
     
 </sprintreview>
