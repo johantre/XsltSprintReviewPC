@@ -11,7 +11,7 @@
         <sprint name="07">140120</sprint>
     </sprints>
     <releases>
-        <release id="01" name="Release 1.0" totalpoints="200">
+        <release id="01" name="Release 1.0" totalpoints="300">
             <sprintfolders>
                 <sprintfolder>131014</sprintfolder>
                 <sprintfolder>131028</sprintfolder>
