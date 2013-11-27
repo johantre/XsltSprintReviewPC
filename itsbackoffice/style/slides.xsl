@@ -119,7 +119,7 @@
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="'story done'" />
-                                        <xsl:with-param name="mksid" select="''" />
+                                        <xsl:with-param name="id" select="''" />
                                         <xsl:with-param name="title" select="@title" />
                                     </xsl:call-template>
                                 </section>
@@ -206,7 +206,7 @@
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="../../@state" />
-                                        <xsl:with-param name="mksid" select="../../@mksid" />
+                                        <xsl:with-param name="id" select="../../@id" />
                                         <xsl:with-param name="title" select="../../@title" />
                                     </xsl:call-template>
                                 </section>
@@ -215,7 +215,7 @@
                                 <section class="slide" style="{@style} text-align: left;">
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="../../@state" />
-                                        <xsl:with-param name="mksid" select="../../@mksid" />
+                                        <xsl:with-param name="id" select="../../@id" />
                                         <xsl:with-param name="title" select="../../@title" />
                                     </xsl:call-template>
                                 </section>
@@ -227,7 +227,7 @@
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="'story done'" />
-                                        <xsl:with-param name="mksid" select="''" />
+                                        <xsl:with-param name="id" select="''" />
                                         <xsl:with-param name="title" select="@title" />
                                     </xsl:call-template>
                                 </section>
@@ -286,7 +286,7 @@
                                 <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
                                     <xsl:call-template name="storyslide">
                                         <xsl:with-param name="state" select="'story done'" />
-                                        <xsl:with-param name="mksid" select="''" />
+                                        <xsl:with-param name="id" select="''" />
                                         <xsl:with-param name="title" select="@title" />
                                     </xsl:call-template>
                                 </section>

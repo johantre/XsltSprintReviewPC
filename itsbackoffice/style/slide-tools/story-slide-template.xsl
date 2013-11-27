@@ -4,7 +4,7 @@
 
 	<xsl:template name="storyslide">
     <xsl:param name="state" />
-    <xsl:param name="mksid" />
+    <xsl:param name="id" />
     <xsl:param name="title" />
             <xsl:choose>
                 <xsl:when test="@type='model-context'">
@@ -38,7 +38,7 @@
             <header>
                 <xsl:call-template name="storyheader">
                     <xsl:with-param name="state" select="$state"/>
-                    <xsl:with-param name="mksid" select="$mksid" />/>
+                    <xsl:with-param name="id" select="$id" />/>
                     <xsl:with-param name="title" select="$title"/>
                 </xsl:call-template>
             </header>
