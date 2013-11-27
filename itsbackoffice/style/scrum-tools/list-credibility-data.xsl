@@ -86,7 +86,7 @@
             <xsl:variable name="fetchedfolder" select="."/>
             <xsl:variable name="sprintdoc" select="document(concat('../../', $fetchedfolder, '/sprint-review.xml'))" />
             <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
-                <xsl:value-of select="sum($sprintdoc//team/member[@type='hands-on'][@type='scrummaster']/@capacity)" />,
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='hands-on']/@capacity) + sum($sprintdoc//team/member[@type='scrummaster']/@capacity)" />,
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
