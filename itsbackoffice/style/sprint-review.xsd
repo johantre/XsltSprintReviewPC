@@ -68,7 +68,7 @@
         <xs:attribute name="points" type="xs:int" use="required" />
         <xs:attribute name="percentage-done" type="xs:string" use="optional" />
         <xs:attribute name="relid" type="xs:string" use="optional" />
-        <xs:attribute name="mksid" type="xs:string" use="optional" />    
+        <xs:attribute name="id" type="xs:string" use="optional" />    
     </xs:complexType>
     
     <xs:simpleType name="folderType">

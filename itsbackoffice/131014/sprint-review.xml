@@ -53,30 +53,30 @@
     </intro>
 
     <stories>
-        <story title="Impl - Adapt the 'Full ITS' Product dev " state="story done" points="2" mksid="MOBITS-523"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Add Generic log feeder " state="story done" points="5" mksid="MOBITS-520"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Add generic logs UI" state="story not-done" points="1" mksid="MOBITS-435"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Add Job Orchestration and Obstruction module to the client installer" state="story done" points="1" mksid="MOBITS-524"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Architectural Design" state="story done" points="0" mksid="MOBITS-431"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Create Dummy Data" state="story done" points="3" mksid="MOBITS-509"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Create Simple Test" state="story done" points="1" mksid="MOBITS-433"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Create Solution" state="story done" points="0" mksid="MOBITS-432"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Crud impacted lines" state="story not-done" points="5" mksid="MOBITS-423"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Find a suitable xml schema definition for importing time of the day from hastus (allow values greater than 23 hours)" state="story done" points="1" mksid="MOBITS-539"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Implement functional feature file" state="story done" points="8" mksid="MOBITS-501"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Integrate Existing Hastus Import Module" state="story not-done" points="2" mksid="MOBITS-502"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - NeTEx Service Impacted Lines" state="story done" points="3" mksid="MOBITS-511"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Obstruction services" state="story done" points="0" mksid="MOBITS-367"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Peer Review" state="story done" points="2" mksid="MOBITS-521"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - show run job window" state="story done" points="3" mksid="MOBITS-534"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - Test Arriva Hastus Export, document export issues, fix import issues" state="story done" points="5" mksid="MOBITS-525"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Impl - UI Overview pivot" state="story done" points="1" mksid="MOBITS-369"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Add PvsVolumeSetter to image" state="story done" points="1" mksid="MOBITS-529"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Allow automated database tests" state="story done" points="0" mksid="MOBITS-353"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Create Job Orchestration installer" state="story not-done" points="1" mksid="MOBITS-519"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Deal with spatial types" state="story not-done" points="0" mksid="MOBITS-261"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Expose new Netex service to Arriva" state="story done" points="1" mksid="MOBITS-453"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Merge configurable gps offset for rijksdriehoek system (MOBITS-563)" state="story done" points="1" mksid=""><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Adapt the 'Full ITS' Product dev " state="story done" points="2" id="MOBITS-523"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Add Generic log feeder " state="story done" points="5" id="MOBITS-520"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Add generic logs UI" state="story not-done" points="1" id="MOBITS-435"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Add Job Orchestration and Obstruction module to the client installer" state="story done" points="1" id="MOBITS-524"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Architectural Design" state="story done" points="0" id="MOBITS-431"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Create Dummy Data" state="story done" points="3" id="MOBITS-509"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Create Simple Test" state="story done" points="1" id="MOBITS-433"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Create Solution" state="story done" points="0" id="MOBITS-432"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Crud impacted lines" state="story not-done" points="5" id="MOBITS-423"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Find a suitable xml schema definition for importing time of the day from hastus (allow values greater than 23 hours)" state="story done" points="1" id="MOBITS-539"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Implement functional feature file" state="story done" points="8" id="MOBITS-501"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Integrate Existing Hastus Import Module" state="story not-done" points="2" id="MOBITS-502"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - NeTEx Service Impacted Lines" state="story done" points="3" id="MOBITS-511"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Obstruction services" state="story done" points="0" id="MOBITS-367"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Peer Review" state="story done" points="2" id="MOBITS-521"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - show run job window" state="story done" points="3" id="MOBITS-534"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - Test Arriva Hastus Export, document export issues, fix import issues" state="story done" points="5" id="MOBITS-525"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Impl - UI Overview pivot" state="story done" points="1" id="MOBITS-369"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Add PvsVolumeSetter to image" state="story done" points="1" id="MOBITS-529"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Allow automated database tests" state="story done" points="0" id="MOBITS-353"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Create Job Orchestration installer" state="story not-done" points="1" id="MOBITS-519"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Deal with spatial types" state="story not-done" points="0" id="MOBITS-261"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Expose new Netex service to Arriva" state="story done" points="1" id="MOBITS-453"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Merge configurable gps offset for rijksdriehoek system (MOBITS-563)" state="story done" points="1" id=""><slides><slide type="story-narrative"></slide></slides></story>
    </stories>        
 
     <finish>

@@ -4,12 +4,12 @@
 
 	<xsl:template name="storyheader">
     <xsl:param name="state"/>
-    <xsl:param name="mksid"/>
+    <xsl:param name="id"/>
     <xsl:param name="title"/>
 
     <h3 class="{$state}">
-        <xsl:call-template name="mkslink">
-            <xsl:with-param name="id" select="translate($mksid,' ','')" />
+        <xsl:call-template name="storylink">
+            <xsl:with-param name="id" select="translate($id,' ','')" />
             <xsl:with-param name="state" select="$state" />
             <xsl:with-param name="title" select="$title"/>
         </xsl:call-template>
