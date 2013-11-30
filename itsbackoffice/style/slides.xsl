@@ -203,22 +203,30 @@
                         <!-- Show ALL XML slides; first slide of story: 'zoom', others 'cube' default -->
                         <xsl:for-each select="sprintreview/stories/story/slides">
                             <xsl:for-each select="slide[1]">
-                                <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
-                                    <xsl:call-template name="storyslide">
-                                        <xsl:with-param name="state" select="../../@state" />
-                                        <xsl:with-param name="id" select="../../@id" />
-                                        <xsl:with-param name="title" select="../../@title" />
-                                    </xsl:call-template>
-                                </section>
+                                <xsl:choose>
+                                <xsl:when test="slide[1]">                            
+	                                <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
+	                                    <xsl:call-template name="storyslide">
+	                                        <xsl:with-param name="state" select="../../@state" />
+	                                        <xsl:with-param name="id" select="../../@id" />
+	                                        <xsl:with-param name="title" select="../../@title" />
+	                                    </xsl:call-template>
+	                                </section>
+								</xsl:when>
+								</xsl:choose>
                             </xsl:for-each>
                             <xsl:for-each select="slide[position() &gt; 1]">
-                                <section class="slide" style="{@style} text-align: left;">
-                                    <xsl:call-template name="storyslide">
-                                        <xsl:with-param name="state" select="../../@state" />
-                                        <xsl:with-param name="id" select="../../@id" />
-                                        <xsl:with-param name="title" select="../../@title" />
-                                    </xsl:call-template>
-                                </section>
+                                <xsl:choose>
+                                <xsl:when test="slide[position() &gt; 1]">                            
+	                                <section class="slide" style="{@style} text-align: left;">
+	                                    <xsl:call-template name="storyslide">
+	                                        <xsl:with-param name="state" select="../../@state" />
+	                                        <xsl:with-param name="id" select="../../@id" />
+	                                        <xsl:with-param name="title" select="../../@title" />
+	                                    </xsl:call-template>
+	                                </section>
+								</xsl:when>
+								</xsl:choose>
                             </xsl:for-each>
                         </xsl:for-each>
                         
