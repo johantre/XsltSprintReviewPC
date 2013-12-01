@@ -131,9 +131,14 @@
                             <xsl:choose>
                                 <xsl:when test="sprintreview/stories/story[@state='story done']">
                                     <ul class="stories">
-                                        <xsl:for-each select="sprintreview/stories/story[@state='story done']">
-                                            <li class="story done"><xsl:value-of select="@title" /><span class="sp"> (SP: <xsl:value-of select="@points" />)</span></li>
-                                        </xsl:for-each>
+                                        <table width="100%" style="line-height:100%">
+                                            <xsl:for-each select="sprintreview/stories/story[@state='story done']">
+                                                <tr class="story done">
+                                                    <td width="90%"><xsl:value-of select="@title" /></td>
+                                                    <td width="10%">(SP: <xsl:value-of select="@points" />)</td>
+                                                </tr>
+                                            </xsl:for-each>
+                                        </table>
                                     </ul>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -147,13 +152,15 @@
                                 <section class="slide" data-transition="zoom" style="text-align: left;">
                                     <h2 class="story uncommitted">User Stories ADDED</h2>
                                     <br></br>
-                                    <ul class="stories">
-                                        <xsl:for-each select="sprintreview/stories/story[@state='story uncommitted']">
-                                            <li class="story done">
-                                                <xsl:value-of select="@title" />
-                                                <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
-                                            </li>
-                                        </xsl:for-each>
+                                    <ul class="stories" >
+                                        <table width="100%" style="line-height:100%">
+                                            <xsl:for-each select="sprintreview/stories/story[@state='story uncommitted']">
+                                                <tr class="story done">
+                                                    <td width="90%"><xsl:value-of select="@title" /></td>
+                                                    <td width="10%">(SP: <xsl:value-of select="@points" />)</td>
+                                                </tr>
+                                            </xsl:for-each>
+                                        </table>
                                     </ul>
                                 </section>
                             </xsl:when>
@@ -167,13 +174,15 @@
                                     <h2 class="story not-done">User Stories NOT Done</h2>
                                     <br></br>
                                     <ul class="stories">
-                                        <xsl:for-each select="sprintreview/stories/story[@state='story not-done']">
-                                            <li class="story not-done">
-                                                <xsl:value-of select="@title" />
-                                                <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
-                                                <span class="sp">Done: <xsl:value-of select="@percentage-done" />%</span>
-                                            </li>
-                                        </xsl:for-each>
+                                        <table width="100%" style="line-height:100%">
+                                            <xsl:for-each select="sprintreview/stories/story[@state='story not-done']">
+                                                <tr class="story not-done">
+                                                    <td width="77%"><xsl:value-of select="@title" /></td>
+                                                    <td width="8%">(SP: <xsl:value-of select="@points" />)</td>
+                                                    <td width="15%">Done: <xsl:value-of select="@percentage-done" />%</td>
+                                                </tr>
+                                            </xsl:for-each>
+                                        </table>
                                     </ul>
                                 </section>
                             </xsl:when>
@@ -187,12 +196,14 @@
                                     <h2 class="story done">Bugs Resolved</h2>
                                     <br></br>
                                     <ul class="stories">
-                                        <xsl:for-each select="sprintreview/stories/story[@state='bug']">
-                                            <li class="story done">
-                                                <xsl:value-of select="@title" />
-                                                <span class="sp"> (SP: <xsl:value-of select="@points" />)</span>
-                                            </li>
-                                        </xsl:for-each>
+                                        <table width="100%" style="line-height:100%">
+                                            <xsl:for-each select="sprintreview/stories/story[@state='bug']">
+                                                <tr class="story done">
+                                                    <td width="90%"><xsl:value-of select="@title" /></td>
+                                                    <td width="10%">(SP: <xsl:value-of select="@points" />)</td>
+                                                </tr>
+                                            </xsl:for-each>
+                                        </table>
                                     </ul>
                                 </section>
                             </xsl:when>
