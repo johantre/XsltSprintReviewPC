@@ -102,6 +102,7 @@
                                             <td><br/></td>
                                             <td><br/></td>
                                             <td>
+                                                <table>
                                                 <tr><td align="right"><h4 class="center">Capacity trend for <xsl:value-of select="/sprintreview/team/@name" /></h4></td></tr>
                                                 <tr><td align="right">
                                                         <xsl:call-template name="capacity-template">
@@ -111,6 +112,7 @@
                                                         </xsl:call-template>
                                                     </td>
                                                 </tr>
+                                                </table>
                                             </td>                                            
                                         </tr>
                                    </table>
