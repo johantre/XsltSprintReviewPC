@@ -78,7 +78,7 @@
                             <pre class="prettyprint">&lt;story title="your title" state="story not-done" points="8" percentage-done="95"&gt;</pre>
                         </li>
                         <li>stories done (optional) signature: title links to MKS (check this slide)  
-                            <pre class="prettyprint">&lt;story title="your title" state="story not-done" points="8" percentage-done="95"&gt; mksid="1466420"</pre>
+                            <pre class="prettyprint">&lt;story title="your title" state="story not-done" points="8" percentage-done="95" mksid="1466420"&gt;</pre>
                         </li>
                         <li>add your slides into the SLIDES section 
                             <pre class="prettyprint">&lt;slides&gt;
