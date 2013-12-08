@@ -19,18 +19,18 @@
     </team>
 
     <stories>
-        <story title="Clearout the approach for the NeTEx Baseline export and give estimate " state="story done" points="1" id="MOBITS-678"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="As an Obstruction Manager I want to edit detourlines on the map " state="story done" points="1" id="MOBITS-624"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="As an Obstruction Manager I want to change the state of the obstruction " state="story done" points="3" id="MOBITS-545"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to draw and delete points of interest on the detour map with choosen color " state="story done" points="5" id="MOBITS-543"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to draw and delete multiple detourlines on the map " state="story done" points="3" id="MOBITS-567"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to be able to use routing " state="story done" points="3" id="MOBITS-602"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction manager I want that a new version of an obstruction is created when I edit a published obstruction " state="story done" points="5" id="MOBITS-671"><slides><slide type="story-narrative"></slide></slides></story>
         <story title="As an Obstruction Manager I want to be able to search an obstruction " state="story done" points="5" id="MOBITS-544"><slides><slide type="story-narrative"></slide></slides></story>
         <story title="As an Obstruction Manager I want to be able to print an obstruction overview to pdf without stopmapping and map view " state="story done" points="5" id="MOBITS-548"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="As an Obstruction Manager I want to draw and delete points of interest on the detour map with choosen color " state="story done" points="5" id="MOBITS-543"><slides><slide type="story-narrative"></slide></slides></story>
         <story title="As an Obstruction Manager I want to add and remove stop mappings to the detour " state="story done" points="3" id="MOBITS-541"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="As an Obstruction Manager I want to be able to use routing " state="story done" points="3" id="MOBITS-602"><slides><slide type="story-narrative"></slide></slides></story>
         <story title="As an Obstruction Manager I want to be able to generate a mail with the predefined text with the generated pdf (publish) " state="story done" points="3" id="MOBITS-550"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="As an Obstruction Manager I want to draw and delete multiple detourlines on the map " state="story done" points="3" id="MOBITS-567"><slides><slide type="story-narrative"></slide></slides></story>
         <story title="As an Obstruction Manager I want to Duplicate an Obstruction " state="story done" points="2" id="MOBITS-478"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="As an Obstruction manager I want that a new version of an obstruction is created when I edit a published obstruction " state="story done" points="5" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to edit detourlines on the map " state="story done" points="1" id="MOBITS-624"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Clearout the approach for the NeTEx Baseline export and give estimate " state="story done" points="1" id="MOBITS-678"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to change the state of the obstruction " state="story done" points="3" id="MOBITS-545"><slides><slide type="story-narrative"></slide></slides></story>
     </stories>
 
 </sprintreview>
