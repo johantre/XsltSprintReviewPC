@@ -6,9 +6,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-<link rel="stylesheet" href="../style/tomtom/tomtom.core.css">
-<link rel="stylesheet" href="../style/tomtom/tomtom.css">
-<link rel="stylesheet" href="../style/tomtom/table/table.statistics.css">
+<link rel="stylesheet" href="../style/prodata/prodata.core.css">
+<link rel="stylesheet" href="../style/prodata/prodata.css">
+<link rel="stylesheet" href="../style/prodata/table/table.statistics.css">
 <link rel="stylesheet" href="../style/reveal/css/reveal.min.css">
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&amp;skin=sunburst&amp;callback=js_ident"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script>
                     document.write('
@@ -19,24 +19,29 @@
 <body class="tomtom-container">
 <div class="reveal">
 <div class="slides">
-<section class="slide">
+<section class="slide" data-transition="zoom" data-background-image="../style/prodata/img/master31.jpg">
 <table align="center">
 <tr>
-<td width="1140" height="524" align="center" style="background-image: url('../style/tomtom/img/TomTomLogo.jpg');                                                                     background-repeat:no-repeat;                                                                   background-size:100% 100%"></td>
-</tr>
-<tr>
-<td align="right">
-<h4 class="center">Review Sprint: </h4>
+<td width="2000" height="500">
+<br>
+<br>
+<br>
+<br>
 </td>
 </tr>
 <tr>
 <td align="right">
-<h4 class="center">Team: ITSbackoffice</h4>
-</td>
+<h4 class="center" style="color:white;">Review Sprint: 03</h4>
+</td><td></td><td rowspan="4" align="right" style="background-image: url('../style/prodata/img/master31.png');                                                                    background-repeat:no-repeat;                                                                  background-size:100% 100%" width="8000"></td>
 </tr>
 <tr>
 <td align="right">
-<h4 class="center">Release: </h4>
+<h4 class="center" style="color:white;">Team: ITSbackoffice</h4>
+</td><td></td><td></td>
+</tr>
+<tr>
+<td align="right">
+<h4 class="center" style="color:white;">Release: Release 1.0  </h4>
 </td><td align="left">
 <h4 class="center"></h4>
 </td>
@@ -153,17 +158,13 @@
                         },
                         xAxis : {
                             categories : [ 
-                'Spr. 01 - 24/07/13',
+                'Spr. 00 - 14/10/13',
             
-                'Spr. 01 - 14/08/13',
+                'Spr. 01 - 28/10/13',
             
-                'Spr. 02 - 04/09/13',
+                'Spr. 02 - 11/11/13',
             
-                'Spr. 01 - 25/09/13',
-            
-                'Spr. 01 - 16/10/13',
-            
-                'Spr. 02 - 06/11/13',
+                'Spr. 03 - 25/11/13',
              ]
                         },
                         yAxis : [{
@@ -192,18 +193,17 @@
                             column: {
                                 stacking: 'normal'
                             }                        
-                        },series : [
+                        },
+                        series : [
                                 {
                                     name : 'Velocity (Pts)',
                                     index : 3,
                                     legendIndex : 2,
-                                    data : [ 10,
-			25,
-			12,
-			15,
-			30,
-			30,
-			 ],
+                                    data : [ 38,
+            10,
+            33,
+            39,
+             ],
                                     lineWidth: 2,
                                     shadow: true,
                                     color: '#990000',
@@ -213,13 +213,11 @@
                                     name : 'Commitment (Pts)',
                                     index : 4,
                                     legendIndex : 3,
-                                    data : [ 10,
-			20,
-			12,
-			18,
-			30,
-			30,
-			 ],
+                                    data : [ 47,
+            30,
+            33,
+            39,
+             ],
                                     dashStyle: 'ShortDash', 
                                     lineWidth: 2,
                                     color : '#104E8B',
@@ -230,14 +228,12 @@
                                     name : 'Hands-on Capacity (MD)',
                                     index : -1,
                                     legendIndex : 4,
-                                    data : [ 84,
-            84,
-            96,
-            60,
-            84,
-            84,
+                                    data : [ 45,
+            45,
+            23,
+            28,
              ],
-                                    color : 'red',
+                                    color : '#08298A',
                                     stack: 0,
                                     yAxis: 0
                                 },
@@ -246,14 +242,12 @@
                                     name : 'Tester Capacity (MD)',
                                     index : -1,
                                     legendIndex : 5,
-                                    data : [ 24,
-            24,
-            24,
-            12,
+                                    data : [ 18,
+            18,
             12,
             12,
              ],
-                                    color : '#BFFF00',
+                                    color : '#2E64FE',
                                     stack: 0,
                                     yAxis: 0
                                 },
@@ -262,17 +256,19 @@
                                     name : 'Modeler Capacity (MD)',
                                     index : -1,
                                     legendIndex : 6,
-                                    data : [ 36,
-            36,
-            24,
-            24,
-            24,
-            24,
+                                    data : [ 0,
+            0,
+            0,
+            0,
              ],
-                                    color : '#6ba100',
+                                    color : '#A9D0F5',
                                     stack: 0,
                                     yAxis: 0
-                                } ]
+                                } ],
+                         exporting: {
+                            sourceWidth: 700,
+                            sourceHeight: 550,
+                        }
                     };
                     var chartchartCapacity = new Highcharts.Chart(jQuery.extend(true, {}, chartCapacityOptions));
         });
@@ -291,109 +287,51 @@
 <h2>User Stories Done</h2>
 <br>
 <ul class="stories">
-<li class="story done">Clearout the approach for the NeTEx Baseline export and give estimate <span class="sp"> (SP: 1)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to edit detourlines on the map <span class="sp"> (SP: 1)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to change the state of the obstruction <span class="sp"> (SP: 3)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to be able to search an obstruction <span class="sp"> (SP: 5)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to be able to print an obstruction overview to pdf without stopmapping and map view <span class="sp"> (SP: 5)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to draw and delete points of interest on the detour map with choosen color <span class="sp"> (SP: 5)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to add and remove stop mappings to the detour <span class="sp"> (SP: 3)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to be able to use routing <span class="sp"> (SP: 3)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to be able to generate a mail with the predefined text with the generated pdf (publish) <span class="sp"> (SP: 3)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to draw and delete multiple detourlines on the map <span class="sp"> (SP: 3)</span>
-</li>
-<li class="story done">As an Obstruction Manager I want to Duplicate an Obstruction <span class="sp"> (SP: 2)</span>
-</li>
-<li class="story done">As an Obstruction manager I want that a new version of an obstruction is created when I edit a published obstruction <span class="sp"> (SP: 5)</span>
-</li>
+<table width="100%" style="line-height:100%">
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to draw and delete points of interest on the detour map with choosen color </td><td width="10%">(SP: 5)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to draw and delete multiple detourlines on the map </td><td width="10%">(SP: 3)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to be able to use routing </td><td width="10%">(SP: 3)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction manager I want that a new version of an obstruction is created when I edit a published obstruction </td><td width="10%">(SP: 5)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to be able to search an obstruction </td><td width="10%">(SP: 5)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to be able to print an obstruction overview to pdf without stopmapping and map view </td><td width="10%">(SP: 5)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to add and remove stop mappings to the detour </td><td width="10%">(SP: 3)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to be able to generate a mail with the predefined text with the generated pdf (publish) </td><td width="10%">(SP: 3)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to Duplicate an Obstruction </td><td width="10%">(SP: 2)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to edit detourlines on the map </td><td width="10%">(SP: 1)</td>
+</tr>
+<tr class="story done">
+<td width="90%">Clearout the approach for the NeTEx Baseline export and give estimate </td><td width="10%">(SP: 1)</td>
+</tr>
+<tr class="story done">
+<td width="90%">As an Obstruction Manager I want to change the state of the obstruction </td><td width="10%">(SP: 3)</td>
+</tr>
+</table>
 </ul>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">Clearout the approach for the NeTEx Baseline export and give estimate </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to edit detourlines on the map </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to change the state of the obstruction </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to be able to search an obstruction </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to be able to print an obstruction overview to pdf without stopmapping and map view </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to draw and delete points of interest on the detour map with choosen color </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to add and remove stop mappings to the detour </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to be able to use routing </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to be able to generate a mail with the predefined text with the generated pdf (publish) </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to draw and delete multiple detourlines on the map </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction Manager I want to Duplicate an Obstruction </h3>
-</header>
-</section>
-<section class="slide" data-transition="zoom" style=" text-align: left;">
-<h1 class="rotated">STORY</h1>
-<header>
-<h3 class="story done">As an Obstruction manager I want that a new version of an obstruction is created when I edit a published obstruction </h3>
-</header>
 </section>
 <section class="slide" style="text-align: left;">
 <table align="center">
 <tr>
 <td align="left">
-<h4 class="center">Sprint Facts for Sprint </h4>
+<h4 class="center">Sprint Facts for Sprint 03</h4>
 </td>
 </tr>
 <tr>
@@ -427,17 +365,13 @@
                         },
                         xAxis : {
                             categories : [ 
-                'Spr. 01 - 24/07/13',
+                'Spr. 00 - 14/10/13',
             
-                'Spr. 01 - 14/08/13',
+                'Spr. 01 - 28/10/13',
             
-                'Spr. 02 - 04/09/13',
+                'Spr. 02 - 11/11/13',
             
-                'Spr. 01 - 25/09/13',
-            
-                'Spr. 01 - 16/10/13',
-            
-                'Spr. 02 - 06/11/13',
+                'Spr. 03 - 25/11/13',
              ]
                         },
                         plotOptions: {
@@ -464,13 +398,11 @@
                                     name : 'Velocity (Pts)',
                                     index : 3,
                                     legendIndex : 2,
-                                    data : [ 10,
-			25,
-			12,
-			15,
-			30,
-			30,
-			 ],
+                                    data : [ 38,
+            10,
+            33,
+            39,
+             ],
                                     lineWidth: 1,
                                     color: '#FF0000',
                                     visible: false,
@@ -480,13 +412,11 @@
                                     name : 'Commitment (Pts)',
                                     index : 4,
                                     legendIndex : 3,
-                                    data : [ 10,
-			20,
-			12,
-			18,
-			30,
-			30,
-			 ],
+                                    data : [ 47,
+            30,
+            33,
+            39,
+             ],
                                     dashStyle: 'ShortDash', 
                                     lineWidth: 1,
                                     color : '#104E8B',
@@ -498,14 +428,12 @@
                                     name : 'Predictability (Vel/Comm %)',
                                     index : 0,
                                     legendIndex : 0,
-                                    data : [ 1,
-                    1.25,
-                    1,
-                    0.8333333333333334,
+                                    data : [ 0.8085106382978723,
+                    0.3333333333333333,
                     1,
                     1,
                      ],
-                                    color : 'yellowgreen',
+                                    color : '#A9D0F5',
                                     stack: 1,
                                     yAxis: 1
                                 },
@@ -513,10 +441,14 @@
                                     name : 'Credibility (Vel/Comm trend %)',
                                     index : 2,
                                     legendIndex : 1,
-                                    data : [ 1,1.125,1.0833333333333333,1.0208333333333333,1.0166666666666666,1.0138888888888888,0.9686147186147186, ],
+                                    data : [ 0.8085106382978723,0.5709219858156028,0.7139479905437351,0.7854609929078014, ],
                                     color : 'green',
                                     yAxis: 1
-                                } ]
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }                                
                     };
                     var chartchartCredibility = new Highcharts.Chart(jQuery.extend(true, {}, chartCredibilityOptions));
         });
@@ -526,17 +458,86 @@
 </tr>
 </table>
 </section>
-<section class="slide" style="background-image: url('../style/tomtom/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%">
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart4options = {
+                        chart: {
+                          renderTo: 'container4',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [ 300,262,252,219,180,180,180,180,180, ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [ 300,253,223,190,151,151,151,151,151, ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart4 = new Highcharts.Chart(jQuery.extend(true, {}, chart4options));
+        });
+    </script>
+<div id="container4" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="background-image: url('../style/prodata/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%">
 <h1 class="last">Any Questions?</h1>
 </section>
 <section class="slide" align="left">
 <table align="center">
 <tr>
-<td colspan="3" width="716" height="465" align="center" style="background-image: url('../style/tomtom/img/thank-you-2.jpg'); background-repeat: no-repeat; background-size: 100% 100%; opacity:0.1; filter:alpha(opacity=40); z-index: -1;"></td>
+<td colspan="3" width="716" height="465" align="center" style="background-image: url('../style/prodata/img/thank-you-2.jpg'); background-repeat: no-repeat; background-size: 100% 100%; opacity:0.1; filter:alpha(opacity=40); z-index: -1;"></td>
 </tr>
 <tr>
 <td>
-<div class="creditsteam" align="right">PRODUCT ENGINEERING :</div>
+<div class="creditsteam" align="right">PRODATA MOBILITY SYSTEMS :</div>
 </td><td>
 <div class="creditstitle">THANK YOU</div>
 </td><td>
