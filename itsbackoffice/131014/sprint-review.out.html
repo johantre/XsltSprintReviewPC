@@ -1,0 +1,789 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sprint Review</title>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../style/prodata/prodata.core.css">
+<link rel="stylesheet" href="../style/prodata/prodata.css">
+<link rel="stylesheet" href="../style/prodata/table/table.statistics.css">
+<link rel="stylesheet" href="../style/reveal/css/reveal.min.css">
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&amp;skin=sunburst&amp;callback=js_ident"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script>
+                    document.write('
+                    <link rel="stylesheet" href="../style/reveal/css/print/'                                                             + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')                                                             + '.css" type="text/css" media="print">
+                    ');
+                </script>
+</head>
+<body class="tomtom-container">
+<div class="reveal">
+<div class="slides">
+<section class="slide" data-transition="zoom" style="text-align: left;">
+<h2>User Stories Done</h2>
+<br>
+<ul class="stories">
+<li class="story not-done">NONE</li>
+</ul>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Sprint Facts for Sprint 0001020304050607</h4>
+</td>
+</tr>
+<tr>
+<td align="left">
+<h4 class="center" style="font-size : 1em">Velocity : 
+                                        0<br>Commitment :
+                                        0</h4>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<h4 class="center">Credibility Trend for </h4>
+<script type="text/javascript">
+        $(function() {
+                  var chartCredibilityOptions = {
+                        chart: {
+                          renderTo: 'containerchartCredibility',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Credibility for ',
+                        },
+                        subtitle : {
+                            text : '(Velocity/Commitment trend)',
+                            x : -20
+                        },
+                        xAxis : {
+                            categories : [  ]
+                        },
+                        plotOptions: {
+                            column: {
+                                stacking: 'normal'
+                            }
+                        },
+                        yAxis : [{
+                            title : {
+                                text : 'Velocity (Pts)  Commitment (Pts)'
+                            },
+                            opposite: false
+                        },{
+                            title : {
+                                text : 'Predictability (%)    Credibility (trend in %)'
+                            },
+                            opposite: true
+                        }],
+                        tooltip : {
+                            valueSuffix : ''
+                        },
+                        series : [
+                                {
+                                    name : 'Velocity (Pts)',
+                                    index : 3,
+                                    legendIndex : 2,
+                                    data : [  ],
+                                    lineWidth: 1,
+                                    color: '#FF0000',
+                                    visible: false,
+                                    yAxis: 0
+                                },
+                                {
+                                    name : 'Commitment (Pts)',
+                                    index : 4,
+                                    legendIndex : 3,
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    lineWidth: 1,
+                                    color : '#104E8B',
+                                    visible: false,
+                                    yAxis: 0
+                                },
+                                {
+                                    type : 'column',
+                                    name : 'Predictability (Vel/Comm %)',
+                                    index : 0,
+                                    legendIndex : 0,
+                                    data : [  ],
+                                    color : '#A9D0F5',
+                                    stack: 1,
+                                    yAxis: 1
+                                },
+                                {
+                                    name : 'Credibility (Vel/Comm trend %)',
+                                    index : 2,
+                                    legendIndex : 1,
+                                    data : [ 0.8085106382978723, ],
+                                    color : 'green',
+                                    yAxis: 1
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }                                
+                    };
+                    var chartchartCredibility = new Highcharts.Chart(jQuery.extend(true, {}, chartCredibilityOptions));
+        });
+    </script>
+<div id="containerchartCredibility" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart1options = {
+                        chart: {
+                          renderTo: 'container1',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart1 = new Highcharts.Chart(jQuery.extend(true, {}, chart1options));
+        });
+    </script>
+<div id="container1" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart2options = {
+                        chart: {
+                          renderTo: 'container2',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart2 = new Highcharts.Chart(jQuery.extend(true, {}, chart2options));
+        });
+    </script>
+<div id="container2" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart3options = {
+                        chart: {
+                          renderTo: 'container3',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart3 = new Highcharts.Chart(jQuery.extend(true, {}, chart3options));
+        });
+    </script>
+<div id="container3" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart4options = {
+                        chart: {
+                          renderTo: 'container4',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart4 = new Highcharts.Chart(jQuery.extend(true, {}, chart4options));
+        });
+    </script>
+<div id="container4" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart5options = {
+                        chart: {
+                          renderTo: 'container5',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart5 = new Highcharts.Chart(jQuery.extend(true, {}, chart5options));
+        });
+    </script>
+<div id="container5" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart6options = {
+                        chart: {
+                          renderTo: 'container6',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart6 = new Highcharts.Chart(jQuery.extend(true, {}, chart6options));
+        });
+    </script>
+<div id="container6" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart7options = {
+                        chart: {
+                          renderTo: 'container7',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart7 = new Highcharts.Chart(jQuery.extend(true, {}, chart7options));
+        });
+    </script>
+<div id="container7" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="text-align: left;">
+<table align="center">
+<tr>
+<td align="left">
+<h4 class="center">Release Facts of Release 1.0</h4>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript">
+        $(function() {
+                  var chart8options = {
+                        chart: {
+                          renderTo: 'container8',
+                          zoomType: 'xy'
+                        },
+                        title : {
+                            text : 'Release Burn down *Release 1.0*',
+                        },
+                        xAxis : {
+                            categories : [ 
+       '00',
+                        'Spr. 00 - 14/10/13'
+                         ,
+                        'Spr. 01 - 28/10/13'
+                         ,
+                        'Spr. 02 - 11/11/13'
+                         ,
+                        'Spr. 03 - 25/11/13'
+                         ,
+                        'Spr. 04 - 09/12/13'
+                         ,
+                        'Spr. 05 - 23/12/13'
+                         ,
+                        'Spr. 06 - 06/01/14'
+                         ,
+                        'Spr. 07 - 20/01/14'
+                         , ]
+                        },
+                        yAxis : {
+                            max : 300
+                        },
+                        series : [
+                                {
+                                    name : 'Cumulative Velocity',
+                                    data : [  ],
+                                    color: '#FF0000'
+                                },
+                                {
+                                    name : 'Cumulative Commitments',
+                                    data : [  ],
+                                    dashStyle: 'ShortDash', 
+                                    color : '#104E8B'
+                                } ],
+                         exporting: {
+                            sourceWidth: 900,
+                            sourceHeight: 500,
+                        }
+                    };
+                    var chart8 = new Highcharts.Chart(jQuery.extend(true, {}, chart8options));
+        });
+    </script>
+<div id="container8" style="min-width: 900px; height: 500px; margin: 0 auto"></div>
+</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+</table>
+</section>
+<section class="slide" style="background-image: url('../style/prodata/img/confused-chan.jpg');                                                         background-repeat:no-repeat;                                                       background-size:100%">
+<h1 class="last">Any Questions?</h1>
+</section>
+</div>
+<p class="slide-number"></p>
+</div>
+<script src="../style/highcharts/js/highcharts.js"></script><script src="../style/highcharts/js/modules/exporting.js"></script><script type="text/javascript">
+                    Highcharts.setOptions({
+                        chart: {
+                            zoomType: 'xy'
+                          },
+                        title : {
+                            x : -20
+                        },
+                        subtitle : {
+                            text : 'Cumulative Committed vs. Velocity',
+                            x : -20
+                        },
+                        xAxis : {
+                            tickmarkPlacement: 'on'
+                        },
+                        yAxis : {
+                            title : {
+                                text : 'Total to burn (points)'
+                            },
+                            plotLines : [ {
+                                value : 0,
+                                width : 100
+                            }],
+                            min : 0
+                        },
+                        tooltip : {
+                            valueSuffix : 'Pts.',
+                            valueDecimals: 2
+                        },
+                        legend : {
+                            layout : 'vertical',
+                            align : 'right',
+                            verticalAlign : 'middle',
+                            borderWidth : 0
+                        }    
+                    });
+                </script><script src="../style/reveal/lib/js/head.min.js"></script><script type="text/javascript" src="../style/reveal/js/reveal.min.js"></script><script>
+                    // Full list of configuration options available here:
+                    // https://github.com/hakimel/reveal.js#configuration
+                    Reveal.initialize({
+                    controls : true,
+                    progress : true,
+                    history : true,
+                    center : true,
+
+                    theme : Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+                    transition : Reveal.getQueryHash().transition, // || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                    // Optional libraries used to extend on reveal.js
+                    dependencies : [ {
+                    src :
+                    '../style/reveal/js/classList.js',
+                    condition : function() {
+                    return !document.body.classList;
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/markdown/marked.js',
+                    condition : function() {
+                    return !!document.querySelector('[data-markdown]');
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/markdown/markdown.js',
+                    condition : function() {
+                    return !!document.querySelector('[data-markdown]');
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/highlight/highlight.js',
+                    async : true,
+                    callback : function() {
+                    hljs.initHighlightingOnLoad();
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/zoom-js/zoom.js',
+                    async : true,
+                    condition : function() {
+                    return !!document.body.classList;
+                    }
+                    }, {
+                    src : '../style/reveal/plugin/notes/notes.js',
+                    async : true,
+                    condition : function() {
+                    return !!document.body.classList;
+                    }
+                    }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    ]
+                    });
+
+                </script>
+</body>
+</html>
