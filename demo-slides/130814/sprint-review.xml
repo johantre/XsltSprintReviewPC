@@ -43,7 +43,7 @@
                     <p>
                     <h5>No panic, the minimal:</h5>
                     <ul>
-                        <li>check out: <a target="_blank" href="http://svn/repos/sprint-review/trunk">http://svn/repos/sprint-review/trunk</a></li>
+                        <li>check out, clone, pull the right branch: <a target="_blank" href="https://github.com/johantre/XsltSprintReviewPC">https://github.com/johantre/XsltSprintReviewPC</a></li>
                         <li>Find your sprint folder (format 'yymmdd')</li>
                         <li>Add all stories sprint-review.xml</li>
                         <li>in the STORIES section
@@ -78,7 +78,7 @@
                             <pre class="prettyprint">&lt;story title="your title" state="story not-done" points="8" percentage-done="95"&gt;</pre>
                         </li>
                         <li>stories done (optional) signature: title links to MKS (check this slide)  
-                            <pre class="prettyprint">&lt;story title="your title" state="story not-done" points="8" percentage-done="95"&gt; mksid="1466420"</pre>
+                            <pre class="prettyprint">&lt;story title="your title" state="story not-done" points="8" percentage-done="95" mksid="1466420"&gt;</pre>
                         </li>
                         <li>add your slides into the SLIDES section 
                             <pre class="prettyprint">&lt;slides&gt;

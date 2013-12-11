@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releasedata>
+    <sprints>
+        <sprint name="00">131014</sprint>
+        <sprint name="01">131028</sprint>
+        <sprint name="02">131111</sprint>
+        <sprint name="03">131125</sprint>
+        <sprint name="04">131209</sprint>
+        <sprint name="05">131223</sprint>
+        <sprint name="06">140106</sprint>
+        <sprint name="07">140120</sprint>
+    </sprints>
+    <releases>
+        <release id="01" name="Release 1.0" totalpoints="300">
+            <sprintfolders>
+                <sprintfolder>131014</sprintfolder>
+                <sprintfolder>131028</sprintfolder>
+                <sprintfolder>131111</sprintfolder>
+                <sprintfolder>131125</sprintfolder>
+                <sprintfolder>131209</sprintfolder>
+                <sprintfolder>131223</sprintfolder>
+                <sprintfolder>140106</sprintfolder>
+                <sprintfolder>140120</sprintfolder>
+            </sprintfolders>
+        </release>
+    </releases>
+</releasedata>

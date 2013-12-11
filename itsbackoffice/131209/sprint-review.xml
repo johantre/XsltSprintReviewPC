@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="131209" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="0">Gauthier Rossion </member>
+        <member type="hands-on" capacity="9">Marnix De Groote </member>
+        <member type="hands-on" capacity="9">Martijn Evens </member>
+        <member type="hands-on" capacity="9">Ignacio Errico </member>
+        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="9">Blaise Braye </member>
+        <member type="tester" capacity="9">Christophe Lemoine </member>        
+        <member type="tester" capacity="9">Annelies Ivens </member>        
+        <member type="tester" capacity="9">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tre</member>
+    </team>
+
+    <stories>
+        <story state="story done" points="5" id="MOBITS-697" title="As a stopzone manager I want to search and see stops on a mapSelect Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="MOBITS-698" title="As a stopzone manager I want to create a stopzone based on a nameCRUD Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="5" id="MOBITS-699" title="As a stopzone manager I want to create a stopzone with a polygonCRUD Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="MOBITS-437" title="Define Git strategy" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="MOBITS-547" title="As an Obstruction Manager I want to see the state alerts in the Landingpage and the overview screen. Counters should also be included on the landing page " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="MOBITS-856" title="Dig out usage of Contains in Linq in transmodel.netex" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="MOBITS-710" title="GVR to POI Tracker: Show bus on map" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="MOBITS-711" title="Business Key instead of Technical key for communication between FO and BMR" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="MOBITS-558" title="As an Obstruction Manager I want to define the large map view for the printout" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="MOBITS-480" title="As an Obstruction Manager I want to Delete an Obstruction." ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="MOBITS-672" title="As an Obstruction Manager I want to be able to choose the type of mapbackground for the maps" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="5" id="MOBITS-712" title="Polish Map interaction" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="MOBITS-652" title="As an obstruction manager I want that the default communication period starts a week before the start date" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="MOBITS-559" title="As an Obstruction Manager I want to be able to print an obstruction overview to pdf with stopmapping" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-679" title="Have a sample flow available" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-549" title="As an Obstruction Manager I want to be able to print and publish the large map overview" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-626" title="Build solution proposal for public planning and real time data services" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-513" title="Use Oracle as repository for NeTEx and Obstruction and Detours" ><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

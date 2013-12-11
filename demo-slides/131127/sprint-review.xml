@@ -30,7 +30,7 @@
                 </slide>
             </slides>
         </story>
-         <story title="Story done" state="story done" points="10">
+         <story title="Story done" state="story not-done" points="10">
             <slides>
                 <slide type="story-context">
                 </slide>
