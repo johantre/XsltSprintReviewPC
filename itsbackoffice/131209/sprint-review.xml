@@ -15,7 +15,7 @@
         <member type="tester" capacity="9">Annelies Ivens </member>        
         <member type="tester" capacity="9">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
-        <member type="assisted" capacity="0">Johan Tré</member>
+        <member type="assisted" capacity="0">Johan Tre</member>
     </team>
 
     <stories>
@@ -33,10 +33,10 @@
         <story state="story done" points="5" id="MOBITS-712" title="Polish Map interaction" ><slides><slide type="story-narrative"></slide></slides></story>
         <story state="story done" points="1" id="MOBITS-652" title="As an obstruction manager I want that the default communication period starts a week before the start date" ><slides><slide type="story-narrative"></slide></slides></story>
         <story state="story done" points="1" id="MOBITS-559" title="As an Obstruction Manager I want to be able to print an obstruction overview to pdf with stopmapping" ><slides><slide type="story-narrative"></slide></slides></story>
-        <story state="story done" points="1" id="MOBITS-679" title="Have a sample flow available  " ><slides><slide type="story-narrative"></slide></slides></story>
-        <story state="story done" points="1" id="MOBITS-549" title="As an Obstruction Manager I want to be able to print and publish the large map overview" ><slides><slide type="story-narrative"></slide></slides></story>
-        <story state="story done" points="1" id="MOBITS-626" title="Build solution proposal for public planning and real time data services" ><slides><slide type="story-narrative"></slide></slides></story>
-        <story state="story done" points="1" id="MOBITS-513" title="Use Oracle as repository for NeTEx and Obstruction and Detours" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-679" title="Have a sample flow available" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-549" title="As an Obstruction Manager I want to be able to print and publish the large map overview" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-626" title="Build solution proposal for public planning and real time data services" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" id="MOBITS-513" title="Use Oracle as repository for NeTEx and Obstruction and Detours" ><slides><slide type="story-narrative"></slide></slides></story>
     </stories>
 
 </sprintreview>
