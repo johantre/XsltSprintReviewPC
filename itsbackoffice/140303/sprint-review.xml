@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140303" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member> 
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
+        <member type="scrummaster" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="hands-on" capacity="0">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="2.4">Gauthier Rossion </member>
+        <member type="tester" capacity="7">Annelies Ivens </member>        
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="hands-on" capacity="8">Marnix De Groote </member>
+    </team>
+
+    <stories>
+        <story id="MOBITS-1298" points="1" state="story done" title="Create feature file for stopzone states"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1277" points="1" state="story done" title="As a TCO I want the lineview, poitracker and ssm integrated"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1282" points="3" state="story done" title="Document module footprint for CCB"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1219" points="3" state="story done" title="Spike Testing Hastus import">
+            <slides>
+                <slide type="story-narrative">
+                </slide>
+            </slides>
+        </story>
+        <story id="MOBITS-1364" points="1" state="story done" title="Prepare NeTEx service definitions for US 1187"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1361" points="3" state="story done" title="Show stops as a layer on the stopzone map, make layering part of generic map control"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-700" points="3"  state="story done" title="As a stopzone manager I want to edit an existing stopzone"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1185" points="3" state="story done" title="As an obstruction manager I want to define the obstruction before I select the lines"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1373" points="1" state="story done" title="Knowledge transfer for legacy code of POI and SSM"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1380" points="3" state="story done" title="Implement step files from feature files">
+            <slides>
+                <slide type="story-narrative">
+                </slide>
+            </slides>
+        </story>
+        <story id="MOBITS-1355" points="5" state="story done" title="A a TCO I want the new mapcontrol in poitracker">
+            <slides>
+                <slide type="story-narrative">
+                </slide>
+            </slides>
+        </story>
+        <story id="MOBITS-1354" points="5" state="story done" title="As a TCO I want a better grid in incoming messages of SSM">
+            <slides>
+                <slide type="story-narrative">
+                </slide>
+            </slides>
+        </story>
+        <story id="MOBITS-1125" points="0" state="story done" title="Create a shared Mobiguider ITS project">
+            <slides>
+                <slide type="story-narrative">
+                </slide>
+            </slides>
+        </story>
+        <story id="MOBITS-1317" points="0" state="story done" title="Create mock project for push and pull rest service with server and client">
+            <slides>
+                <slide type="story-narrative">
+                </slide>
+            </slides>
+        </story>        
+		
+    </stories>
+   <finish>
+        <slides>
+            <slide title="Resource levelling" type="story-context">
+                    <h5>Extra remarks</h5>
+                    <ul>
+                        <li>We made a big jump forward on the feature files implementation.</li>
+						<li>A huge amount of bugs have been solved this sprint. There are no more current module bugs.</li>
+                    </ul>
+            </slide>
+        </slides>   
+   </finish>
+
+</sprintreview>

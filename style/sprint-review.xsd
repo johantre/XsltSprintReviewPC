@@ -117,7 +117,6 @@
             <xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded" namespace="##any"/>
         </xs:sequence>
         <xs:attribute name="type" type="memberTypeType" />
-        <xs:attribute name="avatar" type="xs:anyURI" />
         <xs:attribute type="xs:decimal" name="capacity" use="required"/>
     </xs:complexType>
 

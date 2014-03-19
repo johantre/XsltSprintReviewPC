@@ -4,33 +4,34 @@
 <sprintreview folder="140106" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="ITSbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
-        <member type="scrummaster" capacity="0">Servaas Phlips </member>
-        <member type="hands-on" capacity="0">Gauthier Rossion </member>
-        <member type="hands-on" capacity="9">Marnix De Groote </member>
-        <member type="hands-on" capacity="9">Martijn Evens </member>
-        <member type="hands-on" capacity="9">Ignacio Errico </member>
-        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
-        <member type="hands-on" capacity="9">Blaise Braye </member>
-        <member type="tester" capacity="9">Christophe Lemoine </member>        
-        <member type="tester" capacity="9">Annelies Ivens </member>        
-        <member type="tester" capacity="9">Parisa Pejham </member>
+        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="hands-on" capacity="0.5">Gauthier Rossion </member>
+        <member type="hands-on" capacity="6.5">Marnix De Groote </member>
+        <member type="hands-on" capacity="3.5">Martijn Evens </member>
+        <member type="hands-on" capacity="6.5">Ignacio Errico </member>
+        <member type="hands-on" capacity="6.5">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="5.5">Blaise Braye </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member>        
+        <member type="tester" capacity="6">Annelies Ivens </member>        
+        <member type="tester" capacity="6.5">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
         <member type="assisted" capacity="0">Johan Tré </member>
     </team>
 
     <stories>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Use Business keys in Location service (FO to BMR communication)" state="story not-done" points="5" percentage-done="90" id="MOBITS-891"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="SPIKE - POI - Timetable view" state="story done" points="5" id="MOBITS-888"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As a stopzone manager I want to manage the stops to the stopzone" state="story not-done" points="5" percentage-done="80" id="MOBITS-701"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As a stopzone manager I want to create a stopzone based on a name" state="story done" points="5" id="MOBITS-698"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As a stopzone manager I want to create a stopzone with a polygon" state="story done" points="5" id="MOBITS-699"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to Delete an Obstruction" state="story done" points="2" id="MOBITS-480"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Auto Deploy for O&amp;D, Job Orch and Stopzone" state="story not-done" points="3" percentage-done="0" id="MOBITS-1115"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Auto Deploy for POI, POI Tracker &amp; SSM" state="story not-done" points="3" percentage-done="0" id="MOBITS-1116"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="As an Obstruction Manager I want to be able to choose the type of mapbackground for the maps" percentage-done="50" state="story not-done" points="3" id="MOBITS-672"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="SPIKE - POI Tracker - Line view" state="story done" points="3" id="MOBITS-887"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Have a sample flow available" state="story not-done" points="3" percentage-done="80" id="MOBITS-679"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Use different schemas for qa and dev" state="story not-done" percentage-done="80" points="1" id="MOBITS-895"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Setup demo server" state="story not-done" points="1" id="MOBITS-649"><slides><slide type="story-narrative"></slide></slides></story>
     </stories>
 
 </sprintreview>

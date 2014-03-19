@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140317" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="hands-on" capacity="3">Gauthier Rossion </member>
+        <member type="hands-on" capacity="5">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member>        
+        <member type="tester" capacity="7.5">Annelies Ivens </member>        
+        <member type="tester" capacity="4">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
+    </team>
+
+    <stories>
+        <story id="MOBITS-1435" points="1" title="RELEASE - Create Branch" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1437" points="2" title="RELEASE - Create teamcity config for its shared and switch to branch" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1440" points="1" title="RELEASE -  V#" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1438" points="1" title="RELEASE - Fix Installers" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1436" points="2" title="RELEASE - Remove/Add User Stories" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1439" points="1" title="RELEASE - QA Prepare DB Scripts" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1441" points="1" title="RELEASE - QA End to end (+security)" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1442" points="1" title="RELEASE - QA Stopzone" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1443" points="1" title="RELEASE - QA Poi and SSM" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1444" points="1" title="RELEASE - QA Localisation" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1445" points="1" title="RELEASE - QA Job orchestration" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1446" points="2" title="RELEASE - QA Obstruction and Detours" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1423" points="3" title="Implement end to end feature file test for all entities of hastus import, only happy path scenarios" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1430" points="5" title="Update Framework" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1433" points="2" title="Investigate installer diagnostics tool" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1426" points="1" title="To Refactor or not to refactor mapcontrol POI Tracker TCO" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1406" points="3" title="As a TCO I want a better grid with advanced features in incoming messages" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+
+    </stories>
+
+</sprintreview>

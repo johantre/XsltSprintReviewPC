@@ -5,23 +5,23 @@
     <team name="ITSbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
         <member type="scrummaster" capacity="5.5">Servaas Phlips </member>
-        <member type="hands-on" capacity="0">Gauthier Rossion </member>
-        <member type="hands-on" capacity="0">Marnix De Groote </member>
+        <member type="hands-on" capacity="7.5">Gauthier Rossion </member>
+        <member type="hands-on" capacity="3.5">Marnix De Groote </member>
         <member type="hands-on" capacity="0">Martijn Evens </member>
-        <member type="hands-on" capacity="7.5">Ignacio Errico </member>
-        <member type="hands-on" capacity="7">Serge Van Meerbeeck </member>
-        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="hands-on" capacity="1.5">Ignacio Errico </member>
+        <member type="hands-on" capacity="0">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="7.5">Blaise Braye </member>
         <member type="tester" capacity="0">Christophe Lemoine </member>        
-        <member type="tester" capacity="6">Annelies Ivens </member>        
-        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="tester" capacity="6.5">Annelies Ivens </member>        
+        <member type="tester" capacity="7.5">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
         <member type="assisted" capacity="0">Johan Tré </member>
     </team>
 
     <stories>
         <story state="story done" points="5" id="MOBITS-697" title="As a stopzone manager I want to search and see stops on a mapSelect Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
-        <story state="story done" points="2" id="MOBITS-698" title="As a stopzone manager I want to create a stopzone based on a nameCRUD Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
-        <story state="story done" points="5" id="MOBITS-699" title="As a stopzone manager I want to create a stopzone with a polygonCRUD Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" id="MOBITS-698" title="As a stopzone manager I want to create a stopzone based on a nameCRUD Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="5" id="MOBITS-699" title="As a stopzone manager I want to create a stopzone with a polygonCRUD Stop zone" ><slides><slide type="story-narrative"></slide></slides></story>
         <story state="story done" points="2" id="MOBITS-437" title="Define Git strategy" ><slides><slide type="story-narrative"></slide></slides></story>
         <story state="story done" points="2" id="MOBITS-547" title="As an Obstruction Manager I want to see the state alerts in the Landingpage and the overview screen. Counters should also be included on the landing page " ><slides><slide type="story-narrative"></slide></slides></story>
         <story state="story done" points="2" id="MOBITS-856" title="Dig out usage of Contains in Linq in transmodel.netex" ><slides><slide type="story-narrative"></slide></slides></story>

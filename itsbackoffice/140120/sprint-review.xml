@@ -1,36 +1,40 @@
 ﻿<?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
 
-<sprintreview folder="131127" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+<sprintreview folder="140120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
     <team name="ITSbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
         <member type="scrummaster" capacity="0">Servaas Phlips </member>
-        <member type="hands-on" capacity="0">Gauthier Rossion </member>
-        <member type="hands-on" capacity="9">Marnix De Groote </member>
-        <member type="hands-on" capacity="9">Martijn Evens </member>
-        <member type="hands-on" capacity="9">Ignacio Errico </member>
-        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
-        <member type="hands-on" capacity="9">Blaise Braye </member>
-        <member type="tester" capacity="9">Christophe Lemoine </member>        
-        <member type="tester" capacity="9">Annelies Ivens </member>        
-        <member type="tester" capacity="9">Parisa Pejham </member>
+        <member type="hands-on" capacity="4">Gauthier Rossion </member>
+        <member type="hands-on" capacity="7.5">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="7">Blaise Braye </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member>        
+        <member type="tester" capacity="0">Annelies Ivens </member>        
+        <member type="tester" capacity="8">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
         <member type="assisted" capacity="0">Johan Tré </member>
     </team>
 
     <stories>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-895" points="1" title="Use different schemas for qa and dev" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-679" points="3" title="Have a sample flow available" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-649" points="1" title="Setup demo server" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-701" points="5" title="As a stopzone manager I want to manage the stops to the stopzone" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-891" points="5" title="Use Business keys in Location service (FO to BMR communication)" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1155" points="3" title="As a TCO I want a lineview with dummy data" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-858" points="3" title="As an obstruction manager I want to be able to switch between portrait and landscape view for the large map of the detour" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1158" points="5" title="MapViewModel - Share only the common functionality between the different maps" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1131" points="5" title="Finalize the first implementation of Hastus Import" state="story not-done" percentage-done="80"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1156" points="5" title="As a TCO I want a timetableview with dummy data" state="story not-done" percentage-done="70"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-551" points="2" title="As an Obstruction Manager I can only access the obstruction module" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1160" points="3" title="Re-Organize source code files and rename files to have a consistent naming" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1157" points="2" title="Isolate blocking issue related to mapbackground and open telerik ticket" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1132" points="1" title="Define test strategy for the Hastus Import implementation" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1150" points="1" title="Design Guide Line V1.03 Presentation" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1091" points="1" title="Discuss usage of dateTimeOffset" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
     </stories>
 
 </sprintreview>

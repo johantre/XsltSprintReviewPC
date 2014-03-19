@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="teams.xsl"?>
+<teamfolders>
+	<teamfolder>canguru</teamfolder>
+	<teamfolder>itsbackoffice</teamfolder>
+	<teamfolder>sharpcorner</teamfolder>
+	<teamfolder>team-ba</teamfolder>
+	<teamfolder>techTeam</teamfolder>
+    <teamfolder>ccbo</teamfolder>
+    <teamfolder>demo-slides</teamfolder>
+</teamfolders>

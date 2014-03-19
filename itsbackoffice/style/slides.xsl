@@ -33,17 +33,17 @@
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 
-                <link rel="stylesheet" href="../style/prodata/prodata.core.css" />
-                <link rel="stylesheet" href="../style/prodata/prodata.css" />
-                <link rel="stylesheet" href="../style/prodata/table/table.statistics.css" />
-                <link rel="stylesheet" href="../style/reveal/css/reveal.min.css" />
+                <link rel="stylesheet" href="../../style/prodata/prodata.core.css" />
+                <link rel="stylesheet" href="../../style/prodata/prodata.css" />
+                <link rel="stylesheet" href="../../style/prodata/table/table.statistics.css" />
+                <link rel="stylesheet" href="../../style/reveal/css/reveal.min.css" />
                 
                 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&amp;skin=sunburst&amp;callback=js_ident" />
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" />
                 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
                 <script>
                     document.write('
-                    <link rel="stylesheet" href="../style/reveal/css/print/'
+                    <link rel="stylesheet" href="../../style/reveal/css/print/'
                                                             + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')
                                                             + '.css" type="text/css" media="print" />
                     ');
@@ -58,11 +58,11 @@
                     <div class="slides">
 
                         <xsl:for-each select="sprintreview/team">
-                            <section class="slide"  data-transition="zoom" data-background-image="../style/prodata/img/master31.jpg"><!-- First TomTom group slide. -->
+                            <section class="slide"  data-transition="zoom" data-background-image="../../style/prodata/img/master31.jpg"><!-- First TomTom group slide. -->
                                 <table align="center">
                                     <tr><td width="2000" height="500"><br/><br/><br/><br/></td></tr>
                                     <tr><td align="right"><h4 class="center" style="color:white;">Review Sprint: <xsl:value-of select="$thissprintname" /></h4></td><td></td>
-                                        <td rowspan="4" align="right" style="background-image: url('../style/prodata/img/master31.png');  
+                                        <td rowspan="4" align="right" style="background-image: url('../../style/prodata/img/master31.png');  
                                                                  background-repeat:no-repeat;
                                                                  background-size:100% 100%" width="8000" ></td></tr>
                                     <tr><td align="right"><h4 class="center" style="color:white;">Team: <xsl:value-of select="@name" /></h4></td><td></td><td></td></tr>
@@ -78,19 +78,35 @@
                                             <p class="team">
                                             <table align="center">
                                                 <tr><td align="center"><span class="caption" style="white-space: nowrap">Scrum Team Members: </span></td></tr>
-                                                <xsl:for-each select="member[not(@type='scrummaster')][not(@type='productowner')]"><tr><td align="center"><span class="content">&#8226;<xsl:copy-of select="." /></span></td></tr></xsl:for-each>
+                                                <xsl:for-each select="member[not(@type='scrummaster')][not(@type='productowner')]">
+                                                <xsl:variable name="avatarlink" select="@avatar" />
+                                                <tr><td align="center"><span class="content">
+                                                <xsl:choose><xsl:when test="$avatarlink"><img src="{$avatarlink}" style="display: inline;" /></xsl:when>
+                                                <xsl:otherwise>&#8226;</xsl:otherwise></xsl:choose>
+                                                <xsl:copy-of select="." /></span></td></tr>
+                                                </xsl:for-each>
                                             </table>
                                             </p>
                                             <p class="scrum-master">
                                             <table align="center">
-                                                <tr><td align="center"><span class="caption">Product Owner: </span></td></tr>
-                                                <tr><td align="center"><span class="content"><xsl:value-of select="member[@type='productowner']" /></span></td></tr>
+                                                <tr><td align="center"><span class="caption">Product Owner(s): </span></td></tr>
+                                                <xsl:for-each select="member[(@type='productowner')]">
+                                                    <xsl:variable name="avatarlink" select="@avatar" />
+                                                    <tr><td align="center"><span class="content">
+                                                        <xsl:choose><xsl:when test="$avatarlink"><img src="{$avatarlink}" style="display: inline;" /></xsl:when>
+                                                        <xsl:otherwise>&#8226;</xsl:otherwise></xsl:choose>
+                                                        <xsl:value-of select="." /></span></td></tr>
+                                                </xsl:for-each>
                                             </table>
                                             </p>
                                             <p class="scrum-master">
                                             <table align="center">
                                                 <tr><td align="center"><span class="caption">Scrum Master: </span></td></tr>
-                                                <tr><td align="center"><span class="content"><xsl:value-of select="member[@type='scrummaster']" /></span></td></tr>
+                                                <tr><td align="center"><span class="content">
+                                                    <xsl:variable name="avatarlink" select="member/@avatar" />
+                                                    <xsl:choose><xsl:when test="$avatarlink"><img src="{$avatarlink}" style="display: inline;" /></xsl:when>
+                                                    <xsl:otherwise>&#8226;</xsl:otherwise></xsl:choose>
+                                                    <xsl:value-of select="member[@type='scrummaster']" /></span></td></tr>
                                             </table>
                                             </p>
                                             </td>
@@ -215,7 +231,7 @@
                         <xsl:for-each select="sprintreview/stories/story/slides">
                             <xsl:for-each select="slide[1]">
                                 <xsl:choose>
-                                <xsl:when test="slide[1]">                            
+                                <xsl:when test="normalize-space(.)">                            
 	                                <section class="slide" data-transition="zoom" style="{@style} text-align: left;">
 	                                    <xsl:call-template name="storyslide">
 	                                        <xsl:with-param name="state" select="../../@state" />
@@ -228,7 +244,7 @@
                             </xsl:for-each>
                             <xsl:for-each select="slide[position() &gt; 1]">
                                 <xsl:choose>
-                                <xsl:when test="slide[position() &gt; 1]">                            
+                                <xsl:when test="normalize-space(.)">                            
 	                                <section class="slide" style="{@style} text-align: left;">
 	                                    <xsl:call-template name="storyslide">
 	                                        <xsl:with-param name="state" select="../../@state" />
@@ -311,10 +327,12 @@
                                 </section>
                         </xsl:for-each>
                                 
-                        <section class="slide" style="background-image: url('../style/prodata/img/confused-chan.jpg');  
-                                                      background-repeat:no-repeat;
-                                                      background-size:100%">
-                            <h1 class="last">Any Questions?</h1>
+                        <section class="slide" >
+                                <table align="center">
+                                    <tr><td valign="middle" width="2000" height="500" style="background-image: url('../../style/prodata/img/confused-chan.jpg');  
+                                                                 background-repeat:no-repeat;
+                                                                 background-size:100% 100%;"><h1 class="last">Any Questions?</h1></td></tr>
+                                </table>
                         </section>
                         <xsl:call-template name="chucknorris-template" >
                             <xsl:with-param name="team" select="sprintreview/team/@name" />
@@ -327,8 +345,8 @@
                     <p class="slide-number"></p>
                 </div>
 
-                <script src="../style/highcharts/js/highcharts.js"></script>
-                <script src="../style/highcharts/js/modules/exporting.js"></script>
+                <script src="../../style/highcharts/js/highcharts.js"></script>
+                <script src="../../style/highcharts/js/modules/exporting.js"></script>
                 <script type="text/javascript">
                     Highcharts.setOptions({
                         chart: {
@@ -368,9 +386,9 @@
                 </script>
 
                 <!-- End extension snippets. -->
-                <script src="../style/reveal/lib/js/head.min.js"></script>
+                <script src="../../style/reveal/lib/js/head.min.js"></script>
                 <!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script -->
-                <script type="text/javascript" src="../style/reveal/js/reveal.min.js"></script>
+                <script type="text/javascript" src="../../style/reveal/js/reveal.min.js"></script>
                 <script>
                     // Full list of configuration options available here:
                     // https://github.com/hakimel/reveal.js#configuration
@@ -386,34 +404,34 @@
                     // Optional libraries used to extend on reveal.js
                     dependencies : [ {
                     src :
-                    '../style/reveal/js/classList.js',
+                    '../../style/reveal/js/classList.js',
                     condition : function() {
                     return !document.body.classList;
                     }
                     }, {
-                    src : '../style/reveal/plugin/markdown/marked.js',
+                    src : '../../style/reveal/plugin/markdown/marked.js',
                     condition : function() {
                     return !!document.querySelector('[data-markdown]');
                     }
                     }, {
-                    src : '../style/reveal/plugin/markdown/markdown.js',
+                    src : '../../style/reveal/plugin/markdown/markdown.js',
                     condition : function() {
                     return !!document.querySelector('[data-markdown]');
                     }
                     }, {
-                    src : '../style/reveal/plugin/highlight/highlight.js',
+                    src : '../../style/reveal/plugin/highlight/highlight.js',
                     async : true,
                     callback : function() {
                     hljs.initHighlightingOnLoad();
                     }
                     }, {
-                    src : '../style/reveal/plugin/zoom-js/zoom.js',
+                    src : '../../style/reveal/plugin/zoom-js/zoom.js',
                     async : true,
                     condition : function() {
                     return !!document.body.classList;
                     }
                     }, {
-                    src : '../style/reveal/plugin/notes/notes.js',
+                    src : '../../style/reveal/plugin/notes/notes.js',
                     async : true,
                     condition : function() {
                     return !!document.body.classList;

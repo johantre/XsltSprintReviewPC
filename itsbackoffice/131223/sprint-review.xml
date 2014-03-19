@@ -6,31 +6,29 @@
         <member type="productowner" capacity="0">Pieter Clavie </member>
         <member type="scrummaster" capacity="0">Servaas Phlips </member>
         <member type="hands-on" capacity="0">Gauthier Rossion </member>
-        <member type="hands-on" capacity="9">Marnix De Groote </member>
-        <member type="hands-on" capacity="9">Martijn Evens </member>
-        <member type="hands-on" capacity="9">Ignacio Errico </member>
-        <member type="hands-on" capacity="9">Serge Van Meerbeeck </member>
-        <member type="hands-on" capacity="9">Blaise Braye </member>
-        <member type="tester" capacity="9">Christophe Lemoine </member>        
-        <member type="tester" capacity="9">Annelies Ivens </member>        
+        <member type="hands-on" capacity="5">Marnix De Groote </member>
+        <member type="hands-on" capacity="3.5">Martijn Evens </member>
+        <member type="hands-on" capacity="0">Ignacio Errico </member>
+        <member type="hands-on" capacity="3">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="2.5">Blaise Braye </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member>        
+        <member type="tester" capacity="2">Annelies Ivens </member>        
         <member type="tester" capacity="9">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
         <member type="assisted" capacity="0">Johan Tre</member>
     </team>
 
     <stories>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title=" " state="story done" points="0" id="MOBITS-xxxx"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="2" id="MOBITS-547" state="story done" title="As an Obstruction Manager I want to see the state alerts in the Landingpage and the overview screen. Counters should also be included on the landing page"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="2" id="MOBITS-558" state="story done" title="As an Obstruction Manager I want to define the large map view for the printout"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1" id="MOBITS-559" state="story done" title="As an Obstruction Manager I want to be able to print an obstruction overview to pdf with stopmapping"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1" id="MOBITS-652" state="story done" title="As an obstruction manager I want that the default communication period starts a week before the start date"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="5" id="MOBITS-697" state="story done" title="As a stopzone manager I want to search and see stops on a map"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="3" id="MOBITS-710" state="story done" title="GVR to POI Tracker: Show bus on map"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="3" id="MOBITS-711" state="story done" title="Business Key instead of Technical key for communication between FO and BMR"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="5" id="MOBITS-712" state="story done" title="Polish Map interaction"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="2" id="MOBITS-856" state="story done" title="Dig out usage of Contains in Linq in transmodel.netex"><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="3" id="MOBITS-894" state="story done" title="As an Obstruction manager I want to choose a fill for a detour I draw"><slides><slide type="story-narrative"></slide></slides></story>
     </stories>
 
 </sprintreview>

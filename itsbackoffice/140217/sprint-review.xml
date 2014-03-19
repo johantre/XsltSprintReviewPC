@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140217" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="4.5">Servaas Phlips </member>
+        <member type="hands-on" capacity="4">Gauthier Rossion </member>
+        <member type="hands-on" capacity="6">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="0">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="7">Blaise Braye </member>
+        <member type="tester" capacity="7">Annelies Ivens </member>
+        <member type="tester" capacity="8">Parisa Pejham </member>
+        <member type="tester" capacity="4">Kim Van Weyenbergh</member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+    </team>
+
+    <stories>
+        <story id="MOBITS-1232" points="5" title="As a TCO I want to see real data in the time table and line view (Read node ctx history)" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1219" points="3" title="Spike Testing Hastus import" state="story not-done" percentage-done="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1300" points="3" title="Refactor stopzone manager" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-885"  points="5" title="As a stopzone manager I want to optimize the map interaction" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1281" points="3" title="Create abstract layer for mapprovider and reuse it" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1282" points="3" title="Document module footprint for CCB" state="story not-done" percentage-done="60"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1298" points="1" title="Create feature file for stopzone states" state="story not-done" percentage-done="50"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1120" points="3" title="Switch to Oracle12c/DotConnect8.x/EF6 to be able to remove workaround for include's in EF queries FOR TRANSMODEL NETEX" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-554"  points="3" title="As a planning manager I want to search the past and running hastus imports" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-886"  points="5" title="As an obstruction manager I want to have a datepicker" state="story not-done" percentage-done="5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1184" points="2" title="As a TCO I want the timetableview, poitracker and ssm integrated" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1201" points="2" title="Activate StyleCop rules on all projects in Transmodel.Netex and fix all warnings/errors" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1271" points="2" title="Analyze the current PCP Verfifier tool with the new requirements in mind" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1277" points="1" title="As a TCO I want the lineview, poitracker and ssm integrated" state="story not-done" percentage-done="70"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1278" points="2" title="Review Stop order on timetable and lineview" state="story not-done" percentage-done="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1299" points="1" title="Introduction feature file Presentation" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1280" points="1" title="Meeting about the usages of nservicebus for Netex services" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        <!-- 
+        <story id="MOBITS-1125" points="0" title="Create a shared Mobiguider ITS project" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        -->
+        <!--
+        <story id="MOBITS-1134" points="0" title="Have deployed system to run integration tests" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        -->
+        <!--
+        <story id="MOBITS-1274" points="0" title="Conclude architectural design on is dirty validation of an obstruction" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        -->
+        <story id="MOBITS-1128" points="0" title="Provide msmq problems feedback for architecture team" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1220" points="0" title="Validate timetable view implementation" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-99999" points="0" title="Command line tools hastus import" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        <!--
+        <story id="MOBITS-1135" points="0" title="Implement the security of the obstruction manager as we do in SSM" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        -->
+        
+    </stories>
+
+</sprintreview>

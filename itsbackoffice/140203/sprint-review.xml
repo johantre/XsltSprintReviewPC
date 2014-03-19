@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140203" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="4.5">Servaas Phlips </member>
+        <member type="hands-on" capacity="2">Gauthier Rossion </member>
+        <member type="hands-on" capacity="6.5">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="0">Blaise Braye </member>
+        <member type="tester" capacity="0">Christophe Lemoine </member>        
+        <member type="tester" capacity="7">Annelies Ivens </member>        
+        <member type="tester" capacity="8">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tré </member>
+    </team>
+
+    <stories>
+        <story id="MOBITS-1183" points="3" title="As a TCO I want to log real data from the BMR in the poi db (write node ctx history)" state="story not-done" percentage-done="60"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1232" points="5" title="As a TCO I want to see real data in the time table and line view (Read node ctx history)" state="story not-done" percentage-done="65"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1131" points="5" title="Finalize the first implementation of Hastus Import" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1217" points="2" title="Merge the latest of hotfix 2.5.1 to trunks/master/develop" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1116" points="3" title="Auto Deploy for POI, POI Tracker, SSM" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1115" points="3" title="Auto Deploy for O and D, Job Orch and Stopzone" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1216" points="1" title="Finalize NeTEx planning model" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1156" points="5" title="As a TCO I want a timetableview with dummy data" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-882" points="2" title="As a stopzone manager I want to be able to delete a stopzone " state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1198" points="2" title="As a TCO I want some polish on my lineview" state="story done"><slides><slide type="story-narrative"></slide></slides></story>        
+        <story id="MOBITS-1214" points="2" title="As a TCO I want some polish on my timetableview" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-566" points="3" title="As a planning manager I want to see the overview of the hastus import jobs" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1225" points="3" title="Create Metro Theme for Telerik Controls" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1219" points="3" title="Spike Testing Hastus import" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1176" points="5" title="As a TCO I want to be able to open a timetable view or add a lineview based on a selected line with a direction" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-672" points="0" title="As an Obstruction Manager I want to be able to choose the type of mapbackground for the maps" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>
