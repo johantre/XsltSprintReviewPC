@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releasedata>
+    <sprints>
+        <sprint name="01">140206</sprint>
+        <sprint name="02">140213</sprint>
+        <sprint name="03">140220</sprint>
+        <sprint name="04">140306</sprint>
+        <sprint name="05">140320</sprint>
+    </sprints>
+    <releases><!--note the total points-->
+        <release id="01" name="AVU R1" totalpoints="11.5">
+            <sprintfolders>
+                <sprintfolder>140206</sprintfolder>
+                <sprintfolder>140213</sprintfolder>
+                <sprintfolder>140220</sprintfolder>
+                <sprintfolder>140306</sprintfolder>
+                <sprintfolder>140320</sprintfolder>                
+            </sprintfolders>
+        </release>
+        <release id="02" name="AVU R2" totalpoints="50">
+            <sprintfolders>
+                <sprintfolder>140206</sprintfolder>
+                <sprintfolder>140213</sprintfolder>
+                <sprintfolder>140220</sprintfolder>
+                <sprintfolder>140306</sprintfolder>
+                <sprintfolder>140320</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="11" name="ABO R1" totalpoints="100">
+            <sprintfolders>
+            </sprintfolders>
+        </release>
+        <release id="12" name="ABO R2" totalpoints="100">
+            <sprintfolders>                
+            </sprintfolders>
+        </release>
+        <release id="13" name="ABO R3" totalpoints="40">
+            <sprintfolders>                
+                <sprintfolder>140220</sprintfolder>
+                <sprintfolder>140306</sprintfolder>
+                <sprintfolder>140320</sprintfolder>
+            </sprintfolders>
+        </release>
+        
+    </releases>
+</releasedata>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140228" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="Team B.A.">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="4">Jan </member>
+        <member type="hands-on" capacity="4">Saskia </member>
+        <member type="hands-on" capacity="4">Michiel </member>
+        <member type="hands-on" capacity="4">Jetro </member>
+        <member type="hands-on" capacity="4">Frank </member>
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story title="Verwerken impact SS_SWR_AVU_31_Rechthebbenden_Vrijverkeerkaart_v06.01  op analyse klantenbeheer                           " state="story not-done" percentage-done="0" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review Business_Test_Scenarios-ABO-R1-VVK-vs00.01                                                                         " state="story not-done" percentage-done="0" points="1"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Breakup Inkomstenbeheer                                                                                                   " state="story not-done" percentage-done="0" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Inkomstenbeheer analyse betalingen FO                                                                                     " state="story done" points="2"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Matrix 2: verkoop abonnementen FO: manueel aanmaken klant, upload foto, betaling cash, kaartcontracten, externe batch     " state="story done" points="4.5 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Matrix 3: verkoop abonnementen FO: ophalen geg. RR (incl foto), pers.profiel met attest, betal. via voucher, dir. uitgifte" state="story not-done" percentage-done="15" points="4.75"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Overdracht vereistenbeheer                                                                                                " state="story done" points="0.75"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Detailanalyse MOBIB datamodel 4.2.1                                                                                       " state="story done" points="1.5 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Tarievenmodule beheer productattributenset (contracts)                                                                    " state="story not-done" percentage-done="75" points="1.5 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Scannen van reviewsheet VVK met als doel een estimate van het werk                                                        " state="story not-done" percentage-done="0" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Feedback team op UC + Migratie VP                                                                                         " state="story done" points="1"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review integraties ABO-20 en ABO-21                                                                                       " state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Scannen van reviewsheet KB met als doel een estimatie van het werk                                                        " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Overzicht verschil Controleregels-Validatieregels                                                                         " state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>

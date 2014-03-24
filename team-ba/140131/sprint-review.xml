@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140131" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="Team B.A.">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="5.58">Jan </member>
+        <member type="hands-on" capacity="1.25">Saskia </member>
+        <member type="hands-on" capacity="10">Jetro </member>
+    </team>
+
+    <stories>
+        <story title="Review Business Testscenarios MOBIB-kaartbeheer" state="story done" points="0.25" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Voorbereiding Business kickoff meeting Vrijverkeerkaart" state="story done" points="0.5" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Business Kickoff meeting Vrijverkeerkaarten" state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review feedback DL ivm Verfijning Bestek ABO" state="story done" points="8" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Verlof - enkel voor capaciteit" state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review Addendum - Verfijning bestek Inkomstenbeheer" state="story done" points="0.25" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Uitbreiden concepten rondom PERSONALISATIELEVERANCIER als PARTIJ ROL" state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Demo MOBIB-kaartbeheer" state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Verwerken feedback demo SAM beheer" state="story done" points="3" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Zoektocht avatars" state="story done" points="0.1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Verificatie ICT vereisten ivm Klantenbeheer" state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>         
+                      
+</sprintreview>       
+                      
+                      
+                      
+                      

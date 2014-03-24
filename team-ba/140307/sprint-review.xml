@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140307" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="Team B.A.">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="4.5">Jan </member>
+        <member type="hands-on" capacity="4.5">Saskia </member>
+        <member type="hands-on" capacity="4.5">Michiel </member>
+        <member type="hands-on" capacity="4.75">Jetro </member>
+        <member type="hands-on" capacity="2.75">Frank </member>
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story title="[A] Matrix 4: verkoop abonnementen FO: ophalen gezinssituatie, foto scan /webcam, offerte voor meerdere personen, gezinskorting, betaling cash/bancontact,interne batch" state="story not-done" percentage-done="70" points="2.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[E] Update UCM/SNM/LIM/UCS Klantenbeheer n.a.v. review DL" state="story not-done" percentage-done="50" points="2.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[E] Review verfijning bestek ABO v4.03 RV6 met oog op voorlopige goedkeuring" state="story done" points="1"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[A] Meeting configureerbaarheid grootboekrekeningen" state="story not-done" percentage-done="0" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[E] Review VB inkomstenbeheer met oog op voorlopige goedkeuring" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[C] Verfijning breakup Abonnementen met extra slices" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[C] Verfijning breakup Tarieven met extra slices" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[E] Review AVU-31 SS SWR Rechthebbenden Vrijverkeerkaart" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[C] Uitwerken en schatting microplanning analyse" state="story done" points="2.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[E] Review Business_Test_Scenarios-ABO-R1-VVK-vs00.01" state="story done" points="2.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[C] Breakup Inkomstenbeheer" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[A] Matrix 3: verkoop abonnementen FO: ophalen gegevens RR (incl foto), persoonsprofiel met attest, betaling via voucher, directe uitgifte" state="story done" points="1.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[A] Tarievenmodule beheer productattributenset (contracts)" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[C] Scannen van reviewsheet VVK met als doel een estimate van het werk" state="story not-done" percentage-done="0" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[P] Product Ownership" state="story done" points="4"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[A] IKB-Analyse kasverslag (lijnwinkel FO)" state="story done" points="1.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="[A] Meeting MOBIB specs (overstappen)" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story> 
+   </stories>        
+
+</sprintreview>

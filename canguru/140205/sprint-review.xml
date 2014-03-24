@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140205" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="CanGuru">
+      <member type="hands-on" capacity="3.5">Laurens Robben</member>
+      <member type="hands-on" capacity="4">Joeri Marcoen</member>
+      <member type="hands-on" capacity="3.5">Maarten Claes</member>
+      <member type="tester" capacity="4">Carmen Filippo</member>
+      <member type="tester" capacity="4">Carol Guns</member>
+      <member type="tester" capacity="4">Kim Van Weyenbergh</member>
+      <member type="scrummaster" capacity="0">Bjorn Geuns</member>
+      <member type="productowner" capacity="0.0">Saskia Van Oldenborgh</member>
+      <member type="productowner" capacity="0.0">Jan Van der Borght</member>
+      <member type="productowner" capacity="0.0">Jetro Wils</member>
+    </team>
+
+    <intro> <!--optional section-->
+        <slides>
+            <slide title="Sprint 01" type="sprint-goal">
+                    <h5>What does it mean?</h5>
+                    <ul>
+                        <li>Having a first sprint to 'sense' velocity vs. capacity</li>
+                    </ul>
+                    <h5>Practically</h5>
+                    <ul>
+                        <li>Estimations: unstable in the past</li>
+                        <li>Predictibility low due to</li>
+                            <ul>
+                                <li>distraction</li>
+                                <li>under estimation</li>
+                                <li>uncertainty, questions,... </li>
+                                <li>technical, infrastructural issues </li>
+                                <li>wrong granularity work items </li>                                
+                                <li>dependencies </li>
+                            </ul>
+                        <li>Conclusion: NO single root cause</li>
+                    </ul>
+                    <h5>Solution</h5>
+                    <ul>
+                        <li>Solution for this sprint: retro-actively re-calculate velocity upon </li>
+                            <ul>
+                                <li>well estimated sprint</li>
+                                <li>the worked ours</li>
+                            </ul>
+                        <li>Reduce this presentation only as metrics place holder </li>
+                    </ul>
+            </slide>
+        </slides>
+    </intro>
+
+    <stories>
+		    <story title="DL-10834 [VVK] Create parameter" state="story done" points="2" id="DL-10834"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10835 [VVK] Modify parameter " state="story done" points="2" id="DL-10835"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10836 [VVK] Delete parameter " state="story done" points="2" id="DL-10836"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story title="DL-10883 [VVK] Write functional feature file for Create and Validate Offer " state="story done" points="1" id="DL-10883"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10885 [VVK] Write functional feature file for Create Account " state="story done" points="1" id="DL-10885"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10886 [VVK] Write functional feature file for Create Sales Order " state="story done" points="1" id="DL-10886"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10887 [VVK] Write functional feature file for Create Production Order " state="story done" points="1" id="DL-10887"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10889 [VVK] Write functional feature file for Create Contracts " state="story done" points="1" id="DL-10889"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10895 [VVK] Write functional feature file for Create Personalisation Order " state="story done" points="1" id="DL-10895"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10897 [VVK] Write functional feature file for Create Personalisation Batch " state="story done" points="1" id="DL-10897"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10901 [VVK] Write functional feature file for Show Personalisation Batch Details " state="story done" points="1" id="DL-10901"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10909 [VVK] Write functional feature file for Show Parameter List " state="story done" points="1" id="DL-10909"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10913 [VVK] Write functional feature file for Create Parameter " state="story done" points="1" id="DL-10913"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10918 [VVK] Write functional feature file for Modify Parameter " state="story done" points="1" id="DL-10918"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10923 [PRINTER] Card pickup issue investigation " state="story uncommitted" points="1.5" id="DL-10923"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10925 [VVK] Write functional feature file for Delete Parameter " state="story done" points="1" id="DL-10925"><slides><slide type="story-narrative"></slide></slides></story>        
+		
+		
+        <story title="DL-10819 [VVK] Happy flow Create and Validate Offer " state="story not-done" points="4" id="DL-10819"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10823 [VVK] Integrate with mocked Account Service to create account " state="story not-done" points="1" id="DL-10823"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10825 [VVK] Integrate with mocked Account Service to create contracts " state="story not-done" points="1" id="DL-10825"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10827 [VVK] Create Sales Order " state="story not-done" points="1.5" id="DL-10827"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10829 [VVK] Create Production Order " state="story not-done" points="1.5" id="DL-10829"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10831 [VVK] Create Personalisation Order " state="story not-done" points="2" id="DL-10831"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10833 [VVK] Show parameter list " state="story not-done" points="2" id="DL-10833"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10837 [VVK] NServicebus logging " state="story not-done" points="4" id="DL-10837"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="DL-10905 [VVK] Write functional feature file for Search Personalisation Batch  " state="story not-done" points="2" id="DL-10905"><slides><slide type="story-narrative"></slide></slides></story>
+		
+   </stories>        
+
+</sprintreview>

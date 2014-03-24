@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140221" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="Team B.A.">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="4">Jan </member>
+        <member type="hands-on" capacity="4">Saskia </member>
+        <member type="hands-on" capacity="4">Michiel </member>
+        <member type="hands-on" capacity="4">Jetro </member>
+        <member type="hands-on" capacity="4">Frank </member>
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story title="Analyse oplossing voor The Matrix lijn 1 (Michiel + Jetro: KB ; Frank + Michiel : Tarief ; Jan+ Michiel: Verkoop)" state="story done" points="5.75"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review SS_SWR_AVU_31_Rechthebbenden_Vrijverkeerkaart_v06.01 (nog niet de specs aanpassen)                        " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review VB_SWR_ABO_Verfijnd_Bestek_Inkomstenbeheer_v04.02+CIM                                                     " state="story done" points="1"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Scannen van reviewsheet VVK met als doel een estimate van het werk                                               " state="story not-done" points="0.5" percentage-done="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Scannen van reviewsheet KB met als doel een estimatie van het werk                                               " state="story not-done" points="0.5" percentage-done="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Review + identificatie follow-up acties VB_SWR_ABO_Verfijnd_Bestek_Security_Deel_4_v05.01                        " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Tarieven breakup finaliseren                                                                                     " state="story done" points="1.25"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Omgeving opzetten (SVN, Agilian) met Annemie                                                                     " state="story done" points="1"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Inkomstenbeheer analyse 'bankbetalingen'                                                                         " state="story done" points="3"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Verfijning breakup Abonnementen met extra slices                                                                 " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Business_Test_Scenarios-AVU-R2-MoBIB_Kaart_Beheer (valt onder product ownership)                                 " state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Tarievenmodule: UC voor support voor JUMP producten                                                              " state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>

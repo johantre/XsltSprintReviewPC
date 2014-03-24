@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releasedata>
+    <sprints>
+        <sprint name="01">140317</sprint>
+        <sprint name="02">140324</sprint>
+        <sprint name="03">140331</sprint>
+    </sprints>
+    <releases><!--note the total points-->
+        <release id="01" name="FW 1.0" totalpoints="100">
+            <sprintfolders>
+                <sprintfolder>140317</sprintfolder>
+                <sprintfolder>140324</sprintfolder>
+                <sprintfolder>140331</sprintfolder>
+            </sprintfolders>
+        </release>
+    </releases>
+</releasedata>

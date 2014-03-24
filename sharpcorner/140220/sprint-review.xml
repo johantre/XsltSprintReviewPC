@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140220" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="SharpCorner">
+        <member type="productowner" capacity="0">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0">Jan Van der Borght</member>
+		<member type="scrummaster" capacity="0">Gert Verhoeven</member>
+		<member type="hands-on" capacity="3">Alain Kinet</member>
+		<member type="hands-on" capacity="3">Bert Houben</member>
+		<member type="hands-on" capacity="4.5">Jo Wijnant</member>
+		<member type="tester" capacity="3">Joris Debien</member>        
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story relid="01" title="[SAM] Migratie DB technical test                                                                                    " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Vastleggen hoe de V00 zwarte lijst na de migratie bij FO zal terecht komen                                   " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Vernietigen - Bij opstellen vernietigingsaanvraag mogelijkheid voorzien om referentienummer te kunnen ingeven" state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[SAM] Migratie DB functional test                                                                                   " state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[DOC] Plugin mechanisme voorzien voor integratie met document systeem van de klant                                  " state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[SAM] RelayCommand vervangen door DelegateCommand                                                                   " state="story done" points="2  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Registreer als defect / gedeactiveerd - kaart zit nog altijd in doos na statusverandering                    " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] RelayCommand vervangen door DelegateCommand                                                                  " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Verplaats kaart geeft historiekevent verplaats doos weer                                                     " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Knoppen staan niet gealigneerd met pivot                                                                     " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="13" title="[REV] Opzetten solution RevenueManagement                                                                           " state="story done" points="2  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[SAM] Opzetten van JobScheduler	System Use Case	Major  " state="story not-done" percentage-done="50" points="3"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Database migratie in kaart brengen en documenteren" state="story not-done" percentage-done="50" points="1"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>
+                                                                                                                                                                                                

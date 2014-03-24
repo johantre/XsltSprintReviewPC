@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140213" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="SharpCorner">
+        <member type="productowner" capacity="0">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0">Jan Van der Borght</member>
+		<member type="scrummaster" capacity="0">Gert Verhoeven</member>
+		<member type="hands-on" capacity="3">Alain Kinet</member>
+		<member type="hands-on" capacity="3">Bert Houben</member>
+		<member type="hands-on" capacity="4">Jo Wijnant</member>
+		<member type="tester" capacity="3">Joris Debien</member>        
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story relid="02" title="[CARD] Voor elke knop moet er een icoon voorzien worden                                                    " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Keuren - Referentienummer moet ingegeven worden bij aanmaken PV keuring en tonen in het detail      " state="story done" points="2  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Verplaatsen doos/kaart - Ingave opmerking (vb. referentie bestelbonnummer DL)                       " state="story done" points="2  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Vernietigen - Bij valideren van PV vernietiging mogelijkheid voorzien om opmerking te kunnen ingeven" state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Vernietigen - Opmerking bij vernietigen wordt niet gevisualiseerd in historiek                      " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Vernietigen - Attestnummer worden niet weergegeven op PV vernietiging                               " state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[SAM] Clean-up script voor vernietigde sams moet verwijderde sams bijhouden                                " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Hernoemen van reserved fields in de database                                                        " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[SAM] JobScheduler technisch eerst bekijken met Bjorn Geuns/ITS hoe dit moet opgezet worden                " state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Keuren - Omdoos goedkeuren mag niet meer automatisch gebeuren                                       " state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[SAM] Database migratie in kaart brengen en documenteren                                                   " state="story done" points="1  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[SAM] Groep - Sleutels andere groep worden tijdelijk getoond                                               " state="story uncommitted" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Vastleggen hoe de V00 zwarte lijst na de migratie bij FO zal terecht komen                          " state="story not-done" points="0.5" percentage-done="50"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="01" title="[DOC] Plugin mechanisme voorzien voor integratie met document systeem van de klant                         " state="story not-done" points="1" percentage-done="50"><slides><slide type="story-narrative"></slide></slides></story>
+        <story relid="02" title="[CARD] Database migratie in kaart brengen en documenteren	                                                 " state="story not-done" points="1" percentage-done="50"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>
+
+
+
+
+
+
+
+
+
+
+

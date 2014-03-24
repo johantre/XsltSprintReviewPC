@@ -1,0 +1,131 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140306" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="CanGurus">
+
+      <member type="hands-on" capacity="6.5">Laurens Robben</member>
+      <member type="hands-on" capacity="6.5">Joeri Marcoen</member>
+      <member type="hands-on" capacity="6.5">Maarten Claes</member>
+      <member type="tester" capacity="6.5">Carmen Filippo</member>
+      <member type="tester" capacity="6.5">Carol Guns</member>
+      <member type="tester" capacity="6.5">Kim Van Weyenbergh</member>
+      <member type="scrummaster" capacity="0">Bjorn Geuns</member>
+      <member type="productowner" capacity="0.0">Saskia Van Oldenborgh</member>
+      <member type="productowner" capacity="0.0">Jan Van der Borght</member>
+      <member type="productowner" capacity="0.0">Jetro Wils</member>
+
+    </team>
+
+    <!--<intro> --><!--optional section--><!--
+        <slides>
+            <slide title="Sprint 04" type="sprint-goal">
+                    <h5>What does it mean?</h5>
+                    <ul>
+                        <li>Having a first sprint to 'sense' velocity vs. capacity</li>
+                    </ul>
+                    <h5>Practically</h5>
+                    <ul>
+                        <li>Estimations: unstable in the past</li>
+                        <li>Predictibility low due to</li>
+                            <ul>
+                                <li>distraction</li>
+                                <li>under estimation</li>
+                                <li>uncertainty, questions,... </li>
+                                <li>technical, infrastructural issues </li>
+                                <li>wrong granularity work items </li>                                
+                                <li>dependencies </li>
+                            </ul>
+                        <li>Conclusion: NO single root cause</li>
+                    </ul>
+                    <h5>Solution</h5>
+                    <ul>
+                        <li>Solution for this sprint: retro-actively re-calculate velocity upon </li>
+                            <ul>
+                                <li>well estimated sprint</li>
+                                <li>the worked ours</li>
+                            </ul>
+                        <li>Reduce this presentation only as metrics place holder </li>
+                    </ul>
+            </slide>
+        </slides>
+    </intro>-->
+
+    <stories>
+		<!--<story title="name of story " state="story done" points="1" id="DL-XXXXX"><slides><slide type="story-narrative"></slide></slides></story> -->        
+		<!--<story title="name of story " state="story not-done" points="1" id="DL-XXXXX"><slides><slide type="story-narrative"></slide></slides></story> -->        
+		<!--<story title="name of story " state="story uncomitted" points="1" id="DL-XXXXX"><slides><slide type="story-narrative"></slide></slides></story> -->        
+
+		<story title="DL-10716 [V00] Integratie: uitreiken kaart voor kaart die nog niet in het systeem (CardMngmnt) NOK" 
+			   state="story done" points="0.5" id="DL-10716"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-10735 [v00] INTEGRATIE: Kaart uitreiken via kaartpersonalisator NOK in CardMngmnt" 
+			   state="story done" points="1" id="DL-10735"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-10831 [VVK] Create Personalisation Order" 
+			   state="story done" points="2" id="DL-10831"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-10846 [VVK] Create Personalisation Batch " 
+			   state="story done" points="5" id="DL-10846"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-10847 [VVK] Show Personalisation Batch Details" 
+			   state="story done" points="3" id="DL-10847"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-10848 [VVK] Search Personalisation Batch" 
+			   state="story done" points="3" id="DL-10848"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-10910 [VVK] UIFF Raadpleeg pbatch parameter" 
+			   state="story done" points="0.5" id="DL-10910"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11111 [VVK] Code Reviews" 
+			   state="story done" points="3" id="DL-11111"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11116 [V00] test integratie Mobib Kaart Beheer" 
+			   state="story done" points="1" id="DL-11116"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11124 [VVK] Kaart met 4.2 datamodel kan niet gelezen worden dmv de Personeelsprofielen applicatie" 
+			   state="story done" points="0.5" id="DL-11124"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11178 [VVK] FF Verwerk triggers" 
+			   state="story done" points="0.5" id="DL-11178"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11181 [VVK] FF Koppel gefaalde personalisatieorders los van batch" 
+			   state="story done" points="0.5" id="DL-11181"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11191 [V00] Link kaart vervangen zichtbaar bij status kaart besteld" 
+			   state="story done" points="0.5" id="DL-11191"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11226 [VVK] Implementeer Koppel gefaalde order los" 
+			   state="story done" points="0.5" id="DL-11226"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11230 [VVK] Timebox FF implementeren" 
+			   state="story done" points="3" id="DL-11230"><slides><slide type="story-narrative"></slide></slides></story>		
+		
+
+		
+		<story title="DL-11224 [VVK] Implementeer Start externe personalisatiebatch" 
+			   state="story not-done" percentage-done="0" points="2" id="DL-11224"><slides><slide type="story-narrative"></slide></slides></story>
+		<story title="DL-11349 EXT - [V00] integratie - Printjob wordt niet onmiddellijk geannuleerd na vaststelling foutieve status/locatie" 
+			   state="story not-done"  percentage-done="0" points="0.5" id="DL-11349"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story title="DL-11350 EXT - [V00] integratie - foutmelding onbekende fout in V00 bij verkeerde status/locatie" 
+			   state="story not-done" percentage-done="75" points="0.5" id="DL-11350"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story title="DL-11163 [V00] externe personalisatie leverancier feedback wordt verkeerd verwerkt" 
+			   state="story not-done" percentage-done="75" points="0.5" id="DL-11163"><slides><slide type="story-narrative"></slide></slides></story>		
+   </stories>        
+
+   <finish>
+        <slides>
+            <slide title="Resource levelling" type="story-context">
+                    <h5>Current issues</h5>
+                    <ul>
+                        <li>Overcapacity on QA</li>
+						<li>Feedback loop for BA is too long</li>
+                    </ul>
+					
+                    <h5><br/>Planned approach</h5>
+                    <ul>
+                        <li>Build Domain Knowledge within QA</li>
+                        <li>QA reviews UC's ABO</li>
+						<li>QA assists in completing UC's ABO with alternative paths</li>
+                        <li>Manual review of FF's VVK</li>
+						<li>Exploratory testing VVK</li>
+                    </ul>
+					
+                    <h5><br/>Advantages</h5>
+                    <ul>
+                        <li>Spreading of Domain Knowledge</li>
+						<li>Increased quality analysis ABO</li>
+						<li>Less rework on FF's ABO</li>
+						<li>Useful work on short and long-term</li>
+                    </ul>
+            </slide>
+        </slides>   
+   </finish>
+   
+</sprintreview>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releasedata>
+    <sprints>
+        <sprint name="00">140131</sprint>
+        <sprint name="01">140207</sprint>
+        <sprint name="01 bis">140214</sprint>
+        <sprint name="02">140221</sprint>
+        <sprint name="03">140228</sprint>
+        <sprint name="04">140307</sprint>
+        <sprint name="05">140314</sprint>
+        <sprint name="06">140321</sprint>
+        <sprint name="07">140328</sprint>
+        <sprint name="08">140404</sprint>
+    </sprints>
+    <releases>
+        <release id="01" name="Rampup" totalpoints="200">
+            <sprintfolders>
+                <sprintfolder>140131</sprintfolder>
+                <sprintfolder>140207</sprintfolder>
+                <sprintfolder>140214</sprintfolder>
+                <sprintfolder>140221</sprintfolder>
+                <sprintfolder>140228</sprintfolder>
+                <sprintfolder>140307</sprintfolder>
+                <sprintfolder>140314</sprintfolder>
+                <sprintfolder>140321</sprintfolder>
+                <sprintfolder>140328</sprintfolder>
+                <sprintfolder>140404</sprintfolder>
+            </sprintfolders>
+        </release>
+    </releases>
+</releasedata>

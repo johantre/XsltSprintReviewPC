@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140207" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="Team B.A.">
+        <member type="scrummaster" capacity="2.75">Alexander </member>
+        <member type="hands-on" capacity="1.5">Jan </member>
+        <member type="hands-on" capacity="4">Saskia </member>
+        <member type="hands-on" capacity="0">Michiel </member>
+        <member type="hands-on" capacity="1">Jetro </member>
+    </team>
+
+    <stories>
+        <story title="ABO-08 TO DL Terugbetalingen                                                                                                         " state="story done" points="0.5" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="AVU-01 Beleidsrapportering MOBIB kaarten                                                                                             " state="story done" points="0.25" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="(RTBDOC-280) ABO-20 Review TO Periodieke afsluiting (RTBDOC-281) ABO-21 Review TO Maandafsluiting (1 document)                       " state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="(RTBDOC-135) ABO-19  Review TO DBS facturatie                                                                                        " state="story not-done" points="1" percentage-done="50" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Deelname meeting sequence diagram archi - dev - analyse                                                                              " state="story not-done" points="0.75" percentage-done="50" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="(RTBDOC-436) Review Business scenario's MOBIB kaartbeheer                                                                            " state="story done" points="0.5" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="UCCS voor het automatisch blacklisten van VVK na x tijd                                                                              " state="story done" points="1.5" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="UCSS , UCM en LIM voor het automatisch verlengen van VVKaarten na vervaldatum                                                        " state="story done" points="1.5" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Inschatten impact op inkomstenbeheer van changes architectuur                                                                        " state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Scannen van reviewsheet VVK met als doel een estimate van het werk                                                                   " state="story not-done" points="0.5" percentage-done="0" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Scannen van reviewsheet KB met als doel een estimatie van het werk                                                                   " state="story not-done" points="0.5" percentage-done="0" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Analyse ABO op basis van opsplitsing in tracks en prioriteit van architectuur en PM (rekening houdend met mogelijke overlap met VVK) " state="story done" points="4.25" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="Opsplitsen abonnementen in kleine tracks met value: MATRIX vervolledigen (out of scope: Tarievenmodule en Inkomstenbeheer) (break up)" state="story done" points="1" id="Jira-ID"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>

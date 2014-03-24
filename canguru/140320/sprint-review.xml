@@ -1,0 +1,164 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140320" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+  <team name="CanGurus">
+    <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="8.0" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="5.0" avatar="../avatars/Joeri.jpg">Joeri Marcoen</member>
+    <member type="hands-on" capacity="8.0" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="8.0" avatar="../avatars/Carmen.jpg">Carmen Filippo</member>
+    <member type="tester" capacity="7.5" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="tester" capacity="8.0" avatar="../avatars/Kim.jpg">Kim Van Weyenbergh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+
+  <stories>
+
+    <story title="DL-11464 [V00] finalize MOBIB integratie" state="story done" points="0.5" id="DL-11464">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11465 [V00] Test MOBIB integratie" state="story done" points="0.5" id="DL-11465">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11472 [V00] hertest bugfix DL-11163 [V00] externe personalisatie leverancier feedback wordt verkeerd verwerkt" state="story not-done" points="1" id="DL-11472" percentage-done="0">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+
+    <story title="DL-11224 [VVK] Implementeer Start externe personalisatiebatch" state="story done" points="3.5" id="DL-11224">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11461 [VVK] prelim test New lib from IntoIT" state="story done" points="1" id="DL-11461">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11462 [VVK] performance counters op de componenten" state="story done" points="1" id="DL-11462">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11463 [VVK] extended logging op de componenten + logservice (Q&quot;D)" state="story done" points="3" id="DL-11463">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11470 [VVK] inventaris ontbrekende unit testen" state="story done" points="0.5" id="DL-11470">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11471 [VVK] DEMO DL voorbereiden" state="story done" points="5.5" id="DL-11471">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11466 [VVK] TIMEBOX test VVK gebaseerd op FF" state="story not-done" points="3" id="DL-11466" percentage-done="30">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11467 [VVK] concurreny tests (manueel)" state="story not-done" points="3" id="DL-11467" percentage-done="0">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11473 [ABO] TIMEBOX review UC's" state="story done" points="3" id="DL-11473">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11469 [ABO][TARIFF] format voor QA + BA coop" state="story done" points="0.5" id="DL-11469">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11468 [ABO][TARIFF] TIMEBOX inwerken, Domein kennis vergaren" state="story not-done" points="3" id="DL-11468" percentage-done="0">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11009 [KB] Sanity check" state="story done" points="2" id="DL-11009">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11015 [KB] Check manually DL-9314 Start klantenbeheer" state="story done" points="0.5" id="DL-11015">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11016 [KB] Check manually DL-9317 Toon details persoon" state="story done" points="0.5" id="DL-11016">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11017 [KB] Check manually DL-9328 Toon details contactpersoon" state="story done" points="0.5" id="DL-11017">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11018 [KB] Check manually DL-9326 Toon adres details" state="story done" points="0.5" id="DL-11018">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11019 [KB] Check manually DL-9322 Voeg pasfoto toe via upload" state="story done" points="0.5" id="DL-11019">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11020 [KB] Check manually DL-9323 Zoek klant" state="story done" points="0.5" id="DL-11020">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11021 [KB] Check manually DL-9324 Filter klanten" state="story done" points="0.5" id="DL-11021">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11022 [KB] Check manually DL-9325 Sorteer klanten" state="story done" points="0.5" id="DL-11022">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11023 [KB] Check manually DL-9327 Filter adressen" state="story not-done" points="0.5" id="DL-11023" percentage-done="25">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11024 [KB] Check manually DL-9331 Zoek medewerker" state="story not-done" points="0.5" id="DL-11024" percentage-done="25">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11025 [KB] Check manually DL-9332 Filter medewerkers" state="story done" points="0.5" id="DL-11025" >
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11026 [KB] Check manually DL-9333 Sorteer medewerkers" state="story done" points="0.5" id="DL-11026">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="RTBDEV-30 EXT - Opstart scherm(en) 65+ traag binnen mobiguider" state="story not-done" points="0" id="RTBDEV-30" percentage-done="50">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+  </stories>
+
+</sprintreview>

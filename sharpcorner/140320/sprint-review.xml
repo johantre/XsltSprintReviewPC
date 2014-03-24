@@ -1,0 +1,116 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+<sprintreview folder="140320" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="productowner" capacity="0">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0">Jan Van der Borght</member>
+		<member type="scrummaster" capacity="0">Gert Verhoeven</member>
+		<member type="hands-on" capacity="7">Alain Kinet</member>
+		<member type="hands-on" capacity="7.5">Bert Houben</member>
+		<member type="hands-on" capacity="7.5">Jo Wijnant</member>
+		<member type="tester" capacity="6.5">Joris Debien</member>        
+	</team> 
+
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<stories>   	 		
+	
+		<!-- AVU R1 -->
+		<story id="DL-11204" points="2" state="story done" relid="01"   title="[SAM] Manuele regressie testen"><slides><slide type="story-narrative"/></slides></story>			
+		
+		<!-- AVU R2 -->
+		<story id="DL-11413" points="1" state="story done" relid="02"   title="[JOB] JobScheduler deployment"><slides><slide type="story-narrative"/></slides></story>
+		<story id="DL-11450" points="1" state="story done" relid="01"   title="[SAM] Cleanup job registreren via roundhouse"><slides><slide type="story-narrative"/></slides></story>
+		
+		<story id="DL-11390" points="4" state="story done" relid="02"   title="EXT - [CARD] PV keuring - Manier om kaarten te selecteren gebeurt op ongebruiksvriendelijke manier">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11391" points="2" state="story done" relid="02"   title="EXT - [CARD] Selecteer kaart - Kaarten deactiveren of als defect loggen, resullteert in een locatiewijziging naar Financiën">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11395" points="1" state="story done" relid="02"   title="EXT - [CARD] Deactiveer kaart - Niet mogelijk om kaart met locatie financiën te deactiveren">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11396" points="1" state="story done" relid="02"   title="EXT - [CARD] Tekst invoer veld blijft groeien naar rechts naarmate er meer tekst wordt ingegeven">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11397" points="2" state="story done" relid="02"   title="EXT - [CARD] Niet beheerbare gegevens moeten getoond worden in de beheerschermen, niet editeerbaar">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11398" points="1" state="story done" relid="02"   title="EXT - [CARD] Algemeen - Default sorteerrichting niet aanpasbaar">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11399" points="0.5" state="story done" relid="02" title="EXT - [CARD] PV vernietiging - Knop nieuw staat niet op de correcte plaats">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11414" points="0.5" state="story done" relid="02" title="EXT - [CARD] Crash bij session expired">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-11447" points="1" state="story done" relid="02"   title="[CARD] Performance 'ontvangen kaarten' in kaart brengen">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+			
+		<!-- ABO R3 -->
+		<story id="DL-11452" points="1" state="story done" relid="13"   title="[SHOP] Shop module solution opzetten (enkel UI)">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-2985" points="0.5" state="story done" relid="13"  title="[SHOP/REV] Verwerk directe betaling in LW FO - Algemene setup">
+			<slides>
+				<slide type="story-narrative">
+                    <!--<h5>header title:</h5>
+                    <ul>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test </li>
+                        <li>test <img src="img/linkedin.jpg" height="400" alt="demo: diff" /></li>
+                    </ul>-->
+				</slide>
+			</slides>
+		</story>
+		<story id="DL-11416" points="1" state="story done" relid="13"   title="[REV] Opzetten teamcity builds">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="DL-9685" points="1" state="story done" relid="13"    title="[REV] Verwijder betalingsmarge">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>						
+		<story id="DL-2993" points="4" state="story done" relid="13"    title="[REV] Automatisch verwerken van Europese bank overschrijvingen">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>    		
+		<story id="DL-11449" points="3" state="story done" relid="13"   title="[REV] Datamodel betalingen opzetten">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>           
+
+		<story id="DL-11448" points="1" state="story not-done" percentage-done="10" relid="13" title="[SharpCorner] Nieuwe test omgeving opzetten">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+	</stories>
+</sprintreview>

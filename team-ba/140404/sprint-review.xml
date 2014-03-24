@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+
+<sprintreview folder="140404" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+    <team name="Team B.A.">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="4">Jan </member>
+        <member type="hands-on" capacity="4">Saskia </member>
+        <member type="hands-on" capacity="4">Michiel </member>
+        <member type="hands-on" capacity="4">Jetro </member>
+        <member type="hands-on" capacity="4">Frank </member>
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story title="" state="story done" points="0"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>
