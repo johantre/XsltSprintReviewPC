@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140828" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="8">Dirk </member>
+        <member type="hands-on" capacity="1">Stijn</member>
+        <member type="hands-on" capacity="8">Ivo </member>
+        <member type="hands-on" capacity="9">Erik </member>
+        <member type="tester" capacity="9">Stefaan </member>
+        <member type="tester" capacity="8">Broes </member>
+        <member type="productowner" capacity="8">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: ABO JUMP</h5>
+				<list>
+					<li>Continue card library integration</li>
+                    <li>Focus on testing with mocked card and carddump tool</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+     <stories>
+		<story id="DL-5259" relid="15235" points="0.25" state="story done" title="Diagnose contactloze kaartlezer: foutieve uitlijning in resultaten popup"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-8953" relid="13382" points="0" state="story done" title="Personeelsprofielen: Men kan niet aanloggen met een profiel waarvan de tot en met datum op vandaag is."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-10305" relid="15235" points="0.25" state="story done" title="KAR Status spelling mistake: Sattelieten instead of Satellieten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12092" relid="" points="0" state="story done" title="2 BC's in Diagnose scherm "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12692" relid="" points="3" state="story done" title="Drools: Product definition"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12726" relid="" points="2" state="story done" title="Support: DLIM + RTBINC checking"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12737" relid="15229" points="1" state="story done" title="Diagnose: no system message for REMOTE diagnose module informatie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12752" relid="15235" points="1" state="story done" title="EXT - Release Management: Sortering van softwareversies in diagnose gebeurt niet op releasedatum"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12753" relid="" points="2" state="story done" title="DROOLS: Event counters"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12779" relid="" points="1" state="story done" title="Team: Setup env to run DROOLS and Card tests"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12780" relid="" points="1" state="story done" title="Cardreader: acceptance tests for polling problems"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12781" relid="" points="1" state="story done" title="Drools: Testcases pre-bigbang"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12782" relid="" points="2" state="story done" title="Cardlib: SAM management POC"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12783" relid="" points="3" state="story done" title="Cardlib: CI build of card library"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12785" relid="" points="3" state="story done" title="JSON Editor: Testcases for cards"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12787" relid="" points="3" state="story done" title="Release ABO R2 bug fix"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12693" relid="" points="12" state="story done" title="Cardlib: Identification and authorization"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12784" relid="" points="3" state="story not-done" percentage-done="0"  title="Cardlib: Dumptool CI build and documentation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12786" relid="" points="3" state="story not-done" percentage-done="10"  title="Test Executer mocked cards"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12788" relid="" points="5" state="story not-done" percentage-done="95"  title="JSON Editor: Carddump"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="" relid="" points="1" state="story uncommitted"   title="Cardlib bugs: followup + new delivery of library"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="" relid="" points="2.5" state="story uncommitted"   title="Testdesign JUMP"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="" relid="" points="0.5" state="story uncommitted"   title="Support: MPM search scripts"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="" relid="" points="0.5" state="story uncommitted"   title="Validation: add used/unused flags"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>Card library: meeting with Into-IT, new version with fixes delivered at end of sprint.</li>
+                    <li>Card dump tool: code not reusable for mocked card tests.</li>
+                    <li>Card dump tool: many problems to get it to build, several problems with interaction.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Cardlib: integrate new version from Into-IT.</li>
+                    <li>Make validation work (still with many shortcuts). </li>
+                    <li>Make tests with mocked cards work.</li>
+                    <li>Ensure we have all the DROOLS rules in place as defined by the analysis.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

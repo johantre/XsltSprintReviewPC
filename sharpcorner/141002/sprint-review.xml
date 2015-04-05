@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="141002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="6.0" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="0.5" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="6.5" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="6.5" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="scope" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>AVU R2</strong>
+          <li>Support on bugfix installation in UAT at De Lijn</li>          
+          <br/>
+          
+          <strong>ABO R3</strong>
+          <li>Rework Datamodel from PartyMasterData without LiveHistory</li>
+          <li>Introduce Source in PartyMasterData</li>
+          <li>PlaceCustomerRequest Saga in Sales (general flow for VVK &amp; 65+)</li>                    
+          <li>Payment matching via UI in RevenueManagement</li>
+        </List>
+      </slide>      
+
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>Review integrations ABO R3a</li>
+          <li>Customer Care deployment to integration environment (IIS2)</li>
+          
+          <br/>
+          <strong>QA</strong>
+          <li>Knowledge sharing CardManagement &amp; CustomerManagement to Carol &amp; Niels</li>
+          
+        </List>
+      </slide>
+      
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug" -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+  <!-- <story id="DL" relid="01" points="1" state="story done" title="some title"><slides><slide type="story-narrative"></slide></slides></story> -->
+	<stories>      
+    				
+    <story id="DL-12932" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Kaart personaliseren: Geen timeout/foutmelding zichtbaar in UI wanneer scriptura link niet beschikbaar is"><slides><slide type="story-narrative"></slide></slides></story>    
+    
+    <story id="DL-12613" relid="11" points="0.5" state="story not-done" percentage-done="0"  title="EXT - Account: Contracttijden komen niet overeen met huidige tijd"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12805" relid="13" points="5" state="story done" title="[PMD] Introduce Source in PartyMasterData &amp; Datamodel reworking"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12879" relid="13" points="5" state="story done" title="[SALES] PlaceCustomerRequest Saga (general flow for VVK &amp; 65+)"><slides><slide type="story-narrative"></slide></slides></story>				
+    <story id="DL-12942" relid="13" points="3" state="story done" title="[REV] Payment matching via UI"><slides><slide type="story-narrative"></slide></slides></story>
+    
+    <story id="MOBAFC-76" relid="13" points="1" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want to have Customer details of new 65+'ers automatically available."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBAFC-77" relid="13" points="0.5" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want that for each RH VVK on the VVK import list, a Request is automatically created."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBAFC-82" relid="13" points="0.5" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want that for each 65+'er (not VVK) on the import list, a Request is automatically created "><slides><slide type="story-narrative"></slide></slides></story>            
+
+  </stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>AVU R2</strong>
+          <li>N/A</li>          
+          <br/>
+          <strong>ABO R1</strong>
+          <li>N/A</li>          
+          <br/>
+          <strong>ABO R3</strong>
+          <li>End to end stories for PlaceCustomerRequest</li>          
+          <li>Creating a payback proposal (and batch) for payments that couldn't be linked automatically</li>   
+          <li>Automatically linking payments to open expected payments</li>
+        </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

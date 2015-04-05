@@ -1,0 +1,63 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140911" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="10">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="2">Steven Robijns </member>
+        <member type="tester" capacity="10">Dorine Vos </member>
+        <member type="tester" capacity="3">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Wouter Crets </member>
+</team>          
+
+<intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <li>Extra dag nodig voor installatie bij DL</li>
+			  <li>Uitklaren Tarievenmodule</li>
+			  <li>Verwerken last minute contractwijzigingen voor Account Mgt</li>
+			  <li>Zieke team member</li>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>AVU R2 en ABO R2</strong>
+	          <li>Installatie BF bij DL</li>
+			  <br/>
+			  <strong>ABO R3</strong>          
+	          <li>Account Management: ontwikkeling op DEV omgeving (DW)</li>
+	          <li>Product Management: implementatie 'on hold' => uitklaring volgende stappen was noodzakelijk</li>
+			  <br/>
+	        </List>
+	      </slide>		
+		</slides>
+</intro>
+
+    <stories>
+		<story id="DL-12824" relid="01" points="1" state="story done" title="[CM] Beheer Locaties"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12838" relid="01" points="0.25" state="story done" title="[RM] Integratie Release Mgt Rapport"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12900" relid="01" points="0.25" state="story done" title="[RM] Merge RM rapport naar 3.2 branch"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12828" relid="06" points="1" state="story not-done" percentage-done="90"  title="[AM] Creeer contract"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12829" relid="06" points="1" state="story not-done" percentage-done="90"  title="[AM] Geef account"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12841" relid="06" points="1" state="story not-done" percentage-done="90"  title="[AM] Wijzig contract"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12847" relid="06" points="1" state="story done" percentage-done="0"  title="[AM] Uitbreiden Nservicebus tool voor Account Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12845" relid="04" points="2" state="story done" percentage-done="0"  title="[PM] Rework Import Product Mgt (Tariefmodule) - QA"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12901" relid="04" points="3.5" state="story not-done" percentage-done="20"  title="[PM] Analyse en Implementatie Tariefbeheer LIM"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12902" relid="04" points="5.5" state="story not-done" percentage-done="0"  title="[PM] Import Tariefbeheer"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12898" relid="01" points="2.5" state="story done" percentage-done="0"  title="[SUPPORT] Support op productie (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12899" relid="03" points="6.5" state="story done" percentage-done="0"  title="[OPS] Oplevering ABO R2 BF"><slides><slide type="story-narrative"></slide></slides></story>
+   
+   		<story id="DL-12539" relid="01" points="0" state="bug" title="Verwijderen release  0 mps - verwijder knop en algemene status niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12867" relid="01" points="0" state="bug" title="RM Rapport - validatietriggering niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12873" relid="01" points="0" state="bug" title="RM Rapport - session expired niet getriggerd op dit scherm"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12908" relid="01" points="0" state="bug" title="RM Rapport - datecreated niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12887" relid="01" points="0" state="bug" title="RM Rapport - statussen niet correct geupdate bij creatie rapport"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

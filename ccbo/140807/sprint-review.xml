@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140807" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="ccbo">
+		<member type="productowner" capacity="0">David Donabedian </member>
+		<member type="scrummaster" capacity="4">Fares Stita </member>
+		<member type="hands-on" capacity="9">Bert Houben </member>
+		<member type="hands-on" capacity="9">Hans Loquet </member>
+		<member type="hands-on" capacity="8">Steven Wyns </member>
+		<member type="hands-on" capacity="0">Wim Jans </member>
+	</team>
+
+	<stories>
+		<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+		<story id="CCBO-973" relid="01" points="3" state="story done" title="Localization extension">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-963" relid="01" points="3" state="story not-done" percentage-done="0"  title="Create Resource file from VSIX">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-994" relid="01" points="3" state="story done" title="Validate name of resources and report errors">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-993" relid="01" points="2" state="story not-done" percentage-done="10"  title="Generate ResX file from old DB">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-970" relid="01" points="2" state="story not-done" percentage-done="0"  title="Database Migration for existing resources with their translations">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1001" points="2" state="story done" title="Create code coverage report on mobiguider solutions">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-991" relid="01" points="5" state="story done" title="Import Resource file to the database">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="" points="1" state="story done" title="Release Framework Pending Changes">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id=""  points="2" state="story done" title="Hotfix and full installation of AFC project support">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-962" relid="01" points="8" state="story done" title="Visualize resource hierarchy">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id=""  points="1" state="story uncommitted" title="Review Tech Team bug fix proposition">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+	</stories>        
+
+</sprintreview>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140716" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="9">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="3">Steven Robijns </member>
+        <member type="tester" capacity="9">Dorine Vos </member>
+        <member type="tester" capacity="8">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+</team>
+
+<intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>[TM] Omzetten db model duurde langer dan voorzien</li>
+			  <li>Framework Upgrade</li>
+			  <br/>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>AVU R2</strong>
+	          <li>Oplevering AVU R2 BF3</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+	          <li>Oplevering ABO R2</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Artikelbeheer: import excel en implementatie schermen</li>
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+</intro>
+
+
+    <stories>
+		<story id="DL-12647" relid="01" points="0" state="bug" title="Detail SP: aantal componenten kom niet overeen met DB"><slides><slide type="story-narrative"></slide></slides></story>
+	
+		<story id="DL-12508" relid="04" points="1.25" state="story not-done" percentage-done="90"  title="[TM] Import Attribuut Definitie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12509" relid="04" points="1.25" state="story not-done" percentage-done="90"  title="[TM] Import Object referenties"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12510" relid="04" points="1.25" state="story not-done" percentage-done="90"  title="[TM] Import Dragerattribuut"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12511" relid="04" points="1.25" state="story not-done" percentage-done="90"  title="[TM] Import Drager Standaard"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12512" relid="04" points="0.25" state="story not-done" percentage-done="90"  title="[TM] Scherm: Selecteer artikelfamilie (zoeken, incl alle zoekcriteria)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12514" relid="04" points="0.375" state="story not-done" percentage-done="95"  title="[TM] Scherm: Raadplegen artikelfamilie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12515" relid="04" points="2" state="story not-done" percentage-done="70"  title="[TM] Scherm:  Aanmaken artikelfamilie (algemene pivot)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12607" relid="04" points="2.5" state="story not-done" percentage-done="85"  title="[TM] Scherm:  Aanmaken artikelfamilie (categorie)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12608" relid="04" points="1.75" state="story not-done" percentage-done="0"  title="[TM] Scherm:  Aanmaken artikelfamilie (attributen verwijderen)"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12606" relid="01" points="0.5" state="story done" title="[RM] KT automatische testen op ACC"><slides><slide type="story-narrative"></slide></slides></story>		
+    	<story id="DL-12604" relid="01" points="2" state="story done" title="[RM] Fixen automatische testen (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12605" relid="01" points="4.25" state="story done" title="[RM] Oplevering AVU R2 BF3"><slides><slide type="story-narrative"></slide></slides></story>
+		
+    	<story id="DL-12603" relid="04" points="4" state="story done" title="[TM] Aanpassing db model naar Oracle"><slides><slide type="story-narrative"></slide></slides></story>
+		
+    	<story id="DL-12612" relid="01" points="0.25" state="story done" title="[TEAM] XML generatie scrumstats"><slides><slide type="story-narrative"></slide></slides></story>
+		
+    	<story id="DL-12611" relid="03" points="2" state="story done" title="[RM] en [LOG] Bug fixing"><slides><slide type="story-narrative"></slide></slides></story>
+
+    	<story id="DL-12610" relid="03" points="3.25" state="story done" title="[LOG] Oplevering ABO R2 K2"><slides><slide type="story-narrative"></slide></slides></story>   
+    </stories>
+</sprintreview>

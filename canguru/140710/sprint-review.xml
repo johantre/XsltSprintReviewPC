@@ -1,0 +1,114 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140710" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="0" avatar="../avatars/Jelle.jpg">Jelle Bens</member>
+    <member type="hands-on" capacity="3.5" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="7.0" avatar="../avatars/Carmen.jpg">Carmen Filippo</member>
+    <member type="tester" capacity="5.5" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+		<story title="RTBINC-58 [V00] Scrollen door schermen regularisatie (soms) niet mogelijk" state="story done" points="1" id="RTBINC-58">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Waiting customer action -> meer uitleg gevraagd over het probleem, en ondertussen de performance van een query op dit scherm onderzocht</LI></UL>
+				</slide>
+			</slides>
+		</story>
+		<story title="RTBINC-59 [V00] Fouten bij het opzoeken van kaarten" state="story not-done" points="1" id="RTBINC-59">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Er moet beslist worden wat we hiermee doen. Dit scherm is NIET meer in de laatste release (die bij hun nog niet in productie staat).</LI></UL>
+				</slide>
+			</slides>
+		</story>
+		<story title="RTBINC-61 [V00] Onterechte dubbele betalingen in 65+" state="story done" points="1" id="RTBINC-61">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Probleem in query gevonden en aangepast -> moet GRONDIG getest worden door testers (regressie op bepaalde stukken, is niet zozeer één scenario)</LI></UL>
+				</slide>
+			</slides>
+		</story>
+ 		<story title="RTBINC-62 [V00] 65+ betalingen zijn vermist" state="story done" points="1" id="RTBINC-62">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Waiting customer action -> een incident in productie waarvoor logfiles ontbreken, gevraagd of het nog voorvalt en of er logfiles voor die gevallen zijn dan</LI></UL>
+				</slide>
+			</slides>
+		</story>
+  		<story title="RTBINC-63 [V00] Fout in terugbetalingsvoorstel nr 461 Mobibguider" state="story done" points="1" id="RTBINC-63">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Waiting customer action -> verdere uitleg gevraagd of dit zelfde probleem is als RTBINC-61</LI></UL>
+				</slide>
+			</slides>
+		</story> 
+		
+	  	<story title="DLIM-818 [ABOR1] Fulfillment - Aanmaken personalisatiebatch: Entiteit- en exploitantfilter geven geen waardes" state="story done" points="1" id="DLIM-818">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story> 	
+	  	<story title="DLIM-791 [ABOR1] Detail personalisatiebatch: veld aantal personalisatieorders ontbreekt" state="story done" points="1" id="DLIM-791">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story> 	
+	  	<story title="DLIM-789 [ABOR1] Met meerdere personen eenzelfde personalisatieorder verwerken resulteert in een technische fout en crash" state="story done" points="1" id="DLIM-789">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story> 	
+<!-- 	  	<story title="DLIM-786 [ABOR1] Account: Contracttijden komen niet overeen met huidige tijd" state="story not-done" points="1" id="DLIM-786">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Met analyse/architectuur uit te klaren wat nu juist de bedoeling is. Momenteel is het volgens spec.</LI></UL>
+				</slide>
+			</slides>
+		</story>  -->	
+<!-- 	  	<story title="DLIM-782 [ABOR1] Account - Account wordt gecreeerd bij het aanmaken van de offerte (ipv bij het goedkeuren van de offerte)" state="story not-done" points="1" id="DLIM-782">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story>  -->	
+	  	<story title="DLIM-778 [ABOR1] Fulfillment - Starten van een geannuleerde personalisatiebatch resulteert in technische error (concurrency issue)" state="story done" points="1" id="DLIM-778">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story> 	
+
+	  	<story title="[General] Investigate upgrade to new framework" state="story done" points="2" id="FrameworkUpgrade">
+			<slides>
+				<slide type="story-narrative">
+					<UL><LI>Ingeschat op 5 dagen voor alles binnen ons team</LI></UL>
+				</slide>
+			</slides>
+		</story> 	
+
+	  	<story title="[ABOR3] Review en tech feasibility" state="story done" points="5" id="ABOR3Review">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story> 
+		
+		<story title="[TAR] Module knowledge transfer" state="story not-done" points="4" id="TarModuleKnowledgeTransfer" percentage-done="25">
+			<slides>
+				<slide type="story-narrative">
+				</slide>
+			</slides>
+		</story> 
+	</stories>        
+</sprintreview>

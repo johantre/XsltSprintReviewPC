@@ -1,0 +1,95 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" folder="140821" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="10" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="3" avatar="../avatars/Jelle.jpg">Jelle Bens</member>
+    <member type="hands-on" capacity="3" avatar="../avatars/Bart.jpg">Bart Van Boeckhout</member>
+    <member type="hands-on" capacity="1" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="11" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+  <stories>
+    <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+
+
+    <story title="DL-12638 [V00] RTBINC tickets" state="story done" points="2.5" id="DL-12638">
+      <slides>
+        <slide type="story-narrative">
+          <Strong>Openstaande tickets</Strong>
+          <UL>
+            <LI>RTBINC-52: Opstart scherm(en) 65+ traag binnen mobiguider</LI>
+            <LI>RTBINC-59: Fouten bij het opzoeken van kaarten</LI>
+          </UL>
+        </slide>
+      </slides>
+    </story>
+
+    <story title="DL-12637 [ABO R1] ondersteuning keuring" state="story done" points="2" id="DL-12637">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-12617 [ABO R1] Uitvoeren van de BTS'en op de software" state="story done" points="4.5" id="DL-12617">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-12636 [ABO R1] BF1" state="story done" points="4.5" id="DL-12636">
+      <slides>
+        <slide type="story-narrative">
+
+          <Strong>Openstaande tickets</Strong>
+          <UL>
+            <LI>DL-12564/DLIM-792: EXT - Print template niet correct</LI>
+          </UL>
+          <BR/>
+          <Strong>Opgeloste tickets</Strong>
+          <UL>
+            <LI>DL-12479/DLIM-785: EXT - Maak personalisatiebatch: Batch opslaan zonder personalisatieorders resulteert in een technische fout en crash</LI>
+            <LI>DL-12480/DLIM-784: EXT - Fulfillment - Een geannuleerd personalisatieorder kan gekoppeld worden aan een batch</LI>
+            <LI>DL_12482/DLIM-794: EXT - Fulfillment: Beheer parameters default zoekcriteria</LI>
+            <LI>DL_12525/DLIM-783: EXT - Account - Status van de kaartcontracten wordt niet mee aangepast in account management</LI>
+            <LI>DL-12541/DLIM-789: EXT - Met meerdere personen eenzelfde personalisatieorder verwerken resulteert in een technische fout en crash</LI>
+            <LI>DL-12542/DLIM-791: EXT - Detail personalisatiebatch: veld aantal personalisatieorders ontbreekt</LI>
+            <LI>DL-12565/DLIM-782: EXT - Account - Account wordt gecreeerd bij het aanmaken van de offerte (ipv bij het goedkeuren van de offerte)</LI>
+            <LI>DL-12566/DLIM-778: EXT - Fulfillment - Starten van een geannuleerde personalisatiebatch resulteert in technische error (concurrency issue)</LI>
+            <LI>DL-12613/DLIM-786: EXT - Account: Contracttijden komen niet overeen met huidige tijd</LI>
+            <LI>DL-12615/DLIM-797: Algemeen: Labels bij zoekresultaten toevoegen</LI>
+            <LI>DL-12661/DLIM-805: EXT - Customer - Toon account: Stocknummer ontbreekt op het kaartcontract</LI>
+          </UL>
+        </slide>
+      </slides>
+    </story>
+    <story title="DL-12641 [ABO R3] Tech analyse (componenten en integraties)" state="story done" points="6" id="DL-12641">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+
+    <story title="DL-12616 [ABO R3] Migrate the solutions to the new framework" state="story done" points="4" id="DL-12616">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+
+
+
+    <story title="DL-12642 [ABO R1] test automation - basic flows end-to-end" state="story not-done" points="2" id="DL-12642" percentage-done="10">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-12640 [ABO R3] Testen printers" state="story not-done" points="3" id="DL-12640" percentage-done="0">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+
+
+  </stories>
+</sprintreview>

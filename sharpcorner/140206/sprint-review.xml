@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
 
-<sprintreview folder="140206" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+<sprintreview folder="140206" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
     <team name="SharpCorner">
         <member type="productowner" capacity="0">Saskia Van Oldenborgh</member>
 		<member type="productowner" capacity="0">Jan Van der Borght</member>

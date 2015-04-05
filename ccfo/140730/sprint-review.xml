@@ -1,0 +1,52 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140730" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="CCFO">
+        <member type="productowner" capacity="0">Koen Meeus</member>
+        <member type="scrummaster"  capacity="5">David Woods</member>
+        <member type="tester" capacity="9">Koen Meeus</member>
+        <member type="tester"       capacity="10">Cheung Kwan Wong</member>
+        <member type="hands-on"     capacity="2">Antoine Wils</member>
+        <member type="hands-on"     capacity="8">Maarten Carbonez</member>
+        <member type="hands-on"     capacity="6">Maarten Casteels</member>
+    </team>
+
+
+
+    <stories>
+
+	<!-- these items below were in the sprint above at the end of this sprint, Sprint 20140730_CCFO -->
+	<story id="CCFO-1"   relid="01" points="0.125" state="story done" title="Switching between communication channels causes write IO to block for 15 minutes "><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-626" relid="01" points="0.4"   state="story done" title="Planned meeting Mechelen 18/07 : 10 - 12 u"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-627" relid="01" points="0.125" state="story done" title="Change of Location of testscripts blocks application"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-611" relid="01" points="0.25"  state="story done" title="QATester : Create auto test for CCFO-594 ( expired CD job )"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-628" relid="01" points="0.1"   state="story done" title="support operation team"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-613" relid="01" points="2.5"   state="story done" title="Release preparation ABO-R2 : Sanity report"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-620" relid="01" points="0.25"  state="story done" title="QAtester : Fix timing issue OMP_test3 ( auditlog )"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-629" relid="01" points="0.125" state="story done" title="BO can't handle °"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-614" relid="01" points="0.5"   state="story done" title="Release preparation ABO-R2 : Prepare demo room with tech team"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-615" relid="01" points="0.5"   state="story done" title="Release preparation ABO-R2 : Release Note + Jira administration + Mail to customer"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-616" relid="01" points="1"     state="story done" title="Release preparation ABO-R2 : Check merges in releasse"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-636" relid="01" points="1"     state="story done" title="Study Documentation - GPS"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-540" relid="01" points="0.5"   state="story not-done" percentage-done="0"  title="MP::SynchRecord:nullpointer exception"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-83"  relid="01" points="0.75"  state="story not-done" percentage-done="0"  title="MPM :: logging: handle mpm and ubicore domain logs"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-45"  relid="01" points="1.125" state="story not-done" percentage-done="0"  title="On the mpm status page, no version is given for Ubicore. "><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-607" relid="01" points="1.75"  state="story done" title="MP:: No realtime message in case of event : 3402-Release Management &lt; RP version &gt; corrupt"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-582" relid="01" points="0.625" state="story not-done" percentage-done="0"  title="MP :: logging event : Toestel wordt herstart door configuratie wijziging	"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-583" relid="01" points="0.625" state="story not-done" percentage-done="0"  title="MP :: logging event : Toestel wordt herstart door OS upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-584" relid="01" points="1.25"  state="story not-done" percentage-done="0"  title="MP :: logging event : Toestel herstart wegens ontbrekend &lt;Device&gt; : should use smart logger"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-585" relid="01" points="1.25"  state="story not-done" percentage-done="0"  title="MP :: logging event : Toestel opgestart &lt;Startup Reason&gt; : should use smart logger"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-579" relid="01" points="0.125" state="story done" title="Preparation RC for QA"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-622" relid="01" points="1.875" state="story not-done" percentage-done="0"  title="MP :: Content delivery MP => MP : No use of temporary storage location"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-650" relid="01" points="0.875" state="story done" title="Preparation GPS calibration testcases : read specs + create new tickets"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-661" relid="01" points="1"     state="story done" title="GPS Calibration Clarification"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-662" relid="01" points="1.5"   state="story done" title="GPS Initial Investigation"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-660" relid="01" points="0.7"   state="story done" title="Demo preparation : draaiboek opstellen + sanity test"><slides><slide type="story-narrative"></slide></slides></story>
+	<story id="CCFO-612" relid="01" points="0.25"  state="story done" title="QATester : check realtime event 1403:	Communicatie Service	Time-sync met MPM server van meer dan 10min verschil"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-640" relid="01" points="0.25"  state="story done" title="QATester : add validation realtime event : 2605 ( IPS-test19 )"><slides><slide type="story-narrative"></slide></slides></story>
+
+	<!-- N.B. some items below were not in the sprint above at the end of the sprint - they were moved to Sprint 20140813_CCFO -->
+
+
+    </stories>
+
+</sprintreview>

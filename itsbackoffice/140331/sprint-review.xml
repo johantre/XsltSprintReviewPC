@@ -1,0 +1,35 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140331" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="hands-on" capacity="5">Gauthier Rossion </member>
+        <member type="hands-on" capacity="0">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="7">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="tester" capacity="3.5">Annelies Ivens </member>
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tre</member>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+    </team>     
+
+    <stories>
+		<story id="MOBITS-886" relid="13897" points="3" state="story done" title="As an obstruction manager I want to have a datepicker"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1366" relid="13897" points="3" state="story done" title="As a TCO I want advanced symbology in POITRACKER Tco"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1371" relid="13897" points="2" state="story done" title="Refactor timetable"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1473" relid="13897" points="3" state="story done" title="As an Obstruction manager I want a better overview printout for my detour"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1474" relid="13897" points="3" state="story done" title="SPIKE: As an obstruction manager I want to be able to add text annotation to the print out maps"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1480" relid="13897" points="5" state="story done" title="As an obstruction manager I want to save a draft obstruction in an invalid state"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1539" relid="13897" points="1" state="story done" title=" As an obstruction manager I want to warned when my unsaved changes will be lost SIMPLE VERSION"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1545" relid="13897" points="3" state="story done" title="switch to new teamcity server part2"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1549" relid="13897" points="2" state="story done" title="As a TCO I want my TCO mode"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1553" relid="13897" points="3" state="story done" title="Stopzone Feature Files"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1554" relid="13897" points="2" state="story done" title="Merge and Branch from 2.6 to 2.7"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1547" points="3" state="story done" title="Create main entry point and ITS Client"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

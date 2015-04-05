@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140417" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="8.0" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="8.0" avatar="../avatars/Carmen.jpg">Carmen Filippo</member>
+    <member type="tester" capacity="8.0" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="tester" capacity="6.0" avatar="../avatars/Kim.jpg">Kim Van Weyenbergh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+  <stories>
+    <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+    <story state="story done" points="2"   id="DL-11839" title="DL-11839 [VVK] DEMO VVK 2 voorbereiden" 				><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="7"   id="DL-11223" title="DL-11223 [VVK] Verwerk antwoord pers. leverancier"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story not-done" points="6"  percentage-done="85" id="DL-11225" title="DL-11225 [VVK] Implementeer Start interne personalisatiebatch"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="2"   id="DL-11836" title="DL-11836 [VVK] Integratie met klantenbeheer opzetten"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story not-done" points="3" percentage-done="85"  id="DL-10965" title="DL-10965 [VVK] Process impact on Quote"              ><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story not-done" points="1.5" percentage-done="0" id="DL-11837" title="DL-11837 [VVK] Integratie nieuwe printer lib Into IT"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="12"  id="DL-11838" title="DL-11838 [KB] TIMEBOX Manuele testen KB" 			><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="3"   id="DL-11110" title="DL-11110 [KB] Rework op FF ten gevolge van Review DL"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="0.5" id="DL-11175" title="DL-11175 [VVK] FF Reconstrueer MOBIB -Kaart"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story not-done" percentage-done="70" points="0.5" id="DL-11560" title="DL-11560 [VVK] FF Reik vrijverkeerkaart direct uit"     ><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="0.5" id="DL-11563" title="DL-11563 [VVK] UIFF Toon historiek personalisatiebatch" ><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="0.5" id="DL-11568" title="DL-11568 [VVK] UIFF Lever MOBIB-kaart in"               ><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story done" points="0.5" id="DL-11584" title="DL-11584 [VVK] UIFF Toon detail batch parameter"        ><slides><slide type="story-narrative"></slide></slides></story>
+
+    <!-- <story state="story not-done" percentage-done="0" points="0.5" id="DL-11163" title="DL-11163 [V00] externe personalisatie leverancier feedback wordt verkeerd verwerkt"><slides><slide type="story-narrative"></slide></slides></story>
+    <story state="story not-done" percentage-done="0" points="1"   id="DL-10946" title="DL-10946 [VVK] Implement functional feature file for Process Response External Personalisation Supplier"><slides><slide type="story-narrative"></slide></slides></story> -->
+  </stories>
+
+</sprintreview>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140918" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="0.0" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="6.5" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="6.5" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="scope" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Bugfix 2 (3.2.1)</li>          
+          <br/>
+          <strong>ABO R3a</strong>
+          <li>Import 65+</li>
+          <li>Inkomstenbeheer</li>          
+        </List>
+      </slide>      
+
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>Semantic Versioning</li>
+          <li>Kaartbeheer DLIM's ivm 'parameter casing' bij documentgeneratie</li>
+          <li>Kaartbeheer DLIM's ivm 'Bad Request error' bij documentgeneratie (templates met 10.000 kaarten) => messagesize configuratie</li>          
+          <br/>
+          <strong>QA</strong>
+          <li>Support voor DLIM's ivm documentgeneratie</li>
+          <li>Oplevering bugfix AVU R2</li>          
+        </List>
+      </slide>
+      
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug" -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+  <!-- <story id="DL" relid="01" points="1" state="story done" title="some title"><slides><slide type="story-narrative"></slide></slides></story> -->
+	<stories>      
+    						
+    <story id="DL-12897" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Fouten in document 506"><slides><slide type="story-narrative"></slide></slides></story>    
+    <story id="DL-12895" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Fouten in document 501"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12894" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Fouten in document 510"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12914" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Fouten in document 503"><slides><slide type="story-narrative"></slide></slides></story>    
+    <story id="DL-12916" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: 512 wordt niet aangemaakt"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12917" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Foute waarde Doos-aantal"><slides><slide type="story-narrative"></slide></slides></story>		
+    <story id="DL-12896" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Verplaatsten van omdoos van ontvangstzone naar storage"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12915" relid="02" points="0.5" state="story uncommitted" title="EXT - ABO-32 Documentgeneratie: Referentienummer bestelbon niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+    
+    <story id="DL-12869" relid="11" points="2" state="story done" title="[ALL] CI, Nightly en Deploy builds van 3.2 branch"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12919" relid="11" points="0.5" state="story uncommitted" title="EXT - Integratie kaartpersonalisator: Volledigheid en configuratie"><slides><slide type="story-narrative"></slide></slides></story>            
+    <story id="DL-12613" relid="11" points="0.5" state="story not-done" percentage-done="0"  title="EXT - Account: Contracttijden komen niet overeen met huidige tijd"><slides><slide type="story-narrative"></slide></slides></story>    
+    
+		<story id="DL-12877" relid="13" points="2" state="story done" title="[REV] Automatisch regulariseren van betalingen review"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12878" relid="13" points="3" state="story done" title="[REV] Domainmodel aanpassen op basis van nieuwe versie LIM voor bankoverschrijvingen"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12868" relid="13" points="2" state="story done" title="[ALL] Deploy en sanity checks na merge framework upgrade"><slides><slide type="story-narrative"></slide></slides></story>		    
+		
+    <story id="DL-12879" relid="13" points="5" state="story not-done" percentage-done="30"  title="[PMD] Sales SAGA voor PlaceCustomerRequest"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12805" relid="13" points="5" state="story not-done" percentage-done="50"  title="[PMD] Authentieke bron introduceren"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12876" relid="13" points="0" state="story not-done" percentage-done="0"  title="[PMD] Functionele analyse data migratie"><slides><slide type="story-narrative"></slide></slides></story>				                      
+    
+    <story id="MOBAFC-76" relid="13" points="1" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want to have Customer details of new 65+'ers automatically available."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBAFC-77" relid="13" points="0.5" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want that for each RH VVK on the VVK import list, a Request is automatically created."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBAFC-82" relid="13" points="0.5" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want that for each 65+'er (not VVK) on the import list, a Request is automatically created "><slides><slide type="story-narrative"></slide></slides></story>    
+
+  </stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>AVU R2</strong>
+          <li>Support installatie bugfix in UAT</li>
+          <li>Uitklaren gebruik van kaartlezer zonder sam maar met omnikey</li>
+          <br/>
+          <strong>ABO R1</strong>
+          <li>Bugfixing</li>          
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Saga voor PlaceCustomerRequest (algemene flow) voor VVK &amp; 65+</li>
+          <li>Datamodel van PartyMasterData zonder LiveHistory</li>
+          <li>Datamigratie van V00 naar ABO R3a functioneel uitwerken => on hold</li>
+          <li>Verwerken van betalingen</li>
+        </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

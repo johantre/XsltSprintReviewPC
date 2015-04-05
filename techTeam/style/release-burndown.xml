@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releasedata>
     <sprints>
-        <sprint name="01">140221</sprint>
-        <sprint name="02">140228</sprint>
-        <sprint name="03">140307</sprint>
-        <sprint name="04">140314</sprint>
-        <sprint name="05">140321</sprint>
-        <sprint name="06">140328</sprint>
-        <sprint name="07">140404</sprint>
+        <sprint name="00">140410</sprint>
+        <sprint name="01">140414</sprint>
+        <sprint name="02">140428</sprint>
+        <sprint name="03">140512</sprint>
+        <sprint name="04">140522</sprint>
+        <sprint name="05">140605</sprint>
+        <sprint name="06">140619</sprint>
+        <sprint name="07">140704</sprint>
+		<sprint name="08">140716</sprint>
+		<sprint name="09">140731</sprint>
+		<sprint name="10">140814</sprint>
+		<sprint name="11">140828</sprint>
+		<sprint name="12">140911</sprint>
+        <!-- <sprint name="03">140512</sprint> -->
     </sprints>
-    <releases>
-        <release id="01" name="Release 01" totalpoints="300">
+    <releases><!--note the total points-->
+        <release id="01" name="AVU R2" totalpoints="100">
             <sprintfolders>
-                <sprintfolder>140221</sprintfolder>
-                <sprintfolder>140228</sprintfolder>
-                <sprintfolder>140307</sprintfolder>
-                <sprintfolder>140314</sprintfolder>
-                <sprintfolder>140321</sprintfolder>
-                <sprintfolder>140328</sprintfolder>
-                <sprintfolder>140404</sprintfolder>
+                <sprintfolder>140410</sprintfolder> 
+        		<sprintfolder>140414</sprintfolder> 
+                <sprintfolder>140428</sprintfolder>
+                <sprintfolder>140512</sprintfolder>
+                <sprintfolder>140522</sprintfolder>
+                <sprintfolder>140605</sprintfolder>
+                <sprintfolder>140619</sprintfolder>
+                <sprintfolder>140704</sprintfolder>
+				<sprintfolder>140716</sprintfolder>
+				<sprintfolder>140731</sprintfolder>
+				<sprintfolder>140814</sprintfolder>
+				<sprintfolder>140828</sprintfolder>
+				<sprintfolder>140911</sprintfolder>
             </sprintfolders>
         </release>
+        <release id="02" name="ABO R1" totalpoints="21">
+            <sprintfolders>
+                <sprintfolder>140414</sprintfolder>
+                <sprintfolder>140428</sprintfolder>
+                <sprintfolder>140512</sprintfolder>
+                <sprintfolder>140522</sprintfolder>
+                <sprintfolder>140605</sprintfolder>
+                <sprintfolder>140619</sprintfolder>
+                <sprintfolder>140704</sprintfolder>
+				<sprintfolder>140814</sprintfolder>
+				<sprintfolder>140828</sprintfolder>
+				<sprintfolder>140911</sprintfolder>
+            </sprintfolders>
+        </release>
+         <release id="03" name="ABO R2" totalpoints="55">
+            <sprintfolders>
+                <sprintfolder>140428</sprintfolder>
+                <sprintfolder>140522</sprintfolder>
+                <sprintfolder>140605</sprintfolder>
+                <sprintfolder>140619</sprintfolder> 
+                <sprintfolder>140704</sprintfolder>
+				<sprintfolder>140716</sprintfolder>
+				<sprintfolder>140731</sprintfolder>
+				<sprintfolder>140814</sprintfolder>
+				<sprintfolder>140828</sprintfolder>
+				<sprintfolder>140911</sprintfolder>
+            </sprintfolders>
+        </release>
+         <release id="04" name="ABO R3B" totalpoints="500">
+            <sprintfolders>
+                <sprintfolder>140414</sprintfolder>
+                <sprintfolder>140428</sprintfolder>
+                <sprintfolder>140512</sprintfolder>
+                <sprintfolder>140522</sprintfolder>
+                <sprintfolder>140605</sprintfolder>
+                <sprintfolder>140619</sprintfolder> 
+                <sprintfolder>140704</sprintfolder>
+				<sprintfolder>140716</sprintfolder>
+				<sprintfolder>140731</sprintfolder>	
+				<sprintfolder>140814</sprintfolder>
+				<sprintfolder>140828</sprintfolder>
+				<sprintfolder>140911</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="06" name="ABO R3A" totalpoints="50">
+            <sprintfolders>
+                <sprintfolder>140814</sprintfolder>
+                <sprintfolder>140828</sprintfolder>
+                <sprintfolder>140911</sprintfolder>		
+            </sprintfolders>
+        </release>
+        
+        
+        
     </releases>
 </releasedata>

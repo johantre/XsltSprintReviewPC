@@ -1,0 +1,42 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140612" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <!-- put here the team members and their foreseen capacity for this sprint  -->
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Michallis Pashidis </member>
+        <member type="hands-on"     capacity="7">Antoine Wils</member>
+        <member type="hands-on"     capacity="7">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="7">Maarten Casteels </member>
+        <member type="tester"       capacity="7">Koen Meus </member>
+        <member type="tester"       capacity="7">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team>
+
+    <!-- possible states: 'story done', 'story done', 'story uncommitted', ...  Use assisted editor for xsd-based auto-completion  -->
+    <!-- state 'story done';  'percentage-done' = required.   Use assisted editor for xsd-based auto-completion  -->
+    <!-- pull this xml generated data out of Jira:  use http://172.31.28.56/SprintReport/ -->
+    <stories>
+        <story id="CCFO-399" relid="01" points="1.5 " state="story done" title="EXT - Rel.Mgt. - Validator geeft geen actieve SW weer in diagnose / SW menu na terugtrekken SW"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-126" relid="01" points="1   " state="story done" title="EXT - Rel.Mgt.: Geen synchronisatie tussen toestellen en Ubicore"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-274" relid="01" points="1   " state="story done" title="EXT - Rel.Mgt.: Inconsistente statusovergangen indien teruggetrokken software opnieuw gepubliceerd wordt"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-394" relid="01" points="3   " state="story done" title="Rel.Mgt.::Communication error between Rel.Mgt. and MP"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-17" relid="01" points="0.75 " state="story done" title="When ACTIVE = false > fallback cannot remain true"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-155" relid="01" points="1   " state="story done" title="EXT - SPIRA-1114 - Geen controle van beschikbare diskruimte op MP door MPM bij het leveren van een te grote content file."><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-481" relid="01" points="0.25" state="story done"                           title="MPM:: Ubicore :: Remove db script 1.2.2 from the latest MPM release 0.2.5"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-534" relid="01" points="0.5 " state="story done"                           title="Demo Validator ten velde"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-156" relid="01" points="0.5 " state="story done"                           title="EXT - Path cost van 3G is kleiner of gelijk aan die van depot-wle interface"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-433" relid="01" points="0.25" state="story not-done" percentage-done="10"  title="CCFO::Build Process::Nightly build Meeting (with APPTEAM)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-535" relid="01" points="0.25" state="story not-done" percentage-done="10"  title="MP::SYNC STATUS::Record based Sync"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-252" relid="01" points="0.63" state="story not-done" percentage-done="10"  title="MP :: Synchronization : scenario without MPM connection"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-397" relid="01" points="0.5 " state="story done"                           title="MPM::Mobib-Registration::EXT - Reizigerstelling: Circa 2% van alle validaties komen op DLQ terecht"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-185" relid="01" points="0.5 " state="story done"                           title="interrupted CD job does not restart after communicatie is back online"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-127" relid="01" points="0.5 " state="story not-done" percentage-done="10"  title="great diviations in performance with throughput test"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-279" relid="01" points="0.5 " state="story not-done" percentage-done="10"  title="Read timed out Exceptions when sending messages ( sometimes )"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-484" relid="01" points="1   " state="story not-done" percentage-done="10"  title="MPM :: REST call: not possible to query on updateDate"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-536" relid="01" points="1   " state="story not-done" percentage-done="10"  title="RnD::Logging alternative instead of Fragmented bundles"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-499" relid="01" points="2   " state="story not-done" percentage-done="10"  title="Monitoring::Design::Monitoring framework"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

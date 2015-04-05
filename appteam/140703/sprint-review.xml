@@ -1,0 +1,88 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140703" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="8">Dirk </member>
+        <member type="hands-on" capacity="8">Stijn</member>
+        <member type="hands-on" capacity="8">Ivo </member>
+        <member type="hands-on" capacity="8">Erik </member>
+        <member type="tester" capacity="7">Stefaan </member>
+        <member type="tester" capacity="5.5">Broes </member>
+        <member type="hands-on" capacity="8">Frank </member>
+        <member type="productowner" capacity="8">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Finish logging and monitoring</h5>
+				<list>
+					<li>Finish all features for ABO R2</li>
+                    <li>Continue to build the foundations for Drools</li>
+                    <li>Update test suites, automated tests and sanity</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampersands ! -->
+        <story id="DL-12059" points="3" state="story done"                          title="Logging: Log parameters in message to backend"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Logging: Desktop management"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Logging: Traffic management"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Logging: Device Management"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Logging: RFID"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Logging: Cross-check app"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="3" percentage-done="0" state="story not-done"  title="Logging: assist platform team"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-11895" points="3" state="story done"                          title="Drools: anti-passback V00 contracts"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Drools: validation performance"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Drools: fix tests"><slides><slide type="story-narrative"></slide></slides></story>
+        <!-- ??? --><story id="" points="1" state="story done"                          title="Drools: compare format options input tests"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Drools: warm-up"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Drools: allow multiple rulesets"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Test: review sanity"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Test: automate CI file tests"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Test: Nakijken en updaten testcases voor logging"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="0.5" state="story done"                          title="Test: auto sanity testsuite nightly"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Test: Include threaddump and heap size in test info"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Test: Toevoegen log code in app team auto test"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12049" points="2" state="story not-done" percentage-done="0"  title="EXT - DC800 - na aanmelden met technieker profiel is enkel de knop 'klavier' ter beschikking - de knoppen 'test and diagnose' en 'validator status' ontbreken"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story not-done" percentage-done="80"  title="React on remote interactive tests"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story not-done" percentage-done="0"  title="Teamcity Demo"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story uncommitted"                          title="Drools: Turn on internal logging through config"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story uncommitted"                          title="Logging: Update all JSON files for log bundles"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12147" points="0.5" state="story uncommitted"                          title="Bug: Restart BC diagnose Val"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-9635" points="0.5" state="story uncommitted"                          title="Bug: DC Wrong screen after close service"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12443" points="0.5" state="story uncommitted"                          title="Bug: Val LED red"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12453" points="0.5" state="story uncommitted"                          title="Bug: No Dallas"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12444" points="0.5" state="story uncommitted"                          title="Bug: Slow Dallas Pop-up"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12453" points="0.5" state="story uncommitted"                          title="Bug: IPS status ingang typo"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="0.5" state="story uncommitted"                          title="CardLibrary on Android handover + demo"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>More confidence about commitment we made, velocity increasing</li>
+                    <li>Feature freeze was successful and should give QA enough time thoroughly test which should increase quality</li>
+                    <li>Our understanding of Drools is increasing</li>
+                    <li>Card library is becoming the bottleneck for new features</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Prepare + bugfix ABO R2 release</li>
+                    <li>Continu with Drools: Implement Data Model for rule engine</li>
+                    <li>Branch current master</li>
+                    <li>Start with card library hand-over</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140731" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="2">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="10">Philip Van Hoof</member>
+        <member type="hands-on" capacity="10">Steven Robijns </member>
+        <member type="tester" capacity="10">Dorine Vos </member>
+        <member type="tester" capacity="7">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+</team>
+
+<intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <li>[TM] Extra implementatie: Aanmaken artikel</li>
+			  <li>[TM] Extra implementatie: Detail artikel: configureerbare attributen</li>
+			  <li>ABO R1 Hotfix oplevering uitgesteld</li>
+			  <li>Oplevering 12/8 uitgesteld > 18/8</li>
+			  <br/>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>AVU R2</strong>
+	          <li>Witnessing De Lijn AVU R2 BF3</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+	          <li>Witnessing De Lijn ABO R2</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Artikelbeheer: implementatie schermen</li>
+	          <br/>
+			  <strong>Framework upgrade</strong>
+	          <li>Upgrade modules</li>
+			  <li>Validatie modules</li>
+			  <br/>
+	        </List>
+	      </slide>		
+		</slides>
+</intro>
+
+    <stories>
+		<story id="DL-12508" relid="04" points="0.12" state="story done" title="[TM] Import Attribuut Definitie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12509" relid="04" points="0.12" state="story done" title="[TM] Import Object referenties"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12510" relid="04" points="0.12" state="story done" title="[TM] Import Dragerattribuut"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12511" relid="04" points="0.12" state="story done" title="[TM] Import Drager Standaard"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12512" relid="04" points="0.25" state="story done" title="[TM] Scherm: Selecteer artikelfamilie (zoeken, incl alle zoekcriteria)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12514" relid="04" points="0.25" state="story done" title="[TM] Scherm: Raadplegen artikelfamilie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12515" relid="04" points="0.25" state="story done" title="[TM] Scherm:  Aanmaken artikelfamilie (algemene pivot)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12607" relid="04" points="0.25" state="story done" title="[TM] Scherm:  Aanmaken artikelfamilie (categorie)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12608" relid="04" points="1.5" state="story done" title="[TM] Scherm:  Aanmaken artikelfamilie (attributen verwijderen)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12609" relid="04" points="3" state="story done" title="[TM] Scherm:  Aanmaken artikelfamilie (attributen toevoegen)"><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="DL-12668" relid="01" points="1.5" state="story done" title="[RM] en [LOG] Bug fixing"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12669" relid="01" points="1" state="story done" title="[RM] Witnessing AVU R2 BF3"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12670" relid="03" points="1" state="story done" title="[LOG] Witnessing ABO R2"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12671" relid="02" points="2" state="story done" title="ABO R1 Hotfix"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12674" relid="01" points="1" state="story done" title="[RM] Fixen automatische testen (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12675" relid="04" points="0.5" state="story done" title="[TM]Import excel file"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12678" relid="01" points="0.5" state="story done" title="[CM]Framework upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12679" relid="04" points="1.5" state="story done" title="[RLS]Framework upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12681" relid="01" points="1" state="story done" title="Framework upgrade build and deploy"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12672" relid="01" points="6.5" state="story not-done" percentage-done="90"  title="[RM] Oplevering 12/8"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12673" relid="03" points="1.5" state="story not-done" percentage-done="95"  title="[LOG] Oplevering 12/8"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12676" relid="04" points="2" state="story not-done" percentage-done="90"  title="[TM] Scherm: zoeken Artikel"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12677" relid="01" points="4" state="story not-done" percentage-done="60"  title="[RM]Framework upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12680" relid="04" points="1.5" state="story not-done" percentage-done="90"  title="[TM]Scherm: raadplegen Artikel"><slides><slide type="story-narrative"></slide></slides></story>
+
+    	<story id="DL-12706" relid="01" points="0" state="bug" title="Import CI: MPadded geven fouten bij verwerking"><slides><slide type="story-narrative"></slide></slides></story>    
+    	<story id="DL-12687" relid="01" points="0" state="bug" title="Aanmaken lege SP met versie als reeds bestaande > opent detail bestaande"><slides><slide type="story-narrative"></slide></slides></story>   
+   		<story id="DL-12634" relid="01" points="0" state="bug" title="Buiten gebruik > beheer gestopt: sommige releases nog geldig"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

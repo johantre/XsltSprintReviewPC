@@ -1,0 +1,38 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140414" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="4">Gauthier Rossion </member>
+        <member type="hands-on" capacity="6">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="7">Ignacio Errico </member>
+        <member type="hands-on" capacity="6.5">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="7">Blaise Braye </member>
+        <member type="tester" capacity="5.5">Annelies Ivens </member>
+        <member type="tester" capacity="5">Parisa Pejham </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tre </member>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+    </team> 
+
+    <stories>
+		<story id="MOBITS-648" relid="13897" points="2" state="story done" title="As an obstruction manager I want to store my region(s)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-880" relid="13897" points="2" state="story done" title="As an obstruction manager I want a unique Obstruction Nr per region and year cross obstruction states"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1332" relid="13897" points="3" state="story done" title="As a TCO I want that the outgoing message screen is aligned with the incoming message screen "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1344" relid="13897" points="1" state="story done" title="As a TCO I want a more fluent way of working with SSM and incoming messages"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1397" relid="13897" points="2" state="story done" title="As a TCO I want extra columns in incoming messages"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1399" relid="13907" points="5" state="story done" title="As a stopzone manager I want to use geo spatial query to restrict the stops displayed "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1478" relid="13897" points="2" state="story done" title="As an obstruction manager I want 3 extra date fields to the period pivot and the printout"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1536" points="1" state="story done" title="extend pcp verifier with pvs control server and dia server"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1546" points="3" state="story done" title="Dia Server - Implement messages"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1589" relid="13897" points="3" state="story done" title="As an obstruction manager I want to be able to add text annotation to the print out maps"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1658" relid="13897" points="1" state="story done" title="As a TCO I want to restrict the access to the new TCO tiles"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1689" relid="13897" points="2" state="story done" title="Finish rework and review overview pdf (1473)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1691" relid="13897" points="1" state="story done" title="As an obstruction manager I want to create an obstruction based on my region"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1692" relid="13897" points="3" state="story done" title="As an obstruction manager I want to search on obstructions from my region(s)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1477" relid="13897" points="1" state="story done" title="As an Obstruction Manager I want to validate the text size of the printed fields"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

@@ -1,42 +1,46 @@
-﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
-
-<sprintreview folder="140317" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140317" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
     <team name="ITSbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
-        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="scrummaster" capacity="4.5">Servaas Phlips </member>
         <member type="hands-on" capacity="3">Gauthier Rossion </member>
         <member type="hands-on" capacity="5">Marnix De Groote </member>
         <member type="hands-on" capacity="0">Martijn Evens </member>
         <member type="hands-on" capacity="8">Ignacio Errico </member>
-        <member type="hands-on" capacity="8">Serge Van Meerbeeck </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
         <member type="hands-on" capacity="8">Blaise Braye </member>
-        <member type="tester" capacity="0">Christophe Lemoine </member>        
-        <member type="tester" capacity="7.5">Annelies Ivens </member>        
+        <member type="tester" capacity="7.5">Annelies Ivens </member>
         <member type="tester" capacity="4">Parisa Pejham </member>
         <member type="assisted" capacity="0">Julia Dubois </member>
         <member type="assisted" capacity="0">Johan Tré </member>
-    </team>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+    </team>  
 
     <stories>
-        <story id="MOBITS-1435" points="1" title="RELEASE - Create Branch" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1437" points="2" title="RELEASE - Create teamcity config for its shared and switch to branch" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1440" points="1" title="RELEASE -  V#" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1438" points="1" title="RELEASE - Fix Installers" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1436" points="2" title="RELEASE - Remove/Add User Stories" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1439" points="1" title="RELEASE - QA Prepare DB Scripts" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1441" points="1" title="RELEASE - QA End to end (+security)" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1442" points="1" title="RELEASE - QA Stopzone" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1443" points="1" title="RELEASE - QA Poi and SSM" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1444" points="1" title="RELEASE - QA Localisation" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1445" points="1" title="RELEASE - QA Job orchestration" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1446" points="2" title="RELEASE - QA Obstruction and Detours" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1423" points="3" title="Implement end to end feature file test for all entities of hastus import, only happy path scenarios" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1430" points="5" title="Update Framework" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1433" points="2" title="Investigate installer diagnostics tool" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1426" points="1" title="To Refactor or not to refactor mapcontrol POI Tracker TCO" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-        <story id="MOBITS-1406" points="3" title="As a TCO I want a better grid with advanced features in incoming messages" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
-
+		<story id="MOBITS-1406" points="3" state="story done" title="As a TCO I want a better grid with advanced features in incoming messages of SSM"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1423" points="3" state="story done" title="Implement end to end feature file test for all entities of hastus import, only happy path scenarios"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1426" points="1" state="story done" title="To Refactor or not to refactor mapcontrol POI Tracker TCO"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1430" points="5" state="story done" title="Update Framework"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1433" points="2" state="story done" title="Investigate installer diagnostics tool"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1435" points="1" state="story done" title="RELEASE - Create Branch"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1436" points="2" state="story done" title="RELEASE - Remove/Add User Stories"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1437" points="2" state="story done" title="RELEASE - Create teamcity config for its shared and switch to branch"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1438" points="1" state="story done" title="RELEASE - Fix Installers"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1439" points="1" state="story done" title="RELEASE - QA Prepare DB Scripts"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1440" points="1" state="story done" title="RELEASE -  V#"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1441" points="1" state="story done" title="RELEASE - QA End to end (+security)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1442" points="1" state="story done" title="RELEASE - QA Stopzone"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1443" points="1" state="story done" title="RELEASE - QA Poi and SSM"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1444" points="1" state="story done" title="RELEASE - QA Localisation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1445" points="1" state="story done" title="RELEASE - QA Job orchestration"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1446" points="2" state="story done" title="RELEASE - QA Obstruction and Detours"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="MOBITS-1274" points="0" state="story uncommitted" title="Conclude architectural design on is dirty validation of an obstruction"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1358" points="3" state="story uncommitted" title="Investigate how to change the treeview"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1359" points="0" state="story uncommitted" title="Workout paging strategy for the different application layers and UI"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1527" points="1" state="story uncommitted" title="Document deployment blocked zip file for ssm/poi subscribers"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1529" points="3" state="story uncommitted" title="switch to new teamcity server"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1533" points="0" state="story uncommitted" title="Create user stories for PCP Verifier ITS "><slides><slide type="story-narrative"></slide></slides></story>
+   
     </stories>
 
 </sprintreview>

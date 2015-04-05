@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140403" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="6.0" avatar="../avatars/Joeri.jpg">Joeri Marcoen</member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="6.5" avatar="../avatars/Carmen.jpg">Carmen Filippo</member>
+    <member type="tester" capacity="7.0" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="tester" capacity="4.5" avatar="../avatars/Kim.jpg">Kim Van Weyenbergh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+
+  <stories>
+
+    <story title="DL-11468 [ABO][TARIFF] TIMEBOX inwerken, Domein kennis vergaren" state="story done" points="3" id="DL-11468">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11023 [KB] Check manually DL-9327 Filter adressen" state="story done" points="0.5" id="DL-11023">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11024 [KB] Check manually DL-9331 Zoek medewerker" state="story done" points="0.5" id="DL-11024">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11691 [KB] TIMEBOX Manueel testen FF" state="story done" points="8" id="DL-11691">
+      <slides>
+        <slide type="story-narrative" >
+          <strong>Completed</strong>
+            <List xmlns="http://schemas.microsoft.com/sharepoint/">
+            <li>DL-9324 - Filter klanten</li>
+            <li>DL-9325 - Sorteer klanten</li>
+            <li>DL-9332 - Filter medewerker</li>
+            <li>DL-9341 - Zoek persoonprofiel</li>
+            <li>DL-9342 - Sorteer persoonprofiel</li>
+            <li>DL-9343 - Filter persoonprofiel</li>
+            <li>DL-9351 - Configuratie instellingen Klantenbeheer</li>
+          </List>
+        </slide>
+        <slide type="story-narrative">
+          <strong>Blocked</strong>
+            <List xmlns="http://schemas.microsoft.com/sharepoint/" >
+            <li>DL-9316 - Haal pasfoto op bij externe instantie</li>
+            <li>DL-9317 - Toon details persoon</li>
+            <li>DL-9326 - Toon adres details</li>
+            <li>DL-9328 - Toon details contact persoon</li>
+            <li>DL-9329 - Toon gezinsleden</li>
+            <li>DL-9334 - Zoek medewerker exploitanten</li>
+            <li>DL-9335 - Filter medewerker exploitanten</li>
+          </List>
+        </slide>
+      </slides>
+    </story>
+    <story title="DL-11472 [V00] hertest bugfix DL-11163 [V00] externe personalisatie leverancier feedback wordt verkeerd verwerkt" state="story done" points="1" id="DL-11472">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11692 [V00] Regressie testen MOBIB" state="story done" points="1" id="DL-11692">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-10946 [VVK] Implement functional feature file for Process Response External Personalisation Supplier" state="story not-done" percentage-done="50" points="1" id="DL-10946">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11223 [VVK] Implementeer Verwerk antwoord personalisatieleverancier" state="story done" points="7" id="DL-11223">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11225 [VVK] Implementeer Start interne personalisatiebatch" state="story not-done" percentage-done="30" points="6" id="DL-11225">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11466 [VVK] TIMEBOX test VVK gebaseerd op FF" state="story not-done" percentage-done="0" points="3" id="DL-11466">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-11693 [VVK] DEMO 1 DL - Dry Run" state="story done" points="0.5" id="DL-11693">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    
+  </stories>
+  <finish>
+    <slides>
+      <slide title="Demo 1 VVK" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <li>Presentatie aan HR/M/ICT/QA/KT De Lijn</li>
+          <li>Feedback gecapteerd en opgeleverd</li>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </List>
+      </slide>
+      <slide title="Unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>Datum EN tijd tonen op lijst resultaten bij het opzoeken van een batch</li>
+          <li>Weergeven, zoeken en sorteren op batch ID verwijderd wegens onbruikbaar</li>
+          <li>Default aanmaakdatum op vandaag bij creatie batch</li>
+          <li>Ontbrekende verticale scrollbar toegevoegd op zoekresultaten bij het opzoeken van een batch</li>
+          <li>Ontbrekende formattering op datum in het detail van een batch</li>
+          <li>Detail knop niet aanklikbaar indien nog geen selectie gemaakt</li>
+          <br/>
+          <strong>TEAM</strong>
+          <li>ACC omgeving voor V00 in kaart gebracht (servers + biztalk integraties)</li>
+          <li>MOBIB Card Mgt integration during K2-K3 AVU R2</li>
+          <li>Installation of AVU R2 at De Lijn</li>
+        </List>
+      </slide>
+      <slide title="Impediments" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <li>1 DEV sick for 4 days</li>
+          <li>Availability of complete, functional environments</li>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </List>
+      </slide>
+    </slides>
+  </finish>
+</sprintreview>

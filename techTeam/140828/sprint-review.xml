@@ -1,0 +1,36 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140828" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="10">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="2">Steven Robijns </member>
+        <member type="tester" capacity="6">Dorine Vos </member>
+        <member type="tester" capacity="10">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Wouter Crets </member>
+</team>         
+
+    <stories>
+		<story id="DL-12677" relid="04" points="2" state="story done" title="Framework upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12840" relid="03" points="1" state="story done" title="[OPS] Builds voor nieuwe 3.2 branch (KT)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12842" relid="03" points="4" state="story done" title="Bugfixing voor ABO R2 BF (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12844" relid="04" points="3" state="story done" title="[PM] Rework LIM Product Mgt (Tariefmodule)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12846" relid="03" points="2" state="story done" title="[EM] Uitvoeren performance testen Event Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12824" relid="03" points="1.125" state="story not-done" percentage-done="90"  title="[CM] Importeer Locaties"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12838" relid="02" points="1" state="story not-done" percentage-done="90"  title="[RM] Integratie Release Mgt Rapport"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12843" relid="03" points="3" state="story not-done" percentage-done="0"  title="[RM] Implementatie timestamp Tijdstip actief status bereikt;"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12845" relid="04" points="6" state="story done" percentage-done="0"  title="[PM] Rework Import Product Mgt (Tariefmodule) - QA"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12848" relid="04" points="0.25" state="story not-done" percentage-done="90"  title="[PM] Tiles Tarievenmodule via config kunnen verbergen"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    	<story id="DL-12847" relid="06" points="0.25" state="story not-done" percentage-done="70"  title="[AM] Uitbreiden Nservicebus tool voor Account Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12841" relid="06" points="2.5" state="story not-done" percentage-done="50"  title="[AM] Wijzig contract"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12828" relid="06" points="2.5" state="story not-done" percentage-done="50"  title="[AM] Creeer contract"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12829" relid="06" points="1.5" state="story not-done" percentage-done="50"  title="[AM] Geef account"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12827" relid="06" points="2.5" state="story done" title="[AM] Creeer account"><slides><slide type="story-narrative"></slide></slides></story>
+    
+    </stories>
+
+</sprintreview>

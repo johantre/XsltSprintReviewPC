@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140414" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="8">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="9">Steven Wyns </member>
+        <member type="hands-on" capacity="9">Steven Robijns </member>
+        <member type="tester" capacity="4">Dorine Vos </member>
+        <member type="tester" capacity="0">Rudy Windey </member>
+        <member type="productowner" capacity="0">Rudy Windey </member>
+    </team>
+
+    <stories>
+		<story id="DL-11813" relid="01" points="2" state="story done" title="Fix script Config Mgt SAMs"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11874" relid="01" points="0.25" state="story done" title="Verwijdering aangevraagd mag geen andere Releases impacteren"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11737" relid="01" points="0" state="story done" percentage-done="0"  title="Buiten gebruik scenario: Verwijderde release niet in status beheer overgenomen > ref033"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11919" relid="01" points="1" state="story done" percentage-done="0"  title="Stabilisatie automatische testen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11920" relid="01" points="2" state="story done" percentage-done="0"  title="Installatie AVU R2 - BugFix 1"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11921" relid="01" points="4" state="story done" percentage-done="0"  title="Herziening installers"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11922" relid="01" points="2" state="story done" percentage-done="0"  title="Build overdracht (KT en Documentatie)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11923" relid="01" points="1.5" state="story not-done" percentage-done="33"  title="Setup nieuwe integratie-testomgeving"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11924" relid="04" points="2.5" state="story not-done" percentage-done="75"  title="Installatie tarievenmodule"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11925" relid="02" points="3.5" state="story done" percentage-done="0"  title="Remote Loading Client - Setup ABO R1"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11926" relid="02" points="2" state="story not-done" percentage-done="75"  title="Remote Loading Client - WBS/Technisch onderzoek"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11927" relid="04" points="2" state="story done" percentage-done="0"  title="Tarievenmodule KT (DEV intake)"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>               
+                             
+</sprintreview>              
+                             

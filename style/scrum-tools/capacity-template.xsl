@@ -24,11 +24,15 @@
                             x : -20
                         },
                         xAxis : {
+                            range: 8,
                             categories : [ <xsl:call-template name="listcredibilitysprints">
 									           <xsl:with-param name="teamfolder" select="$teamfolder" />
                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
 									           <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                            </xsl:call-template> ]
+                        },
+                        scrollbar: {
+                            enabled: true
                         },
                         yAxis : [{
                             title : {
@@ -85,13 +89,13 @@
                                     lineWidth: 2,
                                     color : '#104E8B',
                                     yAxis: 1
-                                },                           
+                                },
                                 {
                                     type : 'column',
-                                    name : 'Hands-on Capacity (MD)',
+                                    name : 'Product owner Capacity (MD)',
                                     index : -1,
-                                    legendIndex : 4,
-                                    data : [ <xsl:call-template name="listhandsoncapacity">
+                                    legendIndex : 6,
+                                    data : [ <xsl:call-template name="listproductownercapacity">
                                                 <xsl:with-param name="teamfolder" select="$teamfolder" />
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />
                                                 <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
@@ -116,9 +120,23 @@
                                 },
                                 {
                                     type : 'column',
+                                    name : 'Hands-on Capacity (MD)',
+                                    index : -1,
+                                    legendIndex : 4,
+                                    data : [ <xsl:call-template name="listhandsoncapacity">
+                                                <xsl:with-param name="teamfolder" select="$teamfolder" />
+                                                <xsl:with-param name="releasedoc" select="$releasedoc" />
+                                                <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
+                                             </xsl:call-template> ],
+                                    color : '#08298A',
+                                    stack: 0,
+                                    yAxis: 0
+                                },
+                                {
+                                    type : 'column',
                                     name : 'Modeler Capacity (MD)',
                                     index : -1,
-                                    legendIndex : 6,
+                                    legendIndex : 7,
                                     data : [ <xsl:call-template name="listmodelercapacity">
                                                 <xsl:with-param name="teamfolder" select="$teamfolder" />
                                                 <xsl:with-param name="releasedoc" select="$releasedoc" />

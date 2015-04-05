@@ -1,0 +1,154 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" folder="140904" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="8" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="0" avatar="../avatars/BartT.jpg">Bart Timmermans</member>
+    <member type="hands-on" capacity="8" avatar="../avatars/Bart.jpg">Bart Van Boeckhout</member>
+    <member type="hands-on" capacity="7" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="8" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+  
+    <intro>
+    <slides>
+      <slide title="scope" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Hotfix 1 installatie</li>
+
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Refactoring of the current solutions to the ABO-R3 architecture and contracts</li>
+          <br/>
+          <strong>ALL</strong>
+          <li>Framework upgrade testen</li>
+        </List>
+      </slide>
+</slides>
+</intro>
+  <stories>
+    <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+
+
+
+    <story title="[ABO R3] Refactoring to new contracts" state="story done" points="17" id="DL-xxxxx">
+      <slides>
+        <slide type="story-narrative">
+          <ul>
+            <li>Projects
+              <ul>
+                <li>DL-12799 [ABO R3] Fulfillment refactoring (3)</li>
+                <li>DL-12797 [ABO R3] Salesmanagement refactoring (5)</li>
+                <li>DL-12796 [ABO R3] Ordermanagement refactoring (7)</li>
+              </ul>
+            </li>
+            <li>Status</li>
+            <ul>
+              <li>
+                At the beginning of week 2 we were nearly done with refactoring VVK to fit ABO-R3a
+              </li>
+              <li>
+                Currently we are back at 70% because of architecture changes and subsequent breaking contract changes
+              </li>
+            </ul>
+          </ul>
+        </slide>
+      </slides>
+    </story>
+
+    <!--<story title="DL-12799 [ABO R3] Fulfillment refactoring" state="story done" points="3" id="DL-12799">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-12797 [ABO R3] Salesmanagement refactoring" state="story done" points="5" id="DL-12797">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-12796 [ABO R3] Ordermanagement refactoring" state="story done" points="7" id="DL-12796">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>-->
+    <story title="DL-12798 [ABO R3] Framework upgrade sanity check" state="story not-done" percentage-done="50" points="3" id="DL-12798">
+      <slides>
+        <slide type="story-narrative">
+          <ul>
+            <li>[DONE] Testing on the branch</li>
+            <li>[NOT-DONE] Testing on the trunk after merge
+            <ul>
+              <li>Merge was blocked longer than expected</li>
+            </ul>
+            </li>
+          </ul>
+        </slide>
+      </slides>
+    </story>
+
+    <story title="DL-12642 [ABO R1] test automation - basic flows end-to-end" state="story not-done" percentage-done="20" points="2" id="DL-12642">
+      <slides>
+        <slide type="story-narrative"></slide>
+      </slides>
+    </story>
+    <story title="DL-12640 [ABO R3] Testen printers" state="story not-done" percentage-done="0" points="6" id="DL-12640">
+      <slides>
+        <slide type="story-narrative">
+          <ul>
+            <li>[BLOCKED] no requirement list available</li>
+            <li>[BLOCKED] not all printer types are available</li>
+          </ul>
+        </slide>
+      </slides>
+    </story>
+    <story title="DL-12564 EXT - Print template niet correct" state="story not-done" percentage-done="80" points="0" id="DL-12564">
+      <slides>
+        <slide type="story-narrative">
+          <ul>
+            <li>
+              [ON HOLD] wachten op input DL
+            </li>
+          </ul>
+        </slide>
+      </slides>
+    </story>
+  </stories>
+
+<finish>
+  <slides>
+    <slide title="Other work done during the sprint">
+      <ul>
+        <li>Support De Lijn (install and Hotfix)</li>
+        <li>Merge framework upgrade to trunk</li>
+        <li>Technical architecture ABO-R3a</li>
+        <li>Getting new team member(s) up to speed</li>
+        <li>ODP.Net</li>
+        <li>Reviews van TO en SS relevante integraties</li>
+      </ul>
+    </slide>
+	    <slide title="Next sprint" type="whats-next">
+      <ul>
+		<li>ABO R1
+			<ul>
+				<li>Bugfix 2 (3.2.1)</li>
+			</ul>
+		</li>
+		<li>ABO R3a
+			<ul>
+				<li>Complete the refactor of VVK to ABO-R3</li>
+				<li>Start adding 65+ to ABO-R3</li>
+				<li>Integrations for ABO-R3</li>
+			</ul>
+		</li>
+	  </ul>
+	  <ul>
+      </ul>
+    </slide>
+  </slides>
+</finish>
+</sprintreview>

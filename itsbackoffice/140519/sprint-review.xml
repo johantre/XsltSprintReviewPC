@@ -1,0 +1,28 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140519" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="3.5">Servaas Phlips </member>
+        <member type="hands-on" capacity="6.5">Ignacio Errico </member>
+        <member type="hands-on" capacity="6.5">Blaise Braye </member>
+        <member type="hands-on" capacity="6.5">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="0">Gauthier Rossion </member>
+        <member type="tester" capacity="5.5">Annelies Ivens </member>
+        <member type="tester" capacity="3">Parisa Pejham </member>
+        <member type="hands-on" capacity="3.5">Marnix De Groote </member>
+    </team>  
+    <stories>
+		<story id="MOBITS-1791" relid="13907" points="5" state="story done" title="As a Planner I want to import and persists Activation Points from KV9 into the Activation Point Datamodel"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1186" relid="13907" points="3" state="story done" title="As an obstruction manager I want that the impacted lines will be automatically detected based on the obstructions"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1187" relid="13907" points="3" state="story done" title="As an obstruction manager I want to see the valid Lines/journey patterns as a layer in the map of the obstructions"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1190" relid="13907" points="3" state="story done" title="As an obstruction manager I want to see the impacted lines in the detour editor map as a layer"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1192" relid="13907" points="3" state="story done" title="As an obstruction manager I want to select impacted stop of a detour on the map"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1356" relid="13907" points="2" state="story done" title="As a TCO I want context menu's in POITRACKER Tco"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1845" relid="13907" points="3" state="story done" title="Improve PoiTracker with independent vehicle model"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1846" relid="13907" points="3" state="story done" title="Update Hastus Import Interface"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1847" relid="13907" points="3" state="story done" title="Prepare the ground to show stops in poitracker"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+</sprintreview>

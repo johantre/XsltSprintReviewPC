@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releasedata>
+    <sprints>
+        <sprint name="00">140410</sprint>
+        <sprint name="01">140424</sprint>
+        <sprint name="02">140508</sprint>
+        <sprint name="03">140522</sprint>
+        <sprint name="04">140604</sprint>
+        <sprint name="05">140619</sprint>
+        <sprint name="06">140703</sprint>
+        <sprint name="07">140717</sprint>
+        <sprint name="08">140731</sprint>
+        <sprint name="09">140814</sprint>
+        <sprint name="10">140828</sprint>
+        <sprint name="11">140911</sprint>
+        <sprint name="12">140925</sprint>
+        <sprint name="13">141009</sprint>
+        
+    </sprints>
+    <releases><!--note the total points-->
+        <release id="00" name="Rampup" totalpoints="250">
+            <sprintfolders>
+                <sprintfolder>140410</sprintfolder> 
+                <sprintfolder>140424</sprintfolder>
+                <sprintfolder>140508</sprintfolder>
+            	<sprintfolder>140522</sprintfolder>
+                <sprintfolder>140604</sprintfolder>
+                <sprintfolder>140619</sprintfolder>
+                <sprintfolder>140703</sprintfolder>
+                <sprintfolder>140717</sprintfolder>
+                <sprintfolder>140731</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="01" name="ABO JUMP" totalpoints="200">
+            <sprintfolders>
+                <sprintfolder>140717</sprintfolder>
+                <sprintfolder>140731</sprintfolder>
+                <sprintfolder>140814</sprintfolder>
+                <sprintfolder>140828</sprintfolder>
+                <sprintfolder>140911</sprintfolder>
+                <sprintfolder>140925</sprintfolder>
+                <sprintfolder>141009</sprintfolder>
+            </sprintfolders>
+        </release>
+    </releases>
+</releasedata>

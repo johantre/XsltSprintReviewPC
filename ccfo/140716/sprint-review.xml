@@ -1,0 +1,121 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140716" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <!-- put here the team members and their foreseen capacity for this sprint  -->
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Michallis Pashidis</member>
+        <member type="scrummaster"  capacity="0">David Woods</member>
+        <member type="hands-on"     capacity="7">Antoine Wils</member>
+        <member type="hands-on"     capacity="7">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="7">Maarten Casteels </member>
+        <member type="tester"       capacity="7">Koen Meus </member>
+        <member type="tester"       capacity="7">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team>
+
+
+    <!-- possible states: 'story done', 'story done', 'story uncommitted', ...  Use assisted editor for xsd-based auto-completion  -->
+    <!-- state 'story done';  'percentage-done' = required.   Use assisted editor for xsd-based auto-completion  -->
+    <!-- pull this xml generated data out of Jira:  use http://172.31.28.56/SprintReport/ -->
+    <stories>
+
+        <!-- START OF STORIES -->
+
+        <!-- 607 (added - was not in sprint (JIRA) initially but added at end). Also story points changed/added by DW today 23/07 - check this as for uncommitted items points were empty field here for other items. created on 14th so set as uncommitted as added towards end of sprint-->
+        <!-- DW - for some uncommitted stories, changed points to zero as empty field shows as an error in intellij -->
+        <!-- OPEN -->
+        <story id="CCFO-607" relid="01" points="1.75"     state="story uncommitted" percentage-done="0" title="MP:: No realtime message in case of event : 3402-Release Management &lt; RP version &gt; corrupt              "><slides><slide type="story-narrative"></slide></slides></story>
+        <!-- DW reconciled points til here (old and this new doc) - -->
+        <!-- 598 (added - was not in review but added to sprint (JIRA)  - N.B. no story points entered in JIRA for this issue -->
+        <!-- DW - TODO: check if there was time added on the board - in which case update JIRA and also story points below -->
+
+        <!-- DW - no story points in JIRA for this issue -->
+        <story id="CCFO-598" relid="01" points="0"     state="story uncommitted" percentage-done="100"  title="MP:: log spam in mobiguider log &quot;The important data isn't there yet&quot;                         "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- 597 (added - was not in review but added to sprint (JIRA)  - N.B. no story points entered in JIRA for this issue (was uncommitted story in previous doc) -->
+        <!-- DW - TODO: check if there was time added on the board - in which case update JIRA and also story points below -->
+        <!-- DW - no story points in JIRA for this issue -->
+        <story id="CCFO-597" relid="01" points="0"     state="story uncommitted"     percentage-done="100"  title="IPS:: geen sensor geeft verkeerde waarde                                                                "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- 593 (added - was not in review but added to sprint (JIRA) - (was uncommitted story  in previous doc) -->
+        <!-- DW - TODO: check if there was time added on the board - in which case update JIRA and also story points below -->
+        <!-- DW - no story points in JIRA for this issue -->
+        <story id="CCFO-593" relid="01" points="0"     state="story uncommitted"     percentage-done="100"  title="TODO_ADD_DETAIL_HERE                                                                                    "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- DW - TODO: check all story points below with ticket in JIRA -->
+        <!-- DW - TODO: (items above here have all been checked in JIRA, but not on board) -->
+        <!-- DW - TODO: (i.e. only 'state' and 'percentage-done' fields changed) -->
+
+        <!-- DW - TODO: (check - when it's a bug then change state to bug) -->
+
+        <story id="CCFO-591" relid="01" points="2    " state="story not-done" percentage-done="0"    title="R and D::MP on Windows                                                                                  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-586" relid="01" points="0.25 " state="story done"     percentage-done="100"  title="MP::RealTime monitoring event not send when device is starting up                                       "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-579" relid="01" points="0.375" state="story done"     percentage-done="100"  title="Preparation RC for QA                                                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- OPEN -->
+        <story id="CCFO-578" relid="01" points="0.25 " state="story not-done" percentage-done="0"    title="Invest: CCFO545                                                                                         "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-574" relid="01" points="0.6  " state="story done"     percentage-done="100"  title="QA tester : implement  DLT-28208:4601- Monitoring: De temperatuur van de IPS batterij is boven de limiet"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-570" relid="01" points="0.25 " state="story done"     percentage-done="100"  title="Device Housing Temperature                                                                              "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- CLOSED, BUT NOT FIX - NOT REPRODUCIBLE (see comments in JIRA) -->
+        <story id="CCFO-559" relid="01" points="0.5  " state="story done"     percentage-done="0"    title="MP::M and L::Event4806 OudeOS componenten werden niet correct verwijderd: not possible to test          "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-558" relid="01" points="0.5  " state="story done"     percentage-done="100"  title="MP::M and L::Event4803 Nieuwe OS componenten werden niet correct verwerkt : not possible to test        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-544" relid="01" points="0.125" state="story done"     percentage-done="100"  title="CI request message received on VAL when DC is offline not send to MPM when DC becomes online            "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-540" relid="01" points="0.5  " state="story not-done" percentage-done="0"    title="MP::SynchRecord:nullpointer exception (invest!!)                                                        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-495" relid="01" points="0.125" state="story done"     percentage-done="100"  title="Logging::Content delivery                                                                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-487" relid="01" points="1    " state="story done"     percentage-done="100"  title="Logging::Release management (***)                                                                       "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-484" relid="01" points="0.06 " state="story done"     percentage-done="100"  title="MPM :: REST call: not possible to query on updateDate                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-412" relid="01" points="0.25 " state="story done"     percentage-done="100"  title="RB synch:: test automation: DLT-21024                                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-409" relid="01" points="0.25 " state="story done"     percentage-done="100"  title="RB synch:: test automation: DLT-21029                                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-408" relid="01" points="0.25 " state="story done"     percentage-done="100"  title="RB synch:: test automation: DLT-21028                                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-279" relid="01" points="0.5  " state="story done"     percentage-done="100"  title="Read timed out Exceptions when sending messages ( sometimes )                                           "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-235" relid="01" points="0.5  " state="story done"     percentage-done="100"  title="Implementation of Roaming connection based on POC                                                       "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-231" relid="01" points="1    " state="story not-done" percentage-done="0"    title="Extended Position POJO merge to core API                                                                "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-230" relid="01" points="3    " state="story done"     percentage-done="100"  title="Update GPS service cfr Technical Analysis (DEPENDENCY - APPTEAM)                                        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-229" relid="01" points="1    " state="story not-done" percentage-done="0"    title="Implement new frames for calibration                                                                    "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-228" relid="01" points="1.5  " state="story not-done" percentage-done="0"    title="Update parsers to OSGi services                                                                         "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-227" relid="01" points="1    " state="story not-done" percentage-done="0"    title="Update different frames to use streaming API                                                            "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-226" relid="01" points="2    " state="story not-done" percentage-done="0"    title="Update API to add calibration methods + documentation                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- 21  (added - was in sprint but not in review) -->
+        <story id="CCFO-222" relid="01" points="2    " state="story done"     percentage-done="100"  title="MP::Communication::Core communication test after new http module QA (uncertainty)                       "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-169" relid="01" points="0.75 " state="story not-done" percentage-done="0"    title="Adjust IPS test with new values ( 21.5 V ) for 1RT1 and 1RT2                                            "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-157" relid="01" points="2    " state="story done"     percentage-done="100"  title="Os versie - Aanduiding OS versie is onvoldoende informatief                                             "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-127" relid="01" points="0.5  " state="story done"     percentage-done="100"  title="great deviations in performance with throughput test                                                    "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-117" relid="01" points="2.5  " state="story not-done" percentage-done="0"    title="GPS calibration by verhicleType                                                                         "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- 21  (added - was in sprint but not in review) (was uncommitted story in previous doc) -->
+        <!-- DW - no story points in JIRA for this issue -->
+        <story id="CCFO-21"  relid="01" points="2    " state="story uncommitted"     percentage-done="100"  title="EXT - DM 4.2 - 2 update acties in 2 verschillende CALYPSO sessies bij uitvoeren van DL-20892            "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-1"   relid="01" points="0.125" state="story done"     percentage-done="100"  title="Switching between communication channels causes write IO to block for 15 minutes                        "><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- 154  (was in this review document but not in sprint so don't add here) -->
+
+        <!-- DW - NOTES -->
+        <!-- list of stories with differing points (between original [this] and new [downloaded sprint3] docs) -->
+        <!-- issue      Old (original, this) story points   New (modified) story points     points in JIRA-->
+        <!-- 484        "0.06 "                             "1"                             1 -->
+        <!-- 487        "1    "                             "1.5"                           1.5 -->
+        <!-- 495        "0.125"                             "1"                             1 -->
+        <!-- 559        "0.5  "                             "0.75"                          0.75 -->
+        <!-- 570        "0.25 "                             "0.4"                           0.4 -->
+        <!-- 222        "2    "                             "5"                             5 -->
+
+        <!-- Additional list of stories (in addition to above) with differing points (between this doc and JIRA) -->
+        <!-- DW - not in new [downloaded sprint3] doc] -->
+        <!-- issue      Old (original, this) story points   New (modified) story points     points in JIRA-->
+        <!-- 579        0.375                               -                               0.125 -->
+
+
+        <!-- END OF STORIES -->
+
+        <!-- DW to check - there is only one column for the points (story points) so need to decide whether we enter the estimated (originals) or actual ('new') points as above -->
+        <!-- ideally we would have estimated and actual, then we'd have two sets of points in this review -->
+   </stories>
+
+</sprintreview>

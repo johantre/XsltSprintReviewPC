@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140916" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="ccbo">
+		<member type="productowner" capacity="0">David Donabedian </member>
+		<member type="scrummaster" capacity="0">Fares Stita </member>
+		<member type="hands-on" capacity="8">Bert Houben </member>
+		<member type="hands-on" capacity="9">Hans Loquet </member>
+		<member type="hands-on" capacity="9">Steven Wyns </member>
+		<member type="hands-on" capacity="8">Filip Vanhoorelbeke </member>
+		<member type="hands-on" capacity="0">Wim Jans </member>
+	</team>
+	<intro>
+		<slides>
+			<slide title="Overview" type="sprint-intro">
+				<List xmlns="http://schemas.microsoft.com/sharepoint/">
+					<strong>New arrival (cookbook)</strong>
+					<li>Dirk van Dongen</li>
+					<br/>
+					<strong>Support</strong>
+					<br/>
+					<strong>Localization module</strong>          
+				</List>
+			</slide>		
+			<slide title="Support" type="story-batman">
+				<List xmlns="http://schemas.microsoft.com/sharepoint/">
+					<strong>Internal</strong>
+					<li>Create Nightly Deploy Build for localization</li>
+					<li>Create Acceptance Test Build for localization</li>
+					<li>Create A Demo Deploy Build for localization</li>
+					<br/>
+					<strong>External</strong>
+					<li>LDAP integration with security doesn't seem to work</li>
+					<li>Write guideline on how to encrypt connection strings</li>
+				</List>
+			</slide>
+		</slides>
+	</intro>
+	<stories>
+		<story id="CCBO-965" relid="01" points="2" state="story done" title="Create a new language">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1011" relid="01" points="1" state="story done" title="Implement security roles for localization module">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1014" relid="01" points="2" state="story done" title="PMS Translate shipped languages">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1015" relid="01" points="2" state="story done" title="Customer translates custom languages">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1019" relid="01" points="2" state="story done" title="Merge old keys with new keys when importing to database">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1024" relid="01" points="8" state="story done" title="Translate enumerations spike">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-969" relid="01" points="1" state="story done" title="Display a warning before deleting a language">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-966" relid="01" points="2" state="story done" title="Update a language">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-967" relid="01" points="2" state="story done" title="Delete a language">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1053" relid="01" points="1" state="story done" title="Make Translation module ready for translation ">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+	</stories>
+</sprintreview>

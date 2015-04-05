@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140807" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="5.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="5.0" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Bugfixing</li>
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Technische analyse import</li>
+          <br/>
+          <strong>Framework upgrade</strong>          
+        </List>
+      </slide>
+
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>ABO R1: Hotfix 1 ivm import (DLIM-829, DLIM-830 en DLIM-832)</li>
+          <li>Review Business Test Scenario's</li>
+          <li>Support AW-omgeving (build configuraties)</li>
+          <br/>
+          <strong>QA</strong>
+          <li>ABO R1: Sanity checks imv Hotfix 1</li>          
+        </List>
+      </slide>
+      
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>      
+    				
+		<!-- Bugfixing AVU R2 - Sam and Card Management -->		
+    <story id="DL-12520" relid="02" points="1" state="story done" title="[CARD] Validatie regels voor status en locatieovergangen bij bepaalde use cases nakijken"><slides><slide type="story-narrative"></slide></slides></story>
+
+    <!-- Features  ABO R1 - VVK - Customer Management -->
+    
+    <!-- Bugfixing ABO R1 - VVK - Customer Management -->
+    <story id="DL-12519" relid="11" points="0.5" state="story done" title="[CUST] Polldata opkuisen"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12537" relid="11" points="0.5" state="bug" title="EXT - Customer - Technische fout bij het direct uitreiken van een kaart(nazorg) wanneer de personalisatieorder van de persoon al is toegevoegd aan personalisatiebatch"><slides><slide type="story-narrative"></slide></slides></story>		    
+		<story id="DL-12661" relid="11" points="0.5" state="bug" title="EXT - Customer - Toon account: Stocknummer ontbreekt op het kaartcontract"><slides><slide type="story-narrative"></slide></slides></story>        
+    <story id="DL-12535" relid="11" points="0.5" state="story not-done" percentage-done="30"  title="EXT - Customer - Meerdere gepersonaliseerde kaarten per klant door vervangingen"><slides><slide type="story-narrative"></slide></slides></story>
+        
+    <!-- Features  ABO R3 - Customer Management - Revenue Management -->
+    <story id="DL-12644" relid="13" points="5" state="story done" title="[CUST] Technische analyse - Imports ABO R3"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-11985" relid="13" points="5" state="story done" title="[ALL] Upgrade all modules to the new frawework (technical)"><slides><slide type="story-narrative"></slide></slides></story>    
+		<story id="DL-12645" relid="13" points="2" state="story not-done" percentage-done="0"  title="[CUST] Technische analyse - Nazorg ABO R3"><slides><slide type="story-narrative"></slide></slides></story>
+
+    <!-- Bugfixing ABO R3 - Customer Management - Revenue Management -->
+
+  </stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Hotfix 1 installatie</li>
+          <li>Ontbrekende iconen klantenbeheer</li>
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Import 65+ technisch uitwerken samen met Codit</li>
+          <br/>
+          <strong>ALL</strong>
+          <li>Framework upgrade testen</li>
+          <li>Nightly Acceptance Tests failure</li>
+        </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

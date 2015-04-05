@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140515" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <!-- put here the team members and their foreseen capacity for this sprint  -->
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Michallis Pashidis </member>
+        <member type="hands-on"     capacity="9">Antoine Wils</member>
+        <member type="hands-on"     capacity="5.5">Frederic Gendebien </member>
+        <member type="hands-on"     capacity="1.5">Maarten Carbonez </member>
+        <member type="tester"       capacity="4">Koen Meus </member>
+        <member type="tester"       capacity="4.5">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team>
+
+    <!-- possible states: 'story done', 'story not-done', 'story uncommitted', ...  Use assisted editor for xsd-based auto-completion  -->
+    <!-- state 'story not-done';  'percentage-done' = required.   Use assisted editor for xsd-based auto-completion  -->
+    <!-- pull this xml generated data out of Jira:  use http://172.31.28.56/SprintReport/ -->
+    <stories>
+        <story id="CCFO-2"   relid="01" points="0"      state="story done"                           title="MP :: Synchronization : add record based"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-21"  relid="01" points="0"      state="story done"                           title="EXT - DM 4.2 - 2 update acties in 2 verschillende CALYPSO sessies bij uitvoeren van DL-20892"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-166" relid="01" points="0.9"      state="story done"                           title="Record Based Synchronization blocked due to error when downloading tasklist"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-200" relid="01" points="0.5"      state="story done"                           title="Makewave integration"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-209" relid="01" points="1"      state="story done"                           title="Git Migration :: Core"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-223" relid="01" points="0.5"      state="story done"                           title="Git Migration :: gps"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-224" relid="01" points="0.5"      state="story done"                           title="Git Migration :: peripherals"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-232" relid="01" points="0.5"      state="story done"                           title="Git separate build module (prior)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-140" relid="01" points="2"      state="story done"                    title="CHECK: OpenSSL bug 'HEARTBLEED'"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-198" relid="01" points="1.25"      state="story done"                 title="merge existing branch DL_8782 into the target release branch"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-204" relid="01" points="3"      state="story done"                    title="R'n D Roaming connection"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-218" relid="01" points="2"      state="story done"                    title="Overdracht -> Communication schedular"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-219" relid="01" points="1"      state="story done"                    title="Knowledge transfer - Synchronization (Frederic)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-234" relid="01" points="4"      state="story done"                    title="Investigate Release management stability"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-250" relid="01" points="0"      state="story done"                    title="MPM :: support"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-4"   relid="01" points="0"      state="story not-done"  percentage-done="20"  title="CD job not resumed after switching communication channels"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-155" relid="01" points="2.5"      state="story not-done"  percentage-done="80"  title="EXT - SPIRA-1114 - Geen controle van beschikbare diskruimte op MP door MPM bij het leveren van een te grote content file."><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-156" relid="01" points="1.5"      state="story not-done"  percentage-done="80"  title="EXT - Path cost van 3G is kleiner of gelijk aan die van depot-wle interface"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-191" relid="01" points="1"      state="story not-done"  percentage-done="80"  title="MPM :: Synchronization : Not enough logging"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-196" relid="01" points="1"      state="story not-done"  percentage-done="0"  title="Create Testcases content delivery MP=>MP"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-252" relid="01" points="0"      state="story not-done"  percentage-done="80" title="MP :: Synchronization : scenario without MPM connection">
+            <slides>
+                <slide title="What did we learn?" type="story-context">
+                    <List>
+                        <li>Scrum ceremony (grooming, retro, planning, standups).</li>
+                        <li>Difficulties in team to adapt, presentation helped a lot.</li>
+                        <li>QA tasks not well reflected in the sprint.</li>
+                        <li>Clear dependencies during grooming sessions.</li>
+                        <li>Build issues have big impact on progress.</li>
+                        <li>Using a scrum board and adapting the board to our needs.</li>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    </List>
+                </slide>
+                <slide title="Where did Spiderman time go?" type="story-batman">
+                    <List>
+                        <li>QA ITM</li>
+                        <li>Production support</li>
+                        <li>Internal support (add hoc setup new MPM, ...)</li>
+                        <li>A lot of additional meetings, making methodology clear</li>
+                        <li>Development: RFID issue + Internal DB used in communication (1/3 persoon)</li>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    </List>
+                </slide>
+
+                <slide title="Next sprint" type="whats-next">
+                    <h5>What's up?</h5>
+                    <List>
+                        <li>Priority 80%: Bugfix AVU-R2.</li>
+                        <li>Priority 20%: Upon build, doucmentation, gitflow (development support tasks)</li>
+                        <li>Better tracking of QA tasks.</li>
+                        <li>AVU Bugfix 2 release = feature freeze at the end of the sprint.</li>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    </List>
+                </slide>
+            </slides>
+        </story>
+    </stories>
+
+</sprintreview>

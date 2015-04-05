@@ -24,11 +24,15 @@
                             x : -20
                         },
                         xAxis : {
+                            range: 8,
                             categories : [ <xsl:call-template name="listcredibilitysprints">
                                                <xsl:with-param name="teamfolder" select="$teamfolder" />
 									           <xsl:with-param name="releasedoc" select="$releasedoc" />
 									           <xsl:with-param name="thissprintfolder" select="$thissprintfolder" />
                                            </xsl:call-template> ]
+                        },
+                        scrollbar: {
+                            enabled: true
                         },
                         plotOptions: {
                             column: {

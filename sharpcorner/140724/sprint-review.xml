@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140724" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="10.0" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="5.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="10.0" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="10.0" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="10.0" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>AVU R2 Bugfix 3</strong>
+          <li>K6 blockers</li>
+		      <li>Document generatie (9 templates)</li>		  
+		      <br/>
+          <strong>ABO R1</strong>          
+          <li>Bugfixing na keuring</li>		  
+		      <li>Implementeren feature files</li>		  
+		      <br/>
+          <strong>ABO R3</strong>          
+          <li>Review iteratie 3 oplevering van klantenbeheer en inkomstenbeheer</li>		  
+        </List>
+      </slide>      	       	  
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>  
+				
+		<!-- Bugfixing  AVU R2 - Sam and Card Management -->		
+		<story id="DL-12116" relid="02" points="1.0" state="story done" title="EXT - Algemeen  - Geen vertalingen in de UI"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12177" relid="02" points="0.5" state="story done" title="[CARD] Na herstel zoekcriteria wordt selectie omdoos niet visueel weergegeven"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11943" relid="02" points="0.5" state="story done" title="EXT - PV vernietiging: Locatietype van een vernietigde kaart verandert niet naar vernietigingsbedrijf bij externe vernietiging"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12200" relid="02" points="0.5" state="story done" title="EXT - PV vernietiging: Status toont ID ipv naam"><slides><slide type="story-narrative"></slide></slides></story>				
+		<story id="DL-12313" relid="02" points="0.5" state="story done" title="EXT - Algemeen - status en locatietype overgangen in MOBIB-kaartbeheer"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12364" relid="02" points="0.5" state="story done" title="EXT - Algemeen - Geen refreshmogelijkheid in de schermen"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12367" relid="02" points="0.5" state="story done" title="EXT - Algemeen - Bevestigingsknoppen in omgekeerde volgorde"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12368" relid="02" points="0.5" state="story done" title="EXT - Foutieve auditfile raadplegen: Scrollen tussen de data van de audit file werkt niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12370" relid="02" points="0.5" state="story done" title="EXT - sam receiling: receiling werkt niet met een gemigreerde SAM groep van AVU R1"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12371" relid="02" points="0.5" state="story done" title="EXT - Keur kaarten: Omdoos afkeuren geeft geen waarschuwing of bevestiging melding"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12198" relid="02" points="0.5" state="story done" title="EXT - sam receiling: SAMs kunnen niet meer gereceiled worden wanneer SAM SL (tijdelijk) niet beschikbaar is"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12365" relid="02" points="0.5" state="story done" title="EXT - sam receiling: geen alarm wanneer sam reeds een operationeel plafond had"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12241" relid="02" points="0.5" state="story done" title="EXT - Zoek sam: Velden met lange tekst zijn niet volledig zichtbaar op het scherm"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12518" relid="02" points="0.5" state="story done" title="EXT - sam beheer: database locked (UAT)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12456" relid="02" points="0.5" state="story done" title="EXT - sam groep - technische fout toevoegen sam type bij aanmaak nieuwe sam groep"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12460" relid="02" points="0.5" state="story done" title="EXT - Kaart deactiveren: Locatie niet wijzigingen zorgt voor dubbele records"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12491" relid="02" points="0.5" state="story done" title="EXT - Keur kaarten: Externe keuring niet mogelijk"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12436" relid="02" points="0.5" state="story done" title="EXT - Selecteer (om)doos - Niet mogelijk om een (om)doos te deactiveren"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12435" relid="02" points="0.5" state="story done" title="EXT - PV vernietiging - Select all functionaliteit ontbreekt bij aanmaak nieuwe pv"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12437" relid="02" points="1.0" state="story done" title="EXT - Algemeen - Volgnummers moeten doorlopend zijn zonder gaten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12458" relid="02" points="0.5" state="story done" title="EXT - Audit file importeren resulteert in ongekende foutmelding"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12459" relid="02" points="0.5" state="story done" title="EXT - PV Vernietiging: Afgekeurde PV kan zonder wijzigingen terug gevalideerd worden"><slides><slide type="story-narrative"></slide></slides></story>
+		                            
+		<story id="DL-12540" relid="02" points="0.5" state="story done" title="EXT - Algemeen: Multiselect geeft niet aan hoeveel items reeds geselecteerd zijn"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12487" relid="02" points="0.5" state="story done" title="Refactor statechange to box instead of list of cards"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12545" relid="02" points="0.5" state="story done" title="Goedkeurder naam en voornaam moeten worden opgeslagen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-10489" relid="02" points="0.5" state="story done" title="[CARD] Genereer document Verzendnota (om)doos"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-7290"  relid="02" points="0.5" state="story done" title="[CARD] Genereer document Vernietigingsaanvraag"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-10490" relid="02" points="1.0" state="story done" title="[CARD] Genereer document Verzendnota kaart(en)"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12103" relid="02" points="0.5" state="story done" title="[CARD] Genereer document Goedgekeurde kaarten"><slides><slide type="story-narrative"></slide></slides></story>  
+		<story id="DL-9499"  relid="02" points="0.5" state="story done" title="[CARD] Genereer document PV keuring"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-6041"  relid="02" points="0.5" state="story done" title="[CARD] Genereer document PV vernietiging"><slides><slide type="story-narrative"></slide></slides></story>		
+		
+		<!-- Bugfixing  ABO R1 - VVK - Customer Management -->			
+		<story id="DL-12395" relid="11" points="0.5" state="story done" title="[CUST] Geavanceerde criteria worden in rekening gebracht terwijl ze niet zichtbaar zijn"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12399" relid="11" points="0.5" state="story done" title="[CUST] Dropdown met entiteiten wordt niet aangevuld"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12400" relid="11" points="0.5" state="story done" title="[CUST] Toon detail persoonsprofiel geeft adrestype voor levering niet weer"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12403" relid="11" points="0.5" state="story done" title="[CUST] Detail gezinsleden geeft profielgroep niet weer voor toegewezen profielen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12485" relid="11" points="0.5" state="story done" title="EXT - Customer - Verwerk foto persoon: acties ontbreken bij het toevoegen van een foto"><slides><slide type="story-narrative"></slide></slides></story>    	
+    <story id="DL-12484" relid="11" points="0.5" state="story done" title="EXT - Customer - Zoek medewerkers DL: persoonprofielgroep en persoonprofiel ontbreken"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12464" relid="11" points="1.0" state="story done" title="[CUST] Foto toevoegen via rijksregister"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12463" relid="11" points="0.5" state="story done" title="[ACC] Subscriben op events van kaartbeheer ivm nazorg (deactiveren en intrekken)"><slides><slide type="story-narrative"></slide></slides></story>    	   	   	
+    <story id="DL-12486" relid="11" points="0.5" state="story done" title="EXT - Persoonsprofielen: Verschillende fonts gebruikt bij zoekresultaten"><slides><slide type="story-narrative"></slide></slides></story>   	
+    <story id="DL-12481" relid="11" points="0.5" state="story done" title="EXT - Detail persoonsprofiel: Lange naam zal niet volledig zichtbaar zijn"><slides><slide type="story-narrative"></slide></slides></story>   	
+    <story id="DL-12538" relid="11" points="0.5" state="story done" title="EXT - Customer - Telefoonnnummer wordt niet weergegeven op detail persoon (voorbeeld: Jan zonder Vrees)"><slides><slide type="story-narrative"></slide></slides></story>    	
+    <story id="DL-12536" relid="11" points="0.5" state="story done" title="EXT - Nazorg van een VVKK kaart geeft geen feedback naar de eindgebruiker"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12472" relid="11" points="0.5" state="story done" title="EXT - Customer - het veld 'leeftijd geldig op' wordt niet opnieuw ingevuld bij tweede keer openen van geavanceerde zoekcriteria"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12471" relid="11" points="0.5" state="story done" title="EXT - Customer - Filter klanten, dropdown persoonsprofiel wordt niet gecleared bij selecteren andere persoonsprofielgroep"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12473" relid="11" points="0.5" state="story done" title="EXT - Customer - Geldigheidsdatum persoonsprofiel verschillend weergegeven op verschillende plaatsen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12462" relid="11" points="0.5" state="story done" title="[CUST] Implementeren feature files [41/300]"><slides><slide type="story-narrative"></slide></slides></story>
+
+    <!-- New features ABO R3 - Customer Management - Revenue Management -->
+    <story id="DL-12461" relid="13" points="5" state="story done" percentage-done="0"  title="[ABO R3] Review en technische analyse van de iteratie 3 oplevering"><slides><slide type="story-narrative"></slide></slides></story>
+    
+	</stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>ABO R3</strong>
+        <li>Technische analyse import</li>
+        <br/>
+			  <strong>Framework upgrade</strong>			  			  
+			</List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
 
-<sprintreview folder="140307" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="Team B.A.">
+<sprintreview folder="140307" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="team-ba">
         <member type="scrummaster" capacity="0">Alexander </member>
         <member type="hands-on" capacity="4.5">Jan </member>
         <member type="hands-on" capacity="4.5">Saskia </member>

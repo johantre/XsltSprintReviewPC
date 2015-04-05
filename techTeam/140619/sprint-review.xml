@@ -1,0 +1,82 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140619" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="7">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="10">Philip Van Hoof</member>
+        <member type="hands-on" capacity="2">Steven Wyns </member>
+        <member type="hands-on" capacity="9">Steven Robijns </member>
+        <member type="hands-on" capacity="18.5">CSC </member>
+        <member type="tester" capacity="9">Dorine Vos </member>
+        <member type="tester" capacity="10">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Frank Vanhoenshoven </member>
+    </team>     
+
+    <intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Support De Lijn met AVU R2 - omgevingsgerelateerde problemen</li>
+			  <li>Support andere teams met aanpassingen applicatierollen</li>
+			  <br/>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>AVU R2</strong>
+	          <li>Bug fixing BF3</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+	          <li>BO logging component: updates manifest</li>
+	          <li>Testcases Event Mgt</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Drools training sessie</li>
+	          <li>Technische analyse op nieuwe specs</li>
+	          <li>Zoek en Filter aanpassingen</li>
+	          <li>Implementatie en beheer automatische testen</li>	          
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+    </intro>    
+    
+    <stories>
+		<story id="DL-12253" relid="01" points="0.5" state="story done" title="[OPS] Fix vertalingen (verwijder dat file bij opstart)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12419" relid="05" points="2" state="story not-done" percentage-done="0"  title="[OPS] Migratie project De Lijn naar nieuwe Team City"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12411" relid="03" points="6" state="story done" title="[LOG] QA logging and monitoring (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12412" relid="03" points="1" state="story done" title="[LOG] Support testing"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12413" relid="03" points="1" state="story done" title="[LOG] Uitbreiden manifest creatie tool (properties)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12414" relid="03" points="0.5" state="story not-done" percentage-done="0"  title="[LOG] Unit tests op event mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12415" relid="01" points="2" state="story done" title="[CM] CHM files Configuration Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12416" relid="01" points="2" state="story done" title="[RM] CHM files Release Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12417" relid="01" points="4" state="story done" title="[RM] Bugfixing sanity checks (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12418" relid="01" points="2.5" state="story done" title="[RM] Fixen automatische testen (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12265" relid="04" points="1.125" state="story done" title="[TM] Aanpassen Zoek en Filter - DL-4602 Selecteer prijs"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12268" relid="04" points="1.125" state="story done" title="[TM] Aanpassen Zoek en Filter - DL-4599 Selecteer beperking"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12420" relid="04" points="3.7" state="story done" title="[TM] Herwerken Tarievenmodule (timeboxed) - Technische analyse"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12421" relid="04" points="1" state="story done" title="[TM] Aanpassen Zoek en Filter - Selecteer tarievenrapport"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12422" relid="04" points="0.5" state="story done" title="[TM] Aanpassen Security roundhouse scripten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12424" relid="04" points="0.5" state="story done" title="[TM] Multiple dispose calls"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12425" relid="04" points="7.4" state="story done" title="[TM] QA Timebox"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12426" relid="04" points="7" state="story done" title="[TM] Automatische testen Tarievenmodule (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12427" relid="04" points="7" state="story done" title="[TM] Bugfixing Tarievenmodule door CSC"	><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12428" relid="04" points="0.125" state="story done" title="[TM] Opzetten branch voor Sandbox"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12429" relid="04" points="1" state="story done" title="[TM] Opzetten build voor Sandbox"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12423" relid="04" points="2.5" state="story not-done" percentage-done="50"  title="[TM] Dependency injection"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-11816" relid="01" points="0" state="bug" percentage-done="0"  title="Update state model: flow buiten gebruik => beheer gestopt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12099" relid="01" points="0" state="bug" percentage-done="0"  title="Buiten gebruik: MPadded mag niet uitgestuurd worden van oude CI nadat toestel terug in gebruik komt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12478" relid="01" points="0" state="bug" percentage-done="0"  title="EXT - Applicatierol Beheren SAM-groepen geeft toegang tot tegel Release Groepen en niet tot SAM groepen"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11982" relid="01" points="0" state="bug" title="Geen session expired bericht in schermen release groepen"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12281" relid="01" points="0" state="bug" title="Verwijderen 2 releases gelijktijdig: verwijder knop actief "><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12433" relid="01" points="0" state="bug" title="SC upload niet mogelijk indien validatiefout bij vorige poging"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

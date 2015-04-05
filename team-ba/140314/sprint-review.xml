@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
 
-<sprintreview folder="140314" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-    <team name="Team B.A.">
+<sprintreview folder="140314" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="team-ba">
         <member type="scrummaster" capacity="0">Alexander </member>
         <member type="hands-on" capacity="4">Jan </member>
         <member type="hands-on" capacity="4">Saskia </member>
@@ -12,19 +12,21 @@
     </team>
 
     <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
-        <story title="Verwerken impact SS_SWR_AVU_31_Rechthebbenden_Vrijverkeerkaart_v06.01  op analyse klantenbeheer" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="VB_SWR_ABO_Verfijnd_Bestek_Security_Deel_4_v05.05" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Review ABO-20 en ABO-21 TO DL afsluiting" state="story done" points="0.25"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Samenwerking DL: BR en detailcomments (voorbereiding + bijwonen meeting)" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Bijwonen kickoff architectuur ABO (7/3)" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Update UCS Klantenbeheer n.a.v. review DL" state="story done" points="2.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Meeting configureerbaarheid grootboekrekeningen" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Scannen van reviewsheet VVK (verkoop/uitgifte, geen klantenbeheer)met als doel een estimate van het werk" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="PO" state="story done" points="5.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Tarieven: ondersteuning JUMP" state="story done" points="1.25"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Tarieven: Beheer Productattributenset (Contracts Only)" state="story done" points="0.5"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Matrix 5" state="story done" points="6"><slides><slide type="story-narrative"></slide></slides></story>
-        <story title="Matrix 6 KB: beheer persoonsprofielen en attesttypes" state="story done" points="2"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.25" title="Verwerken impact SS_SWR_AVU_31_Rechthebbenden_Vrijverkeerkaart_v06.01  op analyse klantenbeheer"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.25" title="VB_SWR_ABO_Verfijnd_Bestek_Security_Deel_4_v05.05"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="0" points="0.25" title="Review ABO-20 en ABO-21 TO DL afsluiting"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="Samenwerking DL: BR en detailcomments (voorbereiding + bijwonen meeting)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="Bijwonen kickoff architectuur ABO (7/3)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2.5" title="Update UCS Klantenbeheer n.a.v. review DL"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="Meeting configureerbaarheid grootboekrekeningen"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="Scannen van reviewsheet VVK (verkoop/uitgifte, geen klantenbeheer)met als doel een estimate van het werk"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="5.5" title="PO"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1.25" title="Tarieven: ondersteuning JUMP"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="Tarieven: Beheer Productattributenset (Contracts Only)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="90" points="6" title="Matrix 5 KB"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="80" points="6" title="Matrix 5 Verkoop"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="30" points="6" title="Matrix 5 Nazorg &amp; Personalisatie"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="30" points="2" title="Matrix 6 KB: beheer persoonsprofielen en attesttypes"><slides><slide type="story-narrative"></slide></slides></story>
    </stories>        
 
 </sprintreview>

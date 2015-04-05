@@ -101,8 +101,8 @@
                         </xsl:for-each>
                     </div>
                 </div>
-                <script src="../style/highcharts/js/highcharts.js"></script>
-                <script src="../style/highcharts/js/modules/exporting.js"></script>
+                <script src="../style/highstock/js/highstock.js"></script>
+                <script src="../style/highstock/js/modules/exporting.js"></script>
                 <script type="text/javascript">
                     Highcharts.setOptions({
                         chart: {

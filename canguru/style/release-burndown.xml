@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releasedata>
     <sprints>
+<!--
         <sprint name="01">140205</sprint>
         <sprint name="02">140212</sprint>
         <sprint name="03">140221</sprint>
-        <sprint name="04">140306</sprint>
+        <sprint name="04">140306</sprint> 
         <sprint name="05">140320</sprint>
+        <sprint name="06">140403</sprint>
+        <sprint name="07">140417</sprint>
+        <sprint name="08">140505</sprint>
+        <sprint name="09">140515</sprint>
+        <sprint name="10">140623</sprint>
+-->
+        <sprint name="11">140710</sprint>
+		<sprint name="12">140724</sprint>
+        <sprint name="13">140821</sprint>
+        <sprint name="14">140904</sprint>
     </sprints>
     <releases><!--note the total points-->
-        <release id="00" name="Ramp-Up" totalpoints="50">
+        <release id="00" name="V00" totalpoints="50">
             <sprintfolders>
                 <sprintfolder>140205</sprintfolder> 
                 <sprintfolder>140212</sprintfolder> 
             </sprintfolders>
         </release>
-        <release id="01" name="VVK 0.1" totalpoints="200">
+        <release id="11" name="ABO R1" totalpoints="232">
             <sprintfolders>
                 <sprintfolder>140221</sprintfolder> 
                 <sprintfolder>140306</sprintfolder> 
                 <sprintfolder>140320</sprintfolder> 
+                <sprintfolder>140403</sprintfolder> 
+                <sprintfolder>140417</sprintfolder> 
+                <sprintfolder>140505</sprintfolder> 
+                <sprintfolder>140515</sprintfolder> 
+                <sprintfolder>140623</sprintfolder> 
             </sprintfolders>
         </release>
-    </releases>
+		    <release id="31" name="ABO R3" totalpoints="250">
+			    <sprintfolders>
+					    <sprintfolder>140710</sprintfolder> 
+					    <sprintfolder>140724</sprintfolder> 
+					    <sprintfolder>140821</sprintfolder> 
+					    <sprintfolder>140904</sprintfolder> 
+			    </sprintfolders>		
+		    </release>
+	</releases>
 </releasedata>

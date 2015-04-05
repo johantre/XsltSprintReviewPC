@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140821" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="0.5" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="4.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="6.0" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="6.5" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="5.5" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="scope" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Hotfix 1 installatie</li>
+          <li>Ontbrekende iconen klantenbeheer</li>
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Import 65+ technische analyse samen met Codit</li>
+          <br/>
+          <strong>ALL</strong>
+          <li>Framework upgrade testen</li>
+          <li>Nightly Acceptance Tests failure</li>
+          <i>sam, card &amp; customer</i>
+        </List>
+      </slide>
+
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>Review business test scenario's</li>
+          <li>Verwerking van buitenlandse adressen (land en gemeente)</li>          
+          <br/>
+          <strong>QA</strong>
+          <li>Review integratie test scenario's</li>
+          <li>Sanity checks bij De Lijn</li>
+        </List>
+      </slide>
+      
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug" -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+  <!-- <story id="DL" relid="01" points="1" state="story done" title="some title"><slides><slide type="story-narrative"></slide></slides></story> -->
+	<stories>      		
+    
+		<!-- Bugfixing  AVU R2 - Sam and Card Management -->		    
+			
+		<!-- Bugfixing  ABO R1 - VVK - Customer Management -->    
+    <story id="DL-12734" relid="11" points="1" state="story done" title="[CUST] Ontbrekenden iconen toevoegen"><slides><slide type="story-narrative"></slide></slides></story>
+        
+    <!-- Features   ABO R3 - Customer Management - Revenue Management -->    
+    <story id="DL-12736" relid="13" points="2" state="story done" title="[ALL] Framework upgrade testen"><slides><slide type="story-narrative"></slide></slides></story>    
+    <story id="DL-12735" relid="13" points="2" state="story done" title="[ALL] Nightly acceptance tests failure oplossen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12733" relid="13" points="2" state="story done" title="[CUST] Technische uitwerking import 65+ / vvk"><slides><slide type="story-narrative"></slide></slides></story>
+    
+    <story id="DL-12645" relid="13" points="2" state="story not-done" percentage-done="0"  title="[CUST] Technische analyse - Nazorg ABO R3"><slides><slide type="story-narrative"></slide></slides></story>
+  
+  </stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>n/a</li>          
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Merge framework upgrade</li>
+          <li>Import65+ stories</li>
+          <li>Data migratie in kaart brengen</li>
+          <li>Klantenbeheer opsplitsen in:</li>
+          <i>PartyMasterData (services) &amp; CustomerCare (UI)</i>
+        </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

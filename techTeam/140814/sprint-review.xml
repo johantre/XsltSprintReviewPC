@@ -1,0 +1,78 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140814" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="8">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="9">Steven Robijns </member>
+        <member type="tester" capacity="9">Dorine Vos </member>
+        <member type="tester" capacity="3">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Wouter Crets </member>
+</team>       
+
+<intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <li>[RM] Integratie Release Mgt Rapport (change request)</li>
+			  <li>[CM] Importeer Locaties (change request)</li>
+			  <li>Aanmaak 3.2 branch</li>
+			  <li>FO QA support</li>
+			  <br/>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>AVU R2</strong>
+	          <li>Installatie en sanity checks</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+			  <li>Installatie en sanity checks</li>
+	          <li>Voorbereiding performance testing Event Mgt</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Account Management: LIM en eerste UCs</li>
+	          <li>Product Management: artikelbeheer</li>
+			  <br/>
+	        </List>
+	      </slide>		
+		</slides>
+</intro>
+
+    <stories>
+		<story id="DL-12672" relid="03" points="4.5" state="story done" title="[RM] Oplevering 18/8"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12673" relid="03" points="0.25" state="story done" title="[EM] Oplevering 18/8"><slides><slide type="story-narrative"></slide></slides></story>
+		                            
+		<story id="DL-12676" relid="04" points="0.125" state="story done" title="[TM] Scherm: zoeken Artikel"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12680" relid="04" points="0.125" state="story done" title="[TM]Scherm: raadplegen Artikel"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12762" relid="04" points="0.25" state="story done" title="[TM] Scherm: Aanmaken Artikel"><slides><slide type="story-narrative"></slide></slides></story>   			
+		                            
+		<story id="DL-12695" relid="04" points="0" state="bug" title="[BranchAF]Resultatenlijst zoeken familie niet correct gesorteerd"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12755" relid="04" points="0" state="bug" title="[BranchAF]Zoeken artikels: reset werkt niet voor checkboxen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12454" relid="01" points="0" state="bug" percentage-done="0"  title="EXT - Release Management: RM houdt geen rekening met wijzigingen aan releasegroep indien publicatie onmiddellijk erna gebeurt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12729" relid="04" points="0" state="bug" percentage-done="0"  title="[FW]Filter toont altijd 0 resultaten bij selecteren select item"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12714" relid="01" points="0" state="bug" percentage-done="0"  title="Creatie delta: veplichte java package aanwezig die er geen mag zijn"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12732" relid="04" points="0" state="bug" title="[FW] Na verwijdering release blijft Verwijder knop actief en algemene status incorrect"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12790" relid="04" points="0" state="bug" title="[BranchAF] Detail artikel: BTW veld toont naam ipv btw"><slides><slide type="story-narrative"></slide></slides></story>		
+    	<story id="DL-12742" relid="04" points="0" state="bug" title="[BranchAF] Wijzigen Attributenlijst: verplichte attributen mogen niet verwijderd worden"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12789" relid="04" points="0" state="bug" title="[BranchAF] Aanmaken artikel: alleen actieve families mogen beschikbaar zijn"><slides><slide type="story-narrative"></slide></slides></story>		
+		                            
+		<story id="DL-12677" relid="04" points="4" state="story not-done" percentage-done="85"  title="[FW] Framework upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+		                            
+    	<story id="DL-12773" relid="06" points="3" state="story done" title="[AM] LIM Account Management"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12827" relid="04" points="2" state="story uncommitted" percentage-done="75"  title="[AM] Creeer account"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12828" relid="04" points="2" state="story uncommitted" percentage-done="75"  title="[AM] Creeer contract"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12829" relid="04" points="2" state="story uncommitted" percentage-done="75"  title="[AM] Geef account"><slides><slide type="story-narrative"></slide></slides></story>
+		                            
+    	<story id="DL-12772" relid="03" points="2" state="story done" title="[RM], [TM] en [LOG] Bug fixing"><slides><slide type="story-narrative"></slide></slides></story>
+    	                            
+    	<story id="DL-12826" relid="03" points="0" state="story done" title="[OPS] Uitbreiden Nservicebushost tool voor Event Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+    	                            
+    	<story id="DL-12838" relid="03" points="0" state="story uncommitted" percentage-done="75"  title="[RM] Integratie Release Mgt Rapport"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12824" relid="03" points="0" state="story uncommitted" percentage-done="75"  title="[CM] Importeer Locaties"><slides><slide type="story-narrative"></slide></slides></story>
+    	
+  
+    </stories>
+
+</sprintreview>

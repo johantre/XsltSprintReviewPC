@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140410" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="4">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="5.5">Steven Wyns </member>
+        <member type="hands-on" capacity="1.5">Steven Robijns </member>
+        <member type="tester" capacity="4.5">Dorine Vos </member>
+        <member type="tester" capacity="4">Rudy Windey </member>
+        <member type="productowner" capacity="0">Rudy Windey </member>
+    </team>
+
+    <stories>
+        <story points="1"   relid="01" state="story done" id="DL-11814" title="Aanpassen status updates MP (REF033A)                     " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="0.5" relid="01" state="story done" id="DL-11339" title="Optimalisatie upload SW package - QA                      " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1"   relid="01" state="story done" id="DL-11816" title="State model: flow buiten gebruik => beheer gestopt        " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1"   relid="01" state="story done" id="DL-11810" title="Update REF035 - Detail MP (tonen activatietijd, etc)      " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1.5" relid="01" state="story done" id="DL-11794" title="Aanpassen vergrendelen lege SW package                    " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1"   relid="01" state="story done" id="DL-11815" title="Aanpassen status overzicht detail release (REF020)        " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="0.5" relid="01" state="story done" id="DL-10780" title="Vertalen enumeratie algemene status release               " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="0.5" relid="01" state="story done" id="DL-11331" title="Optimalisaties verwijderen/SW package upload/min versie - QA                    " ><slides><slide type="story-narrative"></slide></slides></story>
+                                   
+        <story points="1"   relid="01" state="story done" id="        " title="Installatie MPM: uitproberen nieuwe aanpak                " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="0.5" relid="01" state="story done" id="        " title="Update installatiehandleiding                             " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1.5" relid="01" state="story done" id="        " title="Migratie Tarievenmodule                                   " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1"   relid="01" state="story not-done" percentage-done="0" id="        " title="Remote omgeving DL installeren met tarievenmodule     " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="2"   relid="01" state="story done" id="        " title="Installatie AVU R2                                        " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1"   relid="01" state="story done" id="        " title="QA: voorbereiding test scenario's in TestLink             " ><slides><slide type="story-narrative"></slide></slides></story>
+                                   
+        <story points="2"   relid="01" state="story done" id="DL-11697" title="Rapport RM                                                " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1.5" relid="01" state="story done" id="        " title="Update automatic tests: structural fixes (saga and uplaod)" ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="2"   relid="01" state="story not-done" percentage-done="50" id="        " title="Build overdracht                                          " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1"   relid="01" state="story not-done" percentage-done="0" id="DL-11813" title="Fix script CONFIG MGT SAMs                                " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="0.2" relid="01" state="story not-done" percentage-done="0" id="        " title="Analyse session expired (appfabric) - KT backoffice       " ><slides><slide type="story-narrative"></slide></slides></story>
+        <story points="1.5" relid="01" state="story done" id="        " title="Documentation Nuget                                       " ><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

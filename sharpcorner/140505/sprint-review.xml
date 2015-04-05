@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140505" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+
+		<member type="hands-on"     capacity="6.5" avatar="../avatars/alain.jpg">Alain Kinet</member>
+		<member type="hands-on"     capacity="3.0" avatar="../avatars/bert.jpg">Bert Houben</member>
+		<member type="hands-on"     capacity="5.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="0.0" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    
+			
+		<member type="tester"       capacity="6.5" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="planning" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>AVU R1</strong>          
+          <li>Herschrijven Ranorex testen bij overcapaciteit</li>
+          <strong>AVU R2</strong>
+          <li>Bugfixing Kaartbeheer</li>
+          <strong>ABO R1</strong>
+          <li>Bugfxing Klantenbeheer</li>
+          <li>Nazorg Vrijverkeerkaarten</li>  
+        </List>
+      </slide>
+      <slide title="herschrijven ranorex testen" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">          
+          <li>Tester schrijft code</li>
+          <li>Kennisoverdracht ivm testing framework</li>
+          <li>In totaal 20 feature files</li>
+          <br/>
+          <strong>Done</strong>
+          <li>landingpage</li>
+          <li>zoek scherm</li>          
+        </List>
+      </slide>
+      <slide title="bugfixing kaartbeheer" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <li>3 planned</li>
+          <li>8 unplanned (nieuw tijdens sprint)</li>
+          <br/>
+          <li>11 fixed en opgeleverd in AVU R2 Bugfix 1</li>
+        </List>
+      </slide>
+      <slide title="bugfixing klantenbeheer" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>26 bugs</strong>
+          <li>3 critical</li>
+          <li>11 major</li>
+          <li>12 minor</li>
+          <br/>
+          <strong>sprint</strong>
+          <li>13 planned</li>
+          <li>10 fixed</li>          
+          <br/>
+          <strong>kwaliteit voldoet niet aan onze verwachtingen</strong>
+          <li>Grove fouten: try catch, null-reference checks, ...</li>
+          <li>Paging niet correct toegepast (in memory, geen views)</li>
+          <li>Sortering en filtering is lokaal</li>
+          <li>Referentiedata in acceptatie testen</li>
+          => concrete acties worden opgenomen in volgende sprint
+        </List>
+      </slide>
+      <slide title="nazorg vrijverkeerkaarten" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>Done</strong>
+          <li>Landingspagina 'toon account info'</li>
+          <br/>
+          <strong>Ongoing</strong>
+          <li>Deactiveer kaart</li>
+          <li>Trek kaart in</li>
+          <br/>
+          <strong>To Do</strong>          
+          <li>Vervang kaart</li>
+          <li>Print kaart</li>
+          <li>Reconstrueer kaart</li>
+        </List>
+      </slide>
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>TeamCity builds voor klantenbeheer</li>
+          <li>Testdata generatie voor klantenbeheer</li>
+          <li>Deployment naar nieuwe test omgeving</li>
+          <li>Interface afspraken voor remote reconstruction</li>
+          <li>Begeleiding Michiel</li>
+          <br/>
+          <strong>QA</strong>
+          <li>Ranorex testen herschrijven</li>
+        </List>
+      </slide>
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>   	
+		
+	  <!-- Bugfixing  AVU R2 - Sam and Card Management -->
+    <story id="DL-11855" relid="02" points="1"   state="story done" title="[SAM] Locatie mag niet wijzigen bij herverpakken"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-11854" relid="02" points="1"   state="story done" title="EXT - MobiGuider Sam Workstation Service kan niet opgestart worden"><slides><slide type="story-narrative"></slide></slides></story>
+	  
+	  <story id="DL-11879" relid="02" points="0.5" state="story done" title="EXT - Lees kaart: Detail contract: sam id verkoop wordt decimaal ipv hexadecimaal weergegeven"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11880" relid="02" points="0.5" state="story done" title="EXT - Beheer omdoos type: Wijzigingen zijn niet toegestaan voor omdoostypes met vervaldatum 31/12/9999"><slides><slide type="story-narrative"></slide></slides></story>
+			
+	  <story id="DL-11946" relid="02" points="0.5" state="story uncommitted" title="EXT - SAM groep - Sleutels andere groep worden tijdelijk getoond"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11947" relid="02" points="0.5" state="story uncommitted" title="EXT - Selecteer SAM - Statusovergang van onbetrouwbaar naar gedeactiveerd wordt niet toegelaten"><slides><slide type="story-narrative"></slide></slides></story>	                            
+	  <story id="DL-11944" relid="02" points="0.5" state="story uncommitted" title="EXT - PV vernietiging: referentienummer niet ingevuld na het opnieuw openen van een vernietigingsaanvraag"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11951" relid="02" points="0.5" state="story uncommitted" title="EXT - PV keuring: Technische fout bij het bewaren van een keuring met gedeactiveerde testkaarten"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11952" relid="02" points="0.5" state="story uncommitted" title="EXT - Nieuw PV vernietiging: geen commentaarveld aanwezig"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11948" relid="02" points="0.5" state="story uncommitted" title="EXT - Selecteer (om)doos - Geen mogelijkheid om te zoeken op SAMnummer"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11949" relid="02" points="0.5" state="story uncommitted" title="EXT - PV Vernietiging: Geen sorteermogelijkheid aanwezig"><slides><slide type="story-narrative"></slide></slides></story>	
+	  <story id="DL-11950" relid="02" points="0.5" state="story uncommitted" title="EXT - PV Keuring - Geen multi-select bij verwijderen kaarten"><slides><slide type="story-narrative"></slide></slides></story>	
+	
+	  <!-- Bugfixing  ABO R1 - VVK - Customer Management -->
+	  <story id="DL-11673" relid="11" points="0.5" state="story done" title="[CUST] Dropdown lijst blijft openstaan"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11700" relid="11" points="0.5" state="story done" title="[CUST] geavanceerd medewerker zoeken op leeftijd van en leeftijd tot en met werkt niet"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11710" relid="11" points="0.5" state="story done" title="[CUST] Niet alle actieve adressen worden getoond in de UI"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11763" relid="11" points="0.5" state="story done" title="[CUST] show more bij zoekresultaten"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11765" relid="11" points="0.5" state="story done" title="[CUST] Niet alle klanten worden getoond in UI"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11787" relid="11" points="0.5" state="story done" title="[CUST] Filter flyout: Benamingen filter foto niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11792" relid="11" points="0.5" state="story done" title="[CUST] Filter medewerker exploitant: dropdown  lijst toont exploitant type ipv exploitant naam"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11805" relid="11" points="0.5" state="story done" title="[CUST] Configureer instellingen KB: Foutboodschap niet in het NL"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11806" relid="11" points="0.5" state="story done" title="[CUST] Max aantal zoekresultaten wordt getoond maar melding niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11851" relid="11" points="0.5" state="story done" title="[CUST] Vertalingen ontbreken in het verwerk foto scherm"><slides><slide type="story-narrative"></slide></slides></story>
+	
+	  <story id="DL-11775" relid="11" points="0.5" state="story not-done" percentage-done="50"  title="[CUST] data in DB wordt gedeeltelijk getoond in zoek medewerker exploitant"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11776" relid="11" points="0.5" state="story not-done" percentage-done="50"  title="[CUST] persoonprofielen default sortering klopt niet"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11852" relid="11" points="0.5" state="story not-done" percentage-done="50" title="[CUST] Geen historiek beschikbaar in DB voor als foto wordt toegevoegd of gewijzigd"><slides><slide type="story-narrative"></slide></slides></story>
+	
+	  <!-- New Features ABO R1 - VVK - Customer Management -->
+	  <story id="DL-10529" relid="11" points="2"   state="story done" title="[CUST] Toon accountinformatie - implementatie"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11860" relid="11" points="0.5" state="story done" title="[VVK] Trek kaart in - UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11861" relid="11" points="0.5" state="story done" title="[VVK] Trek kaart in - FF"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11868" relid="11" points="0.5" state="story done" title="[VVK] Print kaart - UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11866" relid="11" points="0.5" state="story done" title="[VVK] Reconstrueer kaart - UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+	
+	  <story id="DL-11557" relid="11" points="2"   state="story not-done" percentage-done="75"  title="[VVK] Deactiveer kaart - implementatie"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11862" relid="11" points="2"   state="story not-done" percentage-done="50"  title="[VVK] Trek kaart in - implementatie"><slides><slide type="story-narrative"></slide></slides></story>				  
+	
+	  <!-- New Features ABO R3 -->
+	  <story id="DL-11672" relid="13" points="1"   state="story done" title="[SHOP/REV] LW FO - Start dienst op (aanmaken kasverslag) - Implementatie feature files"><slides><slide type="story-narrative"></slide></slides></story>
+	  <story id="DL-11678" relid="13" points="1"   state="story done" title="[SHOP/REV] LW FO - Sluit dienst af (afsluiten kasverslag) - Implementatie feature files"><slides><slide type="story-narrative"></slide></slides></story>
+	
+	</stories>
+	
+	<finish>
+		<slides>
+		  
+		</slides>
+  </finish>
+  
+</sprintreview>

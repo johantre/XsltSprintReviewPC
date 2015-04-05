@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140410" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="5.0">Ivo </member>
+        <member type="hands-on" capacity="5.0">Dirk </member>
+        <member type="hands-on" capacity="4.0">Stijn</member>
+        <member type="tester" capacity="4.0">Stefaan </member>
+        <member type="tester" capacity="5.0">Broes </member>
+        <member type="hands-on" capacity="3.0">Erik </member>
+        <member type="productowner" capacity="0.0">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Integrate DROOLS for V00</h5>
+				<list>
+					<li>Warm-up sprint of 1 week (other week then BO).</li>
+					<li>Getting to know the ceremonies.</li>
+					<li>Getting started with the board.</li>
+					<li>For most of us also getting started with a new subject: validation and validation rules.</li>
+					<li>Getting started with DROOLS as team.</li>
+					<li>Despite some unclarity on grooming and planning.</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories>
+        <story id="DL-11832" points="2" state="story done" title="Validation app in separate repo" >
+        	<slides>
+     			<slide type="story-narrative"><h5>Acceptance criteria:</h5>
+     				<list>
+     					<li>The validation application is in a separate GIT repo</li>
+     					<li>We are still able to build a release</li>
+     					<li>We are still able to do a hot fix on the AVU R1 and do a build</li>
+     					<li>We are still able to do a hot fix on the AVU R2 and do a build</li>
+     				</list>
+  				</slide>
+     		</slides>
+     	</story>
+        <story id="DL-11831" points="8" state="story done" title="Drools as OSGi service" >
+        	<slides>
+        		<slide type="story-narrative"><h5>Acceptance criteria:</h5>
+        			<list>
+        				<li>Drools runs on the knoplerfish OSGi container on a Validator</li>
+						<li>All components load successfully</li>
+						<li>There is a way to prove that DROOLS runs (the most simple test to prove that one rule is executed)</li>		
+        			</list>
+        		</slide>
+        	</slides>
+        </story>
+        <story id="DL-11833" points="5" state="story not-done" percentage-done="80" title="DROOLS: V00 validation support (mocked card)">
+        	<slides>
+        		<slide type="story-narrative">
+        			<h5>Acceptance criteria:</h5>
+        			<list>
+        				<li>The V00 validation rules are implemented and checked in in GIT</li>
+						<li>There is an agreed testset with tests for the V00 validation rules</li>
+						<li>Card input is mocked, there are automatic tests to test the agreed testset with mocks</li>	
+        			</list>
+        			<br></br>
+        			<h5>Things not completed: Automated tests on the agreed testset</h5>
+        			<list>
+        				<li>There is a (newly reviewed) testset specified in testlink</li>
+						<li>There are automated tests for all the contracts, both negative and positive.</li>
+						<li>LACKING: crosscheck between automated tests, testlink and test for completeness.</li>	
+        			</list>
+        			<br></br>
+        			
+        		</slide>        		
+        	</slides>
+        </story>
+    </stories>
+
+    <finish>
+        <slides>
+	
+            <slide title="Unplanned work" type="story-batman">
+                <List>
+                	<li>Capacity forseen to be kept out of the sprint
+              			<List>
+                    		<li>Ceremony overhead (grooming): 3 days</li>
+                    		<li>Planned capacity for batman: 8 days</li>
+                    	</List>
+                    </li>
+                    <li>Production problem: 4 days of capacity (Stefaan)</li>
+                    <li>Support AVU R2 + followup issues: 4 days (Broes)</li>
+                    <li>Investigation of bugs (dev): 2 days</li>
+                    <li>Finishing previous tasks: 1 day (Dirk)</li>
+                    <li>Support RFID issue + finishing tasks: 2.5 days (Erik)</li>
+                    <li>TOTAL: 13.5 days capacity batman</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>First ceremony day (demo, retro, planning). Good grooming.</li>
+                    <li>First 2 week sprint.</li>
+                    <li>Highest priority stays on validation in JUMP, starting with DROOLS.</li>
+                    <li>Technical leaps still to take is incorporate the new Into-IT library and new transaction format.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

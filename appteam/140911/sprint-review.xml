@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140911" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="8">Dirk </member>
+        <member type="hands-on" capacity="9">Stijn</member>
+        <member type="hands-on" capacity="9">Ivo </member>
+        <member type="hands-on" capacity="1">Erik </member>
+        <member type="tester" capacity="2">Stefaan </member>
+        <member type="tester" capacity="9">Broes </member>
+        <member type="productowner" capacity="0">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: ABO JUMP</h5>
+				<list>
+					<li>Continue card library integration.</li>
+                    <li>Focus on testing with mocked card and carddump tool.</li>
+                    <li>Focus on finalising DROOLS rules.</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+     <stories>
+		<story id="DL-12823" relid="" points="1" state="story done" title="Handover Erik"><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="DL-12821" relid="" points="3" state="story done" title="Drools : multiple contract"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12850" relid="" points="2" state="story done" title="Drools: Consumed rules, start and end date"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12854" relid="" points="1" state="story done" title="Drools: Medereizigers (write modifications)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12852" relid="" points="2" state="story not-done" percentage-done="70"  title="Drools: Handle optional fields"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		
+   		<story id="" relid="" points="2" state="story uncommitted" title="Cardlib: Integrate new library"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12839" relid="" points="3" state="story done" title="Cardlib: validation of the card takes place when presenting it for logon"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12851" relid="" points="2" state="story done" title="Cardlib : implement smarter polling"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12715" relid="" points="5" state="story not-done" percentage-done="70"  title="Cardlib: Connect card lib with validation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12855" relid="" points="1" state="story not-done" percentage-done="0"  title="Cardlib: Fix and test secure sessions "><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="DL-12786" relid="" points="3" state="story not-done" percentage-done="0"  title="Test Executer mocked cards"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12811" relid="" points="3" state="story done" title="Provide simpler interface to dump BelgiumTiketingApplication to JSON (and back)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12812" relid="" points="2" state="story done" title="Provide simpler interface to dump BelgiumGlobalDataApplication to JSON (and back)"><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="DL-12853" relid="" points="1" state="story done" title="Testplan + K2"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12856" relid="" points="5" state="story not-done" percentage-done="70"  title="Opstellen testcases keuring DM 4.2 + Jump"><slides><slide type="story-narrative"></slide></slides></story>
+   		<story id="" relid="" points="4" state="story uncommitted" title="Review JUMP BTS"><slides><slide type="story-narrative"></slide></slides></story>
+   		<story id="" relid="" points="2" state="story uncommitted" title="Review Voertuigen Use Cases"><slides><slide type="story-narrative"></slide></slides></story>
+
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>Some of the stories where to big and thus difficult to finish (keuringsbasis, validation with new cardlib).</li>
+                    <li>Card library: new version integrated, we can finally start using it. Big progress, but not all technical hiccup are gone yet and some more technical things need to be covered (ratification, signature checking, etc.).</li>
+                    <li>Card editor tool + test with mocked cards: much slower then anticipated. Key risk, will be main thing to get going in the next sprint.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Cardlib: integrate new version from Into-IT.</li>
+                    <li>Make validation work (still with many shortcuts). </li>
+                    <li>Make tests with mocked cards work.</li>
+                    <li>Ensure we have all the DROOLS rules in place as defined by the analysis.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

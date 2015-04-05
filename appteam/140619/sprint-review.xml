@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140619" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="8">Dirk </member>
+        <member type="hands-on" capacity="8">Stijn</member>
+        <member type="hands-on" capacity="8">Ivo </member>
+        <member type="hands-on" capacity="8">Erik </member>
+        <member type="tester" capacity="8">Stefaan </member>
+        <member type="tester" capacity="8">Broes </member>
+        <member type="hands-on" capacity="4">Frank </member>
+        <member type="productowner" capacity="7">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Get release out + logging + pickup JUMP</h5>
+				<list>
+					<li>AVU R2 Bugfix 2 out: sanity checks, installation at customer, etc.</li>
+                    <li>Nearly full capacity of testers in sprint.</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampercents ! -->
+        <story state="story done" points="2" id="11936" 	title="BUG: WLAN info in diagnosis (4 external tickets)                          "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="12059" 		title="Logging: Real-time event message                                       "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="5" id="11889"    	title="Drools: Card integration (V00 lib)                             "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="0.5" id=""      	title="Test: Tests around receiling                              "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id=""     	    title="Test: Automate testing SAM HB request and HB"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="5" id=""     	    title="JUMP: POC integrating with cardlib"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="3" id="" percentage-done="80"    	    title="DROOLS: anti-passback"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id=""     	    title="DROOLS: Performance analysis"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" id="" percentage-done="90"     	title="Logging: Traffic management"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" id="" percentage-done="90"     	title="Logging: Desktop management"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="3" id="12059" percentage-done="90"		title="Logging: Log parameters in message to backend                                     "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id=""     	    title="IMPROVEMENT: POC maven int test"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id=""     	    title="IMPROVEMENT: Setup TC Build Agent"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="0.5" id="" percentage-done="0"    	    title="TEST: Opkuis testplan"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id=""     	    title="RELEASE: Bugs check appteam"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1.5" id=""     	    title="RELEASE: AVU R2"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id=""     	    title="RELEASE: Sanity Int"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1.5" id=""     	    title="RELEASE: Sanity All"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id=""     	    title="RELEASE: Prepare and test Lightsensor release for BTS"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" id=""     	    title="RELEASE: Prepare and test Lightsensor release for BTS"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>In time of release, very tough to keep on tracking on board.</li>
+                    <li>Danger of going in ad-hoc mode again, little room for improvements.</li>
+                    <li>Test + demo cost for release is very high (currently estimated around 27 man days).</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Finishing the last things around logging. Finishing the last bugs in the WP ABO R2</li>\
+                    <li>Feature freeze for ABO R2.</li>
+                    <li>Work on JUMP milestone (DROOLS, Cardlib, ...).</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

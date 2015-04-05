@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140624" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="10" avatar="../avatars/alain.jpg">Alain Kinet</member>
+		<member type="hands-on"     capacity="10" avatar="../avatars/bert.jpg">Bert Houben</member>
+		<member type="hands-on"     capacity="10" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="10" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="10" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1 (klantenbeheer)</strong>
+          <li>Import rechthebbende (integratie BizTalk)</li>
+          <li>Herwerken zoekschermen</li>
+          <li>Nazorg Vrijverkeerkaarten</li>
+          <li>Afwerken integraties test omgeving</li>
+          <br/>
+          <strong>AVU R2</strong>
+          <li>Tickets sam- en kaartbeheer</li>
+        </List>
+      </slide>     	  	  
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>  
+		<!-- Committed = 22 Story Points -->
+		
+		<!-- Bugfixing  AVU R2 - Sam and Card Management -->
+		<story id="DL-12026" relid="02" points="2" state="story done" title="EXT - Selecteer (om)dozen: Eenzelfde (om)doos komt meerdere malen voor bij resultaten (d.m.v. verschillende SAM serienummers)"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12081" relid="02" points="0.5" state="story done" title="EXT - Ontvang kaarten: Doos ontvangen gevolgd door bijhorende Omdoos ontvangen zorgt voor problemen "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12115" relid="02" points="0.5" state="story done" title="EXT - Lees Kaart: Kaart met filestructuur 5.4 is niet leesbaar in AVU-R2"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12142" relid="02" points="0.5" state="story done" title="EXT - Verwerk pv keuring: Dubbele records na het keuren van een kaart"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-10950" relid="02" points="2" state="story done" title="[VVK] Vervang kaart - Implementatie"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12310" relid="02" points="0.5" state="story done" title="[SAM] Nieuw aangemaakte SAM groep laat sleutels van andere groep zien"><slides><slide type="story-narrative"></slide></slides></story>    	
+    <story id="DL-12239" relid="02" points="0.5" state="story done" title="EXT - sam beheer: status overgangen kloppen niet"><slides><slide type="story-narrative"></slide></slides></story>
+    
+		<!-- New Features ABO R1 - VVK - Customer Management -->
+		
+				
+		<!-- Bugfixing  ABO R1 - VVK - Customer Management -->
+		
+		
+		<story id="DL-10948" relid="11" points="0.5" state="story done" title="[VVK] Vervang kaart - FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11558" relid="11" points="0" state="story done" title="[VVK] Reconstrueer kaart - implementeer FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11560" relid="11" points="0.5" state="story done" title="[VVK] Print kaart - FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11561" relid="11" points="0" state="story done" title="[VVK] Print kaart - implementeer FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11568" relid="11" points="0" state="story done" title="[VVK] Deactiveer kaart - UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11671" relid="11" points="0.5" state="story done" title="[CUST] Gebruik persoonprofiel leefloner ipv leefloon"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11870" relid="11" points="1" state="story done" title="[VVK] Print kaart - implementatie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11945" relid="11" points="0.5" state="story done" title="[CUST] Er ontbreken FamilyMemberTypes in de XSD"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12017" relid="11" points="2" state="story done" title="[CUST] Referentie data valideren en aparte tabel voorzien"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12035" relid="11" points="1" state="story done" title="[CUST] Trigger VVK proces obv ProfilesReassigned"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12039" relid="11" points="2" state="story done" title="[CUST] Aanpassingen mbt dynamische codelijsten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12042" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden bij customers"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12044" relid="11" points="1" state="story done" title="[CUST] Verwijder de gegeneerde DLL Enumerations"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12081" relid="11" points="0.5" state="story done" title="EXT - Ontvang kaarten: Doos ontvangen gevolgd door bijhorende Omdoos ontvangen zorgt voor problemen "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12117" relid="11" points="2" state="story done" title="[INT] Afwerken deploys naar integratie omgeving"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12118" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden bij exploitanten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12119" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden bij employees"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12120" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden in detail person profiles"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12121" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden in detail personen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12122" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden in detail adres"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12123" relid="11" points="0.5" state="story done" title="[CUST] Ontbrekende velden in detail familie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12129" relid="11" points="5" state="story done" title="[CUST] Refactor klanten scherm"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12155" relid="11" points="3" state="story done" title="[CUST] Meerdere organisatorische eenheden per persoon en één organisatie per employee"><slides><slide type="story-narrative"></slide></slides></story>
+  	<story id="DL-12154" relid="11" points="3" state="story done" title="[CUST] PartyRole collection op AddPerson"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12191" relid="11" points="1" state="story done" title="[CUST] EqualityComparers controleren/implementeren"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12224" relid="11" points="1" state="story done" title="[CUST] Opsplitsing tussen ValidFrom/To en AcitveFrom/To (live history)"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12153" relid="11" points="5" state="story done" title="[CUST] Refactor persoonsprofielen scherm"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12223" relid="11" points="1" state="story done" title="[CUST] PersonRelations persisteren"><slides><slide type="story-narrative"></slide></slides></story>
+   	
+   	<story id="DL-12152" relid="11" points="5" state="story done" title="[CUST] Refactor werknemers scherm"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12157" relid="11" points="1" state="story done" title="[CUST] CustomerType concept nakijken (zat nog niet in db)"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12156" relid="11" points="1" state="story done" title="[CUST] Refactor mappers (van domain naar servicebus contract)"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12193" relid="11" points="1" state="story done" title="[CUST] Refactor ophalen persoon detail nav verschillende wijzigingen"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12178" relid="11" points="5" state="story done" title="[CUST] Aanmaken testdata xml bestanden voor AVU-31"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12176" relid="11" points="1" state="story done" title="[CUST] Refactor enumerations cache manager"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12151" relid="11" points="5" state="story done" title="[CUST] Refactor exploitanten scherm"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12150" relid="11" points="3" state="story done" title="[CUST] Verwerken import bericht (handler + db wijzigingen)"><slides><slide type="story-narrative"></slide></slides></story>   	   	
+   	<story id="DL-12282" relid="" points="2" state="story done" title="[CUST] Testrapport"><slides><slide type="story-narrative"></slide></slides></story>   	
+   	<story id="DL-12351" relid="" points="0.5" state="story done" title="[CUST] Indexen op foreign keys toevoegen"><slides><slide type="story-narrative"></slide></slides></story>
+   	<story id="DL-12352" relid="" points="0.5" state="story done" title="[CUST] Adreslijn 1 en 2 aanpassen naar aparte velden (straat, nr, bus en ...)"><slides><slide type="story-narrative"></slide></slides></story>    	
+   	<story id="DL-12276" relid="" points="1" state="story done" title="[CUST] Security rollen en features toepassen voor nazorg"><slides><slide type="story-narrative"></slide></slides></story>   	
+	
+	</stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+        <strong>AVU R2 Bugfix 3</strong>
+        <li>K6 blockers</li>
+        <li>Document generatie (9 templates)</li>
+        <br/>
+        <strong>ABO R1</strong>
+        <li>Bugfixing na keuring</li>
+        <li>Implementeren feature files</li>
+        <br/>
+        <strong>ABO R3</strong>
+        <li>Review iteratie 3 oplevering van klantenbeheer en inkomstenbeheer</li>
+      </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

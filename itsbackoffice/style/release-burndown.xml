@@ -13,9 +13,20 @@
         <sprint name="09">140217</sprint>
         <sprint name="10">140303</sprint>
         <sprint name="11">140317</sprint>
+        <sprint name="12">140331</sprint>
+        <sprint name="13">140414</sprint>
+        <sprint name="14">140505</sprint>
+        <sprint name="15">140519</sprint>
+        <sprint name="16">140602</sprint>
+        <sprint name="17">140616</sprint>
+        <sprint name="18">140630</sprint>
+        <sprint name="19">140728</sprint>
+        <sprint name="20">140811</sprint>
+        <sprint name="21">140825</sprint>
+        <sprint name="22">140908</sprint>
     </sprints>
     <releases>
-        <release id="01" name="Release 2.6" totalpoints="500">
+        <release id="1" name="Release 2.6" totalpoints="500">
             <sprintfolders>
                 <sprintfolder>131014</sprintfolder>
                 <sprintfolder>131028</sprintfolder>
@@ -29,6 +40,30 @@
                 <sprintfolder>140217</sprintfolder>
                 <sprintfolder>140303</sprintfolder>
                 <sprintfolder>140317</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="13897" name="Release 2.7" totalpoints="60">
+            <sprintfolders>
+                <sprintfolder>140331</sprintfolder>
+                <sprintfolder>140414</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="13907" name="Release 2.8" totalpoints="100">
+            <sprintfolders>
+                <sprintfolder>140505</sprintfolder>
+                <sprintfolder>140519</sprintfolder>
+                <sprintfolder>140602</sprintfolder>
+                <sprintfolder>140616</sprintfolder>
+                <sprintfolder>140630</sprintfolder>
+            </sprintfolders>
+        </release>
+        <release id="14524" name="Release 2.9" totalpoints="120">
+            <sprintfolders>
+                <sprintfolder>140728</sprintfolder>
+                <sprintfolder>140811</sprintfolder>
+                <sprintfolder>140825</sprintfolder>
+                <sprintfolder>140908</sprintfolder>
+                <sprintfolder>140908</sprintfolder>
             </sprintfolders>
         </release>
     </releases>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="141001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Julia Dubois</member>
+        <member type="hands-on"     capacity="0">Antoine Wils</member>
+        <member type="hands-on"     capacity="5.6">David Woods</member>
+        <member type="hands-on"     capacity="4.8">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="6.4">Maarten Casteels </member>
+        <member type="tester"       capacity="3.5">Koen Meus </member>
+        <member type="tester"       capacity="6.4">Cheung Kwan Wong </member>
+        <member type="tester"       capacity="1.5">Michallis Pashidis </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team> 
+
+    <stories> <!-- NOTE: 'percentage-done' tag is redundant when story is set to 'story-done' -->
+        <story id="CCFO-867" relid="01" points="5.5"  state="story not-done" percentage-done="80"  title="Sam Blacklist Client"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-871" relid="01" points="5"    state="story not-done" percentage-done="80"  title="Card blacklist Client"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-872" relid="01" points="4.5"  state="story done" percentage-done="100"  title="Make a working release for GPS"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-870" relid="01" points="2"    state="story done" percentage-done="100"  title=""><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-869" relid="01" points="1"    state="story done" percentage-done="100"  title="Remove file hack for blacklist"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-795" relid="01" points="1.5"  state="story done" percentage-done="100"  title="REST Spike :: MP: implement communication job to retrieve blacklist events"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-874" relid="01" points="1.5"  state="story done" percentage-done="100"  title="Merge ABO_R2 to MASTER"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-830" relid="01" points="2"    state="story done" percentage-done="100"  title="HealthService::Implement health service online devices verification - ONLY QA"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-879" relid="01" points="1"    state="story done" percentage-done="100"  title="MP :: Synchronization Record AND Data Storage: define next steps"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-760" relid="01" points="1"    state="story done" percentage-done="100"  title="(APPTEAM - brainstorm) EXT - Chauffeursconsole - DC detecteert dallas chip niet"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-888" relid="01" points="1" state="story done"  percentage-done="100" title="integrate archivetool in existing RM testcases"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-602" relid="01" points="1"    state="story done"  percentage-done="100" title="Integration team city agent =&gt; QAtester "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-844" relid="01" points="1"    state="story not-done" percentage-done="0"  title="Prepare field test GPS-DR calibration"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-840" relid="01" points="2"    state="story not-done" percentage-done="60"  title="Support - RTBINC"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-170" relid="01" points="0.5"  state="story done" percentage-done="100"  title="Create OS checklist"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-886" relid="01" points="0.5"    state="story done" percentage-done="100"  title="IPS traning "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-837" relid="01" points="0.25" state="story done" percentage-done="100"  title="MPM :: Identity message :: Add support for release version in received identity message"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+    <finish>
+        <slides>
+            <slide title="Sam and Card Blacklist - Maarten Casteels - 5 minutes">
+                    <list>
+                        <li>introduction</li>
+                        <li>demo via unit test</li>
+                    </list>
+            </slide>
+            <slide title="REST updates on resource - Maarten Carbonez - 5 minutes">
+                    <list>
+                        <li>introduction</li>
+                        <li>demo via unit test or life if ready</li>
+                    </list>
+            </slide>
+            <slide title="Support AVU R1 - Koen Meeus - 5 minutes">
+                    <list>
+                        <li>presentation</li>
+                    </list>
+            </slide>
+            <slide title="Health Service - Cheung Kwan Wong - 5 minutes">
+                    <list>
+                        <li>introduction</li>
+                        <li>demo on device</li>
+                    </list>
+            </slide>
+            <slide title="GPS documentation - David - 5 minutes">
+                    <list>
+                        <li>presentation</li>
+                    </list>
+            </slide>
+        </slides>
+    </finish>
+
+</sprintreview>

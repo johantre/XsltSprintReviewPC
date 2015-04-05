@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140731" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="3">Dirk </member>
+        <member type="hands-on" capacity="8">Stijn</member>
+        <member type="hands-on" capacity="1">Ivo </member>
+        <member type="hands-on" capacity="7">Erik </member>
+        <member type="tester" capacity="4">Stefaan </member>
+        <member type="tester" capacity="1">Broes </member>
+        <member type="productowner" capacity="8">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Prep release ABO R2 + start ABO JUMP</h5>
+				<list>
+					<li>Fix any remaining issues</li>
+					<li>Continue card library integration</li>
+                    <li>Implement test case editor for Drools</li>
+                    <li>Write adapter for Drools data model</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampersands ! -->
+        <story id="" points="2" state="story not-done" percentage-done="50" title="Teamcity releaseable projects"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="3" state="story not-done" percentage-done="0"  title="Interrupt remote test locally"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        <story id="" points="1" state="story done"                          title="ABO R2: update anti-passback parameter to 0"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story not-done" percentage-done="60" title="ABO R2: adjust throughput test"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="DL-12591" points="1" state="story done"                  title="ABO R2: mobib instrumentation not available in production"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="5" state="story not-done" percentage-done="80" title="Card Library: Use in logon application"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="0.5" state="story done"                        title="Card Library: Java Doc update"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Drools: JSON editor for Drools data model"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Drools: convert test cases"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="3" state="story done"                          title="Drools: Write adapter for new card library"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story uncommitted"                   title="QA: AVU R1 rollout support"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>Card library not stable yet, still some bugs: Secure session &amp; Verify PIN</li>
+                    <li>Card library impacts many different parts of the application</li>
+                    <li>JSON editor will be a useful tool to create many test cases</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Continue integration of card library in other parts of application</li>
+                    <li>Expand logic in Drools: Operator map, sliding season startDate &amp; eraseDate</li>
+                    <li>QA: Start creation of test basis for DM 4.2.2 and JUMP</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <!--
+            <slide title="JUMP burndown" type="sprint-goal">
+                <div id="jump-burndown"></div>
+                <script>
+                    $(function () {
+                        $('#jump-burndown').highcharts({
+                            chart: {
+                               renderTo: 'jump-burndown',
+                               zoomType: 'xy'
+                            },
+                            title: {
+                                text: 'Burndown ABO JUMP'
+                            },
+                            xAxis: {
+                                categories : [
+                                    'Start'
+                                    , 'Spr. 07 - 17/07/2014'
+                                    , 'Spr. 08 - 31/07/2014'
+                                    , 'Spr. 09 - 14/08/2014'
+                                    , 'Spr. 10 - 28/08/2014'
+                                    , 'Spr. 11 - 11/09/2014'
+                                    , 'Spr. 12 - 25/09/2014'
+                                    , 'Spr. 13 - 09/10/2014'
+                                ]
+                            },
+                            yAxis: {
+                                max: 197
+                            },
+                            series: [
+                                {
+                                    name: 'Baseline',
+                                    data: [197,164.167,131.33,98.5,65.667,32.833,0]
+                                },
+                                {
+                                    name: 'Story point burndown',
+                                    data: [197, 179, 169]
+                                }
+                            ]
+                        });
+                    });
+                </script>
+            </slide>
+            -->
+        </slides>
+	</finish>
+</sprintreview>

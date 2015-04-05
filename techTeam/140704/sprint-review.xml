@@ -1,0 +1,76 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140704" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="10">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="10">Philip Van Hoof</member>
+        <member type="hands-on" capacity="10">Steven Robijns </member>
+        <member type="tester" capacity="10">Dorine Vos </member>
+        <member type="tester" capacity="10">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+    </team>      
+
+<intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>[TM] Db model en applicatiemodel is niet in sync: creëert veel extra werk</li>
+			  <li>[TM] Veel werk onder de motorkap</li>
+			  <br/>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>AVU R2</strong>
+	          <li>Bug fixing BF3 (beperkt)</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+	          <li>Manuele testen (QA)</li>
+	          <li>QA knowledge transfer</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Artikelbeheer: nieuwe LIM en aanpassing schermen</li>
+	          <li>Unit testen</li>
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+    </intro>
+
+
+    <stories>
+		<story id="DL-11816" relid="01" points="0" state="bug" title="Update state model: flow buiten gebruik => beheer gestopt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12099" relid="01" points="0" state="bug" title="Buiten gebruik: MPadded mag niet uitgestuurd worden van oude CI nadat toestel terug in gebruik komt"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12504" relid="04" points="0.5" state="story done" title="[OPS] TM Sandbox koppelen aan nieuw db schema"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12505" relid="04" points="0.5" state="story done" title="[TM] Opzetten nieuwe feature branch"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12506" relid="04" points="0.5" state="story done" title="[TM] Opzetten nieuwe feature build"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12507" relid="04" points="2" state="story done" title="[TM] Implementeer nieuwe LIM in db"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12499" relid="03" points="8" state="story done" percentage-done="0"  title="[LOG] Event Mgt End-to-end testen uitvoeren (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12500" relid="03" points="1" state="story done" percentage-done="0"  title="[LOG] QA knowledge transfer"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12501" relid="03" points="1" state="story done" percentage-done="0"  title="[LOG] Support testing (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12502" relid="01" points="9.5" state="story done" percentage-done="0"  title="[RM] Bugfixing AVU R2 BF3"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12503" relid="01" points="3" state="story done" percentage-done="0"  title="[RM] Fixen automatische testen (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12508" relid="04" points="1.25" state="story not-done" percentage-done="0"  title="[TM] Import Attribuut Definitie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12509" relid="04" points="1.25" state="story done" percentage-done="0"  title="[TM] Import Object referenties"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12510" relid="04" points="1.25" state="story done" percentage-done="0"  title="[TM] Import Dragerattribuut"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12511" relid="04" points="1.25" state="story done" percentage-done="0"  title="[TM] Import Drager Standaard"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12513" relid="04" points="2" state="story done" percentage-done="0"  title="[TM] Bugfix validaties (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12512" relid="04" points="3.5" state="story done" percentage-done="0"  title="[TM] Scherm: Selecteer artikelfamilie (zoeken, incl alle zoekcriteria)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12514" relid="04" points="2" state="story done" percentage-done="0"  title="[TM] Scherm: Raadplegen artikelfamilie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12515" relid="04" points="2" state="story not-done" percentage-done="0"  title="[TM] Scherm:  Aanmaken artikelfamilie (algemene pivot)"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12516" relid="04" points="1" state="story done" percentage-done="0"  title="[TM] Unit testen nieuwe LIM"><slides><slide type="story-narrative"></slide></slides></story>
+    	
+    	<story id="DL-12211" relid="01" points="0" state="bug" title="Release: mogelijk om timer datum in het verleden mee te geven"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12523" relid="01" points="0" state="bug" title="EXT - UI: Bij een technische fout in release data op MP wordt deze als Windows popup weergegeven"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12409" relid="01" points="0" state="bug" title="Date modified wordt aangepast voor verwijderde release"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12291" relid="01" points="0" state="bug" title="Foutafhandeling simultaan updaten MP release status"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140506" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="team-ba">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="7">Jan </member>
+        <member type="hands-on" capacity="6.5">Saskia </member>
+        <member type="hands-on" capacity="7">Michiel </member>
+        <member type="hands-on" capacity="7">Jetro </member>
+        <member type="hands-on" capacity="4">Rudi </member>
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story state="story done"                          points="0.5" title="DBS-KB: Partner; input en verwerken"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.875" title="DBS SNM schermen workshop en verwerken, SNM doc"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.375" title="DBS LIM doc review en verwerken"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="90" points="1" title="DBS UCSS docs review en verwerken"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.25" title="DBS UCM review en verwerken"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.25" title="DBS bespreking Artikelbundel en verwerken"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="85" points="3" title="IKB: afwerken increment 2"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.5" title="IKB: afwerken schermen iteratie 2"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="0"  points="0.5" title="ABO R3 KB: antwoord op reviewsheet DL"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="0"  points="0.625" title="KB en Verkoop: betalingsgegevens op Account tonen "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="85" points="1.25" title="KB: aangetoonde verwantschappen"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="1" title="Verkoop: aanvullen offerte, offertelijn"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.5" title="Nazorg: creeer terugbetalingsvoorstel bij stopzetting "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="1.5" title="PO"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done"                          points="0.25" title="Review SS rechthebbenden VVK"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="0"  points="0.25" title="Review Mobib-Kaartbeheer template parameters"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="0"  points="1" title="VVK: update dossier en antwoord op reviewsheet DL"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0" title="Unplanned (opvullen aan eind van de sprint)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" title="Bezoek Lijnwinkel Antwerpen"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" title="pre-kick-off Increment 2 (voorbereiden, meeting, verwerken)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" title="TAR: Definieer productattributenset (contract VVK): gap analyse (datamodel: contract sectie; instantatiedoc: contract sectie; LIM/UCSS tarieven productattributen)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" title="TAR: Intro tarieven voor QA"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" title="Unplanned: KB VVK: aanpassing UCM/LIM/SNM/UCSS ter goedkeuring"><slides><slide type="story-narrative"></slide></slides></story>
+       
+       
+       
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   </stories>        
+
+</sprintreview>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140605" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="9">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="9">Philip Van Hoof</member>
+        <member type="hands-on" capacity="4">Steven Wyns </member>
+        <member type="hands-on" capacity="8">Steven Robijns </member>
+        <member type="hands-on" capacity="27">CSC </member>
+        <member type="tester" capacity="8">Dorine Vos </member>
+        <member type="tester" capacity="9">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Frank Vanhoenshoven </member>
+    </team>    
+    
+    <intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Knowledge transfer and support by Steven Wyns</li>
+			  <li>Support installatie AVU R2 BF2 bij De Lijn</li>
+			  <br/>
+			  <strong>QA</strong>
+			  <li>Support sanity checks AVU R2 BF2</li>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>Unit</strong>
+	          <li>Assessment NServicebus tools</li>
+	          <br/>
+	          <strong>AVU R2</strong>
+	          <li>Oplevering AVU R2 BF2</li>
+	          <li>Setup nieuwe ACC omgeving</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+	          <li>BO logging component</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Verwerken opmerkingen code review</li>
+	          <li>Implementatie en beheer automatische testen</li>	          
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+    </intro>
+
+    <stories>
+		<story id="DL-12083" relid="01" points="2" state="story done" title="[RM] Saga rework publish/retract/remove"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12166" relid="01" points="0.5" state="story done" title="[OPS] Opzetten nieuwe ACC IIS"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12170" relid="01" points="1" state="story done" title="[RM] Update script applicatierollen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12171" relid="01" points="0.5" state="story done" title="[RM] Creëer automatisch MP in Ubicore indien niet gevonden bij publish"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12250" relid="01" points="2.5" state="story done" title="[OPS] Support installatie (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12251" relid="01" points="4.5" state="story done" title="[OPS] Oplevering BF2 AVU R2"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12252" relid="01" points="4.125" state="story done" title="[RM] Validatie BF 2 AVU R2"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12254" relid="05" points="0.5" state="story done" title="[UNIT] Evaluatie Nservicebus tools"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12255" relid="03" points="3" state="story done" title="[LOG] Manifest rework"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12256" relid="03" points="2" state="story done" title="[LOG] Monitoring ActiveMQ mechanisme"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12257" relid="04" points="1" state="story done" title="[TM] Service endpoint per entity type"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12258" relid="04" points="11.25" state="story done" title="[TM] Feature files (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12273" relid="04" points="7" state="story done" title="[TM] QA timebox tarievenmodule"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12253" relid="01" points="0.5" state="story not-done" percentage-done="50"  title="[OPS] Fix vertalingen (verwijder dat file bij opstart)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12259" relid="04" points="2.25" state="story not-done" percentage-done="90"  title="[TM] Aanpassen Zoek en Filter - DL 4591 Selecteer reisproduct familie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12260" relid="04" points="1.125" state="story not-done" percentage-done="0"  title="[TM] Aanpassen Zoek en Filter - DL 4583 Selecteer reisproduct"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12262" relid="04" points="1.125" state="story not-done" percentage-done="0"  title="[TM] Aanpassen Zoek en Filter - DL 4596 Selecteer tarief"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12263" relid="04" points="1.125" state="story not-done" percentage-done="90"  title="[TM] Aanpassen Zoek en Filter - DL 4580 Selecteer drager"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12264" relid="04" points="2.25" state="story not-done" percentage-done="90"  title="[TM] Aanpassen Zoek en Filter - DL 4588 Selecteer drager familie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12265" relid="04" points="1.125" state="story not-done" percentage-done="50"  title="[TM] Aanpassen Zoek en Filter - DL 4602 Selecteer prijs"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12266" relid="04" points="1.125" state="story not-done" percentage-done="0"  title="[TM] Aanpassen Zoek en Filter - DL 4593 Selecteer prijsaanpassing"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12267" relid="04" points="1.125" state="story not-done" percentage-done="50"  title="[TM] Aanpassen Zoek en Filter - DL 4615 Selecteer BTW percentage"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12268" relid="04" points="1.125" state="story not-done" percentage-done="0"  title="[TM] Aanpassen Zoek en Filter - DL 4599 Selecteer beperking"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12269" relid="04" points="1.125" state="story not-done" percentage-done="0"  title="[TM] Aanpassen Zoek en Filter - DL 4608 Selecteer kalender"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12270" relid="04" points="1.125" state="story not-done" percentage-done="0"  title="[TM] Aanpassen Zoek en Filter - DL 4610 Selecteer herhalingsperiode"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12271" relid="04" points="1" state="story not-done" percentage-done="75"  title="[TM] Data dictionary afspreken en opzetten/aanpassen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12272" relid="04" points="1" state="story not-done" percentage-done="0"  title="[TM] Opzetten branch voor sandbox versie DL"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12274" relid="04" points="3" state="story not-done" percentage-done="0"  title="[TM] Dependency injection"><slides><slide type="story-narrative"></slide></slides></story>
+    	
+    	<story id="DL-11856" relid="01" points="0" state="bug" percentage-done="0"  title="Foute Release status wanneer toestel terug in gebruik"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12301" relid="01" points="0" state="bug" percentage-done="0" title="MP uit groep, erna terug in groep > faalt"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12207" relid="01" points="0" state="bug" percentage-done="0" title="MP ontvangt release niet indien gekend in systeem na publish"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12137" relid="01" points="0" state="bug" percentage-done="0" title="Saga rework publish: tijdens publish worden knoppen geenabled"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12372" relid="01" points="0" state="bug" percentage-done="0" title="MPAdded faalt:You are not allowed to access this feature"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11856" relid="01" points="0" state="bug" percentage-done="0" title="Foute Release status wanneer toestel terug in gebruik"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12237" relid="01" points="0" state="bug" percentage-done="0" title="Minimale versie: per mp 3 berichten op de queue"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12293" relid="01" points="0" state="bug" percentage-done="0" title="CiitemRemovedFromGroup berichten komen in error queue"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12285" relid="01" points="0" state="bug" percentage-done="0" title="Tellers MPs tonen bij Release algemene status created"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12160" relid="01" points="0" state="bug" percentage-done="0" title="Gedrag wijzigen CIItemAddedToGroup NA Publish bericht zelfde MP"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

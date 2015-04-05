@@ -1,0 +1,31 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140922" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="wasabi">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="8">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="6.5">Gauthier Rossion </member>
+        <member type="tester" capacity="6">Annelies Ivens </member>
+        <member type="hands-on" capacity="7.5">Thierry Habart</member>
+</team> 
+
+    <stories>
+		<story id="MOBITS-1207" points="3" state="story done" title="As a TCO I want to start working based on tickets for daily operations"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1208" points="3" state="story done" title="As a TCO I want to be able to manually create tickets"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2421" points="2" state="story done" title="FEATURE FILE for As an Obstruction Manager I want to know who created and updated the obstruction and when this was done"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2423" points="1" state="story done" title="Store Print and Mail values"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2426" points="1" state="story done" title="Meaningfull error message"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2428" points="1" state="story done" title="Remove sync line from the pdf"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2429" points="2" state="story done" title="Translation update"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2453" points="2" state="story done" title="As an obstruction manager I want to be able to undo my last draw line action"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2454" points="1" state="story done" title="Review Manuals"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2471" points="1" state="story done" title="Record video of delays "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2473" points="2" state="story done" title="create patch"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2427" points="5" state="story not-done" percentage-done="97" title="Allow more text for the obstruction fields Alternative route and special remarks"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2434" points="3" state="story not-done" percentage-done="80" title="Writing usability cases part 2"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

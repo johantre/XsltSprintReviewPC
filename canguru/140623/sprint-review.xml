@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140623" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="6.5" avatar="../avatars/Carmen.jpg">Carmen Filippo</member>
+    <member type="tester" capacity="7.0" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+<story title="DL-12145 [VVK] Sanity check on test env" state="story done" points="2" id="DL-12145"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12144 [ABO][TIMEBOX] Review Analysis ABO R3 Increment 2" state="story done" points="6.5" id="DL-12144"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12143 [TAR] [TIMEBOX] FF Review, manual testing and Follow up session with Rudi" state="story done" points="6.5" id="DL-12143"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-11837 [VVK] Integratie nieuwe printer lib Into IT" state="story done" points="1.5" id="DL-11837"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-11565 [VVK] implementeer Toon historiek personalisatiebatch" state="story done" points="1.5" id="DL-11565"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-11545 [VVK] Implementeer Nazorg aanvraag" state="story done" points="3.5" id="DL-11545"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-12392 [VVK] Er kunnen lege personalisatiebatches aangemaakt worden" state="story not-done" points="0" id="DL-12392"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12391 [VVK] Personalisatiebatch zonder orders kan aangemaakt en gestart worden" state="story not-done" points="0" id="DL-12391"><slides><slide type="story-narrative"></slide></slides></story>
+
+
+<story title="DL-12113 [VVK] Quote zonder foto wordt goedgekeurd" state="story done" points="0" id="DL-12113"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12097 [VVK] Filters en dropdowns werken niet op bepaalde momenten" state="story done" points="0" id="DL-12097"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12096 [VVK] Het is niet mogelijk om vanuit VVK effectief een interne batch te printen op test omgeving" state="story done" points="0" id="DL-12096"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12095 [VVK] Icoon verdwijnt van afgewerkte personalisatieorders" state="story done" points="0" id="DL-12095"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12094 [VVK] Scrollbar ontbreekt in personalisatiebatch lijst" state="story done" points="0" id="DL-12094"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12397 [VVK] Dropdown Personalisatieleverancier inhoud scherm zoek personalisatiebatch NOK" state="story done" points="0" id="DL-12397"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12376 [VVK] Foutieve foutboodschap bij wissen niet recentste versie" state="story done" points="0" id="DL-12376"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12369 [VVK] Bij stoppen batch krijgen niet afgewerkte orders een foutieve status" state="story done" points="0" id="DL-12369"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12363 [VVK] Er kunnen meer orders ingegeven worden dan aangegeven bij het maximum in batch" state="story done" points="0" id="DL-12363"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12358 [VVK] correspondence adres wordt niet gebruikt" state="story done" points="0" id="DL-12358"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12341 [VVK] Knop herstel NOK bij zoeken op gefaalde personalisatieorders" state="story done" points="0" id="DL-12341"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12340 [VVK] Gefaalde personalisatieorders worden getoond bij het openen scherm" state="story done" points="0" id="DL-12340"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12336 [VVK] Uitroepteken ontbreekt bij validatie aanmaakdatum van zoek personalisatiebatch" state="story done" points="0" id="DL-12336"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12334 [VVK] Veld ontbreekt in historiek personalisatiebatch" state="story done" points="0" id="DL-12334"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12332 [VVK] Selecteren orders is mogelijk op detail personalisatiebatch" state="story done" points="0" id="DL-12332"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12329 [VVK] Sorteer op NOK bij detail personalisatiebatch" state="story done" points="0" id="DL-12329"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12326 [VVK] Bepaalde velden ontbreken in detail personalisatiebatch" state="story done" points="0" id="DL-12326"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12325 [VVK] Benaming velden foutief pivot detail scherm detail personalisatiebatch" state="story done" points="0" id="DL-12325"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12323 [VVK] Foutmelding bij overschrijden max aantal parameter NOK" state="story done" points="0" id="DL-12323"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12321 [VVK] Verkeerde foutmelding bij validatie op status annuleren batch" state="story done" points="0" id="DL-12321"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12319 [VVK] Foutmelding NOK bij te klein aantal orders" state="story done" points="0" id="DL-12319"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12318 [VVK] Geen rood vraagteken wanneer keuze leverancier niet ingevuld is" state="story done" points="0" id="DL-12318"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12317 [VVK] Foutieve foutmelding bij ingeven negatief getal bij aantal in batch" state="story done" points="0" id="DL-12317"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12316 [VVK] Validatie op 'aantal in batch' NOK" state="story done" points="0" id="DL-12316"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12315 [VVK] Melding NOK wanneer teveel batchen toegevoegd" state="story done" points="0" id="DL-12315"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12303 [VVK] Titel edge panel nieuwe parameter NOK" state="story done" points="0" id="DL-12303"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12302 [VVK] Groeptitel sorteren op detail personalisatiebatch NOK" state="story done" points="0" id="DL-12302"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12300 [VVK] Nieuwe versie parameter dient egde panel te zijn ipv scherm" state="story done" points="0" id="DL-12300"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12277 [VVK] Foutmelding NOK wanneer laatste actie parameter gewist wordt" state="story done" points="0" id="DL-12277"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12275 [VVK] Foutmelding foutief wanneer parameter gewist wordt" state="story done" points="0" id="DL-12275"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12248 [VVK] Foutboodschap overlappen periodes aanmaken parameter NOK" state="story done" points="0" id="DL-12248"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12246 [VVK] Foutboodschap verplicht veld geldig van wijzig parameter NOK" state="story done" points="0" id="DL-12246"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12245 [VVK] verplichte velden NOK bij 'wijzig personalisatiebatch type parameter'" state="story done" points="0" id="DL-12245"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12244 [VVK] Sortering zoek parameters NOK" state="story done" points="0" id="DL-12244"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12243 [VVK] Geen enkel zoekcriteria ingevuld geeft resultaat" state="story done" points="0" id="DL-12243"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12242 [VVK] Zoeken op parameter op willekeurige datum niet mogelijk" state="story done" points="0" id="DL-12242"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12232 [VVK] Naam label NOK op scherm gefaalde personalisatieorders" state="story done" points="0" id="DL-12232"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12230 [VVK] Detail knop actief wanneer batch niet meer geselecteerd is" state="story done" points="0" id="DL-12230"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12229 [VVK] Historiek personalisatiebatch lijst NOK, veldje ontbreekt" state="story done" points="0" id="DL-12229"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12225 [VVK] Labels foutief of niet aanwezig in pivot detail en personalisatieorders" state="story done" points="0" id="DL-12225"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12220 [VVK] Filterlijsten NOK bij maak personalisatiebatch aan" state="story done" points="0" id="DL-12220"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12219 [VVK] Flyout sorteer NOK" state="story done" points="0" id="DL-12219"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12218 [VVK] Flyout filter zoek personalisatiebatch NOK" state="story done" points="0" id="DL-12218"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12217 [VVK] Label foutief: “datum aanmaak”" state="story done" points="0" id="DL-12217"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12216 [VVK]: Label aanmaakdatum NOK" state="story done" points="0" id="DL-12216"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-12215 [VVK] Titel op scherm personalisatiebatch NOK" state="story done" points="0" id="DL-12215"><slides><slide type="story-narrative"></slide></slides></story>
+
+   </stories>        
+
+</sprintreview>

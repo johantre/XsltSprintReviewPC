@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
 
-<sprintreview folder="140203" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
+<sprintreview folder="140203" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
     <team name="ITSbackoffice">
         <member type="productowner" capacity="0">Pieter Clavie </member>
         <member type="scrummaster" capacity="4.5">Servaas Phlips </member>
@@ -29,7 +29,7 @@
         <story id="MOBITS-1156" points="5" title="As a TCO I want a timetableview with dummy data" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
         <story id="MOBITS-882" points="2" title="As a stopzone manager I want to be able to delete a stopzone " state="story done"><slides><slide type="story-narrative"></slide></slides></story>
         <story id="MOBITS-1198" points="2" title="As a TCO I want some polish on my lineview" state="story done"><slides><slide type="story-narrative"></slide></slides></story>        
-        <story id="MOBITS-1214" points="2" title="As a TCO I want some polish on my timetableview" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1214" points="2" title="As a TCO I want some polish on my timetableview" state="story not-done" percentage-done="95"><slides><slide type="story-narrative"></slide></slides></story>
         <story id="MOBITS-566" points="3" title="As a planning manager I want to see the overview of the hastus import jobs" state="story done"><slides><slide type="story-narrative"></slide></slides></story>
         <story id="MOBITS-1225" points="3" title="Create Metro Theme for Telerik Controls" state="story uncommitted"><slides><slide type="story-narrative"></slide></slides></story>
         <story id="MOBITS-1219" points="3" title="Spike Testing Hastus import" state="story done"><slides><slide type="story-narrative"></slide></slides></story>

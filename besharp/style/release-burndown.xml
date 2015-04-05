@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<releasedata>
+    <sprints>
+        <!-- <sprint name="00">140922</sprint> -->
+        <sprint name="23">141006</sprint>
+    </sprints>
+    <releases>
+        <release id="14524" name="Release 2.9" totalpoints="500">
+            <sprintfolders>
+                <!-- <sprintfolder>140922</sprintfolder> -->
+                <sprintfolder>141006</sprintfolder>
+            </sprintfolders>
+        </release>
+    </releases>
+</releasedata>

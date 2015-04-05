@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140417" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>	
+    
+		<member type="hands-on"     capacity="6" avatar="../avatars/alain.jpg">Alain Kinet</member>
+		<member type="hands-on"     capacity="7" avatar="../avatars/bert.jpg">Bert Houben</member>
+		<member type="hands-on"     capacity="5" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="tester"       capacity="1" avatar="../avatars/joris.jpg">Joris Debien</member>        
+	</team> 
+
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>   	
+		
+		<!-- General -->
+		<story id="DL-11448" points="2" state="story done" relid="13" title="[SharpCorner] Nieuwe test omgeving opzetten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11712" points="2" state="story done" relid="13" title="[TEAMCITY] Migreren laatste builds naar nieuwe Teamcity"><slides><slide type="story-narrative"></slide></slides></story>
+					
+		<!-- AVU R1 -->
+		<story id="DL-11780" points="0.5" state="story done" relid="01" title="EXT - [SAM] Selecteer SAM - Zoeken op verwijderde SAM groep geeft ooit gekoppelde SAM's weer "><slides><slide type="story-narrative"></slide></slides></story>		
+		
+		<!-- AVU R2 -->		
+		<story id="DL-11854" points="1" state="story not-done" percentage-done="60" relid="02" title="[SAM] EXT - MobiGuider Sam Workstation Service kan niet opgestart worden"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11007" points="1" state="story done" relid="02" title="[CARD] Database migratie functional test"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<!-- ABO R1 -->
+		<story id="DL-11827" points="2" state="story done" relid="11" title="[ACC] AccountManagement solution opzetten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-10529" points="2" state="story done" relid="11" title="[CUST] Toon accountinformatie - implementatie"><slides><slide type="story-narrative"></slide></slides></story>	
+		
+		<!-- ABO R3 -->		
+		<story id="DL-11842" points="1" state="story done" relid="13" title="[SHOP/REV] Integratie met tarief module en sales module uittesten/uitklaren"><slides><slide type="story-narrative"></slide></slides></story>    	    	
+		<story id="DL-11528" points="3" state="story done" relid="13" title="[SHOP] Verwerk Directe Betaling - UI flow"><slides><slide type="story-narrative"></slide></slides></story>			
+		<story id="DL-11421" points="2" state="story done" relid="13" title="[SHOP/REV] LW FO - Sluit dienst af (afsluiten kasverslag)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11672" points="1" state="story not-done" percentage-done="90"  relid="13" title="[SHOP/REV] LW FO - Start dienst op (aanmaken kasverslag) - Implementatie feature files"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11678" points="1" state="story not-done" percentage-done="90"  relid="13" title="[SHOP/REV] LW FO - Sluit dienst af (afsluiten kasverslag) - Implementatie feature files"><slides><slide type="story-narrative"></slide></slides></story>				
+		
+	</stories>
+	
+	<finish>
+		<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Installatie handleidingen updaten nav review/installatie AVU R2</li>
+			  <li>Opkuis security scripts voor kaartbeheer</li>
+			  <li>Impact na upgrade naar NServiceBus 4.4.0</li>
+			  <li>Issues met oude AppFabric4 test omgeving</li>			  			  			  
+			  <li>Tile tellers op klantenbeheer verwijderd</li>			  
+              <li>Customer mgt: preparation bugs next sprint</li>
+			  <br/>
+			  <strong>QA</strong>
+			  <li>N/A</li>
+			</List>
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

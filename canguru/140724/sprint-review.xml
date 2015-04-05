@@ -1,0 +1,101 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" folder="140724" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="5" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="6" avatar="../avatars/Jelle.jpg">Jelle Bens</member>
+    <member type="hands-on" capacity="1" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="6" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+  <stories>
+    <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+    <story title="DL-12562 [V00] Setup env, bugfix, regression tests"
+           state="story done"
+           points="6"
+           id="DL-12562">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12559 [ABO R1] K4 support bij De Lijn"
+           state="story done"
+           points="1"
+           id="DL-12559">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12561 [ABO R3] High level estimates for internal release Iteration 4"
+           state="story done"
+           points="1.5"
+           id="DL-12561">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12560 [ABO R3] Review iteration 4 (internal releases)"
+           state="story done"
+           points="5"
+           id="DL-12560">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+
+    <story title="DL-12542 EXT - Detail personalisatiebatch: veld aantal personalisatieorders ontbreekt" 
+           state="story done" 
+           points="0" 
+           id="DL-12542">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12541 EXT - Met meerdere personen eenzelfde personalisatieorder verwerken resulteert in een technische fout en crash" 
+           state="story done" 
+           points="0" 
+           id="DL-12541">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12525 EXT - Account - Status van de kaartcontracten wordt niet mee aangepast in account management" 
+           state="story done" 
+           points="0" 
+           id="DL-12525">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12482 EXT - Fulfillment: Beheer parameters default zoekcriteria" 
+           state="story done" 
+           points="0" 
+           id="DL-12482">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+    <story title="DL-12479 EXT - Maak personalisatiebatch: Batch opslaan zonder personalisatieorders resulteert in een technische fout en crash" 
+           state="story done" 
+           points="0" 
+           id="DL-12479">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+
+    <story title="DL-12563 [ABO R1] integration tests" 
+           state="story not-done" 
+           percentage-done="50" 
+           points="2.5" 
+           id="DL-12563">
+      <slides>
+        <slide type="story-narrative"/>
+      </slides>
+    </story>
+  </stories>
+</sprintreview>

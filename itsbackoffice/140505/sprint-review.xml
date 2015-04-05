@@ -1,0 +1,34 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140505" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="5">Blaise Braye </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="5">Gauthier Rossion </member>
+        <member type="tester" capacity="7">Annelies Ivens </member>
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="hands-on" capacity="4">Marnix De Groote </member>
+    </team> 
+
+    <stories>
+		<story id="MOBITS-1186" relid="13907" points="3" state="story not-done" percentage-done="80"  title="As an obstruction manager I want that the impacted lines will be automatically detected based on the obstructions"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1187" relid="13907" points="3" state="story not-done" percentage-done="60"  title="As an obstruction manager I want to see the valid Lines/journey patterns as a layer in the map of the obstructions"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1192" relid="13907" points="3" state="story not-done" percentage-done="65"  title="As an obstruction manager I want to select impacted stop of a detour on the map"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1454" relid="13907" points="5" state="story not-done" percentage-done="10"  title="Improve PoiTracker core collection"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1791" relid="13907" points="3" state="story not-done" percentage-done="80"  title="As a Planner I want to import and persists Activation Points from KV9 into the Activation Point Datamodel"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1542" points="3" state="story uncommitted" title="PVS Control Server - Send other events"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1541" points="1" state="story done" title="PVS Control Server - Send Activate event"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1774" relid="13907" points="3" state="story done" title="SPIKE From Geo to Segments-SegmentsList-PointList"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1193" relid="13907" points="3" state="story done" title="As an obstruction manager I want to define tmp stops on the map"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1792" points="0" state="story done" title="Merge 2.8 branches to develop branch"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1604" relid="13907" points="3" state="story done" title="As a Planner I want to validate Activation Points files from KV9 via job orchestration"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1782" relid="13907" points="3" state="story done" title="Update import interface according to final NeTEx datamodel "><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140514" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="team-ba">
+        <member type="scrummaster" capacity="0">Alexander </member>
+        <member type="hands-on" capacity="4">Jan </member>
+        <member type="hands-on" capacity="4">Saskia </member>
+        <member type="hands-on" capacity="4">Michiel </member>
+        <member type="hands-on" capacity="4">Jetro </member>
+        <member type="hands-on" capacity="4">Rudi </member>
+    </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+        <story state="story done" points="0.5" title="UCM aanpassing n.a.v. applicatierollen"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.25" title="VVK: definieren applicatierollen (niet in UCM)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="90" points="0.5" title="Review brieventemplates VVK"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="90" points="1.5" title="Review VB Ticketing AVM"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2.5" title="PO"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="0" points="1.25" title="Kickoff draaien voor dev"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.25" title="Kickoff iteratie 2 inkomstenbeheer"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="80" points="1" title="Integraties (extern) oplijsten en status evalueren"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="90" points="0.5" title="Review brieventemplates MOBIB kaartbeheer"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="4.5" title="Afwerken specs ABO R3 iteratie 2, incl. antwoord op review"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="80" points="0.25" title="Review ABO-32 SS DL Documentgeneratie individueel"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="WBS iteratie 3 update"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2.5" title="Unplanned (opvullen aan eind van de sprint)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="50" points="1.75" title="DBS partner types en begunstigde types"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.25" title="KB: verwerking feedback kickoff"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.25" title="TAR: visie rond productattributen afchecken met Frank/Yves"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="TAR: Toevoegen contract provider attribuut"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" title="TAR: Migratie specs naar nieuwe template: strategie"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" title="TAR: review exportmodel Yves (incl. meeting)"><slides><slide type="story-narrative"></slide></slides></story>
+   </stories>        
+
+</sprintreview>

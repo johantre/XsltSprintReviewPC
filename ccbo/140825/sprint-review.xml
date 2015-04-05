@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140825" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="ccbo">
+		<member type="productowner" capacity="0">David Donabedian </member>
+		<member type="scrummaster" capacity="4">Fares Stita </member>
+		<member type="hands-on" capacity="12">Bert Houben </member>
+		<member type="hands-on" capacity="9">Hans Loquet </member>
+		<member type="hands-on" capacity="9">Steven Wyns </member>
+		<member type="hands-on" capacity="0">Wim Jans </member>
+	</team>
+	<intro>
+		<slides>
+			<slide title="Overview" type="sprint-intro">
+				<List xmlns="http://schemas.microsoft.com/sharepoint/">
+					<strong>New arrivals (cookbook)</strong>
+					<li>Tim Van Wassenhove</li>
+					<li>Dirk van Dongen</li>
+					<strong>Support</strong>   
+					<li>Framework.Metro Major update to 4.0</li>					
+					<br/>
+					<strong>Localization module</strong>
+					<br/>
+
+				</List>
+			</slide>		
+			<slide title="Support" type="story-batman">
+				<List xmlns="http://schemas.microsoft.com/sharepoint/">
+					<strong>Internal</strong>
+					<li>Setup VM for demo environment</li>
+					<br/>
+					<strong>External</strong>
+					<li>Migrate DevArt to ODP.Net</li>
+					<li>Framework.Metro Major update to 4.0</li>
+				</List>
+			</slide>
+		</slides>
+	</intro>
+	<stories>
+		<story id="CCBO-964" relid="01" points="1" state="story done" title="Configure a default language">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-970" relid="01" points="3" state="story done" title="Database Migration for the translations">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-993" relid="01" points="2" state="story done" title="Generate Resx file from old DB">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1010" relid="01" points="2" state="story done" title="Import Resource file generated from old DB">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1013" relid="01" points="2" state="story done" title="Retrieve translations (with fallback mechanism)">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1023" relid="01" points="4" state="story done" title="Merge resources spike">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1025" relid="01" points="2" state="story done" title="Validate if first level of resourcekey is a real modulename ">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-1011" relid="01" points="1" state="story not-done" title="Implement security roles for localization module">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+	</stories>
+</sprintreview>

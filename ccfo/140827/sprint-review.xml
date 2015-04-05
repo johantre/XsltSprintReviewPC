@@ -1,0 +1,52 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140827" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="4">David Woods</member>
+        <member type="hands-on"     capacity="9">Antoine Wils</member>
+        <member type="hands-on"     capacity="8">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="6">Maarten Casteels </member>
+        <member type="tester"       capacity="1.5">Koen Meus </member>
+        <member type="tester"       capacity="9">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team> 
+
+    <stories>
+		<story id="CCFO-59"  relid="01" points="0.25" state="story done" title="(CHECK by M CAR) Release with framework error not marked as quality BAD"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-188" relid="01" points="0.25" state="story done" title="Verify::release to MP goes from removed > invalid > scheduled after 10 minutes"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-275" relid="01" points="0.25" state="story done" title="(CHECK with Michael) EXT - Release management - Veld Tijdstip actief status bereikt geeft datum van laatste raadpleging weer"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-359" relid="01" points="0.2" state="story done" title="Working version marked as scheduled"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-652" relid="01" points="2" state="story done" title="exposeVehicleContextChange : Notification when vehicle context changed"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-653" relid="01" points="1" state="story done" title="Implement calibrate ( x , Y , Z  ) : calibrate DR with fixed angle"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-654" relid="01" points="1" state="story done" title="implement  auto calibrate DR"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-723" relid="01" points="0.5" state="story done" title="MP :: Blacklist REST PoC: investigate design and technologies"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-724" relid="01" points="0.5" state="story done" title="MPM :: Blacklist REST PoC: investigate"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-577" relid="01" points="1" state="story not-done" percentage-done="0"  title="Expand functionality of log message 1401"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-590" relid="01" points="0.5" state="story not-done" percentage-done="0"  title="EXT - wachtwoorden in cleartext - investigate"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-599" relid="01" points="0" state="story not-done" percentage-done="0"  title="(HIGH PRIO) - RSYNCH::   infinite loop downloading tasklist"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-655" relid="01" points="1" state="story not-done" percentage-done="0"  title="startGPSCalibration :: calibrate GPS based on vehicleType"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-656" relid="01" points="3.5" state="story not-done" percentage-done="0"  title="Implement DR calibration status (monitoring)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-658" relid="01" points="2" state="story not-done" percentage-done="0"  title="Get GPS signal source"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-665" relid="01" points="0.25" state="story not-done" percentage-done="0"  title="JavaFX::Investigate if simple application can be started using an OSGi environment."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-670" relid="01" points="1" state="story not-done" percentage-done="0"  title="JavaFX::Investigate MVC environment"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-671" relid="01" points="0.25" state="story not-done" percentage-done="0"  title="QA :: Full test Release mngt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-672" relid="01" points="0.5" state="story not-done" percentage-done="0"  title="(HIGH PRIO Antoine) CD: MP-MP:  Download fails due to Segmentation is not supported and ContentLength 2113536 > MaxChunkSize 102400"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-725" relid="01" points="2" state="story not-done" percentage-done="0"  title="Test Release Candidate 0.3.5"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-726" relid="01" points="1" state="story not-done" percentage-done="0"  title="QA :: Install Release at client 0.3.5"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-727" relid="01" points="1" state="story not-done" percentage-done="0"  title="QA :: Demo Release at client"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-742" relid="01" points="1.5" state="story not-done" percentage-done="0"  title="Implement DR calibration status (sending)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-744" relid="01" points="0" state="story not-done" percentage-done="0"  title="Blacklist :: REST Spike: follow-up"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-746" relid="01" points="0" state="story not-done" percentage-done="0"  title="GPS::Vehicle Type -> JSON"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-747" relid="01" points="0" state="story not-done" percentage-done="0"  title="MP :: Release Management :: Send message when going to state WORKING"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-740" relid="01" points="0" state="story uncommitted" title="MP: remote diagnose : test GPS coordinaten can t be stopped"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-739" relid="01" points="0" state="story uncommitted" title="MP: GPS diagnose test  :Stuck when executing test  a few times"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-566" relid="01" points="1" state="story uncommitted" title="QATester : check CD_MP_MPM_test10, Pause / resume"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-746" relid="01" points="0" state="story uncommitted" title="GPS::Vehicle Type -&gt; JSON"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-747" relid="01" points="0" state="story uncommitted" title="MP :: Release Management :: Send message when going to state WORKING"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-748" relid="01" points="0" state="story uncommitted" title="MP :: Nightly build :: Release merged modules on master and create nightly build"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-742" relid="01" points="0" state="story uncommitted" title="Implement DR calibration status (sending)"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-743" relid="01" points="0" state="story uncommitted" title="Merge ABO_R2 -> master"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="CCFO-744" relid="01" points="0" state="story uncommitted" title="Blacklist :: REST Spike: follow-up"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

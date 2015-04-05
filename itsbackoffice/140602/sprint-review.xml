@@ -1,0 +1,31 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140602" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Christophe Lemoine </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="3.5">Servaas Phlips </member>
+        <member type="hands-on" capacity="0">Ignacio Errico </member>
+        <member type="hands-on" capacity="7">Blaise Braye </member>
+        <member type="hands-on" capacity="7">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="4">Gauthier Rossion </member>
+        <member type="tester" capacity="5">Annelies Ivens </member>
+        <member type="tester" capacity="4">Parisa Pejham </member>
+        <member type="hands-on" capacity="3.5">Marnix De Groote </member>
+    </team> 
+
+    <stories>
+		<story id="MOBITS-1159"  points="5" state="story done" title="Detour Editor ViewModel - Make the same as obstruction editor"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1188" relid="13907" points="2" state="story done" title="As an obstruction manager I want to select valid impacted journey pattern for obstructions and detours"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1195" relid="13907" points="2" state="story done" title="As an obstruction manager I want to define the fare mapping"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1196" relid="13907" points="3" state="story done" title="As an obstruction manager I want to define the timing mapping"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1367" relid="13907" points="1" state="story done" title="As a TCO I want a better lock poi functunality in POITRACKER Tco"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1543"  points="2" state="story done" title="PVS Control Server - Send commands and receive response"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1826"  points="2" state="story done" title="Have consistent usage of spatial representation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1853"  points="2" state="story done" title="Add Pivot Navigator to Detour Editor"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1887"  points="2" state="story done" title="Implement step file for feature file timing mapping"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1841" relid="13907" points="5" state="story not-done" percentage-done="85"  title="As an obstruction manager I want to create a new version frame after a publish"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

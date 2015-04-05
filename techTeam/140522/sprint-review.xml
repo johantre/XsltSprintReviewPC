@@ -1,0 +1,101 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140522" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="8">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="6">Philip Van Hoof</member>
+        <member type="hands-on" capacity="7">Steven Wyns </member>
+        <member type="hands-on" capacity="7">Steven Robijns </member>
+        <member type="hands-on" capacity="15">CSC </member>
+        <member type="tester" capacity="8">Dorine Vos </member>
+        <member type="tester" capacity="8">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Frank Vanhoenshoven </member>
+    </team>   
+
+    <intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Discussie De Lijn exe vs msi</li>
+			  <li>Support UAT omgeving De Lijn</li>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>Unit</strong>
+	          <li>Verhuis builds naar nieuwe Team City</li>
+	          <br/>
+	          <strong>AVU R2</strong>
+	          <li>Release en Config Mgt: bugfixing</li>
+	          <li>Release Mgt: saga optimalisaties</li>
+			  <br/>
+			  <strong>ABO R1</strong>
+	          <li>Installer Document Mgt</li>
+			  <br/>
+			  <strong>ABO R2</strong>
+	          <li>Setup BO logging component</li>
+			  <li>POC WebAPI (transaction processor)</li>
+			  <br/>  
+			  <strong>ABO R3</strong>          
+	          <li>Verwerken opmerkingen code review</li>
+	          <li>Implementatie en beheer automatische testen</li>
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+    </intro>
+    
+    <stories>
+    		
+		<story id="DL-12164" relid="05" points="1" state="story done" title="[OPS] Migratie builds Tariefmodule en RLC"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12169" relid="03" points="1" state="story done" title="[TP] POC registration webAPI (incl review doc review guidelines)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12174" relid="04" points="2" state="story done" title="[OPS] Setup multiple sites voor Tariefmodule"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12083" relid="01" points="2" state="story not-done" percentage-done="75"  title="[RM] Saga rework publish/retract/remove"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12163" relid="01" points="2" state="story done" percentage-done="0"  title="[OPS] Afwerken nieuwe testomgeving (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12165" relid="01" points="0.5" state="story done" percentage-done="0"  title="[OPS] Opzetten nieuwe branch voor bugfix 2 AVU R2 (CM en RM)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12166" relid="01" points="0.5" state="story not-done" percentage-done="0"  title="[OPS] Opzetten 2de site op huidige ACC IIS (iis1.test.prodatamobility.com)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12167" relid="02" points="1" state="story done" percentage-done="0"  title="[OPS] Installer Document Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12168" relid="01" points="0.5" state="story done" percentage-done="0"  title="[OPS] Operationele checklist RM en CM"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12170" relid="01" points="1" state="story not-done" percentage-done="75"  title="[RM] Update script applicatierollen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12171" relid="01" points="0.5" state="story done" percentage-done="0"  title="[RM] Creëer automatisch MP in Ubicore indien niet gevonden bij publish"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12172" relid="01" points="0.125" state="story done" percentage-done="0"  title="[RM] Configuratie auditqueue aanpassen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12173" relid="01" points="2" state="story done" percentage-done="0"  title="[RM] Automatische testen (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12175" relid="03" points="1" state="story done" percentage-done="0"  title="[LOG] Setup Log4Net component"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-11826" relid="01" points="0" state="bug" percentage-done="0"  title="Refresh detail MP: unhandled exception: copyreleasestatustrigger"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11873" relid="01" points="0" state="bug" percentage-done="0"  title="EXT - SAM Item: veld serienummer sam is niet hexadecimaal "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12100" relid="01" points="0" state="bug" percentage-done="0"  title="Verwijderen release: verwijderopdracht alleen sturen indien alle algemene statussen = Verwijdering aangevraagd"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12114" relid="01" points="0" state="bug" percentage-done="0"  title="Opladen SP met ontbrekende verplichte packages: gedrag niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12137" relid="01" points="0" state="bug" percentage-done="0"  title="Saga rework publish: tijdens publish worden knoppen geenabled"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12140" relid="01" points="0" state="bug" percentage-done="0"  title="Terugtrekken: execution time wordt gezet nadat alle RetractReleaseProcessMP berichten behandeld zijn, niet na de Finish"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12160" relid="01" points="0" state="bug" percentage-done="0"  title="Gedrag wijzigen CIItemAddedToGroup NA Publish bericht zelfde MP"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12099" relid="01" points="0" state="bug" percentage-done="0" title="Buiten gebruik: MPadded mag niet uitgestuurd worden van oude CI nadat toestel terug in gebruik komt"><slides><slide type="story-narrative"></slide></slides></story>				
+		<story id="DL-12207" relid="01" points="0" state="bug" percentage-done="0"  title="MP ontvangt release niet indien gekend in systeem na publish"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12137" relid="01" points="0" state="bug" percentage-done="0" title="Saga rework publish: tijdens publish worden knoppen geenabled"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12146" relid="01" points="0" state="bug" percentage-done="0" title="Technische fout na oppladen SP (soms)"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12128" relid="01" points="0" state="bug" percentage-done="0" title="Creatie release groep: mogelijk om 2x zelfde groep aan te maken"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11858" relid="01" points="0" state="bug" percentage-done="0" title="unhandled exception when changing 'tijdstip wanneer download gestart moet zijn'"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12158" relid="01" points="0" state="bug" percentage-done="0" title="Delta aanmaken SP opgeladen met ontbrekende java packages faalt"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12140" relid="01" points="0" state="bug" percentage-done="0" title="Terugtrekken: execution time wordt gezet nadat alle RetractReleaseProcessMP berichten behandeld zijn, niet na de Finish"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12160" relid="01" points="0" state="bug" percentage-done="0" title="Gedrag wijzigen CIItemAddedToGroup NA Publish bericht zelfde MP"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12202" relid="01" points="0" state="bug" percentage-done="0" title="Massa import CI: MP zonder gegevens in release data op MP"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12036" relid="01" points="0" state="bug" percentage-done="0" title="Minimale versie: errors in batch log"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12207" relid="01" points="0" state="bug" percentage-done="0" title="MP ontvangt release niet indien gekend in systeem na publish"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12205" relid="01" points="0" state="bug" percentage-done="0" title="Unhandled exception bij openen detail release tijdens upload SP"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11826" relid="01" points="0" state="bug" percentage-done="0" title="Refresh detail MP: unhandled exception: copyreleasestatustrigger"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12114" relid="01" points="0" state="bug" percentage-done="0" title="Opladen SP met ontbrekende verplichte packages: gedrag niet correct"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12138" relid="01" points="0" state="bug" percentage-done="0" title="TIme-outs/DB errors bij acties naar groot aantal MPs"><slides><slide type="story-narrative"></slide></slides></story>
+   
+   		<story id="DL" relid="04" points="11.75" state="story done" percentage-done="0"  title="[TM] Feature files (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL" relid="04" points="1" state="story done" percentage-done="0"  title="[TM] Server side paging - Analyse"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL" relid="04" points="3" state="story not-done" percentage-done="33"  title="[TM] Dependency injection"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL" relid="04" points="0.5" state="story done" percentage-done="0"  title="[TM] Exception handling"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL" relid="04" points="0.5" state="story done" percentage-done="0"  title="[TM] Properties throwing exceptions"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL" relid="04" points="0.5" state="story done" percentage-done="0"  title="[TM] Object factories using strings"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL" relid="04" points="1" state="story not-done" percentage-done="0"  title="[TM] Data dictionary afspreken en opzetten/aanpassen"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

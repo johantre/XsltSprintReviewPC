@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="141009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="9">Dirk </member>
+        <member type="hands-on" capacity="9">Stijn</member>
+        <member type="hands-on" capacity="9">Ivo </member>
+        <member type="hands-on" capacity="8">Erik </member>
+        <member type="tester" capacity="6">Stefaan </member>
+        <member type="tester" capacity="9">Broes </member>
+        <member type="productowner" capacity="9">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: ABO JUMP</h5>
+				<list>
+					<li>Fill the gaps in the validation flow. </li>
+                    <li>Make tests work with mocked cards work, support loading cards.</li>
+                    <li>Integrate the cardlib in all applications (diagnosis, SAM management).</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+     <stories>
+		<story id="DL-11896" relid="" points="1" state="story done" title="Drools: Jump Journey counter"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12786" relid="" points="2" state="story done" title="Test Executer mocked cards"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12833" relid="" points="0" state="story done" title="CARDLIB: When logging on with card already in the contact reader of held before the contactless reader, a message &quot;leesfout kaart&quot; is displayed."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12837" relid="" points="0.5" state="story done" title="CARDLIB: PIN on the card is not verified anymore during logon process (DC)."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12883" relid="" points="2" state="story done" title="New card lib: Contact cardreader initialization error"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12889" relid="" points="3" state="story done" title="Cardlib: Modification"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12890" relid="" points="2" state="story done" title="Handover (info)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12906" relid="" points="3" state="story done" title="Testtool: Dump Card To Json"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12950" relid="" points="2" state="story done" title="Validation: bigbang"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12951" relid="" points="2" state="story done" title="Validation: Reject time"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12954" relid="" points="1" state="story done" title="Review BTS Jump Jump"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12955" relid="" points="1" state="story done" title="Review BTS Jump Voertuigen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12956" relid="" points="1" state="story done" title="Review UCSS voertuigen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12958" relid="" points="2" state="story done" title="Follow-up on ABO R2 delivery"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12960" relid="" points="2" state="story done" title="Analysis of bugs noted by customer assigned to mijlpaal JUMP"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12974" relid="" points="1" state="story done" title="Review MTB instantiation documents"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12976" relid="" points="0.5" state="story done" title="Analyse ratification"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12980" relid="" points="2" state="story done" title="EXT - Interoperability &acirc;Äì Validation after interchange - refused"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12981" relid="" points="0.5" state="story done" title="Feed region/zone/line/stop to validation context"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12904" relid="" points="2" state="story not-done" percentage-done="0"  title="Val: Trans To Be"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12907" relid="" points="5" state="story not-done" percentage-done="0"  title="Testtool: Load Dump On Card"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12953" relid="" points="1" state="story not-done" percentage-done="0"  title="Validation: Add extra fields in validation registration message"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12975" relid="" points="1" state="story not-done" percentage-done="0"  title="Analyse reader recommendation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12977" relid="" points="3" state="story not-done" percentage-done="0"  title="Add card lib to diagnose"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12979" relid="" points="1" state="story done" title="DROOLS: add logging around rejection to help test and debugging"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-13087" relid="" points="3" state="story uncommitted" title="Fix tests mocked cards"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-13048" relid="" points="2" state="story uncommitted" title="Validation: Integrate new version INTO-IT cardlib "><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-13086" relid="" points="3" state="story uncommitted" title="Review BMC TC"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-13047" relid="" points="2" state="story uncommitted" title="Implement JUMP DLT's into MCT (Mocked Card Test)"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-13038" relid="" points="1" state="story uncommitted" title="Review BMC Jump reference testcases : expected result"><slides><slide type="story-narrative"></slide></slides></story>  
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>ABO R2 bugfix delivery came in between (including bugfixes), total overhead of 11 man days.</li>
+                    <li>DROOLS rules are 99% covered, now focus on testing them.</li>
+                    <li>Card library: Big progress on validation. Basic flow in place. Now filling the remaining gaps. </li>
+                    <li>Card editor tool + test with mocked cards: still much slower then anticipated. Dump works, loading not yet.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    Performance!
+                    Add last extra technical requirements (ratification, contract signature verification).
+                    Fixing outstanding issues.
+                    NOT: info button data and blacklisting (next sprint)
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

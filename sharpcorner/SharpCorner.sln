@@ -1,0 +1,122 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2DC3FE8F-DD65-4D03-8529-610807C803DE}"
+	ProjectSection(SolutionItems) = preProject
+		style\release-burndown.xml = style\release-burndown.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 01", "sprint 01", "{327388D5-58CE-4202-AE98-850F2B22A76E}"
+	ProjectSection(SolutionItems) = preProject
+		140206\sprint-review.xml = 140206\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 02", "sprint 02", "{2728FF89-1259-4DFE-BBC4-582BA300FF3A}"
+	ProjectSection(SolutionItems) = preProject
+		140213\sprint-review.xml = 140213\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 03", "sprint 03", "{37E881A3-BC7B-46F9-ABCB-1C586F63221B}"
+	ProjectSection(SolutionItems) = preProject
+		140220\sprint-review.xml = 140220\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 04", "sprint 04", "{685BC9FF-D1EA-435D-A164-727987973BF8}"
+	ProjectSection(SolutionItems) = preProject
+		140306\sprint-review.xml = 140306\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 05", "sprint 05", "{A19A123B-BD38-44C7-B9C0-1B508123E752}"
+	ProjectSection(SolutionItems) = preProject
+		140320\sprint-review.xml = 140320\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 06", "sprint 06", "{037B55C7-0695-4D46-939B-C4793779D908}"
+	ProjectSection(SolutionItems) = preProject
+		140403\sprint-review.xml = 140403\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 07", "sprint 07", "{ECBFEAFE-3E53-48D5-BB2A-519E94452DF1}"
+	ProjectSection(SolutionItems) = preProject
+		140417\sprint-review.xml = 140417\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 08", "sprint 08", "{BA7C09FE-21A5-4B29-9CEE-01981C0E1A17}"
+	ProjectSection(SolutionItems) = preProject
+		140505\sprint-review.xml = 140505\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 09", "sprint 09", "{7DFBEF8C-A966-4000-B46C-361AB6736E3E}"
+	ProjectSection(SolutionItems) = preProject
+		140515\sprint-review.xml = 140515\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 11", "sprint 11", "{8E405CFB-9E3A-4BB0-8356-D3A6BA936BC4}"
+	ProjectSection(SolutionItems) = preProject
+		140724\sprint-review.xml = 140724\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 10", "sprint 10", "{148F0953-131D-436B-9712-63A1E9A136ED}"
+	ProjectSection(SolutionItems) = preProject
+		140624\sprint-review.xml = 140624\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 12", "sprint 12", "{2786103C-143E-44C1-BDC6-7E0782ECF242}"
+	ProjectSection(SolutionItems) = preProject
+		140807\sprint-review.xml = 140807\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 13", "sprint 13", "{8CDCA21B-AB80-45A5-82A4-4833C235BCB6}"
+	ProjectSection(SolutionItems) = preProject
+		140821\sprint-review.xml = 140821\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "template", "template", "{D63B80F8-9453-4FAF-ADBB-85974FB08934}"
+	ProjectSection(SolutionItems) = preProject
+		template\template.xml = template\template.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "previous sprints", "previous sprints", "{F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 14", "sprint 14", "{995E93B9-44EE-4B14-A875-46747A949CC8}"
+	ProjectSection(SolutionItems) = preProject
+		140904\sprint-review.xml = 140904\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 15", "sprint 15", "{3516F879-B825-430C-840C-38D7E5E9B0A4}"
+	ProjectSection(SolutionItems) = preProject
+		140918\sprint-review.xml = 140918\sprint-review.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sprint 16", "sprint 16", "{8A7EF7CE-3E3C-4C4E-9B49-962C7353FDEC}"
+	ProjectSection(SolutionItems) = preProject
+		141002\sprint-review.xml = 141002\sprint-review.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F95FA655-7AEA-422E-8DE1-DCD6FE5B215B} = {2DC3FE8F-DD65-4D03-8529-610807C803DE}
+		{D63B80F8-9453-4FAF-ADBB-85974FB08934} = {2DC3FE8F-DD65-4D03-8529-610807C803DE}
+		{8A7EF7CE-3E3C-4C4E-9B49-962C7353FDEC} = {2DC3FE8F-DD65-4D03-8529-610807C803DE}
+		{2728FF89-1259-4DFE-BBC4-582BA300FF3A} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{37E881A3-BC7B-46F9-ABCB-1C586F63221B} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{685BC9FF-D1EA-435D-A164-727987973BF8} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{A19A123B-BD38-44C7-B9C0-1B508123E752} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{037B55C7-0695-4D46-939B-C4793779D908} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{ECBFEAFE-3E53-48D5-BB2A-519E94452DF1} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{BA7C09FE-21A5-4B29-9CEE-01981C0E1A17} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{7DFBEF8C-A966-4000-B46C-361AB6736E3E} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{8E405CFB-9E3A-4BB0-8356-D3A6BA936BC4} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{148F0953-131D-436B-9712-63A1E9A136ED} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{2786103C-143E-44C1-BDC6-7E0782ECF242} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{8CDCA21B-AB80-45A5-82A4-4833C235BCB6} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{327388D5-58CE-4202-AE98-850F2B22A76E} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{995E93B9-44EE-4B14-A875-46747A949CC8} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+		{3516F879-B825-430C-840C-38D7E5E9B0A4} = {F95FA655-7AEA-422E-8DE1-DCD6FE5B215B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140616" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="3">Christophe Lemoine </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="6.5">Blaise Braye </member>
+        <member type="hands-on" capacity="4">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="5.5">Gauthier Rossion </member>
+        <member type="tester" capacity="6">Annelies Ivens </member>
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="hands-on" capacity="6.5">Marnix De Groote </member>
+    </team>
+
+  <metrics>
+    <metric project="ServiceSupportManager" linesofcode="35730" stepfiles="0" unittests="261" complexity="15" />
+    <metric project="PoiTracker" linesofcode="10978" stepfiles="0" unittests="151" complexity="13.6227" />
+    <metric project="Transmodel.Netex" linesofcode="29605" stepfiles="24" unittests="462" complexity="12.3833" />
+    <metric project="DetourManager" linesofcode="17625" stepfiles="2" unittests="382" complexity="8.89249" />
+    <metric project="JobOrchestration" linesofcode="2962" stepfiles="0" unittests="81" complexity="7.20614" />
+  </metrics>
+  <stories>
+		<story id="MOBITS-1360" relid="13907" points="3" state="story done" title="Insert search adress functionality inside map control, (make it part of the general map control)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1454" relid="13907" points="5" state="story done" title="Improve PoiTracker"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1552" relid="13907" points="3" state="story done" title="As a TCO I want to see the journey pattern of the selected POI"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1841" relid="13907" points="5" state="story done" title="As an obstruction manager I want to create a new version frame after a publish"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1885" relid="13907" points="1" state="story done" title="As a TCO I want a good screen setup and optimal use of screen space"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1890" relid="13907" points="3" state="story done" title="As a TCO I want a context menu in the treeview"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1891" relid="13907" points="3" state="story done" title="As a TCO I want that the state of the SSM screen is stored per User"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1895" relid="13907" points="2" state="story done" title="SPIKE: As a TCO I want to multiselect POI's on the map via a bounding box"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1914" relid="13907" points="2" state="story done" title="As a TCO I want to create/edit all fields in all pivots of a custom message at once"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1920" relid="" points="3" state="story done" title="Business key monitored vehicle journey"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1921" relid="" points="5" state="story done" title="create testplan 2.8"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1922" relid="" points="2" state="story done" title="test installers IW "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1872" relid="13907" points="3" state="story not-done" percentage-done="80" title="Finish Hastus Import Interface"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1919" relid="" points="2" state="story not-done" percentage-done="25" title="Merge hastus import branch"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

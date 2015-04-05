@@ -1,0 +1,53 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140811" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="3">Servaas Phlips </member>
+        <member type="hands-on" capacity="7">Ignacio Errico </member>
+        <member type="hands-on" capacity="7">Blaise Braye </member>
+        <member type="hands-on" capacity="0">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="5.5">Gauthier Rossion </member>
+        <member type="tester" capacity="6">Annelies Ivens </member>
+        <member type="tester" capacity="3">Parisa Pejham </member>
+        <member type="hands-on" capacity="3">Denis Bollinne</member>
+        <member type="hands-on" capacity="3.5">Thierry Habart</member>
+        <member type="hands-on" capacity="5.5">Marnix De Groote </member>
+    </team>  
+    
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <b>Learn transmodel.netex to be able to estimate upcoming stories more accuretaly.</b>  
+        </List>
+      </slide>
+    </slides>
+  </intro>    
+
+  <metrics>
+    <metric project="ServiceSupportManager" linesofcode="35860" stepfiles="0" unittests="261" complexity="15.055" />
+    <metric project="PoiTracker" linesofcode="11063" stepfiles="0" unittests="162" complexity="13.5881" />
+    <metric project="Transmodel.Netex" linesofcode="34514" stepfiles="26" unittests="456" complexity="10.1827" />
+    <metric project="DetourManager" linesofcode="22564" stepfiles="15" unittests="600" complexity="9.053459" />
+    <metric project="JobOrchestration" linesofcode="3520" stepfiles="0" unittests="108" complexity="7.348148" />
+  </metrics>
+
+    <stories>
+		<story id="MOBITS-1873" relid="14524" points="2" state="story done" title="Polish highlighted journey pattern on the maps of obstruction and detours"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1888" relid="14524" points="1" state="story done" title="Show lines instead of journey patterns in overview and search"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2158" relid="14524" points="3" state="story done" title="As an obstruction manager I want to update the line and journey pattern"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2178" relid="14524" points="1" state="story done" title="QA re-check stories after receiving better reference files"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2184" relid="14524" points="3" state="story done" title="Create Ref File"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1705" relid="14524" points="2" state="story not-done" percentage-done="95"  title="As a Tco I want to edit the period of an obstruction"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1863" relid="14524" points="3" state="story not-done" percentage-done="70"  title="Send SSM message after edit obstruction by TCO - FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1889" relid="14524" points="2" state="story not-done" percentage-done="75"  title="Delete mappings after delete tmp stop - FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2102" relid="14524" points="2" state="story not-done" percentage-done="5"  title="As a planner I want the automatically generated stopareas inside the dataset"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2108" relid="14524" points="3" state="story not-done" percentage-done="75"  title="As a Planner I want a core Dataset from NeTEx with a Header, schedule Info, Calendar, Block and Vehicle Journey"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2110" relid="14524" points="5" state="story not-done" percentage-done="15"  title="As a Planner I want a core Dataset from NeTEx with a Point and Point list"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2150" relid="14524" points="2" state="story not-done" percentage-done="90"  title="Implement step file for TCO access obstruction module"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

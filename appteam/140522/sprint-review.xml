@@ -1,0 +1,89 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140508" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="9">Dirk </member>
+        <member type="hands-on" capacity="9">Stijn</member>
+        <member type="hands-on" capacity="8">Ivo </member>
+        <member type="hands-on" capacity="9">Erik </member>
+        <member type="tester" capacity="8,5">Stefaan </member>
+        <member type="tester" capacity="9">Broes </member>
+        <member type="hands-on" capacity="0">Frank </member>
+        <member type="productowner" capacity="0">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Bugfix + Coded event</h5>
+				<list>
+					<li>Basic SCRUM is known. We now added Definition of done and acceptance testing.</li>
+					<li>Some overhead due to (technical) internal improvements.</li>
+					<li>One third: bugfixing / new feature development / improvements (versioning, builds, dev setup).</li>
+                    <li>Added more planned work for test automation (previously untracked)</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampercents ! -->
+        <story state="story done"  points="1" id="11978"  		title="Logging: Review + improve design log">                                   <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="1" id="11981" percentage-done="90"		title="Logging: Driver login/logout">                   <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" percentage-done="90" points="3" id="12059" 		title="Logging: Real-time event message               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="12037" 		title="BUG: Reject NMBS 901 multimodel">                                        <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="11423"  		title="BUG: Coupled tram too many MPs                             ">            <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="11500" 		title="BUG: MAC address not consistent">                                        <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="12031"      	title="BUG: DC without dallas, no popup">                                       <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="11903"  		title="BUG: Val speaker test window does not close                            "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="11988"      	title="BUG: RGB but no beep + screen                                      ">    <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="11833"         title="Improvement: Overdracht CS                                           ">  <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="12060"       	title="Improvement: Setup nightly build                             ">          <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="12064"      	title="Improvement: Split GIT repo's                               ">           <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="3" id="12065"    	    title="Improvement: Document development environment setup (IntelliJ) ">    <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="12065"       	title="Test: Testsuite integration tests">                                      <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="12071"      	title="Test: White list integration + POC                               ">      <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="12070"    	    title="Test: SAM Blacklist                                        ">            <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="1" id="12051"      	title="BUG: Beep error                               ">                 <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="2" id="12052"    	    title="BUG: Inconsistent night screens          ">                      <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" id="11961"      	title="BUG: Status info 3G test                               ">                <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" id="9644"    	    title="BUG: Contact cardreader fails                 ">                     <slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" id="5696"      	title="BUG: Best Contract Used                               ">                 <slides><slide type="story-narrative"></slide></slides></story>
+
+
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+					<li>Much closer to planned capacity.</li>
+					<li>Logging story failed: date format (dependency) + changing spec.</li>
+                	<li>Good to keep backup stories ready when someone is stuck.</li>
+                    <li>Velocity increased from 0.37 to 0.59.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+           <slide title="Where did Batman time go?" type="story-batman">
+                <List>
+                	<li>Note: Backlog bugfixes are planned!</li>
+                	<li>No planned days -> In story points</li>
+                	<li>Mainly Stefaan: 80% capacity.</li>
+                	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Last (two) issues for bugfix ABO R1. Add bugfix for ABO R2. Feature freeze AVU R2 at end of sprint. </li>\
+                    <li>Must spend more time on new features.</li>
+                    <li>Clarify tracking of analysis tasks.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

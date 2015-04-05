@@ -1,0 +1,86 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140508" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="7">Dirk </member>
+        <member type="hands-on" capacity="7">Stijn</member>
+        <member type="hands-on" capacity="6">Ivo </member>
+        <member type="hands-on" capacity="7">Erik </member>
+        <member type="tester" capacity="7">Stefaan </member>
+        <member type="tester" capacity="7">Broes </member>
+        <member type="hands-on" capacity="0">Frank </member>
+        <member type="productowner" capacity="6.5">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Bugfix + Coded logging</h5>
+				<list>
+					<li>Basic SCRUM is more or less known, starting to fine tune.</li>
+					<li>Starting with (technical) internal improvements.</li>
+					<li>Fifty-fifty bugfixing / new feature development.</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampercents ! -->
+        <story state="story not-done" percentage-done="95" points="0.5" id="5696"  		title="BUG: Status 3G info                                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="11929" 		title="BUG: Logging when connecting with SPIE BC                                 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="" 				title="LOG: Modularize resource file                                       "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="" 				title="LOG: Resource files + basic functions                                                "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="11423"  		title="BUG: Coupled tram too many MPs                             "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="11933" 		title="BUG: Ping > 10 ms fail                                        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1"       				title="SUPPORT: GIT core separation                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" id="11903"  		title="BUG: Val speaker test window does not close                            "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" id="11833" percentage-done="10"   	title="SUPPORT: Overdracht CS                                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" percentage-done="80" id=""      	title="LOG: Drive login/logout coded                                      "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="3" id="" percentage-done="5"     	title="Analysis: MULTI-ENV                             "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="0.5" id="11890"      	title="Analysis: Spec update home button                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id=""    	title="Analysis: GPS DR technical document                                        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="2" id="11961"         title="BUG: BestContract Used flag                                 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="3" id="9644"         title="BUG: Contact kaartlezer test                         "><slides><slide type="story-narrative"></slide></slides></story>    
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+					<li>Closer to planned capacity.</li>
+					<li>2 of the unfinished stories: fixed yesterday/today but not tested on QA setup.</li>
+                	<li>Switched to story points instead of man days.</li>
+                	<li>Problems with dependencies between stories.</li>
+                    <li>Releases both internal and to customer: point for improvements.</li>
+                    <li>Velocity increased from 0.32 to 0.37.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+           <slide title="Where did Batman time go?" type="story-batman">
+                <List>
+                	<li>Backlog bugfixes are planned!</li>
+                	<li>No planned days -> In story points</li>
+                	<li>Release to customer: Sanity tests at beginning of sprint took a long time.</li>
+                	<li>Ongoing support tasks: More then half of Stefaans capacity</li>
+                	<li>Development: RFID issue + Internal DB used in communication (1/3 persoon)</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Priority 50%: Ensure we have demo of real-time event (coded log).</li>
+                    <li>Priority 50%: Fix backlog bugs promissed for AVU R2, and as much as possible for ABO R1.</li>
+                    <li>Better tracking of some QA tasks (groomed, will be planned).</li>
+                    <li>Clarify tracking of analysis tasks.</li>
+                    <li>AVU Bugfix 2 release = feature freeze at the end of the sprint.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

@@ -11,9 +11,13 @@
         <sprint name="06">140321</sprint>
         <sprint name="07">140328</sprint>
         <sprint name="08">140404</sprint>
+        <sprint name="09">140411</sprint>
+        <sprint name="10">140423</sprint>
+        <sprint name="11">140506</sprint>
+        <sprint name="12">140514</sprint>
     </sprints>
     <releases>
-        <release id="01" name="Rampup" totalpoints="200">
+        <release id="01" name="Rampup" totalpoints="300">
             <sprintfolders>
                 <sprintfolder>140131</sprintfolder>
                 <sprintfolder>140207</sprintfolder>
@@ -25,6 +29,10 @@
                 <sprintfolder>140321</sprintfolder>
                 <sprintfolder>140328</sprintfolder>
                 <sprintfolder>140404</sprintfolder>
+                <sprintfolder>140411</sprintfolder>
+                <sprintfolder>140423</sprintfolder>
+                <sprintfolder>140506</sprintfolder>
+                <sprintfolder>140514</sprintfolder>
             </sprintfolders>
         </release>
     </releases>

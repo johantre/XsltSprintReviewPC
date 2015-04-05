@@ -25,6 +25,14 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+
+              <xs:element name="metrics" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="metric" type="metricType" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
                 
                 <xs:element name="stories" maxOccurs="1" minOccurs="1">
                     <xs:complexType>
@@ -70,6 +78,14 @@
         <xs:attribute name="relid" type="xs:string" use="optional" />
         <xs:attribute name="id" type="xs:string" use="optional" />    
     </xs:complexType>
+
+  <xs:complexType name="metricType">
+    <xs:attribute name="project" type="xs:string" use="required" />
+    <xs:attribute name="linesofcode" type="xs:int" use="optional" />
+    <xs:attribute name="unittests" type="xs:int" use="optional" />
+    <xs:attribute name="stepfiles" type="xs:int" use="optional" />
+    <xs:attribute name="complexity" type="xs:float" use="optional" />
+  </xs:complexType>
     
     <xs:simpleType name="folderType">
         <xs:restriction base="xs:string">
@@ -91,6 +107,7 @@
         <xs:restriction base="xs:string">
             <xs:enumeration value="model-context" />
             <xs:enumeration value="story-context" />
+            <xs:enumeration value="story-batman" />
             <xs:enumeration value="story-narrative" />
             <xs:enumeration value="story-demo" />
             <xs:enumeration value="story-timeline" />
@@ -98,6 +115,7 @@
             <xs:enumeration value="whats-next" />
             <xs:enumeration value="sprint-intro" />
             <xs:enumeration value="sprint-goal" />
+            <xs:enumeration value="story-code-metrics" />
         </xs:restriction>
     </xs:simpleType>
 
@@ -117,6 +135,7 @@
             <xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded" namespace="##any"/>
         </xs:sequence>
         <xs:attribute name="type" type="memberTypeType" />
+        <xs:attribute name="avatar" type="xs:anyURI" />
         <xs:attribute type="xs:decimal" name="capacity" use="required"/>
     </xs:complexType>
 

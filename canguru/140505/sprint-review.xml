@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140505" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
+    <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
+    <member type="hands-on" capacity="7.5" avatar="../avatars/laurens.jpg">Laurens Robben </member>
+    <member type="hands-on" capacity="7.0" avatar="../avatars/Maarten.jpg">Maarten Claes</member>
+    <member type="tester" capacity="4" avatar="../avatars/Carmen.jpg">Carmen Filippo</member>
+    <member type="tester" capacity="7.0" avatar="../avatars/Carol.jpg">Carol Guns</member>
+    <member type="tester" capacity="7.0" avatar="../avatars/Kim.jpg">Kim Van Weyenbergh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Saskia.jpg">Saskia Van Oldenborgh</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jan.jpg">Jan Van der Borght</member>
+    <member type="productowner" capacity="0.0" avatar="../avatars/Jetro.jpg">Jetro Wils</member>
+  </team>
+
+    <stories> <!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+<story title="DL-11917 TIMEBOX QA werk rondselen" state="story done" points="6" id="DL-11917"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11915 TIMEBOX review abonnement R3" state="story done" points="6" id="DL-11915"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11914 TIMEBOX DEV aanpassingen VVK" state="story done" points="2" id="DL-11914"><slides><slide type="story-narrative"></slide></slides></story>
+<story title="DL-11913 Doornemen laatste analyse VVK" state="story done" points="1" id="DL-11913"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11912 DEMO DL" state="story done" points="1.5" id="DL-11912"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11911 PREP DEMO DL" state="story done" points="3.5" id="DL-11911"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11838 [KB] TIMEBOX Manuele testen KB" state="story done" points="12" id="DL-11838"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11837 [VVK] Integratie nieuwe printer lib Into IT" state="story not-done" points="1.5" id="DL-11837" percentage-done="33"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-11225 [VVK] Implementeer Start interne personalisatiebatch" state="story done" points="6" id="DL-11225"><slides><slide type="story-narrative"></slide></slides></story>
+
+<story title="DL-10965 [VVK] Process impact on Quote" state="story done" points="3" id="DL-10965"><slides><slide type="story-narrative"></slide></slides></story>
+
+
+   </stories>        
+
+</sprintreview>

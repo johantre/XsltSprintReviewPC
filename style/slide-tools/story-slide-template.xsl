@@ -11,7 +11,10 @@
                     <h1 class="rotated"><xsl:text>MODEL</xsl:text></h1>
                 </xsl:when>
                 <xsl:when test="@type='story-context'">
-                    <h1 class="rotated" style="margin: 200px 500px -300px -600px;"><xsl:text>CONTEXT</xsl:text></h1>
+                    <h1 class="rotated" style="margin: 200px 500px -285px -600px;"><xsl:text>CONTEXT</xsl:text></h1>
+                </xsl:when>
+                <xsl:when test="@type='story-batman'">
+                    <h1 class="rotated" style="margin: 200px 500px -270px -600px;"><xsl:text>BATMAN</xsl:text></h1>
                 </xsl:when>
                 <xsl:when test="@type='story-demo'">
                     <h1 class="rotated"><xsl:text>DEMO</xsl:text></h1>
@@ -32,7 +35,7 @@
                     <h1 class="rotated"><xsl:text>GOAL</xsl:text></h1>
                 </xsl:when>
                 <xsl:otherwise>
-                    <h1 class="rotated"><xsl:text>STORY</xsl:text></h1>
+                    <h1 class="rotated" style="margin: 200px 500px -225px -600px;"><xsl:text>STORY</xsl:text></h1>
                 </xsl:otherwise>
             </xsl:choose>
             <header>

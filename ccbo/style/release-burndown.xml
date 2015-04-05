@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <releasedata>
     <sprints>
-        <sprint name="01">140317</sprint>
-        <sprint name="02">140324</sprint>
-        <sprint name="03">140331</sprint>
+        <sprint name="01">140724</sprint>
+        <sprint name="02">140807</sprint>
+        <sprint name="03">140825</sprint>
+        <sprint name="04">140916</sprint>
     </sprints>
     <releases><!--note the total points-->
-        <release id="01" name="FW 1.0" totalpoints="100">
+        <release id="01" name="Localization module" totalpoints="105">
             <sprintfolders>
-                <sprintfolder>140317</sprintfolder>
-                <sprintfolder>140324</sprintfolder>
-                <sprintfolder>140331</sprintfolder>
+                <sprintfolder>140724</sprintfolder>
+                <sprintfolder>140807</sprintfolder>
+                <sprintfolder>140825</sprintfolder>
+                <sprintfolder>140916</sprintfolder>
             </sprintfolders>
         </release>
     </releases>

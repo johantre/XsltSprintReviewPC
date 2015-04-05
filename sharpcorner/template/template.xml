@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="999999" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="0.0" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="0.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="0.0" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="0.0" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="0.0" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="scope" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li></li>
+          <li></li>
+          <li></li>
+          <br/>
+          <strong>ABO R3</strong>
+          <li></li>
+          <li></li>
+          <li></li>          
+        </List>
+      </slide>
+
+      <slide title="item 1" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <li></li>
+          <li></li>
+          <li></li>
+        </List>
+      </slide>
+      <slide title="item 2" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <li></li>
+          <li></li>
+          <li></li>
+        </List>
+      </slide>
+
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li></li>
+          <li></li>
+          <li></li>
+          <br/>
+          <strong>QA</strong>
+          <li></li>
+          <li></li>
+          <li></li>
+        </List>
+      </slide>
+      
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug" -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+  <!-- <story id="DL" relid="01" points="1" state="story done" title="some title"><slides><slide type="story-narrative"></slide></slides></story> -->
+	<stories>          						
+
+  </stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li></li>
+          <li></li>
+          <li></li>
+          <br/>
+          <strong>ABO R3</strong>
+          <li></li>
+          <li></li>
+          <li></li>                    
+        </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

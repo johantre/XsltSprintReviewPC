@@ -125,6 +125,20 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+    
+    <xsl:template name="listproductownercapacity" >
+        <xsl:param name="teamfolder" />
+        <xsl:param name="releasedoc" />
+        <xsl:param name="thissprintfolder" />
+        
+        <xsl:for-each select="$releasedoc//sprints/sprint">
+            <xsl:variable name="fetchedfolder" select="."/>
+            <xsl:variable name="sprintdoc" select="document(concat('../../', $teamfolder, '/', $fetchedfolder, '/sprint-review.xml'))" />
+            <xsl:if test="$fetchedfolder &lt;= $thissprintfolder">
+                <xsl:value-of select="sum($sprintdoc//team/member[@type='productowner']/@capacity)" />,
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>    
 
 
 </xsl:stylesheet>

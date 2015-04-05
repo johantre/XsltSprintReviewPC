@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="../style/slides.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
 
-<sprintreview folder="140320" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../style/sprint-review.xsd">
-  <team name="CanGurus">
+<sprintreview folder="140320" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+  <team name="CanGuru">
     <member type="scrummaster" capacity="0.0" avatar="../avatars/Bjorn.jpg">Bjorn Geuns</member>
     <member type="hands-on" capacity="8.0" avatar="../avatars/laurens.jpg">Laurens Robben </member>
     <member type="hands-on" capacity="5.0" avatar="../avatars/Joeri.jpg">Joeri Marcoen</member>

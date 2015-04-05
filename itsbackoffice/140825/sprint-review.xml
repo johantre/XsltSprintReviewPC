@@ -1,0 +1,58 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140825" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="4">Servaas Phlips </member>
+        <member type="hands-on" capacity="0">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="3">Gauthier Rossion </member>
+        <member type="tester" capacity="6">Annelies Ivens </member>
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="hands-on" capacity="5">Denis Bollinne</member>
+        <member type="hands-on" capacity="4">Thierry Habart</member>
+        <member type="hands-on" capacity="6.5">Marnix De Groote </member>
+    </team>    
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <b>Publish obstruction to dataset.</b>
+        </List>
+      </slide>
+    </slides>
+  </intro>
+
+  <metrics>
+    <metric project="ServiceSupportManager" linesofcode="35860" stepfiles="0" unittests="261" complexity="15.05560538" />
+    <metric project="PoiTracker" linesofcode="11378" stepfiles="0" unittests="175" complexity="13.33054" />
+    <metric project="Transmodel.Netex" linesofcode="38119" stepfiles="39" unittests="473" complexity="10.283767" />
+    <metric project="DetourManager" linesofcode="23530" stepfiles="16" unittests="616" complexity="9.214667" />
+    <metric project="JobOrchestration" linesofcode="3520" stepfiles="0" unittests="108" complexity="7.348148" />
+  </metrics>
+  
+    <!-- 14524 as relid for 2.9 -->
+    <stories>
+		<story id="MOBITS-1197" relid="14524" points="5" state="story not-done" percentage-done="95"  title="As an obstruction manager I want to define only detours that are geographically connected to the impacted journey patterns"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2149" relid="14524" points="5" state="story done" title="Selection List V2 aka Online Bus Grid View aka follow list"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2232" relid="14524" points="3" state="story done" title="Create unversioned entities for Transmodel.netex"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2234" points="3" state="story done" title="Workshop Transmodel.netex components"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1957" relid="14524" points="1" state="story uncommitted" title="Use (w)rap panel in poi detail screen"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2243" points="1" state="story done" title="Update netex import XSD"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2230" relid="14524" points="5" state="story done" title="Add new functionality from previous sprints to testplan"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1862" relid="14524" points="3" state="story done" title="Add new data layers to printout"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1863" relid="14524" points="3" state="story done" title="Send SSM message after edit obstruction by TCO - FF"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1798" relid="14524" points="3" state="story done" title="As a Planner I want the journey patterns topology in the dataset"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2110" relid="14524" points="5" state="story done" title="As a Planner I want a core Dataset from NeTEx with a Point and Point list"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2150" relid="14524" points="2" state="story done" title="Implement step file for TCO access obstruction module"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1206" relid="14524" points="5" state="story done" title=" As an obstruction manager I want to update the planning with the obstruction and detour planning"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1705" relid="14524" points="2" state="story done" title="As a Tco I want to edit the period of an obstruction"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2108" relid="14524" points="3" state="story done" title="As a Planner I want a core Dataset from NeTEx with a Header, schedule Info, Calendar, Block and Vehicle Journey"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-1353" relid="14524" points="3" state="story done" title="As an obstruction manager I want that the impacted lines will be based on the validity period of the obstruction"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

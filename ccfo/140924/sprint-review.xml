@@ -1,0 +1,63 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140924" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Julia Dubois</member>
+        <member type="hands-on"     capacity="10">Antoine Wils</member>
+        <member type="hands-on"     capacity="10">David Woods</member>
+        <member type="hands-on"     capacity="3">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="10">Maarten Casteels </member>
+        <member type="tester"       capacity="10">Koen Meus </member>
+        <member type="tester"       capacity="10">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team> 
+
+    <stories>
+        <story id="CCFO-657" relid="01" points="4" state="story done" percentage-done="100"  title="Select GPS positioning message"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-658" relid="01" points="3" state="story done" percentage-done="100"  title="Get GPS signal source"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-659" relid="01" points="1.5" state="story done" percentage-done="100"  title="perform graceful reset when almanac = current"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-716" relid="01" points="2" state="story done" percentage-done="100"  title="(Action  for AntoineWils) MPM::Split between deliverable and installation procedure scripts"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-823" relid="01" points="1.5" state="story done" percentage-done="100"  title="GPS:: Diagnose: implementation DR status"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-838" relid="01" points="1" state="story done" percentage-done="100"  title="GPS::Diagnose: update test :  GPS coordinates"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-750" relid="01" points="1.5" state="story done" percentage-done="100"  title="Create release with new OS  + SANITY test ( new stm32 bootloader to fix operational issue )"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-843" relid="01" points="3" state="story done" percentage-done="100"  title="MP :: record synchronization: CPU and memory spikes"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-783" relid="01" points="4" state="story done" percentage-done="100"  title="feature request : Add SW version to identity message"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-831" relid="01" points="1" state="story done" percentage-done="100"  title="HealthService::Unit test +  implement online/offline devices"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-788" relid="01" points="1" state="story done" percentage-done="100"  title="REST Spike :: MP: implement REST client"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-789" relid="01" points="1" state="story done" percentage-done="100"  title="REST Spike :: MP: implement communication job to retrieve the black list"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-799" relid="01" points="0.5" state="story done" percentage-done="100"  title="REST Spike :: MP: implement a Mapper from JSON to blacklist"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-666" relid="01" points="1" state="story done" percentage-done="100"  title="JavaFX::Test application framework::load and stack fxml files + resources"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-737" relid="01" points="1" state="story done" percentage-done="100"  title="R&amp;D::JavaFX::Decoratros, validators, notifications, dialogs"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-736" relid="01" points="1" state="story done" percentage-done="100"  title="R&amp;D::JavaFX::CSS update dynamically"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-668" relid="01" points="1" state="story done" percentage-done="100"  title="JavaFX::Test application framework::Create custom visual component"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-827" relid="01" points="0.5" state="story done" percentage-done="100"  title="Training::PKI"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-786" relid="01" points="4" state="story done" percentage-done="100"  title="Stress test upgrade OS with new STM32 boot code"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-844" relid="01" points="1" state="story not-done" percentage-done="0"  title="Prepare field test GPS-DR calibration"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-840" relid="01" points="2" state="story not-done" percentage-done="20"  title="Support - RTBINC"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-841" relid="01" points="1" state="story done" percentage-done="100"  title="preparation vision Event management"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+
+    <finish>
+        <slides>
+            <slide title="GPS: DR calibration" type="story-demo">
+                <list>
+                    <li>Introduction to the technical layers.</li>
+                    <li>Demo via instrumentation on.</li>
+                </list>
+            </slide>
+            <slide title="JavaFX " type="story-demo">
+                <list>
+                    <li>Introduction.</li>
+                    <li>Demo via unit tests.</li>
+                </list>
+            </slide>
+            <slide title="Retrieve Black List" type="story-demo">
+                <list>
+                    <li>Introduction.</li>
+                    <li>Demo via unit tests.</li>
+                </list>
+            </slide>
+        </slides>
+    </finish>
+
+</sprintreview>

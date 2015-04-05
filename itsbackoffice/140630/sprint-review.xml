@@ -1,0 +1,51 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140630" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="3">Christophe Lemoine </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="hands-on" capacity="7.5">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="5.5">Gauthier Rossion </member>
+        <member type="tester" capacity="5">Annelies Ivens </member>
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="hands-on" capacity="3">Denis Bollinne</member>
+        <member type="hands-on" capacity="6.5">Marnix De Groote </member>
+    </team>
+    
+    <metrics>
+        <metric project="ServiceSupportManager" linesofcode="35730" stepfiles="0" unittests="261" complexity="15.066" />
+        <metric project="PoiTracker" linesofcode="10978" stepfiles="0" unittests="151" complexity="13.6227" />
+        <metric project="Transmodel.Netex" linesofcode="29605" stepfiles="24" unittests="462" complexity="12.3833" />
+        <metric project="DetourManager" linesofcode="17625" stepfiles="2" unittests="382" complexity="8.89249" />
+        <metric project="JobOrchestration" linesofcode="2962" stepfiles="0" unittests="81" complexity="7.20614" />
+  </metrics>
+
+    <stories>
+		<story id="MOBITS-1333" relid="13907" points="2" state="story done" title="As a TCO I want to see different info in the outgoing messages overview "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1336" relid="13907" points="3" state="story done" title="As a TCO I want to have clearer tooltips in poi on all views"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1370" relid="13907" points="3" state="story done" title="As a TCO i want that the POITRACKER Tco screen is hooked up instead of the old POITRACKER"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1610" relid="13907" points="3" state="story done" title="As a TCO I want an advanced search on the map"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1848" relid="13907" points="2" state="story done" title="Testing installers on IW"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1872" relid="13907" points="3" state="story done" title="Finish Hastus Import Interface"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1894" relid="13907" points="1" state="story done" title="As a TCO I want to see the technical acknowledgement in the overview of outgoing messages"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1919" relid="13907" points="2" state="story done" title="Merge hastus import branch"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1924" relid="13907" points="3" state="story done" title="As a TCO I want to configure my search/map provider"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1925" relid="13907" points="3" state="story done" title="As a TCO I want to simply search for vehicles"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1926" relid="13907" points="2" state="story done" title="As a TCO I want to use the address search of openstreetmap"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1942" relid="13907" points="2" state="story done" title="Import new VDV files with coordinates into updated NeTEx"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1948" relid="13907" points="2" state="story done" title="Add appbar functionality from details to context menu for incoming and outgoing messages"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1950" relid="13907" points="2" state="story done" title="Set-up build chain MobiGuider 2.8"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1960" relid="13907" points="3" state="story done" title="As a TCO I want a better search"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1973" points="2" state="story done" title="Hastus import interface part X"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1974" relid="13907" points="5" state="story done" title="Add new functionality from sprint 17 and 18"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1975" points="3" state="story done" title="Business key monitored vehicle journey part 2"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1427" relid="" points="1" state="story uncommitted" title="As a TCO after I search for an address I want to see a pinpoint on that location"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1991" relid="" points="1" state="story uncommitted" title="Update stop icons in POI"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

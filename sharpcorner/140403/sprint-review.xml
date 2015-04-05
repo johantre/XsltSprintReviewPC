@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140403" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>	
+    
+		<member type="hands-on"     capacity="7" avatar="../avatars/alain.jpg">Alain Kinet</member>
+		<member type="hands-on"     capacity="6.5" avatar="../avatars/bert.jpg">Bert Houben</member>
+		<member type="hands-on"     capacity="7.5" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="tester"       capacity="5" avatar="../avatars/joris.jpg">Joris Debien</member>        
+	</team> 
+
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>   	
+		<!-- General -->
+		<story id="DL-11713" points="2" state="story uncommitted" title="[REV] Refactor van Automatisch verwerk bankoverschrijvingen"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11355" points="0.5" state="story uncommitted" title="[CARD] Implementeren nieuwe intoit library (datamodel)"><slides><slide type="story-narrative"></slide></slides></story>	
+					
+		<!-- AVU R1 -->
+		<story id="DL-11644" points="1" state="story done" relid="01" title="[SAM] Importeren vertalingen voor AVU R1"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<!-- AVU R2 -->		
+		<story id="DL-11649" points="1" state="story done" relid="02" title="[CARD] Vertalingen controleren en naar de branch mergen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11686" points="2" state="story done" relid="02" title="[CARD] Sortering op selecteer (om)doos"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11006" points="2" state="story done" relid="02" title="[CARD] Database migratie technical test"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11650" points="1" state="story done" relid="02" title="[SAM] Controle en evt. aanpassing van SamWorkstationService met custom LDAP-security"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11632" points="2" state="story done" relid="02" title="[SAM/JOB] Simple deployment of jobs"><slides><slide type="story-narrative"></slide></slides></story>
+			
+		<!-- ABO R3 -->
+		<story id="DL-11641" points="1" state="story done" relid="13" title="[SHOP] Opzetten teamcity builds"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-9740"  points="3" state="story done" relid="13" title="[SHOP/REV] LW FO - Start dienst op (aanmaken kasverslag)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11409" points="2" state="story done" relid="13" title="[SHOP/REV] Verwerk Directe Betaling - Uitwerken van de back-end services"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11486" points="2" state="story done" relid="13" title="[SHOP/REV] Verwerk Directe Betaling - Feature files"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11487" points="2" state="story done" relid="13" title="[SHOP/REV] Verwerk Directe Betaling - Implementatie feature files"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<!-- TODO -->	
+		<story id="DL-11448" points="2" state="story not-done" percentage-done="70"  title="[SharpCorner] Nieuwe test omgeving opzetten"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-11007" points="1" state="story not-done" percentage-done="90"  relid="02" title="[CARD] Database migratie functional test"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-11528" points="3" state="story not-done" percentage-done="90"  relid="13" title="[SHOP] Verwerk Directe Betaling - UI flow"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11672" points="1" state="story not-done" percentage-done="0"  relid="13" title="[SHOP/REV] LW FO - Start dienst op (aanmaken kasverslag) - Implementatie feature files"><slides><slide type="story-narrative"></slide></slides></story>    		
+		
+	</stories>
+	
+	<finish>
+		<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Opzetten build voor acceptatie testen inkomstenbeheer</li>
+			  <li>Testen LDAP security en integraties bij DL</li>
+			  <li>Documentatie datamodel kaartbeheer voor ODS (piloot)</li>
+			  <li>Overdracht klantenbeheer van CSC</li>			  			  			  
+			  <br/>
+			  <strong>QA</strong>
+			  <li>AVU R2 keuring</li>
+			  <li>AVU R2 installatie bij DL</li>
+			</List>
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

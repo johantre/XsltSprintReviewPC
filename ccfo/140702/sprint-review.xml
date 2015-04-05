@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140702" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <!-- put here the team members and their foreseen capacity for this sprint  -->
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Michallis Pashidis </member>
+        <member type="hands-on"     capacity="7">Antoine Wils</member>
+        <member type="hands-on"     capacity="10">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="7">Maarten Casteels </member>
+        <member type="tester"       capacity="8">Koen Meus </member>
+        <member type="tester"       capacity="10">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team>
+
+    <!-- possible states: 'story done', 'story done', 'story uncommitted', ...  Use assisted editor for xsd-based auto-completion  -->
+    <!-- state 'story done';  'percentage-done' = required.   Use assisted editor for xsd-based auto-completion  -->
+    <!-- pull this xml generated data out of Jira:  use http://172.31.28.56/SprintReport/ -->
+    <stories>
+        <story id="CCFO-484" relid="01" points="1    " state="story not-done" percentage-done="10"  title="MPM :: REST call: not possible to query on updateDate"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-551" relid="01" points="0.5  " state="story done"                           title="Monitoring::brainstorming"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-552" relid="01" points="2    " state="story not-done" percentage-done="10"  title="Monitoring::POC"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-495" relid="01" points="1    " state="story not-done" percentage-done="10"  title="Logging::Content delivery"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-494" relid="01" points="1.5  " state="story done"                           title="Logging::IPS"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-493" relid="01" points="1    " state="story done"                           title="Logging::Adress Service"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-492" relid="01" points="1.5  " state="story not-done" percentage-done="10"  title="Logging::Messaging"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        
+        <story id="CCFO-487" relid="01" points="1.5  " state="story done"                           title="Logging::Release management (***)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-488" relid="01" points="1.5  " state="story done"                           title="Logging::OS (***)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-489" relid="01" points="1.5  " state="story done"                           title="Logging::Communication Service"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-490" relid="01" points="1    " state="story uncommitted"                    title="Logging::Startup (***)"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-571" relid="01" points="1.5  " state="story uncommitted"                    title="Testlink testcase update"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-572" relid="01" points="0.25 " state="story uncommitted"                    title="TestLink testplan"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-573" relid="01" points="0.5  " state="story uncommitted"                    title="QA tester automated Test update"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-574" relid="01" points="0.6  " state="story uncommitted"                    title="QA testen Integratie Test + automation"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-532" relid="01" points="0.1  " state="story done"                           title="no code for Login: Gebruiker Remote Gebruiker aangemeld"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-531" relid="01" points="0.1  " state="story done"                           title="Login 0016 message not implemented : Status verandert van *State* naar *State*"><slides><slide type="story-narrative"></slide></slides></story>
+
+
+        <story id="CCFO-1"   relid="01" points="0.125" state="story not-done" percentage-done="10"  title="Switching between communication channels causes write IO to block for 15 minutes"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-154" relid="01" points="1    " state="story not-done" percentage-done="10"  title="MP::Content Delivery::EXT - Remote diagnose - Throughput test wijkt af van usecase (alle toestellen)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-235" relid="01" points="0.5  " state="story not-done" percentage-done="10"  title="Implementation of Roaming connection based on POC"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-252" relid="01" points="0.63" state="story done"                            title="MP :: Synchronization : scenario without MPM connection"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-412" relid="01" points="0.25" state="story uncommitted"                     title="RB synch:: test automation: DLT-21024"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-408" relid="01" points="0.25" state="story uncommitted"                     title="RB synch:: test automation: DLT-21029"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-409" relid="01" points="0.25" state="story uncommitted"                     title="RB synch:: test automation: DLT-21028"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-528" relid="01" points="1    " state="story uncommitted"                    title="MP:: Communication:: Upgrade and Test last http_all bundle"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-570" relid="01" points="0.4  " state="story uncommitted"                    title="IPS Housing Temperature"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-569" relid="01" points="0.4  " state="story uncommitted"                    title="IPS Battery Temperature"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-568" relid="01" points="0.125" state="story uncommitted"                    title="Creation R.C. for TechTeam"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        <story id="CCFO-576" relid="01" points="2    " state="story uncommitted"                    title="field visit Leuven : Training DL technicians"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-217" relid="01" points="0.25 " state="story uncommitted"                    title="Test and fix existing content delivery MP-MP"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-203" relid="01" points="1    " state="story uncommitted"                    title="MP::Communication::Core::Dev sanity check: test performance upon changes"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        
+        <story id="CCFO-544" relid="01" points="0    " state="bug"                                  title="CI request message received on VAL when DC is offline not send to MPM when DC becomes online"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-557" relid="01" points="0    " state="bug"                                  title="MP::M and L::Event1002-1001 : position ID logged twice"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-567" relid="01" points="0    " state="bug"                                  title="QATester : Implement TC generator"><slides><slide type="story-narrative"></slide></slides></story>
+
+    </stories>
+
+</sprintreview>

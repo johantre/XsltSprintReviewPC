@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140814" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="8">Dirk </member>
+        <member type="hands-on" capacity="1">Stijn</member>
+        <member type="hands-on" capacity="8">Ivo </member>
+        <member type="hands-on" capacity="9">Erik </member>
+        <member type="tester" capacity="9">Stefaan </member>
+        <member type="tester" capacity="8">Broes </member>
+        <member type="productowner" capacity="8">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Bugfix ABO R2 + ABO JUMP</h5>
+				<list>
+					<li>Prepare bugfix release</li>
+					<li>Continue card library integration</li>
+                    <li>Cleanup DROOLS rules + add extra rules</li>
+                    <li>Test automation</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories>
+    	<story id="" points="2" state="story not-done" percentage-done="50" title="Team: Teamcity releaseable projects"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12049" relid="15145" points="1" state="story uncommitted" title="BUG: EXT - DC800 - na aanmelden met technieker profiel is enkel de knop 'klavier' ter beschikking - de knoppen 'test and diagnose' en 'validator status' ontbreken"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12408" relid="14700" points="2" state="story uncommitted" title="BUG: No code for Remote Diagnose in systemlog + no real-time event"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12591" relid="15228" points="0.5" state="story done" title="BUG: mobibcard operations are accessible in instrumentation  (production release)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12694" relid="" points="0.5" state="story done" title="Drools: Operatormap"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12696" relid="" points="2" state="story done" title="Drools: Interchange"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12598" relid="" points="1" state="story not-done" percentage-done="0"  title="MP::Content Delivery::EXT - Remote diagnose - Throughput test wijkt af van usecase (alle toestellen)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12692" relid="" points="3" state="story done" title="Drools: Product definition"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12693" relid="" points="13" state="story not-done" percentage-done="80"  title="Cardlib: Identification and authorization"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12715" relid="" points="3" state="story not-done" percentage-done="50"  title="Cardlib: Connect card lib with validation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12720" relid="" points="2" state="story done"   title="Handover coupled tram"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12726" relid="" points="2" state="story not-done" percentage-done="0"  title="Support: DLIM + RTBINC checking"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12753" relid="" points="2" state="story done"   title="DROOLS: Event counters"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12718" relid="" points="1" state="story done" title="Handover Holiday Stijn"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12657" relid="" points="0.5" state="story done" title="Drools: Update anti-passback to 0"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12719" relid="" points="1" state="story done" title="Handover Card Creation"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12738" relid="" points="1" state="story uncommitted" title="Diagnose: wrong status 'onderbroken' in system log for 'Module informatie'"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12725" relid="" points="3" state="story done" title="TestFR: Add 10 module information calls to tests of remote diagnosis"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12717" relid="" points="2" state="story uncommitted" title="Drools: Clean up DRLs"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12723" relid="" points="2" state="story done" title="TestFR: Add 5 Remote Diagnose tests"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12722" relid="" points="1" state="story done" title="TestFR: Mobib Registration Database Support"><slides><slide type="story-narrative"></slide></slides></story>  
+    	<story id="" relid="" points="5" state="story uncommitted" title="Release bugfix ABO R2"><slides><slide type="story-narrative"></slide></slides></story>  
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>Card library: still some problems, mainly around polling and cardreaders. This caused a large part of the not done stories.</li>
+                    <li>We need to extend our tests to mock cards.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Cardlib: stability, focus on getting the correct input for Into-IT.</li>
+                    <li>Get testing strategy with carddumps in place. </li>
+                    <li>Expand logic in Drools.</li>
+                    <li>QA: Start creation of test basis for DM 4.2.2 and JUMP.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

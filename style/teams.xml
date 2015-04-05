@@ -3,9 +3,12 @@
 <teamfolders>
 	<teamfolder>canguru</teamfolder>
 	<teamfolder>itsbackoffice</teamfolder>
+    <teamfolder>besharp</teamfolder>
 	<teamfolder>sharpcorner</teamfolder>
 	<teamfolder>team-ba</teamfolder>
 	<teamfolder>techTeam</teamfolder>
+    <teamfolder>appteam</teamfolder>
+    <teamfolder>ccfo</teamfolder>
     <teamfolder>ccbo</teamfolder>
     <teamfolder>demo-slides</teamfolder>
 </teamfolders>

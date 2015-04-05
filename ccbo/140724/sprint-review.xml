@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140724" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="ccbo">
+		<member type="productowner" capacity="0">David Donabedian </member>
+		<member type="scrummaster" capacity="4">Fares Stita </member>
+		<member type="hands-on" capacity="9">Bert Houben </member>
+		<member type="hands-on" capacity="8">Hans Loquet </member>
+		<member type="hands-on" capacity="9">Steven Wyns </member>
+		<member type="hands-on" capacity="0">Wim Jans </member>
+	</team>
+
+	<stories>
+		<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+		<story id="CCBO-971" relid="01" points="5" state="story done" title="Create svn repository and DB for the localization module">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-962" relid="01" points="8" state="story not-done" percentage-done="90"  title="Visualize resource hierarchy">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-972" relid="01" points="5" state="story done" title="Resource files at development time spike">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-983" points="5" state="story not-done" percentage-done="50"  title="FxCop and StyleCop configuration Server and Client side">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+		<story id="CCBO-915" points="2" state="story done" title="Upgrade scaffolding tool file structure ">
+			<slides>
+				<slide type="story-narrative"/>
+			</slides>
+		</story>
+	</stories>        
+
+</sprintreview>

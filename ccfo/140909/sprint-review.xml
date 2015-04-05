@@ -1,0 +1,74 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140909" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="CCFO">
+        <member type="scrummaster"  capacity="5">David Woods</member>
+        <member type="hands-on"     capacity="10">Antoine Wils</member>
+        <member type="hands-on"     capacity="10">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="10">Maarten Casteels </member>
+        <member type="tester"       capacity="7">Koen Meus </member>
+        <member type="tester"       capacity="10">Cheung Kwan Wong </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team> 
+	
+	
+	
+    <stories>
+    
+        <!-- Meetings -->
+    	<story id="CCFO-89"  relid="01" points="1" state="story done" percentage-done="100"  title="MP :: Document startup patches "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-90"  relid="01" points="0.5" state="story done" percentage-done="100"  title="Release Management::watchdog:: definition"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-374" relid="01" points="0.5" state="story done" percentage-done="100"  title="meeting Release Management:: Reference releases"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-643" relid="01" points="0.5" state="story done" percentage-done="100"  title="MPM::Release management::Brainstorming"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-729" relid="01" points="1" state="story done" percentage-done="100"  title="meeting : Discuss approach for code review"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-720" relid="01" points="1.5" state="story done" percentage-done="100"  title="QAtester : Release management : Update configuration in  release package"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-756" relid="01" points="0.5" state="story not-done" percentage-done="0"  title="GPS Documentation (Calibration)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-659" relid="01" points="1" state="story not-done" percentage-done="30"  title="perform graceful reset when almanac = current"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-746" relid="01" points="0.5" state="story done" percentage-done="100"  title="GPS::Vehicle Type -> JSON"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-658" relid="01" points="2.5" state="story not-done" percentage-done="90"  title="Get GPS signal source"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-657" relid="01" points="3" state="story not-done" percentage-done="90"  title="Select GPS positioning message"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-749" relid="01" points="1" state="story done" percentage-done="100"  title="Implement Herkalibreer GPS"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- Logging - Monitoring -->
+        <story id="CCFO-577" relid="01" points="1" state="story done" percentage-done="100"  title="Expand functionality of log message 1401"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-716" relid="01" points="2" state="story not-done" percentage-done="80"  title="(Action @AntoineWils) MPM::Split between deliverable and installation procedure scripts"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-755" relid="01" points="1" state="story done" percentage-done="100"  title="Test merge ABO_R2 -> master"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-582" relid="01" points="0.625" state="story done" percentage-done="100"  title="MP :: logging event : Toestel wordt herstart door configuratie wijziging  "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-583" relid="01" points="0.625" state="story done" percentage-done="100"  title="MP :: logging event : Toestel wordt herstart door OS upgrade"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <!-- GPS -->
+        <story id="CCFO-742" relid="01" points="0.5" state="story done" percentage-done="100"  title="Implement DR calibration status (sending)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-655" relid="01" points="0.5" state="story done" percentage-done="100"  title="startGPSCalibration :: calibrate GPS based on vehicleType"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-656" relid="01" points="0.5" state="story done" percentage-done="100"  title="Implement DR calibration status (monitoring)"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-605" relid="01" points="1" state="story done" percentage-done="100"  title="Process open RTBINC issues"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-599" relid="01" points="0.5" state="story done" percentage-done="100"  title="(HIGH PRIO) - RSYNCH::   infinite loop downloading tasklist"><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="CCFO-422" relid="01" points="0.5" state="story done" percentage-done="100"  title="test::Aanpassingen Content-delivery Priorities"><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="CCFO-450" relid="01" points="3" state="story done" percentage-done="100"  title="Data storage::check implementation vs spec"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-581" relid="01" points="1" state="story done" percentage-done="100"  title="solution proposal Health Service event :  Geen connectie op postie ID Position ID na Minutes minuten"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-590" relid="01" points="1" state="story done" percentage-done="100"  title="EXT - wachtwoorden in cleartext - investigate"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        <!-- JavaFx -->
+		<story id="CCFO-728" relid="01" points="1" state="story done" percentage-done="100"  title="Install java8 on device and test application"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-665" relid="01" points="1" state="story done" percentage-done="100"  title="JavaFX::Investigate if simple application can be started using an OSGi environment."><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="CCFO-735" relid="01" points="1" state="story done" percentage-done="100"  title="RnD::JavaFX::OSGi-Resourcebundles"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-450" relid="01" points="3" state="story done" percentage-done="100"  title="Data storage::check implementation vs spec"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-770" relid="01" points="1" state="story done" percentage-done="100"  title="Datastorage :: check usage of datastorage API from inventoried modules"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-769" relid="01" points="0.5" state="story done" percentage-done="100"  title="Datastorage :: create inventory of modules using datastorage"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-768" relid="01" points="1.5" state="story done" percentage-done="100"  title="Datastorage :: check datastorage API against specifications"><slides><slide type="story-narrative"></slide></slides></story>
+
+		<story id="CCFO-744" relid="01" points="0.5" state="story done" percentage-done="100"  title="Blacklist :: REST Spike: follow-up"><slides><slide type="story-narrative"></slide></slides></story>
+
+        <story id="CCFO-590" relid="01" points="0.5" state="story done" percentage-done="100"  title="EXT - wachtwoorden in cleartext - investigate"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="CCFO-581" relid="01" points="0.5" state="story done" percentage-done="100"  title="EXT - wachtwoorden in cleartext - investigate"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

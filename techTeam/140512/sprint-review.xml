@@ -1,0 +1,83 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140512" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="7.5">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="5">Philip Van Hoof</member>
+        <member type="hands-on" capacity="8">Steven Wyns </member>
+        <member type="hands-on" capacity="8">Steven Robijns </member>
+        <member type="tester" capacity="8">Dorine Vos </member>
+        <member type="tester" capacity="8">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Frank Vanhoenshoven </member>
+    </team>  
+
+    <intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Support release hotfix V00 via AVU R1 (productieomgeving De Lijn)</li>
+			  <li>Oplossen van problemen met omgevingen (builds, config, etc)</li>
+			  <br/>
+			  <strong>QA</strong>
+			  <li>Problemen met omgevingen</li>
+			  <li>Volume testen Config en Release Mgt</li>
+			  <li>Support release hotfix V00 via AVU R1 (dryrun scenario)</li>
+			  <li>Config en Release Mgt bug fix validaties</li>
+			  <li>Feature files Tarievenmodule</li>
+			  <li>Exploratory testing Tarievenmodule</li>
+			  <li>Review automatische testen Tarievenmodule</li>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>Unit</strong>
+	          <li>Nuget server setup</li>
+	          <li>Nuspec files Framework</li>
+	          <li>Nuget documentatie</li>
+	          <br/>
+	          <strong>AVU R2</strong>
+	          <li>Release en Config Mgt: bugfixing</li>
+	          <li>Release Mgt: saga optimalisaties</li>
+	          <li>Analyse ODP.Net voor Config en Release Mgt</li>
+			  <br/>
+			  <strong>ABO R3</strong>          
+	          <li>Tarievenmodule code review</li>
+	          <li>Automatische testen up and running op nightly build</li>
+	          <li>Script voor "dummy data"</li>
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+    </intro>
+    
+    <stories>
+			
+		<story id="DL-12082" relid="01" points="1" state="story done" percentage-done="0"  title="[OPS] - Build transfer CM en RM"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12083" relid="01" points="2" state="story not-done" percentage-done="50"  title="[RM] - Saga rework publish/retract/remove"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12084" relid="01" points="0.5" state="story done" percentage-done="0"  title="[RM] - Toasts vertaalbaar maken"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12085" relid="04" points="1" state="story done" percentage-done="0"  title="[TM] - Tarievenmodule code review"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12086" relid="01" points="1" state="story done" percentage-done="0"  title="[OPS] - Switch naar ODP.Net (assessment op CM en RM)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12087" relid="05" points="0.5" state="story done" percentage-done="0"  title="[OPS] - Nuget server setup"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12088" relid="05" points="2.5" state="story done" percentage-done="0"  title="[OPS] - Nuget Nuspec files"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12089" relid="05" points="0.5" state="story done" percentage-done="0"  title="[OPS] - Nuget documentatie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12090" relid="02" points="1" state="story done" percentage-done="0"  title="[OPS] - Handleiding ABO R1"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12091" relid="04" points="1" state="story done" percentage-done="0"  title="[UNIT] - Generatietool balsamiq mock-ups"><slides><slide type="story-narrative"></slide></slides></story>			
+		<story id="DL-12091" relid="02" points="8" state="story done" percentage-done="0"  title="[RM] - Bugfixing (timeboxed)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11873" relid="01" points="0" state="bug" percentage-done="100"  title="EXT - SAM Item: veld serienummer sam is niet hexadecimaal "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12055" relid="01" points="0" state="bug" percentage-done="100"  title="Publicatietijd niet meer correct getoond na terugtrekken en verwijderen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12099" relid="01" points="0" state="bug" percentage-done="100"  title="Buiten gebruik: MPadded mag niet uitgestuurd worden van oude CI nadat toestel terug in gebruik komt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12100" relid="01" points="0" state="bug" percentage-done="100"  title="Verwijderen release: verwijderopdracht alleen sturen indien alle algemene statussen = Verwijdering aangevraagd"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11816" relid="01" points="0" state="bug" percentage-done="100"  title="Update state model: flow buiten gebruik => beheer gestopt"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11982" relid="01" points="0" state="bug" percentage-done="100"  title="Geen session expired bericht in schermen release groepen"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12131" relid="01" points="0" state="bug" percentage-done="100"  title="Detail release: Aantal MPs waarvoor release data is verwijderd is niet zichtbaar"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11848" relid="01" points="0" state="bug" percentage-done="100"  title="Minimale versie : Kwaliteitsparameter nog niet by default op UNKNOWN"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12034" relid="01" points="0" state="bug" percentage-done="100"  title="RG: eerste letter geselecteerde items in zoekresultaten niet duidelijk zichtbaar"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11873" relid="01" points="0" state="bug" percentage-done="100"  title="EXT - SAM Item: veld serienummer sam is niet hexadecimaal"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-11959" relid="01" points="0" state="bug" percentage-done="100"  title="Indien beschrijvingd RD vreemde chars bevat > technische fout bij filteren MP op deze beschrijving"><slides><slide type="story-narrative"></slide></slides></story>
+
+   
+    </stories>
+
+</sprintreview>

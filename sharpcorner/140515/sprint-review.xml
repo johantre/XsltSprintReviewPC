@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140515" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="5.5" avatar="../avatars/alain.jpg">Alain Kinet</member>
+		<member type="hands-on"     capacity="3.0" avatar="../avatars/bert.jpg">Bert Houben</member>
+		<member type="hands-on"     capacity="3.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="3.0" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="5.5" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>Klantenbeheer ABO R1</strong>
+          <li>Referentiedata uitklaren</li>
+		  <li>Import rechthebbende uitklaren</li>
+		  <li>Bugfixing</li>
+		  <li>Nazorg Vrijverkeerkaarten</li>  
+        </List>
+      </slide>
+      
+	  <slide title="bugfixing klantenbeheer" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <li>26 bugs in totaal</li>
+          <li>10 fixed in vorige sprint</li>
+          <li>16 planned</li>
+          <li>13 fixed</li>          		            
+		</List>
+      </slide>
+      
+	  <slide title="nazorg vrijverkeerkaarten" type="story-context">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>Done</strong>
+          <li>Landingspagina 'toon account info'</li>
+		  <li>Deactiveer kaart</li>
+          <li>Trek kaart in</li>
+		  <li>Reconstrueer kaart (out of scope)</li>
+          <br/>
+          <strong>To Do</strong>          
+          <li>Print kaart</li>
+		  <li>Vervang kaart</li>                  
+        </List>
+      </slide>
+	  
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>TeamCity deploys naar eigen test omgeving (3d)</li>          
+          <li>AVU-31: Import rechthebbende uitklaren (1d)</li>
+          <li>Configuratie tile verwijderd (0,5d)</li>
+          <br/>
+          <strong>QA</strong>
+          <li>Oplijsten verschillen in SNM klantenbeheer (0,5d) => 7 bugs</li>
+		  <li>Support DLIM tickets kaartbeheer (1d)</li>
+        </List>
+      </slide>
+	  
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug"  -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+	<stories>  
+		<!-- Committed = 22 Story Points -->
+		
+		<!-- Bugfixing  AVU R2 - Sam and Card Management -->
+		<story id="DL-11987" relid="02" points="1" state="story done" title="[CARD] Publish new events"><slides><slide type="story-narrative"></slide></slides></story>							
+		<story id="DL-12029" relid="02" points="0.5" state="story uncommitted" title="EXT - SAM workstation service: default instelling verwijst naar SpringCard ipv OMNIKEY"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12110" relid="02" points="0.5" state="story uncommitted" title="EXT - Zoek sam: nieuw verpakkingsnummer veld heeft geen maximum waarde en kan buiten het veld vallen"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12026" relid="02" points="0.5" state="story uncommitted" percentage-done="50"  title="EXT - Selecteer (om)dozen: Eenzelfde (om)doos komt meerdere malen voor bij resultaten (d.m.v. verschillende SAM serienummers)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12081" relid="02" points="0.5" state="story uncommitted" percentage-done="50"  title="EXT - Ontvang kaarten: Doos ontvangen gevolgd door bijhorende Omdoos ontvangen zorgt voor problemen "><slides><slide type="story-narrative"></slide></slides></story>    	
+		
+		<!-- New Features ABO R1 - VVK - Customer Management -->
+		<story id="DL-11557" relid="11" points="2.0" state="story done" title="[VVK] Deactiveer kaart - implementatie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11862" relid="11" points="2.0" state="story done" title="[VVK] Trek kaart in - implementatie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11559" relid="11" points="3.0" state="story done" title="[VVK] Reconstrueer kaart - implementatie"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-11569" relid="11" points="0.5" state="story done" title="[VVK] Deactiveer kaart - implementeer UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11863" relid="11" points="0.5" state="story done" title="[VVK] Trek kaart in - implementeer UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11867" relid="11" points="0.5" state="story done" title="[VVK] Reconstrueer kaart - implementeer UIFF"><slides><slide type="story-narrative"></slide></slides></story>
+		
+		<story id="DL-12016" relid="11" points="0.5" state="story done" title="[VVK] Print kaart - Technische oplossing uitklaren"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11175" relid="11" points="0.5" state="story uncommitted" title="[VVK] Reconstrueer kaart - FF"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12033" relid="11" points="0.5" state="story uncommitted" title="[CUST] Prepare release (msi support for Steven)"><slides><slide type="story-narrative"></slide></slides></story>    	    	  	    	
+		
+		<!-- Bugfixing  ABO R1 - VVK - Customer Management -->
+		<story id="DL-11633" relid="11" points="0.5" state="story done" title="[CUST] Geboortedatum wordt niet getoond in resultaten overzicht"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11663" relid="11" points="0.5" state="story done" title="[CUST] de juiste versie van Klantenbeheer wordt niet getoond in de info"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11666" relid="11" points="0.5" state="story done" title="[CUST] zoek klant, zoekresultaat toont een apart veld voor postcode en gemeente"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11708" relid="11" points="0.5" state="story done" title="[CUST] zoeken op LeeftijdVan groter of gelijk aan leeftijdTotEnMet toont twee keer dezelfde foutmelding"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11773" relid="11" points="0.5" state="story done" title="[CUST] knoppen op appbar niet OK"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11775" relid="11" points="0.5" state="story done" title="[CUST] data in DB wordt gedeeltelijk getoond in zoek medewerker exploitant"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11852" relid="11" points="0.5" state="story done" title="[CUST] Geen historiek beschikbaar in DB voor als foto wordt toegevoegd of gewijzigd"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11853" relid="11" points="0.5" state="story done" title="[CUST] Toon gezinsleden, geldig tot en met wordt niet getoond in toegekende persoonprofielen"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11898" relid="11" points="0.5" state="story done" title="[CUST] wis zoekcriteria werkt niet op veld 'personeelsnummer'"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11899" relid="11" points="0.5" state="story done" title="[CUST] Zoeken op personeelsnr NIET ok"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11901" relid="11" points="0.5" state="story done" title="[CUST] zoek klant, radiobuttons soort klant worden niet hersteld naar default waarde"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11918" relid="11" points="0.5" state="story done" title="[CUST] Vertaling drowdown niet OK"><slides><slide type="story-narrative"></slide></slides></story>		
+				
+		<story id="DL-11671" relid="11" points="0.5" state="story not-done" percentage-done="50"  title="[CUST] Gebruik persoonprofiel leefloner ipv leefloon"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11776" relid="11" points="0.5" state="story not-done" percentage-done="50"  title="[CUST] persoonprofielen default sortering klopt niet"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11857" relid="11" points="0.5" state="story not-done" percentage-done="50"  title="[CUST] Sorteer gezinsleden, sorteerwijze oplopend aflopend ontbreekt in de flyout"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11945" relid="11" points="0.5" state="story not-done" percentage-done="50"  title="[CUST] Er ontbreken FamilyMemberTypes in de XSD"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12017" relid="11" points="2.0" state="story not-done" percentage-done="50"  title="[CUST] Referentie data valideren"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12019" relid="11" points="2.0" state="story not-done" percentage-done="50"  title="[CUST] Sortering en filtering moet server side gebeuren"><slides><slide type="story-narrative"></slide></slides></story>				
+	
+	</stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>ABO R1</strong>
+			  <li>Import rechthebbende (integratie BizTalk)</li>
+			  <li>Herwerken zoekschermen</li>
+			  <li>Nazorg Vrijverkeerkaarten</li>
+			  <li>Afwerken integratie test omgeving</li>
+			  <br/>
+			  <strong>AVU R2</strong>
+			  <li>Tickets Kaartbeheer</li>
+			</List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>

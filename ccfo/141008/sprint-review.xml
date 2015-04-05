@@ -1,0 +1,52 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="141008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="CCFO">
+        <member type="scrummaster"  capacity="0">Julia Dubois</member>
+        <member type="hands-on"     capacity="0">Antoine Wils</member>
+        <member type="hands-on"     capacity="5.6">David Woods</member>
+        <member type="hands-on"     capacity="4.8">Maarten Carbonez </member>
+        <member type="hands-on"     capacity="6.4">Maarten Casteels </member>
+        <member type="tester"       capacity="3.5">Koen Meus </member>
+        <member type="tester"       capacity="6.4">Cheung Kwan Wong </member>
+        <member type="tester"       capacity="1.5">Michallis Pashidis </member>
+        <member type="productowner" capacity="0">Koen Meus </member>
+    </team> 
+
+    <stories> <!-- NOTE: 'percentage-done' tag is redundant when story is set to 'story-done' -->
+        <story id="" relid="01" points="0"  state="story not-done" percentage-done="0"  title=""><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+    <finish>
+        <slides>
+            <slide title="">
+                    <list>
+                        <li></li>
+                        <li></li>
+                    </list>
+            </slide>
+            <slide title="">
+                    <list>
+                        <li></li>
+                        <li></li>
+                    </list>
+            </slide>
+            <slide title="">
+                    <list>
+                        <li></li>
+                    </list>
+            </slide>
+            <slide title="">
+                    <list>
+                        <li></li>
+                        <li></li>
+                    </list>
+            </slide>
+            <slide title="">
+                    <list>
+                        <li></li>
+                    </list>
+            </slide>
+        </slides>
+    </finish>
+
+</sprintreview>

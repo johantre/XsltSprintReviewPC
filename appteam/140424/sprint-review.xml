@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140424" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="8">Ivo </member>
+        <member type="hands-on" capacity="8">Dirk </member>
+        <member type="hands-on" capacity="8">Stijn</member>
+        <member type="tester" capacity="8">Stefaan </member>
+        <member type="tester" capacity="8">Broes </member>
+        <member type="hands-on" capacity="8">Erik </member>
+        <member type="hands-on" capacity="5">Frank </member>
+        <member type="productowner" capacity="4.5">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: Bugfix + continue experience DROOLD</h5>
+				<list>
+					<li>First 2-week sprint.</li>
+					<li>Getting to know the ceremonies.</li>
+					<li>Getting started with the board.</li>
+					<li>For most of us also getting started with a new subject: validation and validation rules.</li>
+					<li>Getting started with DROOLS as team.</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampercents ! -->
+        <story state="story done" points="1" id="11847" 		title="change max value                                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="10077" 		title="Write local time in mobib card                                 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="11798" 		title="validation logic aVU bR2                                       "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1" id="11811" 		title="Sim not present                                                "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="3" id="11114" percentage-done="50" 		title="analyse vehicle type configuration                             "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="11849" 		title="fixing prob RFID reader                                        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3"       				title="Sync Fix Bug                                                   "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="3" id="11885"  		title="Drools: integrate rules in platform                            "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2.5" id="11833" percentage-done="95"   	title="Drools V00 tests                                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="11888"      	title="Make tests smarter format                                      "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" id="11889" percentage-done="70"     	title="Drools: Card integration (V00 lib)                             "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="2" id="11890"      	title="Transaction (Reg) > files (mock)                               "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story done" points="1.5" id="11891"    	title="Analysys Card test tool                                        "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="1" id="11892" percentage-done="70"       	title="Drools: Jump season pass  (simple) single contr.No Inter No Acc"><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="2" id="11893" percentage-done="70"        title="Drools: Jump Sliding season (simple)                           "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story not-done" points="3" id="11894" percentage-done="20"        title="GitFlow on val Repo                                            "><slides><slide type="story-narrative"></slide></slides></story>
+    <!--<story state="story uncommitted" points="1" id="11895"         title="Drools: anti-passback (simple)                                 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="2" id="11896"         title="Drools: Jump Journey counter (simple)                          "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="2" id="11897"         title="Cardlib : (Spike)                                              "><slides><slide type="story-narrative"></slide></slides></story>
+        <story state="story uncommitted" points="1" id="11886"  		title="Cardlib Jump Dump-to-Json in Val. App                          "><slides><slide type="story-narrative"></slide></slides></story>
+    -->
+    </stories>                                                                           
+
+    <finish>
+        <slides>
+	
+            <slide title="What did we learn?" type="story-batman">
+                <List>
+                	<li>Commited to to much in this sprint, velocity per available day went down slightly. Velocity with availability of 57 is about 19.</li>
+                	<li>Problems with dependencies between stories.</li>
+                    <li>Unavailability of Frank.</li>
+                    <li>Knowledge transfer (ccfo starting) takes a lot more time.</li>
+                    <li>Time boxed task: to broad acceptance criteria, making impossible to finish task within timebox.</li>
+                    <li>Making "official build" takes a lot more time then expected -> Room for improvement.</li>
+                    <li>Discovered better way to test DROOLS allong the way -> Task took a lot longer.</li>
+                    <li>RFID bug -> Task took a lot longer.</li>
+                    <li>We have to keep better track of slipage.</li>
+                    <li>QA-FO task package is very broad, thus difficult to plan.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+           <slide title="Where did Batman time go?" type="story-batman">
+                <List>
+                	<li>Planned capacity for batman: 15</li>
+                	<li>Support: +- Stefaans full capacity (8)</li>
+                	<li>Release: Planned insufficient time for this. Capacity on last days (4).</li>
+                    <li>Knowledge transer (other team, git) (5)</li>
+                    <li>Making and testing official build (2)</li>
+                    <li>Frank less available then planned (2)</li>
+                    <li>Merging older fixes + fixing other bugs because blocked (3)</li>
+                    <li>Actual capacity for batman: 24 </li>
+                    <li>Conclusion: available 57, achieved 19, batman 24, unfinished tasks + slipage 15 </li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Priority switch: logging and monitoring more important.</li>
+                    <li>Priority switch: fixing (external) bugs more important.</li>
+                    <li>DROOLS and cardlib on hold.</li>
+                    <li>50/50 bugfix and logging.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

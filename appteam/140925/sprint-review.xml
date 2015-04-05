@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140925" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="9">Dirk </member>
+        <member type="hands-on" capacity="9">Stijn</member>
+        <member type="hands-on" capacity="9">Ivo </member>
+        <member type="hands-on" capacity="8">Erik </member>
+        <member type="tester" capacity="6">Stefaan </member>
+        <member type="tester" capacity="9">Broes </member>
+        <member type="productowner" capacity="9">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: ABO JUMP</h5>
+				<list>
+					<li>Continue card library integration.</li>
+                    <li>Focus on testing with mocked card and carddump tool.</li>
+                    <li>Focus on finalising DROOLS rules.</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+     <stories>
+		<story id="DL-5141" relid="" points="0" state="story done" title="Opstarten validator: rechtse groene led brandt niet"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11893" relid="" points="1" state="story done" title="Drools: Jump Sliding season"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12715" relid="" points="5" state="story done" title="Cardlib: Connect card lib with validation"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12855" relid="" points="1" state="story done" title="Cardlib: Fix and test secure sessions "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12885" relid="" points="2" state="story done" title="Cardlib: make validation work with all required version of calypso"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12886" relid="" points="2" state="story done" title="DROOLS: add support for location based restrictions"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12891" relid="" points="1" state="story done" title="Drools: Jump Sliding Season Counter"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12892" relid="" points="0.5" state="story done" title="Drools: Extension Interchange"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12893" relid="" points="0.5" state="story done" title="Drools: Prio -&gt; Validity Date"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12903" relid="" points="1" state="story done" title="Val: Connect with Product Definition"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12905" relid="" points="2" state="story done" title="Cardlib: Mapper 1 V"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11892" relid="" points="0.5" state="story done" title="Drools: Jump season pass"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11896" relid="" points="1" state="story not-done" percentage-done="90"  title="Drools: Jump Journey counter"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12786" relid="" points="2" state="story not-done" percentage-done="80"  title="Test Executer mocked cards"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12889" relid="" points="3" state="story not-done" percentage-done="80"  title="Cardlib: Modification"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12890" relid="" points="2" state="story not-done" percentage-done="0"  title="Handover (info)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12904" relid="" points="2" state="story not-done" percentage-done="20"  title="Val: Trans To Be"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12906" relid="" points="3" state="story done" title="Testtool: Dump Card To Json"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-12907" relid="" points="5" state="story not-done" percentage-done="0"  title="Testtool: Load Dump On Card"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12784" relid="" points="0.5" state="story uncommitted" title="Cardlib: Dumptool CI build and documentation"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12926" relid="" points="0.5" state="story uncommitted" title="Diagnose :contactless cardreader test instability"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12911" relid="" points="2" state="story uncommitted" title="Test Case design JUMP"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12957" relid="" points="5" state="story uncommitted" title="Release candidate testing"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="DL-12946" relid="" points="4" state="story uncommitted" title="Still possible to validate when in Diagnose state + leds not red"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>ABO R2 bugfix delivery came in between (including bugfixes), total overhead of 11 man days.</li>
+                    <li>DROOLS rules are 99% covered, now focus on testing them.</li>
+                    <li>Card library: Big progress on validation. Basic flow in place. Now filling the remaining gaps. </li>
+                    <li>Card editor tool + test with mocked cards: still much slower then anticipated. Dump works, loading not yet.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Fill the gaps in the validation flow. </li>
+                    <li>Make tests work with mocked cards work, support loading cards.</li>
+                    <li>Integrate the cardlib in all applications (diagnosis, SAM management).</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

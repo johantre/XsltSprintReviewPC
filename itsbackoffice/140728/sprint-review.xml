@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Windows-1252" ?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140728" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="scrummaster" capacity="3">Denis Bollinne</member>
+        <member type="hands-on" capacity="0">Gauthier Rossion </member>
+        <member type="hands-on" capacity="0">Marnix De Groote </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="hands-on" capacity="0">Thierry Habart </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="4">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="8">Blaise Braye </member>
+        <member type="tester" capacity="2.5">Annelies Ivens </member>
+        <member type="tester" capacity="6">Parisa Pejham </member>
+        <member type="tester" capacity="0">Kim Van Weyenbergh</member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="assisted" capacity="0">Johan Tre</member>
+        <member type="assisted" capacity="0">Christophe Lemoine</member>
+    </team> 
+  
+    <metrics>
+        <metric project="ServiceSupportManager" linesofcode="35730" stepfiles="0" unittests="261" complexity="15.066" />
+        <metric project="PoiTracker" linesofcode="10978" stepfiles="0" unittests="151" complexity="13.6227" />
+        <metric project="Transmodel.Netex" linesofcode="29605" stepfiles="24" unittests="462" complexity="12.3833" />
+        <metric project="DetourManager" linesofcode="17625" stepfiles="2" unittests="382" complexity="8.89249" />
+        <metric project="JobOrchestration" linesofcode="2962" stepfiles="0" unittests="81" complexity="7.20614" />
+	</metrics>
+
+   <stories>
+		<story id="MOBITS-1189" relid="14524" points="3" state="story done" title="As an obstruction manager I want to select an impacted journey pattern via a treeview"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1608" relid="14524" points="2" state="story done" title="As a Planner I want to create a core Dataset from NeTEx"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1703" relid="14524" points="3" state="story done" title="As a Tco I want to access the obstruction module"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1881" relid="14524" points="2" state="story done" title="Polish tooltip journey pattern on the map in obstruction and detours"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1943" relid="14524" points="1" state="story done" title="Spike - As an installer I want a better installer"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1962" relid="14524" points="1" state="story done" title="In Queries replace Any() or Count &lt; 0 with ReturnOnEmptyList"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2029" relid="14524" points="3" state="story done" title="Testcases to update"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2084" relid="14524" points="1" state="story done" title="Obstruction manager view model has too many responsibilities"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2094" relid="14524" points="1" state="story done" title="Validate latest VDV452 export"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2095" relid="14524" points="1" state="story done" title="Reduce complexity of GeocodeSearchViewModel"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2097" relid="14524" points="1" state="story done" title="Split up Its.shared in seperate dlls"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2109" relid="14524" points="2" state="story done" title="As a Planner I want to create a UI for the datasetcreator"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1873" relid="14524" points="2" state="story not-done" percentage-done="90"  title="Polish highlighted journey pattern on the maps of obstruction and detours"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1889" relid="14524" points="2" state="story not-done" percentage-done="65"  title="Delete mappings after delete tmp stop - FF"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2108" relid="14524" points="3" state="story not-done" percentage-done="70"  title="As a Planner I want a core Dataset from NeTEx with a Header, schedule Info, Calendar, Block and Vehicle Journey"><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+</sprintreview>

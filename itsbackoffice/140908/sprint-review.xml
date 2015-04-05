@@ -1,0 +1,72 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140908" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="ITSbackoffice">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="4">Blaise Braye </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="6.5">Gauthier Rossion </member>
+        <member type="tester" capacity="6">Annelies Ivens </member>
+        <member type="tester" capacity="5">Parisa Pejham </member>
+        <member type="hands-on" capacity="8">Denis Bollinne</member>
+        <member type="hands-on" capacity="5.5">Thierry Habart</member>
+        <member type="hands-on" capacity="3">Marnix De Groote </member>
+    </team>
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <b>Load dataset to boardcomputer.</b>
+        </List>
+      </slide>
+    </slides>
+  </intro>
+
+  <metrics>
+    <metric project="ServiceSupportManager" linesofcode="36034" stepfiles="0" unittests="263" complexity="15.0921288" />
+    <metric project="PoiTracker" linesofcode="11826" stepfiles="0" unittests="172" complexity="13.25099602" />
+    <metric project="Transmodel.Netex" linesofcode="37243" stepfiles="66" unittests="524" complexity="9.812288613" />
+    <metric project="DetourManager" linesofcode="24005" stepfiles="16" unittests="625" complexity="9.1672890" />
+    <metric project="JobOrchestration" linesofcode="3520" stepfiles="0" unittests="108" complexity="7.348148" />
+  </metrics>
+  
+    <stories>
+		<story id="MOBITS-586" relid="14524" points="2" state="story done" title="As an Obstruction Manager I want to know who created and updated the obstruction and when this was done"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1197" relid="14524" points="5" state="story done" title="As an obstruction manager I want to define only detours that are geographically connected to the impacted journey patterns"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1368" relid="14524" points="2" state="story done" title="As a TCO I want to see the stops as a layer on the POITRACKER Tco map"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1706" relid="14524" points="5" state="story done" title="As a TCO I want to see the obstructions and detours as a layer in poitracker"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-1800" relid="14524" points="3" state="story done" title="As a planner I want the stopzone's inside the dataset"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2102" relid="14524" points="5" state="story done" title="As a planner I want the automatically generated stopareas inside the dataset"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2116" relid="14524" points="3" state="story done" title="As a Planner I want a core Dataset from NeTEx with Vehicle Display Code"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2157" relid="14524" points="2" state="story done" title="As a TCO I want to polish the timetableview"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2239" relid="14524" points="1" state="story done" title="As a TCO I want a show timetableview in the poi context menu"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2240" relid="14524" points="1" state="story done" title="As a TCO I want a show lineview in the poi context menu"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2251" points="1" state="story done" title="workshop feature file"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2273" relid="14524" points="2" state="story done" title="As an Obstruction Manager I want a good fixed style for my detour "><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2360" relid="14524" points="3" state="story done" title="As an obstruction manager I want an explicit layer for all data in the map control"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2377" relid="14524" points="5" state="story done" title="As a planner I want the merge activation points V2"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2383" points="5" state="story done" title="Add usability testcases (part I)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="MOBITS-2341" points="5" state="story not-done" percentage-done="50" title="As a client for the AVL service I want Train Messsages with context"><slides><slide type="story-narrative"></slide></slides></story>
+    	<story id="MOBITS-2409" points="2" state="story uncommitted" title=""><slides><slide type="story-narrative"></slide></slides></story>
+   
+    </stories>
+
+  <finish>
+    <slides>
+      <slide title="End of the line" type="whats-next">
+        <p>
+          This team is now defunct. The team has been split up in 2 teams
+        </p>
+        <ul>
+          <li>BeSharps</li>
+          <li>Wasabi</li>
+        </ul>
+      </slide>
+    </slides>
+  </finish>
+
+</sprintreview>

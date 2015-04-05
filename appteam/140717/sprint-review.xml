@@ -1,0 +1,82 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140717" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="AppTeam">
+        <member type="scrummaster" capacity="0.0">Nelis Boucke</member>
+        <member type="hands-on" capacity="6">Dirk </member>
+        <member type="hands-on" capacity="7">Stijn</member>
+        <member type="hands-on" capacity="9">Ivo </member>
+        <member type="hands-on" capacity="9">Erik </member>
+        <member type="tester" capacity="9">Stefaan </member>
+        <member type="tester" capacity="5">Broes </member>
+        <member type="productowner" capacity="8">Lieven </member>
+    </team>
+
+	<intro>
+		<slides>
+			<slide title="Context" type="sprint-intro">
+				<h5>Sprintgoal: ABO R2 bugfixing and jump start ABO JUMP</h5>
+				<list>
+					<li>Fix bugs found in ABO R2</li>
+					<li>Branch ABO R2</li>
+                    <li>Start integrating the new Card Library</li>
+                    <li>Create new data model for Drools</li>
+                    <li>Create screens for info button</li>
+				</list>
+			</slide>
+		</slides>
+	</intro>
+
+    <stories> <!-- attention for quotes and ampersands ! -->
+        <story id="" points="3" state="story not-done" percentage-done="50" title="Use new Card Library in logon application"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="3" state="story not-done" percentage-done="0"  title="Transaction files in batch"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="3" state="story not-done" percentage-done="0"  title="Interrupt remote test locally"><slides><slide type="story-narrative"></slide></slides></story>
+        
+        <story id="" points="2" state="story done"                          title="ABO R2: bug fixes"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="5" state="story done"                          title="Drools: New Data model"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="New branch and Jenkins jobs"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Card library: handover"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="3" state="story done"                          title="Info button screens on validator"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Bug: Logging on with blocked card resulted in beeping"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="Interact remotely on interactive test"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story done"                          title="Bug: User-Id null on blocked card"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="State machine proof of concept with Squirrel"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="QA: Retest Bugs"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="QA: Regression test"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story done"                          title="QA: End-to-end tests"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story not-done" percentage-done="0"  title="QA: Sanity"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story not-done" percentage-done="0"  title="QA: Release"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story not-done" percentage-done="0"  title="QA: Post-Release"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story uncommitted"                   title="QA: AVU R1 rollout support"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story uncommitted"                   title="QA: Validation performance"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="1" state="story uncommitted"                   title="QA: Handover card dump tool"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story uncommitted"                   title="Bug: Support multiple contracts on old Drools rules"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="" points="2" state="story uncommitted"                   title="Bug: Fix time conversion with old card library"><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>                                                                           
+
+    <finish>
+        <slides>	
+            <slide title="What did we learn?" type="story-context">
+                <List>
+                    <li>We did not foresee enough time for bugfixing ABO R2</li>
+                    <li>The new card library is still our biggest dependency</li>
+                    <li>More time and confidence for QA with feature freeze last sprint</li>
+                    <li>Confidence in our validation architecture</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+            
+            <slide title="Next sprint" type="whats-next">
+            	<h5>What's up?</h5>
+                <List>
+                    <li>Integrate card library for logon application</li>
+                    <li>Finish test tool and create tests for the new Drools data model</li>
+                    <li>Create adapters between new card library and the Drools data model</li>
+                    <li>Holidays. Possibility of QA bottleneck.</li>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </List>
+            </slide>
+        </slides>
+	</finish>
+</sprintreview>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140922" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+    <team name="BeSharp">
+        <member type="productowner" capacity="0">Pieter Clavie </member>
+        <member type="assisted" capacity="0">Julia Dubois </member>
+        <member type="hands-on" capacity="0">Martijn Evens </member>
+        <member type="scrummaster" capacity="0">Servaas Phlips </member>
+        <member type="hands-on" capacity="8">Ignacio Errico </member>
+        <member type="hands-on" capacity="4">Blaise Braye </member>
+        <member type="hands-on" capacity="8">Serge Van Meerbeeck</member>
+        <member type="hands-on" capacity="6.5">Gauthier Rossion </member>
+        <member type="tester" capacity="6">Annelies Ivens </member>
+        <member type="tester" capacity="5">Parisa Pejham </member>
+        <member type="hands-on" capacity="8">Denis Bollinne</member>
+        <member type="hands-on" capacity="5.5">Thierry Habart</member>
+        <member type="hands-on" capacity="3">Marnix De Groote </member>
+    </team>
+
+  <intro>
+    <slides>
+      <slide title="current sprint" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <b>Load dataset to boardcomputer.</b>
+        </List>
+      </slide>
+    </slides>
+  </intro>
+
+  <metrics>
+    <metric project="ServiceSupportManager" linesofcode="36034" stepfiles="0" unittests="263" complexity="15.0921288" />
+    <metric project="PoiTracker" linesofcode="11826" stepfiles="0" unittests="172" complexity="13.25099602" />
+    <metric project="Transmodel.Netex" linesofcode="37243" stepfiles="66" unittests="524" complexity="9.812288613" />
+    <metric project="DetourManager" linesofcode="24005" stepfiles="16" unittests="625" complexity="9.1672890" />
+    <metric project="JobOrchestration" linesofcode="3520" stepfiles="0" unittests="108" complexity="7.348148" />
+  </metrics>
+  
+    <stories>
+        <story id="MOBITS-1593" relid="14524" points="2" state="story not-done" percentage-done="0"  title="Enable stylecop for PoiTracker and fix"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-1799" relid="14524" points="3" state="story not-done" percentage-done="0"  title="As a planner I want the activation points inside the dataset"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2103" relid="14524" points="1" state="story not-done" percentage-done="0"  title="As an Installer I want a better installer - Part 1 "><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2341" relid="14524" points="5" state="story not-done" percentage-done="0"  title="As a client for the AVL service I want Train Messsages with context"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2362" relid="14524" points="3" state="story not-done" percentage-done="0"  title=" As a client for the AVL service I want Only Bus Messsages with context (technical implementation)"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2408" relid="14524" points="3" state="story not-done" percentage-done="0"  title="As a planner I want a dataset on the board computer"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2465" relid="14524" points="3" state="story not-done" percentage-done="0"  title="Writing usability cases part 2 - Team Denis"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2466" relid="14524" points="1" state="story not-done" percentage-done="0"  title="Review Manuals - Team Denis"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2467" relid="14524" points="5" state="story not-done" percentage-done="0"  title="Import  tarif stops and point associations"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2468" relid="14524" points="3" state="story not-done" percentage-done="0"  title="Import Tarfi zones"><slides><slide type="story-narrative"></slide></slides></story>
+        <story id="MOBITS-2474" relid="14524" points="0" state="story uncommitted" title=""><slides><slide type="story-narrative"></slide></slides></story>
+    </stories>
+
+</sprintreview>

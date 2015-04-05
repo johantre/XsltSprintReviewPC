@@ -1,0 +1,85 @@
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+<sprintreview folder="140428" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+        <team name="TechTeam">
+        <member type="scrummaster" capacity="0">Michael De Maessschalck </member>
+        <member type="hands-on" capacity="8">Bjorn Bailleul </member>
+        <member type="hands-on" capacity="8">Philip Van Hoof</member>
+        <member type="hands-on" capacity="8">Steven Wyns </member>
+        <member type="hands-on" capacity="8">Steven Robijns </member>
+        <member type="tester" capacity="8">Dorine Vos </member>
+        <member type="tester" capacity="8">Niels Beckers </member>
+        <member type="productowner" capacity="0">Rudi Windey </member>
+        <member type="productowner" capacity="0">Frank Vanhoenshoven </member>
+    </team> 
+    
+<intro>
+    	<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Support installatie De Lijn</li>
+			  <li>Bugfixing</li>
+			  <br/>
+			  <strong>QA</strong>
+			  <li>N/A</li>
+			</List>
+		  </slide>
+	      <slide title="Overzicht" type="story-context">
+	        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+	          <strong>Algemeen</strong>
+	          <li>Operations: opzetten testomgeving</li>
+	          <br/>
+	          <strong>AVU R2</strong>
+	          <li>Release en Config Mgt: bugfixing</li>
+	          <br/>
+	          <strong>ABO R1</strong>
+	          <li>Remote Loading Client</li>
+	          <li>Installers</li>
+	          <br/>
+	          <strong>ABO R2</strong>          
+	          <li>Transaction Processor</li>
+			  <br/>
+			  <strong>ABO R3</strong>          
+	          <li>Tarievenmodule</li>
+	          <br/>
+	        </List>
+	      </slide>		
+		</slides>
+    </intro>
+    
+    <stories>
+		<story id="DL-11737" relid="01" points="0" state="bug" percentage-done="100"  title="Buiten gebruik scenario: Verwijderde release niet in status beheer overgenomen (ref033)"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11923" relid="01" points="3.5" state="story done" percentage-done="0"  title="[OPS] Setup nieuwe integratie-testomgeving"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11924" relid="04" points="1.5" state="story done" percentage-done="0"  title="[OPS] Migratie tarievenmodule"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11964" relid="01" points="0" state="bug" percentage-done="100"  title="Publish: detail release niet geupdate: aantallen + knoppen + tijden"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11965" relid="01" points="1" state="story done" percentage-done="0"  title="[OPS] Installatie AVU R2 Bugfix 1"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11967" relid="02" points="6" state="story done" percentage-done="0"  title="[OPS] Setup ABO R1 K2 - Installers S/F/O/RLC/CM/Mocks"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11970" relid="01" points="2" state="story done" percentage-done="0"  title="[OPS] Analyse IISRESET en Active MQ connectie"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11968" relid="02" points="1.5" state="story done" percentage-done="0"  title="[RLC] Remote Loading Client - Simulator/Integraties"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11969" relid="04" points="1" state="story done" percentage-done="0"  title="[TM] Tarievenmodule Code Review"><slides><slide type="story-narrative"></slide></slides></story>	
+		<story id="DL-11971" relid="03" points="2.625" state="story done" percentage-done="0"  title="[TP] JSON/aanpassing db/review doc RESTAPI"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11966" relid="01" points="1" state="story done" percentage-done="0"  title="[CM] (TIMEBOXED) Analyse bug double items Config Mgt"><slides><slide type="story-narrative"></slide></slides></story>
+		<story id="DL-11973" relid="01" points="1.5" state="story not-done" percentage-done="66"  title="[RM] (TIMEBOXED) Automatische testen "><slides><slide type="story-narrative"></slide></slides></story>
+      </stories>
+
+      <!-- <finish>
+		<slides>
+		  <slide title="UNPLANNED WORK" type="story-batman">
+			<List xmlns="http://schemas.microsoft.com/sharepoint/">
+			  <strong>DEV</strong>
+			  <li>Installatie handleidingen updaten nav review/installatie AVU R2</li>
+			  <li>Opkuis security scripts voor kaartbeheer</li>
+			  <li>Impact na upgrade naar NServiceBus 4.4.0</li>
+			  <li>Issues met oude AppFabric4 test omgeving</li>			  			  			  
+			  <li>Tile tellers op klantenbeheer verwijderd</li>			  
+              <li>Customer mgt: preparation bugs next sprint</li>
+			  <br/>
+			  <strong>QA</strong>
+			  <li>N/A</li>
+			</List>
+		  </slide>
+		</slides>
+  </finish> -->
+
+
+</sprintreview>

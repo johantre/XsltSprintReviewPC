@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../style/slides.xsl"?>
+
+<sprintreview folder="140904" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../style/sprint-review.xsd">
+	<team name="SharpCorner">
+		<member type="scrummaster"  capacity="0.0" avatar="../avatars/gert.jpg">Gert Verhoeven</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jan.jpg">Jan Van der Borght</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/saskia.jpg">Saskia Van Oldenborgh</member>
+		<member type="productowner" capacity="0.0" avatar="../avatars/jetro.jpg">Jetro Wils</member>
+		<member type="hands-on"     capacity="1.5" avatar="../avatars/alain.jpg">Alain Kinet</member>		
+		<member type="hands-on"     capacity="4.0" avatar="../avatars/jo.jpg">Jo Wijnant</member>
+		<member type="hands-on"     capacity="5.0" avatar="../avatars/johnny.jpg">Johnny Hooyberghs</member>
+		<member type="hands-on"     capacity="6.5" avatar="../avatars/michiel.jpg">Michiel Blykers</member>    			
+		<member type="tester"       capacity="5.5" avatar="../avatars/joris.jpg">Joris Debien</member>      
+	</team>
+
+  <intro>
+    <slides>
+      <slide title="scope" type="sprint-goal">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Bugfix 2</li>
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Merge framework upgrade</li>
+          <li>Import65+ stories</li>
+          <li>Data migratie in kaart brengen</li>
+          <li>Klantenbeheer opsplitsen in:</li>
+          <i>PartyMasterData (services) &amp; CustomerCare (UI)</i>          
+        </List>
+      </slide>
+
+      <slide title="architectuur" type="story-context">
+        <img src="../architecture.jpg"/>                
+      </slide>
+            
+      <slide title="unplanned work" type="story-batman">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>DEV</strong>
+          <li>Review TO &amp; SS Import Rechthebbende (country)</li>
+          <li>Testen met ODP (Oracle Data Provider) ipv Devart</li>
+          <br/>
+          <strong>QA</strong>
+          <li>Support issues merged release (configuratie documentgeneratie)</li>          
+        </List>
+      </slide>
+      
+    </slides>
+  </intro>
+		
+	<!-- state can be: "story done" | "story not-done" | "story uncommitted" | "bug" -->
+	<!-- relid can be: "01" | "02" | "11" | "12" | "13" -->
+  <!-- <story id="DL" relid="01" points="1" state="story done" title="some title"><slides><slide type="story-narrative"></slide></slides></story> -->
+	<stories>  
+        
+		<story id="DL-12804" relid="13813" points="5" state="story done" title="[ALL] Fix failed Acceptance Tests"><slides><slide type="story-narrative"></slide></slides></story>		    
+    
+		<!-- Bugfixing AVU R2 - Sam and Card Management -->
+
+    <!-- Features  ABO R1 - VVK - Customer Management -->
+    
+    <!-- Bugfixing ABO R1 - VVK - Customer Management -->    
+    <story id="DL-12794" relid="11" points="0.5" state="story done" title="[CUST] Vertalingsfouten Customer Management"><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="DL-12803" relid="11" points="0.5" state="story done" title="[CUST] Import sanity lijst DL valideren &amp; ValidityPeriod op Employee"><slides><slide type="story-narrative"></slide></slides></story>
+        
+    <!-- Features  ABO R3 - PartyMasterData -->
+    <story id="DL-12802"  relid="13" points="2" state="story done" title="[PMD] Migratie V00 in kaart brengen"><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="DL-12801"  relid="13" points="8" state="story done" title="[PMD] CustomerManagement ontdubbelen in PartyMasterData &amp; CustomerCare"><slides><slide type="story-narrative"></slide></slides></story>
+    
+    <story id="MOBAFC-77" relid="13" points="0.5" state="story not-done" percentage-done="10"  title="As BO Cust. Mger in Customer Care I want that for each RH VVK on the VVK import list, a Request is automatically created."><slides><slide type="story-narrative"></slide></slides></story>
+    <story id="MOBAFC-76" relid="13" points="1" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want to have Customer details of new 65+'ers automatically available."><slides><slide type="story-narrative"></slide></slides></story>		
+		<story id="MOBAFC-82" relid="13" points="0.5" state="story not-done" percentage-done="0"  title="As BO Cust. Mger in Customer Care I want that for each 65+'er (not VVK) on the import list, a Request is automatically created "><slides><slide type="story-narrative"></slide></slides></story>
+
+    <!-- Bugfixing ABO R3 - PartyMasterData - Revenue Management -->
+
+  </stories>
+	
+	<finish>
+		<slides>
+		  <slide title="next sprint" type="whats-next">
+        <List xmlns="http://schemas.microsoft.com/sharepoint/">
+          <strong>ABO R1</strong>
+          <li>Bugfix 2 (3.2.1)</li>          
+          <br/>
+          <strong>ABO R3</strong>
+          <li>Import 65+</li>
+          <li>Inkomstenbeheer</li>          
+        </List>			
+		  </slide>
+		</slides>
+  </finish>
+  
+</sprintreview>
