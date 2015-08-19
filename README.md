@@ -1,5 +1,7 @@
 XsltSprintReviewPC
 ==================
+First: 
+Online sample through github "pages":  http://johantre.github.io/XsltSprintReviewPC/demo-slides/131218/sprint-review.xml
 
 xslt for sprint reviews
 
